@@ -1,0 +1,11 @@
+{
+    "author": ["Cobray"],
+    "name": "Poker",
+    "description": "Play Texas Hold'em Poker in Discord with friends or AI opponents",
+    "short": "Play Texas Hold'em Poker",
+    "tags": ["games", "poker", "cards"],
+    "requirements": ["Pillow"],
+    "min_bot_version": "3.5.0",
+    "type": "COG",
+    "end_user_data_statement": "No personal data is stored."
+}

@@ -1,0 +1,10 @@
+{
+    "author": ["Cobray"],
+    "description": "A cog to verify X (Twitter) accounts using OAuth",
+    "install_msg": "Thanks for installing XAuth! Make sure to follow the setup instructions carefully, including configuring Nginx and SSL certificates.",
+    "short": "X (Twitter) account verification system",
+    "tags": ["twitter", "x", "verification", "oauth"],
+    "requirements": ["discord.py"],
+    "min_bot_version": "3.5.0",
+    "end_user_data_statement": "This cog stores Discord user IDs and associated X (Twitter) handles for verification purposes."
+}
