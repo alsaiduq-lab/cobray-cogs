@@ -1,11 +1,12 @@
 import logging
 import discord
 import aiohttp
+import random
 from typing import Optional, Dict, Any, List
 from redbot.core import commands, Config, checks
 from redbot.core.bot import Red
 
-from .core import tags
+from .core.tags import TagHandler
 from .core.exceptions import RequestError, SourceNotFound
 from .sources import (
     DanbooruSource,
@@ -28,8 +29,7 @@ class Booru(commands.Cog):
             identifier=127318273,
             force_registration=True
         )
-        
-        # Initialize sources
+        self.tag_handler = TagHandler()
         self.sources = {
             "danbooru": DanbooruSource(self.session),
             "gelbooru": GelbooruSource(self.session),
@@ -38,7 +38,6 @@ class Booru(commands.Cog):
             "safebooru": SafebooruSource(self.session)
         }
         
-        # Default settings
         default_global = {
             "api_keys": {
                 "gelbooru": {
@@ -64,33 +63,25 @@ class Booru(commands.Cog):
         """Cleanup when cog is unloaded."""
         self.bot.loop.create_task(self.session.close())
             
-    async def _get_post_from_source(
-        self,
-        source_name: str,
-        tag_string: str,
-        is_nsfw: bool = False
-    ) -> Optional[Dict[str, Any]]:
+    async def _get_post_from_source(self, source_name: str, tag_string: str, is_nsfw: bool = False) -> Optional[Dict[str, Any]]:
         """Get a post from a specific source."""
         try:
             source = self.sources.get(source_name)
             if not source:
                 return None
                 
-            # Get credentials if needed
             credentials = None
             if source_name == "gelbooru":
                 api_keys = (await self.config.api_keys())["gelbooru"]
                 if api_keys["api_key"] and api_keys["user_id"]:
                     credentials = api_keys
                 
-            # Parse tags
-            positive_tags, negative_tags = tags.parse_tags(tag_string)
+            positive_tags, negative_tags = self.tag_handler.parse_tags(tag_string)
             if not is_nsfw:
                 negative_tags.add("rating:explicit")
                 negative_tags.add("rating:questionable")
                 
-            # Get posts
-            tag_list = tags.combine_tags(positive_tags, negative_tags)
+            tag_list = self.tag_handler.combine_tags(positive_tags, negative_tags)
             posts = await source.get_posts(tag_list, limit=1, credentials=credentials)
             
             if not posts:
@@ -104,12 +95,7 @@ class Booru(commands.Cog):
             
     @commands.group(invoke_without_command=True)
     async def booru(self, ctx: commands.Context, *, tag_string: str = ""):
-        """Search booru sites for images.
-        
-        **Examples:**
-        `{prefix}booru 1girl, solo`
-        `{prefix}booru 1girl, -nsfw`
-        """
+        """Search booru sites for images."""
         is_nsfw = ctx.channel.is_nsfw() if isinstance(ctx.channel, discord.TextChannel) else False
         
         async with ctx.typing():
@@ -294,4 +280,4 @@ class Booru(commands.Cog):
             api_keys["gelbooru"]["user_id"] = user_id
             
         await ctx.send("Gelbooru API credentials set.")
-        await ctx.message.delete()  # Delete to protect API credentials
+        await ctx.message.delete()
