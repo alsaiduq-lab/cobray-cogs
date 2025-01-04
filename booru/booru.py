@@ -37,6 +37,7 @@ class Booru(commands.Cog):
             "yandere": YandereSource(self.session),
             "safebooru": SafebooruSource(self.session)
         }
+        self.image_cache = {}
         
         default_global = {
             "api_keys": {
@@ -82,15 +83,33 @@ class Booru(commands.Cog):
                 negative_tags.add("rating:questionable")
                 
             tag_list = self.tag_handler.combine_tags(positive_tags, negative_tags)
-            posts = await source.get_posts(tag_list, limit=1, credentials=credentials)
+            posts = await source.get_posts(tag_list, limit=10, credentials=credentials)
             
             if not posts:
                 return None
                 
-            return source.parse_post(posts[0])
+            return [source.parse_post(post) for post in posts]
             
         except Exception as e:
             log.error(f"Error fetching from {source_name}: {e}")
+            return None
+
+    async def _handle_reactions(self, message, user_id, posts, current_index):
+        def check(reaction, user):
+            return user.id == user_id and str(reaction.emoji) in ["⬅️", "➡️"]
+
+        try:
+            reaction, user = await self.bot.wait_for("reaction_add", timeout=30.0, check=check)
+            
+            if str(reaction.emoji) == "⬅️":
+                current_index = (current_index - 1) % len(posts)
+            elif str(reaction.emoji) == "➡️":
+                current_index = (current_index + 1) % len(posts)
+                
+            await message.remove_reaction(reaction.emoji, user)
+            return current_index
+            
+        except TimeoutError:
             return None
             
     @commands.group(invoke_without_command=True)
@@ -101,21 +120,52 @@ class Booru(commands.Cog):
         async with ctx.typing():
             source_order = (await self.config.filters())["source_order"]
             
+            all_posts = []
             for source_name in source_order:
-                post = await self._get_post_from_source(source_name, tag_string, is_nsfw)
-                if post:
-                    embed = discord.Embed(color=discord.Color.random())
-                    embed.set_image(url=post["url"])
-                    embed.add_field(name="Rating", value=post["rating"])
-                    if post.get("score") is not None:
-                        embed.add_field(name="Score", value=post["score"])
-                    embed.set_footer(text=f"From {source_name.title()} • ID: {post['id']}")
+                posts = await self._get_post_from_source(source_name, tag_string, is_nsfw)
+                if posts:
+                    all_posts.extend((post, source_name) for post in posts)
                     
-                    await ctx.send(embed=embed)
-                    return
-                    
-            await ctx.send("No results found in any source.")
+            if not all_posts:
+                await ctx.send("No results found in any source.")
+                return
+                
+            current_index = 0
+            post, source_name = all_posts[current_index]
             
+            embed = discord.Embed(color=discord.Color.random())
+            embed.set_image(url=post["url"])
+            embed.add_field(name="Rating", value=post["rating"])
+            if post.get("score") is not None:
+                embed.add_field(name="Score", value=post["score"])
+            embed.set_footer(text=f"From {source_name.title()} • ID: {post['id']} • Image {current_index + 1}/{len(all_posts)}")
+            
+            message = await ctx.send(embed=embed)
+            await message.add_reaction("⬅️")
+            await message.add_reaction("➡️")
+            
+            while True:
+                new_index = await self._handle_reactions(message, ctx.author.id, all_posts, current_index)
+                if new_index is None:
+                    break
+                    
+                current_index = new_index
+                post, source_name = all_posts[current_index]
+                
+                embed = discord.Embed(color=discord.Color.random())
+                embed.set_image(url=post["url"])
+                embed.add_field(name="Rating", value=post["rating"])
+                if post.get("score") is not None:
+                    embed.add_field(name="Score", value=post["score"])
+                embed.set_footer(text=f"From {source_name.title()} • ID: {post['id']} • Image {current_index + 1}/{len(all_posts)}")
+                
+                await message.edit(embed=embed)
+
+            try:
+                await message.clear_reactions()
+            except:
+                pass
+
     @commands.group(name="boorus")
     async def source_specific(self, ctx: commands.Context):
         """Commands for specific booru sources."""
@@ -125,116 +175,251 @@ class Booru(commands.Cog):
     async def danbooru_search(self, ctx: commands.Context, *, tag_string: str = ""):
         """Search Danbooru specifically."""
         async with ctx.typing():
-            post = await self._get_post_from_source(
+            posts = await self._get_post_from_source(
                 "danbooru",
                 tag_string,
                 ctx.channel.is_nsfw() if isinstance(ctx.channel, discord.TextChannel) else False
             )
             
-            if not post:
+            if not posts:
                 await ctx.send("No results found on Danbooru.")
                 return
                 
+            current_index = 0
+            post = posts[current_index]
+            
             embed = discord.Embed(color=discord.Color.random())
             embed.set_image(url=post["url"])
             embed.add_field(name="Rating", value=post["rating"])
             if post.get("score") is not None:
                 embed.add_field(name="Score", value=post["score"])
-            embed.set_footer(text=f"From Danbooru • ID: {post['id']}")
+            embed.set_footer(text=f"From Danbooru • ID: {post['id']} • Image {current_index + 1}/{len(posts)}")
             
-            await ctx.send(embed=embed)
+            message = await ctx.send(embed=embed)
+            await message.add_reaction("⬅️")
+            await message.add_reaction("➡️")
             
+            while True:
+                new_index = await self._handle_reactions(message, ctx.author.id, posts, current_index)
+                if new_index is None:
+                    break
+                    
+                current_index = new_index
+                post = posts[current_index]
+                
+                embed = discord.Embed(color=discord.Color.random())
+                embed.set_image(url=post["url"])
+                embed.add_field(name="Rating", value=post["rating"])
+                if post.get("score") is not None:
+                    embed.add_field(name="Score", value=post["score"])
+                embed.set_footer(text=f"From Danbooru • ID: {post['id']} • Image {current_index + 1}/{len(posts)}")
+                
+                await message.edit(embed=embed)
+
+            try:
+                await message.clear_reactions()
+            except:
+                pass
+
     @source_specific.command(name="gel")
     async def gelbooru_search(self, ctx: commands.Context, *, tag_string: str = ""):
         """Search Gelbooru specifically."""
         async with ctx.typing():
-            post = await self._get_post_from_source(
+            posts = await self._get_post_from_source(
                 "gelbooru",
                 tag_string,
                 ctx.channel.is_nsfw() if isinstance(ctx.channel, discord.TextChannel) else False
             )
             
-            if not post:
+            if not posts:
                 await ctx.send("No results found on Gelbooru.")
                 return
                 
+            current_index = 0
+            post = posts[current_index]
+            
             embed = discord.Embed(color=discord.Color.random())
             embed.set_image(url=post["url"])
             embed.add_field(name="Rating", value=post["rating"])
             if post.get("score") is not None:
                 embed.add_field(name="Score", value=post["score"])
-            embed.set_footer(text=f"From Gelbooru • ID: {post['id']}")
+            embed.set_footer(text=f"From Gelbooru • ID: {post['id']} • Image {current_index + 1}/{len(posts)}")
             
-            await ctx.send(embed=embed)
+            message = await ctx.send(embed=embed)
+            await message.add_reaction("⬅️")
+            await message.add_reaction("➡️")
             
+            while True:
+                new_index = await self._handle_reactions(message, ctx.author.id, posts, current_index)
+                if new_index is None:
+                    break
+                    
+                current_index = new_index
+                post = posts[current_index]
+                
+                embed = discord.Embed(color=discord.Color.random())
+                embed.set_image(url=post["url"])
+                embed.add_field(name="Rating", value=post["rating"])
+                if post.get("score") is not None:
+                    embed.add_field(name="Score", value=post["score"])
+                embed.set_footer(text=f"From Gelbooru • ID: {post['id']} • Image {current_index + 1}/{len(posts)}")
+                
+                await message.edit(embed=embed)
+
+            try:
+                await message.clear_reactions()
+            except:
+                pass
+
     @source_specific.command(name="kon")
     async def konachan_search(self, ctx: commands.Context, *, tag_string: str = ""):
         """Search Konachan specifically."""
         async with ctx.typing():
-            post = await self._get_post_from_source(
+            posts = await self._get_post_from_source(
                 "konachan",
                 tag_string,
                 ctx.channel.is_nsfw() if isinstance(ctx.channel, discord.TextChannel) else False
             )
             
-            if not post:
+            if not posts:
                 await ctx.send("No results found on Konachan.")
                 return
                 
+            current_index = 0
+            post = posts[current_index]
+            
             embed = discord.Embed(color=discord.Color.random())
             embed.set_image(url=post["url"])
             embed.add_field(name="Rating", value=post["rating"])
             if post.get("score") is not None:
                 embed.add_field(name="Score", value=post["score"])
-            embed.set_footer(text=f"From Konachan • ID: {post['id']}")
+            embed.set_footer(text=f"From Konachan • ID: {post['id']} • Image {current_index + 1}/{len(posts)}")
             
-            await ctx.send(embed=embed)
+            message = await ctx.send(embed=embed)
+            await message.add_reaction("⬅️")
+            await message.add_reaction("➡️")
             
+            while True:
+                new_index = await self._handle_reactions(message, ctx.author.id, posts, current_index)
+                if new_index is None:
+                    break
+                    
+                current_index = new_index
+                post = posts[current_index]
+                
+                embed = discord.Embed(color=discord.Color.random())
+                embed.set_image(url=post["url"])
+                embed.add_field(name="Rating", value=post["rating"])
+                if post.get("score") is not None:
+                    embed.add_field(name="Score", value=post["score"])
+                embed.set_footer(text=f"From Konachan • ID: {post['id']} • Image {current_index + 1}/{len(posts)}")
+                
+                await message.edit(embed=embed)
+
+            try:
+                await message.clear_reactions()
+            except:
+                pass
+
     @source_specific.command(name="yan")
     async def yandere_search(self, ctx: commands.Context, *, tag_string: str = ""):
         """Search Yande.re specifically."""
         async with ctx.typing():
-            post = await self._get_post_from_source(
+            posts = await self._get_post_from_source(
                 "yandere",
                 tag_string,
                 ctx.channel.is_nsfw() if isinstance(ctx.channel, discord.TextChannel) else False
             )
             
-            if not post:
+            if not posts:
                 await ctx.send("No results found on Yande.re.")
                 return
                 
+            current_index = 0
+            post = posts[current_index]
+            
             embed = discord.Embed(color=discord.Color.random())
             embed.set_image(url=post["url"])
             embed.add_field(name="Rating", value=post["rating"])
             if post.get("score") is not None:
                 embed.add_field(name="Score", value=post["score"])
-            embed.set_footer(text=f"From Yande.re • ID: {post['id']}")
+            embed.set_footer(text=f"From Yande.re • ID: {post['id']} • Image {current_index + 1}/{len(posts)}")
             
-            await ctx.send(embed=embed)
+            message = await ctx.send(embed=embed)
+            await message.add_reaction("⬅️")
+            await message.add_reaction("➡️")
             
+            while True:
+                new_index = await self._handle_reactions(message, ctx.author.id, posts, current_index)
+                if new_index is None:
+                    break
+                    
+                current_index = new_index
+                post = posts[current_index]
+                
+                embed = discord.Embed(color=discord.Color.random())
+                embed.set_image(url=post["url"])
+                embed.add_field(name="Rating", value=post["rating"])
+                if post.get("score") is not None:
+                    embed.add_field(name="Score", value=post["score"])
+                embed.set_footer(text=f"From Yande.re • ID: {post['id']} • Image {current_index + 1}/{len(posts)}")
+                
+                await message.edit(embed=embed)
+
+            try:
+                await message.clear_reactions()
+            except:
+                pass
+
     @source_specific.command(name="safe")
     async def safebooru_search(self, ctx: commands.Context, *, tag_string: str = ""):
         """Search Safebooru specifically."""
         async with ctx.typing():
-            post = await self._get_post_from_source(
+            posts = await self._get_post_from_source(
                 "safebooru",
                 tag_string,
                 is_nsfw=False
             )
             
-            if not post:
+            if not posts:
                 await ctx.send("No results found on Safebooru.")
                 return
                 
+            current_index = 0
+            post = posts[current_index]
+            
             embed = discord.Embed(color=discord.Color.random())
             embed.set_image(url=post["url"])
             embed.add_field(name="Rating", value=post["rating"])
             if post.get("score") is not None:
                 embed.add_field(name="Score", value=post["score"])
-            embed.set_footer(text=f"From Safebooru • ID: {post['id']}")
+            embed.set_footer(text=f"From Safebooru • ID: {post['id']} • Image {current_index + 1}/{len(posts)}")
             
-            await ctx.send(embed=embed)
+            message = await ctx.send(embed=embed)
+            await message.add_reaction("⬅️")
+            await message.add_reaction("➡️")
+            
+            while True:
+                new_index = await self._handle_reactions(message, ctx.author.id, posts, current_index)
+                if new_index is None:
+                    break
+                    
+                current_index = new_index
+                post = posts[current_index]
+                
+                embed = discord.Embed(color=discord.Color.random())
+                embed.set_image(url=post["url"])
+                embed.add_field(name="Rating", value=post["rating"])
+                if post.get("score") is not None:
+                    embed.add_field(name="Score", value=post["score"])
+                embed.set_footer(text=f"From Safebooru • ID: {post['id']} • Image {current_index + 1}/{len(posts)}")
+                
+                await message.edit(embed=embed)
+
+            try:
+                await message.clear_reactions()
+            except:
+                pass
             
     @commands.group(name="booruset")
     @checks.admin_or_permissions(administrator=True)
