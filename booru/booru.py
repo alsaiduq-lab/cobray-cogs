@@ -26,8 +26,6 @@ class Booru(commands.Cog):
     
     def __init__(self, bot: Red):
         self.bot = bot
-        # In production, you might want a single ClientSession for your entire bot,
-        # but it is fine to keep it here for the cog as well.
         self.session = aiohttp.ClientSession()
         
         self.config = Config.get_conf(
@@ -37,7 +35,6 @@ class Booru(commands.Cog):
         )
         self.tag_handler = TagHandler()
         
-        # Initialize all sources with the same session:
         self.sources = {
             "danbooru": DanbooruSource(self.session),
             "gelbooru": GelbooruSource(self.session),
@@ -69,7 +66,6 @@ class Booru(commands.Cog):
         
     def cog_unload(self):
         """Cleanup when the cog is unloaded."""
-        # Properly close out the client session
         self.bot.loop.create_task(self.session.close())
     
     async def _get_post_from_source(
@@ -79,14 +75,13 @@ class Booru(commands.Cog):
         is_nsfw: bool = False
     ) -> Optional[Dict[str, Any]]:
         """
-        Attempts to get a post from the specified source.
+        Attempts to get a single post from the specified source.
         Returns None if no valid post is found or if an error occurs.
         """
         source = self.sources.get(source_name)
         if not source:
             return None
         
-        # If the source is Gelbooru, gather credentials
         credentials = None
         if source_name == "gelbooru":
             api_keys = (await self.config.api_keys())["gelbooru"]
@@ -95,24 +90,19 @@ class Booru(commands.Cog):
         
         positive_tags, negative_tags = self.tag_handler.parse_tags(tag_string)
         
-        # Automatically exclude explicit & questionable if the channel is SFW
         if not is_nsfw:
             negative_tags.add("rating:explicit")
             negative_tags.add("rating:questionable")
         
-        # Some booru APIs reject requests if you include too many or invalid tags
-        # so you can optionally truncate or sanitize here.
         tag_list = self.tag_handler.combine_tags(positive_tags, negative_tags)
         
         try:
-            # Because booru queries sometimes fail or return HTTP errors, wrap in try/except
             posts = await source.get_posts(tag_list, limit=1, credentials=credentials)
             if not posts:
                 return None
             return source.parse_post(posts[0])
 
         except ClientResponseError as cre:
-            # For Danbooru, HTTP 422 typically means invalid tags, too many tags, or similar.
             if cre.status == 422:
                 log.error(
                     f"[{source_name}] HTTP {cre.status} - Possibly invalid or too many tags: {cre.message}"
@@ -122,15 +112,176 @@ class Booru(commands.Cog):
             return None
         
         except (ClientError, TimeoutError) as ce:
-            # Connection failures, timeouts, SSL issues, etc. often appear here
             log.error(f"Connection error while fetching from {source_name}: {ce}")
             return None
         
         except Exception as e:
-            # Fallback for unanticipated exceptions
             log.exception(f"Unexpected error fetching from {source_name}: {e}")
             return None
+
+
+    async def _get_multiple_posts_from_source(
+        self,
+        source_name: str,
+        tag_string: str,
+        is_nsfw: bool,
+        limit: int = 5
+    ) -> List[Dict[str, Any]]:
+        """
+        Fetches up to `limit` posts from the specified source. Returns
+        a list of parsed post dicts, or an empty list on failure.
+        """
+        source = self.sources.get(source_name)
+        if not source:
+            return []
+        
+        credentials = None
+        if source_name == "gelbooru":
+            api_keys = (await self.config.api_keys())["gelbooru"]
+            if api_keys["api_key"] and api_keys["user_id"]:
+                credentials = api_keys
+        
+        positive_tags, negative_tags = self.tag_handler.parse_tags(tag_string)
+        if not is_nsfw:
+            negative_tags.add("rating:explicit")
+            negative_tags.add("rating:questionable")
+        
+        tag_list = self.tag_handler.combine_tags(positive_tags, negative_tags)
+        
+        try:
+            posts = await source.get_posts(tag_list, limit=limit, credentials=credentials)
+        except ClientResponseError as cre:
+            log.error(f"HTTP {cre.status} error on multiple fetch: {cre.message}")
+            return []
+        except (ClientError, TimeoutError) as ce:
+            log.error(f"Connection error while fetching multiple from {source_name}: {ce}")
+            return []
+        except Exception as e:
+            log.exception(f"Unexpected error fetching multiple from {source_name}: {e}")
+            return []
+        
+        return [source.parse_post(p) for p in posts if p]
+
+    @commands.command(name="boorupaginated")
+    async def booru_paginated(self, ctx: commands.Context, *, tag_string: str = ""):
+        """
+        Example command that fetches multiple posts (from the first source in
+        the config's source_order) and allows cycling through them with reactions.
+        """
+        is_nsfw = (
+            ctx.channel.is_nsfw()
+            if isinstance(ctx.channel, discord.TextChannel)
+            else False
+        )
+
+        # We'll try the first source in the source_order for demonstration:
+        source_order = (await self.config.filters())["source_order"]
+        if not source_order:
+            await ctx.send("No sources configured.")
+            return
+
+        # For demonstration, just pick the first source
+        first_source = source_order[0]
+
+        # Grab multiple posts
+        posts = await self._get_multiple_posts_from_source(
+            first_source, tag_string, is_nsfw, limit=5
+        )
+        if not posts:
+            await ctx.send(f"No results found on {first_source.title()}.")
+            return
+        
+        # Start pagination at index 0
+        current_index = 0
+        message = await self._send_post_embed(ctx, posts[current_index], current_index, len(posts))
+
+        # If there's only one post, no need to paginate
+        if len(posts) == 1:
+            return
+        
+        # Reaction controls
+        controls = ["◀️", "❌", "▶️"]
+        for emoji in controls:
+            await message.add_reaction(emoji)
+
+        # Check function for reaction_add
+        def check(reaction: discord.Reaction, user: discord.Member):
+            return (
+                user == ctx.author
+                and reaction.message.id == message.id
+                and str(reaction.emoji) in controls
+            )
+        
+        while True:
+            try:
+                reaction, user = await self.bot.wait_for(
+                    "reaction_add",
+                    timeout=60.0,  # 60 seconds to wait for new reaction
+                    check=check
+                )
+            except TimeoutError:
+                # Time ran out; optionally remove reactions and stop
+                await self._cleanup_reactions(message, controls)
+                break
+            
+            # Handle each control
+            if str(reaction.emoji) == "◀️":
+                current_index = (current_index - 1) % len(posts)
+            elif str(reaction.emoji) == "▶️":
+                current_index = (current_index + 1) % len(posts)
+            elif str(reaction.emoji) == "❌":
+                await self._cleanup_reactions(message, controls)
+                break
+            
+            # Edit the message with the new embed
+            new_embed = self._build_embed(posts[current_index], current_index, len(posts))
+            await message.edit(embed=new_embed)
+
+            # Attempt to remove the user’s reaction (optional)
+            try:
+                await message.remove_reaction(reaction.emoji, user)
+            except discord.Forbidden:
+                pass
+            except discord.HTTPException:
+                pass
+
+
+    def _build_embed(self, post_data: dict, index: int, total: int) -> discord.Embed:
+        """
+        Builds a new embed given post data and the index/total for pagination.
+        """
+        embed = discord.Embed(color=discord.Color.random())
+        embed.set_image(url=post_data["url"])
+        embed.add_field(name="Rating", value=post_data["rating"])
+        
+        if "score" in post_data and post_data["score"] is not None:
+            embed.add_field(name="Score", value=post_data["score"])
+        
+        footer_text = f"Post {index+1}/{total}"
+        if "id" in post_data:
+            footer_text += f" • ID: {post_data['id']}"
+        embed.set_footer(text=footer_text)
+        
+        return embed
     
+    async def _send_post_embed(self, ctx: commands.Context, post_data: dict, index: int, total: int) -> discord.Message:
+        """
+        Sends an embed for the given post data, returning the sent message object.
+        """
+        embed = self._build_embed(post_data, index, total)
+        return await ctx.send(embed=embed)
+    
+    async def _cleanup_reactions(self, message: discord.Message, controls: List[str]):
+        """
+        Removes reaction controls if possible. Permission errors are ignored.
+        """
+        for emoji in controls:
+            try:
+                await message.clear_reaction(emoji)
+            except (discord.Forbidden, discord.HTTPException):
+                pass
+
+
     @commands.group(invoke_without_command=True)
     async def booru(self, ctx: commands.Context, *, tag_string: str = ""):
         """
@@ -270,7 +421,6 @@ class Booru(commands.Cog):
             post = await self._get_post_from_source(
                 "safebooru",
                 tag_string,
-                # Safebooru is always safe, so explicitly pass False for NSFW
                 is_nsfw=False
             )
             
@@ -331,6 +481,5 @@ class Booru(commands.Cog):
             api_keys["gelbooru"]["user_id"] = user_id
         
         await ctx.send("Gelbooru API credentials set.")
-        # Clean up sensitive info if you wish
         await ctx.message.delete()
 
