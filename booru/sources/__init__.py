@@ -9,5 +9,6 @@ __all__ = [
     "GelbooruSource",
     "YandereSource",
     "KonachanSource",
-    "SafebooruSource"
+    "SafebooruSource",
+    "Rule34Source",
 ]
