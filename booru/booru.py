@@ -25,10 +25,11 @@ class Booru(commands.Cog):
         self.session = aiohttp.ClientSession()
         self.config = Config.get_conf(
             self,
-            identifier=1244478273,
+            identifier=127318273,
             force_registration=True
         )
         
+        # Initialize sources
         self.sources = {
             "danbooru": DanbooruSource(self.session),
             "gelbooru": GelbooruSource(self.session),
@@ -37,6 +38,7 @@ class Booru(commands.Cog):
             "safebooru": SafebooruSource(self.session)
         }
         
+        # Default settings
         default_global = {
             "api_keys": {
                 "gelbooru": {
@@ -52,6 +54,7 @@ class Booru(commands.Cog):
         
         self.config.register_global(**default_global)
 
+        # Format command docstrings with prefix
         for name, command in self.__cog_commands__:
             if command.help:
                 command.help = command.help.format(prefix="{prefix}")
@@ -60,12 +63,7 @@ class Booru(commands.Cog):
         if self.session:
             await self.session.close()
             
-    async def _get_post_from_source(
-        self,
-        source_name: str,
-        tag_string: str,
-        is_nsfw: bool = False
-    ) -> Optional[Dict[str, Any]]:
+    async def _get_post_from_source(self, source_name: str, tag_string: str, is_nsfw: bool = False) -> Optional[Dict[str, Any]]:
         """Get a post from a specific source."""
         try:
             source = self.sources.get(source_name)
@@ -102,7 +100,7 @@ class Booru(commands.Cog):
             prefix = prefixes[0] if isinstance(prefixes, list) else prefixes
             return prefix
         except Exception:
-            return "[p]"
+            return "[p]"  # Fallback
     
     @commands.group(invoke_without_command=True)
     async def booru(self, ctx: commands.Context, *, tag_string: str = ""):
@@ -281,7 +279,7 @@ class Booru(commands.Cog):
                 await ctx.send(f"Added tag to blacklist: {tag}")
             else:
                 await ctx.send("Tag already blacklisted.")
-                
+            
     @settings.command(name="unblacklist")
     async def remove_blacklist(self, ctx: commands.Context, *, tag: str):
         """Remove a tag from the blacklist."""
@@ -291,7 +289,7 @@ class Booru(commands.Cog):
                 await ctx.send(f"Removed tag from blacklist: {tag}")
             else:
                 await ctx.send("Tag not found in blacklist.")
-                
+            
     @settings.command(name="listblacklist")
     async def list_blacklist(self, ctx: commands.Context):
         """List all blacklisted tags."""
@@ -300,7 +298,7 @@ class Booru(commands.Cog):
             await ctx.send("\n".join(blacklist))
         else:
             await ctx.send("No tags blacklisted.")
-            
+        
     @settings.command(name="setapi")
     @commands.is_owner()
     async def set_api_key(self, ctx: commands.Context, api_key: str, user_id: str):
@@ -308,6 +306,6 @@ class Booru(commands.Cog):
         async with self.config.api_keys() as api_keys:
             api_keys["gelbooru"]["api_key"] = api_key
             api_keys["gelbooru"]["user_id"] = user_id
-            
+        
         await ctx.send("Gelbooru API credentials set.")
-        await ctx.message.delete()
+        await ctx.message.delete()  # Delete to protect API credentials
