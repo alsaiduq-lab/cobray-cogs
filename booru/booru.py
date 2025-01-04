@@ -200,6 +200,7 @@ class Booru(commands.Cog):
             except (discord.Forbidden, discord.HTTPException):
                 pass
 
+    @commands.guild_only()
     @commands.group(invoke_without_command=True)
     async def booru(self, ctx: commands.Context, *, tag_string: str = ""):
         """
@@ -284,6 +285,7 @@ class Booru(commands.Cog):
             except discord.HTTPException:
                 pass
     
+    @commands.guild_only()
     @commands.group(name="boorus")
     async def source_specific(self, ctx: commands.Context):
         """
@@ -292,6 +294,7 @@ class Booru(commands.Cog):
         """
         pass
     
+    @commands.guild_only()
     @source_specific.command(name="dan")
     async def danbooru_search(self, ctx: commands.Context, *, tag_string: str = ""):
         """Search Danbooru specifically."""
@@ -315,6 +318,7 @@ class Booru(commands.Cog):
             
             await ctx.send(embed=embed)
     
+    @commands.guild_only()
     @source_specific.command(name="gel")
     async def gelbooru_search(self, ctx: commands.Context, *, tag_string: str = ""):
         """Search Gelbooru specifically."""
@@ -338,6 +342,7 @@ class Booru(commands.Cog):
             
             await ctx.send(embed=embed)
     
+    @commands.guild_only()
     @source_specific.command(name="kon")
     async def konachan_search(self, ctx: commands.Context, *, tag_string: str = ""):
         """Search Konachan specifically."""
@@ -361,6 +366,7 @@ class Booru(commands.Cog):
             
             await ctx.send(embed=embed)
     
+    @commands.guild_only()
     @source_specific.command(name="yan")
     async def yandere_search(self, ctx: commands.Context, *, tag_string: str = ""):
         """Search Yande.re specifically."""
@@ -384,6 +390,7 @@ class Booru(commands.Cog):
             
             await ctx.send(embed=embed)
     
+    @commands.guild_only()
     @source_specific.command(name="safe")
     async def safebooru_search(self, ctx: commands.Context, *, tag_string: str = ""):
         """Search Safebooru specifically."""
