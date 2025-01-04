@@ -15,7 +15,8 @@ from .sources import (
     GelbooruSource,
     KonachanSource,
     SafebooruSource,
-    YandereSource
+    YandereSource,
+    Rule34Source
 )
 
 log = logging.getLogger("red.booru")
@@ -40,7 +41,8 @@ class Booru(commands.Cog):
             "gelbooru": GelbooruSource(self.session),
             "konachan": KonachanSource(self.session),
             "yandere": YandereSource(self.session),
-            "safebooru": SafebooruSource(self.session)
+            "safebooru": SafebooruSource(self.session),
+            "rule34": Rule34Source(self.session)
         }
         
         default_global = {
@@ -57,7 +59,8 @@ class Booru(commands.Cog):
                     "gelbooru",
                     "konachan",
                     "yandere",
-                    "safebooru"
+                    "safebooru",
+                    "rule34"
                 ]
             }
         }
@@ -165,8 +168,7 @@ class Booru(commands.Cog):
     @commands.command(name="booru")
     async def booru_paginated(self, ctx: commands.Context, *, tag_string: str = ""):
         """
-        Example command that fetches multiple posts (from the first source in
-        the config's source_order) and allows cycling through them with reactions.
+        Search booru sites for images with pagination support.
         """
         is_nsfw = (
             ctx.channel.is_nsfw()
@@ -174,24 +176,31 @@ class Booru(commands.Cog):
             else False
         )
 
-        # We'll try the first source in the source_order for demonstration:
         source_order = (await self.config.filters())["source_order"]
         if not source_order:
             await ctx.send("No sources configured.")
             return
 
-        # For demonstration, just pick the first source
-        first_source = source_order[0]
+        # Try each source until we get posts
+        posts = []
+        used_source = None
+        
+        for source_name in source_order:
+            try:
+                posts = await self._get_multiple_posts_from_source(
+                    source_name, tag_string, is_nsfw, limit=100
+                )
+                if posts:
+                    used_source = source_name
+                    break
+            except RequestError as e:
+                log.error(f"Error with {source_name}: {e}")
+                continue
 
-        # Grab multiple posts
-        posts = await self._get_multiple_posts_from_source(
-            first_source, tag_string, is_nsfw, limit=100
-        )
         if not posts:
-            await ctx.send(f"No results found on {first_source.title()}.")
+            await ctx.send("No results found in any source.")
             return
         
-        # Start pagination at index 0
         current_index = 0
         message = await self._send_post_embed(ctx, posts[current_index], current_index, len(posts))
 
@@ -199,12 +208,10 @@ class Booru(commands.Cog):
         if len(posts) == 1:
             return
         
-        # Reaction controls
         controls = ["◀️", "❌", "▶️"]
         for emoji in controls:
             await message.add_reaction(emoji)
 
-        # Check function for reaction_add
         def check(reaction: discord.Reaction, user: discord.Member):
             return (
                 user == ctx.author
@@ -216,15 +223,13 @@ class Booru(commands.Cog):
             try:
                 reaction, user = await self.bot.wait_for(
                     "reaction_add",
-                    timeout=60.0,  # 60 seconds to wait for new reaction
+                    timeout=60.0,
                     check=check
                 )
             except TimeoutError:
-                # Time ran out; optionally remove reactions and stop
                 await self._cleanup_reactions(message, controls)
                 break
             
-            # Handle each control
             if str(reaction.emoji) == "◀️":
                 current_index = (current_index - 1) % len(posts)
             elif str(reaction.emoji) == "▶️":
@@ -233,18 +238,15 @@ class Booru(commands.Cog):
                 await self._cleanup_reactions(message, controls)
                 break
             
-            # Edit the message with the new embed
             new_embed = self._build_embed(posts[current_index], current_index, len(posts))
             await message.edit(embed=new_embed)
 
-            # Attempt to remove the user’s reaction (optional)
             try:
                 await message.remove_reaction(reaction.emoji, user)
             except discord.Forbidden:
                 pass
             except discord.HTTPException:
                 pass
-
 
     def _build_embed(self, post_data: dict, index: int, total: int) -> discord.Embed:
         """
