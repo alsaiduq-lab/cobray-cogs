@@ -165,14 +165,50 @@ class Booru(commands.Cog):
         
         return [source.parse_post(p) for p in posts if p]
 
-    @commands.command(name="booru")
-    async def booru_paginated(self, ctx: commands.Context, *, tag_string: str = ""):
+    def _build_embed(self, post_data: dict, index: int, total: int) -> discord.Embed:
         """
-        Search booru sites for images with pagination support.
+        Builds a new embed given post data and the index/total for pagination.
+        """
+        embed = discord.Embed(color=discord.Color.random())
+        embed.set_image(url=post_data["url"])
+        embed.add_field(name="Rating", value=post_data["rating"])
+        
+        if "score" in post_data and post_data["score"] is not None:
+            embed.add_field(name="Score", value=post_data["score"])
+        
+        footer_text = f"Post {index+1}/{total}"
+        if "id" in post_data:
+            footer_text += f" • ID: {post_data['id']}"
+        embed.set_footer(text=footer_text)
+        
+        return embed
+    
+    async def _send_post_embed(self, ctx: commands.Context, post_data: dict, index: int, total: int) -> discord.Message:
+        """
+        Sends an embed for the given post data, returning the sent message object.
+        """
+        embed = self._build_embed(post_data, index, total)
+        return await ctx.send(embed=embed)
+    
+    async def _cleanup_reactions(self, message: discord.Message, controls: List[str]):
+        """
+        Removes reaction controls if possible. Permission errors are ignored.
+        """
+        for emoji in controls:
+            try:
+                await message.clear_reaction(emoji)
+            except (discord.Forbidden, discord.HTTPException):
+                pass
+
+    @commands.group(invoke_without_command=True)
+    async def booru(self, ctx: commands.Context, *, tag_string: str = ""):
+        """
+        Searches booru sites for images using the configured source order.
+        If the channel is marked NSFW, explicit results may appear.
         """
         is_nsfw = (
-            ctx.channel.is_nsfw()
-            if isinstance(ctx.channel, discord.TextChannel)
+            ctx.channel.is_nsfw() 
+            if isinstance(ctx.channel, discord.TextChannel) 
             else False
         )
 
@@ -247,74 +283,6 @@ class Booru(commands.Cog):
                 pass
             except discord.HTTPException:
                 pass
-
-    def _build_embed(self, post_data: dict, index: int, total: int) -> discord.Embed:
-        """
-        Builds a new embed given post data and the index/total for pagination.
-        """
-        embed = discord.Embed(color=discord.Color.random())
-        embed.set_image(url=post_data["url"])
-        embed.add_field(name="Rating", value=post_data["rating"])
-        
-        if "score" in post_data and post_data["score"] is not None:
-            embed.add_field(name="Score", value=post_data["score"])
-        
-        footer_text = f"Post {index+1}/{total}"
-        if "id" in post_data:
-            footer_text += f" • ID: {post_data['id']}"
-        embed.set_footer(text=footer_text)
-        
-        return embed
-    
-    async def _send_post_embed(self, ctx: commands.Context, post_data: dict, index: int, total: int) -> discord.Message:
-        """
-        Sends an embed for the given post data, returning the sent message object.
-        """
-        embed = self._build_embed(post_data, index, total)
-        return await ctx.send(embed=embed)
-    
-    async def _cleanup_reactions(self, message: discord.Message, controls: List[str]):
-        """
-        Removes reaction controls if possible. Permission errors are ignored.
-        """
-        for emoji in controls:
-            try:
-                await message.clear_reaction(emoji)
-            except (discord.Forbidden, discord.HTTPException):
-                pass
-
-
-    @commands.group(invoke_without_command=True)
-    async def booru(self, ctx: commands.Context, *, tag_string: str = ""):
-        """
-        Searches booru sites for images using the configured source order.
-        If the channel is marked NSFW, explicit results may appear.
-        """
-        is_nsfw = (
-            ctx.channel.is_nsfw() 
-            if isinstance(ctx.channel, discord.TextChannel) 
-            else False
-        )
-        
-        async with ctx.typing():
-            source_order = (await self.config.filters())["source_order"]
-            
-            for source_name in source_order:
-                post = await self._get_post_from_source(source_name, tag_string, is_nsfw)
-                if post:
-                    embed = discord.Embed(color=discord.Color.random())
-                    embed.set_image(url=post["url"])
-                    embed.add_field(name="Rating", value=post["rating"])
-                    if post.get("score") is not None:
-                        embed.add_field(name="Score", value=post["score"])
-                    embed.set_footer(
-                        text=f"From {source_name.title()} • ID: {post['id']}"
-                    )
-                    
-                    await ctx.send(embed=embed)
-                    return
-            
-            await ctx.send("No results found in any source.")
     
     @commands.group(name="boorus")
     async def source_specific(self, ctx: commands.Context):
@@ -484,4 +452,3 @@ class Booru(commands.Cog):
         
         await ctx.send("Gelbooru API credentials set.")
         await ctx.message.delete()
-
