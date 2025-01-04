@@ -48,39 +48,48 @@ class Booru(commands.Cog):
             },
             "filters": {
                 "blacklist": [],
-                "source_order": ["danbooru", "gelbooru", "konachan", "yandere", "safebooru"]
+                "source_order": [
+                    "danbooru",
+                    "gelbooru", 
+                    "konachan", 
+                    "yandere", 
+                    "safebooru"
+                ]
             }
         }
         
         self.config.register_global(**default_global)
-
-        # Format command docstrings with prefix
-        for name, command in self.__cog_commands__:
-            if command.help:
-                command.help = command.help.format(prefix="{prefix}")
-    
-    async def cog_unload(self):
-        if self.session:
-            await self.session.close()
+        
+    def cog_unload(self):
+        """Cleanup when cog is unloaded."""
+        self.bot.loop.create_task(self.session.close())
             
-    async def _get_post_from_source(self, source_name: str, tag_string: str, is_nsfw: bool = False) -> Optional[Dict[str, Any]]:
+    async def _get_post_from_source(
+        self,
+        source_name: str,
+        tag_string: str,
+        is_nsfw: bool = False
+    ) -> Optional[Dict[str, Any]]:
         """Get a post from a specific source."""
         try:
             source = self.sources.get(source_name)
             if not source:
                 return None
                 
+            # Get credentials if needed
             credentials = None
             if source_name == "gelbooru":
                 api_keys = (await self.config.api_keys())["gelbooru"]
                 if api_keys["api_key"] and api_keys["user_id"]:
                     credentials = api_keys
                 
+            # Parse tags
             positive_tags, negative_tags = tags.parse_tags(tag_string)
             if not is_nsfw:
                 negative_tags.add("rating:explicit")
                 negative_tags.add("rating:questionable")
                 
+            # Get posts
             tag_list = tags.combine_tags(positive_tags, negative_tags)
             posts = await source.get_posts(tag_list, limit=1, credentials=credentials)
             
@@ -93,15 +102,6 @@ class Booru(commands.Cog):
             log.error(f"Error fetching from {source_name}: {e}")
             return None
             
-    async def get_prefix(self, ctx: commands.Context) -> str:
-        """Get the prefix used in the context."""
-        try:
-            prefixes = await ctx.bot.get_prefix(ctx.message)
-            prefix = prefixes[0] if isinstance(prefixes, list) else prefixes
-            return prefix
-        except Exception:
-            return "[p]"  # Fallback
-    
     @commands.group(invoke_without_command=True)
     async def booru(self, ctx: commands.Context, *, tag_string: str = ""):
         """Search booru sites for images.
@@ -132,22 +132,12 @@ class Booru(commands.Cog):
             
     @commands.group(name="boorus")
     async def source_specific(self, ctx: commands.Context):
-        """Commands for specific booru sources.
-        
-        **Example formats:**
-        `{prefix}boorus dan 1girl`
-        `{prefix}boorus gel 1girl solo`
-        `{prefix}boorus safe 1girl`
-        """
+        """Commands for specific booru sources."""
         pass
         
     @source_specific.command(name="dan")
     async def danbooru_search(self, ctx: commands.Context, *, tag_string: str = ""):
-        """Search Danbooru specifically.
-        
-        **Example:**
-        `{prefix}boorus dan 1girl`
-        """
+        """Search Danbooru specifically."""
         async with ctx.typing():
             post = await self._get_post_from_source(
                 "danbooru",
@@ -268,18 +258,14 @@ class Booru(commands.Cog):
         
     @settings.command(name="blacklist")
     async def add_blacklist(self, ctx: commands.Context, *, tag: str):
-        """Add a tag to the blacklist.
-        
-        **Example:**
-        `{prefix}booruset blacklist nsfw`
-        """
+        """Add a tag to the blacklist."""
         async with self.config.filters.blacklist() as blacklist:
             if tag not in blacklist:
                 blacklist.append(tag)
                 await ctx.send(f"Added tag to blacklist: {tag}")
             else:
                 await ctx.send("Tag already blacklisted.")
-            
+                
     @settings.command(name="unblacklist")
     async def remove_blacklist(self, ctx: commands.Context, *, tag: str):
         """Remove a tag from the blacklist."""
@@ -289,7 +275,7 @@ class Booru(commands.Cog):
                 await ctx.send(f"Removed tag from blacklist: {tag}")
             else:
                 await ctx.send("Tag not found in blacklist.")
-            
+                
     @settings.command(name="listblacklist")
     async def list_blacklist(self, ctx: commands.Context):
         """List all blacklisted tags."""
@@ -298,7 +284,7 @@ class Booru(commands.Cog):
             await ctx.send("\n".join(blacklist))
         else:
             await ctx.send("No tags blacklisted.")
-        
+            
     @settings.command(name="setapi")
     @commands.is_owner()
     async def set_api_key(self, ctx: commands.Context, api_key: str, user_id: str):
@@ -306,6 +292,6 @@ class Booru(commands.Cog):
         async with self.config.api_keys() as api_keys:
             api_keys["gelbooru"]["api_key"] = api_key
             api_keys["gelbooru"]["user_id"] = user_id
-        
+            
         await ctx.send("Gelbooru API credentials set.")
         await ctx.message.delete()  # Delete to protect API credentials
