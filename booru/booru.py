@@ -162,7 +162,7 @@ class Booru(commands.Cog):
         
         return [source.parse_post(p) for p in posts if p]
 
-    @commands.command(name="boorupaginated")
+    @commands.command(name="booru")
     async def booru_paginated(self, ctx: commands.Context, *, tag_string: str = ""):
         """
         Example command that fetches multiple posts (from the first source in
@@ -185,7 +185,7 @@ class Booru(commands.Cog):
 
         # Grab multiple posts
         posts = await self._get_multiple_posts_from_source(
-            first_source, tag_string, is_nsfw, limit=5
+            first_source, tag_string, is_nsfw, limit=100
         )
         if not posts:
             await ctx.send(f"No results found on {first_source.title()}.")
