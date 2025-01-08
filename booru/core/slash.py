@@ -16,30 +16,28 @@ class BooruSlash(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.tag_handler = TagHandler()
-        super().__init__()
 
-        # Initialize the slash command group
-        self.booru_group = app_commands.Group(
-            name="booru", description="Search booru sites for images", guild_only=True
-        )
+    async def cog_load(self) -> None:
+        """Register slash commands when the cog loads"""
+        self.tree_commands = [self.booru_search, self.booru_source_search]
+        for command in self.tree_commands:
+            self.bot.tree.add_command(command)
 
-    def cog_unload(self):
-        """Cleanup when cog is unloaded"""
-        self.booru_group.remove_command("search")
+    async def cog_unload(self) -> None:
+        """Remove slash commands when the cog unloads"""
+        for command in self.tree_commands:
+            self.bot.tree.remove_command(command.name)
 
-    @app_commands.command(name="search")
+    @app_commands.command(name="booru")
+    @app_commands.describe(
+        tags="Tags to search for",
+        source="Optional specific source (danbooru, gelbooru, etc)",
+    )
     @app_commands.guild_only()
     async def booru_search(
         self, interaction: discord.Interaction, tags: str, source: Optional[str] = None
-    ):
-        """
-        Search booru sites for images
-
-        Parameters
-        ----------
-        tags: The tags to search for
-        source: Optional specific source to search (danbooru, gelbooru, etc)
-        """
+    ) -> None:
+        """Search booru sites for images"""
         await interaction.response.defer()
 
         is_nsfw = False
@@ -51,15 +49,6 @@ class BooruSlash(commands.Cog):
             await interaction.followup.send("Booru cog is not loaded.")
             return
 
-        # Process tags
-        positive_tags, negative_tags = self.tag_handler.parse_tags(tags)
-        if not is_nsfw:
-            negative_tags.add("rating:explicit")
-            negative_tags.add("rating:questionable")
-
-        combined_tags = self.tag_handler.combine_tags(positive_tags, negative_tags)
-
-        # Handle specific source search
         if source:
             source = source.lower()
             if source not in booru_cog.sources:
@@ -71,17 +60,13 @@ class BooruSlash(commands.Cog):
                 await interaction.followup.send(f"No results found on {source.title()}")
                 return
 
-            embed = discord.Embed(color=discord.Color.random())
-            embed.set_image(url=post["url"])
-            embed.add_field(name="Rating", value=post["rating"])
-            if post.get("score") is not None:
-                embed.add_field(name="Score", value=post["score"])
-            embed.set_footer(text=f"From {source.title()} • ID: {post['id']}")
+            embed = booru_cog._build_embed(post, 0, 1)
+            footer_text = embed.footer.text
+            embed.set_footer(text=f"{footer_text} • From {source.title()}")
 
             await interaction.followup.send(embed=embed)
             return
 
-        # Search all sources in order
         source_order = (await booru_cog.config.filters())["source_order"]
         if not source_order:
             await interaction.followup.send("No sources configured.")
@@ -115,6 +100,46 @@ class BooruSlash(commands.Cog):
         if len(posts) > 1:
             view = BooruPaginationView(interaction.user, posts, used_source)
             await message.edit(view=view)
+
+    @app_commands.command(name="booru_source")
+    @app_commands.describe(
+        source="Source to search (dan/gel/kon/yan/safe)", tags="Tags to search for"
+    )
+    @app_commands.guild_only()
+    @app_commands.choices(
+        source=[
+            app_commands.Choice(name="Danbooru", value="danbooru"),
+            app_commands.Choice(name="Gelbooru", value="gelbooru"),
+            app_commands.Choice(name="Konachan", value="konachan"),
+            app_commands.Choice(name="Yande.re", value="yandere"),
+            app_commands.Choice(name="Safebooru", value="safebooru"),
+        ]
+    )
+    async def booru_source_search(
+        self, interaction: discord.Interaction, source: str, tags: str
+    ) -> None:
+        """Search a specific booru source"""
+        await interaction.response.defer()
+
+        is_nsfw = False
+        if isinstance(interaction.channel, discord.TextChannel):
+            is_nsfw = interaction.channel.is_nsfw()
+
+        booru_cog = self.bot.get_cog("Booru")
+        if not booru_cog:
+            await interaction.followup.send("Booru cog is not loaded.")
+            return
+
+        post = await booru_cog._get_post_from_source(source, tags, is_nsfw)
+        if not post:
+            await interaction.followup.send(f"No results found on {source.title()}")
+            return
+
+        embed = booru_cog._build_embed(post, 0, 1)
+        footer_text = embed.footer.text
+        embed.set_footer(text=f"{footer_text} • From {source.title()}")
+
+        await interaction.followup.send(embed=embed)
 
 
 class BooruPaginationView(discord.ui.View):
@@ -150,19 +175,12 @@ class BooruPaginationView(discord.ui.View):
 
     async def update_message(self, interaction: discord.Interaction):
         """Update the message with the next/previous post"""
-        embed = discord.Embed(color=discord.Color.random())
         post = self.posts[self.current_index]
 
-        embed.set_image(url=post["url"])
-        embed.add_field(name="Rating", value=post["rating"])
-        if post.get("score") is not None:
-            embed.add_field(name="Score", value=post["score"])
-
-        footer_text = f"Post {self.current_index+1}/{len(self.posts)}"
-        if post.get("id"):
-            footer_text += f" • ID: {post['id']}"
-        footer_text += f" • From {self.source.title()}"
-        embed.set_footer(text=footer_text)
+        booru_cog = interaction.client.get_cog("Booru")
+        embed = booru_cog._build_embed(post, self.current_index, len(self.posts))
+        footer_text = embed.footer.text
+        embed.set_footer(text=f"{footer_text} • From {self.source.title()}")
 
         await interaction.response.edit_message(embed=embed, view=self)
 
