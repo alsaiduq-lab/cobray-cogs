@@ -17,16 +17,15 @@ class BooruSlash(commands.Cog):
         self.tag_handler = TagHandler()
         super().__init__()
 
-    @commands.hybrid_group(name="booru", invoke_without_command=True)
-    @commands.guild_only()
-    async def booru(
-        self, ctx: commands.Context, *, tags: str = "", source: Optional[str] = None
-    ):
-        """Search booru sites for images"""
-        if not ctx.interaction:
-            await ctx.send_help()
-            return
+    @commands.slash_command(name="slash")
+    async def _slash(self, ctx):
+        """Base slash command group"""
+        pass
 
+    @_slash.group(name="booru")
+    @commands.guild_only()
+    async def booru(self, ctx, *, tags: str = "", source: Optional[str] = None):
+        """Search booru sites for images"""
         is_nsfw = False
         if isinstance(ctx.channel, discord.TextChannel):
             is_nsfw = ctx.channel.is_nsfw()
@@ -93,7 +92,7 @@ class BooruSlash(commands.Cog):
 
     @booru.command(name="source")
     @commands.guild_only()
-    async def booru_source(self, ctx: commands.Context, source: str, *, tags: str):
+    async def booru_source(self, ctx, source: str, *, tags: str):
         """Search a specific booru source"""
         is_nsfw = False
         if isinstance(ctx.channel, discord.TextChannel):
