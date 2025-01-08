@@ -1,22 +1,14 @@
 {
-    "name": "Booru",
-    "short": "Search booru sites for anime art",
-    "description": "Search various booru image boards for anime art, with NSFW disabled in non-NSFW channels. May require API keys.",
-    "end_user_data_statement": "This cog does not persistently store any data about users.",
-    "author": [
-        "Cobray"
-    ],
-    "required_cogs": {},
-    "requirements": [
-        "aiohttp"
-    ],
-    "tags": [
-        "anime",
-        "booru",
-        "images"
-    ],
-    "min_bot_version": "3.5.0",
-    "hidden": false,
-    "disabled": false,
-    "type": "COG"
+  "name": "Booru",
+  "short": "Search booru sites for anime art",
+  "description": "Search various booru image boards for anime art, with NSFW disabled in non-NSFW channels. May require API keys.",
+  "end_user_data_statement": "This cog does not persistently store any data about users.",
+  "author": ["Cobray"],
+  "required_cogs": {},
+  "requirements": ["aiohttp"],
+  "tags": ["anime", "booru", "images"],
+  "min_bot_version": "3.5.0",
+  "hidden": false,
+  "disabled": false,
+  "type": "COG"
 }

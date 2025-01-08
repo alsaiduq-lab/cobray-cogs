@@ -1,9 +1,9 @@
 import logging
-from typing import Optional, Dict, List, Any, Union
+from typing import Any, Dict, List, Optional, Union
 from urllib.parse import urlencode
 
 from ..core.abc import BooruSource, PostResult
-from ..core.exceptions import RequestError, PostParseError
+from ..core.exceptions import PostParseError, RequestError
 
 log = logging.getLogger("red.booru.sources.rule34")
 
@@ -19,7 +19,7 @@ class Rule34Source(BooruSource):
         self,
         tags: List[str],
         limit: int = 1,
-        credentials: Optional[Dict[str, str]] = None
+        credentials: Optional[Dict[str, str]] = None,
     ) -> Union[List[Dict[str, Any]], None]:
         """
         Fetch posts from Rule34.xxx. This site uses the basic Gelbooru-like API.
@@ -56,7 +56,7 @@ class Rule34Source(BooruSource):
                 source="rule34",
                 rating=post.get("rating", "unknown"),
                 tags=post.get("tags", "").split(),
-                score=int(post.get("score", 0))
+                score=int(post.get("score", 0)),
             ).to_dict()
         except KeyError as e:
             log.error("Error parsing Rule34 post: %s", e)

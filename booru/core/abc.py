@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
+from typing import Any, Dict, List, Optional, Union
+
 import aiohttp
-from typing import Optional, Dict, List, Any, Union
 
 
 class BooruSource(ABC):
@@ -14,7 +15,7 @@ class BooruSource(ABC):
         self,
         tags: List[str],
         limit: int = 1,
-        credentials: Optional[Dict[str, str]] = None
+        credentials: Optional[Dict[str, str]] = None,
     ) -> Union[List[Dict[str, Any]], None]:
         """Get posts from the booru source."""
         pass
@@ -35,7 +36,7 @@ class PostResult:
         source: str,
         rating: str,
         tags: List[str],
-        score: Optional[int] = None
+        score: Optional[int] = None,
     ):
         self.id = id
         self.url = url
@@ -52,5 +53,5 @@ class PostResult:
             "source": self.source,
             "rating": self.rating,
             "tags": self.tags,
-            "score": self.score
+            "score": self.score,
         }
