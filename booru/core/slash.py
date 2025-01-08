@@ -5,7 +5,7 @@ import discord
 from discord import app_commands
 from discord.ext import commands
 
-from .core.tags import TagHandler
+from .tags import TagHandler
 
 log = logging.getLogger("red.booru.slash")
 
