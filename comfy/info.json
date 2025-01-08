@@ -1,0 +1,10 @@
+{
+  "name": "Comfy",
+  "author": ["Cobray"],
+  "description": "A Red cog that interfaces with ComfyUI's workflow API, allowing optional caching of workflows and simple commands to add or run them.",
+  "short": "ComfyUI Workflow Cog",
+  "tags": ["comfyui", "workflows", "cache"],
+  "install_msg": "Thanks for installing the Comfy Cog! Use `[p]help comfy` for details.",
+  "end_user_data_statement": "This cog does not store personal data beyond user-defined workflow names and definitions.",
+  "requirements": []
+}
