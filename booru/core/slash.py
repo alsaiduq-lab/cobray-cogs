@@ -1,16 +1,16 @@
 import logging
-from typing import List, Optional, Set
+from typing import List, Optional
 
 import discord
 from discord import app_commands
-from discord.ext import commands
+from redbot.core import commands
 
 from .tags import TagHandler
 
 log = logging.getLogger("red.booru.slash")
 
 
-class BooruSlash(commands.GroupCog):
+class BooruSlash(commands.Cog):
     """Slash command implementation of booru search commands"""
 
     def __init__(self, bot):
@@ -18,9 +18,18 @@ class BooruSlash(commands.GroupCog):
         self.tag_handler = TagHandler()
         super().__init__()
 
-    @app_commands.command()
+        # Initialize the slash command group
+        self.booru_group = app_commands.Group(
+            name="booru", description="Search booru sites for images", guild_only=True
+        )
+
+    def cog_unload(self):
+        """Cleanup when cog is unloaded"""
+        self.booru_group.remove_command("search")
+
+    @app_commands.command(name="search")
     @app_commands.guild_only()
-    async def booru(
+    async def booru_search(
         self, interaction: discord.Interaction, tags: str, source: Optional[str] = None
     ):
         """
@@ -42,6 +51,7 @@ class BooruSlash(commands.GroupCog):
             await interaction.followup.send("Booru cog is not loaded.")
             return
 
+        # Process tags
         positive_tags, negative_tags = self.tag_handler.parse_tags(tags)
         if not is_nsfw:
             negative_tags.add("rating:explicit")
@@ -49,6 +59,7 @@ class BooruSlash(commands.GroupCog):
 
         combined_tags = self.tag_handler.combine_tags(positive_tags, negative_tags)
 
+        # Handle specific source search
         if source:
             source = source.lower()
             if source not in booru_cog.sources:
@@ -56,7 +67,6 @@ class BooruSlash(commands.GroupCog):
                 return
 
             post = await booru_cog._get_post_from_source(source, tags, is_nsfw)
-
             if not post:
                 await interaction.followup.send(f"No results found on {source.title()}")
                 return
@@ -71,6 +81,7 @@ class BooruSlash(commands.GroupCog):
             await interaction.followup.send(embed=embed)
             return
 
+        # Search all sources in order
         source_order = (await booru_cog.config.filters())["source_order"]
         if not source_order:
             await interaction.followup.send("No sources configured.")
@@ -97,7 +108,6 @@ class BooruSlash(commands.GroupCog):
 
         current_index = 0
         embed = booru_cog._build_embed(posts[current_index], current_index, len(posts))
-
         footer_text = embed.footer.text
         embed.set_footer(text=f"{footer_text} • From {used_source.title()}")
 
@@ -108,6 +118,8 @@ class BooruSlash(commands.GroupCog):
 
 
 class BooruPaginationView(discord.ui.View):
+    """View for handling pagination of booru search results"""
+
     def __init__(self, author: discord.User, posts: List[dict], source: str):
         super().__init__(timeout=60)
         self.author = author
@@ -116,6 +128,7 @@ class BooruPaginationView(discord.ui.View):
         self.source = source
 
     async def interaction_check(self, interaction: discord.Interaction) -> bool:
+        """Ensure only the command author can use the buttons"""
         return interaction.user.id == self.author.id
 
     @discord.ui.button(label="Previous", style=discord.ButtonStyle.primary, emoji="◀️")
@@ -136,6 +149,7 @@ class BooruPaginationView(discord.ui.View):
         self.stop()
 
     async def update_message(self, interaction: discord.Interaction):
+        """Update the message with the next/previous post"""
         embed = discord.Embed(color=discord.Color.random())
         post = self.posts[self.current_index]
 
@@ -153,6 +167,8 @@ class BooruPaginationView(discord.ui.View):
         await interaction.response.edit_message(embed=embed, view=self)
 
     async def on_timeout(self):
-        message = self.message
-        if message:
-            await message.edit(view=None)
+        """Remove buttons when the view times out"""
+        try:
+            await self.message.edit(view=None)
+        except (discord.NotFound, discord.HTTPException):
+            pass
