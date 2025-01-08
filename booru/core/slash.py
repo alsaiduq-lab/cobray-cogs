@@ -2,6 +2,7 @@ import logging
 from typing import List, Optional
 
 import discord
+from discord import app_commands
 from redbot.core import commands
 
 from .tags import TagHandler
@@ -17,22 +18,42 @@ class BooruSlash(commands.Cog):
         self.tag_handler = TagHandler()
         super().__init__()
 
-    @commands.hybrid_command(name="booru")
-    @commands.guild_only()
-    async def booru(self, ctx, *, query: str = ""):
+        # Add application commands
+        self.booru_app = app_commands.Command(
+            name="booru",
+            description="Search booru sites for images using the configured source order",
+            callback=self.booru,
+        )
+        self.boorus_app = app_commands.Command(
+            name="boorus",
+            description="Search a specific booru source",
+            callback=self.boorus,
+        )
+        bot.tree.add_command(self.booru_app)
+        bot.tree.add_command(self.boorus_app)
+
+    def cog_unload(self):
+        """Clean up when cog is unloaded"""
+        self.bot.tree.remove_command("booru")
+        self.bot.tree.remove_command("boorus")
+
+    @app_commands.guild_only()
+    async def booru(self, interaction: discord.Interaction, query: str = ""):
         """Search booru sites for images using the configured source order"""
         is_nsfw = False
-        if isinstance(ctx.channel, discord.TextChannel):
-            is_nsfw = ctx.channel.is_nsfw()
+        if isinstance(interaction.channel, discord.TextChannel):
+            is_nsfw = interaction.channel.is_nsfw()
+
+        await interaction.response.defer()
 
         booru_cog = self.bot.get_cog("Booru")
         if not booru_cog:
-            await ctx.send("Booru cog is not loaded.")
+            await interaction.followup.send("Booru cog is not loaded.")
             return
 
         source_order = (await booru_cog.config.filters())["source_order"]
         if not source_order:
-            await ctx.send("No sources configured.")
+            await interaction.followup.send("No sources configured.")
             return
 
         posts = []
@@ -51,7 +72,7 @@ class BooruSlash(commands.Cog):
                 continue
 
         if not posts:
-            await ctx.send("No results found in any source.")
+            await interaction.followup.send("No results found in any source.")
             return
 
         current_index = 0
@@ -59,168 +80,44 @@ class BooruSlash(commands.Cog):
         footer_text = embed.footer.text
         embed.set_footer(text=f"{footer_text} • From {used_source.title()}")
 
-        message = await ctx.send(embed=embed)
+        message = await interaction.followup.send(embed=embed)
         if len(posts) > 1:
-            view = BooruPaginationView(ctx.author, posts, used_source)
+            view = BooruPaginationView(interaction.user, posts, used_source)
             await message.edit(view=view)
 
-    @commands.hybrid_group(name="boorus")
-    async def boorus(self, ctx):
-        """Commands to search specific booru sources"""
-        if not ctx.invoked_subcommand:
-            await ctx.send_help()
+    @app_commands.guild_only()
+    async def boorus(
+        self, interaction: discord.Interaction, source: str, query: str = ""
+    ):
+        """Search a specific booru source"""
+        is_nsfw = False
+        if isinstance(interaction.channel, discord.TextChannel):
+            is_nsfw = interaction.channel.is_nsfw()
 
-    @boorus.command(name="dan")
-    @commands.guild_only()
-    async def danbooru_search(self, ctx, *, query: str = ""):
-        """Search Danbooru specifically"""
-        async with ctx.typing():
-            is_nsfw = (
-                ctx.channel.is_nsfw()
-                if isinstance(ctx.channel, discord.TextChannel)
-                else False
+        await interaction.response.defer()
+
+        booru_cog = self.bot.get_cog("Booru")
+        if not booru_cog:
+            await interaction.followup.send("Booru cog is not loaded.")
+            return
+
+        source = source.lower()
+        if source not in booru_cog.sources:
+            await interaction.followup.send(
+                f"Invalid source: {source}. Available sources: {', '.join(booru_cog.sources.keys())}"
             )
+            return
 
-            booru_cog = self.bot.get_cog("Booru")
-            if not booru_cog:
-                await ctx.send("Booru cog is not loaded.")
-                return
+        post = await booru_cog._get_post_from_source(source, query, is_nsfw)
+        if not post:
+            await interaction.followup.send(f"No results found on {source.title()}")
+            return
 
-            post = await booru_cog._get_post_from_source("danbooru", query, is_nsfw)
-            if not post:
-                await ctx.send("No results found on Danbooru.")
-                return
+        embed = booru_cog._build_embed(post, 0, 1)
+        footer_text = embed.footer.text
+        embed.set_footer(text=f"{footer_text} • From {source.title()}")
 
-            embed = booru_cog._build_embed(post, 0, 1)
-            footer_text = embed.footer.text
-            embed.set_footer(text=f"{footer_text} • From Danbooru")
-            await ctx.send(embed=embed)
-
-    @boorus.command(name="gel")
-    @commands.guild_only()
-    async def gelbooru_search(self, ctx, *, query: str = ""):
-        """Search Gelbooru specifically"""
-        async with ctx.typing():
-            is_nsfw = (
-                ctx.channel.is_nsfw()
-                if isinstance(ctx.channel, discord.TextChannel)
-                else False
-            )
-
-            booru_cog = self.bot.get_cog("Booru")
-            if not booru_cog:
-                await ctx.send("Booru cog is not loaded.")
-                return
-
-            post = await booru_cog._get_post_from_source("gelbooru", query, is_nsfw)
-            if not post:
-                await ctx.send("No results found on Gelbooru.")
-                return
-
-            embed = booru_cog._build_embed(post, 0, 1)
-            footer_text = embed.footer.text
-            embed.set_footer(text=f"{footer_text} • From Gelbooru")
-            await ctx.send(embed=embed)
-
-    @boorus.command(name="kon")
-    @commands.guild_only()
-    async def konachan_search(self, ctx, *, query: str = ""):
-        """Search Konachan specifically"""
-        async with ctx.typing():
-            is_nsfw = (
-                ctx.channel.is_nsfw()
-                if isinstance(ctx.channel, discord.TextChannel)
-                else False
-            )
-
-            booru_cog = self.bot.get_cog("Booru")
-            if not booru_cog:
-                await ctx.send("Booru cog is not loaded.")
-                return
-
-            post = await booru_cog._get_post_from_source("konachan", query, is_nsfw)
-            if not post:
-                await ctx.send("No results found on Konachan.")
-                return
-
-            embed = booru_cog._build_embed(post, 0, 1)
-            footer_text = embed.footer.text
-            embed.set_footer(text=f"{footer_text} • From Konachan")
-            await ctx.send(embed=embed)
-
-    @boorus.command(name="yan")
-    @commands.guild_only()
-    async def yandere_search(self, ctx, *, query: str = ""):
-        """Search Yande.re specifically"""
-        async with ctx.typing():
-            is_nsfw = (
-                ctx.channel.is_nsfw()
-                if isinstance(ctx.channel, discord.TextChannel)
-                else False
-            )
-
-            booru_cog = self.bot.get_cog("Booru")
-            if not booru_cog:
-                await ctx.send("Booru cog is not loaded.")
-                return
-
-            post = await booru_cog._get_post_from_source("yandere", query, is_nsfw)
-            if not post:
-                await ctx.send("No results found on Yande.re.")
-                return
-
-            embed = booru_cog._build_embed(post, 0, 1)
-            footer_text = embed.footer.text
-            embed.set_footer(text=f"{footer_text} • From Yande.re")
-            await ctx.send(embed=embed)
-
-    @boorus.command(name="safe")
-    @commands.guild_only()
-    async def safebooru_search(self, ctx, *, query: str = ""):
-        """Search Safebooru specifically"""
-        async with ctx.typing():
-            is_nsfw = False  # Safebooru is always SFW
-
-            booru_cog = self.bot.get_cog("Booru")
-            if not booru_cog:
-                await ctx.send("Booru cog is not loaded.")
-                return
-
-            post = await booru_cog._get_post_from_source("safebooru", query, is_nsfw)
-            if not post:
-                await ctx.send("No results found on Safebooru.")
-                return
-
-            embed = booru_cog._build_embed(post, 0, 1)
-            footer_text = embed.footer.text
-            embed.set_footer(text=f"{footer_text} • From Safebooru")
-            await ctx.send(embed=embed)
-
-    @boorus.command(name="r34")
-    @commands.guild_only()
-    async def r34_search(self, ctx, *, query: str = ""):
-        """Search Rule34 specifically"""
-        async with ctx.typing():
-            is_nsfw = (
-                ctx.channel.is_nsfw()
-                if isinstance(ctx.channel, discord.TextChannel)
-                else False
-            )
-
-            booru_cog = self.bot.get_cog("Booru")
-            if not booru_cog:
-                await ctx.send("Booru cog is not loaded.")
-                return
-
-            post = await booru_cog._get_post_from_source("rule34", query, is_nsfw)
-            if not post:
-                await ctx.send("No results found on Rule34.")
-                return
-
-            embed = booru_cog._build_embed(post, 0, 1)
-            footer_text = embed.footer.text
-            embed.set_footer(text=f"{footer_text} • From Rule34")
-            await ctx.send(embed=embed)
+        await interaction.followup.send(embed=embed)
 
 
 class BooruPaginationView(discord.ui.View):
