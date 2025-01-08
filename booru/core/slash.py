@@ -2,6 +2,7 @@ import logging
 from typing import List, Optional
 
 import discord
+from discord import app_commands
 from redbot.core import commands
 
 from .tags import TagHandler
@@ -17,33 +18,43 @@ class BooruSlash(commands.Cog):
         self.tag_handler = TagHandler()
         super().__init__()
 
-    @commands.slash_command(name="slash")
-    async def _slash(self, ctx):
-        """Base slash command group"""
-        pass
+        self.slash_group = app_commands.Group(
+            name="booru", description="Search booru sites"
+        )
+        self.bot.tree.add_command(self.slash_group)
 
-    @_slash.group(name="booru")
-    @commands.guild_only()
-    async def booru(self, ctx, *, tags: str = "", source: Optional[str] = None):
+    def cog_unload(self):
+        self.bot.tree.remove_command("booru")
+
+    @app_commands.command(name="search")
+    @app_commands.guild_only()
+    async def booru_search(
+        self,
+        interaction: discord.Interaction,
+        tags: str = "",
+        source: Optional[str] = None,
+    ):
         """Search booru sites for images"""
+        await interaction.response.defer()
+
         is_nsfw = False
-        if isinstance(ctx.channel, discord.TextChannel):
-            is_nsfw = ctx.channel.is_nsfw()
+        if isinstance(interaction.channel, discord.TextChannel):
+            is_nsfw = interaction.channel.is_nsfw()
 
         booru_cog = self.bot.get_cog("Booru")
         if not booru_cog:
-            await ctx.send("Booru cog is not loaded.")
+            await interaction.followup.send("Booru cog is not loaded.")
             return
 
         if source:
             source = source.lower()
             if source not in booru_cog.sources:
-                await ctx.send(f"Invalid source: {source}")
+                await interaction.followup.send(f"Invalid source: {source}")
                 return
 
             post = await booru_cog._get_post_from_source(source, tags, is_nsfw)
             if not post:
-                await ctx.send(f"No results found on {source.title()}")
+                await interaction.followup.send(f"No results found on {source.title()}")
                 return
 
             embed = discord.Embed(color=discord.Color.random())
@@ -53,12 +64,12 @@ class BooruSlash(commands.Cog):
                 embed.add_field(name="Score", value=post["score"])
             embed.set_footer(text=f"From {source.title()} • ID: {post['id']}")
 
-            await ctx.send(embed=embed)
+            await interaction.followup.send(embed=embed)
             return
 
         source_order = (await booru_cog.config.filters())["source_order"]
         if not source_order:
-            await ctx.send("No sources configured.")
+            await interaction.followup.send("No sources configured.")
             return
 
         posts = []
@@ -77,7 +88,7 @@ class BooruSlash(commands.Cog):
                 continue
 
         if not posts:
-            await ctx.send("No results found in any source.")
+            await interaction.followup.send("No results found in any source.")
             return
 
         current_index = 0
@@ -85,39 +96,47 @@ class BooruSlash(commands.Cog):
         footer_text = embed.footer.text
         embed.set_footer(text=f"{footer_text} • From {used_source.title()}")
 
-        message = await ctx.send(embed=embed)
+        message = await interaction.followup.send(embed=embed)
         if len(posts) > 1:
-            view = BooruPaginationView(ctx.author, posts, used_source)
+            view = BooruPaginationView(interaction.user, posts, used_source)
             await message.edit(view=view)
 
-    @booru.command(name="source")
-    @commands.guild_only()
-    async def booru_source(self, ctx, source: str, *, tags: str):
+    @app_commands.command(name="source")
+    @app_commands.guild_only()
+    @app_commands.rename(source_name="source")
+    @app_commands.describe(
+        source_name="The booru source to search", tags="Tags to search for"
+    )
+    async def booru_source(
+        self, interaction: discord.Interaction, source_name: str, tags: str
+    ):
         """Search a specific booru source"""
+        await interaction.response.defer()
+
         is_nsfw = False
-        if isinstance(ctx.channel, discord.TextChannel):
-            is_nsfw = ctx.channel.is_nsfw()
+        if isinstance(interaction.channel, discord.TextChannel):
+            is_nsfw = interaction.channel.is_nsfw()
 
         booru_cog = self.bot.get_cog("Booru")
         if not booru_cog:
-            await ctx.send("Booru cog is not loaded.")
+            await interaction.followup.send("Booru cog is not loaded.")
             return
 
-        source = source.lower()
+        source = source_name.lower()
         if source not in booru_cog.sources:
-            await ctx.send(f"Invalid source: {source}")
+            await interaction.followup.send(f"Invalid source: {source}")
             return
 
         post = await booru_cog._get_post_from_source(source, tags, is_nsfw)
         if not post:
-            await ctx.send(f"No results found on {source.title()}")
+            await interaction.followup.send(f"No results found on {source.title()}")
             return
 
         embed = booru_cog._build_embed(post, 0, 1)
         footer_text = embed.footer.text
         embed.set_footer(text=f"{footer_text} • From {source.title()}")
 
-        await ctx.send(embed=embed)
+        await interaction.followup.send(embed=embed)
 
 
 class BooruPaginationView(discord.ui.View):
@@ -161,10 +180,3 @@ class BooruPaginationView(discord.ui.View):
         embed.set_footer(text=f"{footer_text} • From {self.source.title()}")
 
         await interaction.response.edit_message(embed=embed, view=self)
-
-    async def on_timeout(self):
-        """Remove buttons when the view times out"""
-        try:
-            await self.message.edit(view=None)
-        except (discord.NotFound, discord.HTTPException):
-            pass
