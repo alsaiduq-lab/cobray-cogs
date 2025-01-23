@@ -136,6 +136,22 @@ class DLM(commands.Cog):
             embed.set_footer(text=f"Rarity: {card['rarity']}")
 
         return embed
+    
+    def format_error_message(self, error_type: str, context: str = None) -> str:
+        """Format user-friendly error messages."""
+        messages = {
+            "not_found": "I couldn't find that {}. Please check your spelling and try again.",
+            "rate_limit": "This request is rate-limited. Please try again in {} seconds.",
+            "network": "There was a problem connecting to DuelLinksMeta. Please try again in a few minutes.",
+            "api": "There was an issue with the API. Please try again later."
+        }
+        return messages.get(error_type, "An unexpected error occurred.").format(context if context else "")
+
+    @staticmethod
+    def format_cooldown(seconds: float) -> str:
+        """Format cooldown time in a user-friendly way."""
+        return f"{round(seconds)} seconds"
+
 
     # Main Command Groups
     @commands.group(name="dlm")
@@ -144,12 +160,52 @@ class DLM(commands.Cog):
         if ctx.invoked_subcommand is None:
             await ctx.send_help(ctx.command)
 
-    @dlm.group(name="search")
-    async def search_group(self, ctx):
-        """Search commands."""
-        if ctx.invoked_subcommand is None:
-            await ctx.send_help(ctx.command)
+    @card_group.command(name="search")
+    @commands.cooldown(1, 30, commands.BucketType.user)
+    async def search_cards(self, ctx, *, query: str):
+        """Search for cards by name."""
+        if not query:
+            await ctx.send("Please provide a card name to search for.")
+            return
 
+        try:
+            async with ctx.typing():
+                # Try exact search first
+                params = {
+                    "q": query.lower(),  # Convert to lowercase for case-insensitive search
+                    "limit": 10
+                }
+                results = await self._api_request("cards/search", params)
+                
+                # If no results, try fuzzy search
+                if not results:
+                    params = {"limit": 200}
+                    cards = await self._api_request("cards", params)
+                    results = await self._fuzzy_search(query, cards, key="name", threshold=0.5)  # Lower threshold for more results
+                
+                if not results:
+                    suggestion_msg = ""
+                    if len(query) > 3:
+                        # Add search suggestions
+                        similar_cards = await self._api_request("cards/search", {"q": query[:3], "limit": 3})
+                        if similar_cards:
+                            suggestions = [card["name"] for card in similar_cards]
+                            suggestion_msg = f"\n\nDid you mean one of these?\n" + "\n".join(f"• {name}" for name in suggestions)
+                    
+                    await ctx.send(f"No cards found matching '{query}'.{suggestion_msg}")
+                    return
+
+                embeds = [self.format_card_embed(card) for card in results[:5]]
+                if len(embeds) == 1:
+                    await ctx.send(embed=embeds[0])
+                else:
+                    await menu(ctx, embeds, DEFAULT_CONTROLS)
+
+        except DLMAPIError as e:
+            error_msg = self.format_error_message("api")
+            if "not found" in str(e).lower():
+                error_msg = self.format_error_message("not_found", "card")
+            await ctx.send(error_msg)
     @dlm.group(name="decks")
     async def decks_group(self, ctx):
         """Deck-related commands."""
@@ -504,10 +560,26 @@ class DLM(commands.Cog):
         """List cards available in a specific box."""
         try:
             async with ctx.typing():
+                # Normalize box name
+                box_name = box_name.strip().lower()
+
+                # First try exact match
                 params = {"box": box_name}
                 cards = await self._api_request("cards/box", params)
+
+                # If no results, try fuzzy search for box names
                 if not cards:
-                    return await ctx.send("No cards found for that box, or box not found.")
+                    boxes = await self._api_request("boxes", {"limit": 50})
+                    similar_boxes = self._fuzzy_search(box_name, boxes, key="name", threshold=0.6)
+                    if similar_boxes:
+                        suggestions = [box["name"] for box in similar_boxes[:3]]
+                        suggestion_msg = "\n\nDid you mean one of these boxes?\n" + "\n".join(f"• {name}" for name in suggestions)
+                        await ctx.send(f"Box '{box_name}' not found.{suggestion_msg}")
+                        return
+                    else:
+                        await ctx.send(f"No box found matching '{box_name}'.")
+                        return
+
                 embed = discord.Embed(
                     title=f"Cards in {box_name}",
                     color=discord.Color.blue()
@@ -518,6 +590,7 @@ class DLM(commands.Cog):
                     if rarity not in cards_by_rarity:
                         cards_by_rarity[rarity] = []
                     cards_by_rarity[rarity].append(card["name"])
+
                 for rarity, card_list in sorted(cards_by_rarity.items()):
                     card_names = ", ".join(sorted(card_list))
                     if len(card_names) > 1024:
@@ -529,7 +602,10 @@ class DLM(commands.Cog):
                     )
                 await ctx.send(embed=embed)
         except DLMAPIError as e:
-            await ctx.send(f"Error fetching box information: {str(e)}")
+            error_msg = self.format_error_message("api")
+            if "not found" in str(e).lower():
+                error_msg = self.format_error_message("not_found", "box")
+            await ctx.send(error_msg)
 
     # Game Info Commands
     @dlm.command(name="tier")
@@ -600,8 +676,13 @@ class DLM(commands.Cog):
     @commands.Cog.listener()
     async def on_command_error(self, ctx, error):
         if isinstance(error, commands.CommandOnCooldown):
-            await ctx.send(f"This command is on cooldown. Try again in {error.retry_after:.1f} seconds.")
+            await ctx.send(f"This command is on cooldown. Try again in {self.format_cooldown(error.retry_after)}.")
         elif isinstance(error, commands.MissingPermissions):
             await ctx.send("You don't have permission to use this command.")
-
+        elif isinstance(error, commands.MissingRequiredArgument):
+            await ctx.send(f"Missing required argument: {error.param.name}")
+        elif isinstance(error, commands.BadArgument):
+            await ctx.send("Invalid argument provided. Please check the command help for correct usage.")
+        else:
+            await ctx.send("An error occurred while processing your command. Please try again later.")
 
