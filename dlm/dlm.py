@@ -76,19 +76,25 @@ class DLM(commands.Cog):
             raise DLMAPIError(f"Network error: {str(e)}")
 
     async def _fuzzy_search(self, query: str, items: List[Dict], key: str = "title", threshold: float = 0.6) -> List[Dict]:
+        """Perform fuzzy search on a list of items."""
         from difflib import SequenceMatcher
+        
         def similarity(a: str, b: str) -> float:
             return SequenceMatcher(None, a.lower(), b.lower()).ratio()
+        
         results = []
         query = query.lower()
         log.debug(f"Performing fuzzy search for '{query}' with threshold {threshold}")
+        
         for item in items:
-            if key not in item:
+            if not isinstance(item, dict) or key not in item:
                 continue
-            score = similarity(query, item[key])
+            item_value = str(item[key])  # Ensure string comparison
+            score = similarity(query, item_value)
             if score >= threshold:
                 item['_score'] = score
                 results.append(item)
+        
         log.debug(f"Fuzzy search found {len(results)} results")
         return sorted(results, key=lambda x: x['_score'], reverse=True)
 
@@ -464,8 +470,8 @@ class DLM(commands.Cog):
     async def card_search(self, ctx, *, query: str = None):
         """Search for cards by name with detailed information."""
         log.debug(f"Starting card search with query: {query}")
+        
         if not query:
-            log.debug("No initial query provided, prompting user")
             prompt_msg = await ctx.send("Please enter the name of the card you want to look up:")
             try:
                 response = await self.bot.wait_for(
@@ -481,76 +487,65 @@ class DLM(commands.Cog):
 
         try:
             async with ctx.typing():
-                params = {"name": query}
-                log.debug(f"Attempting exact match with params: {params}")
                 try:
-                    card = await self._api_request(f"cards/detail", params)
+                    card = await self._api_request(f"cards/detail", {"name": query})
                     log.debug("Found exact card match")
+                    return await ctx.send(embed=self.format_card_embed(card))
                 except DLMNotFoundError:
-                    log.debug("No exact match found")
-                    card = None
-            
-                if not card:
-                    params = {"q": query.lower(), "limit": 5}
-                    log.debug(f"Attempting search with params: {params}")
-                    try:
-                        results = await self._api_request("cards/search", params)
+                    log.debug("No exact match found, trying search")
+                
+                try:
+                    results = await self._api_request("cards/search", {
+                        "q": query.lower(),
+                        "limit": 5
+                    })
+                    if results:
                         log.debug(f"Search found {len(results)} results")
-                    except DLMNotFoundError:
-                        log.debug("Search found no results")
-                        results = []
-                
-                    if not results:
-                        params = {"limit": 200}
-                        log.debug("Attempting fuzzy search")
-                        cards = await self._api_request("cards", params)
-                        results = self._fuzzy_search(query, cards, key="name", threshold=0.6)
-                        log.debug(f"Fuzzy search found {len(results)} results")
-                
-                    if not results:
-                        suggestion_msg = ""
-                        if len(query) > 3:
-                            log.debug("Attempting to find similar cards for suggestions")
-                            try:
-                                similar_cards = await self._api_request("cards/search", {"q": query[:3], "limit": 3})
-                                if similar_cards:
-                                    suggestions = [card["name"] for card in similar_cards]
-                                    suggestion_msg = f"\n\nDid you mean one of these?\n" + "\n".join(f"• {name}" for name in suggestions)
-                                    log.debug(f"Found {len(suggestions)} card suggestions")
-                            except DLMAPIError:
-                                log.debug("Failed to get card suggestions")
-                                pass
-                
-                        return await ctx.send(f"No cards found matching '{query}'.{suggestion_msg}")
-
-                    if len(results) > 1:
-                        log.debug("Multiple results found, presenting choice to user")
-                        options = "\n".join(f"{idx+1}. {card['name']}" for idx, card in enumerate(results[:5]))
-                        choice_msg = await ctx.send(f"Multiple cards found. Please choose one by number:\n{options}")
-                    
-                        try:
-                            response = await self.bot.wait_for(
-                                'message',
-                                timeout=30.0,
-                                check=lambda m: (
-                                    m.author == ctx.author and 
-                                    m.channel == ctx.channel and 
-                                    m.content.isdigit() and 
-                                    1 <= int(m.content) <= len(results)
-                                )
-                            )
-                            card = results[int(response.content) - 1]
-                            log.debug(f"User selected card: {card.get('name')}")
-                        except asyncio.TimeoutError:
-                            log.debug("Card selection timed out")
-                            return await choice_msg.edit(content="Selection timed out. Please try again.")
                     else:
-                        card = results[0]
-                        log.debug(f"Using single result: {card.get('name')}")
+                        raise DLMNotFoundError
+                except DLMNotFoundError:
+                    log.debug("No search results, attempting fuzzy search")
+                    cards = await self._api_request("cards", {"limit": 200})
+                    results = self._fuzzy_search(query, cards, key="name", threshold=0.6)
+                
+                if not results:
+                    suggestion_msg = ""
+                    if len(query) > 3:
+                        try:
+                            similar_cards = await self._api_request(
+                                "cards/search",
+                                {"q": query[:3], "limit": 3}
+                            )
+                            if similar_cards:
+                                suggestions = [card["name"] for card in similar_cards]
+                                suggestion_msg = "\n\nDid you mean one of these?\n" + "\n".join(f"• {name}" for name in suggestions)
+                        except DLMAPIError:
+                            pass
+                    
+                    return await ctx.send(f"No cards found matching '{query}'.{suggestion_msg}")
 
-                embed = self.format_card_embed(card)
-                log.debug("Sending card embed")
-                await ctx.send(embed=embed)
+                if len(results) > 1:
+                    options = "\n".join(f"{idx+1}. {card['name']}" for idx, card in enumerate(results[:5]))
+                    choice_msg = await ctx.send(f"Multiple cards found. Please choose one by number:\n{options}")
+                    
+                    try:
+                        response = await self.bot.wait_for(
+                            'message',
+                            timeout=30.0,
+                            check=lambda m: (
+                                m.author == ctx.author and 
+                                m.channel == ctx.channel and 
+                                m.content.isdigit() and 
+                                1 <= int(m.content) <= len(results)
+                            )
+                        )
+                        card = results[int(response.content) - 1]
+                    except asyncio.TimeoutError:
+                        return await choice_msg.edit(content="Selection timed out. Please try again.")
+                else:
+                    card = results[0]
+
+                await ctx.send(embed=self.format_card_embed(card))
 
         except DLMAPIError as e:
             log.error(f"API error during card search: {str(e)}")
@@ -560,6 +555,7 @@ class DLM(commands.Cog):
             elif isinstance(e, DLMRateLimitError):
                 error_msg = self.format_error_message("rate_limit", str(e))
             await ctx.send(error_msg)
+
 
     @card_group.command(name="random")
     @commands.cooldown(1, 30, commands.BucketType.user)
