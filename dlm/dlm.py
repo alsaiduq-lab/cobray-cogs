@@ -1,6 +1,7 @@
 from typing import Optional, Dict, Any, List
 import discord
 import aiohttp
+import asyncio
 from datetime import datetime
 from redbot.core import commands, Config
 from redbot.core.utils.menus import menu, DEFAULT_CONTROLS
@@ -225,39 +226,7 @@ class DLM(commands.Cog):
         except DLMAPIError as e:
             await ctx.send(f"Error fetching articles: {str(e)}")
 
-    @search_group.command(name="decks")
-    @commands.cooldown(1, 30, commands.BucketType.user)
-    async def search_decks(self, ctx, *, query: str):
-        try:
-            async with ctx.typing():
-                params = {"limit": 50}
-                decks = await self._api_request("top-decks", params)
-                results = self._fuzzy_search(query, decks, key="name")
-                if not results:
-                    return await ctx.send("No decks found matching your search.")
-                embeds = []
-                for deck in results[:5]:
-                    embed = discord.Embed(
-                        title=deck.get("name", "Unnamed Deck"),
-                        url=f"https://www.duellinksmeta.com/top-decks/{deck.get('id')}",
-                        color=discord.Color.blue()
-                    )
-                    if "author" in deck:
-                        embed.add_field(name="Author", value=deck["author"], inline=True)
-                    if "price" in deck:
-                        embed.add_field(name="Price", value=f"{deck['price']:,} gems", inline=True)
-                    if "skillName" in deck:
-                        embed.add_field(name="Skill", value=deck["skillName"], inline=True)
-                    match_score = round(deck.get('_score', 0) * 100)
-                    embed.set_footer(text=f"Match Score: {match_score}%")
-                    embeds.append(embed)
-                if len(embeds) == 1:
-                    await ctx.send(embed=embeds[0])
-                else:
-                    await menu(ctx, embeds, DEFAULT_CONTROLS)
-        except DLMAPIError as e:
-            await ctx.send(f"Error searching decks: {str(e)}")
-
+    
     @decks_group.command(name="skill")
     @commands.cooldown(1, 30, commands.BucketType.user)
     async def decks_by_skill(self, ctx, *, skill_name: str):
@@ -432,77 +401,87 @@ class DLM(commands.Cog):
 
     @card_group.command(name="search")
     @commands.cooldown(1, 30, commands.BucketType.user)
-    async def search_cards(self, ctx, *, query: str):
-        """Search for cards by name."""
+    async def card_search(self, ctx, *, query: str = None):
+        """Search for cards by name with detailed information."""
         if not query:
-            await ctx.send("Please provide a card name to search for.")
-            return
+            prompt_msg = await ctx.send("Please enter the name of the card you want to look up:")
+            try:
+                response = await self.bot.wait_for(
+                    'message',
+                    timeout=30.0,
+                    check=lambda m: m.author == ctx.author and m.channel == ctx.channel
+                )
+                query = response.content
+            except asyncio.TimeoutError:
+                return await prompt_msg.edit(content="Search timed out. Please try again.")
 
         try:
             async with ctx.typing():
-                params = {
-                    "q": query.lower(),
-                    "limit": 10
-                }
-                results = await self._api_request("cards/search", params)
+                # Try exact match first
+                params = {"name": query}
+                try:
+                    card = await self._api_request(f"cards/detail", params)
+                except DLMNotFoundError:
+                    card = None
+            
+                if not card:
+                    # If no exact match, try search
+                    params = {"q": query.lower(), "limit": 5}
+                    try:
+                        results = await self._api_request("cards/search", params)
+                    except DLMNotFoundError:
+                    results = []
                 
-                if not results:
-                    params = {"limit": 200}
-                    cards = await self._api_request("cards", params)
-                    results = await self._fuzzy_search(query, cards, key="name", threshold=0.5)
+                    if not results:
+                        # If still no results, try fuzzy search
+                        params = {"limit": 200}
+                        cards = await self._api_request("cards", params)
+                        results = self._fuzzy_search(query, cards, key="name", threshold=0.6)
                 
-                if not results:
-                    suggestion_msg = ""
-                    if len(query) > 3:
-                        similar_cards = await self._api_request("cards/search", {"q": query[:3], "limit": 3})
-                        if similar_cards:
-                            suggestions = [card["name"] for card in similar_cards]
-                            suggestion_msg = f"\n\nDid you mean one of these?\n" + "\n".join(f"• {name}" for name in suggestions)
-                    
-                    await ctx.send(f"No cards found matching '{query}'.{suggestion_msg}")
-                    return
+                    if not results:
+                        suggestion_msg = ""
+                        if len(query) > 3:
+                            try:
+                                similar_cards = await self._api_request("cards/search", {"q": query[:3], "limit": 3})
+                                if similar_cards:
+                                    suggestions = [card["name"] for card in similar_cards]
+                                    suggestion_msg = f"\n\nDid you mean one of these?\n" + "\n".join(f"• {name}" for name in suggestions)
+                            except DLMAPIError:
+                                pass
+                
+                        return await ctx.send(f"No cards found matching '{query}'.{suggestion_msg}")
 
-                embeds = [self.format_card_embed(card) for card in results[:5]]
-                if len(embeds) == 1:
-                    await ctx.send(embed=embeds[0])
-                else:
-                    await menu(ctx, embeds, DEFAULT_CONTROLS)
+                    if len(results) > 1:
+                        options = "\n".join(f"{idx+1}. {card['name']}" for idx, card in enumerate(results[:5]))
+                        choice_msg = await ctx.send(f"Multiple cards found. Please choose one by number:\n{options}")
+                    
+                        try:
+                            response = await self.bot.wait_for(
+                                'message',
+                                timeout=30.0,
+                                check=lambda m: (
+                                    m.author == ctx.author and 
+                                    m.channel == ctx.channel and 
+                                    m.content.isdigit() and 
+                                    1 <= int(m.content) <= len(results)
+                                )
+                            )
+                            card = results[int(response.content) - 1]
+                        except asyncio.TimeoutError:
+                            return await choice_msg.edit(content="Selection timed out. Please try again.")
+                    else:
+                        card = results[0]
+
+                embed = self.format_card_embed(card)
+                await ctx.send(embed=embed)
 
         except DLMAPIError as e:
             error_msg = self.format_error_message("api")
-            if "not found" in str(e).lower():
+            if isinstance(e, DLMNotFoundError):
                 error_msg = self.format_error_message("not_found", "card")
+            elif isinstance(e, DLMRateLimitError):
+                error_msg = self.format_error_message("rate_limit", str(e))
             await ctx.send(error_msg)
-
-    @card_group.command(name="detail")
-    @commands.cooldown(1, 30, commands.BucketType.user)
-    async def card_detail(self, ctx, *, card_name: str):
-        """Get detailed information about a specific card."""
-        try:
-            async with ctx.typing():
-                params = {"name": card_name}
-                card = await self._api_request(f"cards/detail", params)
-                if not card:
-                    results = await self.search_cards(ctx, query=card_name)
-                    if not results or not results[0].get('_score', 0) > 0.8:
-                        return await ctx.send("Could not find a matching card. Please try a more specific name.")
-                    card = results[0]
-                embed = self.format_card_embed(card)
-                if "releaseDate" in card:
-                    embed.add_field(
-                        name="Release Date",
-                        value=datetime.fromisoformat(card["releaseDate"].replace("Z", "+00:00")).strftime("%Y-%m-%d"),
-                        inline=True
-                    )
-                if "banStatus" in card:
-                    embed.add_field(
-                        name="Ban Status",
-                        value=card["banStatus"].title(),
-                        inline=True
-                    )
-                await ctx.send(embed=embed)
-        except DLMAPIError as e:
-            await ctx.send(f"Error fetching card details: {str(e)}")
 
     @card_group.command(name="random")
     @commands.cooldown(1, 30, commands.BucketType.user)
@@ -644,4 +623,5 @@ class DLM(commands.Cog):
             await ctx.send("Invalid argument provided. Please check the command help for correct usage.")
         else:
             await ctx.send("An error occurred while processing your command. Please try again later.")
+
 
