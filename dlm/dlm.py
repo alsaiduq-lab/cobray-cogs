@@ -430,7 +430,7 @@ class DLM(commands.Cog):
                     try:
                         results = await self._api_request("cards/search", params)
                     except DLMNotFoundError:
-                    results = []
+                        results = []
                 
                     if not results:
                         # If still no results, try fuzzy search
