@@ -134,3 +134,4 @@ xauth/certs/
 
 .vscode/
 .idea/  # PyCharm configuration (commented out earlier, but added here for completeness)
+.lnvim/
