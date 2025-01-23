@@ -153,38 +153,32 @@ class DLM(commands.Cog):
     @commands.group(name="dlm")
     async def dlm(self, ctx):
         """DuelLinksMeta commands."""
-        if ctx.invoked_subcommand is None:
-            await ctx.send_help(ctx.command)
+        pass
 
     @dlm.group(name="search")
     async def search_group(self, ctx):
         """Search commands."""
-        if ctx.invoked_subcommand is None:
-            await ctx.send_help(ctx.command)
+        pass
 
     @dlm.group(name="card")
     async def card_group(self, ctx):
         """Card database commands."""
-        if ctx.invoked_subcommand is None:
-            await ctx.send_help(ctx.command)
+        pass
 
     @dlm.group(name="decks")
     async def decks_group(self, ctx):
         """Deck-related commands."""
-        if ctx.invoked_subcommand is None:
-            await ctx.send_help(ctx.command)
+        pass
 
     @dlm.group(name="tournament")
     async def tournament_group(self, ctx):
         """Tournament related commands."""
-        if ctx.invoked_subcommand is None:
-            await ctx.send_help(ctx.command)
+        pass
 
     @dlm.group(name="meta")
     async def meta_group(self, ctx):
         """Meta analysis commands."""
-        if ctx.invoked_subcommand is None:
-            await ctx.send_help(ctx.command)
+        pass
 
     @search_group.command(name="articles")
     @commands.cooldown(1, 30, commands.BucketType.user)
