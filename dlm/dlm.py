@@ -37,7 +37,6 @@ class DLM(commands.Cog):
         }
         self.config.register_guild(**default_guild)
 
-    # Lifecycle Methods
     async def cog_load(self) -> None:
         self.session = aiohttp.ClientSession()
 
@@ -45,7 +44,6 @@ class DLM(commands.Cog):
         if self.session:
             await self.session.close()
 
-    # Helper Methods
     async def _api_request(self, endpoint: str, params: Dict = None) -> Dict[str, Any]:
         cache_key = f"{endpoint}:{str(params)}"
         cached_data = self.cache.get(cache_key)
@@ -152,60 +150,24 @@ class DLM(commands.Cog):
         """Format cooldown time in a user-friendly way."""
         return f"{round(seconds)} seconds"
 
-
-    # Main Command Groups
     @commands.group(name="dlm")
     async def dlm(self, ctx):
         """DuelLinksMeta commands."""
         if ctx.invoked_subcommand is None:
             await ctx.send_help(ctx.command)
 
-    @card_group.command(name="search")
-    @commands.cooldown(1, 30, commands.BucketType.user)
-    async def search_cards(self, ctx, *, query: str):
-        """Search for cards by name."""
-        if not query:
-            await ctx.send("Please provide a card name to search for.")
-            return
+    @dlm.group(name="search")
+    async def search_group(self, ctx):
+        """Search commands."""
+        if ctx.invoked_subcommand is None:
+            await ctx.send_help(ctx.command)
 
-        try:
-            async with ctx.typing():
-                # Try exact search first
-                params = {
-                    "q": query.lower(),  # Convert to lowercase for case-insensitive search
-                    "limit": 10
-                }
-                results = await self._api_request("cards/search", params)
-                
-                # If no results, try fuzzy search
-                if not results:
-                    params = {"limit": 200}
-                    cards = await self._api_request("cards", params)
-                    results = await self._fuzzy_search(query, cards, key="name", threshold=0.5)  # Lower threshold for more results
-                
-                if not results:
-                    suggestion_msg = ""
-                    if len(query) > 3:
-                        # Add search suggestions
-                        similar_cards = await self._api_request("cards/search", {"q": query[:3], "limit": 3})
-                        if similar_cards:
-                            suggestions = [card["name"] for card in similar_cards]
-                            suggestion_msg = f"\n\nDid you mean one of these?\n" + "\n".join(f"• {name}" for name in suggestions)
-                    
-                    await ctx.send(f"No cards found matching '{query}'.{suggestion_msg}")
-                    return
+    @dlm.group(name="card")
+    async def card_group(self, ctx):
+        """Card database commands."""
+        if ctx.invoked_subcommand is None:
+            await ctx.send_help(ctx.command)
 
-                embeds = [self.format_card_embed(card) for card in results[:5]]
-                if len(embeds) == 1:
-                    await ctx.send(embed=embeds[0])
-                else:
-                    await menu(ctx, embeds, DEFAULT_CONTROLS)
-
-        except DLMAPIError as e:
-            error_msg = self.format_error_message("api")
-            if "not found" in str(e).lower():
-                error_msg = self.format_error_message("not_found", "card")
-            await ctx.send(error_msg)
     @dlm.group(name="decks")
     async def decks_group(self, ctx):
         """Deck-related commands."""
@@ -224,13 +186,6 @@ class DLM(commands.Cog):
         if ctx.invoked_subcommand is None:
             await ctx.send_help(ctx.command)
 
-    @dlm.group(name="card")
-    async def card_group(self, ctx):
-        """Card database commands."""
-        if ctx.invoked_subcommand is None:
-            await ctx.send_help(ctx.command)
-
-    # Article Commands
     @search_group.command(name="articles")
     @commands.cooldown(1, 30, commands.BucketType.user)
     async def search_articles(self, ctx, *, query: str):
@@ -276,7 +231,6 @@ class DLM(commands.Cog):
         except DLMAPIError as e:
             await ctx.send(f"Error fetching articles: {str(e)}")
 
-    # Deck Commands
     @search_group.command(name="decks")
     @commands.cooldown(1, 30, commands.BucketType.user)
     async def search_decks(self, ctx, *, query: str):
@@ -404,7 +358,6 @@ class DLM(commands.Cog):
         except DLMAPIError as e:
             await ctx.send(f"Error fetching decks: {str(e)}")
 
-    # Tournament Commands
     @tournament_group.command(name="recent")
     @commands.cooldown(1, 60, commands.BucketType.user)
     async def recent_tournaments(self, ctx, limit: int = 5):
@@ -454,7 +407,6 @@ class DLM(commands.Cog):
         except DLMAPIError as e:
             await ctx.send(f"Error fetching tournament data: {str(e)}")
 
-    # Meta Analysis Commands
     @meta_group.command(name="skills")
     @commands.cooldown(1, 60, commands.BucketType.user)
     async def top_skills(self, ctx):
@@ -484,31 +436,49 @@ class DLM(commands.Cog):
         except DLMAPIError as e:
             await ctx.send(f"Error analyzing meta data: {str(e)}")
 
-    # Card Database Commands
     @card_group.command(name="search")
     @commands.cooldown(1, 30, commands.BucketType.user)
     async def search_cards(self, ctx, *, query: str):
         """Search for cards by name."""
+        if not query:
+            await ctx.send("Please provide a card name to search for.")
+            return
+
         try:
             async with ctx.typing():
                 params = {
-                    "q": query,
+                    "q": query.lower(),
                     "limit": 10
                 }
                 results = await self._api_request("cards/search", params)
+                
                 if not results:
                     params = {"limit": 200}
                     cards = await self._api_request("cards", params)
-                    results = await self._fuzzy_search(query, cards, key="name")
+                    results = await self._fuzzy_search(query, cards, key="name", threshold=0.5)
+                
                 if not results:
-                    return await ctx.send("No cards found matching your search.")
+                    suggestion_msg = ""
+                    if len(query) > 3:
+                        similar_cards = await self._api_request("cards/search", {"q": query[:3], "limit": 3})
+                        if similar_cards:
+                            suggestions = [card["name"] for card in similar_cards]
+                            suggestion_msg = f"\n\nDid you mean one of these?\n" + "\n".join(f"• {name}" for name in suggestions)
+                    
+                    await ctx.send(f"No cards found matching '{query}'.{suggestion_msg}")
+                    return
+
                 embeds = [self.format_card_embed(card) for card in results[:5]]
                 if len(embeds) == 1:
                     await ctx.send(embed=embeds[0])
                 else:
                     await menu(ctx, embeds, DEFAULT_CONTROLS)
+
         except DLMAPIError as e:
-            await ctx.send(f"Error searching cards: {str(e)}")
+            error_msg = self.format_error_message("api")
+            if "not found" in str(e).lower():
+                error_msg = self.format_error_message("not_found", "card")
+            await ctx.send(error_msg)
 
     @card_group.command(name="detail")
     @commands.cooldown(1, 30, commands.BucketType.user)
@@ -560,17 +530,15 @@ class DLM(commands.Cog):
         """List cards available in a specific box."""
         try:
             async with ctx.typing():
-                # Normalize box name
                 box_name = box_name.strip().lower()
-
-                # First try exact match
+                
                 params = {"box": box_name}
                 cards = await self._api_request("cards/box", params)
-
-                # If no results, try fuzzy search for box names
+                
                 if not cards:
                     boxes = await self._api_request("boxes", {"limit": 50})
                     similar_boxes = self._fuzzy_search(box_name, boxes, key="name", threshold=0.6)
+                    
                     if similar_boxes:
                         suggestions = [box["name"] for box in similar_boxes[:3]]
                         suggestion_msg = "\n\nDid you mean one of these boxes?\n" + "\n".join(f"• {name}" for name in suggestions)
@@ -607,7 +575,6 @@ class DLM(commands.Cog):
                 error_msg = self.format_error_message("not_found", "box")
             await ctx.send(error_msg)
 
-    # Game Info Commands
     @dlm.command(name="tier")
     @commands.cooldown(1, 60, commands.BucketType.user)
     async def tier_list(self, ctx):
@@ -664,7 +631,6 @@ class DLM(commands.Cog):
         except DLMAPIError as e:
             await ctx.send(f"Error fetching events: {str(e)}")
 
-    # Admin Commands
     @dlm.command(name="cache")
     @commands.is_owner()
     async def clear_cache(self, ctx):
@@ -672,7 +638,6 @@ class DLM(commands.Cog):
         self.cache.clear()
         await ctx.send("Cache cleared successfully!")
 
-    # Error Handling
     @commands.Cog.listener()
     async def on_command_error(self, ctx, error):
         if isinstance(error, commands.CommandOnCooldown):
