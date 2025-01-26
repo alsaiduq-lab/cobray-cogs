@@ -100,12 +100,17 @@ class CardRegistry:
 
     async def _update_sets(self):
         """Update set data."""
-        dl_sets = await self.dlm_api.get_all_sets()
-        md_sets = await self.mdm_api.get_all_sets()
-        self._sets.clear()
-        for set_data in [*EXTRA_SETS, *dl_sets, *md_sets]:
-            self._sets[set_data.id] = set_data
-        log.info(f"Updated {len(self._sets)} sets")
+        try:
+            dl_sets = await self.dlm_api.get_all_sets() or []
+            md_sets = await self.mdm_api.get_all_sets() or []
+            self._sets.clear()
+            for set_data in [*EXTRA_SETS, *dl_sets, *md_sets]:
+                if set_data and 'id' in set_data:
+                    self._sets[set_data['id']] = set_data
+            log.info(f"Updated {len(self._sets)} sets")
+        except Exception as e:
+            log.error(f"Error updating sets: {str(e)}")
+            raise
 
     async def _update_cards(self):
         """Update card data."""
