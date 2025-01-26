@@ -5,7 +5,7 @@ import math
 import asyncio
 import json
 from typing import Dict, Any, Optional, List
-from ..models import Card, CardSet
+from .models import Card, CardSet
 
 log = logging.getLogger("red.dlm.api")
 
