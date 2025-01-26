@@ -21,6 +21,8 @@ class InteractionHandler:
         self.config = user_config
         self.builder = CardBuilder()
         self.bonk = BonkAPI()
+        
+        self.bot.listen('on_message')(self.handle_card_mentions)
 
     async def initialize(self):
         """Initialize components."""
@@ -63,7 +65,6 @@ class InteractionHandler:
             await interaction.response.defer()
 
             try:
-                # Get card
                 cards = self.registry.get_card(name)
                 if not cards:
                     await interaction.followup.send(
@@ -74,7 +75,6 @@ class InteractionHandler:
 
                 card = cards[0]
 
-                # Handle format selection
                 if card.type == "skill":
                     format = "sd"
                 elif format:
@@ -82,7 +82,6 @@ class InteractionHandler:
                 else:
                     format = await self.config.get_user_format(interaction.user.id)
 
-                # Build and send embed
                 embed = await self.builder.build_card_embed(card, format)
                 await interaction.followup.send(embed=embed)
 
@@ -110,7 +109,6 @@ class InteractionHandler:
             name: str, 
             ocg: bool = False
         ):
-            # Handle OCG art access check
             if ocg and not await self.bonk.is_valid_user(interaction.user.id):
                 embed = self.builder.build_ocg_reminder_embed(interaction.user.id)
                 await interaction.response.send_message(
@@ -122,7 +120,6 @@ class InteractionHandler:
             await interaction.response.defer()
 
             try:
-                # Get card
                 cards = self.registry.get_card(name)
                 if not cards:
                     await interaction.followup.send(
@@ -134,7 +131,6 @@ class InteractionHandler:
                 card = cards[0]
                 card.ocg = ocg
 
-                # Get image URL and build embed
                 success, url = await self.builder.get_card_image(card.id, ocg)
                 if not success:
                     await interaction.followup.send(
@@ -158,12 +154,11 @@ class InteractionHandler:
     def _parse_command(self) -> app_commands.Command:
         """Create the card parsing command."""
         @app_commands.command(
-            name="Embed cards",
+            name="parse",
             description="Parse card names from message"
         )
         async def parse(interaction: discord.Interaction, message: discord.Message):
             card_names = CardParser.extract_card_names(message.content)
-            
             if not card_names:
                 await interaction.response.send_message(
                     "No card names found. Did you forget to use angle brackets, like this: `<card name>`?",
@@ -174,7 +169,6 @@ class InteractionHandler:
             await interaction.response.defer()
 
             try:
-                # Get cards (up to 10 due to embed limits)
                 cards = []
                 for name in card_names[:10]:
                     if found := self.registry.get_card(name):
@@ -186,13 +180,10 @@ class InteractionHandler:
                         ephemeral=True
                     )
                     return
-
-                # Build embeds and send
                 embeds = [
                     await self.builder.build_card_embed(card) 
                     for card in cards
                 ]
-                
                 await message.reply(embeds=embeds)
                 await interaction.delete_original_response()
 
@@ -213,9 +204,31 @@ class InteractionHandler:
         """Handle card name autocomplete."""
         if not current:
             return []
-            
         cards = self.registry.search_cards(current)
         return [
             Choice(name=card.name, value=card.id)
             for card in cards[:25]  # Discord limit
         ]
+    async def handle_card_mentions(self, message: discord.Message):
+        """Handle card mentions in messages."""
+        if message.author.bot:
+            return
+        card_names = CardParser.extract_card_names(message.content)
+        if not card_names:
+            return
+
+        try:
+            cards = []
+            for name in card_names[:10]:
+                if found := self.registry.get_card(name):
+                    cards.append(found[0])
+
+            if cards:
+                embeds = [
+                    await self.builder.build_card_embed(card) 
+                    for card in cards
+                ]
+                await message.reply(embeds=embeds)
+
+        except Exception as e:
+            log.error(f"Error handling card mentions: {str(e)}", exc_info=True)

@@ -78,7 +78,6 @@ class DLM(commands.Cog):
     @commands.Cog.listener()
     async def on_message(self, message: discord.Message):
         """Handle card mentions in messages."""
-        # Ignore bot messages
         if message.author.bot:
             return
         await self._ready.wait()

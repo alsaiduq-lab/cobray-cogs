@@ -11,14 +11,13 @@ from .api import DLMApi, MDMApi, YGOProApi
 log = logging.getLogger("red.dlm.registry")
 
 class CardRegistry:
-    """Card registry for managing card data and searches."""
     def __init__(self):
         self.dlm_api = DLMApi()
         self.mdm_api = MDMApi()
         self.ygopro_api = YGOProApi()
-        self._cards: Dict[str, Card] = {}  # id -> Card
-        self._sets: Dict[str, CardSet] = {}  # id -> Set
-        self._index: Dict[str, SetType[str]] = {}  # token(not monster tokens lmao) -> set(card_ids)
+        self._cards: Dict[str, Card] = {}
+        self._sets: Dict[str, CardSet] = {}
+        self._index: Dict[str, SetType[str]] = {}
         self._last_update: Optional[datetime] = None
         self._update_lock = asyncio.Lock()
         self._initialized = False
@@ -27,25 +26,31 @@ class CardRegistry:
         self._generate_index_for_cards(EXTRA_CARDS + ALTERNATE_SEARCH_NAMES)
 
     async def initialize(self):
-        """Initialize the registry and APIs."""
         if self._initialized:
             return
 
-        await asyncio.gather(
-            self.dlm_api.initialize(),
-            self.mdm_api.initialize(),
-            self.ygopro_api.initialize()
-        )
-        self._initialized = True
-        await self.update_registry()
+        try:
+           await asyncio.gather(
+                self.dlm_api.initialize(),
+                self.mdm_api.initialize(),
+                self.ygopro_api.initialize()
+            )
+            self._initialized = True
+            await self.update_registry()
+        except Exception as e:
+            log.error(f"Failed to initialize registry: {str(e)}")
+            raise
 
     async def close(self):
-        """Clean up resources."""
-        await asyncio.gather(
-            self.dlm_api.close(),
-            self.mdm_api.close(),
-            self.ygopro_api.close()
-        )
+        try:
+            await asyncio.gather(
+                self.dlm_api.close(),
+                self.mdm_api.close(),
+                self.ygopro_api.close(),
+                return_exceptions=True
+            )
+        except Exception as e:
+            log.error(f"Error during cleanup: {str(e)}")
 
     def get_card_by_id(self, card_id: str) -> Optional[Card]:
         """Get a card by its ID."""
@@ -199,3 +204,4 @@ class CardRegistry:
         if len(text) < 3:
             return []
         return [text[i:i+3] for i in range(len(text)-2)]
+
