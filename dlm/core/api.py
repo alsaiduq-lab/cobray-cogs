@@ -130,9 +130,11 @@ class DLMApi(BaseGameAPI):
 class MDMApi(BaseGameAPI):
     def __init__(self):
         super().__init__("https://www.masterduelmeta.com/api/v1")
-        
     def _get_set_link(self, url_path: Optional[str]) -> Optional[str]:
         if not url_path:
             return None
-        base = "https://www.masterduelmeta.com/articles"
         return f"{base}{url_path}"
+
+class YGOApi(BaseGameAPI):
+    def __init__(self):
+        super().__init__("https://db.ygoprodeck.com/api/v7")_

@@ -12,19 +12,13 @@ log = logging.getLogger("red.dlm.registry")
 
 class CardRegistry:
     """Card registry for managing card data and searches."""
-    
     def __init__(self):
-        # API clients
         self.dlm_api = DLMApi()
         self.mdm_api = MDMApi()
         self.ygopro_api = YGOProAPI()
-        
-        # Storage (simulating ETS tables)
         self._cards: Dict[str, Card] = {}  # id -> Card
         self._sets: Dict[str, CardSet] = {}  # id -> Set
-        self._index: Dict[str, SetType[str]] = {}  # token -> set(card_ids)
-        
-        # State tracking
+        self._index: Dict[str, SetType[str]] = {}  # token(not monster tokens lmao) -> set(card_ids)
         self._last_update: Optional[datetime] = None
         self._update_lock = asyncio.Lock()
         self._initialized = False
@@ -39,7 +33,6 @@ class CardRegistry:
             self.mdm_api.initialize(),
             self.ygopro_api.initialize()
         )
-        
         self._initialized = True
         await self.update_registry()
 
@@ -74,22 +67,18 @@ class CardRegistry:
 
         normalized = self._normalize_string(query)
         tokens = [normalized] + self._tokenize_string(normalized)
-        
-        # Get all card IDs that match any token
         card_ids_with_freq = defaultdict(int)
         for token in tokens:
             if token in self._index:
                 for card_id in self._index[token]:
                     card_ids_with_freq[card_id] += 1
 
-        # Sort by frequency (most matches first)
         sorted_ids = sorted(
             card_ids_with_freq.items(), 
             key=lambda x: x[1], 
             reverse=True
         )
 
-        # Return found cards
         return [
             self._cards[card_id] 
             for card_id, _ in sorted_ids 
@@ -103,78 +92,56 @@ class CardRegistry:
                 await self._update_sets()
                 await self._update_cards()
                 await self._generate_index()
-                
                 self._last_update = datetime.now()
                 log.info("Registry updated successfully")
-                
             except Exception as e:
                 log.error(f"Error updating registry: {str(e)}", exc_info=True)
                 raise
 
     async def _update_sets(self):
         """Update set data."""
-        # Get sets from both APIs
         dl_sets = await self.dlm_api.get_all_sets()
         md_sets = await self.mdm_api.get_all_sets()
-        
-        # Update storage
         self._sets.clear()
         for set_data in [*EXTRA_SETS, *dl_sets, *md_sets]:
             self._sets[set_data.id] = set_data
-        
         log.info(f"Updated {len(self._sets)} sets")
 
     async def _update_cards(self):
         """Update card data."""
-        # Get base card data
         ygopro_cards = await self.ygopro_api.get_all_cards()
-        
-        # Get format-specific data
         dl_cards_raw = await self.dlm_api.get_all_cards_raw()
         md_cards_raw = await self.mdm_api.get_all_cards_raw()
-        
-        # Update base cards with format data
         updated_cards = []
         for card in ygopro_cards:
-            # Update MD data
             if str(card.id) in md_cards_raw:
                 md_data = md_cards_raw[str(card.id)]
                 card.status_md = self.mdm_api.STATUS_MAPPING.get(md_data.get("banStatus"))
                 card.rarity_md = self.mdm_api.RARITY_MAPPING.get(md_data.get("rarity"))
                 card.sets_md = [src["source"]["_id"] for src in md_data.get("obtain", [])]
-            
-            # Update DL data
             if str(card.id) in dl_cards_raw:
                 dl_data = dl_cards_raw[str(card.id)]
                 card.status_dl = self.dlm_api.STATUS_MAPPING.get(dl_data.get("banStatus"))
                 card.rarity_dl = self.dlm_api.RARITY_MAPPING.get(dl_data.get("rarity"))
                 card.sets_dl = [src["source"]["_id"] for src in dl_data.get("obtain", [])]
-            
             updated_cards.append(card)
 
-        # Update storage
         self._cards.clear()
         for card in [*EXTRA_CARDS, *updated_cards]:
             self._cards[card.id] = card
-        
         log.info(f"Updated {len(self._cards)} cards")
 
     async def _generate_index(self):
         """Generate search index from cards."""
         self._index.clear()
-        
-        # Include main cards and alternate names
         all_cards = [*self.get_cards(), *ALTERNATE_SEARCH_NAMES]
-        
         for card in all_cards:
             name = self._normalize_string(card.name)
             tokens = [name] + self._tokenize_string(name)
-            
             for token in tokens:
                 if token not in self._index:
                     self._index[token] = set()
                 self._index[token].add(card.id)
-        
         log.info(f"Generated index with {len(self._index)} tokens")
 
     @staticmethod
