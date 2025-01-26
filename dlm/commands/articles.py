@@ -2,6 +2,8 @@ from redbot.core import commands
 from redbot.core.utils.menus import menu, DEFAULT_CONTROLS
 import discord
 import logging
+from typing import List
+from datetime import datetime
 from ..core.api import DLMApi, DLMAPIError
 from ..utils.embeds import format_article_embed
 from ..utils.fsearch import fuzzy_search
@@ -13,70 +15,57 @@ class ArticleCommands(commands.Cog):
         self.bot = bot
         self.api = api
 
-    @commands.group(name="search", invoke_without_command=True)
+    @commands.command(name="articles")
     @commands.cooldown(1, 30, commands.BucketType.user)
-    async def search_group(self, ctx):
-        """Search commands. When used without a subcommand, shows recent articles."""
-        try:
-            async with ctx.typing():
-                params = {
-                    "limit": 10,
-                    "fields": "-markdown",
-                    "sort": "-date"
-                }
-                articles = await self.api.request("articles", params)
-                if not articles:
-                    return await ctx.send("No articles found.")
-
-                embeds = [format_article_embed(article) for article in articles]
-                await menu(ctx, embeds, DEFAULT_CONTROLS)
-        except DLMAPIError as e:
-            await ctx.send(f"Error fetching articles: {str(e)}")
-
-    @search_group.command(name="articles")
-    @commands.cooldown(1, 30, commands.BucketType.user)
-    async def search_articles(self, ctx, *, query: str):
-        try:
-            async with ctx.typing():
-                params = {"q": query, "limit": 10}
-                results = await self.api.request("articles/search", params)
-                if not results:
-                    params = {"limit": 50, "fields": "title,description,url,date"}
+    async def articles(self, ctx, *, query: str = None):
+        """List articles, optionally filtered by search query."""
+        async with ctx.typing():
+            try:
+                if query:
+                    params = {"q": query, "limit": 10}
+                    articles = await self.api.request("articles/search", params)
+                    if not articles:
+                        return await ctx.send(f"No articles found matching: {query}")
+                else:
+                    params = {
+                        "limit": 10,
+                        "fields": "title,description,date,url,image,category,authors",
+                        "sort": "-date"
+                    }
                     articles = await self.api.request("articles", params)
-                    results = fuzzy_search(query, articles)
-                if not results:
-                    return await ctx.send("No articles found matching your search.")
+                    if not articles:
+                        return await ctx.send("No articles available.")
 
-                embeds = [format_article_embed(article) for article in results[:5]]
-                if len(embeds) == 1:
-                    await ctx.send(embed=embeds[0])
+                embeds = []
+                for article in articles[:5]:
+                    try:
+                        embed = discord.Embed(
+                            title=article.get("title", "No Title"),
+                            url=f"https://www.duellinksmeta.com{article.get('url', '')}",
+                            description=article.get("description", "No description available."),
+                            color=discord.Color.blue(),
+                            timestamp=datetime.fromisoformat(article["date"].replace("Z", "+00:00"))
+                        )
+                        authors = article.get("authors", [])
+                        if authors:
+                            author_names = ", ".join(author["username"] for author in authors)
+                            embed.add_field(name="Authors", value=author_names, inline=False)
+                        if "category" in article:
+                            embed.add_field(name="Category", value=article["category"].title(), inline=True)
+                        if "image" in article and article["image"]:
+                            embed.set_thumbnail(url=f"https://www.duellinksmeta.com{article['image']}")
+                        embeds.append(embed)
+                    except Exception as e:
+                        log.error(f"Error formatting article embed: {str(e)}")
+
+                if embeds:
+                    if len(embeds) == 1:
+                        await ctx.send(embed=embeds[0])
+                    else:
+                        await menu(ctx, embeds, DEFAULT_CONTROLS)
                 else:
-                    await menu(ctx, embeds, DEFAULT_CONTROLS)
-        except DLMAPIError as e:
-            await ctx.send(f"Error searching articles: {str(e)}")
+                    await ctx.send("No articles could be formatted for display.")
 
-    @commands.command(name="latest")
-    @commands.cooldown(1, 30, commands.BucketType.user)
-    async def latest_articles(self, ctx, limit: int = 5):
-        try:
-            if limit > 10:
-                limit = 10
-                await ctx.send("Limiting results to 10 articles maximum.")
-            async with ctx.typing():
-                params = {
-                    "limit": limit,
-                    "fields": "-markdown",
-                    "sort": "-featured,-date"
-                }
-                articles = await self.api.request("articles", params)
-                if not articles:
-                    return await ctx.send("No articles found.")
-
-                embeds = [format_article_embed(article) for article in articles]
-                if len(embeds) == 1:
-                    await ctx.send(embed=embeds[0])
-                else:
-                    await menu(ctx, embeds, DEFAULT_CONTROLS)
-        except DLMAPIError as e:
-            await ctx.send(f"Error fetching articles: {str(e)}")
-
+            except DLMAPIError as e:
+                log.error(f"Error fetching articles: {str(e)}")
+                await ctx.send("Error fetching articles. Please try again later.")
