@@ -1,6 +1,7 @@
 import logging
 import asyncio
 import re
+import random
 from collections import defaultdict
 from datetime import datetime
 from typing import Dict, List, Optional, Set as SetType
@@ -31,7 +32,6 @@ class CardRegistry:
         self._update_lock = asyncio.Lock()
         self._initialized = False
 
-        # Preload any extra “hard-coded” cards.
         for card in EXTRA_CARDS:
             self._cards[card.id] = card
 
@@ -129,7 +129,6 @@ class CardRegistry:
             # Master Duel data:
             try:
                 md_data = await self.mdm_api.get_card_details(card_id)
-                # If md_data is a list, use first element (check length to be safe).
                 if isinstance(md_data, list) and md_data:
                     md_data = md_data[0]
                 if md_data and isinstance(md_data, dict):
@@ -149,7 +148,6 @@ class CardRegistry:
             # Duel Links data:
             try:
                 dl_data = await self.dlm_api.get_card_details(card_id)
-                # If dl_data is a list, use first element (check length to be safe).
                 if isinstance(dl_data, list) and dl_data:
                     dl_data = dl_data[0]
                 if dl_data and isinstance(dl_data, dict):
@@ -188,7 +186,6 @@ class CardRegistry:
                 for card_id in self._index[token]:
                     card_ids_with_freq[card_id] += 1
 
-        # Sort by descending frequency
         sorted_ids = sorted(
             card_ids_with_freq.items(),
             key=lambda x: x[1],
@@ -197,14 +194,22 @@ class CardRegistry:
 
         return [self._cards[cid] for cid, _ in sorted_ids if cid in self._cards]
 
-    async def update_registry(self) -> None:
-        """
-        Update the entire registry (sets, then timestamp) within a lock.
-        """
+        async def update_registry(self) -> bool:
+        """Update the registry, respecting rate limits."""
         async with self._update_lock:
-            await self._update_sets()
-            self._last_update = datetime.now()
-            log.info("Registry updated successfully")
+            try:
+                await self._update_sets()
+                changed = False
+                for card_id in list(self._cards.keys()):
+                    card_changed = await self._update_card_status(card_id)
+                    changed = changed or card_changed
+                    await asyncio.sleep(random.uniform(0.5, 2)) 
+
+                self._last_update = datetime.now()
+                return changed
+            except Exception as e:
+                log.error(f"Error updating registry: {str(e)}")
+                raise
 
     async def _update_sets(self) -> None:
         """
@@ -217,7 +222,6 @@ class CardRegistry:
 
             # Duel Links sets
             try:
-                # If get_sets doesn't exist in your DLMApi, skip or rename accordingly.
                 if hasattr(self.dlm_api, "get_sets"):
                     dl_sets = await self.dlm_api.get_sets()
                 else:
@@ -227,7 +231,6 @@ class CardRegistry:
 
             # Master Duel sets
             try:
-                # If get_sets doesn't exist in your MDMApi, skip or rename accordingly.
                 if hasattr(self.mdm_api, "get_sets"):
                     md_sets = await self.mdm_api.get_sets()
                 else:
@@ -235,7 +238,6 @@ class CardRegistry:
             except Exception as e:
                 log.error(f"Error fetching MD sets: {str(e)}")
 
-            # Combine with hard-coded extra sets
             for set_data in [*EXTRA_SETS, *dl_sets, *md_sets]:
                 if isinstance(set_data, CardSet):
                     self._sets[set_data.id] = set_data
@@ -256,6 +258,79 @@ class CardRegistry:
                 if token not in self._index:
                     self._index[token] = set()
                 self._index[token].add(card.id)
+    async def _update_card_status(self, card_id: str) -> bool:
+        """Update format-specific data for a single card."""
+        try:
+            if card_id not in self._cards:
+                card_data = await self.ygopro_api.get_card_info(card_id)
+                if not card_data:
+                    return False
+                self._cards[card_id] = card_data
+
+            card = self._cards[card_id]
+            changed = False
+
+            # Master Duel data
+            try:
+                md_data = await self.mdm_api.get_card_details(card_id)
+                if isinstance(md_data, list) and md_data:
+                    md_data = md_data[0]
+                if md_data and isinstance(md_data, dict):
+                    old_status = card.status_md
+                    old_rarity = card.rarity_md
+                    old_sets = card.sets_md
+
+                    card.status_md = self.mdm_api.STATUS_MAPPING.get(
+                        md_data.get("banStatus")
+                    )
+                    card.rarity_md = self.mdm_api.RARITY_MAPPING.get(
+                        md_data.get("rarity")
+                    )
+                    if "obtain" in md_data:
+                        card.sets_md = [
+                            src["source"]["_id"] for src in md_data["obtain"]
+                        ]
+
+                    if (old_status != card.status_md or 
+                        old_rarity != card.rarity_md or 
+                        old_sets != card.sets_md):
+                        changed = True
+            except Exception as e:
+                log.debug(f"Error updating MD data for {card_id}: {str(e)}")
+
+            # Duel Links data
+            try:
+                dl_data = await self.dlm_api.get_card_details(card_id)
+                if isinstance(dl_data, list) and dl_data:
+                    dl_data = dl_data[0]
+                if dl_data and isinstance(dl_data, dict):
+                    old_status = card.status_dl
+                    old_rarity = card.rarity_dl
+                    old_sets = card.sets_dl
+
+                    card.status_dl = self.dlm_api.STATUS_MAPPING.get(
+                        dl_data.get("banStatus")
+                    )
+                    card.rarity_dl = self.dlm_api.RARITY_MAPPING.get(
+                        dl_data.get("rarity")
+                    )
+                    if "obtain" in dl_data:
+                        card.sets_dl = [
+                            src["source"]["_id"] for src in dl_data["obtain"]
+                        ]
+
+                    if (old_status != card.status_dl or 
+                        old_rarity != card.rarity_dl or 
+                        old_sets != card.sets_dl):
+                        changed = True
+            except Exception as e:
+                log.debug(f"Error updating DL data for {card_id}: {str(e)}")
+
+            return changed
+
+        except Exception as e:
+            log.error(f"Error updating card {card_id}: {str(e)}")
+            return False
 
     @staticmethod
     def _normalize_string(text: str) -> str:
