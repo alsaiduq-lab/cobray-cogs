@@ -39,7 +39,6 @@ class InteractionHandler:
         return [
             self._card_command(),
             self._art_command(),
-            self._parse_command()
         ]
 
     def _card_command(self) -> app_commands.Command:
@@ -150,51 +149,6 @@ class InteractionHandler:
                 )
 
         return art
-
-    def _parse_command(self) -> app_commands.Command:
-        """Create the card parsing command."""
-        @app_commands.command(
-            name="parse",
-            description="Parse card names from message"
-        )
-        async def parse(interaction: discord.Interaction, message: discord.Message):
-            card_names = CardParser.extract_card_names(message.content)
-            if not card_names:
-                await interaction.response.send_message(
-                    "No card names found. Did you forget to use angle brackets, like this: `<card name>`?",
-                    ephemeral=True
-                )
-                return
-
-            await interaction.response.defer()
-
-            try:
-                cards = []
-                for name in card_names[:10]:
-                    if found := self.registry.get_card(name):
-                        cards.append(found[0])
-
-                if not cards:
-                    await interaction.followup.send(
-                        "Cards not found... :pensive:",
-                        ephemeral=True
-                    )
-                    return
-                embeds = [
-                    await self.builder.build_card_embed(card) 
-                    for card in cards
-                ]
-                await message.reply(embeds=embeds)
-                await interaction.delete_original_response()
-
-            except Exception as e:
-                log.error(f"Error handling parse command: {str(e)}", exc_info=True)
-                await interaction.followup.send(
-                    "Something went wrong... :pensive:",
-                    ephemeral=True
-                )
-
-        return parse
 
     async def autocomplete_card(
         self, 
