@@ -1,7 +1,9 @@
 import aiohttp
+from aiohttp import ContentTypeError
 import logging
 import math
 import asyncio
+import json
 from typing import Dict, Any, Optional, List
 
 log = logging.getLogger("red.dlm.api")
@@ -51,6 +53,7 @@ class BaseGameAPI:
             await self.session.close()
 
     async def _make_request(self, url: str) -> Any:
+        """Make a request to the API and handle different response types."""
         async with self.rate_limit:
             try:
                 async with self.session.get(url, timeout=30) as resp:
@@ -58,7 +61,18 @@ class BaseGameAPI:
                         raise DLMNotFoundError(f"Resource not found: {url}")
                     if resp.status != 200:
                         raise DLMAPIError(f"API request failed with status {resp.status}: {url}")
-                    return await resp.json()
+                    try:
+                        return await resp.json()
+                    except ContentTypeError:
+                        text = await resp.text()
+                        if text.isdigit():
+                            return text
+                        try:
+                            import json
+                            return json.loads(text)
+                        except json.JSONDecodeError:
+                            raise DLMAPIError(f"Invalid response format: {text[:100]}")
+
             except asyncio.TimeoutError:
                 raise DLMTimeoutError(f"Request timed out: {url}")
             except aiohttp.ClientError as e:
