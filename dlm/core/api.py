@@ -110,26 +110,45 @@ class BaseGameAPI:
         return int(result)
 
     async def get_all_sets(self) -> List[Dict[str, Any]]:
-        sets_per_page = 3000
-        total_sets = await self.get_sets_amount()
-        pages = math.ceil(total_sets / sets_per_page)
+        """Get all sets data."""
+        try:
+            sets_per_page = 3000
+            total_sets = await self.get_sets_amount()
+            pages = math.ceil(total_sets / sets_per_page)
 
-        all_sets = []
-        for page in range(1, pages + 1):
-            url = f"{self.BASE_URL}/sets?limit={sets_per_page}&page={page}"
-            sets = await self._make_request(url)
-            all_sets.extend(sets)
+            all_sets = []
+            for page in range(1, pages + 1):
+                url = f"{self.BASE_URL}/sets?limit={sets_per_page}&page={page}"
+                sets = await self._make_request(url)
+                if sets:
+                    all_sets.extend(sets)
 
-        return [self._cast_set(set_data) for set_data in all_sets]
+            return [
+                set_data for set_data in (self._cast_set(set_data) for set_data in all_sets)
+                if set_data is not None
+            ]
+        except Exception as e:
+            log.error(f"Error getting all sets: {str(e)}")
+            return []
 
     def _cast_set(self, resp: Dict[str, Any]) -> Dict[str, Any]:
-        return {
-            "id": resp["_id"],
-            "name": resp["name"],
-            "type": resp["type"],
-            "url": self._get_set_link(resp.get("linkedArticle", {}).get("url")),
-            "image_url": f"https://s3.duellinksmeta.com{resp['bannerImage']}"
-        }
+        """Convert API response to set format with safe access."""
+        if not resp:
+            return None
+            
+        try:
+            return {
+                "id": resp.get("_id", "unknown"),
+                "name": resp.get("name", "Unknown Set"),
+                "type": resp.get("type", "unknown"),
+                "url": self._get_set_link(
+                    resp.get("linkedArticle", {}).get("url") if resp.get("linkedArticle") else None
+                ),
+                "image_url": f"https://s3.duellinksmeta.com{resp.get('bannerImage', '')}" if resp.get('bannerImage') else None
+            }
+        except Exception as e:
+            log.error(f"Error casting set data: {str(e)}")
+            return None
 
     def _get_set_link(self, url_path: Optional[str]) -> Optional[str]:
         if not url_path:
