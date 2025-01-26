@@ -135,6 +135,6 @@ class MDMApi(BaseGameAPI):
             return None
         return f"{base}{url_path}"
 
-class YGOApi(BaseGameAPI):
+class YGOProApi(BaseGameAPI):
     def __init__(self):
         super().__init__("https://db.ygoprodeck.com/api/v7")
