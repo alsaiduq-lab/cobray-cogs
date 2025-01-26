@@ -53,11 +53,11 @@ class BaseGameAPI:
         if self.session:
             await self.session.close()
 
-    async def _make_request(self, url: str) -> Any:
+    async def _make_request(self, url: str, params: Optional[Dict] = None) -> Any:
         """Make a request to the API and handle different response types."""
         async with self.rate_limit:
             try:
-                async with self.session.get(url, timeout=30) as resp:
+                async with self.session.get(url, params=params, timeout=30) as resp:
                     if resp.status == 404:
                         raise DLMNotFoundError(f"Resource not found: {url}")
                     if resp.status != 200:
@@ -80,17 +80,14 @@ class BaseGameAPI:
                 raise DLMConnectionError(f"Connection error: {str(e)}")
 
     async def get_card_amount(self) -> int:
-        url = f"{self.BASE_URL}/cards?collectionCount=true"
-        result = await self._make_request(url)
+        url = f"{self.BASE_URL}/cards"
+        result = await self._make_request(url, {"collectionCount": "true"})
         return int(result)
-
-
 
     async def get_sets_amount(self) -> int:
-        url = f"{self.BASE_URL}/sets?collectionCount=true"
-        result = await self._make_request(url)
+        url = f"{self.BASE_URL}/sets"
+        result = await self._make_request(url, {"collectionCount": "true"})
         return int(result)
-
 
     def _cast_set(self, resp: Dict[str, Any]) -> Dict[str, Any]:
         """Convert API response to set format with safe access."""
@@ -118,120 +115,43 @@ class DLMApi(BaseGameAPI):
     def __init__(self):
         super().__init__("https://www.duellinksmeta.com/api/v1")
 
-    def _cast_set(self, resp: Dict[str, Any]) -> Dict[str, Any]:
-        data = super()._cast_set(resp)
-        if data and resp.get("bannerImage"):
-            data["image_url"] = f"https://s3.duellinksmeta.com{resp['bannerImage']}"
-        return data
-
-    def _get_set_link(self, url_path: Optional[str]) -> Optional[str]:
-        if not url_path:
+    async def get_card_details(self, card_id: str) -> Optional[Dict]:
+        """Get card details from DLM."""
+        try:
+            url = f"{self.BASE_URL}/cards/detail"
+            result = await self._make_request(url, {"id": card_id})
+            return result
+        except Exception as e:
+            log.debug(f"Error getting DL card details: {str(e)}")
             return None
-        return f"https://www.duellinksmeta.com/articles{url_path}"
-
-    async def get_sets(self) -> List[CardSet]:
-        """
-        Fetch sets from Duel Links Meta using pagination, with no more
-        than 10 entries at a time in each request.
-        """
-        if not self.session:
-            await self.initialize()
-
-        # Total sets available
-        total_sets = await self.get_sets_amount()
-        # Set your page size to 10
-        sets_per_page = 10
-        # Calculate total pages
-        total_pages = math.ceil(total_sets / sets_per_page)
-
-        all_sets: List[CardSet] = []
-
-        for page in range(1, total_pages + 1):
-            url = f"{self.BASE_URL}/sets?page={page}&pageSize={sets_per_page}"
-            response = await self._make_request(url)
-
-            # Adjust based on actual API response structure
-            data_list = response.get("data", [])
-
-            for item in data_list:
-                casted = self._cast_set(item)
-                if casted:
-                    all_sets.append(CardSet(**casted))
-
-        return all_sets
-
 
 class MDMApi(BaseGameAPI):
     def __init__(self):
         super().__init__("https://www.masterduelmeta.com/api/v1")
 
-    def _cast_set(self, resp: Dict[str, Any]) -> Dict[str, Any]:
-        data = super()._cast_set(resp)
-        if data and resp.get("bannerImage"):
-            data["image_url"] = f"https://s3.masterduelmeta.com{resp['bannerImage']}"
-        return data
-
-    def _get_set_link(self, url_path: Optional[str]) -> Optional[str]:
-        if not url_path:
+    async def get_card_details(self, card_id: str) -> Optional[Dict]:
+        """Get card details from MDM."""
+        try:
+            url = f"{self.BASE_URL}/cards/detail"
+            result = await self._make_request(url, {"id": card_id})
+            return result
+        except Exception as e:
+            log.debug(f"Error getting MD card details: {str(e)}")
             return None
-        return f"https://www.masterduelmeta.com/articles{url_path}"
-
-    async def get_sets(self) -> List[CardSet]:
-        """
-        Fetch sets from Master Duel Meta using pagination, with no more
-        than 10 entries at a time in each request.
-        """
-        if not self.session:
-            await self.initialize()
-
-        total_sets = await self.get_sets_amount()
-        sets_per_page = 10
-        total_pages = math.ceil(total_sets / sets_per_page)
-
-        all_sets: List[CardSet] = []
-
-        for page in range(1, total_pages + 1):
-            url = f"{self.BASE_URL}/sets?page={page}&pageSize={sets_per_page}"
-            response = await self._make_request(url)
-
-            data_list = response.get("data", [])
-
-            for item in data_list:
-                casted = self._cast_set(item)
-                if casted:
-                    all_sets.append(CardSet(**casted))
-
-        return all_sets
 
 class YGOProApi(BaseGameAPI):
     def __init__(self):
         super().__init__("https://db.ygoprodeck.com/api/v7")
 
-    async def get_card_info(self, card_id: str) -> Optional[Dict[str, Any]]:
-        """Get detailed card information."""
-        if not self.session:
-            await self.initialize()
-        url = f"{self.BASE_URL}/cardinfo.php"
-        params = {"id": card_id}
-        try:
-            result = await self._make_request(url + f"?id={card_id}")
-            if result and "data" in result and result["data"]:
-                return result["data"][0]
-        except Exception as e:
-            log.error(f"Error fetching card info: {str(e)}")
-        return None
-
     async def search_cards(self, name: str, exact: bool = False) -> List[Dict[str, Any]]:
         """Search for cards by name."""
-        if not self.session:
-            await self.initialize()
-        url = f"{self.BASE_URL}/cardinfo.php"
-        param_name = "name" if exact else "fname"
-        params = {param_name: name}
         try:
-            result = await self._make_request(url + f"?{param_name}={name}")
-            if result and "data" in result:
+            param_name = "name" if exact else "fname"
+            url = f"{self.BASE_URL}/cardinfo.php"
+            result = await self._make_request(url, {param_name: name})
+            if result and isinstance(result, dict) and "data" in result:
                 return result["data"]
+            return []
         except Exception as e:
             log.error(f"Error searching cards: {str(e)}")
-        return []
+            return []
