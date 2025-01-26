@@ -6,19 +6,40 @@ import asyncio
 from ..core.api import DLMApi, DLMAPIError, DLMNotFoundError
 from ..utils.embeds import format_card_embed
 from ..utils.fsearch import fuzzy_search
+from redbot.core import commands
 
 log = logging.getLogger("red.dlm.cards")
 
-class CardCommands(commands.Cog):
-    def __init__(self, bot, api: DLMApi):
+class CardCommands:
+    """
+    Encapsulates logic for the 'cards' subcommand(s).
+    """
+
+    def __init__(self, bot, registry):
         self.bot = bot
-        self.api = api
+        self.registry = registry
 
-    @commands.group(name="card")
-    async def card_group(self, ctx):
-        """Card database commands."""
-        pass
+    def register(self, dlm_group: commands.Group):
+        """
+        Attach one or more subcommands to the existing dlm group.
+        """
 
+        @dlm_group.command(name="cards")
+        async def dlm_cards(ctx: commands.Context, *, card_name: str = None):
+            """
+            Example "cards" command under the 'dlm' group.
+            Usage: -dlm cards <card name>
+            """
+            if not card_name:
+                await ctx.send_help(ctx.command)
+                return
+
+            results = self.registry.search_cards(card_name)
+            if not results:
+                await ctx.send(f"No cards found for: {card_name}")
+            else:
+                names = ", ".join([card.name for card in results[:5]])
+                await ctx.send(f"Found cards: {names}")
     @card_group.command(name="random")
     @commands.cooldown(1, 30, commands.BucketType.user)
     async def random_card(self, ctx):
