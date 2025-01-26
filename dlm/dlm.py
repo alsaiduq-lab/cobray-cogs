@@ -20,17 +20,27 @@ class DLM(commands.Cog):
 
     def __init__(self, bot):
         self.bot = bot
-        self.registry = CardRegistry()
-        self.user_config = UserConfig(bot)
-        self.interactions = InteractionHandler(bot, self.registry, self.user_config)
-        self._load_commands()
-        self._update_task: Optional[asyncio.Task] = None
         self._ready = asyncio.Event()
+        self._update_task = None
         self._last_update = None
-        log.info("DLM cog initialized")
+        self.registry = None
+        self.user_config = None
+        self.interactions = None
+        self.articles = None
+        self.cards = None
+        self.decks = None
+        self.events = None
+        self.meta = None
+        self.tournaments = None
+        log.info("DLM cog constructed")
 
-    def _load_commands(self):
-        """Initialize all command modules."""
+    async def _initialize_components(self):
+        """Initialize all cog components."""
+        self.registry = CardRegistry()
+        await self.registry.initialize()
+        self.user_config = UserConfig(self.bot)
+        self.interactions = InteractionHandler(self.bot, self.registry, self.user_config)
+        await self.interactions.initialize()
         self.articles = ArticleCommands(self.bot, self.registry)
         self.cards = CardCommands(self.bot, self.registry)
         self.decks = DeckCommands(self.bot, self.registry)
@@ -41,8 +51,7 @@ class DLM(commands.Cog):
     async def cog_load(self) -> None:
         """Initialize cog dependencies."""
         try:
-            await self.registry.initialize()
-            await self.interactions.initialize()
+            await self._initialize_components()
             if self.bot.application_id:
                 app_commands = self.interactions.get_commands()
                 for cmd in app_commands:
