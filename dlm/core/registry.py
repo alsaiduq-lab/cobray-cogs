@@ -194,22 +194,22 @@ class CardRegistry:
 
         return [self._cards[cid] for cid, _ in sorted_ids if cid in self._cards]
 
-        async def update_registry(self) -> bool:
-            """Update the registry."""
-            async with self._update_lock:
-                try:
-                    await self._update_sets()
-                    changed = False
-                    for card_id in list(self._cards.keys()):
-                        card_changed = await self._update_card_status(card_id)
-                        changed = changed or card_changed
-                        await asyncio.sleep(random.uniform(0.5, 2)) 
+    async def update_registry(self) -> bool:
+        """Update the registry."""
+        async with self._update_lock:
+            try:
+                await self._update_sets()
+                changed = False
+                for card_id in list(self._cards.keys()):
+                    card_changed = await self._update_card_status(card_id)
+                    changed = changed or card_changed
+                    await asyncio.sleep(random.uniform(0.5, 2)) 
 
-                    self._last_update = datetime.now()
-                    return changed
-                except Exception as e:
-                    log.error(f"Error updating registry: {str(e)}")
-                    raise
+                self._last_update = datetime.now()
+                return changed
+            except Exception as e:
+                log.error(f"Error updating registry: {str(e)}")
+                raise
 
     async def _update_sets(self) -> None:
         """
