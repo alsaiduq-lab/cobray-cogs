@@ -13,10 +13,25 @@ class ArticleCommands(commands.Cog):
         self.bot = bot
         self.api = api
 
-    @commands.group(name="search")
+    @commands.group(name="search", invoke_without_command=True)
+    @commands.cooldown(1, 30, commands.BucketType.user)
     async def search_group(self, ctx):
-        """Search commands."""
-        pass
+        """Search commands. When used without a subcommand, shows recent articles."""
+        try:
+            async with ctx.typing():
+                params = {
+                    "limit": 10,
+                    "fields": "-markdown",
+                    "sort": "-date"
+                }
+                articles = await self.api.request("articles", params)
+                if not articles:
+                    return await ctx.send("No articles found.")
+
+                embeds = [format_article_embed(article) for article in articles]
+                await menu(ctx, embeds, DEFAULT_CONTROLS)
+        except DLMAPIError as e:
+            await ctx.send(f"Error fetching articles: {str(e)}")
 
     @search_group.command(name="articles")
     @commands.cooldown(1, 30, commands.BucketType.user)
@@ -64,3 +79,4 @@ class ArticleCommands(commands.Cog):
                     await menu(ctx, embeds, DEFAULT_CONTROLS)
         except DLMAPIError as e:
             await ctx.send(f"Error fetching articles: {str(e)}")
+
