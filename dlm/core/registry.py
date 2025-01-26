@@ -15,7 +15,7 @@ class CardRegistry:
     def __init__(self):
         self.dlm_api = DLMApi()
         self.mdm_api = MDMApi()
-        self.ygopro_api = YGOProAPI()
+        self.ygopro_api = YGOProApi()
         self._cards: Dict[str, Card] = {}  # id -> Card
         self._sets: Dict[str, CardSet] = {}  # id -> Set
         self._index: Dict[str, SetType[str]] = {}  # token(not monster tokens lmao) -> set(card_ids)
