@@ -31,6 +31,7 @@ class CardRegistry:
         self._update_lock = asyncio.Lock()
         self._initialized = False
 
+        # Preload any extra “hard-coded” cards.
         for card in EXTRA_CARDS:
             self._cards[card.id] = card
 
@@ -68,35 +69,23 @@ class CardRegistry:
     def get_card_by_id(self, card_id: str) -> Optional[Card]:
         """
         Get a card by its ID.
-
-        :param card_id: The unique string ID of the card.
-        :return: The matching Card object, or None.
         """
         return self._cards.get(card_id)
 
     def get_set_by_id(self, set_id: str) -> Optional[CardSet]:
         """
         Get a set by its ID.
-
-        :param set_id: The unique string ID of the set.
-        :return: The matching CardSet object, or None.
         """
         return self._sets.get(set_id)
 
     def get_sets(self) -> List[CardSet]:
-        """
-        Get all known sets.
-
-        :return: A list of CardSet objects.
-        """
+        """Return all known sets as a list."""
         return list(self._sets.values())
 
     async def get_card(self, query: str) -> Optional[Card]:
         """
-        Get a card by ID or exact name search via YGOPro API.
-
-        :param query: Card ID or name.
-        :return: Card object if found, else None.
+        Get a card by ID or exact name using YGOPro's API. If found in
+        self._cards, returns from cache.
         """
         if query in self._cards:
             return self._cards[query]
@@ -118,11 +107,7 @@ class CardRegistry:
 
     async def _process_card_data(self, card_data: Dict) -> Optional[Card]:
         """
-        Convert raw API data into a Card instance, then fetch platform-specific
-        status/rarity info.
-
-        :param card_data: Dictionary of raw card data from YGOPro.
-        :return: A properly populated Card object, or None on failure.
+        Convert raw YGOPro data to Card, then fetch Master Duel & Duel Links info.
         """
         try:
             card = Card(
@@ -136,16 +121,18 @@ class CardRegistry:
                 atk=card_data.get("atk"),
                 def_=card_data.get("def"),
                 monster_type=card_data.get("frameType", "").lower()
-                if "frameType" in card_data
-                else None,
+                  if "frameType" in card_data
+                  else None,
             )
+            card_id = card.id
 
-            card_id = str(card.id)
-
-            # Master Duel data
+            # Master Duel data:
             try:
                 md_data = await self.mdm_api.get_card_details(card_id)
-                if md_data:
+                # If md_data is a list, use first element (check length to be safe).
+                if isinstance(md_data, list) and md_data:
+                    md_data = md_data[0]
+                if md_data and isinstance(md_data, dict):
                     card.status_md = self.mdm_api.STATUS_MAPPING.get(
                         md_data.get("banStatus")
                     )
@@ -159,10 +146,13 @@ class CardRegistry:
             except Exception as e:
                 log.debug(f"Error getting MD data for {card_id}: {str(e)}")
 
-            # Duel Links data
+            # Duel Links data:
             try:
                 dl_data = await self.dlm_api.get_card_details(card_id)
-                if dl_data:
+                # If dl_data is a list, use first element (check length to be safe).
+                if isinstance(dl_data, list) and dl_data:
+                    dl_data = dl_data[0]
+                if dl_data and isinstance(dl_data, dict):
                     card.status_dl = self.dlm_api.STATUS_MAPPING.get(
                         dl_data.get("banStatus")
                     )
@@ -177,17 +167,14 @@ class CardRegistry:
                 log.debug(f"Error getting DL data for {card_id}: {str(e)}")
 
             return card
+
         except Exception as e:
             log.error(f"Error processing card data: {str(e)}")
             return None
 
     def search_cards(self, query: str) -> List[Card]:
         """
-        Search for cards by name (partial matches). Uses a tokenized
-        index to find close matches.
-
-        :param query: Partial or full card name to search.
-        :return: A list of matching Card objects in descending order of frequency.
+        Search for cards by partial or full name, using a tokenized index.
         """
         if not query:
             return []
@@ -201,6 +188,7 @@ class CardRegistry:
                 for card_id in self._index[token]:
                     card_ids_with_freq[card_id] += 1
 
+        # Sort by descending frequency
         sorted_ids = sorted(
             card_ids_with_freq.items(),
             key=lambda x: x[1],
@@ -211,7 +199,7 @@ class CardRegistry:
 
     async def update_registry(self) -> None:
         """
-        Update the entire registry (sets, then mark last_update) within a lock.
+        Update the entire registry (sets, then timestamp) within a lock.
         """
         async with self._update_lock:
             await self._update_sets()
@@ -219,7 +207,9 @@ class CardRegistry:
             log.info("Registry updated successfully")
 
     async def _update_sets(self) -> None:
-        """Fetch set data from Duel Links and Master Duel APIs and store them."""
+        """
+        Fetch set data from DLM / MDM if those methods exist, then store them.
+        """
         try:
             self._sets.clear()
             dl_sets = []
@@ -227,17 +217,25 @@ class CardRegistry:
 
             # Duel Links sets
             try:
-                dl_sets = await self.dlm_api.get_sets()
+                # If get_sets doesn't exist in your DLMApi, skip or rename accordingly.
+                if hasattr(self.dlm_api, "get_sets"):
+                    dl_sets = await self.dlm_api.get_sets()
+                else:
+                    dl_sets = []
             except Exception as e:
                 log.error(f"Error fetching DL sets: {str(e)}")
 
             # Master Duel sets
             try:
-                md_sets = await self.mdm_api.get_sets()
+                # If get_sets doesn't exist in your MDMApi, skip or rename accordingly.
+                if hasattr(self.mdm_api, "get_sets"):
+                    md_sets = await self.mdm_api.get_sets()
+                else:
+                    md_sets = []
             except Exception as e:
                 log.error(f"Error fetching MD sets: {str(e)}")
 
-            # Combine with extra sets
+            # Combine with hard-coded extra sets
             for set_data in [*EXTRA_SETS, *dl_sets, *md_sets]:
                 if isinstance(set_data, CardSet):
                     self._sets[set_data.id] = set_data
@@ -249,14 +247,11 @@ class CardRegistry:
 
     def _generate_index_for_cards(self, cards: List[Card]) -> None:
         """
-        Build or update the tokenized search index for a list of Cards.
-
-        :param cards: The list of Card objects to index.
+        Build or update the tokenized search index for the given cards.
         """
         for card in cards:
             name = self._normalize_string(card.name)
             tokens = [name] + self._tokenize_string(name)
-
             for token in tokens:
                 if token not in self._index:
                     self._index[token] = set()
@@ -265,21 +260,15 @@ class CardRegistry:
     @staticmethod
     def _normalize_string(text: str) -> str:
         """
-        Normalize a string for indexing by removing non-alphanumeric characters
-        (except periods) and making it lowercase.
-
-        :param text: The original string.
-        :return: Normalized string.
+        Normalize a string for indexing by removing non-alphanumeric chars
+        and making it lowercase.
         """
         return re.sub(r"[^a-z0-9.]", "", text.lower())
 
     @staticmethod
     def _tokenize_string(text: str) -> List[str]:
         """
-        Create (and return) a list of 3-character tokens from the given string.
-
-        :param text: The normalized string.
-        :return: A list of substring tokens.
+        Create list of 3-character tokens from the normalized string.
         """
         if len(text) < 3:
             return []

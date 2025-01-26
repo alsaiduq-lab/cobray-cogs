@@ -18,6 +18,7 @@ class ArticleCommands:
     def __init__(self, bot, registry):
         self.bot = bot
         self.registry = registry
+        log.debug("ArticleCommands initialized")
 
     def register(self, dlm_group: commands.Group):
         @dlm_group.command(name="articles")
@@ -25,11 +26,11 @@ class ArticleCommands:
             """
             Example usage: -dlm articles <query>
             """
+            log.info(f"Article search requested by {ctx.author} with query: {query}")
             if not query:
                 await ctx.send_help(ctx.command)
                 return
 
-            # Example, placeholder logic:
             await ctx.send(f"Searching articles for: {query} (placeholder)")
 
 class CardCommands:
@@ -40,6 +41,7 @@ class CardCommands:
     def __init__(self, bot, registry):
         self.bot = bot
         self.registry = registry
+        log.debug("CardCommands initialized")
 
     def register(self, dlm_group: commands.Group):
         @dlm_group.command(name="cards")
@@ -47,15 +49,18 @@ class CardCommands:
             """
             Usage: -dlm cards <card name>
             """
+            log.info(f"Card search requested by {ctx.author} for: {card_name}")
             if not card_name:
                 await ctx.send_help(ctx.command)
                 return
 
             results = self.registry.search_cards(card_name)
             if not results:
+                log.debug(f"No cards found for query: {card_name}")
                 await ctx.send(f"No cards found for: {card_name}")
             else:
                 names = ", ".join(card.name for card in results[:5])
+                log.debug(f"Found cards for {card_name}: {names}")
                 await ctx.send(f"Found cards: {names}")
 
 class DeckCommands:
@@ -66,6 +71,7 @@ class DeckCommands:
     def __init__(self, bot, registry):
         self.bot = bot
         self.registry = registry
+        log.debug("DeckCommands initialized")
 
     def register(self, dlm_group: commands.Group):
         @dlm_group.command(name="decks")
@@ -73,6 +79,7 @@ class DeckCommands:
             """
             Usage: -dlm decks <deck name>
             """
+            log.info(f"Deck search requested by {ctx.author} for: {deck_name}")
             if not deck_name:
                 await ctx.send_help(ctx.command)
                 return
@@ -87,6 +94,7 @@ class EventCommands:
     def __init__(self, bot, registry):
         self.bot = bot
         self.registry = registry
+        log.debug("EventCommands initialized")
 
     def register(self, dlm_group: commands.Group):
         @dlm_group.command(name="events")
@@ -94,6 +102,7 @@ class EventCommands:
             """
             Usage: -dlm events <event name>
             """
+            log.info(f"Event search requested by {ctx.author} for: {event_name}")
             if not event_name:
                 await ctx.send_help(ctx.command)
                 return
@@ -108,6 +117,7 @@ class MetaCommands:
     def __init__(self, bot, registry):
         self.bot = bot
         self.registry = registry
+        log.debug("MetaCommands initialized")
 
     def register(self, dlm_group: commands.Group):
         @dlm_group.command(name="meta")
@@ -115,6 +125,7 @@ class MetaCommands:
             """
             Usage: -dlm meta <format>
             """
+            log.info(f"Meta information requested by {ctx.author} for format: {format_}")
             if not format_:
                 await ctx.send_help(ctx.command)
                 return
@@ -129,6 +140,7 @@ class TournamentCommands:
     def __init__(self, bot, registry):
         self.bot = bot
         self.registry = registry
+        log.debug("TournamentCommands initialized")
 
     def register(self, dlm_group: commands.Group):
         @dlm_group.command(name="tournaments")
@@ -136,6 +148,7 @@ class TournamentCommands:
             """
             Usage: -dlm tournaments <tournament name>
             """
+            log.info(f"Tournament search requested by {ctx.author} for: {tournament_name}")
             if not tournament_name:
                 await ctx.send_help(ctx.command)
                 return
@@ -166,12 +179,15 @@ class DLM(commands.Cog):
 
     async def _initialize_components(self):
         """Initialize all cog components."""
+        log.info("Initializing DLM components")
         self.registry = CardRegistry()
         await self.registry.initialize()
+        log.debug("Card registry initialized")
 
         self.user_config = UserConfig(self.bot)
         self.interactions = InteractionHandler(self.bot, self.registry, self.user_config)
         await self.interactions.initialize()
+        log.debug("User config and interaction handler initialized")
 
         self.articles = ArticleCommands(self.bot, self.registry)
         self.cards = CardCommands(self.bot, self.registry)
@@ -179,21 +195,25 @@ class DLM(commands.Cog):
         self.events = EventCommands(self.bot, self.registry)
         self.meta = MetaCommands(self.bot, self.registry)
         self.tournaments = TournamentCommands(self.bot, self.registry)
+        log.debug("All command handlers initialized")
 
     def register_subcommands(self):
         """
         Attach subcommands from each subcommand class to the main 'dlm' group.
         """
+        log.debug("Registering subcommands")
         self.articles.register(self.dlm)
         self.cards.register(self.dlm)
         self.decks.register(self.dlm)
         self.events.register(self.dlm)
         self.meta.register(self.dlm)
         self.tournaments.register(self.dlm)
+        log.info("All subcommands registered successfully")
 
     async def cog_load(self) -> None:
         """Initialize cog dependencies."""
         try:
+            log.info("Loading DLM cog")
             await self._initialize_components()
 
             if self.bot.application_id:
@@ -213,6 +233,7 @@ class DLM(commands.Cog):
     async def cog_unload(self) -> None:
         """Clean up cog dependencies."""
         try:
+            log.info("Unloading DLM cog")
             if self._update_task:
                 self._update_task.cancel()
                 try:
@@ -229,9 +250,13 @@ class DLM(commands.Cog):
     async def _update_registry(self) -> bool:
         """Update the card registry and return success status."""
         try:
+            log.info("Starting card registry update")
             updated = await self.registry.update_registry()
             if updated:
                 self._last_update = discord.utils.utcnow()
+                log.info("Card registry updated successfully")
+            else:
+                log.warning("Card registry update returned no changes")
             return updated
         except Exception as e:
             log.error(f"Error updating registry: {str(e)}", exc_info=True)
@@ -240,12 +265,14 @@ class DLM(commands.Cog):
     @commands.group(name="dlm", invoke_without_command=True)
     async def dlm(self, ctx: commands.Context):
         """DuelLinksMeta commands."""
+        log.debug(f"Main DLM command invoked by {ctx.author}")
         await ctx.send_help(ctx.command)
 
     @commands.is_owner()
     @dlm.command(name="updatedb")
     async def force_update(self, ctx: commands.Context):
         """Force an update of the card database."""
+        log.info(f"Force update requested by {ctx.author}")
         async with ctx.typing():
             if await self._update_registry():
                 await ctx.send("Card database updated successfully.")
@@ -256,6 +283,7 @@ class DLM(commands.Cog):
     @dlm.command(name="dbstatus")
     async def db_status(self, ctx: commands.Context):
         """Show database status and last update time."""
+        log.info(f"Database status requested by {ctx.author}")
         if self._last_update:
             time_since = discord.utils.utcnow() - self._last_update
             days_ago = time_since.days
@@ -280,6 +308,7 @@ class DLM(commands.Cog):
         if not card_names:
             return
 
+        log.debug(f"Processing card mentions in message from {message.author}: {card_names}")
         cards = []
         for name in card_names[:10]:
             found = self.registry.search_cards(name)
@@ -301,12 +330,14 @@ class DLM(commands.Cog):
         if embeds:
             try:
                 await message.reply(embeds=embeds)
+                log.debug(f"Sent {len(embeds)} card embeds in response to message")
             except Exception as e:
                 log.error(f"Error sending card embeds: {str(e)}", exc_info=True)
 
     @commands.Cog.listener()
     async def on_command_error(self, ctx, error):
         """Global error handler for the cog."""
+        log.error(f"Command error in {ctx.command}: {str(error)}")
         if isinstance(error, commands.CommandOnCooldown):
             await ctx.send(f"This command is on cooldown. Try again in {error.retry_after:.1f}s")
         elif isinstance(error, commands.MissingPermissions):
@@ -322,6 +353,7 @@ class DLM(commands.Cog):
         try:
             while True:
                 try:
+                    log.info("Running scheduled card registry update")
                     await self._update_registry()
                 except Exception as e:
                     log.error(f"Error updating registry: {str(e)}", exc_info=True)
