@@ -154,16 +154,29 @@ class CardRegistry:
                 raise
 
     async def _update_sets(self):
-        """Update set data."""
+    """Update set data."""
+    try:
+        self._sets.clear()
+        dl_sets = []
+        md_sets = []
+
         try:
-            self._sets.clear()
-            for set_data in [*EXTRA_SETS, *dl_sets, *md_sets]:
-                if isinstance(set_data, CardSet):
-                    self._sets[set_data.id] = set_data
-            log.info(f"Updated {len(self._sets)} sets")
+            dl_sets = await self.dlm_api.get_sets()
         except Exception as e:
-            log.error(f"Error updating sets: {str(e)}")
-            raise
+            log.error(f"Error fetching DL sets: {str(e)}")
+
+        try:
+            md_sets = await self.mdm_api.get_sets()
+        except Exception as e:
+            log.error(f"Error fetching MD sets: {str(e)}")
+
+        for set_data in [*EXTRA_SETS, *dl_sets, *md_sets]:
+            if isinstance(set_data, CardSet):
+                self._sets[set_data.id] = set_data
+        log.info(f"Updated {len(self._sets)} sets")
+    except Exception as e:
+        log.error(f"Error updating sets: {str(e)}")
+        raise
 
     def _generate_index_for_cards(self, cards: List[Card]):
         """Generate search index for specified cards."""
