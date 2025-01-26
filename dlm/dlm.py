@@ -54,7 +54,6 @@ class CardCommands:
     """
     Handles subcommands for cards.
     """
-
     def __init__(self, bot, registry: CardRegistry):
         self.bot = bot
         self.registry = registry
@@ -81,13 +80,12 @@ class CardCommands:
                 log.debug(f"Found cards for {card_name}: {names}")
                 await ctx.send(f"Found cards: {names}")
 
-
 class DeckCommands:
     """
     Handles subcommands for decks.
     """
     def __init__(self, bot, registry):
-            self.bot = bot
+        self.bot = bot
         self.registry = registry
         log.debug("DeckCommands initialized")
 
@@ -112,12 +110,10 @@ class DeckCommands:
                 response += f"• {deck.name} by {deck.author}\n"
             await ctx.send(response)
 
-
 class EventCommands:
     """
     Handles subcommands for events.
     """
-
     def __init__(self, bot, registry):
         self.bot = bot
         self.registry = registry
@@ -134,7 +130,6 @@ class EventCommands:
                 await ctx.send_help(ctx.command)
                 return
 
-            # TODO: Implement event lookup
             events = await self.registry.search_events(event_name)
             if not events:
                 await ctx.send(f"No events found matching: {event_name}")
@@ -148,7 +143,6 @@ class MetaCommands:
     """
     Handles subcommands for meta information.
     """
-
     def __init__(self, bot, registry):
         self.bot = bot
         self.registry = registry
@@ -165,7 +159,6 @@ class MetaCommands:
                 await ctx.send_help(ctx.command)
                 return
 
-            # TODO: Implement meta report fetching
             meta_report = await self.registry.get_meta_report(format_)
             if not meta_report:
                 await ctx.send(f"No meta report found for format: {format_}")
@@ -175,12 +168,10 @@ class MetaCommands:
                 response += f"• {deck.name}: {deck.usage_percent}%\n"
             await ctx.send(response)
 
-
 class TournamentCommands:
     """
     Handles subcommands for tournaments.
     """
-
     def __init__(self, bot, registry):
         self.bot = bot
         self.registry = registry
@@ -201,7 +192,6 @@ class TournamentCommands:
                 await ctx.send_help(ctx.command)
                 return
 
-            # 'search_tournaments' should do the actual lookups (fuzzy match, substring, etc.) in your registry.
             tournaments = await self.registry.search_tournaments(tournament_name)
             if not tournaments:
                 await ctx.send(f"No tournaments found matching: {tournament_name}")
@@ -214,7 +204,7 @@ class TournamentCommands:
                 embed = discord.Embed(
                     title=f"Tournaments matching: {tournament_name}",
                     description=f"Showing {start_index + 1}–{min(len(tournaments), start_index + chunk_size)} "
-                                f"of {len(tournaments)} results",
+                               f"of {len(tournaments)} results",
                     color=discord.Color.blurple()
                 )
 
