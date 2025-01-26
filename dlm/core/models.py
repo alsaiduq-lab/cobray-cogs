@@ -63,9 +63,9 @@ EXTRA_SETS = [
 ]
 
 ALTERNATE_SEARCH_NAMES = [
-    Card(id="88581108", name="Very Fun Dragon"),
-    Card(id="88581108", name="VFD"),
-    Card(id="50588353", name="Needlefiber"),
-    Card(id="27204311", name="Rhongobongo"),
-    Card(id="55885348", name="HFD"),
+    Card(id="88581108", name="Very Fun Dragon", type="monster", url=None, image_url=None, race=None, monster_type=None, monster_types=None, attribute=None, level=None, description=None, pendulum_effect=None, atk=None, def_=None, scale=None, arrows=None, status_md=None, status_dl=None, status_tcg=None, status_ocg=None, status_goat=None, rarity_md=None, rarity_dl=None, sets_paper=None, sets_md=None, sets_dl=None, ocg=False),
+    Card(id="88581108", name="VFD", type="monster", url=None, image_url=None, race=None, monster_type=None, monster_types=None, attribute=None, level=None, description=None, pendulum_effect=None, atk=None, def_=None, scale=None, arrows=None, status_md=None, status_dl=None, status_tcg=None, status_ocg=None, status_goat=None, rarity_md=None, rarity_dl=None, sets_paper=None, sets_md=None, sets_dl=None, ocg=False),
+    Card(id="50588353", name="Needlefiber", type="monster", url=None, image_url=None, race=None, monster_type=None, monster_types=None, attribute=None, level=None, description=None, pendulum_effect=None, atk=None, def_=None, scale=None, arrows=None, status_md=None, status_dl=None, status_tcg=None, status_ocg=None, status_goat=None, rarity_md=None, rarity_dl=None, sets_paper=None, sets_md=None, sets_dl=None, ocg=False),
+    Card(id="27204311", name="Rhongobongo", type="monster", url=None, image_url=None, race=None, monster_type=None, monster_types=None, attribute=None, level=None, description=None, pendulum_effect=None, atk=None, def_=None, scale=None, arrows=None, status_md=None, status_dl=None, status_tcg=None, status_ocg=None, status_goat=None, rarity_md=None, rarity_dl=None, sets_paper=None, sets_md=None, sets_dl=None, ocg=False),
+    Card(id="55885348", name="HFD", type="spell", url=None, image_url=None, race=None, monster_type=None, monster_types=None, attribute=None, level=None, description=None, pendulum_effect=None, atk=None, def_=None, scale=None, arrows=None, status_md=None, status_dl=None, status_tcg=None, status_ocg=None, status_goat=None, rarity_md=None, rarity_dl=None, sets_paper=None, sets_md=None, sets_dl=None, ocg=False),
 ]
