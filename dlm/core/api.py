@@ -34,14 +34,14 @@ class BaseGameAPI:
             'Accept': 'application/json'
         }
         self.RARITY_MAPPING = {
-            "N": "normal", 
+            "N": "normal",
             "R": "rare",
             "SR": "super",
             "UR": "ultra"
         }
         self.STATUS_MAPPING = {
             "Limited 2": "semilimited",
-            "Limited 1": "limited", 
+            "Limited 1": "limited",
             "Forbidden": "forbidden"
         }
         self.rate_limit = asyncio.Semaphore(5)
@@ -84,59 +84,18 @@ class BaseGameAPI:
         result = await self._make_request(url)
         return int(result)
 
-    async def get_all_cards_raw(self) -> List[Dict[str, Any]]:
-        cards_per_page = 3000
-        total_cards = await self.get_card_amount()
-        pages = math.ceil(total_cards / cards_per_page)
 
-        tasks = []
-        for page in range(1, pages + 1):
-            url = f"{self.BASE_URL}/cards?limit={cards_per_page}&page={page}"
-            tasks.append(self._make_request(url))
-
-        responses = await asyncio.gather(*tasks)
-        all_cards = []
-        for cards in responses:
-            filtered_cards = [
-                card for card in cards
-                if not card.get("alternateArt") and card.get("konamiID")
-            ]
-            all_cards.extend(filtered_cards)
-
-        return all_cards
 
     async def get_sets_amount(self) -> int:
         url = f"{self.BASE_URL}/sets?collectionCount=true"
         result = await self._make_request(url)
         return int(result)
 
-    async def get_all_sets(self) -> List[Dict[str, Any]]:
-        """Get all sets data."""
-        try:
-            sets_per_page = 3000
-            total_sets = await self.get_sets_amount()
-            pages = math.ceil(total_sets / sets_per_page)
-
-            all_sets = []
-            for page in range(1, pages + 1):
-                url = f"{self.BASE_URL}/sets?limit={sets_per_page}&page={page}"
-                sets = await self._make_request(url)
-                if sets:
-                    all_sets.extend(sets)
-
-            return [
-                set_data for set_data in (self._cast_set(set_data) for set_data in all_sets)
-                if set_data is not None
-            ]
-        except Exception as e:
-            log.error(f"Error getting all sets: {str(e)}")
-            return []
 
     def _cast_set(self, resp: Dict[str, Any]) -> Dict[str, Any]:
         """Convert API response to set format with safe access."""
         if not resp:
             return None
-            
         try:
             return {
                 "id": resp.get("_id", "unknown"),
@@ -188,3 +147,32 @@ class MDMApi(BaseGameAPI):
 class YGOProApi(BaseGameAPI):
     def __init__(self):
         super().__init__("https://db.ygoprodeck.com/api/v7")
+
+    async def get_card_info(self, card_id: str) -> Optional[Dict[str, Any]]:
+        """Get detailed card information."""
+        if not self.session:
+            await self.initialize()
+        url = f"{self.BASE_URL}/cardinfo.php"
+        params = {"id": card_id}
+        try:
+            result = await self._make_request(url + f"?id={card_id}")
+            if result and "data" in result and result["data"]:
+                return result["data"][0]
+        except Exception as e:
+            log.error(f"Error fetching card info: {str(e)}")
+        return None
+
+    async def search_cards(self, name: str, exact: bool = False) -> List[Dict[str, Any]]:
+        """Search for cards by name."""
+        if not self.session:
+            await self.initialize()
+        url = f"{self.BASE_URL}/cardinfo.php"
+        param_name = "name" if exact else "fname"
+        params = {param_name: name}
+        try:
+            result = await self._make_request(url + f"?{param_name}={name}")
+            if result and "data" in result:
+                return result["data"]
+        except Exception as e:
+            log.error(f"Error searching cards: {str(e)}")
+        return []
