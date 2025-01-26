@@ -156,8 +156,6 @@ class CardRegistry:
     async def _update_sets(self):
         """Update set data."""
         try:
-            dl_sets = await self.dlm_api.get_all_sets() or []
-            md_sets = await self.mdm_api.get_all_sets() or []
             self._sets.clear()
             for set_data in [*EXTRA_SETS, *dl_sets, *md_sets]:
                 if isinstance(set_data, CardSet):
