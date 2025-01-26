@@ -30,7 +30,7 @@ class CardRegistry:
             return
 
         try:
-           await asyncio.gather(
+            await asyncio.gather(
                 self.dlm_api.initialize(),
                 self.mdm_api.initialize(),
                 self.ygopro_api.initialize()
@@ -150,13 +150,9 @@ class CardRegistry:
     async def update_registry(self):
         """Update registry data."""
         async with self._update_lock:
-            try:
-                await self._update_sets()
-                self._last_update = datetime.now()
-                log.info("Registry updated successfully")
-            except Exception as e:
-                log.error(f"Error updating registry: {str(e)}")
-                raise
+            await self._update_sets()
+            self._last_update = datetime.now()
+            log.info("Registry updated successfully")
 
     async def _update_sets(self):
         """Update set data."""
@@ -204,4 +200,3 @@ class CardRegistry:
         if len(text) < 3:
             return []
         return [text[i:i+3] for i in range(len(text)-2)]
-
