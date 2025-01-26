@@ -6,7 +6,7 @@ import re
 from datetime import datetime, timedelta
 
 from .models import Card, CardSet, EXTRA_CARDS, EXTRA_SETS, ALTERNATE_SEARCH_NAMES
-from .api import DLMApi, MDMApi, YGOProAPI
+from .api import DLMApi, MDMApi, YGOProApi
 
 log = logging.getLogger("red.dlm.registry")
 
