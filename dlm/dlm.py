@@ -45,7 +45,8 @@ class DLM(commands.Cog):
             await self.interactions.initialize()
             if self.bot.application_id:
                 app_commands = self.interactions.get_commands()
-                self.bot.tree.add_command(app_commands)
+                for cmd in app_commands:
+                    self.bot.tree.add_command(cmd)
                 log.info("Application commands registered")
             self._update_task = asyncio.create_task(self._update_loop())
             self._ready.set()
