@@ -18,7 +18,7 @@ This repository contains a Red Discord Bot cog named **DLM** (DuelLinksMeta). It
 
 2. **InteractionHandler**
 
-   - Handles commands, slash interactions, and user inputs.
+   - Handles slash interactions, and user inputs.
    - Builds Discord embeds for displaying card details, decks, etc.
 
 3. **UserConfig**

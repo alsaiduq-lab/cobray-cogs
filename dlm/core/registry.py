@@ -170,7 +170,7 @@ class CardRegistry:
             log.error(f"Error processing card data: {str(e)}")
             return None
 
-    def search_cards(self, query: str) -> List[Card]:
+    async def search_cards(self, query: str) -> List[Card]:
         """
         Search for cards by partial or full name, using a tokenized index.
         """
@@ -192,7 +192,16 @@ class CardRegistry:
             reverse=True,
         )
 
-        return [self._cards[cid] for cid, _ in sorted_ids if cid in self._cards]
+        results = [self._cards[cid] for cid, _ in sorted_ids if cid in self._cards]
+        if not results and len(query) >= 3:
+            try:
+                card_data = await self.ygopro_api.search_cards(query)
+                for data in card_data[:10]:  # Limit to first 10 results
+                    if card := await self._process_card_data(data):
+                        results.append(card)
+            except Exception as e:
+                log.error(f"Error searching cards via API: {str(e)}")
+        return results
 
     async def update_registry(self) -> bool:
         """Update the registry."""
@@ -348,3 +357,39 @@ class CardRegistry:
         if len(text) < 3:
             return []
         return [text[i : i + 3] for i in range(len(text) - 2)]
+
+
+    async def get_latest_articles(self, limit: int = 3) -> List[dict]:
+        """Get the latest articles from DLM."""
+        try:
+            return await self.dlm_api.get_latest_articles(limit)
+        except Exception as e:
+            log.error(f"Error getting latest articles: {str(e)}")
+            return []
+
+
+    async def search_articles(self, query: str) -> List[dict]:
+        """Search articles by query."""
+        try:
+            return await self.dlm_api.search_articles(query)
+        except Exception as e:
+            log.error(f"Error searching articles: {str(e)}")
+            return []
+
+    async def search_decks(self, query: str) -> List[dict]:
+        """Search decks by name or archetype."""
+        try:
+            return await self.dlm_api.search_decks(query)
+        except Exception as e:
+            log.error(f"Error searching decks: {str(e)}")
+            return []
+
+
+    async def search_tournaments(self, query: str) -> List[dict]:
+        """Search tournaments by name."""
+        try:
+            return await self.dlm_api.search_tournaments(query)
+        except Exception as e:
+            log.error(f"Error searching tournaments: {str(e)}")
+            return []
+

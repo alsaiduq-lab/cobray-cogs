@@ -125,6 +125,110 @@ class DLMApi(BaseGameAPI):
             log.debug(f"Error getting DL card details: {str(e)}")
             return None
 
+    async def get_latest_articles(self, limit: int = 3) -> List[Dict]:
+        """Get latest articles from DLM."""
+        try:
+            url = f"{self.BASE_URL}/articles"
+            result = await self._make_request(url, {"limit": limit, "sort": "-date"})
+            return result if isinstance(result, list) else []
+        except Exception as e:
+            log.error(f"Error getting latest articles: {str(e)}")
+            return []
+
+    async def search_articles(self, query: str) -> List[Dict]:
+        """Search articles by query."""
+        try:
+            url = f"{self.BASE_URL}/articles"
+            result = await self._make_request(url, {"search": query})
+            return result if isinstance(result, list) else []
+        except Exception as e:
+            log.error(f"Error searching articles: {str(e)}")
+            return []
+
+    async def search_decks(self, query: str) -> List[Dict]:
+        """Search decks by name or archetype."""
+        try:
+            url = f"{self.BASE_URL}/decks"
+            result = await self._make_request(url, {"search": query})
+            return result if isinstance(result, list) else []
+        except Exception as e:
+            log.error(f"Error searching decks: {str(e)}")
+            return []
+
+    async def search_tournaments(self, query: str) -> List[Dict]:
+        """Search tournaments by name."""
+        try:
+            url = f"{self.BASE_URL}/tournaments"
+            result = await self._make_request(url, {"search": query})
+            return result if isinstance(result, list) else []
+        except Exception as e:
+            log.error(f"Error searching tournaments: {str(e)}")
+            return []
+
+    async def get_meta_report(self, format_: str) -> Optional[Dict]:
+        """Get meta report for a specific format."""
+        try:
+            url = f"{self.BASE_URL}/meta-reports"
+            result = await self._make_request(url, {"format": format_})
+            if isinstance(result, list) and result:
+                return result[0]  # Return the most recent report
+            return None
+        except Exception as e:
+            log.error(f"Error getting meta report: {str(e)}")
+            return None
+
+    async def get_latest_articles(self, limit: int = 3) -> List[Dict]:
+        """Get latest articles from DLM."""
+        try:
+            url = f"{self.BASE_URL}/articles"
+            result = await self._make_request(url, {"limit": limit, "sort": "-date"})
+            return result if isinstance(result, list) else []
+        except Exception as e:
+            log.error(f"Error getting latest articles: {str(e)}")
+            return []
+
+    async def search_articles(self, query: str) -> List[Dict]:
+        """Search articles by query."""
+        try:
+            url = f"{self.BASE_URL}/articles"
+            result = await self._make_request(url, {"search": query})
+            return result if isinstance(result, list) else []
+        except Exception as e:
+            log.error(f"Error searching articles: {str(e)}")
+            return []
+
+    async def search_decks(self, query: str) -> List[Dict]:
+        """Search decks by name or archetype."""
+        try:
+            url = f"{self.BASE_URL}/decks"
+            result = await self._make_request(url, {"search": query})
+            return result if isinstance(result, list) else []
+        except Exception as e:
+            log.error(f"Error searching decks: {str(e)}")
+            return []
+
+    async def search_tournaments(self, query: str) -> List[Dict]:
+        """Search tournaments by name."""
+        try:
+            url = f"{self.BASE_URL}/tournaments"
+            result = await self._make_request(url, {"search": query})
+            return result if isinstance(result, list) else []
+        except Exception as e:
+            log.error(f"Error searching tournaments: {str(e)}")
+            return []
+
+    async def get_meta_report(self, format_: str) -> Optional[Dict]:
+        """Get meta report for a specific format."""
+        try:
+            url = f"{self.BASE_URL}/meta-reports"
+            result = await self._make_request(url, {"format": format_})
+            if isinstance(result, list) and result:
+                return result[0]  # Return the most recent report
+            return None
+        except Exception as e:
+            log.error(f"Error getting meta report: {str(e)}")
+            return None
+
 class MDMApi(BaseGameAPI):
     def __init__(self):
         super().__init__("https://www.masterduelmeta.com/api/v1")
