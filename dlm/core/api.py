@@ -144,29 +144,45 @@ class BaseGameAPI:
                 "url": self._get_set_link(
                     resp.get("linkedArticle", {}).get("url") if resp.get("linkedArticle") else None
                 ),
-                "image_url": f"https://s3.duellinksmeta.com{resp.get('bannerImage', '')}" if resp.get('bannerImage') else None
+                "image_url": None
             }
         except Exception as e:
             log.error(f"Error casting set data: {str(e)}")
             return None
 
     def _get_set_link(self, url_path: Optional[str]) -> Optional[str]:
-        if not url_path:
-            return None
-        base = "https://www.duellinksmeta.com/articles"
-        return f"{base}{url_path}"
+        """Override in subclasses"""
+        return None
 
 class DLMApi(BaseGameAPI):
     def __init__(self):
         super().__init__("https://www.duellinksmeta.com/api/v1")
 
-class MDMApi(BaseGameAPI):
-    def __init__(self):
-        super().__init__("https://www.masterduelmeta.com/api/v1")
+    def _cast_set(self, resp: Dict[str, Any]) -> Dict[str, Any]:
+        data = super()._cast_set(resp)
+        if data and resp.get('bannerImage'):
+            data['image_url'] = f"https://s3.duellinksmeta.com{resp['bannerImage']}"
+        return data
+
     def _get_set_link(self, url_path: Optional[str]) -> Optional[str]:
         if not url_path:
             return None
-        return f"{base}{url_path}"
+        return f"https://www.duellinksmeta.com/articles{url_path}"
+
+class MDMApi(BaseGameAPI):
+    def __init__(self):
+        super().__init__("https://www.masterduelmeta.com/api/v1")
+
+    def _cast_set(self, resp: Dict[str, Any]) -> Dict[str, Any]:
+        data = super()._cast_set(resp)
+        if data and resp.get('bannerImage'):
+            data['image_url'] = f"https://s3.masterduelmeta.com{resp['bannerImage']}"
+        return data
+
+    def _get_set_link(self, url_path: Optional[str]) -> Optional[str]:
+        if not url_path:
+            return None
+        return f"https://www.masterduelmeta.com/articles{url_path}"
 
 class YGOProApi(BaseGameAPI):
     def __init__(self):
