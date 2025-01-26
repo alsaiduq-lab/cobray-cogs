@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 
 __all__ = [
     "DLMCache",
-    "DLMAPIError", 
+    "DLMAPIError",
     "DLMRateLimitError",
     "DLMNotFoundError",
     "DLMServerError",
@@ -16,13 +16,11 @@ __all__ = [
 class DLMCache:
     def __init__(self):
         self.cache = {}
-        
     def set(self, key: str, value: Any, ttl: int = 300):
         self.cache[key] = {
             'value': value,
             'expires': time.time() + ttl
         }
-        
     def get(self, key: str) -> Optional[Any]:
         if key in self.cache:
             cache_data = self.cache[key]
@@ -30,7 +28,6 @@ class DLMCache:
                 return cache_data['value']
             del self.cache[key]
         return None
-        
     def clear(self):
         self.cache.clear()
 
@@ -41,7 +38,7 @@ class DLMRateLimitError(DLMAPIError):
     pass
 
 class DLMNotFoundError(DLMAPIError):
-    pass 
+    pass
 
 class DLMServerError(DLMAPIError):
     pass
@@ -61,7 +58,6 @@ async def handle_api_response(response: aiohttp.ClientResponse) -> Dict:
 def parse_cache_control(header: str) -> int:
     if not header:
         return 300
-    
     parts = header.split(',')
     for part in parts:
         if 'max-age' in part:

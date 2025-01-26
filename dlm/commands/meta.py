@@ -51,7 +51,6 @@ class MetaCommands(commands.Cog):
                     if skill:
                         skill_counts[skill] = skill_counts.get(skill, 0) + 1
                 sorted_skills = sorted(skill_counts.items(), key=lambda x: x[1], reverse=True)
-                
                 embed = discord.Embed(
                     title="Most Used Skills in Current Meta",
                     color=discord.Color.blue()

@@ -1,9 +1,8 @@
-# API Configurations
 api:
   duel_links_meta:
     base_url: https://www.duellinksmeta.com/api/v1
     user_agent: IP:Masquerena
-    cache_ttl: 3600 # 1 hour in seconds
+    cache_ttl: 3600
 
   master_duel_meta:
     base_url: https://www.masterduelmeta.com/api/v1
@@ -12,48 +11,42 @@ api:
 
   ygoprodeck:
     base_url: https://db.ygoprodeck.com/api/v7
-    cache_ttl: 86400 # 24 hours in seconds
+    cache_ttl: 86400
 
   bonk:
-    url: http://localhost:3000/order/list # Default local URL
-    auth_token: test-token # Default test token
+    url: http://localhost:3000/order/list
+    auth_token: test-token
 
-# Image Configuration
 images:
   base_url: https://s3.lain.dev/ygo
   imaginary_url: https://imaginary.lain.dev/pipeline
   remote_base_url: https://images.ygoprodeck.com/images/cards
   remote_cropped_url: https://images.ygoprodeck.com/images/cards_cropped
 
-# Cache Configuration
 cache:
-  card_ttl: 3600 # Card data cache duration
-  set_ttl: 3600 # Set data cache duration
-  image_ttl: 86400 # Image URL cache duration
-  search_ttl: 300 # Search results cache duration
+  card_ttl: 3600
+  set_ttl: 3600
+  image_ttl: 86400
+  search_ttl: 300
 
-# Update Configuration
 updates:
-  interval: 120 # Minutes between data updates
-  retry_delay: 300 # Seconds to wait after failed update
+  interval: 120
+  retry_delay: 300
 
-# Format Configuration
 formats:
   default: paper
   available:
     - paper
-    - md # Master Duel
-    - dl # Duel Links
-    - sd # Speed Duel
+    - md
+    - dl
+    - sd
 
-# Rate Limits (requests per minute)
 rate_limits:
   dlm: 100
   mdm: 100
   ygopro: 20
   images: 50
 
-# Embed Configuration
 embeds:
   colors:
     spell: 0x1DA353
@@ -81,7 +74,6 @@ embeds:
       WATER: "<:WATER:948992874136096768>"
       WIND: "<:WIND:948992874123505775>"
 
-# Error Messages
 errors:
   not_found: "Couldn't find that card. Check your spelling and try again."
   rate_limit: "Please wait before trying again."

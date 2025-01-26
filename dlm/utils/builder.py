@@ -6,7 +6,6 @@ from ..utils.images import ImagePipeline
 class CardBuilder:
     """Builds Discord embeds for cards and related content."""
 
-    # Icon mappings from Cardian
     SPELL_TRAP_ICONS = {
         "spell": "<:spell:948992874438070342>",
         "trap": "<:trap:948992874438074428>",
@@ -62,38 +61,28 @@ class CardBuilder:
         """Build a Discord embed for a card."""
         embed = discord.Embed(title=card.name, url=card.url)
 
-        # Set image
         success, url = await self.image_pipeline.get_image_url(card.id, card.monster_types or [])
         embed.set_thumbnail(url=url if success else self.HAT_TOKEN)
 
-        # Set color
         if color := self._get_card_color(card):
             embed.color = color
 
-        # Add card metadata based on type
         self._add_card_metadata(embed, card, format)
-        
-        # Add pendulum effect if exists
         if card.pendulum_effect:
             embed.add_field(name="Pendulum Effect", value=card.pendulum_effect)
 
-        # Add card description
         self._add_card_description(embed, card)
 
-        # Add scale/arrows if needed
         if card.scale:
             embed.add_field(name="Scale", value=str(card.scale), inline=True)
         if card.arrows:
             embed.add_field(name="Arrows", value=" ".join(card.arrows), inline=True)
 
-        # Add ATK/DEF for monsters
         self._add_monster_stats(embed, card)
 
-        # Add set information
         if sets := self._build_sets_text(card, format):
             embed.add_field(name="Released in", value=sets)
 
-        # Add format footer
         embed.set_footer(text=f"Format: {format.title()}")
 
         return embed
@@ -146,7 +135,6 @@ class CardBuilder:
         """Add ATK/DEF or Link stats for monsters."""
         if card.type != "monster":
             return
-            
         if card.monster_type == "link" and card.atk:
             embed.add_field(name="ATK", value=str(card.atk), inline=True)
         elif card.atk and hasattr(card, "def_"):
@@ -181,9 +169,8 @@ class CardBuilder:
         if not sets:
             return "Unreleased"
 
-        sets = sets[:5]  # Limit to 5 sets
+        sets = sets[:5]
         text = ", ".join(sets)
-        
         return text
 
     @staticmethod

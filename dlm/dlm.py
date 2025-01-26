@@ -228,3 +228,51 @@ class TournamentCommands:
                     )
 
                 await ctx.send(embed=embed)
+
+
+class DLM(commands.Cog):
+    """
+    A Cog that groups all DLM subcommands under one parent command: -dlm
+    """
+
+    def __init__(self, bot: commands.Bot):
+        self.bot = bot
+        self.registry = CardRegistry()
+        self.config = Config.get_conf(self, identifier=8675309954, force_registration=True)
+        self.interaction_handler = InteractionHandler(bot)
+        self.user_config = UserConfig(bot, config=self.config)
+        self.card_parser = CardParser()
+        self.article_commands = ArticleCommands(bot, self.registry)
+        self.card_commands = CardCommands(bot, self.registry)
+        self.deck_commands = DeckCommands(bot, self.registry)
+        self.event_commands = EventCommands(bot, self.registry)
+        self.meta_commands = MetaCommands(bot, self.registry)
+        self.tournament_commands = TournamentCommands(bot, self.registry)
+        asyncio.create_task(self._initialize_registry())
+
+    async def _initialize_registry(self):
+        """
+        Initialize the CardRegistry (fetch data, etc.).
+        """
+        try:
+            await self.registry.initialize()
+            log.info("CardRegistry initialized successfully.")
+        except Exception as exc:
+            log.error(f"Error initializing CardRegistry: {exc}")
+
+    @commands.group(name="dlm", invoke_without_command=True)
+    async def dlm_group(self, ctx: commands.Context):
+        """
+        dlm main group
+        """
+        pass
+    def cog_load(self):
+        self.article_commands.register(self.dlm_group)
+        self.card_commands.register(self.dlm_group)
+        self.deck_commands.register(self.dlm_group)
+        self.event_commands.register(self.dlm_group)
+        self.meta_commands.register(self.dlm_group)
+        self.tournament_commands.register(self.dlm_group)
+
+    def cog_unload(self):
+        pass

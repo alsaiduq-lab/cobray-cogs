@@ -28,14 +28,12 @@ class DeckCommands(commands.Cog):
             url=f"{self.BASE_URL}/{deck.get('id')}",
             color=discord.Color.blue()
         )
-        
         if "author" in deck:
             embed.add_field(name="Author", value=deck["author"], inline=True)
         if "skillName" in deck:
             embed.add_field(name="Skill", value=deck["skillName"], inline=True)
         if "price" in deck:
             embed.add_field(name="Price", value=f"{deck['price']:,} gems", inline=True)
-            
         return embed
 
     async def _send_deck_embeds(self, ctx, decks: List[Dict[str, Any]], message: Optional[str] = None):
@@ -65,7 +63,6 @@ class DeckCommands(commands.Cog):
                 results = [deck for deck in decks if deck.get("skillName", "").lower() == skill_name.lower()]
                 if not results:
                     results = fuzzy_search(skill_name, decks, key="skillName")
-                
                 await self._send_deck_embeds(ctx, results, "No decks found with that skill.")
         except DLMAPIError as e:
             await ctx.send(f"Error fetching decks: {str(e)}")
@@ -75,13 +72,11 @@ class DeckCommands(commands.Cog):
     async def budget_decks(self, ctx, max_gems: int = 30000):
         if max_gems <= 0:
             return await ctx.send("Maximum gems must be greater than 0.")
-            
         try:
             async with ctx.typing():
                 decks = await self._fetch_decks(ctx)
                 results = [deck for deck in decks if deck.get("price", float('inf')) <= max_gems]
                 results.sort(key=lambda x: x.get("price", 0))
-                
                 await self._send_deck_embeds(ctx, results, f"No decks found under {max_gems:,} gems.")
         except DLMAPIError as e:
             await ctx.send(f"Error fetching decks: {str(e)}")
@@ -95,7 +90,6 @@ class DeckCommands(commands.Cog):
                 results = [deck for deck in decks if deck.get("author", "").lower() == author_name.lower()]
                 if not results:
                     results = fuzzy_search(author_name, decks, key="author")
-                
                 await self._send_deck_embeds(ctx, results, "No decks found by that author.")
         except DLMAPIError as e:
             await ctx.send(f"Error fetching decks: {str(e)}")

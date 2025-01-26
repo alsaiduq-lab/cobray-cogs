@@ -6,7 +6,6 @@ log = logging.getLogger("red.dlm.config")
 
 class UserConfig:
     """Manages user-specific configurations."""
-    
     def __init__(self, bot):
         self.bot = bot
         self.config = Config.get_conf(
@@ -14,21 +13,17 @@ class UserConfig:
             identifier=8675309991,
             force_registration=True
         )
-        
         default_user = {
-            "default_format": "paper",  # paper, md, dl, sd
-            "last_used_format": None,  # Remembers last used format
+            "default_format": "dl",  # paper, md, dl, sd
+            "last_used_format": 'dl',  # Remembers last used format
             "use_last_format": True,   # Whether to use last used format as default
-            "ocg_access": False,       # Whether user has OCG art access
-            "image_mode": "standard"   # standard, art, ocg
+            "ocg_access": True,       # Whether user has OCG art access
+            "image_mode": "art"   # standard, art, ocg
         }
-        
         default_guild = {
             "auto_search": True,       # Whether to auto-search <card name> mentions
             "preferred_format": None    # Guild-wide format preference
         }
-        
-        # Register defaults
         self.config.register_user(**default_user)
         self.config.register_guild(**default_guild)
 

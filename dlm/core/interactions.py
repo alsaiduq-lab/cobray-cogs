@@ -14,14 +14,12 @@ log = logging.getLogger("red.dlm.interactions")
 
 class InteractionHandler:
     """Handles Discord application commands and interactions."""
-    
     def __init__(self, bot, card_registry: CardRegistry, user_config: UserConfig):
         self.bot = bot
         self.registry = card_registry
         self.config = user_config
         self.builder = CardBuilder()
         self.bonk = BonkAPI()
-        
         self.bot.listen('on_message')(self.handle_card_mentions)
 
     async def initialize(self):
@@ -57,8 +55,8 @@ class InteractionHandler:
             Choice(name="Duel Links", value="dl")
         ])
         async def card(
-            interaction: discord.Interaction, 
-            name: str, 
+            interaction: discord.Interaction,
+            name: str,
             format: Optional[str] = None
         ):
             await interaction.response.defer()
@@ -104,8 +102,8 @@ class InteractionHandler:
             ocg="Show the OCG art (not available for all cards)"
         )
         async def art(
-            interaction: discord.Interaction, 
-            name: str, 
+            interaction: discord.Interaction,
+            name: str,
             ocg: bool = False
         ):
             if ocg and not await self.bonk.is_valid_user(interaction.user.id):
@@ -151,8 +149,8 @@ class InteractionHandler:
         return art
 
     async def autocomplete_card(
-        self, 
-        interaction: discord.Interaction, 
+        self,
+        interaction: discord.Interaction,
         current: str
     ) -> List[Choice[str]]:
         """Handle card name autocomplete."""
@@ -161,7 +159,7 @@ class InteractionHandler:
         cards = self.registry.search_cards(current)
         return [
             Choice(name=card.name, value=card.id)
-            for card in cards[:25]  # Discord limit
+            for card in cards[:25]
         ]
     async def handle_card_mentions(self, message: discord.Message):
         """Handle card mentions in messages."""
@@ -179,7 +177,7 @@ class InteractionHandler:
 
             if cards:
                 embeds = [
-                    await self.builder.build_card_embed(card) 
+                    await self.builder.build_card_embed(card)
                     for card in cards
                 ]
                 await message.reply(embeds=embeds)

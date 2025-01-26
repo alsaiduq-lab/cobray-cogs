@@ -4,6 +4,9 @@ import discord
 from datetime import datetime
 from ..core.api import DLMApi, DLMAPIError
 
+
+# might remove, doesnt seem like its worth it atm
+
 class EventCommands(commands.Cog):
     def __init__(self, bot, api: DLMApi):
         self.bot = bot
