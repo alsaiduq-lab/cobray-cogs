@@ -2,6 +2,7 @@ import discord
 from redbot.core import commands, Config
 import logging
 import asyncio
+import datetime
 from typing import Optional
 from .core.registry import CardRegistry
 from .core.interactions import InteractionHandler
@@ -14,7 +15,6 @@ class ArticleCommands:
     """
     Handles subcommands for articles.
     """
-
     def __init__(self, bot, registry):
         self.bot = bot
         self.registry = registry
@@ -25,29 +25,47 @@ class ArticleCommands:
         async def dlm_articles(ctx: commands.Context, *, query: str = None):
             """
             Example usage: -dlm articles <query>
+            If no query is provided, returns the latest article.
             """
             log.info(f"Article search requested by {ctx.author} with query: {query}")
             if not query:
-                await ctx.send_help(ctx.command)
+                articles = await self.registry.get_latest_articles(limit=3)
+                if not articles:
+                    await ctx.send("No articles found.")
+                    return
+                latest = articles[0]
+                await ctx.send(
+                    f"Latest article: {latest.title}\n"
+                    f"https://duellinksmeta.com{latest.url}"
+                )
                 return
 
-            await ctx.send(f"Searching articles for: {query} (placeholder)")
+            results = await self.registry.search_articles(query)
+            if not results:
+                await ctx.send(f"No articles found matching: {query}")
+                return
+
+            response_lines = ["Found articles:"]
+            for article in results:
+                response_lines.append(f"• {article.title}")
+            await ctx.send("\n".join(response_lines))
 
 class CardCommands:
     """
     Handles subcommands for cards.
     """
 
-    def __init__(self, bot, registry):
+    def __init__(self, bot, registry: CardRegistry):
         self.bot = bot
         self.registry = registry
         log.debug("CardCommands initialized")
 
     def register(self, dlm_group: commands.Group):
-        @dlm_group.command(name="cards")
+        @dlm_group.command(name="cards", aliases=["card"])
         async def dlm_cards(ctx: commands.Context, *, card_name: str = None):
             """
             Usage: -dlm cards <card name>
+            Searches cards by name (exact or partial).
             """
             log.info(f"Card search requested by {ctx.author} for: {card_name}")
             if not card_name:
@@ -63,13 +81,13 @@ class CardCommands:
                 log.debug(f"Found cards for {card_name}: {names}")
                 await ctx.send(f"Found cards: {names}")
 
+
 class DeckCommands:
     """
     Handles subcommands for decks.
     """
-
     def __init__(self, bot, registry):
-        self.bot = bot
+            self.bot = bot
         self.registry = registry
         log.debug("DeckCommands initialized")
 
@@ -84,7 +102,16 @@ class DeckCommands:
                 await ctx.send_help(ctx.command)
                 return
 
-            await ctx.send(f"Looking up deck: {deck_name} (placeholder)")
+            results = await self.registry.search_decks(deck_name)
+            if not results:
+                await ctx.send(f"No decks found matching: {deck_name}")
+                return
+
+            response = "Found decks:\n"
+            for deck in results:
+                response += f"• {deck.name} by {deck.author}\n"
+            await ctx.send(response)
+
 
 class EventCommands:
     """
@@ -107,7 +134,15 @@ class EventCommands:
                 await ctx.send_help(ctx.command)
                 return
 
-            await ctx.send(f"Showing info on event: {event_name} (placeholder)")
+            # TODO: Implement event lookup
+            events = await self.registry.search_events(event_name)
+            if not events:
+                await ctx.send(f"No events found matching: {event_name}")
+                return
+            response = "Found events:\n"
+            for event in events[:5]:
+                response += f"• {event.name} ({event.date})\n"
+            await ctx.send(response)
 
 class MetaCommands:
     """
@@ -130,7 +165,16 @@ class MetaCommands:
                 await ctx.send_help(ctx.command)
                 return
 
-            await ctx.send(f"Fetching meta for format: {format_} (placeholder)")
+            # TODO: Implement meta report fetching
+            meta_report = await self.registry.get_meta_report(format_)
+            if not meta_report:
+                await ctx.send(f"No meta report found for format: {format_}")
+                return
+            response = f"Meta Report for {format_}:\n"
+            for deck in meta_report.top_decks[:5]:
+                response += f"• {deck.name}: {deck.usage_percent}%\n"
+            await ctx.send(response)
+
 
 class TournamentCommands:
     """
@@ -143,221 +187,54 @@ class TournamentCommands:
         log.debug("TournamentCommands initialized")
 
     def register(self, dlm_group: commands.Group):
-        @dlm_group.command(name="tournaments")
+        @dlm_group.command(name="tournaments", aliases=["tour"])
         async def dlm_tournaments(ctx: commands.Context, *, tournament_name: str = None):
             """
             Usage: -dlm tournaments <tournament name>
+            Alias: -dlm tour <tournament name>
+
+            Searches tournaments by name or shortName and displays basic info:
+            shortName, full name, and next date (if available).
             """
             log.info(f"Tournament search requested by {ctx.author} for: {tournament_name}")
             if not tournament_name:
                 await ctx.send_help(ctx.command)
                 return
 
-            await ctx.send(f"Lookup for tournament: {tournament_name} (placeholder)")
+            # 'search_tournaments' should do the actual lookups (fuzzy match, substring, etc.) in your registry.
+            tournaments = await self.registry.search_tournaments(tournament_name)
+            if not tournaments:
+                await ctx.send(f"No tournaments found matching: {tournament_name}")
+                return
 
-class DLM(commands.Cog):
-    """DuelLinksMeta Information Cog"""
+            chunk_size = 3
+            for start_index in range(0, len(tournaments), chunk_size):
+                subset = tournaments[start_index : start_index + chunk_size]
 
-    def __init__(self, bot):
-        self.bot = bot
-        self._ready = asyncio.Event()
-        self._update_task = None
-        self._last_update = None
+                embed = discord.Embed(
+                    title=f"Tournaments matching: {tournament_name}",
+                    description=f"Showing {start_index + 1}–{min(len(tournaments), start_index + chunk_size)} "
+                                f"of {len(tournaments)} results",
+                    color=discord.Color.blurple()
+                )
 
-        self.registry: Optional[CardRegistry] = None
-        self.user_config: Optional[UserConfig] = None
-        self.interactions: Optional[InteractionHandler] = None
+                for t in subset:
+                    short_name = t.get("shortName", "N/A")
+                    full_name = t.get("name", "Unknown Tournament")
+                    next_date_raw = t.get("nextDate")
+                    if not next_date_raw:
+                        next_date = "No upcoming date"
+                    else:
+                        try:
+                            dt = datetime.fromisoformat(next_date_raw.replace("Z", "+00:00"))
+                            next_date = dt.strftime("%d %b %Y, %I:%M %p UTC")
+                        except ValueError:
+                            next_date = next_date_raw
 
-        self.articles: Optional[ArticleCommands] = None
-        self.cards: Optional[CardCommands] = None
-        self.decks: Optional[DeckCommands] = None
-        self.events: Optional[EventCommands] = None
-        self.meta: Optional[MetaCommands] = None
-        self.tournaments: Optional[TournamentCommands] = None
+                    embed.add_field(
+                        name=f"{short_name} — {full_name}",
+                        value=f"Next Date: {next_date}",
+                        inline=False
+                    )
 
-        log.info("DLM cog constructed")
-
-    async def _initialize_components(self):
-        """Initialize all cog components."""
-        log.info("Initializing DLM components")
-        self.registry = CardRegistry()
-        await self.registry.initialize()
-        log.debug("Card registry initialized")
-
-        self.user_config = UserConfig(self.bot)
-        self.interactions = InteractionHandler(self.bot, self.registry, self.user_config)
-        await self.interactions.initialize()
-        log.debug("User config and interaction handler initialized")
-
-        self.articles = ArticleCommands(self.bot, self.registry)
-        self.cards = CardCommands(self.bot, self.registry)
-        self.decks = DeckCommands(self.bot, self.registry)
-        self.events = EventCommands(self.bot, self.registry)
-        self.meta = MetaCommands(self.bot, self.registry)
-        self.tournaments = TournamentCommands(self.bot, self.registry)
-        log.debug("All command handlers initialized")
-
-    def register_subcommands(self):
-        """
-        Attach subcommands from each subcommand class to the main 'dlm' group.
-        """
-        log.debug("Registering subcommands")
-        self.articles.register(self.dlm)
-        self.cards.register(self.dlm)
-        self.decks.register(self.dlm)
-        self.events.register(self.dlm)
-        self.meta.register(self.dlm)
-        self.tournaments.register(self.dlm)
-        log.info("All subcommands registered successfully")
-
-    async def cog_load(self) -> None:
-        """Initialize cog dependencies."""
-        try:
-            log.info("Loading DLM cog")
-            await self._initialize_components()
-
-            if self.bot.application_id:
-                for cmd in self.interactions.get_commands():
-                    self.bot.tree.add_command(cmd)
-                log.info("Application commands registered")
-
-            self.register_subcommands()
-
-            self._update_task = asyncio.create_task(self._update_loop())
-            self._ready.set()
-            log.info("DLM cog loaded successfully")
-        except Exception as e:
-            log.error(f"Error during cog load: {str(e)}", exc_info=True)
-            raise
-
-    async def cog_unload(self) -> None:
-        """Clean up cog dependencies."""
-        try:
-            log.info("Unloading DLM cog")
-            if self._update_task:
-                self._update_task.cancel()
-                try:
-                    await self._update_task
-                except asyncio.CancelledError:
-                    pass
-            await self.registry.close()
-            await self.interactions.close()
-            log.info("DLM cog unloaded successfully")
-        except Exception as e:
-            log.error(f"Error during cog unload: {str(e)}", exc_info=True)
-            raise
-
-    async def _update_registry(self) -> bool:
-        """Update the card registry and return success status."""
-        try:
-            log.info("Starting card registry update")
-            updated = await self.registry.update_registry()
-            if updated:
-                self._last_update = discord.utils.utcnow()
-                log.info("Card registry updated successfully")
-            else:
-                log.warning("Card registry update returned no changes")
-            return updated
-        except Exception as e:
-            log.error(f"Error updating registry: {str(e)}", exc_info=True)
-            return False
-
-    @commands.group(name="dlm", invoke_without_command=True)
-    async def dlm(self, ctx: commands.Context):
-        """DuelLinksMeta commands."""
-        log.debug(f"Main DLM command invoked by {ctx.author}")
-        await ctx.send_help(ctx.command)
-
-    @commands.is_owner()
-    @dlm.command(name="updatedb")
-    async def force_update(self, ctx: commands.Context):
-        """Force an update of the card database."""
-        log.info(f"Force update requested by {ctx.author}")
-        async with ctx.typing():
-            if await self._update_registry():
-                await ctx.send("Card database updated successfully.")
-            else:
-                await ctx.send("Failed to update card database. Check logs for details.")
-
-    @commands.is_owner()
-    @dlm.command(name="dbstatus")
-    async def db_status(self, ctx: commands.Context):
-        """Show database status and last update time."""
-        log.info(f"Database status requested by {ctx.author}")
-        if self._last_update:
-            time_since = discord.utils.utcnow() - self._last_update
-            days_ago = time_since.days
-            await ctx.send(
-                f"Database last updated: "
-                f"{self._last_update.strftime('%Y-%m-%d %H:%M:%S UTC')} "
-                f"({days_ago} days ago)"
-            )
-        else:
-            await ctx.send("Database has not been updated since bot start.")
-
-    @commands.Cog.listener()
-    async def on_message(self, message: discord.Message):
-        """Example auto-card-lookup. Handles card mentions in messages."""
-        if message.author.bot:
-            return
-        await self._ready.wait()
-        if not message.guild or not await self.user_config.get_auto_search(message.guild.id):
-            return
-
-        card_names = CardParser.extract_card_names(message.content)
-        if not card_names:
-            return
-
-        log.debug(f"Processing card mentions in message from {message.author}: {card_names}")
-        cards = []
-        for name in card_names[:10]:
-            found = self.registry.search_cards(name)
-            if found:
-                cards.append(found[0])
-
-        if not cards:
-            return
-
-        format_ = await self.user_config.get_user_format(message.author.id)
-        embeds = []
-        for card in cards:
-            try:
-                embed = await self.interactions.builder.build_card_embed(card, format_)
-                embeds.append(embed)
-            except Exception as e:
-                log.error(f"Error building embed for card '{card.name}': {str(e)}", exc_info=True)
-
-        if embeds:
-            try:
-                await message.reply(embeds=embeds)
-                log.debug(f"Sent {len(embeds)} card embeds in response to message")
-            except Exception as e:
-                log.error(f"Error sending card embeds: {str(e)}", exc_info=True)
-
-    @commands.Cog.listener()
-    async def on_command_error(self, ctx, error):
-        """Global error handler for the cog."""
-        log.error(f"Command error in {ctx.command}: {str(error)}")
-        if isinstance(error, commands.CommandOnCooldown):
-            await ctx.send(f"This command is on cooldown. Try again in {error.retry_after:.1f}s")
-        elif isinstance(error, commands.MissingPermissions):
-            await ctx.send("You don't have permission to use this command.")
-        elif isinstance(error, commands.MissingRequiredArgument):
-            await ctx.send(f"Missing required argument: {error.param.name}")
-        else:
-            log.error(f"Command error: {str(error)}", exc_info=True)
-            await ctx.send("An error occurred while processing your command.")
-
-    async def _update_loop(self):
-        """Background task to update card data weekly."""
-        try:
-            while True:
-                try:
-                    log.info("Running scheduled card registry update")
-                    await self._update_registry()
-                except Exception as e:
-                    log.error(f"Error updating registry: {str(e)}", exc_info=True)
-                await asyncio.sleep(604800)  # 7 days
-        except asyncio.CancelledError:
-            log.info("Update loop cancelled")
-            raise
+                await ctx.send(embed=embed)
