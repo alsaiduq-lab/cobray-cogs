@@ -1,6 +1,6 @@
 {
   "name": "DLM",
-  "short": "Access DuelLinksMeta information and updates",
+  "short": "Access DuelLinksMeta and MasterDuelMeta information and updates",
   "description": "Get the latest articles, events, and information from DuelLinksMeta directly in Discord",
   "end_user_data_statement": "This cog does not store any user data.",
   "install_msg": "Thanks for installing the DLM cog! Use `[p]help dlm` to see available commands.",
