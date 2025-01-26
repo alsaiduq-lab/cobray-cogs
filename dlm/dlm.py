@@ -26,6 +26,7 @@ class DLM(commands.Cog):
         self._load_commands()
         self._update_task: Optional[asyncio.Task] = None
         self._ready = asyncio.Event()
+        self._last_update = None
         log.info("DLM cog initialized")
 
     def _load_commands(self):
@@ -69,11 +70,42 @@ class DLM(commands.Cog):
             log.error(f"Error during cog unload: {str(e)}", exc_info=True)
             raise
 
+    async def _update_registry(self) -> bool:
+        """Update the card registry and return success status."""
+        try:
+            updated = await self.registry.update_registry()
+            if updated:
+                self._last_update = discord.utils.utcnow()
+            return updated
+        except Exception as e:
+            log.error(f"Error updating registry: {str(e)}", exc_info=True)
+            return False
+
     @commands.group(name="dlm")
     async def dlm(self, ctx):
         """DuelLinksMeta commands."""
         if ctx.invoked_subcommand is None:
             await ctx.send_help()
+
+    @commands.is_owner()
+    @dlm.command(name="updatedb")
+    async def force_update(self, ctx: commands.Context):
+        """Force an update of the card database."""
+        async with ctx.typing():
+            if await self._update_registry():
+                await ctx.send("Card database updated successfully.")
+            else:
+                await ctx.send("Failed to update card database. Check logs for details.")
+
+    @commands.is_owner()
+    @dlm.command(name="dbstatus")
+    async def db_status(self, ctx: commands.Context):
+        """Show database status and last update time."""
+        if self._last_update:
+            time_since = discord.utils.utcnow() - self._last_update
+            await ctx.send(f"Database last updated: {self._last_update.strftime('%Y-%m-%d %H:%M:%S UTC')} ({time_since.days} days ago)")
+        else:
+            await ctx.send("Database has not been updated since bot start.")
 
     @commands.Cog.listener()
     async def on_message(self, message: discord.Message):
@@ -120,14 +152,14 @@ class DLM(commands.Cog):
             await ctx.send("An error occurred while processing your command.")
 
     async def _update_loop(self):
-        """Background task to update card data."""
+        """Background task to update card data weekly."""
         try:
             while True:
                 try:
-                    await self.registry.update_registry()
+                    await self._update_registry()
                 except Exception as e:
                     log.error(f"Error updating registry: {str(e)}", exc_info=True)
-                await asyncio.sleep(7200)
+                await asyncio.sleep(604800)
         except asyncio.CancelledError:
             log.info("Update loop cancelled")
             raise
