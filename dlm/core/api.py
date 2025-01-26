@@ -120,8 +120,8 @@ class DLMApi(BaseGameAPI):
 
     def _cast_set(self, resp: Dict[str, Any]) -> Dict[str, Any]:
         data = super()._cast_set(resp)
-        if data and resp.get('bannerImage'):
-            data['image_url'] = f"https://s3.duellinksmeta.com{resp['bannerImage']}"
+        if data and resp.get("bannerImage"):
+            data["image_url"] = f"https://s3.duellinksmeta.com{resp['bannerImage']}"
         return data
 
     def _get_set_link(self, url_path: Optional[str]) -> Optional[str]:
@@ -129,20 +129,79 @@ class DLMApi(BaseGameAPI):
             return None
         return f"https://www.duellinksmeta.com/articles{url_path}"
 
+    async def get_sets(self) -> List[CardSet]:
+        """
+        Fetch sets from Duel Links Meta using pagination, with no more
+        than 10 entries at a time in each request.
+        """
+        if not self.session:
+            await self.initialize()
+
+        # Total sets available
+        total_sets = await self.get_sets_amount()
+        # Set your page size to 10
+        sets_per_page = 10
+        # Calculate total pages
+        total_pages = math.ceil(total_sets / sets_per_page)
+
+        all_sets: List[CardSet] = []
+
+        for page in range(1, total_pages + 1):
+            url = f"{self.BASE_URL}/sets?page={page}&pageSize={sets_per_page}"
+            response = await self._make_request(url)
+
+            # Adjust based on actual API response structure
+            data_list = response.get("data", [])
+
+            for item in data_list:
+                casted = self._cast_set(item)
+                if casted:
+                    all_sets.append(CardSet(**casted))
+
+        return all_sets
+
+
 class MDMApi(BaseGameAPI):
     def __init__(self):
         super().__init__("https://www.masterduelmeta.com/api/v1")
 
     def _cast_set(self, resp: Dict[str, Any]) -> Dict[str, Any]:
         data = super()._cast_set(resp)
-        if data and resp.get('bannerImage'):
-            data['image_url'] = f"https://s3.masterduelmeta.com{resp['bannerImage']}"
+        if data and resp.get("bannerImage"):
+            data["image_url"] = f"https://s3.masterduelmeta.com{resp['bannerImage']}"
         return data
 
     def _get_set_link(self, url_path: Optional[str]) -> Optional[str]:
         if not url_path:
             return None
         return f"https://www.masterduelmeta.com/articles{url_path}"
+
+    async def get_sets(self) -> List[CardSet]:
+        """
+        Fetch sets from Master Duel Meta using pagination, with no more
+        than 10 entries at a time in each request.
+        """
+        if not self.session:
+            await self.initialize()
+
+        total_sets = await self.get_sets_amount()
+        sets_per_page = 10
+        total_pages = math.ceil(total_sets / sets_per_page)
+
+        all_sets: List[CardSet] = []
+
+        for page in range(1, total_pages + 1):
+            url = f"{self.BASE_URL}/sets?page={page}&pageSize={sets_per_page}"
+            response = await self._make_request(url)
+
+            data_list = response.get("data", [])
+
+            for item in data_list:
+                casted = self._cast_set(item)
+                if casted:
+                    all_sets.append(CardSet(**casted))
+
+        return all_sets
 
 class YGOProApi(BaseGameAPI):
     def __init__(self):
