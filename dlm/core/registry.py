@@ -105,8 +105,8 @@ class CardRegistry:
             md_sets = await self.mdm_api.get_all_sets() or []
             self._sets.clear()
             for set_data in [*EXTRA_SETS, *dl_sets, *md_sets]:
-                if set_data and 'id' in set_data:
-                    self._sets[set_data['id']] = set_data
+                if isinstance(set_data, CardSet):
+                    self._sets[set_data.id] = set_data
             log.info(f"Updated {len(self._sets)} sets")
         except Exception as e:
             log.error(f"Error updating sets: {str(e)}")
