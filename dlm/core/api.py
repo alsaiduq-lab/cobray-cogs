@@ -137,4 +137,4 @@ class MDMApi(BaseGameAPI):
 
 class YGOApi(BaseGameAPI):
     def __init__(self):
-        super().__init__("https://db.ygoprodeck.com/api/v7")_
+        super().__init__("https://db.ygoprodeck.com/api/v7")
