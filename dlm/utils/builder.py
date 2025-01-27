@@ -5,54 +5,53 @@ from ..utils.images import ImagePipeline
 
 class CardBuilder:
     """Builds Discord embeds for cards and related content."""
-
-    SPELL_TRAP_ICONS = {
-        "spell": "<:spell:948992874438070342>",
-        "trap": "<:trap:948992874438074428>",
-        "skill": "Skill"
+    
+    FALLBACK_ICONS = {
+        "spell": "[Spell]",
+        "trap": "[Trap]",
+        "skill": "[Skill]",
+        "normal": "[N]", 
+        "rare": "[R]",
+        "super": "[SR]",
+        "ultra": "[UR]",
+        "semilimited": "[2]",
+        "limited": "[1]",
+        "forbidden": "[0]",
+        "DARK": "[DARK]",
+        "DIVINE": "[DIVINE]",
+        "EARTH": "[EARTH]",
+        "FIRE": "[FIRE]",
+        "LIGHT": "[LIGHT]",
+        "WATER": "[WATER]",
+        "WIND": "[WIND]",
+        "Quick-Play": "[Quick]",
+        "Ritual": "[Ritual]",
+        "Field": "[Field]",
+        "Equip": "[Equip]",
+        "Continuous": "[Cont]",
+        "Counter": "[Counter]"
     }
 
-    RARITY_ICONS = {
-        "normal": "<:normalrare:948990033321414678>",
-        "rare": "<:rare:948990141786095667>",
-        "super": "<:superrare:948990076111712356>",
-        "ultra": "<:ultrarare:948990098920333332>"
-    }
-
-    STATUS_ICONS = {
-        "semilimited": "<:semilimited:948990692842156043>",
-        "limited": "<:limited:948990713272602695>",
-        "forbidden": "<:forbidden:948990744373387386>"
-    }
-
-    ATTRIBUTE_ICONS = {
-        "DARK": "<:DARK:948992874400346152>",
-        "DIVINE": "<:DIVINE:948992874089947136>",
-        "EARTH": "<:EARTH:948992874442285096>",
-        "FIRE": "<:FIRE:948992874375176212>",
-        "LIGHT": "<:LIGHT:948992874396151879>",
-        "WATER": "<:WATER:948992874136096768>",
-        "WIND": "<:WIND:948992874123505775>"
-    }
-
-    CARD_TYPE_ICONS = {
-        "Normal": "",
-        "Quick-Play": "<:quickplay:948992874366771240>",
-        "Ritual": "<:ritual:948992874580680786>",
-        "Field": "<:field:948992874169630750>",
-        "Equip": "<:equip:948992874039623741>",
-        "Continuous": "<:continuous:948992874421305385>",
-        "Counter": "<:counter:948992874400321617>"
-    }
-
-    HAT_TOKEN = "https://s3.lain.dev/ygo/hat-token.webp"
+    TOKEN = "../assets/token.jpg"
     SET_BASE_URL = "https://yugipedia.com/wiki/"
 
     def __init__(self):
         self.image_pipeline = ImagePipeline()
+        self.emoji_cache = {}
 
     async def initialize(self):
         await self.image_pipeline.initialize()
+
+    async def validate_emojis(self, guild: discord.Guild) -> None:
+        """Validate that required emojis exist in the guild."""
+        self.emoji_cache = {}
+        for emoji in guild.emojis:
+            if emoji.name in self.FALLBACK_ICONS:
+                self.emoji_cache[emoji.name] = str(emoji)
+
+    def get_icon(self, key: str) -> str:
+        """Get emoji if available, otherwise return fallback text."""
+        return self.emoji_cache.get(key, self.FALLBACK_ICONS.get(key, ""))
 
     async def close(self):
         await self.image_pipeline.close()
@@ -87,6 +86,15 @@ class CardBuilder:
 
         return embed
 
+
+    async def get_card_image(self, card_id: int, ocg: bool = False) -> tuple[bool, str]:
+        """
+        Fetch the card image from the image pipeline.
+        Returns OCG art if enabled, otherwise returns TCG art.
+        """
+        success, url = await self.image_pipeline.get_image_url(card_id, [], ocg=ocg)
+        return success, url
+
     def _add_card_metadata(self, embed: discord.Embed, card: Card, format: str):
         """Add card type, attribute, level, etc to embed."""
         if card.type == "monster":
@@ -95,11 +103,11 @@ class CardBuilder:
                 "link": "Link"
             }.get(card.monster_type, "Level")
 
-            attribute_text = f"**Attribute**: {self.ATTRIBUTE_ICONS.get(card.attribute, '')}"
+            attribute_text = f"**Attribute**: {self.get_icon(card.attribute)}"
             if format in ["md", "dl"]:
                 rarity = getattr(card, f"rarity_{format}")
                 if rarity:
-                    attribute_text += f" {self.RARITY_ICONS.get(rarity, '')}"
+                    attribute_text += f" {self.get_icon(rarity)}"
 
             description = [
                 attribute_text,
@@ -108,13 +116,13 @@ class CardBuilder:
             ]
             embed.description = "\n".join(filter(None, description))
         else:
-            type_text = f"**Type**: {self.SPELL_TRAP_ICONS.get(card.type, '')}"
+            type_text = f"**Type**: {self.get_icon(card.type)}"
             if card.race:
-                type_text += f" {self.CARD_TYPE_ICONS.get(card.race, '')}"
+                type_text += f" {self.get_icon(card.race)}"
             if format in ["md", "dl"]:
                 rarity = getattr(card, f"rarity_{format}")
                 if rarity:
-                    type_text += f" {self.RARITY_ICONS.get(rarity, '')}"
+                    type_text += f" {self.get_icon(rarity)}"
 
             description = [
                 type_text,
@@ -144,17 +152,17 @@ class CardBuilder:
         """Get ban status text for format."""
         if format == "paper":
             return "\n".join([
-                f"**TCG Status**: {self._get_status_icon(card.status_tcg)}",
-                f"**OCG Status**: {self._get_status_icon(card.status_ocg)}"
+                f"**TCG Status**: {self.get_icon(card.status_tcg)}",
+                f"**OCG Status**: {self.get_icon(card.status_ocg)}"
             ])
         elif format in ["md", "dl"]:
             status = getattr(card, f"status_{format}")
-            return f"**Status**: {self._get_status_icon(status)}"
+            return f"**Status**: {self.get_icon(status)}"
         return ""
 
     def _get_status_icon(self, status: str) -> str:
         """Get icon for card status."""
-        return self.STATUS_ICONS.get(status, "Unlimited")
+        return self.get_icon(status) if status else "Unlimited"
 
     def _build_sets_text(self, card: Card, format: str) -> Optional[str]:
         """Build text showing card's set releases."""

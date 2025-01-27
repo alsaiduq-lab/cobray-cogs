@@ -194,14 +194,18 @@ class CardRegistry:
 
         results = [self._cards[cid] for cid, _ in sorted_ids if cid in self._cards]
         if not results and len(query) >= 3:
-            try:
-                card_data = await self.ygopro_api.search_cards(query)
-                for data in card_data[:10]:  # Limit to first 10 results
-                    if card := await self._process_card_data(data):
-                        results.append(card)
-            except Exception as e:
-                log.error(f"Error searching cards via API: {str(e)}")
-        return results
+                try:
+                    log.info(f"Searching YGOPro API for: {query}")
+                    card_data = await self.ygopro_api.search_cards(query)
+                    if card_data:
+                        log.info(f"Found {len(card_data)} cards from YGOPro API")
+                        for data in card_data[:10]:  # Limit to first 10 results
+                            if card := await self._process_card_data(data):
+                                self._cards[card.id] = card  # Cache the card
+                                results.append(card)
+                except Exception as e:
+                    log.error(f"Error searching cards via API: {e}", exc_info=True)
+                return results
 
     async def update_registry(self) -> bool:
         """Update the registry."""
