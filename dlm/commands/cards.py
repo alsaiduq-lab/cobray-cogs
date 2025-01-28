@@ -14,6 +14,7 @@ from ..core.user_config import UserConfig
 from ..utils.fsearch import fuzzy_search
 from ..utils.images import ImagePipeline
 from ..core.models import Card
+from urllib.parse import quote
 
 log = logging.getLogger("red.dlm.commands.cards")
 
@@ -47,7 +48,8 @@ class CardSelectMenu(Select):
             chosen_format = user_format or "paper"
 
         embed = await self.builder.build_card_embed(chosen_card, chosen_format)
-        embed.url = f"https://www.duellinksmeta.com/cards/{chosen_card.name.replace(' ', '-').lower()}"
+        # Use the same _get_card_url method so the card’s name is URL-encoded properly.
+        embed.url = self._get_card_url(chosen_card.name)
 
         card_id = getattr(chosen_card, "id", None)
         monster_types = getattr(chosen_card, "monster_types", [])
@@ -59,6 +61,10 @@ class CardSelectMenu(Select):
                 embed.set_image(url=image_url)
 
         await interaction.response.send_message(embed=embed, ephemeral=True)
+
+    def _get_card_url(self, card_name: str) -> str:
+        safe_name = quote(card_name)
+        return f"https://www.duellinksmeta.com/cards/{safe_name}"
 
 class CardSelectView(View):
     def __init__(self, cards, registry, builder, config, parser, image_pipeline):
@@ -88,9 +94,9 @@ class CardCommands:
             self.registry.ygopro_api.cache.clear()
 
     def _get_card_url(self, card_name: str) -> str:
-        clean_name = card_name.lower()
-        url_name = clean_name.replace(" ", "-")
-        return f"https://www.duellinksmeta.com/cards/{url_name}"
+        # Preserve exact spacing/capitalization in the name, but URL-encode it
+        safe_name = quote(card_name)
+        return f"https://www.duellinksmeta.com/cards/{safe_name}"
 
     def get_commands(self) -> List[app_commands.Command]:
         return [
@@ -146,7 +152,7 @@ class CardCommands:
 
             cached_results = await self.registry.quick_search(current)
             if cached_results:
-                return [Choice(name=card.name, value=card.name) 
+                return [Choice(name=card.name, value=card.name)
                        for card in cached_results[:25]]
 
             if ' ' in current or not current.replace(' ', '').isalnum():
@@ -158,22 +164,20 @@ class CardCommands:
                         params={"fname": current},
                         request_headers={'Cache-Control': 'no-cache'}
                     )
-                    
                     if result and "data" in result:
                         matches = fuzzy_search(
                             query=current,
                             items=result["data"],
                             key="name",
-                            threshold=0.3,
+                            threshold=0.2,
                             max_results=25,
-                            exact_bonus=0.3
-                        )
-                        
+                            exact_bonus=0.5,
+                            prefix_bonus=0.2,
+                            word_match_bonus=0.1)
                         if matches:
                             asyncio.create_task(self._cache_results(matches))
-                            return [Choice(name=match["name"], value=match["name"]) 
+                            return [Choice(name=match["name"], value=match["name"])
                                    for match in matches]
-                            
             except asyncio.TimeoutError:
                 log.warning(f"YGOPro API search timed out for query: {current}")
             except Exception as e:
@@ -259,7 +263,9 @@ class CardCommands:
                         ephemeral=True
                     )
 
-                embed = self.builder.build_art_embed(card, url)
+                embed = build_art_embed(card, url)
+                # Also include the DuelLinksMeta link here, preserving capitalization & spacing
+                embed.url = self._get_card_url(card.name)
                 await interaction.followup.send(embed=embed)
 
             except Exception as err:
@@ -289,6 +295,7 @@ class CardCommands:
                 embeds = []
                 for c in found_cards:
                     embed = await self.builder.build_card_embed(c)
+                    # Use the same helper function for consistent URL encoding
                     embed.url = self._get_card_url(c.name)
                     embeds.append(embed)
                 await message.reply(embeds=embeds)
