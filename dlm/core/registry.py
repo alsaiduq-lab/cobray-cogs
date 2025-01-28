@@ -170,7 +170,7 @@ class CardRegistry:
             log.error(f"Error processing card data: {str(e)}")
             return None
 
-    async def search_cards(self, query: str) -> List[Card]:
+    async def search_cards(self, query: str, *, is_autocomplete: bool = False) -> List[Card]:
         """
         Search for cards by partial or full name, using a tokenized index.
         """
@@ -191,21 +191,25 @@ class CardRegistry:
             key=lambda x: x[1],
             reverse=True,
         )
-
         results = [self._cards[cid] for cid, _ in sorted_ids if cid in self._cards]
-        if not results and len(query) >= 3:
-                try:
-                    log.info(f"Searching YGOPro API for: {query}")
-                    card_data = await self.ygopro_api.search_cards(query)
-                    if card_data:
-                        log.info(f"Found {len(card_data)} cards from YGOPro API")
-                        for data in card_data[:10]:  # Limit to first 10 results
-                            if card := await self._process_card_data(data):
-                                self._cards[card.id] = card  # Cache the card
-                                results.append(card)
-                except Exception as e:
-                    log.error(f"Error searching cards via API: {e}", exc_info=True)
-                return results
+        if results:
+            return results
+        if len(query) >= 3:
+            try:
+                log.info(f"Searching YGOPro API for: {query}")
+                card_data = await self.ygopro_api.search_cards(query, is_autocomplete=is_autocomplete)
+                if card_data:
+                    log.info(f"Found {len(card_data)} cards from YGOPro API")
+                    api_results = []
+                    for data in card_data[:10]:  # Limit to first 10 results
+                        if card := await self._process_card_data(data):
+                            self._cards[card.id] = card  # Cache the card
+                            self._generate_index_for_cards([card])  # Add to index
+                            api_results.append(card)
+                    return api_results
+            except Exception as e:
+                log.error(f"Error searching cards via API: {e}", exc_info=True)
+        return []
 
     async def update_registry(self) -> bool:
         """Update the registry."""
@@ -388,6 +392,35 @@ class CardRegistry:
             log.error(f"Error searching decks: {str(e)}")
             return []
 
+
+    async def quick_search(self, query: str) -> List[Card]:
+        """Quick search through cached cards first"""
+        if not query:
+            return []
+        
+        normalized = self._normalize_string(query)
+        tokens = [normalized] + self._tokenize_string(normalized)
+        card_ids_with_freq = defaultdict(int)
+
+        # Use the existing index for quick lookup
+        for token in tokens:
+            if token in self._index:
+                for card_id in self._index[token]:
+                    card_ids_with_freq[card_id] += 1
+
+        # Sort by frequency of token matches
+        sorted_ids = sorted(
+            card_ids_with_freq.items(),
+            key=lambda x: x[1],
+            reverse=True,
+        )
+
+        # Return only cached results, limited to 25
+        return [
+            self._cards[cid] 
+            for cid, _ in sorted_ids 
+            if cid in self._cards
+        ][:25]
 
     async def search_tournaments(self, query: str) -> List[dict]:
         """Search tournaments by name."""

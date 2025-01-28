@@ -1,7 +1,9 @@
-from discord import app_commands
+from discord import app_commands, Interaction, Embed, ui, ButtonStyle
 from discord.app_commands import Choice
 import discord
+from redbot.core import commands
 import logging
+import asyncio
 from typing import List, Optional
 
 from .registry import CardRegistry
@@ -11,54 +13,163 @@ from .user_config import UserConfig
 
 log = logging.getLogger("red.dlm.interactions")
 
+class CardSearchModal(ui.Modal, title="Search Cards"):
+    def __init__(self, view: 'CardSearchView'):
+        super().__init__()
+        self.view = view
+        self.name = ui.TextInput(
+            label="Card Name",
+            placeholder="Type to search...",
+            min_length=2,
+            max_length=100
+        )
+        self.add_item(self.name)
+
+    async def on_submit(self, interaction: discord.Interaction):
+        await interaction.response.defer()
+        await self.view.search_and_update(self.name.value)
+
+class CardSearchView(ui.View):
+    def __init__(self, registry: CardRegistry, builder: CardBuilder):
+        super().__init__(timeout=180)
+        self.registry = registry
+        self.builder = builder
+        self.message = None
+        self.current_card = None
+        self.search_task = None
+        self.name = None
+
+    @ui.button(label="Search", style=ButtonStyle.primary)
+    async def search_button(self, interaction: discord.Interaction, button: ui.Button):
+        modal = CardSearchModal(self)
+        await interaction.response.send_modal(modal)
+
+    async def search_and_update(self, value: str):
+        if len(value) < 2:
+            return
+        self.name = value
+        if self.search_task and not self.search_task.done():
+            self.search_task.cancel()
+        await asyncio.sleep(0.5)
+        cards = self.registry.search_cards(value)
+        if not cards:
+            await self.update_preview(None)
+            return
+        self.current_card = cards[0]
+        await self.update_preview(self.current_card)
+
+    async def update_preview(self, card):
+        if not self.message:
+            return
+        if not card:
+            await self.message.edit(content="No cards found.", embed=None)
+            return
+        embed = await self.builder.build_card_embed(card)
+        await self.message.edit(content=None, embed=embed)
+
+    @ui.button(label="Previous", style=ButtonStyle.gray)
+    async def previous_button(self, interaction: discord.Interaction, button: ui.Button):
+        await interaction.response.defer()
+        cards = self.registry.search_cards(self.name)
+        if not cards:
+            return
+        current_idx = next((i for i, c in enumerate(cards) if c.id == self.current_card.id), -1)
+        if current_idx > 0:
+            self.current_card = cards[current_idx - 1]
+            await self.update_preview(self.current_card)
+
+    @ui.button(label="Next", style=ButtonStyle.gray)
+    async def next_button(self, interaction: discord.Interaction, button: ui.Button):
+        await interaction.response.defer()
+        cards = self.registry.search_cards(self.name)
+        if not cards:
+            return
+        current_idx = next((i for i, c in enumerate(cards) if c.id == self.current_card.id), -1)
+        if current_idx < len(cards) - 1:
+            self.current_card = cards[current_idx + 1]
+            await self.update_preview(self.current_card)
+
+    async def on_timeout(self):
+        if self.message:
+            await self.message.edit(view=None)
+
+    async def interaction_check(self, interaction: discord.Interaction) -> bool:
+        return interaction.user == self.message.interaction.user
 
 class InteractionHandler:
-    """Handles Discord application commands and interactions."""
-
-    def __init__(self, bot, card_registry: CardRegistry, user_config: UserConfig):
+    def __init__(self, bot: commands.Bot, card_registry: CardRegistry, user_config: UserConfig):
         self.bot = bot
         self.registry = card_registry
         self.config = user_config
         self.builder = CardBuilder()
-        # Listen for card mentions in normal chat messages
+        self.parser = CardParser()
         self.bot.listen('on_message')(self.handle_card_mentions)
 
+    def _get_card_url(self, card_name: str) -> str:
+        clean_name = card_name.lower()
+        url_name = clean_name.replace(" ", "-")
+        return f"https://www.duellinksmeta.com/cards/{url_name}"
+
+    async def search_autocomplete(
+        self,
+        interaction: discord.Interaction,
+        current: str
+    ) -> List[app_commands.Choice[str]]:
+        """
+        Autocomplete function to suggest card names
+        based on whatever user has typed into "card_name."
+        """
+        if not current:
+            return []
+        cards = self.registry.search_cards(current)
+        return [
+            app_commands.Choice(name=card.name, value=card.name)
+            for card in cards[:25]
+        ]
+
     async def initialize(self):
-        """Initialize components and register slash commands."""
         await self.builder.initialize()
 
-        # Register slash commands
-        commands = self.get_commands()
-        command_tree = self.bot.tree
-
-        for command in commands:
-            log.info(f"Registering slash command '{command.name}'")
-            command_tree.add_command(command)
-
-        # Sync global slash commands
-        log.info("Syncing global slash commands...")
-        await command_tree.sync()
-
-        # Optional: If you want them as guild commands for instant updates,
-        # replace the above sync() call with:
-        # guild_id = 123456789012345678  # your testing guild
-        # await command_tree.sync(guild=discord.Object(id=guild_id))
-        # This will make them appear immediately in that guild
-        # rather than taking up to an hour to propagate globally.
-
     async def close(self):
-        """Clean up components."""
         await self.builder.close()
 
     def get_commands(self) -> List[app_commands.Command]:
-        """Return a list of all slash commands in this handler."""
         return [
             self._card_command(),
             self._art_command(),
+            self._search_command(),
         ]
 
+    def _search_command(self) -> app_commands.Command:
+        @app_commands.command(
+            name="search",
+            description="Search for cards with live preview"
+        )
+        async def search(interaction: discord.Interaction, card_name: str = None):
+            """
+            Actual "search" slash command logic.
+            Using autocomplete for 'card_name' with self.search_autocomplete.
+            """
+            if card_name:
+                card = await self.registry.get_card(card_name)
+                if card:
+                    embed = await self.builder.build_card_embed(card)
+                    embed.url = self._get_card_url(card.name)
+                    await interaction.response.send_message(embed=embed)
+                    return
+
+            view = CardSearchView(self.registry, self.builder)
+            await interaction.response.send_message(
+                "Search for a card:",
+                view=view,
+                ephemeral=True
+            )
+            view.message = await interaction.original_response()
+
+        search.autocomplete("card_name")(self.search_autocomplete)
+        return search
+
     def _card_command(self) -> app_commands.Command:
-        """Create the 'card' slash command."""
         @app_commands.command(
             name="card",
             description="Get Yu-Gi-Oh! card info"
@@ -80,8 +191,8 @@ class InteractionHandler:
             await interaction.response.defer()
 
             try:
-                # Always await get_card if it's async and returns a single Card/None
-                card = await self.registry.get_card(name)
+                parsed = self.parser.parse_card_query(name)
+                card = await self.registry.get_card(parsed["query"])
                 if not card:
                     await interaction.followup.send(
                         f"`{name}` not found... :pensive:",
@@ -89,16 +200,15 @@ class InteractionHandler:
                     )
                     return
 
-                # If the card is a Skill, force format = 'sd'
                 if card.type == "skill":
                     format = "sd"
                 elif format:
                     await self.config.update_last_format(interaction.user.id, format)
                 else:
-                    # If the user didn't specify, get their preferred format
                     format = await self.config.get_user_format(interaction.user.id)
 
                 embed = await self.builder.build_card_embed(card, format)
+                embed.url = self._get_card_url(card.name)
                 await interaction.followup.send(embed=embed)
 
             except Exception as e:
@@ -107,11 +217,9 @@ class InteractionHandler:
                     "Something went wrong... :pensive:",
                     ephemeral=True
                 )
-
         return card
 
     def _art_command(self) -> app_commands.Command:
-        """Create the 'art' slash command."""
         @app_commands.command(
             name="art",
             description="Get Yu-Gi-Oh! card art"
@@ -128,16 +236,14 @@ class InteractionHandler:
             await interaction.response.defer()
 
             try:
-                card = await self.registry.get_card(name)
+                parsed = self.parser.parse_card_query(name)
+                card = await self.registry.get_card(parsed["query"])
                 if not card:
                     await interaction.followup.send(
                         f"`{name}` not found... :pensive:",
                         ephemeral=True
                     )
                     return
-
-                # Mark the card to use OCG art if requested
-                card.ocg = ocg
 
                 success, url = await self.builder.get_card_image(card.id, ocg)
                 if not success:
@@ -156,37 +262,17 @@ class InteractionHandler:
                     "Something went wrong... :pensive:",
                     ephemeral=True
                 )
-
         return art
 
-    async def autocomplete_card(
-        self,
-        interaction: discord.Interaction,
-        current: str
-    ) -> List[Choice[str]]:
-        """Handle card name autocomplete (if your /card command has autocomplete)."""
-        if not current:
-            return []
-        # If your registry has a synchronous search_cards, it's fine to call it directly.
-        # If it’s async, await it here.
-        cards = self.registry.search_cards(current)
-        return [
-            Choice(name=card.name, value=card.id)
-            for card in cards[:25]
-        ]
-
     async def handle_card_mentions(self, message: discord.Message):
-        """
-        Automatically embed card details if someone types "[card name]" in chat.
-        This only runs for normal chat messages (not slash commands).
-        """
         if message.author.bot:
-            return
-        card_names = CardParser.extract_card_names(message.content)
-        if not card_names:
             return
 
         try:
+            card_names = self.parser.extract_card_names(message.content)
+            if not card_names:
+                return
+
             found_cards = []
             for name in card_names[:10]:
                 card = await self.registry.get_card(name)
@@ -198,6 +284,8 @@ class InteractionHandler:
                     await self.builder.build_card_embed(card)
                     for card in found_cards
                 ]
+                for embed in embeds:
+                    embed.url = self._get_card_url(embed.title)
                 await message.reply(embeds=embeds)
 
         except Exception as e:
