@@ -1,80 +1,28 @@
 import discord
-from discord import app_commands, Interaction, Embed, SelectOption
+from discord import app_commands, Interaction, Embed, SelectOption, NotFound
 from discord.ui import View, Select
+from discord.ext import commands
 import logging
-from typing import List, Optional, Tuple
+from typing import List, Optional
 from discord.app_commands import Choice
-
-from ..core.models import Card, ALTERNATE_SEARCH_NAMES
+import asyncio
+from ..utils.parser import CardParser
+from ..utils.embeds import format_card_embed, build_art_embed
+from ..utils.builder import CardBuilder
+from ..core.registry import CardRegistry
+from ..core.user_config import UserConfig
 from ..utils.fsearch import fuzzy_search
+from ..utils.images import ImagePipeline
+from ..core.models import Card
 
 log = logging.getLogger("red.dlm.commands.cards")
 
-
-def get_level_symbols(card: Card) -> Tuple[str, str]:
-    if not card.level:
-        return "", ""
-    if card.type:
-        card_type = card.type.lower()
-        if "xyz" in card_type:
-            return "★", "Rank"
-        elif "link" in card_type:
-            return "↯", "Link Rating"
-    return "★", "Level"
-
-
 class CardSelectMenu(Select):
-    """
-    A dropdown menu of Card objects for ephemeral preview.
-    """
-
-    def __init__(self, cards: List[Card]):
-        options = []
-        for i, card in enumerate(cards[:25]):
-            description = []
-
-            # Build short description
-            type_parts = []
-            if card.attribute:
-                type_parts.append(card.attribute)
-            if card.race:
-                type_parts.append(card.race)
-            if card.type:
-                type_parts.append(card.type)
-            if type_parts:
-                description.append(" | ".join(type_parts))
-
-            stats = []
-            if card.level:
-                symbol, label = get_level_symbols(card)
-                stats.append(f"{label} {card.level}")
-            if card.atk is not None:
-                stats.append(f"ATK:{card.atk}")
-            if card.def_ is not None and "link" not in card.type.lower():
-                stats.append(f"DEF:{card.def_}")
-            if stats:
-                description.append(" ".join(stats))
-
-            status = []
-            if card.status_tcg:
-                status.append(f"TCG:{card.status_tcg}")
-            if card.status_ocg:
-                status.append(f"OCG:{card.status_ocg}")
-            if card.status_md:
-                status.append(f"MD:{card.status_md}")
-            if card.status_dl:
-                status.append(f"DL:{card.status_dl}")
-            if status:
-                description.append(" ".join(status))
-
-            options.append(
-                SelectOption(
-                    label=card.name[:100],
-                    value=str(i),
-                    description=" | ".join(d for d in description if d)[:100],
-                )
-            )
-
+    def __init__(self, cards, registry, builder, config, parser, image_pipeline):
+        options = [
+            SelectOption(label=c.name, value=str(i))
+            for i, c in enumerate(cards[:25])
+        ]
         super().__init__(
             placeholder="Choose a card to preview...",
             min_values=1,
@@ -82,386 +30,268 @@ class CardSelectMenu(Select):
             options=options
         )
         self.cards = cards
+        self.registry = registry
+        self.builder = builder
+        self.config = config
+        self.parser = parser
+        self.image_pipeline = image_pipeline
 
     async def callback(self, interaction: Interaction):
-        chosen_card = self.cards[int(self.values[0])]
-        embed = await self.create_card_embed(chosen_card)
+        idx = int(self.values[0])
+        chosen_card = self.cards[idx]
+
+        if chosen_card.type == "skill":
+            chosen_format = "sd"
+        else:
+            user_format = await self.config.get_user_format(interaction.user.id)
+            chosen_format = user_format or "paper"
+
+        embed = await self.builder.build_card_embed(chosen_card, chosen_format)
+        embed.url = f"https://www.duellinksmeta.com/cards/{chosen_card.name.replace(' ', '-').lower()}"
+
+        card_id = getattr(chosen_card, "id", None)
+        monster_types = getattr(chosen_card, "monster_types", [])
+        if card_id:
+            found, image_url = await self.image_pipeline.get_image_url(
+                card_id, monster_types, ocg=False
+            )
+            if found and image_url:
+                embed.set_image(url=image_url)
+
         await interaction.response.send_message(embed=embed, ephemeral=True)
 
-    async def create_card_embed(self, card: Card) -> Embed:
-        embed = Embed(title=card.name, color=self.get_card_color(card))
-
-        # Type/attribute/level, etc.
-        type_parts = []
-        if card.monster_types:
-            type_parts.extend(card.monster_types)
-        if card.race:
-            type_parts.append(card.race)
-        if card.type:
-            type_parts.append(card.type)
-        if type_parts:
-            embed.add_field(name="Type", value=" / ".join(type_parts), inline=True)
-
-        if card.attribute:
-            embed.add_field(name="Attribute", value=card.attribute, inline=True)
-
-        if card.level:
-            symbol, label = get_level_symbols(card)
-            embed.add_field(name=label, value=symbol * card.level, inline=True)
-
-        stats = []
-        if card.atk is not None:
-            stats.append(f"ATK: {card.atk}")
-        if card.def_ is not None and "link" not in card.type.lower():
-            stats.append(f"DEF: {card.def_}")
-        if card.arrows:
-            stats.append(f"Link Arrows: {', '.join(card.arrows)}")
-        if stats:
-            embed.add_field(name="Stats", value=" / ".join(stats), inline=True)
-
-        if card.scale is not None:
-            embed.add_field(name="Pendulum Scale", value=str(card.scale), inline=True)
-
-        # Status fields
-        status_fields = []
-        if card.status_tcg:
-            status_fields.append(("TCG Status", card.status_tcg))
-        if card.status_ocg:
-            status_fields.append(("OCG Status", card.status_ocg))
-        if card.status_goat:
-            status_fields.append(("GOAT Status", card.status_goat))
-        if card.status_md:
-            status_fields.append(("Master Duel", f"Status: {card.status_md}"))
-            if card.rarity_md:
-                status_fields[-1] = (
-                    status_fields[-1][0],
-                    f"{status_fields[-1][1]}\nRarity: {card.rarity_md}"
-                )
-        if card.status_dl:
-            status_fields.append(("Duel Links", f"Status: {card.status_dl}"))
-            if card.rarity_dl:
-                status_fields[-1] = (
-                    status_fields[-1][0],
-                    f"{status_fields[-1][1]}\nRarity: {card.rarity_dl}"
-                )
-        for game, status in status_fields:
-            embed.add_field(name=game, value=status, inline=True)
-
-        # Text/effect
-        if card.description:
-            if card.pendulum_effect:
-                embed.add_field(
-                    name="Pendulum Effect",
-                    value=self.format_card_text(card.pendulum_effect),
-                    inline=False
-                )
-                embed.add_field(
-                    name="Monster Effect",
-                    value=self.format_card_text(card.description),
-                    inline=False
-                )
-            else:
-                embed.add_field(
-                    name="Effect",
-                    value=self.format_card_text(card.description),
-                    inline=False
-                )
-
-        # Sets
-        if card.sets_paper:
-            embed.add_field(
-                name="TCG/OCG Sets",
-                value=", ".join(card.sets_paper)[:1024],
-                inline=False
-            )
-        if card.sets_md:
-            embed.add_field(
-                name="Master Duel Sets",
-                value=", ".join(card.sets_md)[:1024],
-                inline=False
-            )
-        if card.sets_dl:
-            embed.add_field(
-                name="Duel Links Sets",
-                value=", ".join(card.sets_dl)[:1024],
-                inline=False
-            )
-
-        if card.image_url:
-            embed.set_image(url=card.image_url)
-        if card.url:
-            embed.url = card.url
-
-        return embed
-
-    def get_card_color(self, card: Card) -> int:
-        """Assign saved color codes based on card type."""
-        colors = {
-            "divine-beast": 0xFCBF00,
-            "ritual": 0x3B76FF,
-            "fusion": 0x7E1CD4,
-            "synchro": 0xFFFFFF,
-            "xyz": 0x000000,
-            "link": 0x00008B,
-            "pendulum": 0x7CBA3B,
-            "effect": 0xC65F09,
-            "normal": 0xF7E99D,
-            "spell": 0x1D9E74,
-            "trap": 0xBC5C8F,
-            "skill": 0x4A4A4A,
-        }
-
-        if not card.type:
-            return 0x000000
-
-        card_type = card.type.lower()
-        for key, color in colors.items():
-            if key in card_type:
-                return color
-        return 0x000000
-
-    def format_card_text(self, text: str) -> str:
-        """Split up text for readability."""
-        if not text:
-            return ""
-        text = text.replace(" ● ", "\n● ")
-        text = text.replace(":\n", ": ")
-        text = text.replace(". ", ".\n")
-        text = text.replace("; ", ";\n")
-
-        markers = ["[", "]", "(", ")", "●"]
-        for marker in markers:
-            text = text.replace(f" {marker}", marker)
-            text = text.replace(f"{marker} ", marker)
-
-        if "Once per turn" in text:
-            text = text.replace("Once per turn", "\nOnce per turn")
-        if "Once while face-up" in text:
-            text = text.replace("Once while face-up", "\nOnce while face-up")
-
-        lines = [line.strip() for line in text.split("\n") if line.strip()]
-        return "\n".join(lines)[:1024]
-
+class CardSelectView(View):
+    def __init__(self, cards, registry, builder, config, parser, image_pipeline):
+        super().__init__(timeout=None)
+        self.add_item(CardSelectMenu(
+            cards, registry, builder, config, parser, image_pipeline
+        ))
 
 class CardCommands:
-    """
-    Commands for searching/previewing Yugioh cards, integrated with your registry.
-    """
-
-    def __init__(
-        self,
-        bot: "Red",
-        registry,
-        user_config=None
-    ):
+    def __init__(self, bot: commands.Bot, registry: CardRegistry, user_config: UserConfig):
         self.bot = bot
         self.registry = registry
-        self.user_config = user_config
+        self.config = user_config
+        self.parser = CardParser()
+        self.builder = CardBuilder()
+        self.image_pipeline = ImagePipeline()
+        self.bot.listen('on_message')(self.handle_card_mentions)
+
+    async def initialize(self):
+        await self.builder.initialize()
+        await self.image_pipeline.initialize()
+
+    async def close(self):
+        await self.builder.close()
+        await self.image_pipeline.close()
+        if hasattr(self.registry.ygopro_api, 'cache'):
+            self.registry.ygopro_api.cache.clear()
+
+    def _get_card_url(self, card_name: str) -> str:
+        clean_name = card_name.lower()
+        url_name = clean_name.replace(" ", "-")
+        return f"https://www.duellinksmeta.com/cards/{url_name}"
 
     def get_commands(self) -> List[app_commands.Command]:
-        """
-        Return all slash commands to register.
-        (No 'manager' needed now; we rely on self.registry).
-        """
         return [
             self._card_command(),
-            self._art_command(),
-            self._preview_command()
+            self._art_command()
         ]
 
-    async def card_name_autocomplete(self, interaction: Interaction, current: str) -> List[Choice[str]]:
-        """
-        Provides autocomplete suggestions by searching in the registry.
-        """
+    async def quick_search(self, query: str) -> List[Card]:
+        if not query:
+            return []
+        card_dicts = [
+            {"name": card.name, "id": card.id}
+            for card in self._cards.values()
+        ]
+        fuzzy_results = fuzzy_search(
+            query=query,
+            items=card_dicts,
+            key="name",
+            threshold=0.3,
+            max_results=25,
+            exact_bonus=0.3
+        )
+        return [
+            self._cards[res["id"]]
+            for res in fuzzy_results
+            if res["id"] in self._cards
+        ]
+
+    async def text_card(self, ctx: commands.Context, *, query: str = None):
+        if not query:
+            return await ctx.send("❗ You must provide a card name!")
         try:
-            if not current or len(current) < 2:
+            cards = await self.registry.search_cards(query)
+            if not cards:
+                return await ctx.send(f"No results found for '{query}'.")
+            found = cards[0]
+            if found.type == "skill":
+                chosen_format = "sd"
+            else:
+                chosen_format = await self.config.get_user_format(ctx.author.id) or "paper"
+            embed = await self.builder.build_card_embed(found, chosen_format)
+            embed.url = self._get_card_url(found.name)
+            await ctx.send(embed=embed)
+        except Exception as e:
+            log.error(f"Error in text_card: {e}", exc_info=True)
+            await ctx.send("Something went wrong... :pensive:")
+
+    async def card_name_autocomplete(self, interaction: Interaction, current: str) -> List[app_commands.Choice[str]]:
+        try:
+            current = current.strip()
+            if not current or len(current) < 3:
                 return []
 
-            # 1) exact match
-            exact_cards = await self.registry.search_cards(current)
-            if exact_cards:
-                return [
-                    Choice(name=card.name, value=card.name)
-                    for card in exact_cards[:25]
-                ]
+            cached_results = await self.registry.quick_search(current)
+            if cached_results:
+                return [Choice(name=card.name, value=card.name) 
+                       for card in cached_results[:25]]
 
-            # 2) fuzzy match
-            fuzzy_cards = await self.registry.search_cards(current)
-            query_lower = current.lower()
-            alt_cards = [
-                card for card in ALTERNATE_SEARCH_NAMES
-                if fuzzy_search([query_lower], card.name.lower(), threshold=0.3)
-            ]
+            if ' ' in current or not current.replace(' ', '').isalnum():
+                return []
+            try:
+                async with asyncio.timeout(1.5):
+                    result = await self.registry.ygopro_api._make_request(
+                        f"{self.registry.ygopro_api.BASE_URL}/cardinfo.php",
+                        params={"fname": current},
+                        request_headers={'Cache-Control': 'no-cache'}
+                    )
+                    
+                    if result and "data" in result:
+                        matches = fuzzy_search(
+                            query=current,
+                            items=result["data"],
+                            key="name",
+                            threshold=0.3,
+                            max_results=25,
+                            exact_bonus=0.3
+                        )
+                        
+                        if matches:
+                            asyncio.create_task(self._cache_results(matches))
+                            return [Choice(name=match["name"], value=match["name"]) 
+                                   for match in matches]
+                            
+            except asyncio.TimeoutError:
+                log.warning(f"YGOPro API search timed out for query: {current}")
+            except Exception as e:
+                log.error(f"YGOPro API search error for query '{current}': {e}")
 
-            all_cards = fuzzy_cards + alt_cards
-            return [
-                Choice(name=card.name, value=card.name)
-                for card in all_cards[:25]
-            ]
-
-        except Exception as e:
-            log.error(f"Autocomplete error: {e}", exc_info=True)
             return []
 
-    def _preview_command(self) -> app_commands.Command:
-        """
-        /preview <query>
-        Allows ephemeral dropdown selection of multiple matched cards.
-        """
+        except Exception as e:
+            log.error(f"Autocomplete error for query '{current}': {e}", exc_info=True)
+            return []
 
-        @app_commands.command(
-            name="preview",
-            description="Preview multiple cards matching a search"
-        )
-        @app_commands.describe(query="Card name to search for")
-        async def preview(interaction: Interaction, query: str):
-            await interaction.response.defer()
-            try:
-                # Fuzzy search with the registry
-                cards = await self.registry.search_cards(query)
-                query_lower = query.lower()
-                alt_cards = [
-                    c for c in ALTERNATE_SEARCH_NAMES
-                    if fuzzy_search([query_lower], c.name.lower(), threshold=0.3)
-                ]
-                cards.extend(alt_cards)
-
-                if not cards:
-                    return await interaction.followup.send(
-                        f"No cards found matching '{query}'",
-                        ephemeral=True
-                    )
-
-                menu = CardSelectMenu(cards)
-                view = View()
-                view.add_item(menu)
-                await interaction.followup.send(
-                    f"Found {len(cards)} cards matching '{query}':",
-                    view=view,
-                    ephemeral=True
-                )
-
-            except Exception as e:
-                log.error(f"Error in preview command: {e}", exc_info=True)
-                await interaction.followup.send(
-                    "An error occurred while searching for cards",
-                    ephemeral=True
-                )
-
-        return preview
+    async def _cache_results(self, results: List[dict]):
+        try:
+            for result in results:
+                if card := await self.registry._process_card_data(result):
+                    self.registry._cards[card.id] = card
+                    self.registry._generate_index_for_cards([card])
+        except Exception as e:
+            log.error(f"Error caching results: {e}")
 
     def _card_command(self) -> app_commands.Command:
-        """
-        /card <name>
-        Search for a single card by name, or ephemeral dropdown if multiple matches.
-        """
-
         @app_commands.command(
             name="card",
-            description="Search for a Yu-Gi-Oh! card by name"
+            description="Search for a card by name."
         )
-        @app_commands.describe(name="Card name to search for")
+        @app_commands.describe(
+            name="Partial or full card name to find matches."
+        )
         @app_commands.autocomplete(name=self.card_name_autocomplete)
-        async def card(interaction: Interaction, name: str):
-            await interaction.response.defer()
-            try:
-                cards = await self.registry.search_cards(name)
-                if not cards:
-                    # fallback fuzzy
-                    cards = await self.registry.search_cards(name)
-                    name_lower = name.lower()
-                    alt_cards = [
-                        c for c in ALTERNATE_SEARCH_NAMES
-                        if fuzzy_search([name_lower], c.name.lower(), threshold=0.3)
-                    ]
-                    cards.extend(alt_cards)
-
-                if not cards:
-                    return await interaction.followup.send(
-                        f"No cards found matching '{name}'",
-                        ephemeral=True
-                    )
-
-                if len(cards) == 1:
-                    single_card = cards[0]
-                    menu = CardSelectMenu([single_card])
-                    embed = await menu.create_card_embed(single_card)
-                    await interaction.followup.send(embed=embed)
-                else:
-                    menu = CardSelectMenu(cards)
-                    view = View()
-                    view.add_item(menu)
-                    await interaction.followup.send(
-                        f"Found {len(cards)} cards matching '{name}':",
-                        view=view,
-                        ephemeral=True
-                    )
-
-            except Exception as e:
-                log.error(f"Error in card command: {e}", exc_info=True)
-                await interaction.followup.send(
-                    "An error occurred while searching for the card",
+        async def card_command(interaction: Interaction, name: str):
+            cards = await self.registry.search_cards(name)
+            if not cards:
+                return await interaction.response.send_message(
+                    f"No results found for '{name}'.",
                     ephemeral=True
                 )
 
-        return card
+            exact_match = next((c for c in cards if c.name.lower() == name.lower()), None)
+            card = exact_match or cards[0]
+            if card.type == "skill":
+                chosen_format = "sd"
+            else:
+                chosen_format = await self.config.get_user_format(interaction.user.id) or "paper"
+            embed = await self.builder.build_card_embed(card, chosen_format)
+            embed.url = self._get_card_url(card.name)
+            card_id = getattr(card, "id", None)
+            if card_id:
+                found, image_url = await self.image_pipeline.get_image_url(
+                    card_id, card.monster_types or [], ocg=False
+                )
+                if found and image_url:
+                    embed.set_image(url=image_url)
+
+            await interaction.response.send_message(embed=embed)
+
+        return card_command
 
     def _art_command(self) -> app_commands.Command:
-        """
-        /art <name>
-        Show direct artwork or ephemeral list if multiple matches.
-        """
-
         @app_commands.command(
             name="art",
-            description="Show card artwork by name"
+            description="Get Yu-Gi-Oh! card art"
         )
-        @app_commands.describe(name="Card name to search for")
-        async def art(interaction: Interaction, name: str):
+        @app_commands.describe(
+            name="Name of the card",
+            ocg="Show OCG variant if available"
+        )
+        async def art(interaction: Interaction, name: str, ocg: bool = False):
             await interaction.response.defer()
             try:
-                cards = await self.registry.search_cards(name)
-                if not cards:
-                    # fallback fuzzy
-                    cards = await self.registry.search_cards(name)
-                    name_lower = name.lower()
-                    alt_cards = [
-                        c for c in ALTERNATE_SEARCH_NAMES
-                        if fuzzy_search([name_lower], c.name.lower(), threshold=0.3)
-                    ]
-                    cards.extend(alt_cards)
-
-                if not cards:
+                parsed = self.parser.parse_card_query(name)
+                card = await self.registry.get_card(parsed["query"])
+                if not card:
                     return await interaction.followup.send(
-                        f"No cards found matching '{name}'",
+                        f"No results found for '{name}'.",
                         ephemeral=True
                     )
 
-                if len(cards) == 1:
-                    # Send single card art
-                    card_data = cards[0]
-                    embed = discord.Embed(title=card_data.name)
-                    if card_data.image_url:
-                        embed.set_image(url=card_data.image_url)
-                    else:
-                        embed.description = "No art URL found."
-                    await interaction.followup.send(embed=embed)
-                else:
-                    # Show ephemeral dropdown
-                    menu = CardSelectMenu(cards)
-                    view = View()
-                    view.add_item(menu)
-                    await interaction.followup.send(
-                        f"Found {len(cards)} cards matching '{name}':",
-                        view=view,
+                found, url = await self.builder.get_card_image(card.id, ocg)
+
+                if not found:
+                    return await interaction.followup.send(
+                        f"{'OCG ' if ocg else ''}Art for '{card.name}' not found.",
                         ephemeral=True
                     )
 
-            except Exception as e:
-                log.error(f"Error in art command: {e}", exc_info=True)
+                embed = self.builder.build_art_embed(card, url)
+                await interaction.followup.send(embed=embed)
+
+            except Exception as err:
+                log.error(f"Error in /art command: {err}", exc_info=True)
                 await interaction.followup.send(
-                    "An error occurred while fetching card art.",
+                    "Something went wrong... :pensive:",
                     ephemeral=True
                 )
 
         return art
+
+    async def handle_card_mentions(self, message):
+        if message.author.bot:
+            return
+        try:
+            card_names = self.parser.extract_card_names(message.content)
+            if not card_names:
+                return
+
+            found_cards = []
+            for name in card_names[:10]:
+                c = await self.registry.get_card(name)
+                if c:
+                    found_cards.append(c)
+
+            if found_cards:
+                embeds = []
+                for c in found_cards:
+                    embed = await self.builder.build_card_embed(c)
+                    embed.url = self._get_card_url(c.name)
+                    embeds.append(embed)
+                await message.reply(embeds=embeds)
+
+        except Exception as err:
+            log.error(f"Error handling card mentions: {err}", exc_info=True)
