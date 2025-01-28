@@ -7,7 +7,7 @@ import json
 from typing import Dict, Any, Optional, List
 from .models import Card, CardSet
 
-log = logging.getLogger("red.dlm.api")
+log = logging.getLogger("red.dlm.core.api")
 
 class DLMAPIError(Exception):
     """Base exception for DLM API errors"""
@@ -26,7 +26,7 @@ class DLMConnectionError(DLMAPIError):
     pass
 
 class BaseGameAPI:
-    def __init__(self, base_url: str):
+    def __init__(self, base_url: str, log):
         self.BASE_URL = base_url
         self.session: Optional[aiohttp.ClientSession] = None
         self.headers = {
@@ -44,13 +44,11 @@ class BaseGameAPI:
             "Limited 1": "limited",
             "Forbidden": "forbidden"
         }
-        # Regular timeout
         self.timeout = aiohttp.ClientTimeout(total=10, connect=3, sock_read=7)
-        # Shorter timeout for autocomplete
         self.autocomplete_timeout = aiohttp.ClientTimeout(total=1.5, connect=0.5, sock_read=1.0)
-        # Rate limits
         self.rate_limit = asyncio.Semaphore(10)
         self.autocomplete_rate_limit = asyncio.Semaphore(15)
+        self.log = log
 
     async def initialize(self):
         """Initialize with proper timeout settings"""
@@ -64,13 +62,10 @@ class BaseGameAPI:
         """Make a request to the API with better error handling."""
         async with self.rate_limit:
             try:
-                # Merge default headers with request-specific headers
                 headers = self.headers.copy()
                 if request_headers:
                     headers.update(request_headers)
-                    
-                # Reduce sleep time for autocomplete responsiveness
-                await asyncio.sleep(0.5)  # Reduced from 2
+                await asyncio.sleep(0.5)
                 async with self.session.get(url, params=params, headers=headers) as resp:
                     if resp.status == 404:
                         raise DLMNotFoundError(f"Resource not found: {url}")
@@ -127,8 +122,8 @@ class BaseGameAPI:
         return None
 
 class DLMApi(BaseGameAPI):
-    def __init__(self):
-        super().__init__("https://www.duellinksmeta.com/api/v1")
+    def __init__(self, log=log):
+        super().__init__("https://www.duellinksmeta.com/api/v1", log=log)
 
     async def get_card_details(self, card_id: str) -> Optional[Dict]:
         """Get card details from DLM."""
@@ -202,11 +197,9 @@ class DLMApi(BaseGameAPI):
             log.error(f"Error getting meta report: {str(e)}")
             return None
 
-
-
 class MDMApi(BaseGameAPI):
-    def __init__(self):
-        super().__init__("https://www.masterduelmeta.com/api/v1")
+    def __init__(self, log=log):
+        super().__init__("https://www.masterduelmeta.com/api/v1", log=log)
 
     async def get_card_details(self, card_id: str) -> Optional[Dict]:
         """Get card details from MDM."""
@@ -219,9 +212,8 @@ class MDMApi(BaseGameAPI):
             return None
 
 class YGOProApi(BaseGameAPI):
-    def __init__(self):
-        super().__init__("https://db.ygoprodeck.com/api/v7")
-        # Separate rate limit for autocomplete
+    def __init__(self, log):
+        super().__init__("https://db.ygoprodeck.com/api/v7", log=log)
         self.autocomplete_rate_limit = asyncio.Semaphore(15)
 
     async def search_cards(self, name: str, exact: bool = False, is_autocomplete: bool = False) -> List[Dict[str, Any]]:
@@ -229,30 +221,21 @@ class YGOProApi(BaseGameAPI):
         try:
             param_name = "name" if exact else "fname"
             url = f"{self.BASE_URL}/cardinfo.php"
-            
-            # Use different rate limiting for autocomplete
             rate_limiter = self.autocomplete_rate_limit if is_autocomplete else self.rate_limit
-            
             async with rate_limiter:
-                # Skip sleep for autocomplete requests
                 if not is_autocomplete:
                     await asyncio.sleep(0.5)
-                    
                 async with self.session.get(url, params={param_name: name}) as resp:
                     if resp.status != 200:
                         if resp.status == 400 and is_autocomplete:
-                            # Silently fail for autocomplete requests
                             return []
                         raise DLMAPIError(f"API request failed with status {resp.status}: {url}")
-                    
                     result = await resp.json()
                     if result and isinstance(result, dict) and "data" in result:
                         return result["data"]
                     return []
-                    
         except (asyncio.TimeoutError, aiohttp.ClientError) as e:
             if is_autocomplete:
-                # Silently fail for autocomplete
                 return []
             log.error(f"Error searching cards: {str(e)}")
             return []

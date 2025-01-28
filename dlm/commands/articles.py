@@ -5,20 +5,23 @@ import logging
 from typing import List, Optional
 from datetime import datetime
 
-from ..core.registry import CardRegistry
 from ..core.api import DLMApi
 from ..utils.embeds import format_article_embed
 from redbot.core.utils.menus import menu, DEFAULT_CONTROLS
 
-log = logging.getLogger("red.dlm.commands.articles")
-
 class ArticleCommands(commands.Cog):
     """Handler for article-related commands."""
 
-    def __init__(self, bot: commands.Bot, api: DLMApi, registry: CardRegistry):
+    def __init__(self, bot: commands.Bot, api: DLMApi):
+        """Initialize ArticleCommands.
+        Args:
+            bot: Discord bot instance
+            api: DLM API instance
+            log: Optional logger instance. If not provided, uses default logger.
+        """
         self.bot = bot
         self.api = api
-        self.registry = registry
+        self.logger = logging.getLogger("red.dlm.commands.articles")
 
     def get_commands(self) -> List[app_commands.Command]:
         """
@@ -40,7 +43,7 @@ class ArticleCommands(commands.Cog):
             await interaction.response.defer()
 
             try:
-                articles = await self.registry.get_latest_articles(limit=3)
+                articles = await self.get_latest_articles(limit=3)
                 if not articles:
                     await interaction.followup.send(
                         "No articles found.",
@@ -54,7 +57,7 @@ class ArticleCommands(commands.Cog):
                         embed = format_article_embed(article)
                         embeds.append(embed)
                     except Exception as e:
-                        log.error(f"Error formatting article embed: {e}")
+                        self.logger.error(f"Error formatting article embed: {e}", exc_info=True)
 
                 if not embeds:
                     await interaction.followup.send(
@@ -66,7 +69,7 @@ class ArticleCommands(commands.Cog):
                 await interaction.followup.send(embeds=embeds[:3])
 
             except Exception as e:
-                log.error(f"Error fetching latest articles: {e}", exc_info=True)
+                self.logger.error(f"Error fetching latest articles: {e}", exc_info=True)
                 await interaction.followup.send(
                     "Something went wrong... :pensive:",
                     ephemeral=True
@@ -82,7 +85,7 @@ class ArticleCommands(commands.Cog):
         async with ctx.typing():
             try:
                 if query:
-                    results = await self.registry.search_articles(query)
+                    results = await self.search_articles(query)
                     if not results:
                         return await ctx.send(f"No articles found matching: {query}")
 
@@ -92,7 +95,7 @@ class ArticleCommands(commands.Cog):
                             embed = format_article_embed(article)
                             embeds.append(embed)
                         except Exception as e:
-                            log.error(f"Error formatting article embed: {e}")
+                            self.logger.error(f"Error formatting article embed: {e}", exc_info=True)
 
                     if not embeds:
                         return await ctx.send("Error formatting articles.")
@@ -103,7 +106,7 @@ class ArticleCommands(commands.Cog):
                         await menu(ctx, embeds, DEFAULT_CONTROLS)
 
                 else:
-                    articles = await self.registry.get_latest_articles(limit=3)
+                    articles = await self.get_latest_articles(limit=3)
                     if not articles:
                         return await ctx.send("No articles found.")
 
@@ -113,7 +116,7 @@ class ArticleCommands(commands.Cog):
                             embed = format_article_embed(article)
                             embeds.append(embed)
                         except Exception as e:
-                            log.error(f"Error formatting article embed: {e}")
+                            self.logger.error(f"Error formatting article embed: {e}", exc_info=True)
 
                     if not embeds:
                         return await ctx.send("Error formatting articles.")
@@ -121,5 +124,21 @@ class ArticleCommands(commands.Cog):
                     await ctx.send(embeds=embeds)
 
             except Exception as e:
-                log.error(f"Error in article (hybrid) command: {e}", exc_info=True)
+                self.logger.error(f"Error in article (hybrid) command: {e}", exc_info=True)
                 await ctx.send("Something went wrong... :pensive:")
+
+    async def get_latest_articles(self, limit: int = 3) -> List[dict]:
+        """Get the latest articles from DLM."""
+        try:
+            return await self.api.get_latest_articles(limit)
+        except Exception as e:
+            self.logger.error(f"Error getting latest articles: {str(e)}", exc_info=True)
+            return []
+
+    async def search_articles(self, query: str) -> List[dict]:
+        """Search articles by query."""
+        try:
+            return await self.api.search_articles(query)
+        except Exception as e:
+            self.logger.error(f"Error searching articles: {str(e)}", exc_info=True)
+            return []

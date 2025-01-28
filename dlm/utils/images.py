@@ -7,11 +7,14 @@ import io
 import asyncio
 from functools import lru_cache
 
-
-log = logging.getLogger("red.dlm.images")
-
 class ImagePipeline:
-    def __init__(self):
+    def __init__(self, *, log=None):
+        """Initialize ImagePipeline.
+        
+        Args:
+            log: Optional logger instance. If not provided, uses default logger.
+        """
+        self.logger = log or logging.getLogger("red.dlm.images")
         self.session: Optional[aiohttp.ClientSession] = None
         self.rate_limit = asyncio.Semaphore(3)
 
@@ -30,8 +33,6 @@ class ImagePipeline:
             return {"top": 155, "left": 40, "width": 510, "height": 380}
         return {"top": 155, "left": 70, "width": 450, "height": 450}
 
-
-
     def _get_remote_art_url(self, card_id: str) -> str:
         """Get the remote cropped art URL."""
         return f"https://images.ygoprodeck.com/images/cards_cropped/{card_id}.jpg"
@@ -45,7 +46,8 @@ class ImagePipeline:
             try:
                 async with self.session.head(url, timeout=5) as resp:
                     return resp.status == 200
-            except:
+            except Exception as e:
+                self.logger.debug(f"Error checking URL {url}: {str(e)}")
                 return False
 
     async def _process_image(self, card_id: str, monster_types: List[str]) -> Tuple[bool, bytes]:
@@ -72,34 +74,35 @@ class ImagePipeline:
                     output = io.BytesIO()
                     image.save(output, format="WEBP", quality=90)
                     return True, output.getvalue()
-            except Exception:
+            except Exception as e:
+                self.logger.error(f"Error processing image for {card_id}: {str(e)}", exc_info=True)
                 return False, b""
 
     async def get_image_url(self, card_id: str, monster_types: List[str], ocg: bool = False) -> Tuple[bool, str]:
         """Get the image URL for a card."""
         if not self.session or self.session.closed:
             await self.initialize()
-        log.debug(f"Attempting to get image for card ID: {card_id}")
+        self.logger.debug(f"Attempting to get image for card ID: {card_id}")
 
         if ocg:
             remote_art = self._get_remote_art_url(f"{card_id}_ocg")
-            log.debug(f"Checking OCG art at: {remote_art}")
+            self.logger.debug(f"Checking OCG art at: {remote_art}")
             if await self._is_url_available(remote_art):
                 return True, remote_art
             return False, "OCG art not available for this card"
 
         remote_art = self._get_remote_art_url(card_id)
-        log.debug(f"Checking cropped art at: {remote_art}")
+        self.logger.debug(f"Checking cropped art at: {remote_art}")
         if await self._is_url_available(remote_art):
             return True, remote_art
 
-        log.debug("Cropped art not found, trying full card image")
+        self.logger.debug("Cropped art not found, trying full card image")
         success, image_data = await self._process_image(card_id, monster_types)
         if success:
             url = f"https://images.ygoprodeck.com/images/cards/{card_id}.jpg"
-            log.debug(f"Found full card image at: {url}")
+            self.logger.debug(f"Found full card image at: {url}")
             return True, url
-        log.debug("No image found for card")
+        self.logger.debug("No image found for card")
         return False, "Card image not found"
 
     async def is_ocg_available(self, card_id: str) -> bool:

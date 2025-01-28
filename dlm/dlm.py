@@ -1,23 +1,18 @@
 from discord import app_commands
-import discord
 from redbot.core import commands, Config
 import logging
 import asyncio
-from datetime import datetime
-from typing import Optional, List
-from redbot.core.utils.menus import menu, DEFAULT_CONTROLS
+from typing import Optional
 
 from .core.registry import CardRegistry
 from .core.user_config import UserConfig
-from .core.api import DLMApi, DLMAPIError
+from .core.api import DLMApi
 from .commands.cards import CardCommands
 from .commands.articles import ArticleCommands
 from .commands.tours import TournamentCommands
 
 from .utils.parser import CardParser
-from .utils.embeds import format_card_embed
 from .utils.images import ImagePipeline
-from .utils.fsearch import fuzzy_search
 
 log = logging.getLogger("red.dlm")
 
@@ -25,30 +20,25 @@ class DLM(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
         self.config = Config.get_conf(self, identifier=None, force_registration=True)
-        self.api = DLMApi()
-        self.registry = CardRegistry()
+        self.api = DLMApi(log=log)
+        self.registry = CardRegistry(log=log)
         self.user_config = UserConfig(bot)
-        self.card_parser = CardParser()
-        self.image_pipeline = ImagePipeline()
+        self.card_parser = CardParser(log=log)
+        self.image_pipeline = ImagePipeline(log=log)
 
         self.card_commands = CardCommands(
             bot=bot,
             registry=self.registry,
-            user_config=self.user_config
-            
+            user_config=self.user_config,
+            log=log
         )
-        self.article_commands = ArticleCommands(bot=bot, api=self.api, registry=self.registry)
-        self.tournament_commands = TournamentCommands(bot=bot, api=self.api, registry=self.registry)
+        self.article_commands = ArticleCommands(bot=bot, api=self.api)
+        self.tournament_commands = TournamentCommands(bot=bot, api=self.api)
 
-        # Create an init task. We'll await it in cog_load().
-        self._init_task: asyncio.Task = asyncio.create_task(self._initialize())
+        self._init_task: Optional[asyncio.Task] = None
         log.info("DLM Cog initialized")
 
     async def _initialize(self):
-        """
-        Initialize components. We catch NotFound errors from autocomplete
-        if needed, so your log won't get spammed by 404 unknown interaction.
-        """
         try:
             await self.api.initialize()
             log.info("API initialized successfully")
@@ -59,38 +49,34 @@ class DLM(commands.Cog):
             await self.image_pipeline.initialize()
             log.info("ImagePipeline initialized successfully")
 
+            await self.card_commands.initialize()
+            log.info("CardCommands initialized successfully")
+
         except Exception as exc:
             log.error(f"Error during initialization: {exc}", exc_info=True)
+            raise
 
     async def cog_load(self) -> None:
-        """
-        Red 3.5+ allows async cog_load to register slash commands after internal setup.
-        We also await the init task here to ensure everything is initialized.
-        """
-        # Wait for initialization to complete
-        if not self._init_task.done():
+        self._init_task = asyncio.create_task(self._initialize())
+        try:
             await self._init_task
+        except Exception as e:
+            log.error(f"Failed to initialize cog: {e}", exc_info=True)
+            raise
 
-        # Now register all slash commands from submodules
         commands_to_register = (
             self.card_commands.get_commands()
             + self.article_commands.get_commands()
             + self.tournament_commands.get_commands()
         )
 
-        # Simply register commands
         for command in commands_to_register:
             self.bot.tree.add_command(command)
 
     async def cog_unload(self):
-        """
-        Cleanup method to properly close all sessions
-        """
-        # If the init task never finished, cancel it to avoid leaks
         if hasattr(self, '_init_task') and not self._init_task.done():
             self._init_task.cancel()
 
-        # Close everything that might have a session
         try:
             await self.image_pipeline.close()
         except Exception as e:
@@ -127,7 +113,6 @@ class DLM(commands.Cog):
         """
         log.info(f"Card search requested by {ctx.author}: {card_name}")
 
-        # Slash command usage
         if ctx.interaction:
             await ctx.interaction.response.defer()
             if not card_name:
@@ -163,7 +148,6 @@ class DLM(commands.Cog):
                     ephemeral=True
                 )
 
-        # Prefix usage
         else:
             if not card_name:
                 return await ctx.send(
@@ -172,12 +156,30 @@ class DLM(commands.Cog):
             await self.card_commands.text_card(ctx, query=card_name)
 
     @dlm_group.command(name="tournaments", aliases=["tour"])
-    @app_commands.describe(tournament_name="The name of the tournament to search for")
-    async def dlm_tournaments(self, ctx: commands.Context, *, tournament_name: str = None):
-        """Search for tournaments by name."""
-        if not tournament_name:
-            pass
-        await self.tournament_commands.text_tournament_search(ctx=ctx, name=tournament_name)
+    @app_commands.describe(tournament_name="Optional: tournament name to search for")
+    async def dlm_tournaments(self, ctx: commands.Context, *, tournament_name: Optional[str] = None):
+        """Display tournaments (recent ones or search by name)."""
+        if ctx.interaction:
+            await ctx.interaction.response.defer()
+            try:
+                if not tournament_name:
+                    await self.tournament_commands.text_recent_tournaments(ctx)
+                else:
+                    await self.tournament_commands.text_tournament_search(ctx, name=tournament_name)
+            except Exception as e:
+                log.error(f"Error in tournament command: {e}", exc_info=True)
+                if ctx.interaction:
+                    await ctx.interaction.followup.send(
+                        "Something went wrong... :pensive:",
+                        ephemeral=True
+                    )
+                else:
+                    await ctx.send("Something went wrong... :pensive:")
+        else:
+            if not tournament_name:
+                await self.tournament_commands.text_recent_tournaments(ctx)
+            else:
+                await self.tournament_commands.text_tournament_search(ctx, name=tournament_name)
 
     @dlm_group.command(name="articles")
     @app_commands.describe(query="Search term for articles")
