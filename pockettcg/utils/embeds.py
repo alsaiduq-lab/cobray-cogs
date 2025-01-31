@@ -15,7 +15,7 @@ class EmbedBuilder:
         "Fire": "🔥",
         "Water": "💧",
         "Lightning": "⚡",
-        "Fighting": "👊",
+        "Fighting": "👊", 
         "Psychic": "🔮",
         "Darkness": "🌑",
         "Metal": "⚙️",
@@ -39,7 +39,7 @@ class EmbedBuilder:
     }
 
     def __init__(self, *, log=None):
-        self.logger = log or logging.getLogger("red.pokemonmeta.embeds")
+        self.logger = log or logging.getLogger("red.pokemonmeta.utils.embeds")
 
     async def initialize(self):
         self.logger.debug("Initializing embed builder")
@@ -122,8 +122,9 @@ class EmbedBuilder:
             additional_info = []
             if pokemon.weakness:
                 weakness_part = "Weakness: "
-                if "Fighting" in pokemon.weakness:
-                    weakness_part += "👊"
+                for weak_type in pokemon.weakness:
+                    emoji = self.TYPE_EMOJIS.get(weak_type, '⭐')
+                    weakness_part += f"{emoji} +20"
                 additional_info.append(weakness_part)
             retreat_part = "Retreat Cost: "
             if hasattr(pokemon, 'retreat') and pokemon.retreat > 0:
