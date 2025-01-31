@@ -4,7 +4,7 @@ import asyncio
 import random
 from dataclasses import dataclass
 from datetime import datetime
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Any
 from difflib import SequenceMatcher
 
 from .models import Pokemon, EXTRA_CARDS
@@ -54,16 +54,13 @@ class CardRegistry:
 
     async def get_card(self, card_id_or_name: str) -> Optional[Pokemon]:
         """Get a card by ID or exact name."""
-        # Try direct ID lookup
         if card_id_or_name in self._cards:
             return self._cards[card_id_or_name]
 
-        # Try exact name lookup
         name_lower = card_id_or_name.lower()
         if card_id := self._name_index.get(name_lower):
             return self._cards.get(card_id)
 
-        # Try API lookup
         try:
             if card_data := await self.api.get_card(card_id_or_name):
                 card = Pokemon.from_api(card_data)
@@ -84,27 +81,19 @@ class CardRegistry:
         """Perform fuzzy search on items."""
         query = query.lower()
         matches = []
-        
         for item in items:
             target = str(item.get("name", "")).lower()
             if not target:
                 continue
-                
-            # Calculate base similarity
             ratio = SequenceMatcher(None, query, target).ratio()
-            
-            # Add bonuses for exact matches
             if query == target:
                 ratio += 0.6
             elif query in target:
                 ratio += 0.3
             elif target.startswith(query):
                 ratio += 0.2
-                
             if ratio >= threshold:
                 matches.append({**item, "_score": ratio})
-                
-        # Sort by score
         matches.sort(key=lambda x: x["_score"], reverse=True)
         return matches[:25]
 
@@ -116,8 +105,6 @@ class CardRegistry:
 
             results = []
             query = query.strip()
-            
-            # Try API search first
             api_cards = await self.api.search_cards(query)
             if api_cards:
                 for card_data in api_cards:
@@ -132,7 +119,6 @@ class CardRegistry:
                     except Exception as e:
                         self.logger.error(f"Error processing API result: {str(e)}")
 
-            # Always perform local fuzzy search
             search_items = [
                 {"id": card.id, "name": card.name, "card": card}
                 for card in self._cards.values()
@@ -144,7 +130,6 @@ class CardRegistry:
                 if self._matches_filters(card, filters) and card not in results:
                     results.append(card)
 
-            # Debug logging
             self.logger.debug(f"Search '{query}' found {len(results)} results")
             self.logger.debug(f"First few results: {[card.name for card in results[:3]]}")
 
@@ -215,25 +200,21 @@ class CardRegistry:
     def _generate_index_for_cards(self, cards: List[Pokemon]) -> None:
         """Generate search indices for the given cards."""
         for card in cards:
-            # Name index
             name_lower = card.name.lower()
             self._name_index[name_lower] = card.id
 
-            # Set index
             if card.pack:
                 if card.pack not in self._set_index:
                     self._set_index[card.pack] = []
                 if card.id not in self._set_index[card.pack]:
                     self._set_index[card.pack].append(card.id)
 
-            # Type index
             if card.type:
                 if card.type not in self._type_index:
                     self._type_index[card.type] = []
                 if card.id not in self._type_index[card.type]:
                     self._type_index[card.type].append(card.id)
 
-            # Rarity index
             if card.rarity:
                 if card.rarity not in self._rarity_index:
                     self._rarity_index[card.rarity] = []
@@ -272,3 +253,4 @@ class CardRegistry:
         expires: Optional[datetime] = None
         url: Optional[str] = None
         image: Optional[str] = None
+
