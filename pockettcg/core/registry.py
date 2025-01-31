@@ -1,12 +1,11 @@
 """Registry for Pokemon TCG cards."""
 import logging
 import asyncio
-import re
 import random
-from collections import defaultdict
 from dataclasses import dataclass
 from datetime import datetime
-from typing import Dict, List, Optional, Set
+from typing import Dict, List, Optional
+from difflib import SequenceMatcher
 
 from .models import Pokemon, EXTRA_CARDS
 from .api import PokemonMetaAPI
@@ -18,7 +17,7 @@ class CardRegistry:
         self.logger = log or logging.getLogger("red.pokemonmeta.registry")
         self.api = api
         self._cards: Dict[str, Pokemon] = {}
-        self._sets: Dict[str, Set] = {}
+        self._sets: Dict[str, 'CardRegistry.Set'] = {}
         self._name_index: Dict[str, str] = {}  # name -> id mapping
         self._set_index: Dict[str, List[str]] = {}  # set -> [card_ids]
         self._type_index: Dict[str, List[str]] = {}  # type -> [card_ids]
@@ -39,7 +38,7 @@ class CardRegistry:
             return
 
         try:
-            await self.api.initialize()  # Changed from init() to initialize()
+            await self.api.initialize()
             self._initialized = True
             await self.update_registry()
         except Exception as e:
@@ -80,6 +79,80 @@ class CardRegistry:
         """Get all cards from a specific set."""
         card_ids = self._set_index.get(set_name, [])
         return [self._cards[cid] for cid in card_ids if cid in self._cards]
+
+    def _fuzzy_search(self, query: str, items: List[Dict[str, Any]], threshold: float = 0.4) -> List[Dict[str, Any]]:
+        """Perform fuzzy search on items."""
+        query = query.lower()
+        matches = []
+        
+        for item in items:
+            target = str(item.get("name", "")).lower()
+            if not target:
+                continue
+                
+            # Calculate base similarity
+            ratio = SequenceMatcher(None, query, target).ratio()
+            
+            # Add bonuses for exact matches
+            if query == target:
+                ratio += 0.6
+            elif query in target:
+                ratio += 0.3
+            elif target.startswith(query):
+                ratio += 0.2
+                
+            if ratio >= threshold:
+                matches.append({**item, "_score": ratio})
+                
+        # Sort by score
+        matches.sort(key=lambda x: x["_score"], reverse=True)
+        return matches[:25]
+
+    async def search_cards(self, query: str, **filters) -> List[Pokemon]:
+        """Search for cards using fuzzy matching and filters."""
+        try:
+            if not self._initialized:
+                await self.initialize()
+
+            results = []
+            query = query.strip()
+            
+            # Try API search first
+            api_cards = await self.api.search_cards(query)
+            if api_cards:
+                for card_data in api_cards:
+                    try:
+                        card = Pokemon.from_api(card_data)
+                        if self._matches_filters(card, filters):
+                            results.append(card)
+                            # Cache the card
+                            if card.id not in self._cards:
+                                self._cards[card.id] = card
+                                self._generate_index_for_cards([card])
+                    except Exception as e:
+                        self.logger.error(f"Error processing API result: {str(e)}")
+
+            # Always perform local fuzzy search
+            search_items = [
+                {"id": card.id, "name": card.name, "card": card}
+                for card in self._cards.values()
+            ]
+
+            fuzzy_matches = self._fuzzy_search(query, search_items)
+            for match in fuzzy_matches:
+                card = match["card"]
+                if self._matches_filters(card, filters) and card not in results:
+                    results.append(card)
+
+            # Debug logging
+            self.logger.debug(f"Search '{query}' found {len(results)} results")
+            self.logger.debug(f"First few results: {[card.name for card in results[:3]]}")
+
+            return results[:25]
+
+        except Exception as e:
+            self.logger.error(f"Error searching cards: {str(e)}", exc_info=True)
+            return []
 
     async def update_registry(self) -> bool:
         """Update the registry with latest card data."""
@@ -177,55 +250,16 @@ class CardRegistry:
             old.art_variants != new.art_variants
         )
 
-    async def search_cards(self, query: str, **filters) -> List[Pokemon]:
-        """Search for cards using fuzzy matching and filters."""
-        try:
-            if not self._initialized:
-                await self.initialize()
-
-            # Try API search first
-            cards = await self.api.search_cards(query)
-            if cards:
-                results = []
-                for card_data in cards:
-                    try:
-                        card = Pokemon.from_api(card_data)
-                        if self._matches_filters(card, filters):
-                            results.append(card)
-                            # Cache the card for future use
-                            if card.id not in self._cards:
-                                self._cards[card.id] = card
-                                self._generate_index_for_cards([card])
-                    except Exception as e:
-                        self.logger.error(f"Error processing search result: {str(e)}")
-                return results[:25]
-
-            # Fall back to local search if API returns nothing
-            search_items = [
-                {"id": card.id, "name": card.name}
-                for card in self._cards.values()
-            ]
-
-            results = []
-            for item in search_items:
-                if query.lower() in item["name"].lower():
-                    if card := self._cards.get(item["id"]):
-                        if self._matches_filters(card, filters):
-                            results.append(card)
-            return results[:25]
-
-        except Exception as e:
-            self.logger.error(f"Error searching cards: {str(e)}", exc_info=True)
-            return []
-
     def _matches_filters(self, card: Pokemon, filters: Dict[str, str]) -> bool:
         """Check if a card matches the given filters."""
         for key, value in filters.items():
-            if key == "type" and value not in card.energy_type:
+            if not value:  # Skip empty filters
+                continue
+            if key == "type" and value.lower() not in [t.lower() for t in card.energy_type]:
                 return False
-            elif key == "set" and card.pack != value:
+            elif key == "set" and value.lower() != card.pack.lower():
                 return False
-            elif key == "rarity" and card.rarity != value:
+            elif key == "rarity" and value.lower() != card.rarity.lower():
                 return False
         return True
 
