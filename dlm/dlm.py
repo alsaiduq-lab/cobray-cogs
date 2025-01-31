@@ -33,7 +33,7 @@ class DLM(commands.Cog):
             log=log
         )
         self.article_commands = ArticleCommands(bot=bot, api=self.api)
-        self.tournament_commands = TournamentCommands(bot=bot, api=self.api)
+        self.tournament_commands = TournamentCommands(bot=bot, api=self.api, log=log)
 
         self._init_task: Optional[asyncio.Task] = None
         log.info("DLM Cog initialized")
@@ -159,27 +159,8 @@ class DLM(commands.Cog):
     @app_commands.describe(tournament_name="Optional: tournament name to search for")
     async def dlm_tournaments(self, ctx: commands.Context, *, tournament_name: Optional[str] = None):
         """Display tournaments (recent ones or search by name)."""
-        if ctx.interaction:
-            await ctx.interaction.response.defer()
-            try:
-                if not tournament_name:
-                    await self.tournament_commands.text_recent_tournaments(ctx)
-                else:
-                    await self.tournament_commands.text_tournament_search(ctx, name=tournament_name)
-            except Exception as e:
-                log.error(f"Error in tournament command: {e}", exc_info=True)
-                if ctx.interaction:
-                    await ctx.interaction.followup.send(
-                        "Something went wrong... :pensive:",
-                        ephemeral=True
-                    )
-                else:
-                    await ctx.send("Something went wrong... :pensive:")
-        else:
-            if not tournament_name:
-                await self.tournament_commands.text_recent_tournaments(ctx)
-            else:
-                await self.tournament_commands.text_tournament_search(ctx, name=tournament_name)
+        cmd = self.tournament_commands.tournaments
+        await cmd.callback(self.tournament_commands, ctx, tournament_name=tournament_name)
 
     @dlm_group.command(name="articles")
     @app_commands.describe(query="Search term for articles")

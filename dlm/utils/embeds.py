@@ -2,53 +2,67 @@ import re
 import discord
 from discord import Embed, Color
 from datetime import datetime
-from typing import Dict, Any, Optional, Union, List, Tuple
+from typing import Dict, Any, Optional, Tuple, List
 import logging
-from ..core.models import Card, CardSet
+from ..core.models import Card
 from ..utils.images import ImagePipeline
 
 URL_CLEAN_PATTERN = re.compile(r'["\'\?\.,!]|%20')
 
 
-def format_tournament_embed(tournament: Dict[str, Any]) -> Embed:
-    """Format a tournament into a Discord embed."""
-    if not tournament or not tournament.get("name") or not tournament.get("start_date"):
-        raise ValueError("Invalid tournament data")
+def create_tournament_embeds(tournaments: List[Dict[str, Any]], title: str) -> List[Embed]:
+    """Format tournaments into Discord embeds.
+    
+    Args:
+        tournaments: List of tournament dictionaries containing tournament data
+        title: Title to use for the embed series
+        
+    Returns:
+        List of Discord Embed objects
+    """
+    embeds = []
+    
+    for tournament in tournaments:
+        if not tournament or not tournament.get("name") or not tournament.get("start_date"):
+            continue
 
-    try:
-        start_dt = datetime.fromisoformat(tournament["start_date"].replace("Z", "+00:00"))
-        start_timestamp = f"<t:{int(start_dt.timestamp())}:F>"
+        try:
+            start_dt = datetime.fromisoformat(tournament["start_date"].replace("Z", "+00:00"))
+            start_timestamp = f"<t:{int(start_dt.timestamp())}:F>"
 
-        embed = Embed(
-            title=tournament["name"],
-            url=f"https://www.duellinksmeta.com{tournament.get('url', '')}",
-            description=tournament.get("description", "No description available."),
-            color=Color.gold()
-        )
+            embed = Embed(
+                title=tournament["name"],
+                url=f"https://www.duellinksmeta.com{tournament.get('url', '')}",
+                description=tournament.get("description", "No description available."),
+                color=Color.gold()
+            )
 
-        if status := tournament.get("status"):
-            embed.add_field(name="Status", value=status.title(), inline=True)
+            if status := tournament.get("status"):
+                embed.add_field(name="Status", value=status.title(), inline=True)
 
-        if format := tournament.get("format"):
-            embed.add_field(name="Format", value=format.title(), inline=True)
+            if format := tournament.get("format"):
+                embed.add_field(name="Format", value=format.title(), inline=True)
 
-        if entry_fee := tournament.get("entry_fee"):
-            embed.add_field(name="Entry Fee", value=entry_fee, inline=True)
+            if entry_fee := tournament.get("entry_fee"):
+                embed.add_field(name="Entry Fee", value=entry_fee, inline=True)
 
-        if prize_pool := tournament.get("prize_pool"):
-            embed.add_field(name="Prize Pool", value=prize_pool, inline=True)
+            if prize_pool := tournament.get("prize_pool"):
+                embed.add_field(name="Prize Pool", value=prize_pool, inline=True)
 
-        if players := tournament.get("players"):
-            embed.add_field(name="Players", value=str(players), inline=True)
+            if players := tournament.get("players"):
+                embed.add_field(name="Players", value=str(players), inline=True)
 
-        embed.add_field(name="Start Time", value=start_timestamp, inline=True)
+            embed.add_field(name="Start Time", value=start_timestamp, inline=True)
 
-        if image := tournament.get("image"):
-            embed.set_thumbnail(url=f"https://www.duellinksmeta.com{image}")
+            if image := tournament.get("image"):
+                embed.set_thumbnail(url=f"https://www.duellinksmeta.com{image}")
 
-        return embed
-    except Exception as e:
-        raise ValueError(f"Failed to create tournament embed: {str(e)}")
+            embeds.append(embed)
+        except Exception as e:
+            log.error(f"Failed to create tournament embed: {str(e)}")
+            continue
+            
+    return embeds
 
 def clean_url(text: str) -> str:
     """Convert text to URL-friendly format."""
@@ -66,7 +80,7 @@ def format_article_embed(article: Dict[str, Any]) -> Embed:
             url=f"https://www.duellinksmeta.com{article.get('url', '')}",
             description=article.get("description", "No description available."),
             color=Color.blue(),
-            timestamp=datetime.fromisoformat(article.get("date", "").replace("Z", "+00:00")) 
+            timestamp=datetime.fromisoformat(article.get("date", "").replace("Z", "+00:00"))
                 if article.get("date") else None
         )
 
@@ -86,7 +100,6 @@ def format_article_embed(article: Dict[str, Any]) -> Embed:
 
 class CardBuilder:
     """Builds Discord embeds for cards and related content."""
-    
     FALLBACK_ICONS = {
         "spell": "📗",
         "trap": "📕",
@@ -163,7 +176,7 @@ class CardBuilder:
             color=CardBuilder._get_card_color(card)
         )
         embed.set_image(url=image_url)
-        return embed 
+        return embed
 
     async def build_card_embed(self, card: Card, format: str = "paper") -> discord.Embed:
         try:
@@ -171,7 +184,6 @@ class CardBuilder:
                 title=card.name,
                 url=f"https://www.duellinksmeta.com/cards/{clean_url(card.name)}"
             )
-            
             try:
                 success, url = await self.image_pipeline.get_image_url(card.id, card.monster_types or [])
                 if success and url:
@@ -256,7 +268,6 @@ class CardBuilder:
         try:
             if not card.description:
                 return
-                
             if card.type == "monster" and card.monster_types and "Normal" in card.monster_types:
                 embed.add_field(name="Flavor Text", value=card.description, inline=False)
             elif card.type == "monster":

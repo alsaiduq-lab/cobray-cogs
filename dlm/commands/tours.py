@@ -5,6 +5,7 @@ import logging
 from typing import List, Optional
 from datetime import datetime
 from redbot.core.utils.menus import menu, DEFAULT_CONTROLS
+from ..utils.embeds import create_tournament_embeds
 
 from ..core.api import DLMApi, DLMAPIError
 
@@ -13,14 +14,11 @@ log = logging.getLogger("red.dlm.commands.tournaments")
 class TournamentCommands:
     """Handler for tournament-related commands."""
 
-    def __init__(self, bot: commands.Bot, api: DLMApi):
-        """Initialize tournament commands handler.
-        Args:
-            bot: Discord bot instance
-            api: DLM API client
-        """
+    def __init__(self, bot: commands.Bot, api: DLMApi, log: logging.Logger):
+        """Initialize tournament commands handler."""
         self.bot = bot
         self.api = api
+        self.log = log
 
     def get_commands(self) -> List[app_commands.Command]:
         """Get list of tournament-related commands."""
@@ -32,47 +30,29 @@ class TournamentCommands:
         """Create the tournament command."""
         @app_commands.command(
             name="tournament",
-            description="Display tournaments (recent or search by name)"
+            description="Display tournament information by name"
         )
         @app_commands.describe(
-            name="Optional: Name of the tournament to search for"
+            name="Name of the tournament to search for"
         )
-        async def tournament(interaction: Interaction, name: Optional[str] = None):
+        async def tournament(interaction: Interaction, name: str):
             await interaction.response.defer()
 
             try:
-                if name:
-                    # Search for specific tournaments
-                    tournaments = await self.api.search_tournaments(name)
-                    active_tournaments = [t for t in tournaments if t.get('nextDate')]
-
-                    if not active_tournaments:
-                        await interaction.followup.send(
-                            f"No upcoming tournaments found matching: {name}",
-                            ephemeral=True
-                        )
-                        return
-
-                    embeds = self._create_tournament_embeds(active_tournaments, name)
-                else:
-                    # Show recent tournaments
-                    tournaments = await self.api.get_recent_tournaments(limit=5)
-                    active_tournaments = [t for t in tournaments if t.get('nextDate')]
-                    
-                    if not active_tournaments:
-                        await interaction.followup.send(
-                            "No upcoming tournaments found.",
-                            ephemeral=True
-                        )
-                        return
-
-                    embeds = self._create_tournament_embeds(active_tournaments, "Recent Tournaments")
-
+                tournaments = await self.api.search_tournaments(name)
+                active_tournaments = [t for t in tournaments if t.get('nextDate')]
+                if not active_tournaments:
+                    await interaction.followup.send(
+                        f"No upcoming tournaments found matching: {name}",
+                        ephemeral=True
+                    )
+                    return
+                embeds = create_tournament_embeds(active_tournaments, f"Tournaments matching: {name}")
                 if embeds:
-                    await interaction.followup.send(embed=embeds[0])
-                    # Send additional embeds if there are any
-                    for embed in embeds[1:3]:  # Limit to first 3 embeds
-                        await interaction.followup.send(embed=embed)
+                    msg = await interaction.followup.send(embed=embeds[0], wait=True)
+                    if len(embeds) > 1:
+                        ctx = await self.bot.get_context(msg)
+                        await menu(ctx, embeds, DEFAULT_CONTROLS)
                 else:
                     await interaction.followup.send(
                         "No tournament information available.",
@@ -80,7 +60,7 @@ class TournamentCommands:
                     )
 
             except Exception as e:
-                log.error(f"Error in tournament command: {e}", exc_info=True)
+                self.log.error(f"Error in tournament command: {e}", exc_info=True)
                 await interaction.followup.send(
                     "Something went wrong... :pensive:",
                     ephemeral=True
@@ -100,8 +80,7 @@ class TournamentCommands:
         """Search for tournaments by name."""
         if not name:
             return await self.text_recent_tournaments(ctx)
-            
-        log.info(f"Tournament search requested by {ctx.author} for: {name}")
+        self.log.info(f"Tournament search requested by {ctx.author} for: {name}")
         async with ctx.typing():
             try:
                 tournaments = await self.api.search_tournaments(name)
@@ -109,14 +88,14 @@ class TournamentCommands:
                 if not active_tournaments:
                     return await ctx.send(f"No upcoming tournaments found matching: {name}")
 
-                embeds = self._create_tournament_embeds(active_tournaments, name)
+                embeds = create_tournament_embeds(active_tournaments, name)
                 if len(embeds) == 1:
                     await ctx.send(embed=embeds[0])
                 else:
                     await menu(ctx, embeds, DEFAULT_CONTROLS)
 
             except Exception as e:
-                log.error(f"Error in tournament search: {e}", exc_info=True)
+                self.log.error(f"Error in tournament search: {e}", exc_info=True)
                 await ctx.send("Something went wrong... :pensive:")
 
     @tournament_group.command(name="recent")
@@ -134,12 +113,12 @@ class TournamentCommands:
                 if not active_tournaments:
                     return await ctx.send("No upcoming tournaments found.")
 
-                embeds = self._create_tournament_embeds(active_tournaments, "Recent Tournaments")
+                embeds = create_tournament_embeds(active_tournaments, "Recent Tournaments")
                 if len(embeds) == 1:
                     await ctx.send(embed=embeds[0])
                 else:
                     await menu(ctx, embeds, DEFAULT_CONTROLS)
 
         except Exception as e:
-            log.error(f"Error fetching tournament data: {e}", exc_info=True)
+            self.log.error(f"Error fetching tournament data: {e}", exc_info=True)
             await ctx.send("Something went wrong... :pensive:")
