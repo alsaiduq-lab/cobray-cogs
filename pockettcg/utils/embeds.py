@@ -116,7 +116,7 @@ class EmbedBuilder:
                     if move.energy_cost:
                         lines.append(f"Energy: {self._format_energy(move.energy_cost)}")
                     if move.damage:
-                        lines.append(f"Damage: {move.damage}x")
+                        lines.append(f"Damage: {move.damage}")
                     if move.text:
                         lines.append(f"Effect: {move.text}")
                     
