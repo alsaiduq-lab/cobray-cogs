@@ -1,0 +1,10 @@
+{
+  "author": ["Cobray"],
+  "install_msg": "Thanks for installing PocketTCG!",
+  "name": "PocketTCG",
+  "short": "Pokemon TCG card lookup and management",
+  "description": "Look up Pokemon Trading Card Game cards and manage collections",
+  "tags": ["pokemon", "tcg", "cards"],
+  "requirements": ["discord.py"],
+  "min_bot_version": "3.5.0"
+}
