@@ -1,4 +1,3 @@
-"""API client for Pokemon Meta API."""
 import logging
 import aiohttp
 import asyncio
@@ -9,7 +8,6 @@ from urllib.parse import quote
 class PokemonMetaAPI:
     """API Client for Pokemon Meta API."""
     BASE_URL = "https://www.pokemonmeta.com/api/v1"
-    
     RARITY_MAPPING = {
         "d-1": "common",
         "d-2": "uncommon",
@@ -71,12 +69,10 @@ class PokemonMetaAPI:
 
     async def get_card(self, card_id: str) -> Optional[Dict[str, Any]]:
         """Get card details by ID or pokemonId."""
-        # Try direct ID lookup first
         result = await self._make_request(f"cards/{card_id}")
         if result:
             return result
 
-        # Try pokemonId lookup
         cards = await self.get_cards(pokemonId=card_id)
         return cards[0] if cards else None
 
@@ -111,14 +107,11 @@ class PokemonMetaAPI:
         data = await self._make_request("cards")
         if not data or not isinstance(data, list):
             return []
-            
-        # Filter cards by name
         query = query.lower()
         filtered_cards = []
         for card in data:
             if query in card.get("name", "").lower():
                 filtered_cards.append(card)
-                
         return filtered_cards[:25]  # Limit to 25 results
 
     async def get_all_cards(self) -> List[Dict[str, Any]]:
@@ -138,42 +131,31 @@ class PokemonMetaAPI:
     def get_card_image_url(self, card: Dict[str, Any], variant_idx: int = 0) -> Optional[str]:
         """Generate card image URL."""
         BASE_IMAGE_URL = "https://www.pokemonmeta.com"
-        
-        # Check art variants
         if art_variants := card.get("artVariants", []):
             if 0 <= variant_idx < len(art_variants):
                 variant = art_variants[variant_idx]
                 return f"{BASE_IMAGE_URL}/pkm_img/cards/{variant['_id']}.webp"
-        
-        # Check card's obtain info for set image
         if obtain := card.get("obtain", []):
             for entry in obtain:
                 if source := entry.get("source"):
                     if linked_article := source.get("linkedArticle"):
                         if image := linked_article.get("image"):
                             return f"{BASE_IMAGE_URL}{image}"
-        
-        # Use limitlessId if available
         if limitless_id := card.get("limitlessId"):
             return f"{BASE_IMAGE_URL}/pkm_img/cards/{limitless_id}.webp"
-        
         return None
 
     def get_set_image_url(self, set_data: Dict[str, Any]) -> Optional[str]:
         """Generate set image URL."""
         BASE_IMAGE_URL = "https://www.pokemonmeta.com"
-        
         if source := set_data.get("source"):
             if linked_article := source.get("linkedArticle"):
                 if image := linked_article.get("image"):
                     return f"{BASE_IMAGE_URL}{image}"
-                    
         return None
 
     def format_card_url(self, card_name: str, card_id: str) -> str:
         """Generate properly formatted card URL."""
-        # Handle special characters and spaces correctly
-        # Split by spaces and capitalize each word
         name_parts = [word.capitalize() for word in card_name.split()]
         formatted_name = quote(" ".join(name_parts))
         return f"https://www.PokemonMeta.com/cards/{formatted_name}/{card_id}"

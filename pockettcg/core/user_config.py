@@ -5,9 +5,9 @@ from typing import Optional
 import logging
 
 DEFAULT_USER = {
-    "preferred_art": 0,  # Default art variant index
-    "mention_mode": True,  # Whether to respond to card mentions
-    "compact_view": False,  # Whether to use compact card view
+    "preferred_art": 0,
+    "mention_mode": True,
+    "compact_view": False,
 }
 
 class UserConfig:

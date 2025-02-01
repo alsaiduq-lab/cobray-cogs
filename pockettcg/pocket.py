@@ -1,4 +1,3 @@
-"""Main cog module for Pokemon TCG."""
 import logging
 import asyncio
 from typing import Optional, List
@@ -7,39 +6,31 @@ import discord
 from discord import app_commands
 from redbot.core import commands, Config
 
-from .core.api import PokemonMetaAPI     
+from .core.api import PokemonMetaAPI
 from .core.registry import CardRegistry
 from .core.user_config import UserConfig
 from .commands.cards import CardCommands
-from .utils.embeds import EmbedBuilder as CardBuilder
+from .utils.embeds import EmbedBuilder
 from .utils.parser import CardParser
 
 log = logging.getLogger("red.pokemonmeta")
 
 class PokemonMeta(commands.Cog):
     """Pokemon TCG card information and utilities."""
-    
     def __init__(self, bot: commands.Bot):
         self.bot = bot
         self.config = Config.get_conf(self, identifier=893427812, force_registration=True)
-        
-        # Initialize core components first
         self.api = PokemonMetaAPI(log=log)
         self.registry = CardRegistry(api=self.api, log=log)
         self.user_config = UserConfig(bot)
         self.parser = CardParser(log=log)
-        self.builder = CardBuilder(log=log)
-        
-        # Initialize commands after core components
         self.card_commands = CardCommands(
             bot=bot,
             registry=self.registry,
             user_config=self.user_config,
             parser=self.parser,
-            builder=self.builder,
             log=log
         )
-        
         self._init_task: Optional[asyncio.Task] = None
         log.info("PokemonMeta Cog initialized")
 
@@ -47,20 +38,10 @@ class PokemonMeta(commands.Cog):
         """Initialize all components."""
         try:
             log.debug("Starting component initialization")
-            
-            # Initialize API first
             await self.api.initialize()
             log.info("API initialized successfully")
-            
-            # Initialize registry
             await self.registry.initialize()
             log.info("Card registry initialized successfully")
-            
-            # Initialize card builder
-            await self.builder.initialize()
-            log.info("Card builder initialized successfully")
-            
-            # Initialize card commands
             await self.card_commands.initialize()
             log.info("Card commands initialized successfully")
 
@@ -87,7 +68,6 @@ class PokemonMeta(commands.Cog):
             await asyncio.gather(
                 self.api.close(),
                 self.card_commands.close(),
-                self.builder.close(),
                 return_exceptions=True
             )
             log.info("All components closed successfully")
@@ -111,10 +91,8 @@ class PokemonMeta(commands.Cog):
         """Search for a Pokemon card by name."""
         if not name:
             return await ctx.send("❗ Please provide a card name to search for!")
-        
         if ctx.interaction:
             await ctx.interaction.response.defer()
-            
         await self.card_commands.text_card(ctx, query=name)
 
     @pocket_group.command(name="art")
@@ -127,7 +105,6 @@ class PokemonMeta(commands.Cog):
         """Display card artwork."""
         if ctx.interaction:
             await ctx.interaction.response.defer()
-            
         await self.card_commands.display_art(ctx, name, variant)
 
     @app_commands.command(name="pcard")

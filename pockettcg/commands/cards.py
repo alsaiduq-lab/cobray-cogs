@@ -1,4 +1,3 @@
-"""Card command handlers for Pokemon TCG."""
 import asyncio
 import logging
 from typing import List, Optional
@@ -15,6 +14,8 @@ from ..core.user_config import UserConfig
 from ..utils.embeds import EmbedBuilder as CardBuilder
 from ..utils.parser import CardParser
 from ..core.models import Pokemon
+from ..utils import fsearch
+
 
 class CardSelectMenu(Select):
     """Menu for selecting a Pokemon card from search results and previewing it."""
@@ -41,9 +42,7 @@ class CardSelectMenu(Select):
         """Handle card selection."""
         idx = int(self.values[0])
         chosen_card = self.cards[idx]
-        
         embed = await self.builder.build_card_embed(chosen_card, as_full_art=False)
-        
         await interaction.response.send_message(
             embed=embed,
             ephemeral=True,
@@ -78,7 +77,6 @@ class CardSelectView(View):
 
 class CardCommands:
     """Handles Pokemon TCG card-related commands."""
-    
     def __init__(
         self,
         bot: commands.Bot,
@@ -95,8 +93,6 @@ class CardCommands:
         self.parser = parser
         self.builder = builder
         self.logger = log or logging.getLogger("red.pokemontcg.commands")
-        
-        # Register card mention handler
         self.bot.listen('on_message')(self.handle_card_mentions)
 
     async def initialize(self):
@@ -116,7 +112,6 @@ class CardCommands:
         """Search for cards using the registry."""
         if not query:
             return []
-            
         try:
             self.logger.debug(f"Searching for cards: {query}")
             return await self.registry.search_cards(query)
@@ -148,22 +143,17 @@ class CardCommands:
         """Handle text-based card search command."""
         if not query:
             return await ctx.send("❗ You must provide a card name!")
-            
         try:
             cards = await self.search_cards(query)
             if not cards:
                 return await ctx.send(f"No results found for '{query}'.")
 
-            # If exact match exists, use it directly
             if exact_match := next((c for c in cards if c.name.lower() == query.lower()), None):
                 embed = await self.builder.build_card_embed(exact_match, as_full_art=True)
                 return await ctx.send(embed=embed)
-            
-            # Otherwise show preview menu
             async def handle_final_selection(interaction: discord.Interaction, chosen_card: Pokemon):
                 embed = await self.builder.build_card_embed(chosen_card, as_full_art=True)
                 await interaction.message.edit(embed=embed, view=None)
-                
             view = CardSelectView(
                 cards=cards,
                 registry=self.registry,
@@ -176,7 +166,6 @@ class CardCommands:
                 f"Found {len(cards)} cards matching '{query}'. Preview each card and select the one you want:",
                 view=view
             )
-            
         except Exception as e:
             self.logger.error(f"Error in text_card: {e}", exc_info=True)
             await ctx.send("Something went wrong... 😔")
@@ -192,8 +181,6 @@ class CardCommands:
             cards = await self.search_cards(card_name)
             if not cards:
                 return await ctx.send(f"No results found for '{card_name}'.")
-
-            # If exact match exists, show it directly
             if exact_match := next((c for c in cards if c.name.lower() == card_name.lower()), None):
                 if not exact_match.art_variants:
                     return await ctx.send(f"No art variants found for '{exact_match.name}'.")
@@ -206,8 +193,6 @@ class CardCommands:
 
                 embed = self.builder.build_art_embed(exact_match, variant_idx)
                 return await ctx.send(embed=embed)
-            
-            # Otherwise show preview menu
             async def handle_final_selection(interaction: discord.Interaction, chosen_card: Pokemon):
                 if not chosen_card.art_variants:
                     return await interaction.response.send_message(
@@ -256,7 +241,6 @@ class CardCommands:
 
             self.logger.debug(f"Found card mentions: {card_names}")
             found_cards = []
-            
             for name in card_names[:5]:  # Limit to 5 cards per message
                 cards = await self.search_cards(name)
                 if cards:
