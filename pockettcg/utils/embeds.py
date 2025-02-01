@@ -76,7 +76,7 @@ class EmbedBuilder:
         emojis = [self.TYPE_EMOJIS.get(e, '⭐') for e in energy_list]
         return " ".join(emojis)
 
-    async def build_card_embed(self, pokemon: Pokemon, *, as_full_art: bool = False) -> discord.Embed:
+    def build_card_embed(self, pokemon: Pokemon, *, as_full_art: bool = False) -> discord.Embed:
         """Build a Discord embed for a Pokemon card."""
         try:
             title = pokemon.name
@@ -126,9 +126,13 @@ class EmbedBuilder:
                     emoji = self.TYPE_EMOJIS.get(weak_type, '⭐')
                     weakness_part += f"{emoji} +20"
                 additional_info.append(weakness_part)
+
+            # Fixed retreat cost implementation
             retreat_part = "Retreat Cost: "
-            if hasattr(pokemon, 'retreat') and pokemon.retreat > 0:
-                retreat_part += "⭐"
+            if hasattr(pokemon, 'retreat_cost') and pokemon.retreat_cost:
+                retreat_part += "⭐" * pokemon.retreat_cost
+            else:
+                retreat_part += "0"
             additional_info.append(retreat_part)
 
             if additional_info:
@@ -161,6 +165,14 @@ class EmbedBuilder:
                 description="An error occurred while building the card embed.",
                 color=discord.Color.red()
             )
+
+            except Exception as e:
+                self.logger.error(f"Error building card embed: {e}", exc_info=True)
+                return discord.Embed(
+                    title="Error",
+                    description="An error occurred while building the card embed.",
+                    color=discord.Color.red()
+                )
 
     def build_art_embed(self, pokemon: Pokemon, variant_idx: int = 0) -> discord.Embed:
         """Build a Discord embed for card artwork."""
