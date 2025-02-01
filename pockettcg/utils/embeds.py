@@ -126,12 +126,20 @@ class EmbedBuilder:
                     weakness_part += f"{emoji} +20"
                 additional_info.append(weakness_part)
 
-            # Fixed retreat cost implementation
+            # Handle retreat cost
             retreat_part = "Retreat Cost: "
-            if hasattr(pokemon, 'retreat_cost') and pokemon.retreat_cost:
-                retreat_part += "⭐" * pokemon.retreat_cost
+            if hasattr(pokemon, 'retreat') and pokemon.retreat:
+                if int(pokemon.retreat) == 0:
+                    retreat_part += ""
+                else:
+                    retreat_part += "⭐" * int(pokemon.retreat)
+            elif hasattr(pokemon, 'retreat_cost') and pokemon.retreat_cost:
+                if int(pokemon.retreat_cost) == 0:
+                    retreat_part += ""
+                else:
+                    retreat_part += "⭐" * int(pokemon.retreat_cost)
             else:
-                retreat_part += "0"
+                retreat_part += ""
             additional_info.append(retreat_part)
 
             if additional_info:
