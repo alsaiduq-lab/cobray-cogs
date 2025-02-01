@@ -20,7 +20,7 @@ class EmbedBuilder:
         "Metal": "<:MetalEnergy:1335228220886224936>",
         "Fairy": "<:FairyEnergy:1335228293208604734>",
         "Dragon": "<:DragonEnergy:1335228306563399754>",
-        "Colorless": "<:ColorlessEnergy:1335228333591107990>"
+        "Colorless": "<:ColorlessEnergy:1335228335911079990>"  # Fixed ID
     }
 
     def _get_energy_emoji(self, energy_type: str) -> str:
@@ -100,7 +100,11 @@ class EmbedBuilder:
         """Format all energy costs for a move."""
         if not energy_list:
             return ""
-        emojis = [self._get_energy_emoji(e) for e in energy_list]
+        emojis = []
+        for energy_type in energy_list:
+            emoji = self._get_energy_emoji(energy_type)
+            if emoji:
+                emojis.append(emoji)
         return " ".join(emojis)
 
     async def build_card_embed(self, pokemon: Pokemon, *, as_full_art: bool = False) -> discord.Embed:
@@ -164,8 +168,9 @@ class EmbedBuilder:
                 retreat_cost = int(pokemon.retreat_cost)
                 
             if retreat_cost > 0:
-                retreat_emojis = [self._get_energy_emoji("Colorless") for _ in range(retreat_cost)]
-                retreat_part += " ".join(retreat_emojis)
+                colorless_emoji = self._get_energy_emoji("Colorless")
+                retreat_part += (colorless_emoji + " ") * retreat_cost
+            retreat_part = retreat_part.rstrip()  # Remove trailing space if any
             additional_info.append(retreat_part)
 
             if additional_info:
