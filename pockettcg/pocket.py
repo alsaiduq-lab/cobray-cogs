@@ -24,11 +24,13 @@ class PokemonMeta(commands.Cog):
         self.registry = CardRegistry(api=self.api, log=log)
         self.user_config = UserConfig(bot)
         self.parser = CardParser(log=log)
+        self.builder = EmbedBuilder()
         self.card_commands = CardCommands(
             bot=bot,
             registry=self.registry,
             user_config=self.user_config,
             parser=self.parser,
+            builder=self.builder,
             log=log
         )
         self._init_task: Optional[asyncio.Task] = None
