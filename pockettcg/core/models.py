@@ -28,6 +28,13 @@ class Move:
         return ", ".join([f"{count} {energy}" for energy, count in cost_dict.items()])
 
 @dataclass
+class Ability:
+    """Represents a Pokemon's ability."""
+    name: str
+    text: str
+    type: Optional[str] = None
+
+@dataclass
 class ArtVariant:
     id: str
     name: str
@@ -49,20 +56,20 @@ class ObtainInfo:
 
 @dataclass
 class Pokemon:
-    id: str  # pokemonId
+    id: str
     name: str
-    card_type: str  # cardType (e.g. Pokemon, Trainer, Energy)
+    card_type: str
     pack: str
     hp: str
-    abilities: List[str]
     alternate_art: bool
-    energy_type: List[str]  # Pokemon's energy type(s)
+    energy_type: List[str]
     obtain: List[ObtainInfo]
     rarity: str
     retreat: int
     skills: List[str]
     moves: List[Move]
-    subtype: str  # Basic, Stage 1, etc.
+    abilities: List[Ability]
+    subtype: str
     release_date: datetime
     weakness: List[str]
     art_variants: List[ArtVariant]
@@ -87,6 +94,18 @@ class Pokemon:
                 text=move_data.get("text")
             )
             moves.append(move)
+
+        abilities = []
+        for ability_data in data.get("abilities", []):
+            if isinstance(ability_data, dict):
+                ability = Ability(
+                    name=ability_data["name"],
+                    text=ability_data.get("text", ""),
+                    type=ability_data.get("type")
+                )
+            else:
+                ability = Ability(name=ability_data, text="", type=None)
+            abilities.append(ability)
 
         obtain_info = []
         for obtain in data.get("obtain", []):
@@ -114,7 +133,6 @@ class Pokemon:
                 name=variant["name"]
             ))
 
-        # Handle energy types
         energy_types = []
         if main_type := data.get("energyType"):
             if isinstance(main_type, list):
@@ -128,7 +146,6 @@ class Pokemon:
             card_type=data["cardType"],
             pack=data["pack"],
             hp=data["hp"],
-            abilities=data.get("abilities", []),
             alternate_art=data.get("alternateArt", False),
             energy_type=energy_types,
             obtain=obtain_info,
@@ -136,13 +153,13 @@ class Pokemon:
             retreat=data.get("retreat", 0),
             skills=data.get("skills", []),
             moves=moves,
+            abilities=abilities,
             subtype=data["subType"],
             release_date=datetime.fromisoformat(data["release"].replace("Z", "+00:00")),
             weakness=data.get("weakness", []),
             art_variants=art_variants,
             limitless_id=data.get("limitlessId")
         )
-        # Set MongoDB _id if available
         if "_id" in data:
             pokemon._id = data["_id"]
         return pokemon
@@ -159,7 +176,7 @@ RARITY_MAPPING = {
 }
 
 ENERGY_TYPES = [
-    "Grass", "Fire", "Water", "Lightning", 
+    "Grass", "Fire", "Water", "Lightning",
     "Fighting", "Psychic", "Darkness", "Metal", "Dragon", "Colorless"
 ]
 

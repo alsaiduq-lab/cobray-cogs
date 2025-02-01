@@ -1,6 +1,6 @@
 import discord
 import logging
-from typing import Optional
+from typing import Optional, List, Union
 from urllib.parse import quote
 from ..core.models import Pokemon, RARITY_MAPPING
 
@@ -20,25 +20,11 @@ class EmbedBuilder:
         "Metal": "<:MetalEnergy:1335228220886224936>",
         "Fairy": "<:FairyEnergy:1335228293208604734>",
         "Dragon": "<:DragonEnergy:1335228306563399754>",
-        "Colorless": "<:ColorlessEnergy:1335228335911079990>"  # Fixed ID
+        "Colorless": "<:ColorlessEnergy:1335228335911079990>"
     }
 
-    def _get_energy_emoji(self, energy_type: str) -> str:
-        """Get energy emoji, falling back to unicode if discord emoji fails."""
-        try:
-            if energy_type in self.DISCORD_EMOJIS:
-                emoji_str = self.DISCORD_EMOJIS[energy_type]
-                # Ensure we're returning the full Discord emoji format
-                if not emoji_str.startswith('<:') and not emoji_str.endswith('>'):
-                    emoji_str = f"<:{energy_type}Energy:{emoji_str}>"
-                return emoji_str
-            return self.TYPE_EMOJIS.get(energy_type, "⭐")
-        except Exception as e:
-            self.logger.error(f"Error getting energy emoji: {e}", exc_info=True)
-            return self.TYPE_EMOJIS.get(energy_type, "⭐")
-
     TYPE_EMOJIS = {
-        "Grass": "🌿",  # Fallback Unicode emojis if all else fails
+        "Grass": "🌿",
         "Fire": "🔥",
         "Water": "💧",
         "Lightning": "⚡",
@@ -68,11 +54,53 @@ class EmbedBuilder:
     def __init__(self, *, log=None):
         self.logger = log or logging.getLogger("red.pokemonmeta.utils.embeds")
 
-    async def initialize(self):
-        self.logger.debug("Initializing embed builder")
+    def _get_energy_emoji(self, energy_type: str) -> str:
+        """Get energy emoji, falling back to unicode if discord emoji fails."""
+        try:
+            energy_type = energy_type.strip()
+            if energy_type in self.DISCORD_EMOJIS:
+                emoji_str = self.DISCORD_EMOJIS[energy_type]
+                if not emoji_str.startswith('<:') and not emoji_str.endswith('>'):
+                    emoji_str = f"<:{energy_type}Energy:{emoji_str}>"
+                return emoji_str
+            return self.TYPE_EMOJIS.get(energy_type, "⭐")
+        except Exception as e:
+            self.logger.error(f"Error getting energy emoji for {energy_type}: {e}", exc_info=True)
+            return self.TYPE_EMOJIS.get(energy_type, "⭐")
 
-    async def close(self):
-        self.logger.debug("Cleaning up embed builder")
+    def _format_energy_cost(self, energy_list: Union[List[str], List[List[str]]]) -> str:
+        """
+        Format all energy costs for a move.
+        Handles both flat lists and nested lists of energy types.
+        """
+        if not energy_list:
+            return ""
+        try:
+            emojis = []
+            for energy in energy_list:
+                if isinstance(energy, list):
+                    alt_emojis = []
+                    for alt_energy in energy:
+                        emoji = self._get_energy_emoji(alt_energy)
+                        if emoji:
+                            alt_emojis.append(emoji)
+                    if alt_emojis:
+                        emojis.append("/".join(alt_emojis))
+                else:
+                    emoji = self._get_energy_emoji(energy)
+                    if emoji:
+                        emojis.append(emoji)
+            return " ".join(emojis)
+        except Exception as e:
+            self.logger.error(f"Error formatting energy cost {energy_list}: {e}", exc_info=True)
+            return str(energy_list)  # Fallback to string representation
+
+    def _get_type_color(self, pokemon: Pokemon) -> int:
+        if pokemon.type:
+            return self.TYPE_COLORS.get(pokemon.type, 0x808080)
+        elif pokemon.energy_type and len(pokemon.energy_type) > 0:
+            return self.TYPE_COLORS.get(pokemon.energy_type[0], 0x808080)
+        return 0x808080
 
     def _get_card_image_url(self, pokemon: Pokemon, variant_idx: int = 0) -> Optional[str]:
         try:
@@ -84,28 +112,9 @@ class EmbedBuilder:
                 return url
             self.logger.warning("No MongoDB _id found for card")
             return None
-
         except Exception as e:
             self.logger.error(f"Error generating card image URL: {e}", exc_info=True)
             return None
-
-    def _get_type_color(self, pokemon: Pokemon) -> int:
-        if pokemon.type:
-            return self.TYPE_COLORS.get(pokemon.type, 0x808080)
-        elif pokemon.energy_type and len(pokemon.energy_type) > 0:
-            return self.TYPE_COLORS.get(pokemon.energy_type[0], 0x808080)
-        return 0x808080
-
-    def _format_energy_cost(self, energy_list: list) -> str:
-        """Format all energy costs for a move."""
-        if not energy_list:
-            return ""
-        emojis = []
-        for energy_type in energy_list:
-            emoji = self._get_energy_emoji(energy_type)
-            if emoji:
-                emojis.append(emoji)
-        return " ".join(emojis)
 
     async def build_card_embed(self, pokemon: Pokemon, *, as_full_art: bool = False) -> discord.Embed:
         """Build a Discord embed for a Pokemon card."""
@@ -158,19 +167,16 @@ class EmbedBuilder:
                     weakness_part += f"{emoji} +20"
                 additional_info.append(weakness_part)
 
-            # Handle retreat cost
             retreat_part = "Retreat Cost: "
             retreat_cost = 0
-            
             if hasattr(pokemon, 'retreat') and pokemon.retreat:
                 retreat_cost = int(pokemon.retreat)
             elif hasattr(pokemon, 'retreat_cost') and pokemon.retreat_cost:
                 retreat_cost = int(pokemon.retreat_cost)
-                
             if retreat_cost > 0:
                 colorless_emoji = self._get_energy_emoji("Colorless")
                 retreat_part += (colorless_emoji + " ") * retreat_cost
-            retreat_part = retreat_part.rstrip()  # Remove trailing space if any
+            retreat_part = retreat_part.rstrip()
             additional_info.append(retreat_part)
 
             if additional_info:

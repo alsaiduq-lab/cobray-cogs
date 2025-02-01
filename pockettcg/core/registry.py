@@ -1,4 +1,3 @@
-"""Registry for Pokemon TCG cards."""
 import logging
 import asyncio
 import random
@@ -40,7 +39,6 @@ class CardRegistry:
             return
 
         try:
-            # Load all cached cards first
             cached_cards = self.cache.list_cached_cards()
             for card_name, card_id in cached_cards.items():
                 # Try loading by ID first, then by name if that fails
@@ -49,8 +47,6 @@ class CardRegistry:
                     card = Pokemon.from_api(card_data)
                     self._cards[card.id] = card
                     self._generate_index_for_cards([card])
-            
-            # Then initialize API and update registry
             await self.api.initialize()
             self._initialized = True
             await self.update_registry()
@@ -67,7 +63,6 @@ class CardRegistry:
 
     async def get_card(self, card_id_or_name: str) -> Optional[Pokemon]:
         """Get a card by ID or exact name."""
-        # Check memory first
         if card_id_or_name in self._cards:
             return self._cards[card_id_or_name]
 
@@ -75,14 +70,12 @@ class CardRegistry:
         if card_id := self._name_index.get(name_lower):
             return self._cards.get(card_id)
 
-        # Check cache next
         if cached_data := self.cache.get(card_id_or_name):
             card = Pokemon.from_api(cached_data)
             self._cards[card.id] = card
             self._generate_index_for_cards([card])
             return card
 
-        # Finally try API
         try:
             if card_data := await self.api.get_card(card_id_or_name):
                 card = Pokemon.from_api(card_data)
@@ -137,7 +130,6 @@ class CardRegistry:
             results = []
             query = query.strip()
 
-            # First search through cached cards
             search_items = [
                 {"id": card.id, "name": card.name, "card": card}
                 for card in self._cards.values()
@@ -149,7 +141,6 @@ class CardRegistry:
                 if self._matches_filters(card, filters):
                     results.append(card)
 
-            # Then try API search if needed
             if len(results) < 25:  # Only if we need more results
                 api_cards = await self.api.search_cards(query)
                 if api_cards:
@@ -219,7 +210,6 @@ class CardRegistry:
     async def _update_card(self, card_id: str) -> bool:
         """Update a single card's data."""
         try:
-            # Check cache first
             if cached_data := self.cache.get(card_id):
                 new_card = Pokemon.from_api(cached_data)
                 old_card = self._cards.get(card_id)
@@ -230,7 +220,6 @@ class CardRegistry:
                     return True
                 return False
 
-            # Then try API
             if card_data := await self.api.get_card(card_id):
                 new_card = Pokemon.from_api(card_data)
                 old_card = self._cards.get(card_id)
@@ -273,6 +262,14 @@ class CardRegistry:
     @staticmethod
     def _has_card_changed(old: Pokemon, new: Pokemon) -> bool:
         """Check if a card's relevant data has changed."""
+        if len(old.abilities) != len(new.abilities):
+            return True
+        for old_ability, new_ability in zip(old.abilities, new.abilities):
+            if (old_ability.name != new_ability.name or 
+                old_ability.text != new_ability.text or 
+                old_ability.type != new_ability.type):
+                return True
+
         return (
             old.rarity != new.rarity or
             old.moves != new.moves or
