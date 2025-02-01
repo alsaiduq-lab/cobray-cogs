@@ -155,18 +155,16 @@ class EmbedBuilder:
 
             # Handle retreat cost
             retreat_part = "Retreat Cost: "
+            retreat_cost = 0
+            
             if hasattr(pokemon, 'retreat') and pokemon.retreat:
-                if int(pokemon.retreat) == 0:
-                    retreat_part += ""
-                else:
-                    retreat_part += "⭐" * int(pokemon.retreat)
+                retreat_cost = int(pokemon.retreat)
             elif hasattr(pokemon, 'retreat_cost') and pokemon.retreat_cost:
-                if int(pokemon.retreat_cost) == 0:
-                    retreat_part += ""
-                else:
-                    retreat_part += "⭐" * int(pokemon.retreat_cost)
-            else:
-                retreat_part += ""
+                retreat_cost = int(pokemon.retreat_cost)
+                
+            if retreat_cost > 0:
+                retreat_emojis = [self._get_energy_emoji("Colorless") for _ in range(retreat_cost)]
+                retreat_part += " ".join(retreat_emojis)
             additional_info.append(retreat_part)
 
             if additional_info:
