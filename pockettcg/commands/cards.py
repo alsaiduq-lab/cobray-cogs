@@ -14,8 +14,7 @@ from ..core.user_config import UserConfig
 from ..utils.embeds import EmbedBuilder as CardBuilder
 from ..utils.parser import CardParser
 from ..core.models import Pokemon
-from ..utils import fsearch
-
+from ..utils.fsearch import fuzzy_search_multi
 
 class CardSelectMenu(Select):
     """Menu for selecting a Pokemon card from search results and previewing it."""
@@ -36,7 +35,7 @@ class CardSelectMenu(Select):
         self.config = config
         self.parser = parser
         self.builder = builder
-        self.view = None  # Set by CardSelectView
+        self.view = None
 
     async def callback(self, interaction: Interaction):
         """Handle card selection."""
@@ -109,12 +108,47 @@ class CardCommands:
         *,
         is_autocomplete: bool = False
     ) -> List[Pokemon]:
-        """Search for cards using the registry."""
+        """Search for cards using the registry and fuzzy search."""
         if not query:
             return []
         try:
             self.logger.debug(f"Searching for cards: {query}")
-            return await self.registry.search_cards(query)
+            all_cards = await self.registry.get_all_cards()
+            card_dicts = [
+                {
+                    'id': card.id,
+                    'name': card.name,
+                    'set_name': card.set_name,
+                    'number': card.number,
+                    '_card': card  # Store original Pokemon object
+                }
+                for card in all_cards
+            ]
+            search_configs = [
+                {
+                    'key': 'name',
+                    'weight': 1.0,
+                    'exact_bonus': 0.4
+                },
+                {
+                    'key': 'set_name',
+                    'weight': 0.3,
+                    'exact_bonus': 0.2
+                },
+                {
+                    'key': 'number',
+                    'weight': 0.2,
+                    'exact_bonus': 0.2
+                }
+            ]
+            results = fuzzy_search_multi(
+                query=query,
+                items=card_dicts,
+                search_configs=search_configs,
+                threshold=0.3,
+                max_results=25 if not is_autocomplete else 10
+            )
+            return [result['_card'] for result in results]
         except Exception as e:
             self.logger.error(f"Error searching cards: {e}", exc_info=True)
             return []
@@ -133,7 +167,7 @@ class CardCommands:
             cards = await self.search_cards(current, is_autocomplete=True)
             return [
                 Choice(name=card.name, value=card.name)
-                for card in cards[:10]  # Reduced for faster response
+                for card in cards[:10]
             ]
         except Exception as e:
             self.logger.error(f"Autocomplete error: {e}", exc_info=True)
@@ -184,7 +218,6 @@ class CardCommands:
             if exact_match := next((c for c in cards if c.name.lower() == card_name.lower()), None):
                 if not exact_match.art_variants:
                     return await ctx.send(f"No art variants found for '{exact_match.name}'.")
-                    
                 variant_idx = (variant or 1) - 1
                 if variant_idx < 0 or variant_idx >= len(exact_match.art_variants):
                     return await ctx.send(
@@ -199,7 +232,6 @@ class CardCommands:
                         f"No art variants found for '{chosen_card.name}'.",
                         ephemeral=True
                     )
-                    
                 variant_idx = (variant or 1) - 1
                 if variant_idx < 0 or variant_idx >= len(chosen_card.art_variants):
                     return await interaction.response.send_message(
