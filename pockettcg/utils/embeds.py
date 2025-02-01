@@ -2,7 +2,6 @@ import discord
 import logging
 from typing import Optional
 from urllib.parse import quote
-
 from ..core.models import Pokemon, RARITY_MAPPING
 
 class EmbedBuilder:
@@ -76,7 +75,7 @@ class EmbedBuilder:
         emojis = [self.TYPE_EMOJIS.get(e, '⭐') for e in energy_list]
         return " ".join(emojis)
 
-    def build_card_embed(self, pokemon: Pokemon, *, as_full_art: bool = False) -> discord.Embed:
+    async def build_card_embed(self, pokemon: Pokemon, *, as_full_art: bool = False) -> discord.Embed:
         """Build a Discord embed for a Pokemon card."""
         try:
             title = pokemon.name
@@ -165,14 +164,6 @@ class EmbedBuilder:
                 description="An error occurred while building the card embed.",
                 color=discord.Color.red()
             )
-
-            except Exception as e:
-                self.logger.error(f"Error building card embed: {e}", exc_info=True)
-                return discord.Embed(
-                    title="Error",
-                    description="An error occurred while building the card embed.",
-                    color=discord.Color.red()
-                )
 
     def build_art_embed(self, pokemon: Pokemon, variant_idx: int = 0) -> discord.Embed:
         """Build a Discord embed for card artwork."""
