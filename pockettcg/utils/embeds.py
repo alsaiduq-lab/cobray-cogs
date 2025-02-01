@@ -9,8 +9,35 @@ class EmbedBuilder:
 
     CDN_BASE = "https://s3.duellinksmeta.com"
 
+    DISCORD_EMOJIS = {
+        "Grass": "<:GrassEnergy:1335228242046488707>",
+        "Fire": "<:FireEnergy:1335228250812579910>",
+        "Water": "<:WaterEnergy:1335228194940387418>",
+        "Lightning": "<:LightningEnergy:1335228231653261442>",
+        "Fighting": "<:FightingEnergy:1335228265190785158>", 
+        "Psychic": "<:PsychicEnergy:1335228211017023488>",
+        "Darkness": "<:DarknessEnergy:1335228325139972107>",
+        "Metal": "<:MetalEnergy:1335228220886224936>",
+        "Fairy": "<:FairyEnergy:1335228293208604734>",
+        "Dragon": "<:DragonEnergy:1335228306563399754>",
+        "Colorless": "<:ColorlessEnergy:1335228333591107990>"
+    }
+
+    def _get_energy_emoji(self, energy_type: str) -> str:
+        """Get energy emoji, falling back to unicode if discord emoji fails."""
+        try:
+            # Use Discord emoji directly since these are bot emojis
+            if energy_type in self.DISCORD_EMOJIS:
+                return self.DISCORD_EMOJIS[energy_type]
+            
+            # Fall back to Unicode emojis
+            return self.TYPE_EMOJIS.get(energy_type, "⭐")
+        except Exception as e:
+            self.logger.error(f"Error getting energy emoji: {e}", exc_info=True)
+            return self.TYPE_EMOJIS.get(energy_type, "⭐")
+
     TYPE_EMOJIS = {
-        "Grass": "🌿",
+        "Grass": "🌿",  # Fallback Unicode emojis if all else fails
         "Fire": "🔥",
         "Water": "💧",
         "Lightning": "⚡",
@@ -18,7 +45,7 @@ class EmbedBuilder:
         "Psychic": "🔮",
         "Darkness": "🌑",
         "Metal": "⚙️",
-        "Fairy": "✨", # lol just in case
+        "Fairy": "✨",
         "Dragon": "🐉",
         "Colorless": "⭐"
     }
@@ -72,7 +99,7 @@ class EmbedBuilder:
         """Format all energy costs for a move."""
         if not energy_list:
             return ""
-        emojis = [self.TYPE_EMOJIS.get(e, '⭐') for e in energy_list]
+        emojis = [self._get_energy_emoji(e) for e in energy_list]
         return " ".join(emojis)
 
     async def build_card_embed(self, pokemon: Pokemon, *, as_full_art: bool = False) -> discord.Embed:
@@ -88,7 +115,7 @@ class EmbedBuilder:
 
             type_parts = []
             if pokemon.type:
-                type_parts.append(f"Type: {self.TYPE_EMOJIS.get(pokemon.type, '⭐')}")
+                type_parts.append(f"Type: {self._get_energy_emoji(pokemon.type)}")
             if pokemon.hp:
                 type_parts.append(f"HP: {pokemon.hp}")
             if pokemon.rarity:
@@ -122,7 +149,7 @@ class EmbedBuilder:
             if pokemon.weakness:
                 weakness_part = "Weakness: "
                 for weak_type in pokemon.weakness:
-                    emoji = self.TYPE_EMOJIS.get(weak_type, '⭐')
+                    emoji = self._get_energy_emoji(weak_type)
                     weakness_part += f"{emoji} +20"
                 additional_info.append(weakness_part)
 
