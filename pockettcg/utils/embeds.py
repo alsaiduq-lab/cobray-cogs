@@ -26,11 +26,12 @@ class EmbedBuilder:
     def _get_energy_emoji(self, energy_type: str) -> str:
         """Get energy emoji, falling back to unicode if discord emoji fails."""
         try:
-            # Use Discord emoji directly since these are bot emojis
             if energy_type in self.DISCORD_EMOJIS:
-                return self.DISCORD_EMOJIS[energy_type]
-            
-            # Fall back to Unicode emojis
+                emoji_str = self.DISCORD_EMOJIS[energy_type]
+                # Ensure we're returning the full Discord emoji format
+                if not emoji_str.startswith('<:') and not emoji_str.endswith('>'):
+                    emoji_str = f"<:{energy_type}Energy:{emoji_str}>"
+                return emoji_str
             return self.TYPE_EMOJIS.get(energy_type, "⭐")
         except Exception as e:
             self.logger.error(f"Error getting energy emoji: {e}", exc_info=True)
