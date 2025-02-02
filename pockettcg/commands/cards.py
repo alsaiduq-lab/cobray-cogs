@@ -108,56 +108,29 @@ class CardCommands:
         if not query:
             return []
         try:
-            cached_cards = []
-            cached_card_list = self.registry.cache.list_cached_cards()
-            for card_name, card_id in cached_card_list.items():
-                if card_data := self.registry.cache.get(card_id):
-                    try:
-                        card = Pokemon.from_api(card_data)
-                        cached_cards.append(card)
-                    except Exception:
-                        continue
+            # First try registry search
+            registry_results = await self.registry.search_cards(query)
 
-            registry_cards = list(self.registry._cards.values())
-            for card in registry_cards:
-                if card.id not in [c.id for c in cached_cards]:
-                    cached_cards.append(card)
+            # If we need more results and have an API client, try live search
+            if len(registry_results) < (10 if is_autocomplete else 25) and self.registry.api:
+                try:
+                    api_results = await self.registry.api.search_cards(query)
+                    if api_results:
+                        for card_data in api_results:
+                            card = Pokemon.from_api(card_data)
+                            if card.id not in [c.id for c in registry_results]:
+                                registry_results.append(card)
+                                # Cache the new card
+                                if card.id not in self.registry._cards:
+                                    self.registry._add_card_to_indices(card)
+                                    self.registry.cache.set(card.id, card_data)
+                            if len(registry_results) >= (10 if is_autocomplete else 25):
+                                break
+                except Exception:
+                    log.warning("Failed to fetch additional results from API", exc_info=True)
 
-            card_dicts = [
-                {
-                    'id': card.id,
-                    'name': card.name,
-                    'set_name': card.pack,
-                    '_card': card
-                }
-                for card in cached_cards
-            ]
-            search_configs = [
-                {'key': 'name', 'weight': 1.0, 'exact_bonus': 0.4},
-                {'key': 'set_name', 'weight': 0.3, 'exact_bonus': 0.2}
-            ]
-            results = fuzzy_search_multi(
-                query=query,
-                items=card_dicts,
-                search_configs=search_configs,
-                threshold=0.3,
-                max_results=25 if not is_autocomplete else 10
-            )
-            found_cards = [result['_card'] for result in results]
+            return registry_results[:25 if not is_autocomplete else 10]
 
-            if len(found_cards) < (10 if is_autocomplete else 25):
-                if api_data := await self.registry.api.search_cards(query):
-                    for card_data in api_data:
-                        card = Pokemon.from_api(card_data)
-                        if card not in found_cards:
-                            found_cards.append(card)
-                            if card.id not in self.registry._cards:
-                                self.registry._cards[card.id] = card
-                                self.registry._generate_index_for_cards([card])
-                                self.registry.cache.set(card.id, card_data)
-                        if len(found_cards) >= (10 if is_autocomplete else 25):
-                            break
-            return found_cards
         except Exception:
             log.error("Error in search_cards", exc_info=True)
             return []

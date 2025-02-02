@@ -31,12 +31,11 @@ class CardRegistry:
         Initialize registry.
         Args:
             cache_dir: Path to cards cache directory
-            api: Ignored. This registry operates on cached data only.
+            api: API client instance for live data fetching
         """
-        if api is not None:
-            log.warning("API client provided but will not be used - registry operates on cached data only")
         log.info("Initializing card registry")
         self.cache = Cache(cache_dir=cache_dir)
+        self.api = api  # Store API reference
         # Memory stores
         self._cards: Dict[str, Pokemon] = {}  # id -> card
         self._name_index: Dict[str, str] = {} # lowercase name -> id
