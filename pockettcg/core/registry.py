@@ -23,18 +23,16 @@ class CardRegistry:
             cache_dir: Path to cards cache directory
             api: API client instance for live data fetching
         """
-        log.info("Initializing card registry")
         self.cache = Cache(cache_dir=cache_dir)
         self.api = api  # Store API reference
         self._cards: Dict[str, Pokemon] = {}  # id -> card
-        self._name_index: Dict[str, str] = {} # lowercase name -> id
+        self._name_index: Dict[str, str] = {}  # lowercase name -> id
         self._set_index: Dict[str, List[str]] = {}  # set name -> [card ids]
         self._rarity_index: Dict[str, List[str]] = {}  # rarity -> [card ids]
         self._type_index: Dict[str, List[str]] = {}  # type -> [card ids]
         for card in EXTRA_CARDS:
             self._add_card_to_indices(card)
         self._initialized = False
-        log.info("Registry ready for initialization")
 
     def _add_card_to_indices(self, card: Pokemon) -> None:
         """Add a card to all search indices."""
@@ -71,20 +69,14 @@ class CardRegistry:
 
             for card_filename in cached_cards:
                 try:
-                    # Extract ID from filename
                     base_name = os.path.splitext(card_filename)[0]
-                    # Split on underscore and get the ID part
                     file_parts = base_name.split('_')
                     file_id = file_parts[-1] if len(file_parts) > 1 else base_name
 
-                    log.debug(f"Processing file: {card_filename}, extracted ID: {file_id}")
-
                     card_data = self.cache.get(card_filename)
                     if not card_data:
-                        log.warning(f"No data found for {card_filename}")
                         continue
 
-                    # Handle both single card and multiple card cases
                     if isinstance(card_data, list):
                         cards_to_process = card_data
                     else:
@@ -93,25 +85,18 @@ class CardRegistry:
                     for single_card_data in cards_to_process:
                         try:
                             if not isinstance(single_card_data, dict):
-                                log.error(f"Invalid card data format in {card_filename}: {type(single_card_data)}")
                                 continue
 
-                            # Ensure we have an ID
                             if '_id' not in single_card_data:
                                 single_card_data['_id'] = file_id
-
-                            # Debug print the data
-                            log.debug(f"Processing card data: {single_card_data}")
 
                             card = Pokemon.from_api(single_card_data)
                             self._add_card_to_indices(card)
 
                         except Exception as e:
-                            log.error(f"Failed to process card data from {card_filename}: {e}", exc_info=True)
                             continue
 
-                except Exception as e:
-                    log.error(f"Failed to load cached card {card_filename}: {e}", exc_info=True)
+                except Exception:
                     continue
 
             self._initialized = True
