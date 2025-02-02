@@ -54,14 +54,16 @@ class EmbedBuilder(BaseCardEmbed):
         "Metal": "<:MetalEnergy:1335228220886224936>",
         "Fairy": "<:FairyEnergy:1335228293208604734>",
         "Dragon": "<:DragonEnergy:1335228306563399754>",
-        "Colorless": "<:ColorlessEnergy:1335228335911079990>"
+        "Colorless": "<:ColorlessEnergy:1335228335911079990>",
+        None: "<:ColorlessEnergy:1335228335911079990>"
     }
 
     TYPE_EMOJIS = {
         "Grass": "🌿", "Fire": "🔥", "Water": "💧",
         "Lightning": "⚡", "Fighting": "👊", "Psychic": "🔮",
         "Darkness": "🌑", "Metal": "⚙️", "Fairy": "✨",
-        "Dragon": "🐉", "Colorless": "⭐"
+        "Dragon": "🐉", "Colorless": "⭐",
+        None: "⭐"
     }
 
     TYPE_COLORS = {
@@ -92,12 +94,8 @@ class EmbedBuilder(BaseCardEmbed):
 
     def _get_energy_emoji(self, energy_type: str) -> str:
         try:
-            if energy_type is None:
-                return "⭐"
-            energy_type = str(energy_type).strip()
-            if energy_type in self.DISCORD_EMOJIS:
-                return self.DISCORD_EMOJIS[energy_type]
-            return self.TYPE_EMOJIS.get(energy_type, "⭐")
+            energy_type = str(energy_type).strip() if energy_type is not None else None
+            return self.DISCORD_EMOJIS.get(energy_type, self.TYPE_EMOJIS.get(energy_type, "⭐"))
         except Exception as e:
             self.logger.error(f"Error getting energy emoji for {energy_type}: {e}", exc_info=True)
             return "⭐"
@@ -111,14 +109,15 @@ class EmbedBuilder(BaseCardEmbed):
             for energy in energy_list:
                 if isinstance(energy, list):
                     self.logger.debug(f"Processing energy list: {energy}")
-                    alt_emojis = [self._get_energy_emoji(e) for e in energy if self._get_energy_emoji(e)]
+                    alt_emojis = [self._get_energy_emoji(e) for e in energy if e is not None]
                     if alt_emojis:
                         emojis.append("/".join(alt_emojis))
                 else:
                     self.logger.debug(f"Processing single energy: {energy}")
-                    emoji = self._get_energy_emoji(energy)
-                    if emoji:
-                        emojis.append(emoji)
+                    if energy is not None:
+                        emoji = self._get_energy_emoji(energy)
+                        if emoji:
+                            emojis.append(emoji)
             result = " ".join(emojis)
             self.logger.debug(f"Formatted energy result: {result}")
             return result
