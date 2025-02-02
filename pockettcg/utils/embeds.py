@@ -75,7 +75,7 @@ class EmbedBuilder(BaseCardEmbed):
     def _format_rarity(self, rarity: Optional[str]) -> str:
         if not rarity:
             return ""
-        return "♦" * int(rarity[-1]) if rarity.startswith('d-') else RARITY_MAPPING.get(rarity, rarity)
+        return "♦️" * int(rarity[-1]) if rarity.startswith('d-') else RARITY_MAPPING.get(rarity, rarity)
 
     async def build_card_embed(self, card: Any, *, as_full_art: bool = False) -> discord.Embed:
         try:

@@ -279,16 +279,15 @@ class Pokemon:
             raise ValueError(f"Failed to create Pokemon from API data: {str(e)}")
 
 RARITY_MAPPING = {
-    "d-1": "♦",
-    "d-2": "♦♦",
-    "d-3": "♦♦♦",
-    "d-4": "♦♦♦♦",
+    "d-1": "♦️",
+    "d-2": "♦️♦️",
+    "d-3": "♦️♦️♦️",
+    "d-4": "♦️♦️♦️♦️",
     "s-1": "⭐",
     "s-2": "⭐⭐",
     "s-3": "⭐⭐⭐",
     "cr": "👑"
 }
-
 ENERGY_TYPES = [
     "Grass", "Fire", "Water", "Lightning",
     "Fighting", "Psychic", "Darkness", "Metal", "Dragon", "Colorless"
