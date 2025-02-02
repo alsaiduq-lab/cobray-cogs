@@ -1,0 +1,344 @@
+import discord
+import logging
+from typing import Optional, List, Union
+from urllib.parse import quote
+from .images import ImagePipeline
+from ..core.models import Pokemon, RARITY_MAPPING
+
+class BaseCardEmbed:
+    def __init__(self, image_pipeline: ImagePipeline, *, log=None):
+        self.image_pipeline = image_pipeline
+        self.logger = log or logging.getLogger("red.pokemonmeta.utils.embeds")
+
+    async def _get_card_image_url(self, card, variant_idx: int = 0) -> Optional[str]:
+        """Get the URL for a card's image using the image pipeline."""
+        try:
+            card_id = card.pokemon_id
+            if not card_id:
+                self.logger.error(f"No pokemon_id found for card {card.name}")
+                return None
+
+            self.logger.debug(f"Using pokemon_id: {card_id} for card {card.name}")
+            found, url = await self.image_pipeline.get_image_url(card_id, variant_idx)
+
+            if found:
+                return url
+
+            self.logger.debug(f"No image found for card ID: {card_id}")
+            return None
+
+        except Exception as e:
+            self.logger.error(f"Error getting card image URL: {e}", exc_info=True)
+            return None
+
+    def _add_footer(self, embed: discord.Embed, card) -> None:
+        footer_parts = []
+        if hasattr(card, 'id') and card.id:
+            footer_parts.append(f"Card ID: {card.id}")
+        if hasattr(card, 'release_date') and card.release_date:
+            footer_parts.append(card.release_date.strftime('%Y-%m-%d'))
+        if footer_parts:
+            embed.set_footer(text=" | ".join(footer_parts))
+
+class EmbedBuilder(BaseCardEmbed):
+    async def build_card_embed(self, card, *, as_full_art: bool = False) -> discord.Embed:
+        try:
+            if isinstance(card, Pokemon):
+                return await self.build_pokemon_embed(card, as_full_art=as_full_art)
+            elif hasattr(card, 'category') and card.category in ['Trainer', 'Supporter', 'Item', 'Tool']:
+                return await self.build_trainer_embed(card, as_full_art=as_full_art)
+            else:
+                return await self.build_embed(card, as_full_art=as_full_art)
+        except Exception as e:
+            self.logger.error(f"Error building card embed: {e}", exc_info=True)
+            return discord.Embed(
+                title="Error",
+                description="An error occurred while building the card embed.",
+                color=discord.Color.red()
+            )
+
+    CDN_BASE = "https://s3.duellinksmeta.com"
+
+    DISCORD_EMOJIS = {
+        "Grass": "<:GrassEnergy:1335228242046488707>",
+        "Fire": "<:FireEnergy:1335228250812579910>",
+        "Water": "<:WaterEnergy:1335228194940387418>",
+        "Lightning": "<:LightningEnergy:1335228231653261442>",
+        "Fighting": "<:FightingEnergy:1335228265190785158>",
+        "Psychic": "<:PsychicEnergy:1335228211017023488>",
+        "Darkness": "<:DarknessEnergy:1335228325139972107>",
+        "Metal": "<:MetalEnergy:1335228220886224936>",
+        "Fairy": "<:FairyEnergy:1335228293208604734>",
+        "Dragon": "<:DragonEnergy:1335228306563399754>",
+        "Colorless": "<:ColorlessEnergy:1335228335911079990>"
+    }
+
+    TYPE_EMOJIS = {
+        "Grass": "🌿", "Fire": "🔥", "Water": "💧",
+        "Lightning": "⚡", "Fighting": "👊", "Psychic": "🔮",
+        "Darkness": "🌑", "Metal": "⚙️", "Fairy": "✨",
+        "Dragon": "🐉", "Colorless": "⭐"
+    }
+
+    TYPE_COLORS = {
+        "Grass": 0x38BF4B, "Fire": 0xFF9C54, "Water": 0x4F92D6,
+        "Lightning": 0xFBD100, "Fighting": 0xCE416B, "Psychic": 0xFF6675,
+        "Darkness": 0x5B5466, "Metal": 0x8E8E9F, "Fairy": 0xFB8AEC,
+        "Dragon": 0x7673C0, "Colorless": 0xC6C6A7,
+        "Trainer": 0xE5C488, "Supporter": 0xF199A3,
+        "Item": 0x9DB7F5, "Tool": 0xA7B6E5
+    }
+
+    def _get_type_color(self, pokemon: Pokemon) -> int:
+        return self.TYPE_COLORS.get(pokemon.type, 0x808080)
+
+    def _get_energy_emoji(self, energy_type: str) -> str:
+        """Get the emoji for a given energy type, handling None safely."""
+        try:
+            if not energy_type:  # Handle None and empty strings
+                return self.TYPE_EMOJIS.get("Colorless", "⭐")
+            energy_type = str(energy_type).strip()  # Convert to string first
+            if energy_type in self.DISCORD_EMOJIS:
+                emoji_str = self.DISCORD_EMOJIS[energy_type]
+                if not emoji_str.startswith('<:') and not emoji_str.endswith('>'):
+                    emoji_str = f"<:{energy_type}Energy:{emoji_str}>"
+                return emoji_str
+            return self.TYPE_EMOJIS.get(energy_type, "⭐")
+        except Exception as e:
+            self.logger.error(f"Error getting energy emoji for {energy_type}: {e}", exc_info=True)
+            return self.TYPE_EMOJIS.get(energy_type, "⭐")
+
+    def _format_energy_cost(self, energy_list: Union[List[str], List[List[str]]]) -> str:
+        if not energy_list:
+            return ""
+        try:
+            emojis = []
+            for energy in energy_list:
+                if isinstance(energy, list):
+                    alt_emojis = [self._get_energy_emoji(e) for e in energy if self._get_energy_emoji(e)]
+                    if alt_emojis:
+                        emojis.append("/".join(alt_emojis))
+                else:
+                    emoji = self._get_energy_emoji(energy)
+                    if emoji:
+                        emojis.append(emoji)
+            return " ".join(emojis)
+        except Exception as e:
+            self.logger.error(f"Error formatting energy cost {energy_list}: {e}", exc_info=True)
+            return str(energy_list)
+
+    async def build_embed(self, card, *, as_full_art: bool = False) -> discord.Embed:
+        try:
+            if isinstance(card, Pokemon):
+                return await self.build_pokemon_embed(card, as_full_art=as_full_art)
+            embed = discord.Embed(
+                title=card.name,
+                color=0x808080
+            )
+
+            type_parts = []
+            if hasattr(card, 'card_type'):
+                type_parts.append(f"Type: {card.card_type}")
+            if hasattr(card, 'rarity'):
+                rarity_display = RARITY_MAPPING.get(card.rarity, card.rarity)
+                type_parts.append(f"Rarity: {rarity_display}")
+            if type_parts:
+                embed.description = " | ".join(type_parts)
+
+            if hasattr(card, 'text') and card.text:
+                embed.add_field(name="Effect", value=card.text, inline=False)
+
+            if hasattr(card, 'rules') and card.rules:
+                embed.add_field(name="Rules", value="\n".join(card.rules), inline=False)
+
+            if image_url := await self._get_card_image_url(card):
+                if as_full_art:
+                    embed.set_image(url=image_url)
+                else:
+                    embed.set_thumbnail(url=image_url)
+
+            self._add_footer(embed, card)
+            return embed
+
+        except Exception as e:
+            self.logger.error(f"Error building card embed: {e}", exc_info=True)
+            return discord.Embed(
+                title="Error",
+                description="An error occurred while building the card embed.",
+                color=discord.Color.red()
+            )
+
+    async def build_trainer_embed(self, card, *, as_full_art: bool = False) -> discord.Embed:
+        try:
+            embed = discord.Embed(
+                title=card.name,
+                color=self.TYPE_COLORS.get(card.category, self.TYPE_COLORS["Trainer"])
+            )
+
+            type_parts = [f"Category: {card.category}"]
+            if card.rarity:
+                rarity_display = RARITY_MAPPING.get(card.rarity, card.rarity)
+                type_parts.append(f"Rarity: {rarity_display}")
+            embed.description = " | ".join(type_parts)
+
+            if card.text:
+                embed.add_field(name="Effect", value=card.text, inline=False)
+
+            if hasattr(card, 'rules') and card.rules:
+                embed.add_field(name="Rules", value="\n".join(card.rules), inline=False)
+
+            if image_url := await self._get_card_image_url(card):
+                if as_full_art:
+                    embed.set_image(url=image_url)
+                else:
+                    embed.set_thumbnail(url=image_url)
+
+            self._add_footer(embed, card)
+            return embed
+
+        except Exception as e:
+            self.logger.error(f"Error building trainer embed: {e}", exc_info=True)
+            return discord.Embed(
+                title="Error",
+                description="An error occurred while building the trainer card embed.",
+                color=discord.Color.red()
+            )
+
+    async def build_pokemon_embed(self, pokemon: Pokemon, *, as_full_art: bool = False) -> discord.Embed:
+        try:
+            title = pokemon.name
+            if getattr(pokemon, 'ex', False):
+                title += " ex"
+            embed = discord.Embed(
+                title=title,
+                color=self._get_type_color(pokemon)
+            )
+
+            type_parts = []
+            if pokemon.type:
+                type_parts.append(f"Type: {self._get_energy_emoji(pokemon.type)} {pokemon.type}")
+            if pokemon.hp:
+                type_parts.append(f"HP: {pokemon.hp}")
+            if pokemon.rarity:
+                rarity_display = RARITY_MAPPING.get(pokemon.rarity, pokemon.rarity)
+                type_parts.append(f"Rarity: {rarity_display}")
+            embed.description = " | ".join(type_parts)
+
+            if pokemon.subType:
+                embed.add_field(name="Stage", value=pokemon.subType, inline=False)
+
+            if hasattr(pokemon, 'abilities') and pokemon.abilities:
+                for ability in pokemon.abilities:
+                    ability_text = []
+                    if hasattr(ability, 'name') and hasattr(ability, 'text'):
+                        ability_text.append(f"__**{ability.name}**__")
+                        ability_text.append(f"*{ability.text}*")
+                    elif isinstance(ability, dict):
+                        if ability.get('name'):
+                            ability_text.append(f"__**{ability['name']}**__")
+                        if ability.get('text'):
+                            ability_text.append(f"*{ability['text']}*")
+                    else:
+                        ability_text.append(f"*{str(ability)}*")
+                    if ability_text:
+                        embed.add_field(
+                            name="Ability",
+                            value="\n".join(ability_text),
+                            inline=False
+                        )
+
+            if pokemon.moves:
+                for move in pokemon.moves:
+                    move_text = []
+                    parts = []
+                    if move.energy_cost:
+                        energy = self._format_energy_cost(move.energy_cost)
+                        if energy:
+                            parts.append(f"Energy: {energy}")
+                    if move.damage:
+                        parts.append(f"Damage: {move.damage}")
+                    if move.text:
+                        parts.append(f"Effect: {move.text}")
+                    move_text = " ".join(parts)
+                    embed.add_field(
+                        name=move.name,
+                        value=move_text,
+                        inline=False
+                    )
+
+            additional_info = []
+            if pokemon.weakness:
+                weakness_part = "Weakness: "
+                for weak_type in pokemon.weakness:
+                    emoji = self._get_energy_emoji(weak_type)
+                    weakness_part += f"{emoji} +20"
+                additional_info.append(weakness_part)
+
+            retreat_part = "Retreat Cost: "
+            retreat_cost = getattr(pokemon, 'retreat', 0) or getattr(pokemon, 'retreat_cost', 0)
+            if retreat_cost:
+                colorless_emoji = self._get_energy_emoji("Colorless")
+                retreat_part += (colorless_emoji + " ") * int(retreat_cost)
+            retreat_part = retreat_part.rstrip()
+            additional_info.append(retreat_part)
+
+            if additional_info:
+                embed.add_field(
+                    name="Additional Info",
+                    value="\n".join(additional_info),
+                    inline=False
+                )
+
+            if image_url := await self._get_card_image_url(pokemon):
+                if as_full_art:
+                    embed.set_image(url=image_url)
+                else:
+                    embed.set_thumbnail(url=image_url)
+
+            self._add_footer(embed, pokemon)
+            return embed
+
+        except Exception as e:
+            self.logger.error(f"Error building pokemon embed: {e}", exc_info=True)
+            return discord.Embed(
+                title="Error",
+                description="An error occurred while building the pokemon card embed.",
+                color=discord.Color.red()
+            )
+    async def build_art_embed(self, card, variant_idx: int = 0) -> discord.Embed:
+        """Build an embed focusing on the card's art.
+        Args:
+            card: The card object
+            variant_idx: Index of the art variant (default: 0)
+        Returns:
+            discord.Embed: The embed with the card's art
+        Raises:
+            ValueError: If no art variant is available
+        """
+        try:
+            title = card.name
+            if isinstance(card, Pokemon) and getattr(card, 'ex', False):
+                title += " ex"
+
+            embed = discord.Embed(
+                title=title,
+                color=self.TYPE_COLORS.get(getattr(card, 'type', None), 0x808080)
+            )
+
+            if image_url := await self._get_card_image_url(card, variant_idx):
+                embed.set_image(url=image_url)
+            else:
+                raise ValueError("No art variant available")
+
+            footer_parts = []
+            if hasattr(card, 'id') and card.id:
+                footer_parts.append(f"Card ID: {card.id}")
+            if hasattr(card, 'release_date') and card.release_date:
+                footer_parts.append(card.release_date.strftime('%Y-%m-%d'))
+            if footer_parts:
+                embed.set_footer(text=" | ".join(footer_parts))
+            return embed
+
+        except Exception as e:
+            self.logger.error(f"Error building art embed: {e}", exc_info=True)
+            raise ValueError("Failed to build art embed")
