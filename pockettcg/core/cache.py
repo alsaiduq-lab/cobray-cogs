@@ -216,28 +216,37 @@ class Cache:
 
     def list_cached_cards(self) -> Dict[str, str]:
         """List all cached card data.
-        
+
         Returns:
             Dictionary mapping normalized keys to original card names
         """
         cards = {}
         try:
-            # Get all JSON files except deck data
+            # Get all JSON files
             for path in self.cache_dir.glob("*.json"):
-                if path.name.endswith("_decks.json"):
+                # Skip deck files and temporary files
+                if any(skip in path.name.lower() for skip in ['deck', '.tmp']):
                     continue
-                    
+
                 data = self._read_json_file(path)
                 if not data or not isinstance(data, dict):
                     continue
-                    
-                # Get card name from data or filename
-                name = data.get("name", path.stem.split('_')[0].strip("'\""))
-                cards[name.lower()] = name
-                
+
+                # Validate this is actual card data
+                if not all(key in data for key in ['name', 'cardType']):
+                    log.debug(f"Skipping non-card file: {path.name}")
+                    continue
+
+                # Get card name from data
+                name = data.get("name")
+                if name:
+                    cards[name.lower()] = name
+                else:
+                    log.warning(f"Card data missing name in file: {path.name}")
+
         except Exception as e:
             log.error(f"Error listing cached cards: {e}", exc_info=True)
-            
+
         return cards
 
     def refresh(self, key: str) -> Optional[Any]:

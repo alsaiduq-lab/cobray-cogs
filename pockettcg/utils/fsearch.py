@@ -13,15 +13,6 @@ def fuzzy_search(
 ) -> List[Dict[str, Any]]:
     """
     Perform fuzzy search on a list of dictionaries.
-    Args:
-        query: Search string
-        items: List of dictionaries to search through
-        key: Dictionary key to search in
-        threshold: Minimum similarity ratio to include in results
-        max_results: Maximum number of results to return
-        exact_bonus: Bonus score for exact substring matches
-    Returns:
-        List of matching items, sorted by relevance
     """
     query = query.lower()
     matches = []
@@ -29,15 +20,20 @@ def fuzzy_search(
         target = str(item.get(key, "")).lower()
         if not target:
             continue
-        ratio = SequenceMatcher(None, query, target).ratio()
-        if query in target:
-            ratio += exact_bonus
+
         if query == target:
-            ratio += exact_bonus * 2
+            matches.append({**item, "_score": 2.0})  # Perfect match gets highest score
+            continue
+        if query in target:
+            matches.append({**item, "_score": 1.5})  # Substring match gets high score
+            continue
+
+        ratio = SequenceMatcher(None, query, target).ratio()
         if target.startswith(query):
             ratio += exact_bonus
         if ratio >= threshold:
             matches.append({**item, "_score": ratio})
+
     matches.sort(key=lambda x: x["_score"], reverse=True)
     return matches[:max_results]
 

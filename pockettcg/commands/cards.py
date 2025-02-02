@@ -8,23 +8,38 @@ from discord.app_commands import Choice
 from discord.ui import Select, View
 from discord.ext import commands
 
+
 from ..core.registry import CardRegistry
 from ..core.user_config import UserConfig
 from ..utils.embeds import EmbedBuilder as CardBuilder
 from ..utils.parser import CardParser
-from ..core.models import Pokemon
+from ..core.models import Pokemon, RARITY_MAPPING
 from ..utils.fsearch import fuzzy_search_multi
 
 log = logging.getLogger("red.pokemontcg.commands")
 
 class CardSelectMenu(Select):
-    """Menu for selecting a Pokemon card from search results and previewing it."""
     def __init__(self, cards: List[Pokemon], registry: CardRegistry, config: UserConfig,
                  parser: CardParser, builder: CardBuilder):
-        options = [
-            SelectOption(label=c.name, value=str(i))
-            for i, c in enumerate(cards[:25])
-        ]
+        options = []
+        for i, card in enumerate(cards[:25]):
+            rarity_symbol = RARITY_MAPPING.get(card.rarity, card.rarity)
+            label = f"{card.name}"
+            if len(label) > 80:
+                label = label[:77] + "..."
+
+            description = f"{card.set} | {rarity_symbol}"
+            if len(description) > 100:
+                description = description[:97] + "..."
+
+            options.append(
+                SelectOption(
+                    label=label,
+                    description=description,
+                    value=str(i)
+                )
+            )
+
         super().__init__(
             placeholder="Choose a card to preview...",
             min_values=1,
@@ -60,8 +75,9 @@ class CardSelectMenu(Select):
 
 class SelectButton(discord.ui.Button):
     def __init__(self, idx: int, card: Pokemon, callback):
+        rarity_symbol = RARITY_MAPPING.get(card.rarity, card.rarity)
         super().__init__(
-            label="Select",
+            label=f"Select {card.name} ({rarity_symbol})",
             style=discord.ButtonStyle.primary,
             custom_id=f"select_{idx}"
         )
@@ -104,32 +120,61 @@ class CardCommands:
     async def close(self):
         pass
 
+
+
+    def _are_alt_variants(self, card1: Pokemon, card2: Pokemon) -> bool:
+        """Check if two cards are alt art variants of each other."""
+        # Split ID into base components (e.g., "A1-115" -> ["1", "115"])
+        def get_base_id(card_id: str) -> tuple:
+            parts = card_id.split('-')
+            if len(parts) != 2:
+                return (card_id,)
+            num = parts[0].lstrip('A')  # Remove 'A' prefix if present
+            return (num, parts[1])
+
+        return (card1.name == card2.name and
+                get_base_id(card1.id) == get_base_id(card2.id) and
+                card1.set == card2.set)
+
     async def search_cards(self, query: str, *, is_autocomplete: bool = False) -> List[Pokemon]:
         if not query:
             return []
         try:
-            # First try registry search
             registry_results = await self.registry.search_cards(query)
 
-            # If we need more results and have an API client, try live search
-            if len(registry_results) < (10 if is_autocomplete else 25) and self.registry.api:
+            grouped_results = []
+            processed_ids = set()
+
+            def add_card(card: Pokemon):
+                for idx, existing in enumerate(grouped_results):
+                    if self._are_alt_variants(card, existing):
+                        if card.is_alternative_art and not existing.is_alternative_art:
+                            grouped_results[idx] = card
+                        return
+                grouped_results.append(card)
+                processed_ids.add(card.id)
+
+            for card in registry_results:
+                add_card(card)
+
+            if len(grouped_results) < (10 if is_autocomplete else 25) and self.registry.api:
                 try:
                     api_results = await self.registry.api.search_cards(query)
                     if api_results:
                         for card_data in api_results:
                             card = Pokemon.from_api(card_data)
-                            if card.id not in [c.id for c in registry_results]:
-                                registry_results.append(card)
-                                # Cache the new card
+                            if card.id not in processed_ids:
+                                add_card(card)
                                 if card.id not in self.registry._cards:
                                     self.registry._add_card_to_indices(card)
                                     self.registry.cache.set(card.id, card_data)
-                            if len(registry_results) >= (10 if is_autocomplete else 25):
+
+                            if len(grouped_results) >= (10 if is_autocomplete else 25):
                                 break
                 except Exception:
                     log.warning("Failed to fetch additional results from API", exc_info=True)
 
-            return registry_results[:25 if not is_autocomplete else 10]
+            return grouped_results[:25 if not is_autocomplete else 10]
 
         except Exception:
             log.error("Error in search_cards", exc_info=True)

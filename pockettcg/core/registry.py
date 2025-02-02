@@ -1,25 +1,15 @@
 import logging
 from typing import Dict, List, Optional, Any
 from pathlib import Path
-from dataclasses import dataclass
 from datetime import datetime
 from difflib import SequenceMatcher
-
+import os
 from .models import Pokemon, EXTRA_CARDS
 from .cache import Cache
 
 LOGGER_NAME_BASE = "red.pokemonmeta"
 log = logging.getLogger(f"{LOGGER_NAME_BASE}.core.registry")
 
-@dataclass
-class Set:
-    """Card set information."""
-    id: str
-    name: str
-    type: str
-    expires: Optional[datetime] = None
-    url: Optional[str] = None
-    image: Optional[str] = None
 
 class CardRegistry:
     """
@@ -36,13 +26,11 @@ class CardRegistry:
         log.info("Initializing card registry")
         self.cache = Cache(cache_dir=cache_dir)
         self.api = api  # Store API reference
-        # Memory stores
         self._cards: Dict[str, Pokemon] = {}  # id -> card
         self._name_index: Dict[str, str] = {} # lowercase name -> id
         self._set_index: Dict[str, List[str]] = {}  # set name -> [card ids]
         self._rarity_index: Dict[str, List[str]] = {}  # rarity -> [card ids]
         self._type_index: Dict[str, List[str]] = {}  # type -> [card ids]
-        # Load static cards
         for card in EXTRA_CARDS:
             self._add_card_to_indices(card)
         self._initialized = False
@@ -50,27 +38,23 @@ class CardRegistry:
 
     def _add_card_to_indices(self, card: Pokemon) -> None:
         """Add a card to all search indices."""
-        # Store card
         self._cards[card.id] = card
-        # Name index
+
         name_key = card.name.lower().strip()
         self._name_index[name_key] = card.id
-        # Set index 
-        if hasattr(card, 'set'):
-            set_name = card.set
-        else:
-            set_name = getattr(card, 'pack', 'Unknown Set')
+
+        set_name = card.set if hasattr(card, 'set') else 'Unknown Set'
         if set_name not in self._set_index:
             self._set_index[set_name] = []
         if card.id not in self._set_index[set_name]:
             self._set_index[set_name].append(card.id)
-        # Type index
+
         if card.type:
             if card.type not in self._type_index:
                 self._type_index[card.type] = []
             if card.id not in self._type_index[card.type]:
                 self._type_index[card.type].append(card.id)
-        # Rarity index
+
         if card.rarity:
             if card.rarity not in self._rarity_index:
                 self._rarity_index[card.rarity] = []
@@ -78,63 +62,86 @@ class CardRegistry:
                 self._rarity_index[card.rarity].append(card.id)
 
     async def initialize(self) -> None:
-        """Initialize registry by loading all cards from cache."""
         if self._initialized:
             return
         try:
             log.info("Starting registry initialization from cache")
-            # Get all cached cards
             cached_cards = self.cache.list_cached_cards()
             log.info(f"Found {len(cached_cards)} cards in cache")
-            # Process each cached card
-            for card_id in cached_cards:
+
+            for card_filename in cached_cards:
                 try:
-                    # Load card data
-                    card_data = self.cache.get(card_id)
+                    # Extract ID from filename
+                    base_name = os.path.splitext(card_filename)[0]
+                    # Split on underscore and get the ID part
+                    file_parts = base_name.split('_')
+                    file_id = file_parts[-1] if len(file_parts) > 1 else base_name
+
+                    log.debug(f"Processing file: {card_filename}, extracted ID: {file_id}")
+
+                    card_data = self.cache.get(card_filename)
                     if not card_data:
+                        log.warning(f"No data found for {card_filename}")
                         continue
-                        
-                    # Fix field names if needed
-                    if "set" not in card_data and "pack" in card_data:
-                        card_data["set"] = card_data["pack"]
-                        
-                    # Add required fields with defaults
-                    card_data.setdefault("set", "Unknown Set")
-                    card_data.setdefault("cardType", "Unknown")
-                    card_data.setdefault("subType", "Unknown")
-                    
-                    # Create card and add to indices
-                    card = Pokemon.from_api(card_data)
-                    self._add_card_to_indices(card)
-                    
+
+                    # Handle both single card and multiple card cases
+                    if isinstance(card_data, list):
+                        cards_to_process = card_data
+                    else:
+                        cards_to_process = [card_data]
+
+                    for single_card_data in cards_to_process:
+                        try:
+                            if not isinstance(single_card_data, dict):
+                                log.error(f"Invalid card data format in {card_filename}: {type(single_card_data)}")
+                                continue
+
+                            # Ensure we have an ID
+                            if '_id' not in single_card_data:
+                                single_card_data['_id'] = file_id
+
+                            # Debug print the data
+                            log.debug(f"Processing card data: {single_card_data}")
+
+                            card = Pokemon.from_api(single_card_data)
+                            self._add_card_to_indices(card)
+
+                        except Exception as e:
+                            log.error(f"Failed to process card data from {card_filename}: {e}", exc_info=True)
+                            continue
+
                 except Exception as e:
-                    log.error(f"Failed to load cached card {card_id}: {e}")
+                    log.error(f"Failed to load cached card {card_filename}: {e}", exc_info=True)
                     continue
+
             self._initialized = True
             log.info(f"Registry initialization complete - loaded {len(self._cards)} cards")
         except Exception as e:
-            log.error(f"Failed to initialize registry: {e}")
+            log.error(f"Failed to initialize registry: {e}", exc_info=True)
             raise
 
     async def get_card(self, card_id_or_name: str) -> Optional[Pokemon]:
         """Get a card by ID or name."""
         if not card_id_or_name:
             return None
-        # Ensure initialized
         if not self._initialized:
             await self.initialize()
-        # Direct ID lookup
         if card_id_or_name in self._cards:
             return self._cards[card_id_or_name]
-        # Name lookup
         name_key = card_id_or_name.lower().strip()
         if card_id := self._name_index.get(name_key):
             return self._cards.get(card_id)
-        # One final try with cache
         if cached_data := self.cache.get(card_id_or_name):
             try:
-                if "set" not in cached_data and "pack" in cached_data:
-                    cached_data["set"] = cached_data["pack"]
+                if isinstance(cached_data, list):
+                    if not cached_data:
+                        return None
+                    cached_data = cached_data[0]
+
+                if not isinstance(cached_data, dict):
+                    log.error(f"Invalid card data format: {type(cached_data)}")
+                    return None
+
                 card = Pokemon.from_api(cached_data)
                 self._add_card_to_indices(card)
                 return card
@@ -149,14 +156,11 @@ class CardRegistry:
         if not query:
             return []
         try:
-            # Prepare search items
             search_items = [
                 {"id": card.id, "name": card.name, "card": card}
                 for card in self._cards.values()
             ]
-            # Get fuzzy matches
             fuzzy_results = self._fuzzy_search(query, search_items)
-            # Apply filters
             results = []
             for match in fuzzy_results:
                 card = match["card"]
@@ -180,19 +184,15 @@ class CardRegistry:
             target = str(item.get("name", "")).lower()
             if not target:
                 continue
-            # Calculate match score
             ratio = SequenceMatcher(None, query, target).ratio()
-            # Bonus points
             if query == target:
                 ratio += 0.6  # Exact match
             elif query in target:
                 ratio += 0.3  # Substring match
             elif target.startswith(query):
                 ratio += 0.2  # Prefix match
-            # Keep if above threshold
             if ratio >= threshold:
                 matches.append({**item, "_score": ratio})
-        # Sort by score
         matches.sort(key=lambda x: x["_score"], reverse=True)
         return matches[:25]
 
@@ -202,13 +202,14 @@ class CardRegistry:
             for key, value in filters.items():
                 if not value:  # Skip empty filters
                     continue
-                    
+
                 if key == "type":
                     if value.lower().strip() not in [t.lower() for t in card.energy_type]:
                         return False
                 elif key == "set":
-                    card_set = getattr(card, 'set', getattr(card, 'pack', ''))
-                    if value.lower().strip() != card_set.lower():
+                    if not hasattr(card, 'set'):
+                        return False
+                    if value.lower().strip() != card.set.lower():
                         return False
                 elif key == "rarity":
                     if value.lower().strip() != card.rarity.lower():
