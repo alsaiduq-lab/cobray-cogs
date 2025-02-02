@@ -11,7 +11,6 @@ class BaseCardEmbed:
         self.logger = log or logging.getLogger("red.pokemonmeta.utils.embeds")
 
     def _get_card_image_url(self, card, variant_idx: int = 0) -> Optional[str]:
-        """Get the CDN URL for a card image."""
         try:
             if self.image_pipeline is None:
                 self.logger.error("No image pipeline configured")
@@ -75,7 +74,6 @@ class EmbedBuilder(BaseCardEmbed):
     }
 
     async def build_card_embed(self, card, *, as_full_art: bool = False) -> discord.Embed:
-        """Build an embed for any card type."""
         try:
             if isinstance(card, Pokemon):
                 return await self.build_pokemon_embed(card, as_full_art=as_full_art)
@@ -85,11 +83,7 @@ class EmbedBuilder(BaseCardEmbed):
                 return await self.build_generic_embed(card, as_full_art=as_full_art)
         except Exception as e:
             self.logger.error(f"Error building card embed: {e}", exc_info=True)
-            return discord.Embed(
-                title="Error",
-                description="An error occurred while building the card embed.",
-                color=discord.Color.red()
-            )
+            return discord.Embed(title="Error", description="An error occurred while building the card embed.", color=discord.Color.red())
 
     def _get_type_color(self, pokemon: Pokemon) -> int:
         if pokemon.energy_type:
@@ -97,7 +91,6 @@ class EmbedBuilder(BaseCardEmbed):
         return 0x808080
 
     def _get_energy_emoji(self, energy_type: str) -> str:
-        """Get the emoji for a given energy type."""
         try:
             if energy_type is None:
                 return "⭐"
@@ -135,10 +128,7 @@ class EmbedBuilder(BaseCardEmbed):
 
     async def build_generic_embed(self, card, *, as_full_art: bool = False) -> discord.Embed:
         try:
-            embed = discord.Embed(
-                title=card.name,
-                color=0x808080
-            )
+            embed = discord.Embed(title=card.name, color=0x808080)
 
             type_parts = []
             if hasattr(card, 'card_type'):
@@ -167,18 +157,11 @@ class EmbedBuilder(BaseCardEmbed):
 
         except Exception as e:
             self.logger.error(f"Error building generic embed: {e}", exc_info=True)
-            return discord.Embed(
-                title="Error",
-                description="An error occurred while building the card embed.",
-                color=discord.Color.red()
-            )
+            return discord.Embed(title="Error", description="An error occurred while building the card embed.", color=discord.Color.red())
 
     async def build_trainer_embed(self, card, *, as_full_art: bool = False) -> discord.Embed:
         try:
-            embed = discord.Embed(
-                title=card.name,
-                color=self.TYPE_COLORS.get(card.category, self.TYPE_COLORS["Trainer"])
-            )
+            embed = discord.Embed(title=card.name, color=self.TYPE_COLORS.get(card.category, self.TYPE_COLORS["Trainer"]))
 
             type_parts = [f"Category: {card.category}"]
             if card.rarity:
@@ -204,21 +187,14 @@ class EmbedBuilder(BaseCardEmbed):
 
         except Exception as e:
             self.logger.error(f"Error building trainer embed: {e}", exc_info=True)
-            return discord.Embed(
-                title="Error",
-                description="An error occurred while building the trainer card embed.",
-                color=discord.Color.red()
-            )
+            return discord.Embed(title="Error", description="An error occurred while building the trainer card embed.", color=discord.Color.red())
 
     async def build_pokemon_embed(self, pokemon: Pokemon, *, as_full_art: bool = False) -> discord.Embed:
         try:
             title = pokemon.name
             if getattr(pokemon, 'ex', False):
                 title += " ex"
-            embed = discord.Embed(
-                title=title,
-                color=self._get_type_color(pokemon)
-            )
+            embed = discord.Embed(title=title, color=self._get_type_color(pokemon))
 
             type_parts = []
             if pokemon.energy_type:
@@ -248,11 +224,7 @@ class EmbedBuilder(BaseCardEmbed):
                         ability_text.append(f"*{str(ability)}*")
 
                     if ability_text:
-                        embed.add_field(
-                            name="Ability",
-                            value="\n".join(ability_text),
-                            inline=False
-                        )
+                        embed.add_field(name="Ability", value="\n".join(ability_text), inline=False)
 
             if pokemon.moves:
                 for move in pokemon.moves:
@@ -267,11 +239,7 @@ class EmbedBuilder(BaseCardEmbed):
                     if move.text:
                         parts.append(f"Effect: {move.text}")
                     move_text = "\n".join(parts)
-                    embed.add_field(
-                        name=move.name,
-                        value=move_text,
-                        inline=False
-                    )
+                    embed.add_field(name=move.name, value=move_text, inline=False)
 
             additional_info = []
             if pokemon.weakness:
@@ -290,11 +258,7 @@ class EmbedBuilder(BaseCardEmbed):
             additional_info.append(retreat_part)
 
             if additional_info:
-                embed.add_field(
-                    name="Additional Info",
-                    value="\n".join(additional_info),
-                    inline=False
-                )
+                embed.add_field(name="Additional Info", value="\n".join(additional_info), inline=False)
 
             if image_url := self._get_card_image_url(pokemon):
                 self.logger.debug(f"Setting {pokemon.name} image URL: {image_url}")
@@ -308,21 +272,14 @@ class EmbedBuilder(BaseCardEmbed):
 
         except Exception as e:
             self.logger.error(f"Error building pokemon embed: {e}", exc_info=True)
-            return discord.Embed(
-                title="Error",
-                description="An error occurred while building the pokemon card embed.",
-                color=discord.Color.red()
-            )
+            return discord.Embed(title="Error", description="An error occurred while building the pokemon card embed.", color=discord.Color.red())
 
     def build_art_embed(self, card, variant_idx: int = 0) -> discord.Embed:
         try:
             title = card.name
             if isinstance(card, Pokemon) and getattr(card, 'ex', False):
                 title += " ex"
-            embed = discord.Embed(
-                title=title,
-                color=self.TYPE_COLORS.get(getattr(card, 'energy_type', [None])[0], 0x808080)
-            )
+            embed = discord.Embed(title=title, color=self.TYPE_COLORS.get(getattr(card, 'energy_type', [None])[0], 0x808080))
 
             if image_url := self._get_card_image_url(card, variant_idx):
                 self.logger.debug(f"Setting art embed image URL for {card.name}: {image_url}")
