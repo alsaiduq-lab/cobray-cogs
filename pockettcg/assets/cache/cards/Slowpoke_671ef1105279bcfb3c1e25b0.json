@@ -1,0 +1,53 @@
+{
+  "_id": "671ef1105279bcfb3c1e25b0",
+  "pokemonId": "A1-237",
+  "name": "Slowpoke",
+  "pack": "Charizard",
+  "rarity": "s-1",
+  "abilities": [],
+  "alternateArt": true,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Psychic"
+  ],
+  "hp": "70",
+  "moves": [
+    {
+      "name": "Tail Whap",
+      "energyCost": [
+        "Psychic",
+        "Colorless"
+      ],
+      "hp": "30",
+      "_id": "679940601f5c09a72fdf11c1"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ce9af3133dff28feb222",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Charizard",
+        "linkedArticle": {
+          "_id": "6728e5e97e99ebe6207c6c77",
+          "title": "Genetic Apex: Charizard",
+          "url": "/sets/genetic-apex-charizard/",
+          "image": "/pkm_img/Sets/GeneticApexCharizard.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 2,
+  "subType": "Basic",
+  "weakness": [
+    "Darkness"
+  ],
+  "popRank": 1.7976931348623157e+308,
+  "artVariants": [],
+  "limitlessId": "A1 237",
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

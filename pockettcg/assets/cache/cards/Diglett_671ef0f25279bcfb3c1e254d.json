@@ -1,0 +1,56 @@
+{
+  "_id": "671ef0f25279bcfb3c1e254d",
+  "pokemonId": "A1-139",
+  "name": "Diglett",
+  "pack": "Pikachu",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Fighting"
+  ],
+  "hp": "50",
+  "moves": [
+    {
+      "name": "Mud-Slap",
+      "energyCost": [
+        "Fighting"
+      ],
+      "hp": "20",
+      "_id": "67994e2997fb8e77af07cb2e"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ca53f3133dff28feb0ce",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Pikachu",
+        "linkedArticle": {
+          "_id": "6728e5c17e99ebe6207c6c2e",
+          "title": "Genetic Apex: Pikachu",
+          "url": "/sets/genetic-apex-pikachu/",
+          "image": "/pkm_img/Sets/GeneticApexPikachu.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-1",
+  "retreat": 1,
+  "subType": "Basic",
+  "weakness": [
+    "Grass"
+  ],
+  "release": "2024-10-30T03:00:00.000Z",
+  "popRank": 191,
+  "artVariants": [
+    {
+      "_id": "671ef1105279bcfb3c1e25b1",
+      "name": "Diglett"
+    }
+  ],
+  "limitlessId": "A1 139"
+}

@@ -1,0 +1,57 @@
+{
+  "_id": "6799c4c0f06a47c6afdf9e2e",
+  "name": "Croagunk",
+  "energyType": [
+    "Darkness"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A2-173",
+  "limitlessId": "A2 173",
+  "rarity": "s-1",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Group Beatdown",
+      "text": "Flip a coin for each Pokémon you have in play. This attack does 20 damage for each heads.",
+      "energyCost": [
+        "Darkness",
+        "Darkness",
+        null,
+        null
+      ],
+      "hp": "20x",
+      "_id": "6799c4c0f06a47c6afdf9e2f"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799adca169202e5d7e638f5",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Dialga",
+        "linkedArticle": {
+          "_id": "6799ca13169202e5d7e6cba0",
+          "title": "Space-Time Smackdown: Dialga",
+          "url": "/sets/space-time-smackdown-dialga/",
+          "image": "/pkm_img/News/2025/January/space-timesmackdown.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "nameRelease": "2025-01-30T06:00:00.000Z"
+}

@@ -1,0 +1,64 @@
+{
+  "_id": "671ef0f25279bcfb3c1e2590",
+  "pokemonId": "A1-206",
+  "name": "Eevee",
+  "pack": "Charizard",
+  "abilities": [],
+  "alternateArt": false,
+  "moves": [
+    {
+      "name": "Tackle",
+      "energyCost": [
+        "Colorless"
+      ],
+      "hp": "20",
+      "_id": "679952de1552ba8d13d74fcb"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ce9af3133dff28feb222",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Charizard",
+        "linkedArticle": {
+          "_id": "6728e5e97e99ebe6207c6c77",
+          "title": "Genetic Apex: Charizard",
+          "url": "/sets/genetic-apex-charizard/",
+          "image": "/pkm_img/Sets/GeneticApexCharizard.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "cardType": "Pokemon",
+  "energyType": [
+    "Colorless"
+  ],
+  "hp": "60",
+  "rarity": "d-1",
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 1,
+  "subType": "Basic",
+  "weakness": [
+    "Fighting"
+  ],
+  "popRank": 63,
+  "artVariants": [
+    {
+      "_id": "671ef0f25279bcfb3c1e2592",
+      "name": "Eevee"
+    },
+    {
+      "_id": "671ef0f25279bcfb3c1e2591",
+      "name": "Eevee"
+    },
+    {
+      "_id": "671ef1105279bcfb3c1e25bb",
+      "name": "Eevee"
+    }
+  ],
+  "limitlessId": "A1 206"
+}

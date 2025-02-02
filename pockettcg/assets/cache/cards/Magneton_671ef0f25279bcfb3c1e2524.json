@@ -1,0 +1,60 @@
+{
+  "_id": "671ef0f25279bcfb3c1e2524",
+  "pokemonId": "A1-098",
+  "name": "Magneton",
+  "pack": "Pikachu",
+  "abilities": [
+    {
+      "name": "Volt Charge",
+      "text": "Once during your turn, you may take a Lightning Energy from your Energy Zone and attach it to this Pokémon.",
+      "_id": "67995478c6818b9e6b4450d9"
+    }
+  ],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Lightning"
+  ],
+  "hp": "80",
+  "moves": [
+    {
+      "name": "Spinning Attack",
+      "energyCost": [
+        "Lightning",
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "60",
+      "_id": "67995478c6818b9e6b4450da"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ca53f3133dff28feb0ce",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Pikachu",
+        "linkedArticle": {
+          "_id": "6728e5c17e99ebe6207c6c2e",
+          "title": "Genetic Apex: Pikachu",
+          "url": "/sets/genetic-apex-pikachu/",
+          "image": "/pkm_img/Sets/GeneticApexPikachu.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-3",
+  "retreat": 2,
+  "subType": "Stage 1",
+  "weakness": [
+    "Fighting"
+  ],
+  "release": "2024-10-30T03:00:00.000Z",
+  "popRank": 95,
+  "artVariants": [],
+  "limitlessId": "A1 98"
+}

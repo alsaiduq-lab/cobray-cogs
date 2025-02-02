@@ -1,0 +1,56 @@
+{
+  "_id": "6799bb00f06a47c6afdf6f69",
+  "name": "Porygon-Z",
+  "energyType": [
+    "Colorless"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "140",
+  "pokemonId": "A2-129",
+  "limitlessId": "A2 129",
+  "rarity": "d-3",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Buggy Beam",
+      "text": "Change the type of the next Energy that will be generated for your opponent to 1 of the following at random: Grass, Fire, Water, Lightning, Psychic, Fighting, Darkness, or Metal.",
+      "energyCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless",
+        null
+      ],
+      "hp": "80",
+      "_id": "6799bb31169202e5d7e67ebb"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

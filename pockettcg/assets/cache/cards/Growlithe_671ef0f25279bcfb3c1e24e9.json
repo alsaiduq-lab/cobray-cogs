@@ -1,0 +1,52 @@
+{
+  "_id": "671ef0f25279bcfb3c1e24e9",
+  "pokemonId": "A1-039",
+  "name": "Growlithe",
+  "pack": "Pikachu",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Fire"
+  ],
+  "hp": "70",
+  "moves": [
+    {
+      "name": "Bite",
+      "energyCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "20",
+      "_id": "6799525ac6818b9e6b444468"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ca53f3133dff28feb0ce",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Pikachu",
+        "linkedArticle": {
+          "_id": "6728e5c17e99ebe6207c6c2e",
+          "title": "Genetic Apex: Pikachu",
+          "url": "/sets/genetic-apex-pikachu/",
+          "image": "/pkm_img/Sets/GeneticApexPikachu.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-1",
+  "retreat": 1,
+  "subType": "Basic",
+  "weakness": [
+    "Water"
+  ],
+  "release": "2024-10-30T03:00:00.000Z",
+  "popRank": 37,
+  "artVariants": [],
+  "limitlessId": "A1 39"
+}

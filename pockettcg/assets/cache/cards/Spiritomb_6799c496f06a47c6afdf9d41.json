@@ -1,0 +1,56 @@
+{
+  "_id": "6799c496f06a47c6afdf9d41",
+  "name": "Spiritomb",
+  "energyType": [
+    "Darkness"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "80",
+  "pokemonId": "A2-172",
+  "limitlessId": "A2 172",
+  "rarity": "s-1",
+  "weakness": [
+    "Grass"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Swirling Disaster",
+      "text": "This attack does 10 damage to each of your opponent's Pokémon.",
+      "energyCost": [
+        "Colorless",
+        null,
+        null,
+        null
+      ],
+      "_id": "6799c496f06a47c6afdf9d42"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "nameRelease": "2025-01-30T06:00:00.000Z"
+}

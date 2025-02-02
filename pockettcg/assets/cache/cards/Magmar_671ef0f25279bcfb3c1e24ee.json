@@ -1,0 +1,52 @@
+{
+  "_id": "671ef0f25279bcfb3c1e24ee",
+  "pokemonId": "A1-044",
+  "name": "Magmar",
+  "pack": "Charizard",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Fire"
+  ],
+  "hp": "80",
+  "moves": [
+    {
+      "name": "Magma Punch",
+      "energyCost": [
+        "Fire",
+        "Fire"
+      ],
+      "hp": "50",
+      "_id": "679950ac49fc3af0759c86ca"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ce9af3133dff28feb222",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Charizard",
+        "linkedArticle": {
+          "_id": "6728e5e97e99ebe6207c6c77",
+          "title": "Genetic Apex: Charizard",
+          "url": "/sets/genetic-apex-charizard/",
+          "image": "/pkm_img/Sets/GeneticApexCharizard.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-1",
+  "release": "2024-10-25T03:00:00.000Z",
+  "retreat": 2,
+  "subType": "Basic",
+  "weakness": [
+    "Water"
+  ],
+  "popRank": 146,
+  "artVariants": [],
+  "limitlessId": "A1 44"
+}

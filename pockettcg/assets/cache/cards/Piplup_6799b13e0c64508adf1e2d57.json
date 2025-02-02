@@ -1,0 +1,58 @@
+{
+  "_id": "6799b13e0c64508adf1e2d57",
+  "name": "Piplup",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A2-035",
+  "limitlessId": "A2 35",
+  "rarity": "d-1",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6798ef1f6950657553dc7ea0",
+      "name": "Piplup"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Nap",
+      "text": "Heal 20 damage from this Pokémon",
+      "energyCost": [
+        "Colorless",
+        null
+      ],
+      "_id": "6799d3180c64508adf1ed934"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

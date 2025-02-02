@@ -1,0 +1,61 @@
+{
+  "_id": "6799b67a169202e5d7e664a9",
+  "name": "Dusknoir",
+  "energyType": [
+    "Psychic"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "130",
+  "pokemonId": "A2-072",
+  "limitlessId": "A2 72",
+  "rarity": "d-3",
+  "weakness": [
+    "Darkness"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Shadow Void",
+      "text": "As often as you like during your turn, you may choose 1 of your Pokémon that has damage on it, and move all of its damage to this Pokémon.",
+      "_id": "6799ca4a169202e5d7e6cdd5"
+    }
+  ],
+  "moves": [
+    {
+      "name": " Devour Soul",
+      "text": "",
+      "energyCost": [
+        "Psychic",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "70",
+      "_id": "6799ca4a169202e5d7e6cdd6"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799adca169202e5d7e638f5",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Dialga",
+        "linkedArticle": {
+          "_id": "6799ca13169202e5d7e6cba0",
+          "title": "Space-Time Smackdown: Dialga",
+          "url": "/sets/space-time-smackdown-dialga/",
+          "image": "/pkm_img/News/2025/January/space-timesmackdown.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

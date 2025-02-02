@@ -1,0 +1,54 @@
+{
+  "_id": "67611180f9e257245fbb5e67",
+  "name": "Servine",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "80",
+  "pokemonId": "A1a-005",
+  "rarity": "d-2",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-12-17T06:00:00.000Z",
+  "popRank": 29,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Vine Whip",
+      "text": "",
+      "energyCost": [
+        "Grass",
+        "Colorless"
+      ],
+      "hp": "50",
+      "_id": "67994150f5d84b3e8fe0d0d5"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67610fbaf9e257245fbb5571",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Mythical Island",
+        "linkedArticle": {
+          "_id": "6761232ab864a94749eedacb",
+          "title": "Mythical Island",
+          "url": "/sets/mythical-island/",
+          "image": "/pkm_img/Sets/mythical-island.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A1a 5"
+}

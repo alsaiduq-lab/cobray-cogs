@@ -1,0 +1,62 @@
+{
+  "_id": "671ef0f25279bcfb3c1e2573",
+  "pokemonId": "A1-177",
+  "name": "Weezing",
+  "pack": "Mewtwo",
+  "abilities": [
+    {
+      "name": "Gas Leak",
+      "text": "Once during your turn, if this Pokémon is in the Active Spot, you may make your opponent's Active Pokémon Poisoned.",
+      "_id": "6799528c97fb8e77af07e3b0"
+    }
+  ],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Darkness"
+  ],
+  "hp": "110",
+  "moves": [
+    {
+      "name": "Tackle",
+      "energyCost": [
+        "Darkness"
+      ],
+      "hp": "30",
+      "_id": "6799528c97fb8e77af07e3b1"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ceb3423ed078c0a1f5d2",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Mewtwo",
+        "linkedArticle": {
+          "_id": "6728e6038cfb55d02155f843",
+          "title": "Genetic Apex: Mewtwo",
+          "url": "/sets/genetic-apex-mewtwo/",
+          "image": "/pkm_img/Sets/GeneticApexMewtwo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-3",
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 3,
+  "subType": "Stage 1",
+  "weakness": [
+    "Fighting"
+  ],
+  "popRank": 78,
+  "artVariants": [
+    {
+      "_id": "671ef1105279bcfb3c1e25b6",
+      "name": "Weezing"
+    }
+  ],
+  "limitlessId": "A1 177"
+}

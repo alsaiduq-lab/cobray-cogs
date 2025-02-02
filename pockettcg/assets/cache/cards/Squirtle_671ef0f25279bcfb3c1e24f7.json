@@ -1,0 +1,60 @@
+{
+  "_id": "671ef0f25279bcfb3c1e24f7",
+  "pokemonId": "A1-053",
+  "name": "Squirtle",
+  "pack": "Pikachu",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Water"
+  ],
+  "hp": "60",
+  "moves": [
+    {
+      "name": "Water Gun",
+      "energyCost": [
+        "Water"
+      ],
+      "hp": "20",
+      "_id": "679952be1552ba8d13d74eec"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ca53f3133dff28feb0ce",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Pikachu",
+        "linkedArticle": {
+          "_id": "6728e5c17e99ebe6207c6c2e",
+          "title": "Genetic Apex: Pikachu",
+          "url": "/sets/genetic-apex-pikachu/",
+          "image": "/pkm_img/Sets/GeneticApexPikachu.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-1",
+  "retreat": 1,
+  "subType": "Basic",
+  "weakness": [
+    "Lightning"
+  ],
+  "release": "2024-10-30T03:00:00.000Z",
+  "popRank": 112,
+  "artVariants": [
+    {
+      "_id": "671ef1105279bcfb3c1e25ab",
+      "name": "Squirtle"
+    },
+    {
+      "_id": "6761242ff9e257245fbbe0c0",
+      "name": "Squirtle"
+    }
+  ],
+  "limitlessId": "A1 53"
+}

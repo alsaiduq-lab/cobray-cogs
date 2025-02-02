@@ -1,0 +1,56 @@
+{
+  "_id": "6799bc0f169202e5d7e68440",
+  "name": "Staravia",
+  "energyType": [
+    "Colorless"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "80",
+  "pokemonId": "A2-133",
+  "limitlessId": "A2 133",
+  "rarity": "d-1",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Wing Attack",
+      "text": "",
+      "energyCost": [
+        "Colorless",
+        "Colorless",
+        null,
+        null
+      ],
+      "hp": "40",
+      "_id": "6799bc0f169202e5d7e68441"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

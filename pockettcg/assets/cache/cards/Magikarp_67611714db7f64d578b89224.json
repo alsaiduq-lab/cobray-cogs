@@ -1,0 +1,54 @@
+{
+  "_id": "67611714db7f64d578b89224",
+  "name": "Magikarp",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "30",
+  "pokemonId": "A1a-017",
+  "rarity": "d-1",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-12-17T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Leap Out",
+      "text": "Switch this Pokémon with 1 of your Benched Pokémon.",
+      "energyCost": [
+        "Water",
+        null,
+        null
+      ],
+      "_id": "679941e51f5c09a72fdf1c56"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67610fbaf9e257245fbb5571",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Mythical Island",
+        "linkedArticle": {
+          "_id": "6761232ab864a94749eedacb",
+          "title": "Mythical Island",
+          "url": "/sets/mythical-island/",
+          "image": "/pkm_img/Sets/mythical-island.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A1a 17"
+}

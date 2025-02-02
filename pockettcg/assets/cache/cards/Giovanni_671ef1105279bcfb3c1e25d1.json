@@ -1,0 +1,36 @@
+{
+  "_id": "671ef1105279bcfb3c1e25d1",
+  "pokemonId": "A1-270",
+  "name": "Giovanni",
+  "pack": "Mewtwo",
+  "rarity": "s-2",
+  "abilities": [],
+  "alternateArt": true,
+  "cardType": "Trainer",
+  "description": "During this turn, attacks used by your Pokémon do +10 damage to your opponent's Active Pokémon.",
+  "moves": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ceb3423ed078c0a1f5d2",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Mewtwo",
+        "linkedArticle": {
+          "_id": "6728e6038cfb55d02155f843",
+          "title": "Genetic Apex: Mewtwo",
+          "url": "/sets/genetic-apex-mewtwo/",
+          "image": "/pkm_img/Sets/GeneticApexMewtwo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "subType": "Supporter",
+  "release": "2024-10-30T03:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "artVariants": [],
+  "limitlessId": "A1 270",
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

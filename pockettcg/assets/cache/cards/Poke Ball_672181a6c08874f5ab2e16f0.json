@@ -1,0 +1,33 @@
+{
+  "_id": "672181a6c08874f5ab2e16f0",
+  "name": "Poke Ball",
+  "energyType": [],
+  "hp": "",
+  "pokemonId": "PA-005",
+  "pack": "",
+  "weakness": [],
+  "retreat": null,
+  "description": "Put 1 random Basic Pokémon from your deck into your hand.",
+  "release": "2024-10-30T03:00:00.000Z",
+  "popRank": 2,
+  "alternateArt": false,
+  "abilities": [],
+  "moves": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6723f35ee05ba54ed87183db",
+        "type": "Normal Pack",
+        "name": "Promo Pack A Series: Shop",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "cardType": "Trainer",
+  "subType": "Item",
+  "artVariants": [],
+  "limitlessId": "P-A 5"
+}

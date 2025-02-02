@@ -1,0 +1,55 @@
+{
+  "_id": "6799b957169202e5d7e67463",
+  "name": "Rhydon",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "110",
+  "pokemonId": "A2-081",
+  "limitlessId": "A2 81",
+  "rarity": "d-2",
+  "weakness": [
+    "Grass"
+  ],
+  "retreat": 3,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Wrack Down",
+      "text": "",
+      "energyCost": [
+        "Fighting",
+        "Fighting",
+        "Colorless"
+      ],
+      "hp": "70",
+      "_id": "6799b957169202e5d7e67464"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

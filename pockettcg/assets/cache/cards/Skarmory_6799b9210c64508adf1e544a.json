@@ -1,0 +1,74 @@
+{
+  "_id": "6799b9210c64508adf1e544a",
+  "name": "Skarmory",
+  "energyType": [
+    "Metal"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "80",
+  "pokemonId": "A2-111",
+  "limitlessId": "A2 111",
+  "rarity": "d-2",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 152,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6798f120b5fbced301dd073d",
+      "name": "Skarmory"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Metal Arms",
+      "text": "If this Pokémon has a Pokémon Tool attached, this attack does 30 more damage.",
+      "energyCost": [
+        "Metal"
+      ],
+      "hp": "20+",
+      "_id": "6799cd09f06a47c6afdfcee4"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799adca169202e5d7e638f5",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Dialga",
+        "linkedArticle": {
+          "_id": "6799ca13169202e5d7e6cba0",
+          "title": "Space-Time Smackdown: Dialga",
+          "url": "/sets/space-time-smackdown-dialga/",
+          "image": "/pkm_img/News/2025/January/space-timesmackdown.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    },
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

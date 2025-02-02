@@ -1,0 +1,58 @@
+{
+  "_id": "67924864eb08086be8540b3e",
+  "name": "Chimchar",
+  "energyType": [
+    "Fire"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A2-027",
+  "rarity": "d-1",
+  "weakness": [
+    "Water"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 169,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6798f19ddbba2e0d2bb61b48",
+      "name": "Chimchar"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Scratch",
+      "text": "",
+      "energyCost": [
+        "Fire"
+      ],
+      "hp": "20",
+      "_id": "6799b495169202e5d7e65c18"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A2 27"
+}

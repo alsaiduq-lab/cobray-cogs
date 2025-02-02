@@ -1,0 +1,54 @@
+{
+  "_id": "6799c2a7169202e5d7e6a464",
+  "name": "Infernape ex",
+  "energyType": [
+    "Fire"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "170",
+  "pokemonId": "A2-197",
+  "limitlessId": "A2 197",
+  "rarity": "s-2",
+  "weakness": [
+    "Water"
+  ],
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Flare Blitz",
+      "text": "Discard all Fire Energy from this Pokémon.",
+      "energyCost": [
+        "Fire",
+        "Fire"
+      ],
+      "hp": "140",
+      "_id": "6799c2a7169202e5d7e6a465"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true,
+  "nameRelease": "2025-01-30T06:00:00.000Z"
+}

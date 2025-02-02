@@ -1,0 +1,63 @@
+{
+  "_id": "6799b5ac169202e5d7e660d3",
+  "name": "Mismagius ex",
+  "energyType": [
+    "Psychic"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "140",
+  "pokemonId": "A2-067",
+  "limitlessId": "A2 67",
+  "rarity": "d-4",
+  "weakness": [
+    "Darkness"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6799c0ad169202e5d7e69b1e",
+      "name": "Mismagius ex"
+    },
+    {
+      "_id": "6799c2ea169202e5d7e6a59f",
+      "name": "Mismagius ex"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Magical Delusion",
+      "text": "Your opponent’s Active Pokémon is now Confused.",
+      "energyCost": [
+        "Psychic",
+        "Psychic"
+      ],
+      "hp": "70",
+      "_id": "6799ca1a169202e5d7e6cbe4"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true
+}

@@ -1,0 +1,57 @@
+{
+  "_id": "67611c12f9e257245fbb9cdb",
+  "name": "Celebi ex",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "130",
+  "pokemonId": "A1a-085",
+  "rarity": "s-3",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-12-17T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Powerful Bloom",
+      "text": "Flip a coin for each Energy attached to this Pokémon. This attach does 50 damage for each heads.",
+      "energyCost": [
+        "Grass",
+        "Colorless",
+        null,
+        null
+      ],
+      "hp": "50+",
+      "_id": "6799461249fc3af0759c478c"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67610fbaf9e257245fbb5571",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Mythical Island",
+        "linkedArticle": {
+          "_id": "6761232ab864a94749eedacb",
+          "title": "Mythical Island",
+          "url": "/sets/mythical-island/",
+          "image": "/pkm_img/Sets/mythical-island.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true,
+  "limitlessId": "A1a 85",
+  "nameRelease": "2024-12-17T06:00:00.000Z"
+}

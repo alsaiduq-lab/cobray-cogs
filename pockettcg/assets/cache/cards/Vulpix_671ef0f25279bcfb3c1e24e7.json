@@ -1,0 +1,51 @@
+{
+  "_id": "671ef0f25279bcfb3c1e24e7",
+  "pokemonId": "A1-037",
+  "name": "Vulpix",
+  "pack": "Charizard",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Fire"
+  ],
+  "hp": "50",
+  "moves": [
+    {
+      "name": "Tail Whip",
+      "text": "Flip a coin. If heads, the Defending Pokémon can't attack during your opponent's next turn.",
+      "energyCost": [
+        "Colorless"
+      ],
+      "_id": "67994c0549fc3af0759c6aaf"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ce9af3133dff28feb222",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Charizard",
+        "linkedArticle": {
+          "_id": "6728e5e97e99ebe6207c6c77",
+          "title": "Genetic Apex: Charizard",
+          "url": "/sets/genetic-apex-charizard/",
+          "image": "/pkm_img/Sets/GeneticApexCharizard.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-1",
+  "release": "2024-10-31T03:00:00.000Z",
+  "retreat": 1,
+  "subType": "Basic",
+  "weakness": [
+    "Water"
+  ],
+  "popRank": 107,
+  "artVariants": [],
+  "limitlessId": "A1 37"
+}

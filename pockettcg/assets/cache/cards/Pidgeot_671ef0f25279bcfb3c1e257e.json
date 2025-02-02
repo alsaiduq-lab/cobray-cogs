@@ -1,0 +1,63 @@
+{
+  "_id": "671ef0f25279bcfb3c1e257e",
+  "pokemonId": "A1-188",
+  "name": "Pidgeot",
+  "pack": "Mewtwo",
+  "abilities": [
+    {
+      "name": "Drive Off",
+      "text": "Once during your turn, you may switch out your opponent's Active Pokémon to the Bench. (Your opponent chooses the new Active Pokémon.)",
+      "_id": "679956571552ba8d13d765e9"
+    }
+  ],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Colorless"
+  ],
+  "hp": "130",
+  "moves": [
+    {
+      "name": "Wing Attack",
+      "energyCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "70",
+      "_id": "679956571552ba8d13d765ea"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ceb3423ed078c0a1f5d2",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Mewtwo",
+        "linkedArticle": {
+          "_id": "6728e6038cfb55d02155f843",
+          "title": "Genetic Apex: Mewtwo",
+          "url": "/sets/genetic-apex-mewtwo/",
+          "image": "/pkm_img/Sets/GeneticApexMewtwo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-3",
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 1,
+  "subType": "Stage 2",
+  "weakness": [
+    "Lightning"
+  ],
+  "popRank": 92,
+  "artVariants": [
+    {
+      "_id": "671ef1105279bcfb3c1e25b8",
+      "name": "Pidgeot"
+    }
+  ],
+  "limitlessId": "A1 188"
+}

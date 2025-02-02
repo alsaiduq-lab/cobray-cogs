@@ -1,0 +1,55 @@
+{
+  "_id": "6799c215f06a47c6afdf921c",
+  "name": "Electivire",
+  "energyType": [
+    "Lightning"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "120",
+  "pokemonId": "A2-057",
+  "limitlessId": "A2 57",
+  "rarity": "d-3",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 3,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Exciting Voltage",
+      "text": "If this Pokémon has at least 2 extra Lightning Energy attached, this attack does 80 more damage.",
+      "energyCost": [
+        "Lightning",
+        "Lightning",
+        null,
+        null
+      ],
+      "_id": "6799c215f06a47c6afdf921d"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799adca169202e5d7e638f5",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Dialga",
+        "linkedArticle": {
+          "_id": "6799ca13169202e5d7e6cba0",
+          "title": "Space-Time Smackdown: Dialga",
+          "url": "/sets/space-time-smackdown-dialga/",
+          "image": "/pkm_img/News/2025/January/space-timesmackdown.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

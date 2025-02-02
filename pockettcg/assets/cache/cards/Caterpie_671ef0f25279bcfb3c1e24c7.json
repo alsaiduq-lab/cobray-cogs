@@ -1,0 +1,51 @@
+{
+  "_id": "671ef0f25279bcfb3c1e24c7",
+  "pokemonId": "A1-005",
+  "name": "Caterpie",
+  "pack": "Pikachu",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Grass"
+  ],
+  "hp": "50",
+  "moves": [
+    {
+      "name": "Find a Friend",
+      "text": "Put 1 random Grass Pokémon from your deck into your hand.",
+      "energyCost": [
+        "Colorless"
+      ],
+      "_id": "6799507a1552ba8d13d73a89"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ca53f3133dff28feb0ce",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Pikachu",
+        "linkedArticle": {
+          "_id": "6728e5c17e99ebe6207c6c2e",
+          "title": "Genetic Apex: Pikachu",
+          "url": "/sets/genetic-apex-pikachu/",
+          "image": "/pkm_img/Sets/GeneticApexPikachu.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-1",
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 1,
+  "subType": "Basic",
+  "weakness": [
+    "Fire"
+  ],
+  "popRank": 196,
+  "artVariants": [],
+  "limitlessId": "A1 5"
+}

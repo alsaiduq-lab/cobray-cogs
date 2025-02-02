@@ -1,0 +1,58 @@
+{
+  "_id": "67924b55eb08086be854192e",
+  "name": "Cresselia",
+  "energyType": [
+    "Psychic"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "110",
+  "pokemonId": "A2-079",
+  "rarity": "d-3",
+  "weakness": [
+    "Darkness"
+  ],
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6799c4060c64508adf1e8571",
+      "name": "Cresselia"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Moonlight Gain",
+      "text": "Heal 20 damage from this Pokemon.",
+      "energyCost": [
+        "Psychic",
+        "Psychic"
+      ],
+      "_id": "679a664c169202e5d7ea57a3"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A2 79",
+  "retreat": 2
+}

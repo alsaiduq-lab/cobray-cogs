@@ -1,0 +1,48 @@
+{
+  "_id": "67218206a61389c23bbf94cd",
+  "name": "Mankey",
+  "energyType": [
+    "Fighting"
+  ],
+  "hp": "50",
+  "pokemonId": "PA-17",
+  "pack": "",
+  "weakness": [
+    "Psychic"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-11-05T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Reckless Charge",
+      "text": "This Pokemon also does 10 damage to itself.",
+      "energyCost": [
+        "Fighting"
+      ],
+      "hp": "30",
+      "_id": "6799487d49fc3af0759c54a4"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6729bc22f687517e5dc4de0c",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Promo Pack A Series: Vol. 1",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "artVariants": [],
+  "limitlessId": "P-A 17"
+}

@@ -1,0 +1,243 @@
+[
+  {
+    "author": "AleMeek",
+    "created": "2024-11-14T14:09:37.954Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2544",
+          "name": "Ralts",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2545",
+          "name": "Kirlia",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2546",
+          "name": "Gardevoir",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2543",
+          "name": "Mewtwo ex",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poke Ball",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2538",
+          "name": "Slowpoke",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2539",
+          "name": "Slowbro",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/colosseum-pokécup-(32-players)/1/mewtwo-ex/alemeek/UA8e9/",
+    "deckType": {
+      "name": "Mewtwo ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "1",
+    "customTournamentName": "Colosseum PokéCup (32 Players)",
+    "linkedArticle": {
+      "_id": "6731f5e9cd90830be08d321f",
+      "title": "Nov 11-17th Weekly 50-200 Players Events",
+      "url": "/tournaments/tcgp-weekly-results/1/report/"
+    }
+  },
+  {
+    "author": {
+      "_id": "623b919b9c8261696dbf255c",
+      "roles": [],
+      "username": "BelaaVGC"
+    },
+    "created": "2024-10-31T20:59:34.493Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2538",
+          "name": "Slowpoke",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2539",
+          "name": "Slowbro",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2542",
+          "name": "Mewtwo",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2544",
+          "name": "Ralts",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2545",
+          "name": "Kirlia",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2546",
+          "name": "Gardevoir",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poke Ball",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/spicy-winstreak/october-2024/slowbro/belaavgc/JkF8x/",
+    "deckType": {
+      "name": "Slowbro",
+      "tier": null
+    },
+    "rankedType": {
+      "name": "5+ Winstreak",
+      "shortName": "Winstreak",
+      "icon": "/img/tournaments/logos/Spicy_Wins.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
+    },
+    "linkedArticle": null
+  }
+]

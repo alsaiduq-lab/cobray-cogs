@@ -1,0 +1,56 @@
+{
+  "_id": "67611adef9e257245fbb91d7",
+  "name": "Pidgeot ex",
+  "energyType": [
+    "Colorless"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "90",
+  "pokemonId": "A1a-079",
+  "rarity": "s-2",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-12-17T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": " Scattering Cyclone",
+      "text": "This attack does 20 more damage for each of your opponent’s Benched Pokémon.",
+      "energyCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "80+",
+      "_id": "679945da49fc3af0759c4608"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67610fbaf9e257245fbb5571",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Mythical Island",
+        "linkedArticle": {
+          "_id": "6761232ab864a94749eedacb",
+          "title": "Mythical Island",
+          "url": "/sets/mythical-island/",
+          "image": "/pkm_img/Sets/mythical-island.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true,
+  "limitlessId": "A1a 79",
+  "nameRelease": "2024-12-17T06:00:00.000Z"
+}

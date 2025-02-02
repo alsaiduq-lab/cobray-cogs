@@ -1,0 +1,60 @@
+{
+  "_id": "6799b628f06a47c6afdf561c",
+  "name": "Manaphy",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "50",
+  "pokemonId": "A2-050",
+  "limitlessId": "A2 50",
+  "rarity": "d-2",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 73,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6799c0f8f06a47c6afdf8c95",
+      "name": "Manaphy"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Oceanic GIft",
+      "text": "Choose 2 of your Benched Pokémon. For each of those Pokémon, take a Water Energy from your Energy Zone and attach it to that Pokémon.",
+      "energyCost": [
+        "Water",
+        null,
+        null,
+        null
+      ],
+      "_id": "6799c866f06a47c6afdfb3ea"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

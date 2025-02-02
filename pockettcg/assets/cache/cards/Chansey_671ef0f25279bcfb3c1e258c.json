@@ -1,0 +1,58 @@
+{
+  "_id": "671ef0f25279bcfb3c1e258c",
+  "pokemonId": "A1-202",
+  "name": "Chansey",
+  "pack": "Pikachu",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Colorless"
+  ],
+  "hp": "120",
+  "moves": [
+    {
+      "name": "Gentle Slap",
+      "energyCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "60",
+      "_id": "679941ebf5d84b3e8fe0d4ed"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ca53f3133dff28feb0ce",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Pikachu",
+        "linkedArticle": {
+          "_id": "6728e5c17e99ebe6207c6c2e",
+          "title": "Genetic Apex: Pikachu",
+          "url": "/sets/genetic-apex-pikachu/",
+          "image": "/pkm_img/Sets/GeneticApexPikachu.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-2",
+  "retreat": 3,
+  "subType": "Basic",
+  "weakness": [
+    "Fighting"
+  ],
+  "release": "2024-10-30T03:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "artVariants": [
+    {
+      "_id": "672181e6c08874f5ab2e1713",
+      "name": "Chansey"
+    }
+  ],
+  "limitlessId": "A1 202"
+}

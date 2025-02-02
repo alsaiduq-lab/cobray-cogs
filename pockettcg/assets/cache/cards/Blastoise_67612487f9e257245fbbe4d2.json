@@ -1,0 +1,53 @@
+{
+  "_id": "67612487f9e257245fbbe4d2",
+  "name": "Blastoise",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "150",
+  "pokemonId": "PA-029",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 3,
+  "release": "2025-01-01T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Hydro Pump",
+      "text": "If this Pokémon has at least 2 extra Water Energy attached, this attack does 60 more damage.",
+      "energyCost": [
+        "Water",
+        "Water",
+        "Colorless"
+      ],
+      "hp": "80+",
+      "_id": "67994b00e7d048b93b2525dd"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6774dd4c2ca8cb82be852c30",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Promo Pack A Series: Vol. 3",
+        "linkedArticle": {
+          "_id": "677483579e191aa65ad664b2",
+          "title": "Blastoise Drop Event",
+          "url": "/events/2025/january/blastoise-drop/",
+          "image": "/pkm_img/Events/2025/January/BlastoiseEvent.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "limitlessId": "P-A 29",
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

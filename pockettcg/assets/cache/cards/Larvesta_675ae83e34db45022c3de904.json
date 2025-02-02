@@ -1,0 +1,53 @@
+{
+  "_id": "675ae83e34db45022c3de904",
+  "name": "Larvesta",
+  "energyType": [
+    "Fire"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "80",
+  "pokemonId": "A1a-013",
+  "rarity": "d-1",
+  "weakness": [
+    "Water"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2024-12-17T06:00:00.000Z",
+  "popRank": 109,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Combustion",
+      "energyCost": [
+        "Fire",
+        "Colorless"
+      ],
+      "hp": "30",
+      "_id": "679941b81f5c09a72fdf1b5d"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67610fbaf9e257245fbb5571",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Mythical Island",
+        "linkedArticle": {
+          "_id": "6761232ab864a94749eedacb",
+          "title": "Mythical Island",
+          "url": "/sets/mythical-island/",
+          "image": "/pkm_img/Sets/mythical-island.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A1a 13"
+}

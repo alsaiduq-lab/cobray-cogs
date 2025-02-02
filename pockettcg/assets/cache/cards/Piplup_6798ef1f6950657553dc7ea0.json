@@ -1,0 +1,37 @@
+{
+  "_id": "6798ef1f6950657553dc7ea0",
+  "name": "Piplup",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "PA-034",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 1,
+  "description": "",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Nap",
+      "text": "Heal 20 damage from this Pokemon.",
+      "energyCost": [
+        "Colorless",
+        null
+      ],
+      "_id": "679e3893451aa933f7f33ece"
+    }
+  ],
+  "obtain": [],
+  "ex": false,
+  "limitlessId": "P-A 34",
+  "rarity": "p",
+  "release": "2025-02-01T06:00:00.000Z",
+  "nameRelease": "2025-01-30T06:00:00.000Z"
+}

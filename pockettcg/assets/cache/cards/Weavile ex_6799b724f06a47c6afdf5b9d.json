@@ -1,0 +1,65 @@
+{
+  "_id": "6799b724f06a47c6afdf5b9d",
+  "name": "Weavile ex",
+  "energyType": [
+    "Darkness"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "140",
+  "pokemonId": "A2-099",
+  "limitlessId": "A2 99",
+  "rarity": "d-4",
+  "weakness": [
+    "Grass"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 83,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6798e6b3dbba2e0d2bb5e79e",
+      "name": "Weavile ex"
+    },
+    {
+      "_id": "6799c304169202e5d7e6a683",
+      "name": "Weavile ex"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Scratching Nails",
+      "text": "If your opponent's active Pokémon has damage on it, this attack does 40 more damage.",
+      "energyCost": [
+        "Darkness",
+        null,
+        null,
+        null
+      ],
+      "hp": "30+",
+      "_id": "6799cc72f06a47c6afdfcb8d"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true
+}

@@ -1,0 +1,34 @@
+{
+  "_id": "6798f19ddbba2e0d2bb61b48",
+  "name": "Chimchar",
+  "energyType": [
+    "Fire"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "P2-229",
+  "weakness": [
+    "Water"
+  ],
+  "retreat": 1,
+  "description": "",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Scratch",
+      "text": "",
+      "energyCost": [
+        "Fire"
+      ],
+      "hp": "20",
+      "_id": "6798f19ddbba2e0d2bb61b49"
+    }
+  ],
+  "obtain": [],
+  "ex": false,
+  "nameRelease": "2025-01-30T06:00:00.000Z"
+}

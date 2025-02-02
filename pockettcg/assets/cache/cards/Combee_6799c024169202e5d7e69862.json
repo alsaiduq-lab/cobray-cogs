@@ -1,0 +1,56 @@
+{
+  "_id": "6799c024169202e5d7e69862",
+  "name": "Combee",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "50",
+  "pokemonId": "A2-157",
+  "limitlessId": "A2 157",
+  "rarity": "s-1",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Call for Family",
+      "text": "Put 1 random Basic Pokemon from your deck onto your Bench.",
+      "energyCost": [
+        "Colorless",
+        null,
+        null,
+        null
+      ],
+      "_id": "6799c024169202e5d7e69863"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799adca169202e5d7e638f5",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Dialga",
+        "linkedArticle": {
+          "_id": "6799ca13169202e5d7e6cba0",
+          "title": "Space-Time Smackdown: Dialga",
+          "url": "/sets/space-time-smackdown-dialga/",
+          "image": "/pkm_img/News/2025/January/space-timesmackdown.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "nameRelease": "2025-01-30T06:00:00.000Z"
+}

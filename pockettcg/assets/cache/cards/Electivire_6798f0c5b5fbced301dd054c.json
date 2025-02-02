@@ -1,0 +1,35 @@
+{
+  "_id": "6798f0c5b5fbced301dd054c",
+  "name": "Electivire",
+  "energyType": [
+    "Lightning"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "120",
+  "pokemonId": "P2-225",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 3,
+  "description": "",
+  "release": null,
+  "popRank": 236,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Exciting Voltage",
+      "text": "If this Pokemon has at least 2 extra Lightning Energy attached, this attack does 10 more damage.",
+      "energyCost": [
+        "Lightning",
+        "Lightning"
+      ],
+      "hp": "40+",
+      "_id": "6798f0c5b5fbced301dd054d"
+    }
+  ],
+  "obtain": [],
+  "ex": false
+}

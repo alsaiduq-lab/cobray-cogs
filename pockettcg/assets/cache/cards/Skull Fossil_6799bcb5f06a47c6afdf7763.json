@@ -1,0 +1,38 @@
+{
+  "_id": "6799bcb5f06a47c6afdf7763",
+  "name": "Skull Fossil",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Item",
+  "hp": "40",
+  "pokemonId": "A2-144",
+  "limitlessId": "A2 144",
+  "rarity": "d-1",
+  "weakness": [],
+  "description": "Play this card as if it were a 40-HP Basic Colorlesss Pokémon.\nAt any time during your turn, you may discard this card from play.\nThis card can’t retreat.",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 207,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799adca169202e5d7e638f5",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Dialga",
+        "linkedArticle": {
+          "_id": "6799ca13169202e5d7e6cba0",
+          "title": "Space-Time Smackdown: Dialga",
+          "url": "/sets/space-time-smackdown-dialga/",
+          "image": "/pkm_img/News/2025/January/space-timesmackdown.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

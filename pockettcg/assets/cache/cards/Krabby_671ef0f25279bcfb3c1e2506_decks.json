@@ -1,0 +1,506 @@
+[
+  {
+    "author": "Enmanuelito",
+    "created": "2024-12-19T13:55:09.524Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2506",
+          "name": "Krabby",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2507",
+          "name": "Kingler",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2519",
+          "name": "Froakie",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e251a",
+          "name": "Frogadier",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e251b",
+          "name": "Greninja",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e259e",
+          "name": "Misty",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poke Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/the-dark-league-wednesday-tcg-(139-players)/1/misty/enmanuelito/9EwIz/",
+    "deckType": {
+      "name": "Misty",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "1",
+    "customTournamentName": "The Dark League Wednesday TCG (139 Players)",
+    "linkedArticle": null
+  },
+  {
+    "author": {
+      "_id": "674634c168f5715038f09d41",
+      "roles": [],
+      "username": "caconym"
+    },
+    "created": "2024-11-27T15:21:38.813Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2506",
+          "name": "Krabby",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e250f",
+          "name": "Magikarp",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2507",
+          "name": "Kingler",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2510",
+          "name": "Gyarados",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef1105279bcfb3c1e25ac",
+          "name": "Gyarados",
+          "alternateArt": true,
+          "nameRelease": "2024-10-30T03:00:00.000Z"
+        },
+        "skills": [],
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poke Ball",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e259e",
+          "name": "Misty",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/5-winstreak/november-2024/misty/caconym/9Gn4m/",
+    "deckType": {
+      "name": "Misty",
+      "tier": null
+    },
+    "rankedType": {
+      "name": "5+ Winstreak",
+      "shortName": "Winstreak",
+      "icon": "/img/tournaments/logos/Spicy_Wins.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
+    },
+    "linkedArticle": null
+  },
+  {
+    "author": "Yunikin",
+    "created": "2024-11-26T19:54:56.163Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e250c",
+          "name": "Staryu",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e250e",
+          "name": "Starmie ex",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2586",
+          "name": "Meowth",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2506",
+          "name": "Krabby",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2507",
+          "name": "Kingler",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e259e",
+          "name": "Misty",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poke Ball",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181abc08874f5ab2e16fb",
+          "name": "Red Card",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/spx-italian-mini-cup-(64-players)/1/starmie-ex/yunikin/yE7XU/",
+    "deckType": {
+      "name": "Starmie ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "1",
+    "customTournamentName": "SpX Italian Mini Cup (64 Players)",
+    "linkedArticle": {
+      "_id": "6740bb887f60d359e8dfe987",
+      "title": "PTCGP 50-200 Player Event Roundup #3",
+      "url": "/tournaments/tcgp-weekly-results/3/report/"
+    }
+  },
+  {
+    "author": {
+      "_id": "61ef425aa88ec984235b7c05",
+      "roles": [],
+      "username": "Uzhul"
+    },
+    "created": "2024-10-30T02:31:41.411Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24fb",
+          "name": "Psyduck",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2500",
+          "name": "Tentacool",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2506",
+          "name": "Krabby",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24fc",
+          "name": "Golduck",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2501",
+          "name": "Tentacruel",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2507",
+          "name": "Kingler",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poke Ball",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e259e",
+          "name": "Misty",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef1105279bcfb3c1e25d3",
+          "name": "Sabrina",
+          "alternateArt": true,
+          "nameRelease": "2024-10-30T03:00:00.000Z"
+        },
+        "skills": [],
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/spicy-winstreak/october-2024/misty/uzhul-|-slc-|-acg/_IKew/",
+    "deckType": {
+      "name": "Misty",
+      "tier": null
+    },
+    "rankedType": {
+      "name": "5+ Winstreak",
+      "shortName": "Winstreak",
+      "icon": "/img/tournaments/logos/Spicy_Wins.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
+    },
+    "linkedArticle": null
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "_id": "671ef1105279bcfb3c1e25aa",
+  "pokemonId": "A1-231",
+  "name": "Rapidash",
+  "pack": "Charizard",
+  "rarity": "s-1",
+  "abilities": [],
+  "alternateArt": true,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Fire"
+  ],
+  "hp": "100",
+  "moves": [
+    {
+      "name": "Fire Mane",
+      "energyCost": [
+        "Fire"
+      ],
+      "hp": "40",
+      "_id": "679940aff5d84b3e8fe0cd2b"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ce9af3133dff28feb222",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Charizard",
+        "linkedArticle": {
+          "_id": "6728e5e97e99ebe6207c6c77",
+          "title": "Genetic Apex: Charizard",
+          "url": "/sets/genetic-apex-charizard/",
+          "image": "/pkm_img/Sets/GeneticApexCharizard.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 1,
+  "subType": "Stage 1",
+  "weakness": [
+    "Water"
+  ],
+  "popRank": 1.7976931348623157e+308,
+  "artVariants": [],
+  "limitlessId": "A1 231",
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

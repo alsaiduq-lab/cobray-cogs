@@ -1,0 +1,60 @@
+{
+  "_id": "676116c2db7f64d578b890b7",
+  "name": "Aerodactyl ex",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "140",
+  "pokemonId": "A1a-078",
+  "rarity": "s-2",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-12-17T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Primeval Law",
+      "text": "Your opponent can't play any Pokemon from their hand to evolve their Active Pokemon.",
+      "_id": "679945d25d55ed4c8ca64e20"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Land Crush",
+      "energyCost": [
+        "Fighting",
+        "Colorless"
+      ],
+      "hp": "80",
+      "_id": "679945d25d55ed4c8ca64e21"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67610fbaf9e257245fbb5571",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Mythical Island",
+        "linkedArticle": {
+          "_id": "6761232ab864a94749eedacb",
+          "title": "Mythical Island",
+          "url": "/sets/mythical-island/",
+          "image": "/pkm_img/Sets/mythical-island.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true,
+  "limitlessId": "A1a 78",
+  "nameRelease": "2024-12-17T06:00:00.000Z"
+}

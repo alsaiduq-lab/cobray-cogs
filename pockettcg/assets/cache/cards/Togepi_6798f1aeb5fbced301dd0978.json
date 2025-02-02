@@ -1,0 +1,36 @@
+{
+  "_id": "6798f1aeb5fbced301dd0978",
+  "name": "Togepi",
+  "energyType": [
+    "Psychic"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "50",
+  "pokemonId": "P2-230",
+  "weakness": [
+    "Metal"
+  ],
+  "retreat": 1,
+  "description": "",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Pound",
+      "text": "",
+      "energyCost": [
+        "Psychic",
+        null,
+        null
+      ],
+      "hp": "20",
+      "_id": "6798f1bcb5fbced301dd09c6"
+    }
+  ],
+  "obtain": [],
+  "ex": false,
+  "nameRelease": "2025-01-30T06:00:00.000Z"
+}

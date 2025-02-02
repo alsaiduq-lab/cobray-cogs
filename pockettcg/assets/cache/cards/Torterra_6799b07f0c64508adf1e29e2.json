@@ -1,0 +1,56 @@
+{
+  "_id": "6799b07f0c64508adf1e29e2",
+  "name": "Torterra",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "160",
+  "pokemonId": "A2-012",
+  "limitlessId": "A2 12",
+  "rarity": "d-3",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 4,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Frenzy Plant",
+      "text": "During your next turn, this Pokémon can’t use Frenzy Plant.",
+      "energyCost": [
+        "Grass",
+        "Grass",
+        "Grass",
+        "Colorless"
+      ],
+      "hp": "150",
+      "_id": "6799c554f06a47c6afdfa170"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

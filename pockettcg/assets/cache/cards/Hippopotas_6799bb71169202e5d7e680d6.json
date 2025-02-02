@@ -1,0 +1,61 @@
+{
+  "_id": "6799bb71169202e5d7e680d6",
+  "name": "Hippopotas",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "80",
+  "pokemonId": "A2-093",
+  "limitlessId": "A2 93",
+  "rarity": "d-1",
+  "weakness": [
+    "Grass"
+  ],
+  "retreat": 3,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6799c4790c64508adf1e8794",
+      "name": "Hippopotas"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Rolling Tackle",
+      "text": "",
+      "energyCost": [
+        "Fighting",
+        "Fighting",
+        "Colorless",
+        null
+      ],
+      "hp": "60",
+      "_id": "6799cc0a0c64508adf1eb038"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

@@ -1,0 +1,45 @@
+{
+  "_id": "67612468f9e257245fbbe3de",
+  "name": "Charmander",
+  "energyType": [
+    "Fire"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "PA-O32",
+  "weakness": [
+    "Water"
+  ],
+  "retreat": 1,
+  "release": "2025-01-07T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Ember",
+      "text": "Discard a Fire Energy from this Pokémon",
+      "energyCost": [
+        "Fire"
+      ],
+      "hp": "30",
+      "_id": "67994acbe7d048b93b252488"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "672b8e0a77094f5d3556d66f",
+        "type": "Normal Pack",
+        "name": "Promo Pack A Series: Wonder Pick",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "limitlessId": "P-A 32",
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

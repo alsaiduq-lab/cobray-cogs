@@ -1,0 +1,52 @@
+{
+  "_id": "671ef0f25279bcfb3c1e24f8",
+  "pokemonId": "A1-054",
+  "name": "Wartortle",
+  "pack": "Pikachu",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Water"
+  ],
+  "hp": "80",
+  "moves": [
+    {
+      "name": "Wave Splash",
+      "energyCost": [
+        "Water",
+        "Colorless"
+      ],
+      "hp": "40",
+      "_id": "679952c61552ba8d13d74f27"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ca53f3133dff28feb0ce",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Pikachu",
+        "linkedArticle": {
+          "_id": "6728e5c17e99ebe6207c6c2e",
+          "title": "Genetic Apex: Pikachu",
+          "url": "/sets/genetic-apex-pikachu/",
+          "image": "/pkm_img/Sets/GeneticApexPikachu.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-2",
+  "retreat": 1,
+  "subType": "Stage 1",
+  "weakness": [
+    "Lightning"
+  ],
+  "release": "2024-10-30T03:00:00.000Z",
+  "popRank": 113,
+  "artVariants": [],
+  "limitlessId": "A1 54"
+}

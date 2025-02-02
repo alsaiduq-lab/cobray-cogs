@@ -1,0 +1,69 @@
+{
+  "_id": "6799c03ef06a47c6afdf88fa",
+  "name": "Palkia ex",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "150",
+  "pokemonId": "A2-182",
+  "limitlessId": "A2 182",
+  "rarity": "s-2",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Slash",
+      "text": "",
+      "energyCost": [
+        "Water",
+        null,
+        null,
+        null
+      ],
+      "hp": "30",
+      "_id": "6799c03ef06a47c6afdf88fb"
+    },
+    {
+      "name": "Dimensional Storm",
+      "text": "Discard 3 Water Energy from this Pokémon. This attack also does 20 damage to each of your opponent's Benched Pokémon.",
+      "energyCost": [
+        "Water",
+        "Water",
+        "Water",
+        "Colorless"
+      ],
+      "hp": "150",
+      "_id": "6799c03ef06a47c6afdf88fc"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true,
+  "nameRelease": "2025-01-30T06:00:00.000Z"
+}

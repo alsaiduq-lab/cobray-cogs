@@ -1,0 +1,69 @@
+{
+  "_id": "671ef0f25279bcfb3c1e253d",
+  "pokemonId": "A1-123",
+  "name": "Gengar ex",
+  "pack": "Mewtwo",
+  "abilities": [
+    {
+      "name": "Shadowy Spellbind",
+      "text": "As long as this Pokémon is in the Active Spot, your opponent can't use any Supporter cards from their hand.",
+      "_id": "6799551897fb8e77af07f183"
+    }
+  ],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Psychic"
+  ],
+  "ex": true,
+  "hp": "170",
+  "moves": [
+    {
+      "name": "Spooky Shot",
+      "energyCost": [
+        "Psychic",
+        "Psychic",
+        "Psychic"
+      ],
+      "hp": "100",
+      "_id": "6799551897fb8e77af07f184"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ceb3423ed078c0a1f5d2",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Mewtwo",
+        "linkedArticle": {
+          "_id": "6728e6038cfb55d02155f843",
+          "title": "Genetic Apex: Mewtwo",
+          "url": "/sets/genetic-apex-mewtwo/",
+          "image": "/pkm_img/Sets/GeneticApexMewtwo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-4",
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 2,
+  "subType": "Stage 2",
+  "weakness": [
+    "Darkness"
+  ],
+  "popRank": 132,
+  "artVariants": [
+    {
+      "_id": "671ef1105279bcfb3c1e25d8",
+      "name": "Gengar ex"
+    },
+    {
+      "_id": "671ef1105279bcfb3c1e25c8",
+      "name": "Gengar ex"
+    }
+  ],
+  "limitlessId": "A1 123"
+}

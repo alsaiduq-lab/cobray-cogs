@@ -1,0 +1,67 @@
+{
+  "_id": "671ef1105279bcfb3c1e25be",
+  "pokemonId": "A1-251",
+  "name": "Venusaur ex",
+  "pack": "Mewtwo",
+  "rarity": "s-2",
+  "abilities": [],
+  "alternateArt": true,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Grass"
+  ],
+  "ex": true,
+  "hp": "190",
+  "moves": [
+    {
+      "name": "Razor Leaf",
+      "energyCost": [
+        "Grass",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "60",
+      "_id": "67993f0f1f5c09a72fdf0a61"
+    },
+    {
+      "name": "Giant Bloom",
+      "text": "Heal 30 damage from this Pokémon.",
+      "energyCost": [
+        "Grass",
+        "Grass",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "100",
+      "_id": "67993f0f1f5c09a72fdf0a62"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ceb3423ed078c0a1f5d2",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Mewtwo",
+        "linkedArticle": {
+          "_id": "6728e6038cfb55d02155f843",
+          "title": "Genetic Apex: Mewtwo",
+          "url": "/sets/genetic-apex-mewtwo/",
+          "image": "/pkm_img/Sets/GeneticApexMewtwo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 3,
+  "subType": "Stage 2",
+  "weakness": [
+    "Fire"
+  ],
+  "popRank": 1.7976931348623157e+308,
+  "artVariants": [],
+  "limitlessId": "A1 251",
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

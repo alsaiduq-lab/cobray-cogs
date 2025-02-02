@@ -1,0 +1,51 @@
+{
+  "_id": "676124ecdb7f64d578b8fc7d",
+  "name": "Eevee",
+  "energyType": [
+    "Colorless"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "PA-030",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-01-01T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Growl",
+      "text": "During your opponent's next turn, attacks used by the Defending Pokemon do -20 damage.",
+      "energyCost": [
+        "Colorless"
+      ],
+      "_id": "67994b0de7d048b93b252613"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6774dd4c2ca8cb82be852c30",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Promo Pack A Series: Vol. 3",
+        "linkedArticle": {
+          "_id": "677483579e191aa65ad664b2",
+          "title": "Blastoise Drop Event",
+          "url": "/events/2025/january/blastoise-drop/",
+          "image": "/pkm_img/Events/2025/January/BlastoiseEvent.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "P-A 30"
+}

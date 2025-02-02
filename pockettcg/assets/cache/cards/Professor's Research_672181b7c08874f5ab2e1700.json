@@ -1,0 +1,33 @@
+{
+  "_id": "672181b7c08874f5ab2e1700",
+  "name": "Professor's Research",
+  "energyType": [],
+  "hp": "",
+  "pokemonId": "PA-007",
+  "pack": "",
+  "weakness": [],
+  "retreat": null,
+  "description": "Draw 2 cards.",
+  "release": "2024-10-30T03:00:00.000Z",
+  "popRank": 1,
+  "alternateArt": false,
+  "abilities": [],
+  "moves": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6723f35ee05ba54ed87183db",
+        "type": "Normal Pack",
+        "name": "Promo Pack A Series: Shop",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "cardType": "Trainer",
+  "subType": "Supporter",
+  "artVariants": [],
+  "limitlessId": "P-A 7"
+}

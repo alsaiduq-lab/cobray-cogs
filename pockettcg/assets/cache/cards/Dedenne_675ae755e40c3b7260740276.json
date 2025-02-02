@@ -1,0 +1,55 @@
+{
+  "_id": "675ae755e40c3b7260740276",
+  "name": "Dedenne",
+  "energyType": [
+    "Lightning"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A1a-073",
+  "rarity": "s-1",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-12-17T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Thunder Shock",
+      "text": "Flip a coin. If heads, your opponent's Active Pokemon is now paralyzed.",
+      "energyCost": [
+        "Lightning",
+        null
+      ],
+      "hp": "10",
+      "_id": "6799459e49fc3af0759c444d"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67610fbaf9e257245fbb5571",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Mythical Island",
+        "linkedArticle": {
+          "_id": "6761232ab864a94749eedacb",
+          "title": "Mythical Island",
+          "url": "/sets/mythical-island/",
+          "image": "/pkm_img/Sets/mythical-island.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A1a 73",
+  "nameRelease": "2024-12-17T06:00:00.000Z"
+}

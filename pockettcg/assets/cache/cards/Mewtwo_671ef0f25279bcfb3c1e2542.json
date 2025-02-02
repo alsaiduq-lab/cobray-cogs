@@ -1,0 +1,60 @@
+{
+  "_id": "671ef0f25279bcfb3c1e2542",
+  "pokemonId": "A1-128",
+  "name": "Mewtwo",
+  "pack": "Mewtwo",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Psychic"
+  ],
+  "hp": "120",
+  "moves": [
+    {
+      "name": "Power Blast",
+      "text": "Discard 2 Psychic Energy from this Pokémon.",
+      "energyCost": [
+        "Psychic",
+        "Psychic",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "120",
+      "_id": "67994c6ce7d048b93b252e70"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ceb3423ed078c0a1f5d2",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Mewtwo",
+        "linkedArticle": {
+          "_id": "6728e6038cfb55d02155f843",
+          "title": "Genetic Apex: Mewtwo",
+          "url": "/sets/genetic-apex-mewtwo/",
+          "image": "/pkm_img/Sets/GeneticApexMewtwo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-3",
+  "release": "2024-10-31T03:00:00.000Z",
+  "retreat": 2,
+  "subType": "Basic",
+  "weakness": [
+    "Darkness"
+  ],
+  "popRank": 60,
+  "artVariants": [
+    {
+      "_id": "672181dfa61389c23bbf94bd",
+      "name": "Mewtwo"
+    }
+  ],
+  "limitlessId": "A1 128"
+}

@@ -1,0 +1,44 @@
+{
+  "_id": "676124d4b864a94749eeebef",
+  "name": "Pikachu",
+  "energyType": [
+    "Lightning"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "PA-026",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 1,
+  "release": "2025-01-01T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Gnaw",
+      "energyCost": [
+        "Lightning"
+      ],
+      "hp": "20",
+      "_id": "67994b3249fc3af0759c6694"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "677c678ff81b3b0b702f3955",
+        "type": "Normal Pack",
+        "name": "Promo Pack A Series: Special",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "limitlessId": "P-A 26",
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

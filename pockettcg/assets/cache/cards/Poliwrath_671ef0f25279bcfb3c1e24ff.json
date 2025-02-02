@@ -1,0 +1,59 @@
+{
+  "_id": "671ef0f25279bcfb3c1e24ff",
+  "pokemonId": "A1-061",
+  "name": "Poliwrath",
+  "pack": "Charizard",
+  "abilities": [
+    {
+      "name": "Counterattack",
+      "text": "If this Pokémon is in the Active Spot and is damaged by an attack from your opponent's Pokémon, do 20 damage to the Attacking Pokémon.",
+      "_id": "679944fb49fc3af0759c3f5c"
+    }
+  ],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Water"
+  ],
+  "hp": "150",
+  "moves": [
+    {
+      "name": "Mega Punch",
+      "energyCost": [
+        "Water",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "80",
+      "_id": "679944fb49fc3af0759c3f5d"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ce9af3133dff28feb222",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Charizard",
+        "linkedArticle": {
+          "_id": "6728e5e97e99ebe6207c6c77",
+          "title": "Genetic Apex: Charizard",
+          "url": "/sets/genetic-apex-charizard/",
+          "image": "/pkm_img/Sets/GeneticApexCharizard.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-3",
+  "retreat": 2,
+  "subType": "Stage 2",
+  "weakness": [
+    "Lightning"
+  ],
+  "release": "2024-10-30T03:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "artVariants": [],
+  "limitlessId": "A1 61"
+}

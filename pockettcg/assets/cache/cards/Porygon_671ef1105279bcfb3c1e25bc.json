@@ -1,0 +1,58 @@
+{
+  "_id": "671ef1105279bcfb3c1e25bc",
+  "pokemonId": "A1-249",
+  "name": "Porygon",
+  "pack": "Mewtwo",
+  "rarity": "s-1",
+  "abilities": [
+    {
+      "name": "Data Scan",
+      "text": "Once during your turn, you may look at the top card of your deck.",
+      "_id": "67993f26f5d84b3e8fe0c131"
+    }
+  ],
+  "alternateArt": true,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Colorless"
+  ],
+  "hp": "50",
+  "moves": [
+    {
+      "name": "Sharpen",
+      "energyCost": [
+        "Colorless"
+      ],
+      "hp": "20",
+      "_id": "67993f26f5d84b3e8fe0c132"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ceb3423ed078c0a1f5d2",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Mewtwo",
+        "linkedArticle": {
+          "_id": "6728e6038cfb55d02155f843",
+          "title": "Genetic Apex: Mewtwo",
+          "url": "/sets/genetic-apex-mewtwo/",
+          "image": "/pkm_img/Sets/GeneticApexMewtwo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 1,
+  "subType": "Basic",
+  "weakness": [
+    "Fighting"
+  ],
+  "popRank": 1.7976931348623157e+308,
+  "artVariants": [],
+  "limitlessId": "A1 249",
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

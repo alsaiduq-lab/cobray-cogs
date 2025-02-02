@@ -1,0 +1,54 @@
+{
+  "_id": "67611057b864a94749ee5a43",
+  "name": "Galvantula",
+  "energyType": [
+    "Lightning"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "80",
+  "pokemonId": "A1a-029",
+  "rarity": "d-2",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-12-17T06:00:00.000Z",
+  "popRank": 62,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Electro Web",
+      "text": "During your opponent's next turn, the Defending Pokemon can't retreat.",
+      "energyCost": [
+        "Lightning",
+        "Lightning"
+      ],
+      "hp": "70",
+      "_id": "6799436c49fc3af0759c36d3"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67610fbaf9e257245fbb5571",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Mythical Island",
+        "linkedArticle": {
+          "_id": "6761232ab864a94749eedacb",
+          "title": "Mythical Island",
+          "url": "/sets/mythical-island/",
+          "image": "/pkm_img/Sets/mythical-island.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A1a 29"
+}

@@ -1,0 +1,38 @@
+{
+  "_id": "6798e48fb5fbced301dccc91",
+  "name": "Giant Cape",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Pokemon Tool",
+  "hp": "",
+  "pokemonId": "A2-147",
+  "rarity": "d-2",
+  "weakness": [],
+  "description": "The Pokémon this card is attached to gets +20 HP.",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 51,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799adca169202e5d7e638f5",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Dialga",
+        "linkedArticle": {
+          "_id": "6799ca13169202e5d7e6cba0",
+          "title": "Space-Time Smackdown: Dialga",
+          "url": "/sets/space-time-smackdown-dialga/",
+          "image": "/pkm_img/News/2025/January/space-timesmackdown.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A2 147"
+}

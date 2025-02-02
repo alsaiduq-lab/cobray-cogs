@@ -1,0 +1,56 @@
+{
+  "_id": "6799bb54169202e5d7e67fc9",
+  "name": "Wormadam",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "120",
+  "pokemonId": "A2-090",
+  "limitlessId": "A2 90",
+  "rarity": "d-1",
+  "weakness": [
+    "Grass"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Land Crush",
+      "text": "",
+      "energyCost": [
+        "Fighting",
+        "Colorless",
+        "Colorless",
+        null
+      ],
+      "hp": "70",
+      "_id": "6799bb54169202e5d7e67fca"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799adca169202e5d7e638f5",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Dialga",
+        "linkedArticle": {
+          "_id": "6799ca13169202e5d7e6cba0",
+          "title": "Space-Time Smackdown: Dialga",
+          "url": "/sets/space-time-smackdown-dialga/",
+          "image": "/pkm_img/News/2025/January/space-timesmackdown.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

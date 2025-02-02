@@ -1,0 +1,73 @@
+{
+  "_id": "671ef0f25279bcfb3c1e2516",
+  "pokemonId": "A1-084",
+  "name": "Articuno ex",
+  "pack": "Mewtwo",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Water"
+  ],
+  "ex": true,
+  "hp": "140",
+  "moves": [
+    {
+      "name": "Ice Wing",
+      "energyCost": [
+        "Water",
+        "Colorless"
+      ],
+      "hp": "40",
+      "_id": "6799535f97fb8e77af07e763"
+    },
+    {
+      "name": "Blizzard",
+      "text": "This attack also does 10 damage to each of your opponent's Benched Pokemon.",
+      "energyCost": [
+        "Water",
+        "Water",
+        "Water"
+      ],
+      "hp": "80",
+      "_id": "6799535f97fb8e77af07e764"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ceb3423ed078c0a1f5d2",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Mewtwo",
+        "linkedArticle": {
+          "_id": "6728e6038cfb55d02155f843",
+          "title": "Genetic Apex: Mewtwo",
+          "url": "/sets/genetic-apex-mewtwo/",
+          "image": "/pkm_img/Sets/GeneticApexMewtwo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-4",
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 2,
+  "subType": "Basic",
+  "weakness": [
+    "Lightning"
+  ],
+  "popRank": 55,
+  "artVariants": [
+    {
+      "_id": "671ef1105279bcfb3c1e25d6",
+      "name": "Articuno ex"
+    },
+    {
+      "_id": "671ef1105279bcfb3c1e25c5",
+      "name": "Articuno ex"
+    }
+  ],
+  "limitlessId": "A1 84"
+}

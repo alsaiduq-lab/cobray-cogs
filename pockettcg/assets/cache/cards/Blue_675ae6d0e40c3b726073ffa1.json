@@ -1,0 +1,43 @@
+{
+  "_id": "675ae6d0e40c3b726073ffa1",
+  "name": "Blue",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Supporter",
+  "hp": "",
+  "pokemonId": "A1a-067",
+  "rarity": "d-2",
+  "weakness": [],
+  "description": "During your opponent's next turn, all of your Pokemon take -10 damage from attacks from your opponent's Pokemon.",
+  "release": "2024-12-17T06:00:00.000Z",
+  "popRank": 27,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67611d0edb7f64d578b8b869",
+      "name": "Blue"
+    }
+  ],
+  "abilities": [],
+  "moves": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67610fbaf9e257245fbb5571",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Mythical Island",
+        "linkedArticle": {
+          "_id": "6761232ab864a94749eedacb",
+          "title": "Mythical Island",
+          "url": "/sets/mythical-island/",
+          "image": "/pkm_img/Sets/mythical-island.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A1a 67"
+}

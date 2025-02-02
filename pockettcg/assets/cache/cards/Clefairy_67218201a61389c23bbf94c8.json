@@ -1,0 +1,48 @@
+{
+  "_id": "67218201a61389c23bbf94c8",
+  "name": "Clefairy",
+  "energyType": [
+    "Psychic"
+  ],
+  "hp": "60",
+  "pokemonId": "PA-16",
+  "pack": "",
+  "weakness": [
+    "Metal"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-11-05T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Slap",
+      "energyCost": [
+        "Psychic"
+      ],
+      "hp": "20",
+      "_id": "6799488897fb8e77af07a435"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6729bc22f687517e5dc4de0c",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Promo Pack A Series: Vol. 1",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "artVariants": [],
+  "limitlessId": "P-A 16",
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

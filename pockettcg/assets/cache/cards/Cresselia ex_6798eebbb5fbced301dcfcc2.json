@@ -1,0 +1,40 @@
+{
+  "_id": "6798eebbb5fbced301dcfcc2",
+  "name": "Cresselia ex",
+  "energyType": [
+    "Psychic"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "140",
+  "pokemonId": "A2-306",
+  "weakness": [
+    "Darkness"
+  ],
+  "retreat": 2,
+  "description": "",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Lunar Plumage",
+      "text": "Whenever you attach a Psychic Energy from your Energy Zone to this Pokémon, heal 20 damage from this Pokémon.",
+      "_id": "6798eebbb5fbced301dcfcc3"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Psychic Flash",
+      "energyCost": [
+        "Psychic",
+        "Psychic",
+        "Colorless"
+      ],
+      "hp": "80",
+      "_id": "6798eebbb5fbced301dcfcc4"
+    }
+  ],
+  "obtain": [],
+  "ex": true
+}

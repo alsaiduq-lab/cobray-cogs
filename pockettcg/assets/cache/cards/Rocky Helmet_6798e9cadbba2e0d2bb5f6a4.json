@@ -1,0 +1,38 @@
+{
+  "_id": "6798e9cadbba2e0d2bb5f6a4",
+  "name": "Rocky Helmet",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Pokemon Tool",
+  "hp": "",
+  "pokemonId": "A2-148",
+  "rarity": "d-2",
+  "weakness": [],
+  "description": "If the Pokémon this card is attach to is in the Active Spot and is damaged by an attack from your opponent's Active Pokémon, do 20 damage to the Attacking Pokémon.",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 67,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A2 148"
+}

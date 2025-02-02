@@ -1,0 +1,72 @@
+{
+  "_id": "671ef0f25279bcfb3c1e252a",
+  "pokemonId": "A1-104",
+  "name": "Zapdos ex",
+  "pack": "Pikachu",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Lightning"
+  ],
+  "hp": "130",
+  "moves": [
+    {
+      "name": "Peck",
+      "energyCost": [
+        "Lightning"
+      ],
+      "hp": "20",
+      "_id": "67993ab449fc3af0759c0549"
+    },
+    {
+      "name": "Thundering Hurricane",
+      "text": "Flip 4 coins. This attack does 50 damage for each heads.",
+      "energyCost": [
+        "Lightning",
+        "Lightning",
+        "Lightning"
+      ],
+      "hp": "50x",
+      "_id": "67993ab449fc3af0759c054a"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ca53f3133dff28feb0ce",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Pikachu",
+        "linkedArticle": {
+          "_id": "6728e5c17e99ebe6207c6c2e",
+          "title": "Genetic Apex: Pikachu",
+          "url": "/sets/genetic-apex-pikachu/",
+          "image": "/pkm_img/Sets/GeneticApexPikachu.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-4",
+  "retreat": 1,
+  "subType": "Basic",
+  "weakness": [
+    "Lightning"
+  ],
+  "ex": true,
+  "release": "2024-10-30T03:00:00.000Z",
+  "popRank": 30,
+  "artVariants": [
+    {
+      "_id": "671ef1105279bcfb3c1e25c7",
+      "name": "Zapdos ex"
+    },
+    {
+      "_id": "671ef1105279bcfb3c1e25d7",
+      "name": "Zapdos ex"
+    }
+  ],
+  "limitlessId": "A1 104"
+}

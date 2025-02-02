@@ -1,0 +1,52 @@
+{
+  "_id": "671ef0f25279bcfb3c1e2561",
+  "pokemonId": "A1-159",
+  "name": "Kabutops",
+  "pack": "Charizard",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Fighting"
+  ],
+  "hp": "140",
+  "moves": [
+    {
+      "name": "Leech Life",
+      "text": "Heal from this Pokémon the same amount of damage you did to your opponent's Active Pokémon.",
+      "energyCost": [
+        "Fighting"
+      ],
+      "hp": "50",
+      "_id": "6799503597fb8e77af07d7e3"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ce9af3133dff28feb222",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Charizard",
+        "linkedArticle": {
+          "_id": "6728e5e97e99ebe6207c6c77",
+          "title": "Genetic Apex: Charizard",
+          "url": "/sets/genetic-apex-charizard/",
+          "image": "/pkm_img/Sets/GeneticApexCharizard.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-3",
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 1,
+  "subType": "Stage 2",
+  "weakness": [
+    "Grass"
+  ],
+  "popRank": 178,
+  "artVariants": [],
+  "limitlessId": "A1 159"
+}

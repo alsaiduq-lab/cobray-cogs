@@ -1,0 +1,51 @@
+{
+  "_id": "6721820dc08874f5ab2e1735",
+  "name": "Venusaur",
+  "energyType": [
+    "Grass"
+  ],
+  "hp": "160",
+  "pokemonId": "PA-018",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 3,
+  "description": "",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Mega Drain",
+      "text": "Heals 30 damage from this Pokemon.",
+      "energyCost": [
+        "Grass",
+        "Grass",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "80",
+      "_id": "6799493e49fc3af0759c5ac4"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67495e717f4e41a4a1d46dda",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Promo Pack A Series: Vol. 2",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "artVariants": [],
+  "release": "2024-11-29T06:00:00.000Z",
+  "limitlessId": "P-A 18",
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

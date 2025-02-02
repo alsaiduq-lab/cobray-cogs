@@ -1,0 +1,42 @@
+{
+  "_id": "6799bdd6169202e5d7e68c71",
+  "name": "Volkner",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Supporter",
+  "pokemonId": "A2-153",
+  "limitlessId": "A2 153",
+  "rarity": "d-2",
+  "weakness": [],
+  "description": "Choose 1 of your Electivire or Luxray. Attach 2 Lightning Energy from your discard pile to that Pokémon.\n",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 237,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6798e79ddbba2e0d2bb5eb99",
+      "name": "Volkner"
+    }
+  ],
+  "abilities": [],
+  "moves": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799adca169202e5d7e638f5",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Dialga",
+        "linkedArticle": {
+          "_id": "6799ca13169202e5d7e6cba0",
+          "title": "Space-Time Smackdown: Dialga",
+          "url": "/sets/space-time-smackdown-dialga/",
+          "image": "/pkm_img/News/2025/January/space-timesmackdown.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

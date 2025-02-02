@@ -1,0 +1,52 @@
+{
+  "_id": "67611c89f9e257245fbba158",
+  "name": "Snivy",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "PA-027",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-01-01T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Tackle",
+      "energyCost": [
+        "Grass",
+        null
+      ],
+      "hp": "20",
+      "_id": "67994aec49fc3af0759c6546"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6774dd4c2ca8cb82be852c30",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Promo Pack A Series: Vol. 3",
+        "linkedArticle": {
+          "_id": "677483579e191aa65ad664b2",
+          "title": "Blastoise Drop Event",
+          "url": "/events/2025/january/blastoise-drop/",
+          "image": "/pkm_img/Events/2025/January/BlastoiseEvent.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "P-A 27"
+}

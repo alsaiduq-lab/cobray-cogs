@@ -1,0 +1,56 @@
+{
+  "_id": "6799b6de169202e5d7e66632",
+  "name": "Sneasel",
+  "energyType": [
+    "Darkness"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A2-098",
+  "limitlessId": "A2 98",
+  "rarity": "d-1",
+  "weakness": [
+    "Grass"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 91,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Double Scratch",
+      "text": "Flip 2 coins. This attack does 20 damage for each heads.",
+      "energyCost": [
+        "Darkness",
+        null,
+        null,
+        null
+      ],
+      "hp": "20x",
+      "_id": "6799b6de169202e5d7e66633"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

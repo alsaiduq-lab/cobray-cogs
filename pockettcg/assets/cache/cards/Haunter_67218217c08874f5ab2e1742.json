@@ -1,0 +1,48 @@
+{
+  "_id": "67218217c08874f5ab2e1742",
+  "name": "Haunter",
+  "energyType": [
+    "Psychic"
+  ],
+  "hp": "70",
+  "pokemonId": "PA-020",
+  "pack": "",
+  "weakness": [
+    "Darkness"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-10-29T05:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Surprise Attack",
+      "text": "Flip a coin. If tails, this attack does nothing.",
+      "energyCost": [
+        "Psychic"
+      ],
+      "hp": "50",
+      "_id": "67993b61f5d84b3e8fe0af66"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67495e717f4e41a4a1d46dda",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Promo Pack A Series: Vol. 2",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "artVariants": [],
+  "limitlessId": "P-A 20"
+}

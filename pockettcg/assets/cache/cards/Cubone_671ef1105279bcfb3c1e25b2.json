@@ -1,0 +1,52 @@
+{
+  "_id": "671ef1105279bcfb3c1e25b2",
+  "pokemonId": "A1-239",
+  "name": "Cubone",
+  "pack": "Mewtwo",
+  "rarity": "s-1",
+  "abilities": [],
+  "alternateArt": true,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Fighting"
+  ],
+  "hp": "60",
+  "moves": [
+    {
+      "name": "Growl",
+      "text": "During your opponent's next turn, attacks used by the Defending Pokémon do -20 damage.",
+      "energyCost": [
+        "Colorless"
+      ],
+      "_id": "6799404e1f5c09a72fdf113e"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ceb3423ed078c0a1f5d2",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Mewtwo",
+        "linkedArticle": {
+          "_id": "6728e6038cfb55d02155f843",
+          "title": "Genetic Apex: Mewtwo",
+          "url": "/sets/genetic-apex-mewtwo/",
+          "image": "/pkm_img/Sets/GeneticApexMewtwo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 1,
+  "subType": "Basic",
+  "weakness": [
+    "Grass"
+  ],
+  "popRank": 1.7976931348623157e+308,
+  "artVariants": [],
+  "limitlessId": "A1 239",
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

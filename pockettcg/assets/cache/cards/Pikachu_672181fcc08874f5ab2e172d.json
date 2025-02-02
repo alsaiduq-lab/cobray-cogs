@@ -1,0 +1,48 @@
+{
+  "_id": "672181fcc08874f5ab2e172d",
+  "name": "Pikachu",
+  "energyType": [
+    "Lightning"
+  ],
+  "hp": "60",
+  "pokemonId": "PA-15",
+  "pack": "",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-11-05T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Gnaw",
+      "energyCost": [
+        "Lightning"
+      ],
+      "hp": "20",
+      "_id": "6799489397fb8e77af07a468"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6729bc22f687517e5dc4de0c",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Promo Pack A Series: Vol. 1",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "artVariants": [],
+  "limitlessId": "P-A 15",
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

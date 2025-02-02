@@ -1,0 +1,33 @@
+{
+  "_id": "672181abc08874f5ab2e16fb",
+  "name": "Red Card",
+  "energyType": [],
+  "hp": "",
+  "pokemonId": "PA-006",
+  "pack": "",
+  "weakness": [],
+  "retreat": null,
+  "description": "Your opponent shuffles their hand into their deck and draws 3 cards.",
+  "release": "2024-10-30T03:00:00.000Z",
+  "popRank": 39,
+  "alternateArt": false,
+  "abilities": [],
+  "moves": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6723f35ee05ba54ed87183db",
+        "type": "Normal Pack",
+        "name": "Promo Pack A Series: Shop",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "cardType": "Trainer",
+  "subType": "Item",
+  "artVariants": [],
+  "limitlessId": "P-A 6"
+}

@@ -1,0 +1,37 @@
+{
+  "_id": "67611c67f9e257245fbb9f18",
+  "name": "Mythical Slab",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Item",
+  "pokemonId": "A1a-065",
+  "rarity": "d-2",
+  "weakness": [],
+  "description": "Look at the top card of your deck. If that card is a Psychic Pokémon, put it into your hand. If it is not a Psychic  Pokémon, put it on the bottom of your deck.",
+  "release": "2024-12-17T06:00:00.000Z",
+  "popRank": 18,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67610fbaf9e257245fbb5571",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Mythical Island",
+        "linkedArticle": {
+          "_id": "6761232ab864a94749eedacb",
+          "title": "Mythical Island",
+          "url": "/sets/mythical-island/",
+          "image": "/pkm_img/Sets/mythical-island.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A1a 65"
+}

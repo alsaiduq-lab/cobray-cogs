@@ -1,0 +1,79 @@
+{
+  "_id": "679248b1eb08086be8540c5b",
+  "name": "Dialga ex",
+  "energyType": [
+    "Metal"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "150",
+  "pokemonId": "A2-119",
+  "rarity": "d-4",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 98,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6799c149f06a47c6afdf8d6c",
+      "name": "Dialga ex"
+    },
+    {
+      "_id": "6799c3f4f06a47c6afdf9ae6",
+      "name": "Dialga ex"
+    },
+    {
+      "_id": "6799c406f06a47c6afdf9b1d",
+      "name": "Dialga ex"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Metallic Turbo",
+      "text": "Take 2 Metal Energy from your Energy Zone and attach it to 1 of your Benched Pokemon.",
+      "energyCost": [
+        "Metal",
+        "Metal"
+      ],
+      "hp": "30",
+      "_id": "6799cdc9f06a47c6afdfd330"
+    },
+    {
+      "name": "Heavy Impact",
+      "text": "",
+      "energyCost": [
+        "Metal",
+        "Metal",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "100",
+      "_id": "6799cdc9f06a47c6afdfd331"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799adca169202e5d7e638f5",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Dialga",
+        "linkedArticle": {
+          "_id": "6799ca13169202e5d7e6cba0",
+          "title": "Space-Time Smackdown: Dialga",
+          "url": "/sets/space-time-smackdown-dialga/",
+          "image": "/pkm_img/News/2025/January/space-timesmackdown.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true,
+  "limitlessId": "A2 119"
+}

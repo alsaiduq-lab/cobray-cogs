@@ -1,0 +1,49 @@
+{
+  "_id": "671ef0f25279bcfb3c1e2579",
+  "pokemonId": "A1-183",
+  "name": "Dratini",
+  "pack": "Mewtwo",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Dragon"
+  ],
+  "hp": "70",
+  "moves": [
+    {
+      "name": "Ram",
+      "energyCost": [
+        "Water",
+        "Lightning"
+      ],
+      "hp": "40",
+      "_id": "679950a31552ba8d13d73b52"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ceb3423ed078c0a1f5d2",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Mewtwo",
+        "linkedArticle": {
+          "_id": "6728e6038cfb55d02155f843",
+          "title": "Genetic Apex: Mewtwo",
+          "url": "/sets/genetic-apex-mewtwo/",
+          "image": "/pkm_img/Sets/GeneticApexMewtwo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-1",
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 1,
+  "subType": "Basic",
+  "popRank": 162,
+  "artVariants": [],
+  "limitlessId": "A1 183"
+}

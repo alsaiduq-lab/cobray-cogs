@@ -1,0 +1,56 @@
+{
+  "_id": "67611647f9e257245fbb774a",
+  "name": "Golem",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "160",
+  "pokemonId": "A1a-045",
+  "rarity": "d-3",
+  "weakness": [
+    "Grass"
+  ],
+  "retreat": 3,
+  "description": "",
+  "release": "2024-12-17T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Guard Press",
+      "text": "During your opponent's next turn, this Pokemon takes -30 damage from attacks.",
+      "energyCost": [
+        "Fighting",
+        "Fighting",
+        "Fighting",
+        "Colorless"
+      ],
+      "hp": "120",
+      "_id": "6799449249fc3af0759c3cfc"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67610fbaf9e257245fbb5571",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Mythical Island",
+        "linkedArticle": {
+          "_id": "6761232ab864a94749eedacb",
+          "title": "Mythical Island",
+          "url": "/sets/mythical-island/",
+          "image": "/pkm_img/Sets/mythical-island.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A1a 45"
+}

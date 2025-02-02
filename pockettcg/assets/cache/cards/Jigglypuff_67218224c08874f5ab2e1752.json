@@ -1,0 +1,47 @@
+{
+  "_id": "67218224c08874f5ab2e1752",
+  "name": "Jigglypuff",
+  "energyType": [
+    "Colorless"
+  ],
+  "hp": "50",
+  "pokemonId": "PA-022",
+  "pack": "",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-11-29T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Sing",
+      "text": "Your opponent's Active Pokemon is now Asleep.",
+      "energyCost": [
+        "Colorless"
+      ],
+      "_id": "679948a649fc3af0759c55b6"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67495e717f4e41a4a1d46dda",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Promo Pack A Series: Vol. 2",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "artVariants": [],
+  "limitlessId": "P-A 22"
+}

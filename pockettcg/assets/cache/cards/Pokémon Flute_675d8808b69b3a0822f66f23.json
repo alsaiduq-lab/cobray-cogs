@@ -1,0 +1,38 @@
+{
+  "_id": "675d8808b69b3a0822f66f23",
+  "name": "Pokémon Flute",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Item",
+  "hp": "",
+  "pokemonId": "A1a-064",
+  "rarity": "d-2",
+  "weakness": [],
+  "description": "Put a Basic Pokémon from your opponent’s discard pile onto their Bench.",
+  "release": "2024-12-17T06:00:00.000Z",
+  "popRank": 77,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67610fbaf9e257245fbb5571",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Mythical Island",
+        "linkedArticle": {
+          "_id": "6761232ab864a94749eedacb",
+          "title": "Mythical Island",
+          "url": "/sets/mythical-island/",
+          "image": "/pkm_img/Sets/mythical-island.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A1a 64"
+}

@@ -1,0 +1,40 @@
+{
+  "_id": "671ef0f25279bcfb3c1e259f",
+  "pokemonId": "A1-221",
+  "name": "Blaine",
+  "pack": "Charizard",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Trainer",
+  "description": "During this turn, attacks used by your Ninetales, Rapidash or Magmar do +30 damage to your opponent's Active Pokémon.",
+  "moves": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ce9af3133dff28feb222",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Charizard",
+        "linkedArticle": {
+          "_id": "6728e5e97e99ebe6207c6c77",
+          "title": "Genetic Apex: Charizard",
+          "url": "/sets/genetic-apex-charizard/",
+          "image": "/pkm_img/Sets/GeneticApexCharizard.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-2",
+  "subType": "Supporter",
+  "release": "2024-10-30T03:00:00.000Z",
+  "popRank": 104,
+  "artVariants": [
+    {
+      "_id": "671ef1105279bcfb3c1e25cf",
+      "name": "Blaine"
+    }
+  ],
+  "limitlessId": "A1 221"
+}

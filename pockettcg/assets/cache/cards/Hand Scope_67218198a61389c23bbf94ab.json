@@ -1,0 +1,33 @@
+{
+  "_id": "67218198a61389c23bbf94ab",
+  "name": "Hand Scope",
+  "energyType": [],
+  "hp": "",
+  "pokemonId": "PA-003",
+  "pack": "",
+  "weakness": null,
+  "retreat": null,
+  "description": "Your opponent reveals their hand.",
+  "release": "2024-10-30T03:00:00.000Z",
+  "popRank": 147,
+  "alternateArt": false,
+  "abilities": [],
+  "moves": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6723f35ee05ba54ed87183db",
+        "type": "Normal Pack",
+        "name": "Promo Pack A Series: Shop",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "cardType": "Trainer",
+  "subType": "Item",
+  "artVariants": [],
+  "limitlessId": "P-A 3"
+}

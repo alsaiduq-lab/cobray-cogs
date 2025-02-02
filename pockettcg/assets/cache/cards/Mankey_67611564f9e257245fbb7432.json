@@ -1,0 +1,54 @@
+{
+  "_id": "67611564f9e257245fbb7432",
+  "name": "Mankey",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "50",
+  "pokemonId": "A1a-041",
+  "rarity": "d-1",
+  "weakness": [
+    "Psychic"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-12-17T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Focus Fist",
+      "text": "Flip a coin. If tails, this attack does nothing.",
+      "energyCost": [
+        "Fighting",
+        null
+      ],
+      "hp": "50",
+      "_id": "67994423f5d84b3e8fe0e5eb"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67610fbaf9e257245fbb5571",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Mythical Island",
+        "linkedArticle": {
+          "_id": "6761232ab864a94749eedacb",
+          "title": "Mythical Island",
+          "url": "/sets/mythical-island/",
+          "image": "/pkm_img/Sets/mythical-island.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A1a 41"
+}

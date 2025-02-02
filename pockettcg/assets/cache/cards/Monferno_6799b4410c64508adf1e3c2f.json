@@ -1,0 +1,54 @@
+{
+  "_id": "6799b4410c64508adf1e3c2f",
+  "name": "Monferno",
+  "energyType": [
+    "Fire"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "80",
+  "pokemonId": "A2-028",
+  "limitlessId": "A2 28",
+  "rarity": "d-2",
+  "weakness": [
+    "Water"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 170,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Fiery Punch",
+      "text": "",
+      "energyCost": [
+        "Fire",
+        null
+      ],
+      "hp": "30",
+      "_id": "6799b49e169202e5d7e65c56"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

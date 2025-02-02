@@ -1,0 +1,30 @@
+{
+  "_id": "67216b665d66038af44d6d20",
+  "name": "Potion",
+  "pokemonId": "PA-001",
+  "rarity": null,
+  "weakness": null,
+  "popRank": 7,
+  "alternateArt": false,
+  "skills": [],
+  "abilities": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6723f35ee05ba54ed87183db",
+        "type": "Normal Pack",
+        "name": "Promo Pack A Series: Shop",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "moves": [],
+  "cardType": "Trainer",
+  "description": "Heal 20 damage from your Pokémon.",
+  "subType": "Item",
+  "release": "2024-10-30T03:00:00.000Z",
+  "artVariants": [],
+  "limitlessId": "P-A 1"
+}

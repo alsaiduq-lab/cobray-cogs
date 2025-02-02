@@ -1,0 +1,35 @@
+{
+  "_id": "671ef0f25279bcfb3c1e2570",
+  "pokemonId": "A1-174",
+  "name": "Grimer",
+  "pack": "Mewtwo",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Darkness"
+  ],
+  "hp": "70",
+  "moves": [
+    {
+      "name": "Poison Gas",
+      "text": "Your opponent's Active Pokémon is now Poisoned.",
+      "energyCost": [
+        "Darkness"
+      ],
+      "hp": "10",
+      "_id": "679942391f5c09a72fdf1eb1"
+    }
+  ],
+  "obtain": [],
+  "rarity": "d-1",
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 3,
+  "subType": "Basic",
+  "weakness": [
+    "Fighting"
+  ],
+  "popRank": 1.7976931348623157e+308,
+  "artVariants": [],
+  "limitlessId": "A1 174"
+}

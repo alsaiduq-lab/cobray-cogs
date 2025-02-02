@@ -1,0 +1,62 @@
+{
+  "_id": "6799c3d60c64508adf1e84dc",
+  "name": "Giratina",
+  "energyType": [
+    "Psychic"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "120",
+  "pokemonId": "A2-167",
+  "limitlessId": "A2167",
+  "rarity": "s-1",
+  "weakness": [
+    "Darkness"
+  ],
+  "retreat": 3,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Levitate",
+      "text": "If this Pokémon has any Energy attached, it has no Retreat Cost.",
+      "_id": "6799c3d60c64508adf1e84dd"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Spooky Shot",
+      "text": "",
+      "energyCost": [
+        "Psychic",
+        "Psychic",
+        "Colorless"
+      ],
+      "hp": "70",
+      "_id": "6799c3d60c64508adf1e84de"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "nameRelease": "2025-01-30T06:00:00.000Z"
+}

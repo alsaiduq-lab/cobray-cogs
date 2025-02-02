@@ -1,0 +1,52 @@
+{
+  "_id": "671ef0f25279bcfb3c1e2591",
+  "pokemonId": "A1-207",
+  "name": "Eevee",
+  "pack": "Mewtwo",
+  "abilities": [],
+  "alternateArt": true,
+  "moves": [
+    {
+      "name": "Tackle",
+      "energyCost": [
+        "Colorless"
+      ],
+      "hp": "20",
+      "_id": "6799412849fc3af0759c2a02"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ceb3423ed078c0a1f5d2",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Mewtwo",
+        "linkedArticle": {
+          "_id": "6728e6038cfb55d02155f843",
+          "title": "Genetic Apex: Mewtwo",
+          "url": "/sets/genetic-apex-mewtwo/",
+          "image": "/pkm_img/Sets/GeneticApexMewtwo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "cardType": "Pokemon",
+  "energyType": [
+    "Colorless"
+  ],
+  "hp": "60",
+  "rarity": "d-1",
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 1,
+  "subType": "Basic",
+  "weakness": [
+    "Fighting"
+  ],
+  "popRank": 1.7976931348623157e+308,
+  "artVariants": [],
+  "limitlessId": "A1 207",
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

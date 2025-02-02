@@ -1,0 +1,46 @@
+{
+  "_id": "6721822ea61389c23bbf94d7",
+  "name": "Magnemite",
+  "energyType": [
+    "Lightning"
+  ],
+  "hp": "60",
+  "pokemonId": "PA-024",
+  "pack": "",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-12-02T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Lightning Ball",
+      "energyCost": [
+        "Lightning"
+      ],
+      "hp": "20",
+      "_id": "67994959e7d048b93b251d76"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "672b8e0a77094f5d3556d66f",
+        "type": "Normal Pack",
+        "name": "Promo Pack A Series: Wonder Pick",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "artVariants": [],
+  "limitlessId": "P-A 24"
+}

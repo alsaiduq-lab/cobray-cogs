@@ -1,0 +1,56 @@
+{
+  "_id": "6799b0580c64508adf1e292b",
+  "name": "Grotle",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "100",
+  "pokemonId": "A2-011",
+  "limitlessId": "A2 11",
+  "rarity": "d-2",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 3,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Razor Leaf",
+      "text": "",
+      "energyCost": [
+        "Grass",
+        "Grass",
+        "Colorless",
+        null
+      ],
+      "hp": "60",
+      "_id": "6799c544f06a47c6afdfa12b"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

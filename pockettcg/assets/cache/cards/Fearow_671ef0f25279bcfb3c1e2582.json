@@ -1,0 +1,53 @@
+{
+  "_id": "671ef0f25279bcfb3c1e2582",
+  "pokemonId": "A1-192",
+  "name": "Fearow",
+  "pack": "Charizard",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Colorless"
+  ],
+  "hp": "100",
+  "moves": [
+    {
+      "name": "Drill Run",
+      "text": "Flip a coin. If heads, discard a random Energy from your opponent's Active Pokémon.",
+      "energyCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "50",
+      "_id": "67994213f5d84b3e8fe0d5b3"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ce9af3133dff28feb222",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Charizard",
+        "linkedArticle": {
+          "_id": "6728e5e97e99ebe6207c6c77",
+          "title": "Genetic Apex: Charizard",
+          "url": "/sets/genetic-apex-charizard/",
+          "image": "/pkm_img/Sets/GeneticApexCharizard.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-1",
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 1,
+  "subType": "Stage 1",
+  "weakness": [
+    "Lightning"
+  ],
+  "popRank": 1.7976931348623157e+308,
+  "artVariants": [],
+  "limitlessId": "A1 192"
+}

@@ -1,0 +1,38 @@
+{
+  "_id": "6799bcd9169202e5d7e6877d",
+  "name": "Armor Fossil",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Item",
+  "hp": "40",
+  "pokemonId": "A2-145",
+  "limitlessId": "A2 145",
+  "rarity": "d-1",
+  "weakness": [],
+  "description": "Play this card as if it were a 40-HP Basic Colorless Pokémon.\nAt any time during your turn, you may discard this card from play.\nThis card can’t retreat.",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 242,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

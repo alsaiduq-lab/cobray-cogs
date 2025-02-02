@@ -1,0 +1,55 @@
+{
+  "_id": "675ae80a34db45022c3de741",
+  "name": "Marshadow",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "80",
+  "pokemonId": "A1a-074",
+  "rarity": "s-1",
+  "weakness": [
+    "Psychic"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-12-17T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Revenge",
+      "text": "If any of your Pokemon were knocked out by damage from an attack during your opponent's last turn, this attack does 60 more damage.",
+      "energyCost": [
+        "Fighting",
+        "Colorless"
+      ],
+      "hp": "40+",
+      "_id": "679945a65d55ed4c8ca64d75"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67610fbaf9e257245fbb5571",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Mythical Island",
+        "linkedArticle": {
+          "_id": "6761232ab864a94749eedacb",
+          "title": "Mythical Island",
+          "url": "/sets/mythical-island/",
+          "image": "/pkm_img/Sets/mythical-island.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A1a 74",
+  "nameRelease": "2024-12-17T06:00:00.000Z"
+}

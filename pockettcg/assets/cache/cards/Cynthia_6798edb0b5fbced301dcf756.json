@@ -1,0 +1,43 @@
+{
+  "_id": "6798edb0b5fbced301dcf756",
+  "name": "Cynthia",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Supporter",
+  "hp": "",
+  "pokemonId": "A2-152",
+  "rarity": "d-2",
+  "weakness": [],
+  "description": "During this turn, attacks used by your Garchomp or Togekiss do +50 damage to your opponent's Active Pokemon.",
+  "popRank": 181,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6798edceb5fbced301dcf851",
+      "name": "Cynthia"
+    }
+  ],
+  "abilities": [],
+  "moves": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A2 152",
+  "release": "2025-01-30T06:00:00.000Z"
+}

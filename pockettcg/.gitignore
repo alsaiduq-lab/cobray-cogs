@@ -1,6 +1,3 @@
-assets/cache/cards/
-assets/cache/cards/*
-assets/cache/*.json
 
 .DS_Store
 .DS_Store?

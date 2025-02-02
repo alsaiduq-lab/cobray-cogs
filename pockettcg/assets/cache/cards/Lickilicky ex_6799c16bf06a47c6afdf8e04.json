@@ -1,0 +1,57 @@
+{
+  "_id": "6799c16bf06a47c6afdf8e04",
+  "name": "Lickilicky ex",
+  "energyType": [
+    "Colorless"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "160",
+  "pokemonId": "A2-189",
+  "limitlessId": "A2 189",
+  "rarity": "s-2",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 4,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Licking Fury",
+      "text": "Flip a coin until you get tails. This attack does 40 more damage for each heads.",
+      "energyCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "100+",
+      "_id": "6799c16bf06a47c6afdf8e05"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true,
+  "nameRelease": "2025-01-30T06:00:00.000Z"
+}

@@ -1,0 +1,53 @@
+{
+  "_id": "671ef0f25279bcfb3c1e2501",
+  "pokemonId": "A1-063",
+  "name": "Tentacruel",
+  "pack": "Mewtwo",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Water"
+  ],
+  "hp": "110",
+  "moves": [
+    {
+      "name": "Poison Tentacles",
+      "text": "Your opponent's Active Pokemon is now Poisoned.",
+      "energyCost": [
+        "Water",
+        "Colorless"
+      ],
+      "hp": "50",
+      "_id": "6799513949fc3af0759c89c6"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ceb3423ed078c0a1f5d2",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Mewtwo",
+        "linkedArticle": {
+          "_id": "6728e6038cfb55d02155f843",
+          "title": "Genetic Apex: Mewtwo",
+          "url": "/sets/genetic-apex-mewtwo/",
+          "image": "/pkm_img/Sets/GeneticApexMewtwo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-2",
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 2,
+  "subType": "Stage 1",
+  "weakness": [
+    "Lightning"
+  ],
+  "popRank": 157,
+  "artVariants": [],
+  "limitlessId": "A1 63"
+}

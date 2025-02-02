@@ -1,0 +1,59 @@
+{
+  "_id": "671ef0f25279bcfb3c1e2595",
+  "pokemonId": "A1-211",
+  "name": "Snorlax",
+  "pack": "Charizard",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Colorless"
+  ],
+  "hp": "150",
+  "moves": [
+    {
+      "name": "Rollout",
+      "energyCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "70",
+      "_id": "67994d0b97fb8e77af07c3d5"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ca53f3133dff28feb0ce",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Pikachu",
+        "linkedArticle": {
+          "_id": "6728e5c17e99ebe6207c6c2e",
+          "title": "Genetic Apex: Pikachu",
+          "url": "/sets/genetic-apex-pikachu/",
+          "image": "/pkm_img/Sets/GeneticApexPikachu.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-3",
+  "retreat": 4,
+  "subType": "Basic",
+  "weakness": [
+    "Fighting"
+  ],
+  "release": "2024-10-30T03:00:00.000Z",
+  "popRank": 223,
+  "artVariants": [
+    {
+      "_id": "671ef1105279bcfb3c1e25bd",
+      "name": "Snorlax"
+    }
+  ],
+  "limitlessId": "A1 211"
+}

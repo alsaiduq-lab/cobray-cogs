@@ -1,0 +1,54 @@
+{
+  "_id": "67611943f9e257245fbb88c9",
+  "name": "Scolipede",
+  "energyType": [
+    "Darkness"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "140",
+  "pokemonId": "A1a-055",
+  "rarity": "d-2",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2024-12-17T06:00:00.000Z",
+  "popRank": 103,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Venoshock",
+      "text": "If your opponent's active Pokemon is Poisoned, this attack does 50 more damage.",
+      "energyCost": [
+        "Darkness",
+        "Colorless"
+      ],
+      "hp": "70+",
+      "_id": "679944f65d55ed4c8ca649a7"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67610fbaf9e257245fbb5571",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Mythical Island",
+        "linkedArticle": {
+          "_id": "6761232ab864a94749eedacb",
+          "title": "Mythical Island",
+          "url": "/sets/mythical-island/",
+          "image": "/pkm_img/Sets/mythical-island.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A1a 55"
+}

@@ -1,0 +1,56 @@
+{
+  "_id": "671ef0f25279bcfb3c1e258f",
+  "pokemonId": "A1-205",
+  "name": "Ditto",
+  "pack": "Mewtwo",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Colorless"
+  ],
+  "hp": "70",
+  "moves": [
+    {
+      "name": "Copy Anything",
+      "text": "Choose 1 of your opponent's Pokémon's attacks and use it as this attack. If this Pokémon doesn't have the necessary Energy to use that attack, this attack does nothing.",
+      "energyCost": [
+        "Colorless"
+      ],
+      "_id": "6799517b1552ba8d13d7425d"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ceb3423ed078c0a1f5d2",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Mewtwo",
+        "linkedArticle": {
+          "_id": "6728e6038cfb55d02155f843",
+          "title": "Genetic Apex: Mewtwo",
+          "url": "/sets/genetic-apex-mewtwo/",
+          "image": "/pkm_img/Sets/GeneticApexMewtwo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-3",
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 1,
+  "subType": "Basic",
+  "weakness": [
+    "Fighting"
+  ],
+  "popRank": 152,
+  "artVariants": [
+    {
+      "_id": "671ef1105279bcfb3c1e25ba",
+      "name": "Ditto"
+    }
+  ],
+  "limitlessId": "A1 205"
+}

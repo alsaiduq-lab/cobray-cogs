@@ -1,0 +1,59 @@
+{
+  "_id": "671ef0f25279bcfb3c1e2505",
+  "pokemonId": "A1-067",
+  "name": "Cloyster",
+  "pack": "Mewtwo",
+  "abilities": [
+    {
+      "name": "Shell Armor",
+      "text": "This Pokemon takes -10 damage from attacks.",
+      "_id": "679944d85d55ed4c8ca648db"
+    }
+  ],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Water"
+  ],
+  "hp": "120",
+  "moves": [
+    {
+      "name": "Surf",
+      "energyCost": [
+        "Water",
+        "Water",
+        "Colorless"
+      ],
+      "hp": "70",
+      "_id": "679944d85d55ed4c8ca648dc"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ceb3423ed078c0a1f5d2",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Mewtwo",
+        "linkedArticle": {
+          "_id": "6728e6038cfb55d02155f843",
+          "title": "Genetic Apex: Mewtwo",
+          "url": "/sets/genetic-apex-mewtwo/",
+          "image": "/pkm_img/Sets/GeneticApexMewtwo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-2",
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 3,
+  "subType": "Stage 1",
+  "weakness": [
+    "Lightning"
+  ],
+  "popRank": 1.7976931348623157e+308,
+  "artVariants": [],
+  "limitlessId": "A1 67"
+}

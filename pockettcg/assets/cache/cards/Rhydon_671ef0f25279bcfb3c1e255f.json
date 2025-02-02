@@ -1,0 +1,54 @@
+{
+  "_id": "671ef0f25279bcfb3c1e255f",
+  "pokemonId": "A1-157",
+  "name": "Rhydon",
+  "pack": "Mewtwo",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Fighting"
+  ],
+  "hp": "120",
+  "moves": [
+    {
+      "name": "Horn Drill",
+      "energyCost": [
+        "Fighting",
+        "Fighting",
+        "Fighting",
+        "Colorless"
+      ],
+      "hp": "100",
+      "_id": "679942931f5c09a72fdf201a"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ceb3423ed078c0a1f5d2",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Mewtwo",
+        "linkedArticle": {
+          "_id": "6728e6038cfb55d02155f843",
+          "title": "Genetic Apex: Mewtwo",
+          "url": "/sets/genetic-apex-mewtwo/",
+          "image": "/pkm_img/Sets/GeneticApexMewtwo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-2",
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 4,
+  "subType": "Stage 1",
+  "weakness": [
+    "Grass"
+  ],
+  "popRank": 1.7976931348623157e+308,
+  "artVariants": [],
+  "limitlessId": "A1 157"
+}

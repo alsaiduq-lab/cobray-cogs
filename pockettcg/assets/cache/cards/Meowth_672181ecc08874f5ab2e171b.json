@@ -1,0 +1,48 @@
+{
+  "_id": "672181ecc08874f5ab2e171b",
+  "name": "Meowth",
+  "energyType": [
+    "Colorless"
+  ],
+  "hp": "60",
+  "pokemonId": "PA-012",
+  "pack": "",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-11-01T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Pay Day",
+      "text": "Draw a card.",
+      "energyCost": [
+        "Colorless"
+      ],
+      "hp": "10",
+      "_id": "6799486697fb8e77af07a2b3"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "672b8e0a77094f5d3556d66f",
+        "type": "Normal Pack",
+        "name": "Promo Pack A Series: Wonder Pick",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "artVariants": [],
+  "limitlessId": "P-A 12",
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

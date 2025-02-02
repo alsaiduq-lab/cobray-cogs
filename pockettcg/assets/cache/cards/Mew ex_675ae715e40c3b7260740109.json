@@ -1,0 +1,76 @@
+{
+  "_id": "675ae715e40c3b7260740109",
+  "name": "Mew ex",
+  "energyType": [
+    "Psychic"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "130",
+  "pokemonId": "A1a-032",
+  "rarity": "d-4",
+  "weakness": [
+    "Darkness"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-12-17T06:00:00.000Z",
+  "popRank": 8,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67611f27b864a94749eeb5a7",
+      "name": "Mew ex"
+    },
+    {
+      "_id": "67611f2ddb7f64d578b8ca88",
+      "name": "Mew ex"
+    },
+    {
+      "_id": "67611f33db7f64d578b8caae",
+      "name": "Mew ex"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Psyshot",
+      "text": "",
+      "energyCost": [
+        "Psychic"
+      ],
+      "hp": "20",
+      "_id": "679943981f5c09a72fdf24cf"
+    },
+    {
+      "name": "Genome Hacking",
+      "text": "Choose 1 of your opponent's Active Pokemon's attacks and use it as this attack.",
+      "energyCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "_id": "679943981f5c09a72fdf24d0"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67610fbaf9e257245fbb5571",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Mythical Island",
+        "linkedArticle": {
+          "_id": "6761232ab864a94749eedacb",
+          "title": "Mythical Island",
+          "url": "/sets/mythical-island/",
+          "image": "/pkm_img/Sets/mythical-island.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true,
+  "limitlessId": "A1a 32"
+}

@@ -1,0 +1,52 @@
+{
+  "_id": "6798eb606950657553dc6f23",
+  "name": "Gible",
+  "energyType": [
+    "Dragon"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A2-121",
+  "rarity": "d-1",
+  "weakness": [],
+  "retreat": 1,
+  "description": "",
+  "popRank": 193,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Gnaw",
+      "text": "",
+      "energyCost": [
+        "Colorless",
+        null
+      ],
+      "hp": "20",
+      "_id": "6799bc22169202e5d7e68477"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A2 121",
+  "release": "2025-01-30T06:00:00.000Z"
+}

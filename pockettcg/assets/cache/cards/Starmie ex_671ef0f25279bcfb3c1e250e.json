@@ -1,0 +1,58 @@
+{
+  "_id": "671ef0f25279bcfb3c1e250e",
+  "pokemonId": "A1-076",
+  "name": "Starmie ex",
+  "pack": "Charizard",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Water"
+  ],
+  "ex": true,
+  "hp": "130",
+  "moves": [
+    {
+      "name": "Hydro Splash",
+      "energyCost": [
+        "Water",
+        "Water"
+      ],
+      "hp": "90",
+      "_id": "6799532bc6818b9e6b444837"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ce9af3133dff28feb222",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Charizard",
+        "linkedArticle": {
+          "_id": "6728e5e97e99ebe6207c6c77",
+          "title": "Genetic Apex: Charizard",
+          "url": "/sets/genetic-apex-charizard/",
+          "image": "/pkm_img/Sets/GeneticApexCharizard.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-4",
+  "retreat": 0,
+  "subType": "Stage 1",
+  "weakness": [
+    "Lightning"
+  ],
+  "release": "2024-10-30T03:00:00.000Z",
+  "popRank": 59,
+  "artVariants": [
+    {
+      "_id": "671ef1105279bcfb3c1e25c4",
+      "name": "Starmie ex"
+    }
+  ],
+  "limitlessId": "A1 76"
+}

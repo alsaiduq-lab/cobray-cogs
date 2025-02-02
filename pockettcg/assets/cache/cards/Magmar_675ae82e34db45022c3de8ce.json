@@ -1,0 +1,54 @@
+{
+  "_id": "675ae82e34db45022c3de8ce",
+  "name": "Magmar",
+  "energyType": [
+    "Fire"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "80",
+  "pokemonId": "A1a-012",
+  "rarity": "d-2",
+  "weakness": [
+    "Water"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2024-12-17T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Fire Blast",
+      "text": "Discard 2 Fire Energy from this Pokémon.",
+      "energyCost": [
+        "Fire",
+        "Fire"
+      ],
+      "hp": "80",
+      "_id": "679941a749fc3af0759c2d0d"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67610fbaf9e257245fbb5571",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Mythical Island",
+        "linkedArticle": {
+          "_id": "6761232ab864a94749eedacb",
+          "title": "Mythical Island",
+          "url": "/sets/mythical-island/",
+          "image": "/pkm_img/Sets/mythical-island.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A1a 12"
+}

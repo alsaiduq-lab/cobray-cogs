@@ -1,0 +1,59 @@
+{
+  "_id": "676119fbf9e257245fbb8cb4",
+  "name": "Druddigon",
+  "energyType": [
+    "Dragon"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "100",
+  "pokemonId": "A1a-056",
+  "rarity": "d-2",
+  "weakness": [],
+  "retreat": 2,
+  "description": "",
+  "release": "2024-12-17T06:00:00.000Z",
+  "popRank": 13,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Rough Skin",
+      "text": "If this Pokemon is in the active spot and is damaged by an attack from your opponent's Pokemon, do 20 damage to the Attacking Pokemon.",
+      "_id": "679944ff5d55ed4c8ca649be"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Dragon Claw",
+      "text": "",
+      "energyCost": [
+        "Fire",
+        "Water",
+        "Colorless"
+      ],
+      "hp": "90",
+      "_id": "679944ff5d55ed4c8ca649bf"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67610fbaf9e257245fbb5571",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Mythical Island",
+        "linkedArticle": {
+          "_id": "6761232ab864a94749eedacb",
+          "title": "Mythical Island",
+          "url": "/sets/mythical-island/",
+          "image": "/pkm_img/Sets/mythical-island.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A1a 56"
+}

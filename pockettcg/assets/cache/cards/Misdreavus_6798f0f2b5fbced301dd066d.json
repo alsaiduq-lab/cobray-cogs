@@ -1,0 +1,34 @@
+{
+  "_id": "6798f0f2b5fbced301dd066d",
+  "name": "Misdreavus",
+  "energyType": [
+    "Psychic"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "P2-226",
+  "weakness": [
+    "Darkness"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": null,
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Confuse Ray",
+      "text": "Your opponent's Active Pokemon is now Confused.",
+      "energyCost": [
+        "Psychic",
+        null
+      ],
+      "_id": "6798f0f2b5fbced301dd066e"
+    }
+  ],
+  "obtain": [],
+  "ex": false
+}

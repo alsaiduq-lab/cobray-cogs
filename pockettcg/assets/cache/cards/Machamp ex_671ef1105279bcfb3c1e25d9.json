@@ -1,0 +1,55 @@
+{
+  "_id": "671ef1105279bcfb3c1e25d9",
+  "pokemonId": "A1-278",
+  "name": "Machamp ex",
+  "pack": "Charizard",
+  "rarity": "s-2",
+  "abilities": [],
+  "alternateArt": true,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Fighting"
+  ],
+  "ex": true,
+  "hp": "180",
+  "moves": [
+    {
+      "name": "Mega Punch",
+      "energyCost": [
+        "Fighting",
+        "Fighting",
+        "Fighting"
+      ],
+      "hp": "120",
+      "_id": "67993ce049fc3af0759c1131"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ce9af3133dff28feb222",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Charizard",
+        "linkedArticle": {
+          "_id": "6728e5e97e99ebe6207c6c77",
+          "title": "Genetic Apex: Charizard",
+          "url": "/sets/genetic-apex-charizard/",
+          "image": "/pkm_img/Sets/GeneticApexCharizard.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 3,
+  "subType": "Stage 2",
+  "weakness": [
+    "Psychic"
+  ],
+  "popRank": 1.7976931348623157e+308,
+  "artVariants": [],
+  "limitlessId": "A1 278",
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

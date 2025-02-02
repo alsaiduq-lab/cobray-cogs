@@ -1,0 +1,53 @@
+{
+  "_id": "671ef0f25279bcfb3c1e24d1",
+  "pokemonId": "A1-015",
+  "name": "Parasect",
+  "pack": "Pikachu",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Grass"
+  ],
+  "hp": "120",
+  "moves": [
+    {
+      "name": "Slash",
+      "energyCost": [
+        "Grass",
+        "Grass",
+        "Colorless"
+      ],
+      "hp": "80",
+      "_id": "679947fa49fc3af0759c50e5"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ca53f3133dff28feb0ce",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Pikachu",
+        "linkedArticle": {
+          "_id": "6728e5c17e99ebe6207c6c2e",
+          "title": "Genetic Apex: Pikachu",
+          "url": "/sets/genetic-apex-pikachu/",
+          "image": "/pkm_img/Sets/GeneticApexPikachu.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-2",
+  "retreat": 2,
+  "subType": "Stage 1",
+  "weakness": [
+    "Fire"
+  ],
+  "release": "2024-10-30T03:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "artVariants": [],
+  "limitlessId": "A1 15"
+}

@@ -1,0 +1,48 @@
+{
+  "_id": "67218229a61389c23bbf94d2",
+  "name": "Bulbasaur",
+  "energyType": [
+    "Grass"
+  ],
+  "hp": "70",
+  "pokemonId": "PA-023",
+  "pack": "",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-12-06T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Vine Whip",
+      "energyCost": [
+        "Grass",
+        "Colorless"
+      ],
+      "hp": "40",
+      "_id": "67994962e7d048b93b251d91"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "672b8e0a77094f5d3556d66f",
+        "type": "Normal Pack",
+        "name": "Promo Pack A Series: Wonder Pick",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "artVariants": [],
+  "limitlessId": "P-A 23",
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

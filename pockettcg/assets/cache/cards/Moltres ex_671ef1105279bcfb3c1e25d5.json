@@ -1,0 +1,64 @@
+{
+  "_id": "671ef1105279bcfb3c1e25d5",
+  "pokemonId": "A1-274",
+  "name": "Moltres ex",
+  "pack": "Charizard",
+  "rarity": "s-2",
+  "abilities": [],
+  "alternateArt": true,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Fire"
+  ],
+  "ex": true,
+  "hp": "140",
+  "moves": [
+    {
+      "name": "Inferno Dance",
+      "text": "Flip 3 coins. Take an amount of Fire Energy from your Energy Zone equal to the number of heads and attach it to your Benched Fire Pokémon in any way you like.",
+      "energyCost": [
+        "Fire"
+      ],
+      "_id": "67993d2c1f5c09a72fdf003c"
+    },
+    {
+      "name": "Heat Blast",
+      "text": "",
+      "energyCost": [
+        "Fire",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "70",
+      "_id": "67993d2c1f5c09a72fdf003d"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ce9af3133dff28feb222",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Charizard",
+        "linkedArticle": {
+          "_id": "6728e5e97e99ebe6207c6c77",
+          "title": "Genetic Apex: Charizard",
+          "url": "/sets/genetic-apex-charizard/",
+          "image": "/pkm_img/Sets/GeneticApexCharizard.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 2,
+  "subType": "Basic",
+  "weakness": [
+    "Lightning"
+  ],
+  "popRank": 1.7976931348623157e+308,
+  "artVariants": [],
+  "limitlessId": "A1 274",
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

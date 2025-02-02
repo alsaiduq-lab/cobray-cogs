@@ -1,0 +1,45 @@
+{
+  "_id": "6761245db864a94749eee526",
+  "name": "Moltres ex",
+  "energyType": [
+    "Fire"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "140",
+  "pokemonId": "PA-025",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 2,
+  "release": "2025-01-01T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Inferno Dance",
+      "text": "Flip 3 coins. Take an amount of Fire Energy from your Energy Zone equal to the number of heads and attach it to your Benched Fire Pokémon in any way you like.",
+      "energyCost": [
+        "Fire"
+      ],
+      "_id": "67994ae149fc3af0759c6471"
+    },
+    {
+      "name": "Heat Blast",
+      "text": "",
+      "energyCost": [
+        "Fire",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "70",
+      "_id": "67994ae149fc3af0759c6472"
+    }
+  ],
+  "obtain": [],
+  "ex": true,
+  "limitlessId": "P-A 25",
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

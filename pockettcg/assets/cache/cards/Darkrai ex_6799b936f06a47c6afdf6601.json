@@ -1,0 +1,71 @@
+{
+  "_id": "6799b936f06a47c6afdf6601",
+  "name": "Darkrai ex",
+  "energyType": [
+    "Darkness"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "140",
+  "pokemonId": "A2-110",
+  "limitlessId": "A2 110",
+  "rarity": "d-4",
+  "weakness": [
+    "Grass"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 68,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6799c11b169202e5d7e69d05",
+      "name": "Darkrai ex"
+    },
+    {
+      "_id": "6799c316169202e5d7e6a6fc",
+      "name": "Darkrai ex"
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Nightmare Aura",
+      "text": "Whenever you attach a Darkness Energy from your Energy Zone to this Pokémon, do 20 damage to your opponent's Active Pokémon.",
+      "_id": "6799d0120c64508adf1ec827"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Dark Prism",
+      "text": "",
+      "energyCost": [
+        "Darkness",
+        "Darkness",
+        "Colorless",
+        null
+      ],
+      "hp": "80",
+      "_id": "6799d0120c64508adf1ec828"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799adca169202e5d7e638f5",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Dialga",
+        "linkedArticle": {
+          "_id": "6799ca13169202e5d7e6cba0",
+          "title": "Space-Time Smackdown: Dialga",
+          "url": "/sets/space-time-smackdown-dialga/",
+          "image": "/pkm_img/News/2025/January/space-timesmackdown.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true
+}

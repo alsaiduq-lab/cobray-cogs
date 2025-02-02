@@ -1,0 +1,59 @@
+{
+  "_id": "6799c51af06a47c6afdfa010",
+  "name": "Garchomp",
+  "energyType": [
+    "Dragon"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "140",
+  "pokemonId": "A2-175",
+  "limitlessId": "A2 175",
+  "rarity": "s-1",
+  "weakness": [],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Reckless Sharing",
+      "text": "You must discard a card from your hand in order to use this Ability. Once during your turn, you may draw a card.",
+      "_id": "6799c51af06a47c6afdfa011"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Dragon Claw",
+      "text": "",
+      "energyCost": [
+        "Water",
+        "Fighting"
+      ],
+      "hp": "100",
+      "_id": "6799c51af06a47c6afdfa012"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "nameRelease": "2025-01-30T06:00:00.000Z"
+}

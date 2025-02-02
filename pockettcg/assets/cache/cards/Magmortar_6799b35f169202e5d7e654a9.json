@@ -1,0 +1,56 @@
+{
+  "_id": "6799b35f169202e5d7e654a9",
+  "name": "Magmortar",
+  "energyType": [
+    "Fire"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "130",
+  "pokemonId": "A2-024",
+  "limitlessId": "A2 24",
+  "rarity": "d-3",
+  "weakness": [
+    "Water"
+  ],
+  "retreat": 3,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 205,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Bursting Inferno",
+      "text": "Your opponent’s Active Pokémon is now Burned.\n",
+      "energyCost": [
+        "Fire",
+        "Fire",
+        "Fire",
+        "Fire"
+      ],
+      "hp": "100",
+      "_id": "6799c6110c64508adf1e909f"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

@@ -1,0 +1,60 @@
+{
+  "_id": "6761163fb864a94749ee79a0",
+  "name": "Salandit",
+  "energyType": [
+    "Fire"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A1a-015",
+  "rarity": "d-1",
+  "weakness": [
+    "Water"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-12-17T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67611d59f9e257245fbba835",
+      "name": "Salandit"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Volcanic Ash",
+      "text": "If your opponent's active Pokémon is Poisoned, this attack does 40 more damage.",
+      "energyCost": [
+        "Colorless",
+        null,
+        null
+      ],
+      "hp": "10+",
+      "_id": "679941d3f5d84b3e8fe0d421"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67610fbaf9e257245fbb5571",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Mythical Island",
+        "linkedArticle": {
+          "_id": "6761232ab864a94749eedacb",
+          "title": "Mythical Island",
+          "url": "/sets/mythical-island/",
+          "image": "/pkm_img/Sets/mythical-island.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A1a 15"
+}

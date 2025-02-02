@@ -1,0 +1,67 @@
+{
+  "_id": "6799b089169202e5d7e64777",
+  "name": "Mamoswine",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "160",
+  "pokemonId": "A2-033",
+  "limitlessId": "A2 33",
+  "rarity": "d-3",
+  "weakness": [
+    "Metal"
+  ],
+  "retreat": 4,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6799c0920c64508adf1e76a8",
+      "name": "Mamoswine"
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Thick Fat",
+      "text": "This Pokémon takes -30 damage from attacks from Fire or Water Pokémon.",
+      "_id": "6799c762f06a47c6afdfaeb6"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Frosty Flattening",
+      "text": "",
+      "energyCost": [
+        "Water",
+        "Water",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "120",
+      "_id": "6799c762f06a47c6afdfaeb7"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799adca169202e5d7e638f5",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Dialga",
+        "linkedArticle": {
+          "_id": "6799ca13169202e5d7e6cba0",
+          "title": "Space-Time Smackdown: Dialga",
+          "url": "/sets/space-time-smackdown-dialga/",
+          "image": "/pkm_img/News/2025/January/space-timesmackdown.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

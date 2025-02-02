@@ -1,0 +1,52 @@
+{
+  "_id": "671ef0f25279bcfb3c1e24e0",
+  "pokemonId": "A1-030",
+  "name": "Lilligant",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Grass"
+  ],
+  "hp": "100",
+  "moves": [
+    {
+      "name": "Leaf Supply",
+      "text": "Take a Grass Energy from your Energy Zone and attach it to 1 of your Benched Grass Pokémon.",
+      "energyCost": [
+        "Grass",
+        "Grass"
+      ],
+      "hp": "50",
+      "_id": "679951ad1552ba8d13d744e4"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ceb3423ed078c0a1f5d2",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Mewtwo",
+        "linkedArticle": {
+          "_id": "6728e6038cfb55d02155f843",
+          "title": "Genetic Apex: Mewtwo",
+          "url": "/sets/genetic-apex-mewtwo/",
+          "image": "/pkm_img/Sets/GeneticApexMewtwo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-2",
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 1,
+  "subType": "Stage 1",
+  "weakness": [
+    "Fire"
+  ],
+  "popRank": 142,
+  "artVariants": [],
+  "limitlessId": "A1 30"
+}

@@ -1,0 +1,43 @@
+{
+  "_id": "675ae88248e857c1219910f6",
+  "name": "Leaf",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Supporter",
+  "hp": "",
+  "pokemonId": "A1a-068",
+  "rarity": "d-2",
+  "weakness": [],
+  "description": "During this turn, the Retreat Cost of your active Pokemon is 2 less.",
+  "release": "2024-12-17T06:00:00.000Z",
+  "popRank": 5,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67611d48f9e257245fbba7f0",
+      "name": "Leaf"
+    }
+  ],
+  "abilities": [],
+  "moves": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67610fbaf9e257245fbb5571",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Mythical Island",
+        "linkedArticle": {
+          "_id": "6761232ab864a94749eedacb",
+          "title": "Mythical Island",
+          "url": "/sets/mythical-island/",
+          "image": "/pkm_img/Sets/mythical-island.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A1a 68"
+}

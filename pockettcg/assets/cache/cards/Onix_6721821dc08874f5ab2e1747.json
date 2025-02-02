@@ -1,0 +1,37 @@
+{
+  "_id": "6721821dc08874f5ab2e1747",
+  "name": "Onix",
+  "energyType": [
+    "Fighting"
+  ],
+  "hp": "110",
+  "pokemonId": "PA-021",
+  "pack": "",
+  "weakness": [
+    "Grass"
+  ],
+  "retreat": 4,
+  "description": "",
+  "release": "2024-11-29T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Land Crush",
+      "energyCost": [
+        "Fighting",
+        "Fighting",
+        "Fighting"
+      ],
+      "hp": "70",
+      "_id": "6799492b97fb8e77af07a962"
+    }
+  ],
+  "obtain": [],
+  "ex": false,
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "artVariants": [],
+  "limitlessId": "P-A 21"
+}

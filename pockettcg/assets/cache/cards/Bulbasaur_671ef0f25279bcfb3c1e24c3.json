@@ -1,0 +1,73 @@
+{
+  "_id": "671ef0f25279bcfb3c1e24c3",
+  "pokemonId": "A1-001",
+  "name": "Bulbasaur",
+  "pack": "Mewtwo",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "hp": "70",
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ceb3423ed078c0a1f5d2",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Mewtwo",
+        "linkedArticle": {
+          "_id": "6728e6038cfb55d02155f843",
+          "title": "Genetic Apex: Mewtwo",
+          "url": "/sets/genetic-apex-mewtwo/",
+          "image": "/pkm_img/Sets/GeneticApexMewtwo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    },
+    {
+      "source": {
+        "_id": "672b8e0a77094f5d3556d66f",
+        "type": "Normal Pack",
+        "name": "Promo Pack A Series: Wonder Pick",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-1",
+  "retreat": 1,
+  "skills": [],
+  "type": "Grass",
+  "weakness": [
+    "Fire"
+  ],
+  "energyType": [
+    "Grass"
+  ],
+  "moves": [
+    {
+      "name": "Vine Whip",
+      "energyCost": [
+        "Grass",
+        "Colorless"
+      ],
+      "hp": "40",
+      "_id": "67994ca449fc3af0759c6f7c"
+    }
+  ],
+  "subType": "Basic",
+  "release": "2024-10-30T03:00:00.000Z",
+  "popRank": 130,
+  "artVariants": [
+    {
+      "_id": "671ef1105279bcfb3c1e25a6",
+      "name": "Bulbasaur"
+    },
+    {
+      "_id": "67218229a61389c23bbf94d2",
+      "name": "Bulbasaur"
+    }
+  ],
+  "limitlessId": "A1 1"
+}

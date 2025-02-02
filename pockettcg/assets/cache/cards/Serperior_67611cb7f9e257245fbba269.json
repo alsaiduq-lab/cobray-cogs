@@ -1,0 +1,63 @@
+{
+  "_id": "67611cb7f9e257245fbba269",
+  "name": "Serperior",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "110",
+  "pokemonId": "A1a-070",
+  "rarity": "s-1",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2024-12-17T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Jungle Totem",
+      "text": "Each Grass Energy attached to your Grass Pokémon provides 2 Grass Energy. This effect doesn't stack.",
+      "_id": "6799458b49fc3af0759c43d4"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Solar Beam",
+      "text": "",
+      "energyCost": [
+        "Grass",
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "70",
+      "_id": "6799458b49fc3af0759c43d5"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67610fbaf9e257245fbb5571",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Mythical Island",
+        "linkedArticle": {
+          "_id": "6761232ab864a94749eedacb",
+          "title": "Mythical Island",
+          "url": "/sets/mythical-island/",
+          "image": "/pkm_img/Sets/mythical-island.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A1a 70",
+  "nameRelease": "2024-12-17T06:00:00.000Z"
+}

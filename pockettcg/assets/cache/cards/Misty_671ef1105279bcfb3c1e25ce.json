@@ -1,0 +1,36 @@
+{
+  "_id": "671ef1105279bcfb3c1e25ce",
+  "pokemonId": "A1-267",
+  "name": "Misty",
+  "pack": "Pikachu",
+  "rarity": "s-2",
+  "abilities": [],
+  "alternateArt": true,
+  "cardType": "Trainer",
+  "description": "Choose 1 of your Water Pokémon and flip a coin until you get a tails. For each heads, take a Water Energy from your Energy Zone and attach it to that Pokémon.",
+  "moves": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ca53f3133dff28feb0ce",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Pikachu",
+        "linkedArticle": {
+          "_id": "6728e5c17e99ebe6207c6c2e",
+          "title": "Genetic Apex: Pikachu",
+          "url": "/sets/genetic-apex-pikachu/",
+          "image": "/pkm_img/Sets/GeneticApexPikachu.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "subType": "Supporter",
+  "release": "2024-10-30T03:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "artVariants": [],
+  "limitlessId": "A1 267",
+  "nameRelease": "2024-10-31T03:00:00.000Z"
+}

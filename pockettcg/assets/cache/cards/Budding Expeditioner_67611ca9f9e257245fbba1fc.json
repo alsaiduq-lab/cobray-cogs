@@ -1,0 +1,39 @@
+{
+  "_id": "67611ca9f9e257245fbba1fc",
+  "name": "Budding Expeditioner",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Supporter",
+  "hp": "",
+  "pokemonId": "A1a-080",
+  "rarity": "s-2",
+  "weakness": [],
+  "description": "Put your Mew ex in the Active Spot into your hand.",
+  "release": "2024-12-17T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67610fbaf9e257245fbb5571",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Mythical Island",
+        "linkedArticle": {
+          "_id": "6761232ab864a94749eedacb",
+          "title": "Mythical Island",
+          "url": "/sets/mythical-island/",
+          "image": "/pkm_img/Sets/mythical-island.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A1a 80",
+  "nameRelease": "2024-12-17T06:00:00.000Z"
+}

@@ -1,0 +1,59 @@
+{
+  "_id": "671ef0f25279bcfb3c1e255b",
+  "pokemonId": "A1-153",
+  "name": "Marowak ex",
+  "pack": "Mewtwo",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Fighting"
+  ],
+  "ex": true,
+  "hp": "140",
+  "moves": [
+    {
+      "name": "Bonemerang",
+      "text": "Flip 2 coins. This attack does 80 damage for each heads.",
+      "energyCost": [
+        "Fighting",
+        "Fighting"
+      ],
+      "hp": "80x",
+      "_id": "679955bb1552ba8d13d76200"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ceb3423ed078c0a1f5d2",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Mewtwo",
+        "linkedArticle": {
+          "_id": "6728e6038cfb55d02155f843",
+          "title": "Genetic Apex: Mewtwo",
+          "url": "/sets/genetic-apex-mewtwo/",
+          "image": "/pkm_img/Sets/GeneticApexMewtwo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-4",
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 1,
+  "subType": "Stage 1",
+  "weakness": [
+    "Grass"
+  ],
+  "popRank": 100,
+  "artVariants": [
+    {
+      "_id": "671ef1105279bcfb3c1e25cb",
+      "name": "Marowak ex"
+    }
+  ],
+  "limitlessId": "A1 153"
+}

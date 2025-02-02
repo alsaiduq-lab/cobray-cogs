@@ -1,0 +1,61 @@
+{
+  "_id": "671ef0f25279bcfb3c1e2523",
+  "pokemonId": "A1-097",
+  "name": "Magnemite",
+  "pack": "Pikachu",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Lightning"
+  ],
+  "hp": "60",
+  "moves": [
+    {
+      "name": "Lightning Bolt",
+      "energyCost": [
+        "Lightning"
+      ],
+      "hp": "20",
+      "_id": "679954701552ba8d13d75a3c"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ca53f3133dff28feb0ce",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Pikachu",
+        "linkedArticle": {
+          "_id": "6728e5c17e99ebe6207c6c2e",
+          "title": "Genetic Apex: Pikachu",
+          "url": "/sets/genetic-apex-pikachu/",
+          "image": "/pkm_img/Sets/GeneticApexPikachu.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    },
+    {
+      "source": {
+        "_id": "672b8e0a77094f5d3556d66f",
+        "type": "Normal Pack",
+        "name": "Promo Pack A Series: Wonder Pick",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-1",
+  "retreat": 1,
+  "subType": "Basic",
+  "weakness": [
+    "Fighting"
+  ],
+  "release": "2024-10-30T03:00:00.000Z",
+  "popRank": 94,
+  "artVariants": [],
+  "limitlessId": "A1 97"
+}

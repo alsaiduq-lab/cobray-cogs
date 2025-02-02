@@ -1,0 +1,43 @@
+{
+  "_id": "6798ea0c6950657553dc675d",
+  "name": "Cyrus",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Supporter",
+  "hp": "",
+  "pokemonId": "A2-150",
+  "rarity": "d-2",
+  "weakness": [],
+  "description": "Switch 1 of your opponent's Benched Pokémon that has damage on it to the Active Spot.",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 47,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6799c1cf169202e5d7e6a007",
+      "name": "Cyrus"
+    }
+  ],
+  "abilities": [],
+  "moves": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A2 150"
+}

@@ -1,0 +1,56 @@
+{
+  "_id": "672181f1c08874f5ab2e1720",
+  "name": "Butterfree",
+  "energyType": [
+    "Grass"
+  ],
+  "hp": "120",
+  "pokemonId": "PA-13",
+  "pack": "",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-11-05T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "abilities": [
+    {
+      "name": "Power Heal",
+      "text": "Once during your turn, you may heal 20 damage from each of your Pokemon.",
+      "_id": "6799489c97fb8e77af07a4b1"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Gust",
+      "energyCost": [
+        "Grass",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "60",
+      "_id": "6799489c97fb8e77af07a4b2"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6729bc22f687517e5dc4de0c",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Promo Pack A Series: Vol. 1",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "artVariants": [],
+  "limitlessId": "P-A 13",
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

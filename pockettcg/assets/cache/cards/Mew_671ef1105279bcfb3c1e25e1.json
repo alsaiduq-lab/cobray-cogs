@@ -1,0 +1,46 @@
+{
+  "_id": "671ef1105279bcfb3c1e25e1",
+  "pokemonId": "A1-283",
+  "name": "Mew",
+  "rarity": "s-3",
+  "abilities": [],
+  "alternateArt": true,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Psychic"
+  ],
+  "hp": "60",
+  "moves": [
+    {
+      "name": "Psy Report",
+      "text": "Your opponent reveals their hand.",
+      "energyCost": [
+        "Psychic"
+      ],
+      "hp": "20",
+      "_id": "67993c12f5d84b3e8fe0b206"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6723fcec43f3e3a52b2b6d6a",
+        "type": "Normal Pack",
+        "name": "Secret Unlock (Collect Original 150)",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 1,
+  "subType": "Basic",
+  "weakness": [
+    "Darkness"
+  ],
+  "popRank": 1.7976931348623157e+308,
+  "artVariants": [],
+  "limitlessId": "A1 283",
+  "nameRelease": "2024-12-17T06:00:00.000Z"
+}

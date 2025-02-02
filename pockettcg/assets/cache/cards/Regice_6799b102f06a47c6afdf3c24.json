@@ -1,0 +1,60 @@
+{
+  "_id": "6799b102f06a47c6afdf3c24",
+  "name": "Regice",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "110",
+  "pokemonId": "A2-034",
+  "limitlessId": "A2 34",
+  "rarity": "d-2",
+  "weakness": [
+    "Metal"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 237,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Crystal Body",
+      "text": "Prevent all effects of attacks used by your opponent's Pokémon done to this Pokémon.",
+      "_id": "6799c76bf06a47c6afdfaeda"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Frost Smash",
+      "text": "",
+      "energyCost": [
+        "Water",
+        "Water"
+      ],
+      "hp": "50",
+      "_id": "6799c76bf06a47c6afdfaedb"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

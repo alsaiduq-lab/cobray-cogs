@@ -1,0 +1,78 @@
+{
+  "_id": "671ef0f25279bcfb3c1e2543",
+  "pokemonId": "A1-129",
+  "name": "Mewtwo ex",
+  "pack": "Mewtwo",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Psychic"
+  ],
+  "ex": true,
+  "hp": "150",
+  "moves": [
+    {
+      "name": "Psychic Sphere",
+      "energyCost": [
+        "Psychic",
+        "Colorless"
+      ],
+      "hp": "50",
+      "_id": "67994c8f49fc3af0759c6ee0"
+    },
+    {
+      "name": "Psydrive",
+      "text": "Discard 2 Psychic Energy from this Pokémon",
+      "energyCost": [
+        "Psychic",
+        "Psychic",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "150",
+      "_id": "67994c8f49fc3af0759c6ee1"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ceb3423ed078c0a1f5d2",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Mewtwo",
+        "linkedArticle": {
+          "_id": "6728e6038cfb55d02155f843",
+          "title": "Genetic Apex: Mewtwo",
+          "url": "/sets/genetic-apex-mewtwo/",
+          "image": "/pkm_img/Sets/GeneticApexMewtwo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-4",
+  "retreat": 2,
+  "subType": "Basic",
+  "weakness": [
+    "Darkness"
+  ],
+  "release": "2024-10-30T15:00:00.000Z",
+  "popRank": 14,
+  "artVariants": [
+    {
+      "_id": "671ef1105279bcfb3c1e25e0",
+      "name": "Mewtwo ex"
+    },
+    {
+      "_id": "671ef1105279bcfb3c1e25c9",
+      "name": "Mewtwo ex"
+    },
+    {
+      "_id": "671ef1105279bcfb3c1e25dd",
+      "name": "Mewtwo ex"
+    }
+  ],
+  "limitlessId": "A1 129"
+}

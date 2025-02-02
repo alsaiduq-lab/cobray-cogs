@@ -1,0 +1,59 @@
+{
+  "_id": "67924985eb08086be8541055",
+  "name": "Turtwig",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "80",
+  "pokemonId": "A2-010",
+  "rarity": "d-1",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6798f06e6950657553dc8419",
+      "name": "Turtwig"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Bite",
+      "text": "Heal 20 damage from this Pokemon.",
+      "energyCost": [
+        "Colorless",
+        "Grass"
+      ],
+      "hp": "30",
+      "_id": "6799c536169202e5d7e6b0cb"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799ad8cf06a47c6afdf2c1b",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Palkia",
+        "linkedArticle": {
+          "_id": "6799c9f0169202e5d7e6ca49",
+          "title": "Space-Time Smackdown: Palkia",
+          "url": "/sets/space-time-smackdown-palkia/",
+          "image": "/pkm_img/News/2025/January/space-time-palkia.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A2 10"
+}

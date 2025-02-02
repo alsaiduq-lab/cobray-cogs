@@ -1,0 +1,61 @@
+{
+  "_id": "67611093b864a94749ee5bce",
+  "name": "Exeggutor",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "130",
+  "pokemonId": "A1a-002",
+  "rarity": "d-2",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 3,
+  "description": "",
+  "release": "2024-12-17T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67611ba6f9e257245fbb967b",
+      "name": "Exeggutor"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Psychic",
+      "text": "This attack does 20 more damage for each Energy attached to your opponent's Active Pokémon",
+      "energyCost": [
+        "Grass",
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "80+",
+      "_id": "67994128f5d84b3e8fe0d004"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67610fbaf9e257245fbb5571",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Mythical Island",
+        "linkedArticle": {
+          "_id": "6761232ab864a94749eedacb",
+          "title": "Mythical Island",
+          "url": "/sets/mythical-island/",
+          "image": "/pkm_img/Sets/mythical-island.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A1a 2"
+}

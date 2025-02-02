@@ -1,0 +1,44 @@
+{
+  "_id": "6761242ff9e257245fbbe0c0",
+  "name": "Squirtle",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "PA-033",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 1,
+  "release": "2025-01-07T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Water Gun",
+      "energyCost": [
+        "Water"
+      ],
+      "hp": "20",
+      "_id": "67994aa749fc3af0759c62fe"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "672b8e0a77094f5d3556d66f",
+        "type": "Normal Pack",
+        "name": "Promo Pack A Series: Wonder Pick",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "limitlessId": "P-A 33",
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

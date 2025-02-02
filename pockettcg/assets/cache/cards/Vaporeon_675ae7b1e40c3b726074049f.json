@@ -1,0 +1,62 @@
+{
+  "_id": "675ae7b1e40c3b726074049f",
+  "name": "Vaporeon",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "120",
+  "pokemonId": "A1a-072",
+  "rarity": "s-1",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2024-12-17T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Wash Out",
+      "text": "As often as your like during your turn, you may move a Water Energy from 1 of your Benched Pokemon to your Active Pokemon",
+      "_id": "679949d049fc3af0759c5e44"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Wave Splash",
+      "text": "",
+      "energyCost": [
+        "Water",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "60",
+      "_id": "679949d049fc3af0759c5e45"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67610fbaf9e257245fbb5571",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Mythical Island",
+        "linkedArticle": {
+          "_id": "6761232ab864a94749eedacb",
+          "title": "Mythical Island",
+          "url": "/sets/mythical-island/",
+          "image": "/pkm_img/Sets/mythical-island.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "A1a 72",
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

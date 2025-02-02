@@ -1,0 +1,58 @@
+{
+  "_id": "671ef0f25279bcfb3c1e24d9",
+  "pokemonId": "A1-023",
+  "name": "Exeggutor ex",
+  "pack": "Charizard",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Grass"
+  ],
+  "ex": true,
+  "hp": "160",
+  "moves": [
+    {
+      "name": "Tropical Swing",
+      "text": "Flip a coin. If heads, this attack does 40 more damage.",
+      "energyCost": [
+        "Grass"
+      ],
+      "hp": "40+",
+      "_id": "679951fd1552ba8d13d746c9"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ce9af3133dff28feb222",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Charizard",
+        "linkedArticle": {
+          "_id": "6728e5e97e99ebe6207c6c77",
+          "title": "Genetic Apex: Charizard",
+          "url": "/sets/genetic-apex-charizard/",
+          "image": "/pkm_img/Sets/GeneticApexCharizard.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-4",
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 3,
+  "subType": "Stage 1",
+  "weakness": [
+    "Fire"
+  ],
+  "popRank": 23,
+  "artVariants": [
+    {
+      "_id": "671ef1105279bcfb3c1e25bf",
+      "name": "Exeggutor ex"
+    }
+  ],
+  "limitlessId": "A1 23"
+}

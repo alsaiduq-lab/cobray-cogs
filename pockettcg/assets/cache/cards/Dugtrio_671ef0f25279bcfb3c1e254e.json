@@ -1,0 +1,52 @@
+{
+  "_id": "671ef0f25279bcfb3c1e254e",
+  "pokemonId": "A1-140",
+  "name": "Dugtrio",
+  "pack": "Pikachu",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Fighting"
+  ],
+  "hp": "70",
+  "moves": [
+    {
+      "name": "Dig",
+      "text": "Flip a coin. If heads, during your opponent's next turn, prevent all damage from - and effects of - attacks done to this Pokémon.",
+      "energyCost": [
+        "Fighting"
+      ],
+      "hp": "40",
+      "_id": "67994e3149fc3af0759c79ad"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ca53f3133dff28feb0ce",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Pikachu",
+        "linkedArticle": {
+          "_id": "6728e5c17e99ebe6207c6c2e",
+          "title": "Genetic Apex: Pikachu",
+          "url": "/sets/genetic-apex-pikachu/",
+          "image": "/pkm_img/Sets/GeneticApexPikachu.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-2",
+  "retreat": 1,
+  "subType": "Stage 1",
+  "weakness": [
+    "Grass"
+  ],
+  "release": "2024-10-30T03:00:00.000Z",
+  "popRank": 190,
+  "artVariants": [],
+  "limitlessId": "A1 140"
+}

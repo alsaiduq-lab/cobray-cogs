@@ -1,0 +1,35 @@
+{
+  "_id": "6798f06e6950657553dc8419",
+  "name": "Turtwig",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "80",
+  "pokemonId": "P2-227",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 1,
+  "description": "",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Bite",
+      "text": "Heal 20 damage from this Pokemon.",
+      "energyCost": [
+        "Colorless",
+        "Grass"
+      ],
+      "hp": "30",
+      "_id": "6798f06e6950657553dc841a"
+    }
+  ],
+  "obtain": [],
+  "ex": false,
+  "nameRelease": "2025-01-30T06:00:00.000Z"
+}

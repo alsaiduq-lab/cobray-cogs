@@ -1,0 +1,60 @@
+{
+  "_id": "6799c357169202e5d7e6a82f",
+  "name": "Heatran",
+  "energyType": [
+    "Metal"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "120",
+  "pokemonId": "A2-120",
+  "limitlessId": "A2 120",
+  "rarity": "d-3",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 3,
+  "description": "",
+  "release": "2025-01-30T06:00:00.000Z",
+  "popRank": 232,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6799c4f0f06a47c6afdf9f47",
+      "name": "Heatran"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Steel Tackle",
+      "text": "This Pokémon also does 20 damage to itself.",
+      "energyCost": [
+        "Metal",
+        "Metal",
+        "Metal"
+      ],
+      "hp": "110",
+      "_id": "6799cdf20c64508adf1ebacb"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6799adca169202e5d7e638f5",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Space-Time Smackdown: Dialga",
+        "linkedArticle": {
+          "_id": "6799ca13169202e5d7e6cba0",
+          "title": "Space-Time Smackdown: Dialga",
+          "url": "/sets/space-time-smackdown-dialga/",
+          "image": "/pkm_img/News/2025/January/space-timesmackdown.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

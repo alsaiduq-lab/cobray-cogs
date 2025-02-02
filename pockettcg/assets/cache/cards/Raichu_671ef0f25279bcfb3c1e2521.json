@@ -1,0 +1,54 @@
+{
+  "_id": "671ef0f25279bcfb3c1e2521",
+  "pokemonId": "A1-095",
+  "name": "Raichu",
+  "pack": "Pikachu",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Lightning"
+  ],
+  "hp": "100",
+  "moves": [
+    {
+      "name": "Thunderbolt",
+      "text": "Discard all Energy from this Pokémon.",
+      "energyCost": [
+        "Lightning",
+        "Lightning",
+        "Lightning"
+      ],
+      "hp": "140",
+      "_id": "6799540997fb8e77af07eb79"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ca53f3133dff28feb0ce",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Pikachu",
+        "linkedArticle": {
+          "_id": "6728e5c17e99ebe6207c6c2e",
+          "title": "Genetic Apex: Pikachu",
+          "url": "/sets/genetic-apex-pikachu/",
+          "image": "/pkm_img/Sets/GeneticApexPikachu.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-3",
+  "retreat": 1,
+  "subType": "Stage 1",
+  "weakness": [
+    "Fighting"
+  ],
+  "release": "2024-10-30T03:00:00.000Z",
+  "popRank": 54,
+  "artVariants": [],
+  "limitlessId": "A1 95"
+}

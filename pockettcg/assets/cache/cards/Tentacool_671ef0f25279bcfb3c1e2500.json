@@ -1,0 +1,51 @@
+{
+  "_id": "671ef0f25279bcfb3c1e2500",
+  "pokemonId": "A1-062",
+  "name": "Tentacool",
+  "pack": "Mewtwo",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Water"
+  ],
+  "hp": "60",
+  "moves": [
+    {
+      "name": "Gentle Slap",
+      "energyCost": [
+        "Water"
+      ],
+      "hp": "20",
+      "_id": "679951411552ba8d13d740c5"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ceb3423ed078c0a1f5d2",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Mewtwo",
+        "linkedArticle": {
+          "_id": "6728e6038cfb55d02155f843",
+          "title": "Genetic Apex: Mewtwo",
+          "url": "/sets/genetic-apex-mewtwo/",
+          "image": "/pkm_img/Sets/GeneticApexMewtwo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-1",
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 1,
+  "subType": "Basic",
+  "weakness": [
+    "Lightning"
+  ],
+  "popRank": 156,
+  "artVariants": [],
+  "limitlessId": "A1 62"
+}

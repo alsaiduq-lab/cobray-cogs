@@ -1,0 +1,36 @@
+{
+  "_id": "6798ea92dbba2e0d2bb5fb95",
+  "name": "Eevee",
+  "energyType": [
+    "Colorless"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A2-303",
+  "rarity": "d-1",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": null,
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Quick Attack",
+      "text": "Flip a coin. If heads, this attack does 20 more damage.",
+      "energyCost": [
+        "Colorless"
+      ],
+      "hp": "10+",
+      "_id": "6799ce4a0c64508adf1ebcfd"
+    }
+  ],
+  "obtain": [],
+  "ex": false,
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

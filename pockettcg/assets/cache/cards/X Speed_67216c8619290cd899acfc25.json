@@ -1,0 +1,31 @@
+{
+  "_id": "67216c8619290cd899acfc25",
+  "name": "X Speed",
+  "hp": null,
+  "pokemonId": "PA-002",
+  "pack": "",
+  "weakness": null,
+  "retreat": null,
+  "description": "During this turn, the Retreat Cost of your Active Pokémon is 1 less.",
+  "release": "2024-10-30T03:00:00.000Z",
+  "popRank": 4,
+  "alternateArt": false,
+  "abilities": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6723f35ee05ba54ed87183db",
+        "type": "Normal Pack",
+        "name": "Promo Pack A Series: Shop",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "cardType": "Trainer",
+  "moves": [],
+  "subType": "Item",
+  "artVariants": [],
+  "limitlessId": "P-A 2"
+}

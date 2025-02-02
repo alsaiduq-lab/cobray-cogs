@@ -1,0 +1,53 @@
+{
+  "_id": "671ef0f25279bcfb3c1e259c",
+  "pokemonId": "A1-218",
+  "name": "Old Amber",
+  "pack": "Mewtwo",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Trainer",
+  "description": "Play this card as if it were a 40 HP Basic Colorless Pokémon. At any time during your turn, you may discard this card from play. This card can't retreat.",
+  "hp": "40",
+  "moves": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ceb3423ed078c0a1f5d2",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Mewtwo",
+        "linkedArticle": {
+          "_id": "6728e6038cfb55d02155f843",
+          "title": "Genetic Apex: Mewtwo",
+          "url": "/sets/genetic-apex-mewtwo/",
+          "image": "/pkm_img/Sets/GeneticApexMewtwo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    },
+    {
+      "source": {
+        "_id": "67610fbaf9e257245fbb5571",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Mythical Island",
+        "linkedArticle": {
+          "_id": "6761232ab864a94749eedacb",
+          "title": "Mythical Island",
+          "url": "/sets/mythical-island/",
+          "image": "/pkm_img/Sets/mythical-island.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-1",
+  "retreat": null,
+  "subType": "Item",
+  "release": "2024-10-30T03:00:00.000Z",
+  "popRank": 44,
+  "artVariants": [],
+  "limitlessId": "A1 218"
+}

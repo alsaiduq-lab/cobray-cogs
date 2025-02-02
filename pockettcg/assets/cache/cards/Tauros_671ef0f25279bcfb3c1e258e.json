@@ -1,0 +1,52 @@
+{
+  "_id": "671ef0f25279bcfb3c1e258e",
+  "pokemonId": "A1-204",
+  "name": "Tauros",
+  "pack": "Charizard",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Colorless"
+  ],
+  "hp": "100",
+  "moves": [
+    {
+      "name": "Horn Attack ",
+      "energyCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "50",
+      "_id": "6799541c97fb8e77af07ebd0"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ce9af3133dff28feb222",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Charizard",
+        "linkedArticle": {
+          "_id": "6728e5e97e99ebe6207c6c77",
+          "title": "Genetic Apex: Charizard",
+          "url": "/sets/genetic-apex-charizard/",
+          "image": "/pkm_img/Sets/GeneticApexCharizard.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-2",
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 2,
+  "subType": "Basic",
+  "weakness": [
+    "Fighting"
+  ],
+  "popRank": 47,
+  "artVariants": [],
+  "limitlessId": "A1 204"
+}

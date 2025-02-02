@@ -1,0 +1,40 @@
+{
+  "_id": "672181dfa61389c23bbf94bd",
+  "name": "Mewtwo",
+  "energyType": [
+    "Psychic"
+  ],
+  "hp": "120",
+  "pokemonId": "PA-010",
+  "pack": "",
+  "weakness": [
+    "Darkness"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2024-12-01T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Power Blast",
+      "text": "Discard 2 Psychic Energy from this Pokemon.",
+      "energyCost": [
+        "Psychic",
+        "Psychic",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "120",
+      "_id": "6799494ee7d048b93b251d65"
+    }
+  ],
+  "obtain": [],
+  "ex": false,
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "artVariants": [],
+  "limitlessId": "P-A 10",
+  "nameRelease": "2024-10-31T03:00:00.000Z"
+}
