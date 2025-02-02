@@ -4,7 +4,7 @@ from typing import List, Dict, Any
 
 class CardParser:
     def __init__(self, *, log=None):
-        self.logger = log or logging.getLogger("red.pokemonmeta.parser")
+        self.logger = log or logging.getLogger("red.pokemonmeta.utils.parser")
     def extract_card_names(self, content: str) -> List[str]:
         """Extract card names from a message using [[CardName]] format."""
         if not content:

@@ -1,4 +1,3 @@
-"""Data models for Pokemon TCG cards."""
 from dataclasses import dataclass
 from typing import List, Optional, Dict, Any
 from datetime import datetime

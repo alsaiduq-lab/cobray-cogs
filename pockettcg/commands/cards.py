@@ -1,8 +1,7 @@
 import asyncio
-import logging
 from typing import List, Optional
 from urllib.parse import quote
-
+import logging
 import discord
 from discord import Interaction, SelectOption, app_commands
 from discord.app_commands import Choice
@@ -16,9 +15,11 @@ from ..utils.parser import CardParser
 from ..core.models import Pokemon
 from ..utils.fsearch import fuzzy_search_multi
 
+log = logging.getLogger("red.pokemontcg.commands")
+
 class CardSelectMenu(Select):
     """Menu for selecting a Pokemon card from search results and previewing it."""
-    def __init__(self, cards: List[Pokemon], registry: CardRegistry, config: UserConfig, 
+    def __init__(self, cards: List[Pokemon], registry: CardRegistry, config: UserConfig,
                  parser: CardParser, builder: CardBuilder):
         options = [
             SelectOption(label=c.name, value=str(i))
@@ -35,10 +36,17 @@ class CardSelectMenu(Select):
         self.config = config
         self.parser = parser
         self.builder = builder
-        self.view = None
+        self._view = None
+
+    @property
+    def view(self):
+        return self._view
+
+    @view.setter
+    def view(self, value):
+        self._view = value
 
     async def callback(self, interaction: Interaction):
-        """Handle card selection."""
         idx = int(self.values[0])
         chosen_card = self.cards[idx]
         embed = await self.builder.build_card_embed(chosen_card, as_full_art=False)
@@ -51,7 +59,6 @@ class CardSelectMenu(Select):
         )
 
 class SelectButton(discord.ui.Button):
-    """Button for selecting a card after preview."""
     def __init__(self, idx: int, card: Pokemon, callback):
         super().__init__(
             label="Select",
@@ -65,7 +72,6 @@ class SelectButton(discord.ui.Button):
         await self.select_callback(interaction, self.card)
 
 class CardSelectView(View):
-    """View containing the card selection menu and handling final selection."""
     def __init__(self, cards: List[Pokemon], registry: CardRegistry, config: UserConfig,
                  parser: CardParser, builder: CardBuilder, final_callback):
         super().__init__(timeout=None)
@@ -75,7 +81,6 @@ class CardSelectView(View):
         self.final_callback = final_callback
 
 class CardCommands:
-    """Handles Pokemon TCG card-related commands."""
     def __init__(
         self,
         bot: commands.Bot,
@@ -91,55 +96,45 @@ class CardCommands:
         self.config = user_config
         self.parser = parser
         self.builder = builder
-        self.logger = log or logging.getLogger("red.pokemontcg.commands")
         self.bot.listen('on_message')(self.handle_card_mentions)
 
     async def initialize(self):
-        """Initialize command dependencies."""
-        self.logger.debug("Initializing card commands")
+        pass
 
     async def close(self):
-        """Cleanup resources."""
-        self.logger.debug("Cleaning up card commands")
+        pass
 
-    async def search_cards(
-        self,
-        query: str,
-        *,
-        is_autocomplete: bool = False
-    ) -> List[Pokemon]:
-        """Search for cards using the registry and fuzzy search."""
+    async def search_cards(self, query: str, *, is_autocomplete: bool = False) -> List[Pokemon]:
         if not query:
             return []
         try:
-            self.logger.debug(f"Searching for cards: {query}")
-            all_cards = await self.registry.get_all_cards()
+            cached_cards = []
+            cached_card_list = self.registry.cache.list_cached_cards()
+            for card_name, card_id in cached_card_list.items():
+                if card_data := self.registry.cache.get(card_id):
+                    try:
+                        card = Pokemon.from_api(card_data)
+                        cached_cards.append(card)
+                    except Exception:
+                        continue
+
+            registry_cards = list(self.registry._cards.values())
+            for card in registry_cards:
+                if card.id not in [c.id for c in cached_cards]:
+                    cached_cards.append(card)
+
             card_dicts = [
                 {
                     'id': card.id,
                     'name': card.name,
-                    'set_name': card.set_name,
-                    'number': card.number,
-                    '_card': card  # Store original Pokemon object
+                    'set_name': card.pack,
+                    '_card': card
                 }
-                for card in all_cards
+                for card in cached_cards
             ]
             search_configs = [
-                {
-                    'key': 'name',
-                    'weight': 1.0,
-                    'exact_bonus': 0.4
-                },
-                {
-                    'key': 'set_name',
-                    'weight': 0.3,
-                    'exact_bonus': 0.2
-                },
-                {
-                    'key': 'number',
-                    'weight': 0.2,
-                    'exact_bonus': 0.2
-                }
+                {'key': 'name', 'weight': 1.0, 'exact_bonus': 0.4},
+                {'key': 'set_name', 'weight': 0.3, 'exact_bonus': 0.2}
             ]
             results = fuzzy_search_multi(
                 query=query,
@@ -148,17 +143,26 @@ class CardCommands:
                 threshold=0.3,
                 max_results=25 if not is_autocomplete else 10
             )
-            return [result['_card'] for result in results]
-        except Exception as e:
-            self.logger.error(f"Error searching cards: {e}", exc_info=True)
+            found_cards = [result['_card'] for result in results]
+
+            if len(found_cards) < (10 if is_autocomplete else 25):
+                if api_data := await self.registry.api.search_cards(query):
+                    for card_data in api_data:
+                        card = Pokemon.from_api(card_data)
+                        if card not in found_cards:
+                            found_cards.append(card)
+                            if card.id not in self.registry._cards:
+                                self.registry._cards[card.id] = card
+                                self.registry._generate_index_for_cards([card])
+                                self.registry.cache.set(card.id, card_data)
+                        if len(found_cards) >= (10 if is_autocomplete else 25):
+                            break
+            return found_cards
+        except Exception:
+            log.error("Error in search_cards", exc_info=True)
             return []
 
-    async def card_name_autocomplete(
-        self,
-        interaction: Interaction,
-        current: str
-    ) -> List[Choice[str]]:
-        """Provide autocomplete suggestions for card names."""
+    async def card_name_autocomplete(self, interaction: Interaction, current: str) -> List[Choice[str]]:
         try:
             current = current.strip()
             if not current or len(current) < 3:
@@ -169,12 +173,11 @@ class CardCommands:
                 Choice(name=card.name, value=card.name)
                 for card in cards[:10]
             ]
-        except Exception as e:
-            self.logger.error(f"Autocomplete error: {e}", exc_info=True)
+        except Exception:
+            log.error("Error in card_name_autocomplete", exc_info=True)
             return []
 
     async def text_card(self, ctx: commands.Context, *, query: str = None):
-        """Handle text-based card search command."""
         if not query:
             return await ctx.send("❗ You must provide a card name!")
         try:
@@ -185,9 +188,20 @@ class CardCommands:
             if exact_match := next((c for c in cards if c.name.lower() == query.lower()), None):
                 embed = await self.builder.build_card_embed(exact_match, as_full_art=True)
                 return await ctx.send(embed=embed)
+
             async def handle_final_selection(interaction: discord.Interaction, chosen_card: Pokemon):
-                embed = await self.builder.build_card_embed(chosen_card, as_full_art=True)
-                await interaction.message.edit(embed=embed, view=None)
+                try:
+                    embed = await self.builder.build_card_embed(chosen_card, as_full_art=True)
+                    try:
+                        await interaction.message.edit(embed=embed, view=None)
+                    except discord.NotFound:
+                        await interaction.response.send_message(embed=embed)
+                    except Exception:
+                        await interaction.response.send_message(embed=embed)
+                except Exception:
+                    log.error("Error in handle_final_selection", exc_info=True)
+                    await interaction.response.send_message("Something went wrong... 😔", ephemeral=True)
+
             view = CardSelectView(
                 cards=cards,
                 registry=self.registry,
@@ -200,21 +214,16 @@ class CardCommands:
                 f"Found {len(cards)} cards matching '{query}'. Preview each card and select the one you want:",
                 view=view
             )
-        except Exception as e:
-            self.logger.error(f"Error in text_card: {e}", exc_info=True)
+        except Exception:
+            log.error("Error in text_card", exc_info=True)
             await ctx.send("Something went wrong... 😔")
 
-    async def display_art(
-        self,
-        ctx: commands.Context,
-        card_name: str,
-        variant: Optional[int] = 1
-    ):
-        """Handle card art display command."""
+    async def display_art(self, ctx: commands.Context, card_name: str, variant: Optional[int] = 1):
         try:
             cards = await self.search_cards(card_name)
             if not cards:
                 return await ctx.send(f"No results found for '{card_name}'.")
+
             if exact_match := next((c for c in cards if c.name.lower() == card_name.lower()), None):
                 if not exact_match.art_variants:
                     return await ctx.send(f"No art variants found for '{exact_match.name}'.")
@@ -226,21 +235,31 @@ class CardCommands:
 
                 embed = self.builder.build_art_embed(exact_match, variant_idx)
                 return await ctx.send(embed=embed)
-            async def handle_final_selection(interaction: discord.Interaction, chosen_card: Pokemon):
-                if not chosen_card.art_variants:
-                    return await interaction.response.send_message(
-                        f"No art variants found for '{chosen_card.name}'.",
-                        ephemeral=True
-                    )
-                variant_idx = (variant or 1) - 1
-                if variant_idx < 0 or variant_idx >= len(chosen_card.art_variants):
-                    return await interaction.response.send_message(
-                        f"Invalid variant number. Available variants: 1-{len(chosen_card.art_variants)}",
-                        ephemeral=True
-                    )
 
-                embed = self.builder.build_art_embed(chosen_card, variant_idx)
-                await interaction.message.edit(embed=embed, view=None)
+            async def handle_final_selection(interaction: discord.Interaction, chosen_card: Pokemon):
+                try:
+                    if not chosen_card.art_variants:
+                        return await interaction.response.send_message(
+                            f"No art variants found for '{chosen_card.name}'.",
+                            ephemeral=True
+                        )
+                    variant_idx = (variant or 1) - 1
+                    if variant_idx < 0 or variant_idx >= len(chosen_card.art_variants):
+                        return await interaction.response.send_message(
+                            f"Invalid variant number. Available variants: 1-{len(chosen_card.art_variants)}",
+                            ephemeral=True
+                        )
+
+                    embed = self.builder.build_art_embed(chosen_card, variant_idx)
+                    try:
+                        await interaction.message.edit(embed=embed, view=None)
+                    except discord.NotFound:
+                        await interaction.response.send_message(embed=embed)
+                    except Exception:
+                        await interaction.response.send_message(embed=embed)
+                except Exception:
+                    log.error("Error in art display final selection", exc_info=True)
+                    await interaction.response.send_message("Something went wrong... 😔", ephemeral=True)
 
             view = CardSelectView(
                 cards=cards,
@@ -255,14 +274,13 @@ class CardCommands:
                 view=view
             )
 
-        except ValueError as e:
+        except ValueError:
             await ctx.send(f"Art not found for '{card_name}'.")
-        except Exception as e:
-            self.logger.error(f"Error displaying art: {e}", exc_info=True)
+        except Exception:
+            log.error("Error in display_art", exc_info=True)
             await ctx.send("Something went wrong while fetching the card art.")
 
     async def handle_card_mentions(self, message: discord.Message):
-        """Handle card mentions in messages using <<card name>> syntax."""
         if message.author.bot:
             return
 
@@ -271,20 +289,18 @@ class CardCommands:
             if not card_names:
                 return
 
-            self.logger.debug(f"Found card mentions: {card_names}")
             found_cards = []
-            for name in card_names[:5]:  # Limit to 5 cards per message
+            for name in card_names[:5]:
                 cards = await self.search_cards(name)
                 if cards:
                     found_cards.append(cards[0])
 
             if found_cards:
-                self.logger.info(f"Responding to {len(found_cards)} card mentions")
                 embeds = []
                 for pokemon in found_cards:
                     embed = await self.builder.build_card_embed(pokemon, as_full_art=False)
                     embeds.append(embed)
                 await message.reply(embeds=embeds)
 
-        except Exception as e:
-            self.logger.error(f"Error handling card mentions: {e}", exc_info=True)
+        except Exception:
+            log.error("Error in handle_card_mentions", exc_info=True)

@@ -1,8 +1,5 @@
 from typing import List, Dict, Any, Callable, Optional, Union
 from difflib import SequenceMatcher
-import logging
-
-log = logging.getLogger("red.pokemonmeta.utils.fsearch")
 
 __all__ = ['fuzzy_search', 'fuzzy_search_multi']
 
@@ -26,27 +23,23 @@ def fuzzy_search(
     Returns:
         List of matching items, sorted by relevance
     """
-    try:
-        query = query.lower()
-        matches = []
-        for item in items:
-            target = str(item.get(key, "")).lower()
-            if not target:
-                continue
-            ratio = SequenceMatcher(None, query, target).ratio()
-            if query in target:
-                ratio += exact_bonus
-            if query == target:
-                ratio += exact_bonus * 2
-            if target.startswith(query):
-                ratio += exact_bonus
-            if ratio >= threshold:
-                matches.append({**item, "_score": ratio})
-        matches.sort(key=lambda x: x["_score"], reverse=True)
-        return matches[:max_results]
-    except Exception as e:
-        log.error(f"Error in fuzzy search: {str(e)}")
-        return []
+    query = query.lower()
+    matches = []
+    for item in items:
+        target = str(item.get(key, "")).lower()
+        if not target:
+            continue
+        ratio = SequenceMatcher(None, query, target).ratio()
+        if query in target:
+            ratio += exact_bonus
+        if query == target:
+            ratio += exact_bonus * 2
+        if target.startswith(query):
+            ratio += exact_bonus
+        if ratio >= threshold:
+            matches.append({**item, "_score": ratio})
+    matches.sort(key=lambda x: x["_score"], reverse=True)
+    return matches[:max_results]
 
 def fuzzy_search_multi(
     query: str,
@@ -70,37 +63,29 @@ def fuzzy_search_multi(
     Returns:
         List of matching items, sorted by relevance
     """
-    try:
-        query = query.lower()
-        matches = {}
-        for item in items:
-            max_score = 0
-            for config in search_configs:
-                key = config['key']
-                weight = float(config.get('weight', 1.0))
-                transform = config.get('transform', str)
-                exact_bonus = float(config.get('exact_bonus', 0.3))
-                raw_value = item.get(key)
-                if raw_value is None:
-                    continue
-                try:
-                    target = transform(raw_value).lower()
-                    ratio = SequenceMatcher(None, query, target).ratio() * weight
-                    if query in target:
-                        ratio += exact_bonus * weight
-                    if query == target:
-                        ratio += exact_bonus * 2 * weight
-                    if target.startswith(query):
-                        ratio += exact_bonus * weight
-                    max_score = max(max_score, ratio)
-                except Exception as e:
-                    log.error(f"Error transforming value for key {key}: {str(e)}")
-                    continue
-            if max_score >= threshold:
-                matches[item.get('id')] = {**item, "_score": max_score}
-        results = list(matches.values())
-        results.sort(key=lambda x: x["_score"], reverse=True)
-        return results[:max_results]
-    except Exception as e:
-        log.error(f"Error in multi-field fuzzy search: {str(e)}")
-        return []
+    query = query.lower()
+    matches = {}
+    for item in items:
+        max_score = 0
+        for config in search_configs:
+            key = config['key']
+            weight = float(config.get('weight', 1.0))
+            transform = config.get('transform', str)
+            exact_bonus = float(config.get('exact_bonus', 0.3))
+            raw_value = item.get(key)
+            if raw_value is None:
+                continue
+            target = transform(raw_value).lower()
+            ratio = SequenceMatcher(None, query, target).ratio() * weight
+            if query in target:
+                ratio += exact_bonus * weight
+            if query == target:
+                ratio += exact_bonus * 2 * weight
+            if target.startswith(query):
+                ratio += exact_bonus * weight
+            max_score = max(max_score, ratio)
+        if max_score >= threshold:
+            matches[item.get('id')] = {**item, "_score": max_score}
+    results = list(matches.values())
+    results.sort(key=lambda x: x["_score"], reverse=True)
+    return results[:max_results]

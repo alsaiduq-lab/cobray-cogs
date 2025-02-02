@@ -2,11 +2,10 @@ import discord
 import logging
 from typing import Optional, List, Union
 from urllib.parse import quote
+from .images import ImagePipeline
 from ..core.models import Pokemon, RARITY_MAPPING
 
 class EmbedBuilder:
-    """Handles building Discord embeds for Pokemon cards."""
-
     CDN_BASE = "https://s3.duellinksmeta.com"
 
     DISCORD_EMOJIS = {
@@ -14,7 +13,7 @@ class EmbedBuilder:
         "Fire": "<:FireEnergy:1335228250812579910>",
         "Water": "<:WaterEnergy:1335228194940387418>",
         "Lightning": "<:LightningEnergy:1335228231653261442>",
-        "Fighting": "<:FightingEnergy:1335228265190785158>", 
+        "Fighting": "<:FightingEnergy:1335228265190785158>",
         "Psychic": "<:PsychicEnergy:1335228211017023488>",
         "Darkness": "<:DarknessEnergy:1335228325139972107>",
         "Metal": "<:MetalEnergy:1335228220886224936>",
@@ -28,7 +27,7 @@ class EmbedBuilder:
         "Fire": "🔥",
         "Water": "💧",
         "Lightning": "⚡",
-        "Fighting": "👊", 
+        "Fighting": "👊",
         "Psychic": "🔮",
         "Darkness": "🌑",
         "Metal": "⚙️",
@@ -51,7 +50,9 @@ class EmbedBuilder:
         "Colorless": 0xC6C6A7
     }
 
-    def __init__(self, *, log=None):
+    def __init__(self, image_pipeline: ImagePipeline, *, log=None):
+        """Initialize the EmbedBuilder with an image pipeline and logger."""
+        self.image_pipeline = image_pipeline
         self.logger = log or logging.getLogger("red.pokemonmeta.utils.embeds")
 
     def _get_energy_emoji(self, energy_type: str) -> str:
@@ -69,10 +70,7 @@ class EmbedBuilder:
             return self.TYPE_EMOJIS.get(energy_type, "⭐")
 
     def _format_energy_cost(self, energy_list: Union[List[str], List[List[str]]]) -> str:
-        """
-        Format all energy costs for a move.
-        Handles both flat lists and nested lists of energy types.
-        """
+        """Format all energy costs for a move."""
         if not energy_list:
             return ""
         try:
@@ -93,7 +91,7 @@ class EmbedBuilder:
             return " ".join(emojis)
         except Exception as e:
             self.logger.error(f"Error formatting energy cost {energy_list}: {e}", exc_info=True)
-            return str(energy_list)  # Fallback to string representation
+            return str(energy_list)
 
     def _get_type_color(self, pokemon: Pokemon) -> int:
         if pokemon.type:
@@ -104,16 +102,12 @@ class EmbedBuilder:
 
     def _get_card_image_url(self, pokemon: Pokemon, variant_idx: int = 0) -> Optional[str]:
         try:
-            mongo_id = getattr(pokemon, '_id', None)
-            self.logger.debug(f"Card mongo_id: {mongo_id}")
-            if mongo_id:
-                url = f"{self.CDN_BASE}/pkm_img/cards/{mongo_id}_w420.webp"
-                self.logger.debug(f"Generated image URL: {url}")
-                return url
-            self.logger.warning("No MongoDB _id found for card")
-            return None
+            if self.image_pipeline is None:
+                self.logger.error("No image pipeline configured")
+                return None
+            return self.image_pipeline.get_cdn_card_url(pokemon)
         except Exception as e:
-            self.logger.error(f"Error generating card image URL: {e}", exc_info=True)
+            self.logger.error(f"Error getting card image URL: {e}", exc_info=True)
             return None
 
     async def build_card_embed(self, pokemon: Pokemon, *, as_full_art: bool = False) -> discord.Embed:
@@ -123,7 +117,7 @@ class EmbedBuilder:
             if getattr(pokemon, 'ex', False):
                 title += " ex"
             embed = discord.Embed(
-                title=f"{title}",
+                title=title,
                 color=self._get_type_color(pokemon)
             )
 
