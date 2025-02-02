@@ -221,8 +221,8 @@ class EmbedBuilder(BaseCardEmbed):
             )
 
             type_parts = []
-            if pokemon.type:
-                type_parts.append(f"Type: {self._get_energy_emoji(pokemon.type)}")
+            if pokemon.energy_type:
+                type_parts.append(f"Type: {self._get_energy_emoji(pokemon.energy_type[0])}")
             if pokemon.hp:
                 type_parts.append(f"HP: {pokemon.hp}")
             if pokemon.rarity:
@@ -321,7 +321,7 @@ class EmbedBuilder(BaseCardEmbed):
                 title += " ex"
             embed = discord.Embed(
                 title=title,
-                color=self.TYPE_COLORS.get(getattr(card, 'type', None), 0x808080)
+                color=self.TYPE_COLORS.get(getattr(card, 'energy_type', [None])[0], 0x808080)
             )
 
             if image_url := self._get_card_image_url(card, variant_idx):
