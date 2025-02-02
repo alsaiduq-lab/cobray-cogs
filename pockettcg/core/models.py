@@ -86,6 +86,7 @@ class Pokemon:
     name: str
     card_type: str
     energy_type: List[str]
+    _id: Optional[str] = None  # MongoDB ID
     sub_type: Optional[str] = None
     hp: Optional[str] = None
     weakness: List[str] = field(default_factory=list)
@@ -133,18 +134,17 @@ class Pokemon:
 
             print(f"Processing card: {data.get('name')} (ID: {data.get('_id')})")
 
+            # Store both the MongoDB ID and the card ID separately
+            mongo_id = data.get('_id')
             card_id = (
                 data.get('pokemonId') or
-                data.get('_id') or
-                data.get('_filename') or
                 data.get('id') or
+                data.get('_filename') or
                 data.get('filename')
             )
 
-            print(f"Found card_id: {card_id}")
-
             if not card_id:
-                print(f"Warning: No ID found for card data: {data}")
+                print(f"Warning: No card ID found for card data: {data}")
                 if isinstance(data, dict):
                     card_id = next((v for k, v in data.items() if 'id' in k.lower()), None)
                 if not card_id:
@@ -249,6 +249,7 @@ class Pokemon:
 
             return cls(
                 id=card_id,
+                _id=mongo_id,  # Store the MongoDB ID
                 name=data.get('name', ''),
                 card_type=card_type,
                 energy_type=energy_type,
