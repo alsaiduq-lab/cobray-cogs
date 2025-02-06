@@ -20,7 +20,8 @@ from .constants import (
 from .log import TournamentLogger
 from .backup import TournamentBackup
 
-class DuelLinksTournament(commands.Cog):
+class DuelLinksTournament(commands.Cog, name="DuelLinksTournament"):
+    """A cog for managing Yu-Gi-Oh! Duel Links tournaments."""
     def __init__(self, bot: commands.Bot):
         self.bot = bot
         self.participants: Dict[int, ParticipantInfo] = {}
@@ -31,6 +32,7 @@ class DuelLinksTournament(commands.Cog):
         self.tournament_started = False
         self.tournament_config = DEFAULT_TOURNAMENT_CONFIG.copy()
         self.guild_settings = {}
+        
         # Initialize logger and backup with default directories
         self.logger = TournamentLogger()
         self.backup = TournamentBackup()
@@ -76,6 +78,7 @@ class DuelLinksTournament(commands.Cog):
         if self.tournament_config["deck_check_required"] and not attachments:
             await interaction.response.send_message(ERROR_MESSAGES["DECK_REQUIRED"], ephemeral=True)
             return
+        
         deck_info = None
         if main_deck or extra_deck or side_deck:
             attachments = [a for a in [main_deck, extra_deck, side_deck] if a is not None]
@@ -160,11 +163,13 @@ class DuelLinksTournament(commands.Cog):
         if match_id is None:
             await interaction.response.send_message(ERROR_MESSAGES["NO_MATCH_FOUND"])
             return
+        
         best_of = self.tournament_config["best_of"]
         max_wins = (best_of // 2) + 1
         if wins > max_wins or losses > max_wins:
             await interaction.response.send_message(ERROR_MESSAGES["INVALID_SCORE"](best_of))
             return
+            
         match = self.matches[match_id]
         match["score"] = f"{wins}-{losses}"
         match["status"] = MatchStatus.COMPLETED
@@ -289,6 +294,7 @@ class DuelLinksTournament(commands.Cog):
             return
 
         current_matches = [m for m in self.matches.values() if m["round"] == self.current_round]
+        
         embed = discord.Embed(
             title=f"Tournament Bracket - Round {self.current_round}",
             color=discord.Color.blue()
@@ -297,11 +303,13 @@ class DuelLinksTournament(commands.Cog):
         for match in current_matches:
             player1 = await self.bot.fetch_user(match["player1"])
             player2 = await self.bot.fetch_user(match["player2"])
+            
             status = "🟡 In Progress"
             if match["status"] == MatchStatus.COMPLETED:
                 status = f"✅ Complete - Score: {match['score']}"
             elif match["status"] == MatchStatus.DQ:
                 status = "⛔ DQ"
+                
             embed.add_field(
                 name=f"Match {list(self.matches.keys())[list(self.matches.values()).index(match)]}",
                 value=f"{player1.mention} vs {player2.mention}\n{status}",
