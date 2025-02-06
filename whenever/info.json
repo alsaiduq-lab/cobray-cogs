@@ -1,0 +1,26 @@
+{
+  "name": "whenever",
+  "author": ["Cobray"],
+  "short": "Automated tournament management system for Yu-Gi-Oh! Duel Links",
+  "description": "Comprehensive tournament management system with deck validation, bracket generation, and match result tracking for Duel Links competitions.",
+  "install_msg": "Thanks for installing the Whenever cog! Use [p]whenever to get started.",
+  "tags": ["duellinks", "tournament", "yugioh", "gaming"],
+  "min_bot_version": "3.5.0",
+  "end_user_data_statement": "This cog stores temporary tournament data including participant IDs, deck lists, and match results. Data is automatically cleared after tournament completion.",
+  "type": "COG",
+  "required_cogs": {},
+  "requirements": ["pillow>=9.5.0", "pandas>=2.0.0", "numpy>=1.24.0"],
+  "permissions": [
+    "manage_messages",
+    "embed_links",
+    "attach_files",
+    "manage_roles",
+    "add_reactions",
+    "manage_channels"
+  ],
+  "min_python_version": [3, 10, 0],
+  "hidden": false,
+  "disabled": false,
+  "loadable": true,
+  "remove_with_data_deletion": false
+}
