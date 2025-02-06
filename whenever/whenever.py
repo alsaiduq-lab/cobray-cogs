@@ -108,30 +108,30 @@ class DuelLinksTournament(commands.Cog):
         )
         await ctx.respond(embed=embed)
 
-   async def validate_deck_images(self, ctx: discord.ApplicationContext, attachments: list[discord.Attachment]) -> DeckInfo:
-    """Validate multiple deck image submissions"""
-    if not attachments:
-        raise ValueError("No deck images provided")
+    async def validate_deck_images(self, ctx: discord.ApplicationContext, attachments: list[discord.Attachment]) -> DeckInfo:
+        """Validate multiple deck image submissions"""
+            if not attachments:
+            raise ValueError("No deck images provided")
 
-    if len(attachments) > 3:
-        raise ValueError("Maximum of 3 deck images allowed (Main Deck, Extra Deck, Side Deck)")
+            if len(attachments) > 3:
+            raise ValueError("Maximum of 3 deck images allowed (Main Deck, Extra Deck, Side Deck)")
 
-    if len(attachments) < 1:
-        raise ValueError("At least one deck image (Main Deck) is required")
+        if len(attachments) < 1:
+            raise ValueError("At least one deck image (Main Deck) is required")
 
-    main_deck = attachments[0]
-    extra_deck = attachments[1] if len(attachments) > 1 else None
-    side_deck = attachments[2] if len(attachments) > 2 else None
+        main_deck = attachments[0]
+        extra_deck = attachments[1] if len(attachments) > 1 else None
+        side_deck = attachments[2] if len(attachments) > 2 else None
 
-    return {
-        "main_deck_url": main_deck.url,
-        "extra_deck_url": extra_deck.url if extra_deck else None,
-        "side_deck_url": side_deck.url if side_deck else None,
-        "verification_status": VerificationStatus.PENDING,
-        "verification_notes": None,
-        "verified_by": None,
-        "verified_at": None
-    }
+        return {
+            "main_deck_url": main_deck.url,
+            "extra_deck_url": extra_deck.url if extra_deck else None,
+            "side_deck_url": side_deck.url if side_deck else None,
+            "verification_status": VerificationStatus.PENDING,
+            "verification_notes": None,
+            "verified_by": None,
+            "verified_at": None
+        }
 
     @commands.slash_command(name="report_result")
     async def report_result(
