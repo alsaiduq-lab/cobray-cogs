@@ -17,6 +17,8 @@ from .constants import (
     MatchInfo,
     DeckInfo
 )
+from .log import TournamentLogger
+from .backup import TournamentBackup
 
 class DuelLinksTournament(commands.Cog):
     def __init__(self, bot: commands.Bot):
@@ -29,6 +31,9 @@ class DuelLinksTournament(commands.Cog):
         self.tournament_started = False
         self.tournament_config = DEFAULT_TOURNAMENT_CONFIG.copy()
         self.guild_settings = {}
+        # Initialize logger and backup with default directories
+        self.logger = TournamentLogger()
+        self.backup = TournamentBackup()
 
     async def check_tournament_prerequisites(self, ctx: discord.Interaction) -> tuple[bool, str]:
         tournament_role = await self.get_tournament_role(ctx.guild.id)
@@ -50,7 +55,9 @@ class DuelLinksTournament(commands.Cog):
     async def register_player(
         self,
         interaction: discord.Interaction,
-        attachments: Optional[list[discord.Attachment]] = None
+        main_deck: Optional[discord.Attachment] = None,
+        extra_deck: Optional[discord.Attachment] = None,
+        side_deck: Optional[discord.Attachment] = None
     ):
         tournament_role = await self.get_tournament_role(interaction.guild.id)
         if tournament_role and tournament_role not in interaction.user.roles:
@@ -69,9 +76,9 @@ class DuelLinksTournament(commands.Cog):
         if self.tournament_config["deck_check_required"] and not attachments:
             await interaction.response.send_message(ERROR_MESSAGES["DECK_REQUIRED"], ephemeral=True)
             return
-        
         deck_info = None
-        if attachments:
+        if main_deck or extra_deck or side_deck:
+            attachments = [a for a in [main_deck, extra_deck, side_deck] if a is not None]
             try:
                 deck_info = await self.validate_deck_images(interaction, attachments)
             except ValueError as e:
@@ -95,7 +102,7 @@ class DuelLinksTournament(commands.Cog):
             "user_id": interaction.user.id,
             "deck_info": deck_info
         })
-        await self.backup.save_tournament_state(interaction.guild.id, {
+        self.backup.save_tournament_state(interaction.guild.id, {
             "participants": self.participants,
             "tournament_config": self.tournament_config,
             "registration_open": self.registration_open
@@ -153,13 +160,11 @@ class DuelLinksTournament(commands.Cog):
         if match_id is None:
             await interaction.response.send_message(ERROR_MESSAGES["NO_MATCH_FOUND"])
             return
-        
         best_of = self.tournament_config["best_of"]
         max_wins = (best_of // 2) + 1
         if wins > max_wins or losses > max_wins:
             await interaction.response.send_message(ERROR_MESSAGES["INVALID_SCORE"](best_of))
             return
-            
         match = self.matches[match_id]
         match["score"] = f"{wins}-{losses}"
         match["status"] = MatchStatus.COMPLETED
@@ -226,3 +231,81 @@ class DuelLinksTournament(commands.Cog):
             self.tournament_started = False
             self.current_round = 1
 
+    @commands.Cog.listener()
+    async def on_ready(self):
+        print("whenever is loaded and ready.")
+        for guild in self.bot.guilds:
+            state = self.backup.load_tournament_state(guild.id)
+            if state:
+                self.participants = state.get("participants", {})
+                self.matches = state.get("matches", {})
+                self.tournament_config = state.get("tournament_config", DEFAULT_TOURNAMENT_CONFIG.copy())
+                self.current_round = state.get("current_round", 1)
+                self.tournament_started = state.get("tournament_started", False)
+                self.logger.log_tournament_event(guild.id, "state_restored", {"restored_from": "backup"})
+
+    @commands.Cog.listener()
+    async def on_member_update(self, before: discord.Member, after: discord.Member):
+        tournament_role = await self.get_tournament_role(after.guild.id)
+        if not tournament_role:
+            return
+        if tournament_role in before.roles and tournament_role not in after.roles:
+            if after.id in self.participants and self.tournament_started:
+                del self.participants[after.id]
+                mod_channel = after.guild.get_channel(self.guild_settings[after.guild.id].get("mod_channel_id"))
+                self.logger.log_tournament_event(after.guild.id, "role_removed", {
+                    "user_id": after.id,
+                    "reason": "tournament_role_removed"
+                })
+                if mod_channel:
+                    embed = discord.Embed(
+                        title="Tournament Participant Removed",
+                        description=f"{after.mention} was removed from the tournament due to role removal.",
+                        color=discord.Color.red()
+                    )
+                    await mod_channel.send(embed=embed)
+                self.backup.save_tournament_state(after.guild.id, {
+                    "participants": self.participants,
+                    "matches": self.matches,
+                    "current_round": self.current_round
+                })
+
+    async def get_tournament_role(self, guild_id: int) -> Optional[discord.Role]:
+        """Get the tournament role for a guild."""
+        if guild_id not in self.guild_settings:
+            return None
+        role_id = self.guild_settings[guild_id].get("tournament_role_id")
+        if not role_id:
+            return None
+        guild = self.bot.get_guild(guild_id)
+        if not guild:
+            return None
+        return guild.get_role(role_id)
+
+    async def send_bracket_status(self, interaction: discord.Interaction):
+        """Send the current bracket status to the channel."""
+        if not self.matches:
+            await interaction.followup.send("No matches to display.")
+            return
+
+        current_matches = [m for m in self.matches.values() if m["round"] == self.current_round]
+        embed = discord.Embed(
+            title=f"Tournament Bracket - Round {self.current_round}",
+            color=discord.Color.blue()
+        )
+
+        for match in current_matches:
+            player1 = await self.bot.fetch_user(match["player1"])
+            player2 = await self.bot.fetch_user(match["player2"])
+            status = "🟡 In Progress"
+            if match["status"] == MatchStatus.COMPLETED:
+                status = f"✅ Complete - Score: {match['score']}"
+            elif match["status"] == MatchStatus.DQ:
+                status = "⛔ DQ"
+            embed.add_field(
+                name=f"Match {list(self.matches.keys())[list(self.matches.values()).index(match)]}",
+                value=f"{player1.mention} vs {player2.mention}\n{status}",
+                inline=False
+            )
+
+        await interaction.followup.send(embed=embed)
