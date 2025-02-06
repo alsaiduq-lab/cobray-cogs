@@ -31,7 +31,6 @@ class DuelLinksTournament(commands.Cog):
         self.guild_settings = {}
 
     async def check_tournament_prerequisites(self, ctx: discord.ApplicationContext) -> tuple[bool, str]:
-        """Check if all prerequisites are met to start a tournament"""
         tournament_role = await self.get_tournament_role(ctx.guild.id)
         if not tournament_role:
             return False, ERROR_MESSAGES["NO_TOURNAMENT_ROLE"]
@@ -53,7 +52,6 @@ class DuelLinksTournament(commands.Cog):
         ctx: discord.ApplicationContext,
         attachments: Optional[list[discord.Attachment]] = None
     ):
-        """Register for the tournament with deck screenshots"""
         tournament_role = await self.get_tournament_role(ctx.guild.id)
         if tournament_role and tournament_role not in ctx.author.roles:
             await ctx.respond(
@@ -109,11 +107,10 @@ class DuelLinksTournament(commands.Cog):
         await ctx.respond(embed=embed)
 
     async def validate_deck_images(self, ctx: discord.ApplicationContext, attachments: list[discord.Attachment]) -> DeckInfo:
-        """Validate multiple deck image submissions"""
-            if not attachments:
+        if not attachments:
             raise ValueError("No deck images provided")
 
-            if len(attachments) > 3:
+        if len(attachments) > 3:
             raise ValueError("Maximum of 3 deck images allowed (Main Deck, Extra Deck, Side Deck)")
 
         if len(attachments) < 1:
@@ -141,7 +138,6 @@ class DuelLinksTournament(commands.Cog):
         wins: int,
         losses: int
     ):
-        """Report match result"""
         if not self.tournament_started:
             await ctx.respond(ERROR_MESSAGES["TOURNAMENT_IN_PROGRESS"])
             return
@@ -170,7 +166,6 @@ class DuelLinksTournament(commands.Cog):
         match["loser"] = loser_id
         self.participants[winner_id]["wins"] += 1
         self.participants[loser_id]["losses"] += 1
-        # Log and backup
         self.logger.log_match_result(ctx.guild.id, match_id, winner_id, loser_id, match["score"])
         await self.backup.save_tournament_state(ctx.guild.id, {
             "participants": self.participants,
@@ -189,7 +184,6 @@ class DuelLinksTournament(commands.Cog):
         await self.check_round_completion(ctx)
 
     async def check_round_completion(self, ctx: discord.ApplicationContext):
-        """Check if current round is complete and create next round matches"""
         current_matches = [m for m in self.matches.values() if m["round"] == self.current_round]
         if not all(m["status"] == MatchStatus.COMPLETED for m in current_matches):
             return
@@ -244,7 +238,6 @@ class DuelLinksTournament(commands.Cog):
 
     @commands.Cog.listener()
     async def on_member_update(self, before: discord.Member, after: discord.Member):
-        """Handle tournament role changes"""
         tournament_role = await self.get_tournament_role(after.guild.id)
         if not tournament_role:
             return
