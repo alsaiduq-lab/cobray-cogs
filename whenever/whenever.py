@@ -1,16 +1,15 @@
+from redbot.core import commands
 import discord
-from discord.ext import commands
 from typing import Optional
 
 from .log import TournamentLogger
 from .backup import TournamentBackup
 from .tournament import TournamentManager
-from .constants import ERROR_MESSAGES
 
-class DuelLinksTournament(commands.Cog, name="DuelLinksTournament"):
+class DuelLinksTournament(commands.Cog):
     """A cog for managing Yu-Gi-Oh! Duel Links tournaments."""
-    
-    def __init__(self, bot: commands.Bot):
+
+    def __init__(self, bot):
         self.bot = bot
         self.logger = TournamentLogger()
         self.backup = TournamentBackup()
