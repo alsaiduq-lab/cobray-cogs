@@ -57,42 +57,61 @@ class TournamentManager:
 
     async def register_player(
         self,
-        interaction: discord.Interaction,
+        ctx,
         main_deck: Optional[discord.Attachment],
         extra_deck: Optional[discord.Attachment],
         side_deck: Optional[discord.Attachment]
     ):
         """Register a player for the tournament"""
-        tournament_role = await self.get_tournament_role(interaction.guild.id)
-        if tournament_role and tournament_role not in interaction.user.roles:
-            await interaction.response.send_message(
-                f"You need the {tournament_role.mention} role to participate in tournaments.",
-                ephemeral=True
-            )
+        is_interaction = hasattr(ctx, 'response')
+        user = ctx.user if is_interaction else ctx.author
+        guild = ctx.guild
+        tournament_role = await self.get_tournament_role(guild.id)
+        if tournament_role and tournament_role not in user.roles:
+            message = f"You need the {tournament_role.mention} role to participate in tournaments."
+            if is_interaction:
+                await ctx.response.send_message(message, ephemeral=True)
+            else:
+                await ctx.send(message)
             return
 
         if not self.registration_open:
-            await interaction.response.send_message(ERROR_MESSAGES["REGISTRATION_CLOSED"], ephemeral=True)
+            if is_interaction:
+                await ctx.response.send_message(ERROR_MESSAGES["REGISTRATION_CLOSED"], ephemeral=True)
+            else:
+                await ctx.send(ERROR_MESSAGES["REGISTRATION_CLOSED"])
             return
-            
-        if interaction.user.id in self.participants:
-            await interaction.response.send_message(ERROR_MESSAGES["ALREADY_REGISTERED"], ephemeral=True)
+
+        if user.id in self.participants:
+            if is_interaction:
+                await ctx.response.send_message(ERROR_MESSAGES["ALREADY_REGISTERED"], ephemeral=True)
+            else:
+                await ctx.send(ERROR_MESSAGES["ALREADY_REGISTERED"])
             return
 
         attachments = [a for a in [main_deck, extra_deck, side_deck] if a is not None]
         if self.tournament_config["deck_check_required"] and not attachments:
-            await interaction.response.send_message(ERROR_MESSAGES["DECK_REQUIRED"], ephemeral=True)
+            if is_interaction:
+                await ctx.response.send_message(ERROR_MESSAGES["DECK_REQUIRED"], ephemeral=True)
+            else:
+                await ctx.send(ERROR_MESSAGES["DECK_REQUIRED"])
             return
 
         deck_info = None
         if attachments:
             try:
-                deck_info = await self.validate_deck_images(interaction, attachments)
+                deck_info = await self.validate_deck_images(ctx, attachments)
             except ValueError as e:
-                await interaction.response.send_message(f"Deck validation failed: {str(e)}")
+                if is_interaction:
+                    await ctx.response.send_message(f"Deck validation failed: {str(e)}")
+                else:
+                    await ctx.send(f"Deck validation failed: {str(e)}")
                 return
             except Exception as e:
-                await interaction.response.send_message("An error occurred while validating your deck. Please try again.")
+                if is_interaction:
+                    await ctx.response.send_message("An error occurred while validating your deck. Please try again.")
+                else:
+                    await ctx.send("An error occurred while validating your deck. Please try again.")
                 print(f"Deck validation error: {str(e)}")
                 return
 
@@ -104,25 +123,27 @@ class TournamentManager:
             "registration_time": datetime.now().isoformat(),
             "dq_info": None
         }
-        
-        self.participants[interaction.user.id] = participant_info
-        self.logger.log_tournament_event(interaction.guild.id, "registration", {
-            "user_id": interaction.user.id,
+        self.participants[user.id] = participant_info
+        self.logger.log_tournament_event(guild.id, "registration", {
+            "user_id": user.id,
             "deck_info": deck_info
         })
-        
-        self.backup.save_tournament_state(interaction.guild.id, {
+        self.backup.save_tournament_state(guild.id, {
             "participants": self.participants,
             "tournament_config": self.tournament_config,
             "registration_open": self.registration_open
         })
-        
+
         embed = discord.Embed(
             title="Registration Successful!",
-            description=f"Player: {interaction.user.mention}",
+            description=f"Player: {user.mention}",
             color=discord.Color.green()
         )
-        await interaction.response.send_message(embed=embed)
+
+        if is_interaction:
+            await ctx.response.send_message(embed=embed)
+        else:
+            await ctx.send(embed=embed)
 
     async def validate_deck_images(self, interaction: discord.Interaction, attachments: list[discord.Attachment]) -> DeckInfo:
         """Validate submitted deck images"""
@@ -173,13 +194,13 @@ class TournamentManager:
         if match_id is None:
             await interaction.response.send_message(ERROR_MESSAGES["NO_MATCH_FOUND"])
             return
-        
+
         best_of = self.tournament_config["best_of"]
         max_wins = (best_of // 2) + 1
         if wins > max_wins or losses > max_wins:
             await interaction.response.send_message(ERROR_MESSAGES["INVALID_SCORE"](best_of))
             return
-            
+
         match = self.matches[match_id]
         match["score"] = f"{wins}-{losses}"
         match["status"] = MatchStatus.COMPLETED
@@ -187,19 +208,18 @@ class TournamentManager:
         loser_id = opponent.id if wins > losses else interaction.user.id
         match["winner"] = winner_id
         match["loser"] = loser_id
-        
+
         self.participants[winner_id]["wins"] += 1
         self.participants[loser_id]["losses"] += 1
-        
+
         self.logger.log_match_result(interaction.guild.id, match_id, winner_id, loser_id, match["score"])
-        
         self.backup.save_tournament_state(interaction.guild.id, {
             "participants": self.participants,
             "matches": self.matches,
             "current_round": self.current_round,
             "tournament_started": self.tournament_started
         })
-        
+
         embed = discord.Embed(
             title="Match Result Reported",
             description=f"Match {match_id}: {interaction.user.mention} vs {opponent.mention}",
@@ -259,7 +279,6 @@ class TournamentManager:
             return
 
         current_matches = [m for m in self.matches.values() if m["round"] == self.current_round]
-        
         embed = discord.Embed(
             title=f"Tournament Bracket - Round {self.current_round}",
             color=discord.Color.blue()
@@ -268,13 +287,11 @@ class TournamentManager:
         for match in current_matches:
             player1 = await self.bot.fetch_user(match["player1"])
             player2 = await self.bot.fetch_user(match["player2"])
-            
             status = "🟡 In Progress"
             if match["status"] == MatchStatus.COMPLETED:
                 status = f"✅ Complete - Score: {match['score']}"
             elif match["status"] == MatchStatus.DQ:
                 status = "⛔ DQ"
-                
             embed.add_field(
                 name=f"Match {list(self.matches.keys())[list(self.matches.values()).index(match)]}",
                 value=f"{player1.mention} vs {player2.mention}\n{status}",
@@ -288,6 +305,7 @@ class TournamentManager:
         tournament_role = await self.get_tournament_role(after.guild.id)
         if not tournament_role:
             return
+
         if tournament_role in before.roles and tournament_role not in after.roles:
             if after.id in self.participants and self.tournament_started:
                 del self.participants[after.id]

@@ -37,3 +37,7 @@ Type `[p]whenever` for command list
 ## Support
 
 For issues and suggestions, open an issue on GitHub or contact the developer.
+
+## Areas for Improvement
+- Error handling could be more comprehensive
+- The tournament bracket visualization could be improved
