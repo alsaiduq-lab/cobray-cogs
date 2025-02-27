@@ -45,12 +45,13 @@
   "weakness": [
     "Fighting"
   ],
-  "popRank": 218,
+  "popRank": 1.7976931348623157e+308,
   "artVariants": [
     {
       "_id": "671ef1105279bcfb3c1e25b5",
       "name": "Golbat"
     }
   ],
-  "limitlessId": "A1 173"
+  "limitlessId": "A1 173",
+  "deckTypes": []
 }

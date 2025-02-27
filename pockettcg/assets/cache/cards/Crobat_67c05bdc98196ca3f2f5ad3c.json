@@ -1,0 +1,45 @@
+{
+  "_id": "67c05bdc98196ca3f2f5ad3c",
+  "name": "Crobat",
+  "energyType": [
+    "Darkness"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "110",
+  "pokemonId": "A2P-9",
+  "limitlessId": "",
+  "rarity": "d-3",
+  "weakness": [
+    "Fighting"
+  ],
+  "description": "",
+  "release": null,
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Cunning Link",
+      "text": "Once during your turn, if you have Arceus or Arceus ex in play, you may do 30 damage to your opponent's Active Pokémon",
+      "_id": "67c05bdc98196ca3f2f5ad3d"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Darkness Fang",
+      "text": "\n",
+      "energyCost": [
+        "Darkness",
+        null,
+        null,
+        null
+      ],
+      "hp": "50",
+      "_id": "67c05bdc98196ca3f2f5ad3e"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false
+}

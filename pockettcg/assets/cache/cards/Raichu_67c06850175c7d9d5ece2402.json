@@ -1,0 +1,47 @@
+{
+  "_id": "67c06850175c7d9d5ece2402",
+  "name": "Raichu",
+  "energyType": [
+    "Lightning"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "90",
+  "pokemonId": "A2P-28",
+  "limitlessId": "",
+  "rarity": "p",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": null,
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Resilience Link",
+      "text": "If you have Arceus or Arceus ex in play, this Pokémon takes -30 damage from attacks.",
+      "_id": "67c06850175c7d9d5ece2403"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Spark ",
+      "text": "This attack also does 20 damage to 1 of your opponent's Benched Pokémon",
+      "energyCost": [
+        "Lightning",
+        "Lightning",
+        null,
+        null
+      ],
+      "hp": "40",
+      "_id": "67c06850175c7d9d5ece2404"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false,
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

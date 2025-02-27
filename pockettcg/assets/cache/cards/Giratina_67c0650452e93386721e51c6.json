@@ -1,0 +1,38 @@
+{
+  "_id": "67c0650452e93386721e51c6",
+  "name": "Giratina",
+  "energyType": [
+    "Dragon"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "120",
+  "pokemonId": "A2P-15",
+  "limitlessId": "",
+  "rarity": "d-3",
+  "weakness": [],
+  "retreat": 3,
+  "description": "",
+  "release": null,
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Crisis Dive",
+      "text": "Discard 2 random Energy from this Pokémon.\n\n",
+      "energyCost": [
+        "Grass",
+        "Psychic",
+        "Colorless",
+        null
+      ],
+      "hp": "120",
+      "_id": "67c0650452e93386721e51c7"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false
+}

@@ -1,0 +1,45 @@
+{
+  "_id": "67c0591452e93386721e093b",
+  "name": "Arceus ex",
+  "energyType": [
+    "Colorless"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "140",
+  "pokemonId": "A2P-1",
+  "limitlessId": "",
+  "rarity": "d-4",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": null,
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Fabled Luster",
+      "text": "This Pokémon can't be affected by any Special Conditions.",
+      "_id": "67c0591452e93386721e093c"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Ultimate Force",
+      "text": "This attack does 20 more damage for each of your Benched Pokémon.",
+      "energyCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "70+",
+      "_id": "67c0591452e93386721e093d"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": true
+}

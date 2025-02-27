@@ -1,0 +1,40 @@
+{
+  "_id": "67c0653498196ca3f2f5e2d3",
+  "name": "Burmy",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "50",
+  "pokemonId": "A2P-17",
+  "limitlessId": "",
+  "rarity": "d-1",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": null,
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Ram ",
+      "text": "\n",
+      "energyCost": [
+        "Grass",
+        null,
+        null,
+        null
+      ],
+      "hp": "20",
+      "_id": "67c0653498196ca3f2f5e2d4"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false
+}

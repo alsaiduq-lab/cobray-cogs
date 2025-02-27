@@ -1,0 +1,45 @@
+{
+  "_id": "67c0654f98196ca3f2f5e3da",
+  "name": "Magnemite",
+  "energyType": [
+    "Metal"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A2P-18",
+  "limitlessId": "",
+  "rarity": "d-1",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": null,
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67c06ac298196ca3f2f607ea",
+      "name": "Magnemite"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Tackle",
+      "text": "\n",
+      "energyCost": [
+        "Metal",
+        null,
+        null,
+        null
+      ],
+      "hp": "20",
+      "_id": "67c06ae598196ca3f2f60942"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false
+}

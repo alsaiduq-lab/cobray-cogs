@@ -12,7 +12,7 @@
   "weakness": [],
   "retreat": 1,
   "description": "",
-  "popRank": 193,
+  "popRank": 93,
   "alternateArt": false,
   "artVariants": [],
   "abilities": [],
@@ -48,5 +48,8 @@
   ],
   "ex": false,
   "limitlessId": "A2 121",
-  "release": "2025-01-30T06:00:00.000Z"
+  "release": "2025-01-30T06:00:00.000Z",
+  "deckTypes": [
+    "Garchomp"
+  ]
 }

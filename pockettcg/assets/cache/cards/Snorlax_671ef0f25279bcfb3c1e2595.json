@@ -48,12 +48,15 @@
     "Fighting"
   ],
   "release": "2024-10-30T03:00:00.000Z",
-  "popRank": 223,
+  "popRank": 251,
   "artVariants": [
     {
       "_id": "671ef1105279bcfb3c1e25bd",
       "name": "Snorlax"
     }
   ],
-  "limitlessId": "A1 211"
+  "limitlessId": "A1 211",
+  "deckTypes": [
+    "Palkia ex Greninja"
+  ]
 }

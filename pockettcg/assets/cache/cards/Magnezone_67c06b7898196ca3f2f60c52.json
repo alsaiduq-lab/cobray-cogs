@@ -1,0 +1,44 @@
+{
+  "_id": "67c06b7898196ca3f2f60c52",
+  "name": "Magnezone",
+  "energyType": [
+    "Metal"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "140",
+  "pokemonId": "A2P-32",
+  "rarity": "d-3",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 2,
+  "description": "",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Resilience Link",
+      "text": "If you have Arceus or Arceus ex in play, this Pokémon takes -30 damage from attacks.",
+      "_id": "67c06b7898196ca3f2f60c53"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Power Beam",
+      "text": "\n\n",
+      "energyCost": [
+        "Metal",
+        "Metal",
+        "Colorless",
+        null
+      ],
+      "hp": "80",
+      "_id": "67c06b7898196ca3f2f60c54"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false
+}

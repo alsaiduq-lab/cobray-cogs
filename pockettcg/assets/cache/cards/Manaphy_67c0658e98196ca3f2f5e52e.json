@@ -1,0 +1,41 @@
+{
+  "_id": "67c0658e98196ca3f2f5e52e",
+  "name": "Manaphy",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "50",
+  "pokemonId": "A2P-19",
+  "limitlessId": "",
+  "rarity": "p",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": null,
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Oceanic Gift",
+      "text": "Choose 2 of your Benched Water Pokémon. For each of those Pokémon, take a  Energy from your Energy Zone and attach it to that Pokémon.\n",
+      "energyCost": [
+        "Water",
+        null,
+        null,
+        null
+      ],
+      "hp": "20",
+      "_id": "67c0658e98196ca3f2f5e52f"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false,
+  "nameRelease": "2025-01-30T06:00:00.000Z"
+}

@@ -1,0 +1,40 @@
+{
+  "_id": "67c0651d98196ca3f2f5e23b",
+  "name": "Nosepass",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "80",
+  "pokemonId": "A2P-16",
+  "limitlessId": "",
+  "rarity": "d-1",
+  "weakness": [
+    "Grass"
+  ],
+  "retreat": 3,
+  "description": "",
+  "release": null,
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Tackle ",
+      "text": "\n",
+      "energyCost": [
+        "Colorless",
+        null,
+        null,
+        null
+      ],
+      "hp": "10",
+      "_id": "67c0651d98196ca3f2f5e23c"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false
+}

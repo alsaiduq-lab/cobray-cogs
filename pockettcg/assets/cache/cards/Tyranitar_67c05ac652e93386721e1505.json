@@ -1,0 +1,46 @@
+{
+  "_id": "67c05ac652e93386721e1505",
+  "name": "Tyranitar",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "160",
+  "pokemonId": "A2P-3",
+  "limitlessId": "",
+  "rarity": "d-3",
+  "weakness": [
+    "Grass"
+  ],
+  "retreat": 4,
+  "description": "",
+  "release": null,
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Power Link",
+      "text": "If you have Arceus or Arceus ex in play, attacks used by this Pokémon do +30 damage to your opponent's Active Pokémon",
+      "_id": "67c05ac652e93386721e1506"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Land Crush",
+      "text": "",
+      "energyCost": [
+        "Fighting",
+        "Fighting",
+        "Fighting",
+        "Colorless"
+      ],
+      "hp": "130",
+      "_id": "67c05ac652e93386721e1507"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false
+}

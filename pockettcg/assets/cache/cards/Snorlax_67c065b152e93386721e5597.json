@@ -1,0 +1,41 @@
+{
+  "_id": "67c065b152e93386721e5597",
+  "name": "Snorlax",
+  "energyType": [
+    "Colorless"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "140",
+  "pokemonId": "A2P-20",
+  "limitlessId": "",
+  "rarity": "p",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 4,
+  "description": "",
+  "release": null,
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Collapse ",
+      "text": "This Pokémon is now Asleep.\n\n",
+      "energyCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "100",
+      "_id": "67c065b152e93386721e5598"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false,
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

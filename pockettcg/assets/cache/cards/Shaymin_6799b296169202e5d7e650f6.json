@@ -16,7 +16,7 @@
   "retreat": 1,
   "description": "",
   "release": "2025-01-30T06:00:00.000Z",
-  "popRank": 153,
+  "popRank": 46,
   "alternateArt": false,
   "artVariants": [
     {
@@ -63,5 +63,29 @@
       "type": "sets"
     }
   ],
-  "ex": false
+  "ex": false,
+  "deckTypes": [
+    "Exeggutor ex Celebi ex",
+    "Darkrai ex Weezing",
+    "Exeggutor ex",
+    "Charizard ex",
+    "Celebi ex  Serperior",
+    "Dialga ex Yanmega ex",
+    "Dialga ex Melmetal",
+    "Magnezone",
+    "Garchomp",
+    "Darkrai ex Magnezone",
+    "Palkia ex",
+    "Palkia ex Greninja",
+    "Venusaur ex",
+    "Yanmega ex",
+    "Weavile ex",
+    "Infernape ex",
+    "Moltres ex",
+    "Darkrai ex Greninja",
+    "Skarmory",
+    "Wigglytuff ex",
+    "Darkrai EX",
+    "Rhyperior"
+  ]
 }

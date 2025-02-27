@@ -16,7 +16,7 @@
   "retreat": 1,
   "description": "",
   "release": "2025-01-30T06:00:00.000Z",
-  "popRank": 192,
+  "popRank": 107,
   "alternateArt": false,
   "artVariants": [
     {
@@ -54,5 +54,17 @@
       "type": "sets"
     }
   ],
-  "ex": false
+  "ex": false,
+  "deckTypes": [
+    "Pikachu ex",
+    "Pachirisu ex",
+    "Infernape ex",
+    "Darkrai ex Magnezone",
+    "Dragonite",
+    "Greninja",
+    "Darkrai EX",
+    "Electivire",
+    "Skarmory",
+    "Gallade ex"
+  ]
 }

@@ -1,0 +1,45 @@
+{
+  "_id": "67c05991175c7d9d5ecdd0ed",
+  "name": "Carnivine",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "80",
+  "pokemonId": "A2P-2",
+  "limitlessId": "",
+  "rarity": "d-3",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": null,
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Power Link",
+      "text": "If you have Arceus or Arceus ex in play, attacks used by this Pokémon do +30 damage to your opponent's Active Pokémon",
+      "_id": "67c05991175c7d9d5ecdd0ee"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Vine Whip",
+      "text": "",
+      "energyCost": [
+        "Grass",
+        null,
+        null
+      ],
+      "hp": "20",
+      "_id": "67c05991175c7d9d5ecdd0ef"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false
+}

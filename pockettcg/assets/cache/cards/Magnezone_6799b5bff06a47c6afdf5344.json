@@ -16,7 +16,7 @@
   "retreat": 2,
   "description": "",
   "release": "2025-01-30T06:00:00.000Z",
-  "popRank": 130,
+  "popRank": 13,
   "alternateArt": false,
   "artVariants": [],
   "abilities": [],
@@ -67,5 +67,34 @@
       "type": "sets"
     }
   ],
-  "ex": false
+  "ex": false,
+  "deckTypes": [
+    "Darkrai ex Magnezone",
+    "Lt. Surge",
+    "Exeggutor ex Celebi ex",
+    "Skarmory",
+    "Palkia ex Magnezone",
+    "Mewtwo ex",
+    "Marshadow Magnezone",
+    "Greninja",
+    "Magnezone",
+    "Pikachu ex",
+    "Exeggutor ex",
+    "Dragonite",
+    "Starmie ex",
+    "Pachirisu ex",
+    "Mismagius ex Magnezone",
+    "Blaine",
+    "Yanmega ex",
+    "Infernape ex",
+    "Articuno ex",
+    "Garchomp",
+    "Hitmonlee",
+    "Rampardos",
+    "Beheeyem",
+    "Zapdos ex",
+    "Weavile ex",
+    "Aerodactyl ex",
+    "Electivire"
+  ]
 }

@@ -1,0 +1,40 @@
+{
+  "_id": "67c05d5152e93386721e273a",
+  "name": "Probopass ex",
+  "energyType": [
+    "Metal"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "160",
+  "pokemonId": "A2P-13",
+  "limitlessId": "",
+  "rarity": "d-4",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 3,
+  "description": "",
+  "release": null,
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Defensive Unit",
+      "text": "During your opponent's next turn, this Pokémon takes -20 damage from attacks.\n\n",
+      "energyCost": [
+        "Metal",
+        "Metal",
+        "Colorless",
+        null
+      ],
+      "hp": "90",
+      "_id": "67c05d5152e93386721e273b"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": true
+}

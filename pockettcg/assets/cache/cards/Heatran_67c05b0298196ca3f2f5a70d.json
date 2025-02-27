@@ -1,0 +1,46 @@
+{
+  "_id": "67c05b0298196ca3f2f5a70d",
+  "name": "Heatran",
+  "energyType": [
+    "Fire"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "110",
+  "pokemonId": "A2P-4",
+  "limitlessId": "",
+  "rarity": "d-3",
+  "weakness": [
+    "Water"
+  ],
+  "retreat": 3,
+  "description": "",
+  "release": null,
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Speed Link",
+      "text": "If you have Arceus or Arceus ex in play, this Pokémon has no Retreat Cost.",
+      "_id": "67c05b0298196ca3f2f5a70e"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Ragin' Mad Strike",
+      "text": "If this Pokémon has damage on it, this attack does 40 more damage.",
+      "energyCost": [
+        "Fire",
+        "Fire",
+        null,
+        null
+      ],
+      "hp": "40+",
+      "_id": "67c05b0298196ca3f2f5a70f"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false
+}

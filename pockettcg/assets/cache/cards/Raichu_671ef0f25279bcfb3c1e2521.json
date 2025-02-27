@@ -48,7 +48,12 @@
     "Fighting"
   ],
   "release": "2024-10-30T03:00:00.000Z",
-  "popRank": 54,
+  "popRank": 141,
   "artVariants": [],
-  "limitlessId": "A1 95"
+  "limitlessId": "A1 95",
+  "deckTypes": [
+    "Lt. Surge",
+    "Pikachu ex",
+    "Pachirisu ex"
+  ]
 }

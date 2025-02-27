@@ -1,0 +1,23 @@
+{
+  "_id": "67c073db175c7d9d5ece66f7",
+  "name": "Croagunk",
+  "energyType": [
+    "Darkness"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A2-P35",
+  "limitlessId": "",
+  "weakness": [],
+  "description": "",
+  "release": null,
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false
+}

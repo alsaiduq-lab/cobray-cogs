@@ -1,0 +1,41 @@
+{
+  "_id": "67c066df98196ca3f2f5ecf1",
+  "name": "Eevee",
+  "energyType": [
+    "Colorless"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A2P-21",
+  "limitlessId": "",
+  "rarity": "d-1",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": null,
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Tail Whap",
+      "text": "\n",
+      "energyCost": [
+        "Colorless",
+        "Colorless",
+        null,
+        null
+      ],
+      "hp": "30",
+      "_id": "67c066df98196ca3f2f5ecf2"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false,
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

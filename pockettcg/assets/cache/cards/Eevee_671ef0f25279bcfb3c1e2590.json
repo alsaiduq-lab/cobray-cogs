@@ -45,7 +45,7 @@
   "weakness": [
     "Fighting"
   ],
-  "popRank": 63,
+  "popRank": 38,
   "artVariants": [
     {
       "_id": "671ef0f25279bcfb3c1e2592",
@@ -60,5 +60,15 @@
       "name": "Eevee"
     }
   ],
-  "limitlessId": "A1 206"
+  "limitlessId": "A1 206",
+  "deckTypes": [
+    "Palkia ex",
+    "Gyarados ex",
+    "Articuno ex",
+    "Palkia ex Starmie ex",
+    "Blastoise ex",
+    "Starmie ex",
+    "Exeggutor ex",
+    "Zapdos ex"
+  ]
 }

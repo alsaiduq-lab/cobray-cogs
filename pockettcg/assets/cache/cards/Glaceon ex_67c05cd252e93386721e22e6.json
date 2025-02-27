@@ -1,0 +1,46 @@
+{
+  "_id": "67c05cd252e93386721e22e6",
+  "name": "Glaceon ex",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "140",
+  "pokemonId": "A2P-11",
+  "limitlessId": "",
+  "rarity": "s-2",
+  "weakness": [
+    "Metal"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": null,
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Snowy Terrain",
+      "text": "During Pokémon Checkup, if this Pokémon is in the Active Spot, do 10 damage to your opponent's Active Pokémon.",
+      "_id": "67c05cd252e93386721e22e7"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Freezing Wind",
+      "text": "\n",
+      "energyCost": [
+        "Water",
+        "Water",
+        "Colorless",
+        null
+      ],
+      "hp": "90",
+      "_id": "67c05cd252e93386721e22e8"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": true
+}

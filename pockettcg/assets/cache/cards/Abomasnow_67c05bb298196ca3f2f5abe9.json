@@ -1,0 +1,46 @@
+{
+  "_id": "67c05bb298196ca3f2f5abe9",
+  "name": "Abomasnow",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "120",
+  "pokemonId": "A2P-8",
+  "limitlessId": "",
+  "rarity": "d-3",
+  "weakness": [
+    "Metal"
+  ],
+  "retreat": 3,
+  "description": "",
+  "release": null,
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Vigor Link",
+      "text": "If you have Arceus or Arceus ex in play, attacks used by this Pokémon cost 1 less Colorless Energy.",
+      "_id": "67c05bb298196ca3f2f5abea"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Mega Punch",
+      "text": "\n",
+      "energyCost": [
+        "Water",
+        "Water",
+        "Colorless",
+        null
+      ],
+      "hp": "80",
+      "_id": "67c05bb298196ca3f2f5abeb"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false
+}

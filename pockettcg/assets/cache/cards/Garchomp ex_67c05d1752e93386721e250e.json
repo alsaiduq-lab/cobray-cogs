@@ -1,0 +1,50 @@
+{
+  "_id": "67c05d1752e93386721e250e",
+  "name": "Garchomp ex",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "170",
+  "pokemonId": "A2P-12",
+  "limitlessId": "",
+  "rarity": "d-4",
+  "weakness": [
+    "Grass"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": null,
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Linear Attack",
+      "text": "This attack does 50 damage to 1 of your opponent's Pokémon.\n",
+      "energyCost": [
+        "Fighting",
+        null,
+        null,
+        null
+      ],
+      "_id": "67c05d1752e93386721e250f"
+    },
+    {
+      "name": "Dragon Claw",
+      "text": "",
+      "energyCost": [
+        "Fighting",
+        "Fighting",
+        "Colorless"
+      ],
+      "hp": "100",
+      "_id": "67c05d1752e93386721e2510"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": true
+}

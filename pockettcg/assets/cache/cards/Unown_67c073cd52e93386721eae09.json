@@ -1,0 +1,27 @@
+{
+  "_id": "67c073cd52e93386721eae09",
+  "name": "Unown",
+  "energyType": [
+    "Psychic"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A2-P34",
+  "limitlessId": "",
+  "rarity": "d-2",
+  "weakness": [
+    "Darkness"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": null,
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false
+}

@@ -1,0 +1,46 @@
+{
+  "_id": "67c05ca052e93386721e21e0",
+  "name": "Leafeon ex",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "140",
+  "pokemonId": "A2P-10",
+  "limitlessId": "",
+  "rarity": "d-4",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": null,
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Forest Breath",
+      "text": "Once during your turn, if this Pokémon is in the Active Spot, you may take a  Grass Energy from your Energy Zone and attach it to 1 of your Grasss Pokémon",
+      "_id": "67c05ca052e93386721e21e1"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Solar Beam",
+      "text": "\n",
+      "energyCost": [
+        "Grass",
+        "Colorless",
+        "Colorless",
+        null
+      ],
+      "hp": "70",
+      "_id": "67c05ca052e93386721e21e2"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": true
+}

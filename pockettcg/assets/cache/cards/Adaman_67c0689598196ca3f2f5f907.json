@@ -1,0 +1,22 @@
+{
+  "_id": "67c0689598196ca3f2f5f907",
+  "name": "Adaman",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Supporter",
+  "hp": "",
+  "pokemonId": "A2P-30",
+  "limitlessId": "",
+  "rarity": "d-2",
+  "weakness": [],
+  "description": "During your opponent's next turn, all of your Metal Pokémon take -20 damage from attacks from your opponen'ts Pokémon\n\n",
+  "release": null,
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false
+}

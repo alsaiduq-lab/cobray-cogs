@@ -25,7 +25,7 @@
       "energyCost": [
         "Colorless"
       ],
-      "_id": "67994b0de7d048b93b252613"
+      "_id": "67a75bdc759523dbf6f902b8"
     }
   ],
   "obtain": [
@@ -47,5 +47,7 @@
     }
   ],
   "ex": false,
-  "limitlessId": "P-A 30"
+  "limitlessId": "P-A 30",
+  "rarity": "p",
+  "deckTypes": []
 }

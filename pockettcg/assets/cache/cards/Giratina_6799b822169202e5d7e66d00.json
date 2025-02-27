@@ -16,7 +16,7 @@
   "retreat": 3,
   "description": "",
   "release": "2025-01-30T06:00:00.000Z",
-  "popRank": 1.7976931348623157e+308,
+  "popRank": 84,
   "alternateArt": false,
   "artVariants": [
     {
@@ -62,5 +62,20 @@
       "type": "sets"
     }
   ],
-  "ex": false
+  "ex": false,
+  "deckTypes": [
+    "Togekiss",
+    "Palkia ex Greninja",
+    "Mewtwo ex",
+    "Magnezone",
+    "Garchomp",
+    "Infernape ex",
+    "Mismagius ex Magnezone",
+    "Mismagius ex",
+    "Skarmory",
+    "Gengar ex",
+    "Yanmega ex",
+    "Gyarados ex",
+    "Palkia ex"
+  ]
 }

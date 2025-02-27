@@ -1,0 +1,24 @@
+{
+  "_id": "67c07d5a52e93386721eec30",
+  "name": "Irida",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Supporter",
+  "pokemonId": "A2P-38",
+  "rarity": "d-2",
+  "weakness": [],
+  "description": "Heal 40 damage from each of your Pokémon that has any Water Energy attached.",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67c0687f98196ca3f2f5f873",
+      "name": "Irida"
+    }
+  ],
+  "abilities": [],
+  "moves": [],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false
+}

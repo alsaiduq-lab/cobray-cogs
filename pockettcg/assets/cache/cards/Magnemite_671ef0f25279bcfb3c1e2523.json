@@ -55,7 +55,36 @@
     "Fighting"
   ],
   "release": "2024-10-30T03:00:00.000Z",
-  "popRank": 94,
+  "popRank": 11,
   "artVariants": [],
-  "limitlessId": "A1 97"
+  "limitlessId": "A1 97",
+  "deckTypes": [
+    "Darkrai ex Magnezone",
+    "Lt. Surge",
+    "Exeggutor ex Celebi ex",
+    "Skarmory",
+    "Palkia ex Magnezone",
+    "Mewtwo ex",
+    "Marshadow Magnezone",
+    "Greninja",
+    "Magnezone",
+    "Pikachu ex",
+    "Exeggutor ex",
+    "Dragonite",
+    "Starmie ex",
+    "Pachirisu ex",
+    "Mismagius ex Magnezone",
+    "Blaine",
+    "Yanmega ex",
+    "Infernape ex",
+    "Articuno ex",
+    "Garchomp",
+    "Hitmonlee",
+    "Rampardos",
+    "Beheeyem",
+    "Zapdos ex",
+    "Weavile ex",
+    "Aerodactyl ex",
+    "Electivire"
+  ]
 }

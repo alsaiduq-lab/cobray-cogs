@@ -1,0 +1,39 @@
+{
+  "_id": "67c06ac298196ca3f2f607ea",
+  "name": "Magnemite",
+  "energyType": [
+    "Metal"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A2P-31",
+  "rarity": "s-1",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 1,
+  "description": "",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Tackle",
+      "text": "\n",
+      "energyCost": [
+        "Metal",
+        null,
+        null,
+        null
+      ],
+      "hp": "20",
+      "_id": "67c06ac298196ca3f2f607eb"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false,
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

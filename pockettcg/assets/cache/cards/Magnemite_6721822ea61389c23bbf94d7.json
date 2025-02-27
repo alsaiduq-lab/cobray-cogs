@@ -23,7 +23,7 @@
         "Lightning"
       ],
       "hp": "20",
-      "_id": "67994959e7d048b93b251d76"
+      "_id": "67a75b971a343c54ea0620d3"
     }
   ],
   "obtain": [
@@ -42,5 +42,7 @@
   "cardType": "Pokemon",
   "subType": "Basic",
   "artVariants": [],
-  "limitlessId": "P-A 24"
+  "limitlessId": "P-A 24",
+  "rarity": "p",
+  "deckTypes": []
 }

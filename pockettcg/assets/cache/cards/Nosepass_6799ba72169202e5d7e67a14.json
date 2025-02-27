@@ -16,7 +16,7 @@
   "retreat": 2,
   "description": "",
   "release": "2025-01-30T06:00:00.000Z",
-  "popRank": 1.7976931348623157e+308,
+  "popRank": 245,
   "alternateArt": false,
   "artVariants": [],
   "abilities": [],
@@ -68,5 +68,8 @@
       "type": "sets"
     }
   ],
-  "ex": false
+  "ex": false,
+  "deckTypes": [
+    "Skarmory"
+  ]
 }

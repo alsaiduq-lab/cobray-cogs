@@ -1,0 +1,45 @@
+{
+  "_id": "67c05b2198196ca3f2f5a7d3",
+  "name": "Rotom",
+  "energyType": [
+    "Psychic"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "70",
+  "pokemonId": "A2P-5",
+  "limitlessId": "",
+  "rarity": "d-3",
+  "weakness": [
+    "Darkness"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": null,
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Speed Link",
+      "text": "If you have Arceus or Arceus ex in play, this Pokémon has no Retreat Cost.",
+      "_id": "67c05b2198196ca3f2f5a7d4"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Dash Attack",
+      "text": "This attack does 20 damage to 1 of your opponent's Benched Pokémon.\n\n",
+      "energyCost": [
+        "Colorless",
+        null,
+        null,
+        null
+      ],
+      "_id": "67c05b2198196ca3f2f5a7d5"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false
+}

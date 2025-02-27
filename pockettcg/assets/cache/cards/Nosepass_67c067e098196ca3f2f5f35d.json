@@ -1,0 +1,39 @@
+{
+  "_id": "67c067e098196ca3f2f5f35d",
+  "name": "Nosepass",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A2P-26",
+  "limitlessId": "",
+  "rarity": "p",
+  "weakness": [
+    "Grass"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": null,
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Iron Defense",
+      "text": "Flip a coin. If heads, during your opponent's next turn, prevent all damage done to this Pokémon by attacks.",
+      "energyCost": [
+        "Colorless",
+        "Colorless",
+        null,
+        null
+      ],
+      "_id": "67c067e098196ca3f2f5f35e"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false
+}

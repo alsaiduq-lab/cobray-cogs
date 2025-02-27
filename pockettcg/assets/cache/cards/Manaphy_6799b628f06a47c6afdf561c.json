@@ -16,11 +16,15 @@
   "retreat": 1,
   "description": "",
   "release": "2025-01-30T06:00:00.000Z",
-  "popRank": 73,
+  "popRank": 34,
   "alternateArt": false,
   "artVariants": [
     {
       "_id": "6799c0f8f06a47c6afdf8c95",
+      "name": "Manaphy"
+    },
+    {
+      "_id": "67c0658e98196ca3f2f5e52e",
       "name": "Manaphy"
     }
   ],
@@ -35,7 +39,7 @@
         null,
         null
       ],
-      "_id": "6799c866f06a47c6afdfb3ea"
+      "_id": "67c06694175c7d9d5ece1939"
     }
   ],
   "obtain": [
@@ -56,5 +60,18 @@
       "type": "sets"
     }
   ],
-  "ex": false
+  "ex": false,
+  "deckTypes": [
+    "Starmie ex",
+    "Palkia ex",
+    "Gyarados ex",
+    "Palkia ex Starmie ex",
+    "Garchomp",
+    "Articuno ex",
+    "Blastoise ex",
+    "Palkia ex Magnezone",
+    "Dragonite",
+    "Misty",
+    "Yanmega ex"
+  ]
 }

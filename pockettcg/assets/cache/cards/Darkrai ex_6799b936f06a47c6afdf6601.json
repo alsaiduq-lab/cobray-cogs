@@ -16,7 +16,7 @@
   "retreat": 2,
   "description": "",
   "release": "2025-01-30T06:00:00.000Z",
-  "popRank": 68,
+  "popRank": 14,
   "alternateArt": false,
   "artVariants": [
     {
@@ -26,13 +26,17 @@
     {
       "_id": "6799c316169202e5d7e6a6fc",
       "name": "Darkrai ex"
+    },
+    {
+      "_id": "67c0673b98196ca3f2f5ee7d",
+      "name": "Darkrai ex"
     }
   ],
   "abilities": [
     {
       "name": "Nightmare Aura",
       "text": "Whenever you attach a Darkness Energy from your Energy Zone to this Pokémon, do 20 damage to your opponent's Active Pokémon.",
-      "_id": "6799d0120c64508adf1ec827"
+      "_id": "67c0674898196ca3f2f5eebd"
     }
   ],
   "moves": [
@@ -46,7 +50,7 @@
         null
       ],
       "hp": "80",
-      "_id": "6799d0120c64508adf1ec828"
+      "_id": "67c0674898196ca3f2f5eebe"
     }
   ],
   "obtain": [
@@ -67,5 +71,15 @@
       "type": "sets"
     }
   ],
-  "ex": true
+  "ex": true,
+  "deckTypes": [
+    "Darkrai ex Magnezone",
+    "Darkrai ex Weezing",
+    "Weavile ex",
+    "Darkrai ex Greninja",
+    "Darkrai EX",
+    "Koga",
+    "Regigigas",
+    "Magnezone"
+  ]
 }
