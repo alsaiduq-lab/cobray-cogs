@@ -1,0 +1,57 @@
+{
+  "_id": "67c15b7e7103a0f7aed762d5",
+  "name": "Pupitar",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "80",
+  "pokemonId": "A2a-040",
+  "limitlessId": "A2a 40",
+  "rarity": "d-1",
+  "weakness": [
+    "Grass"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Speed Attack",
+      "text": "",
+      "energyCost": [
+        "Fighting",
+        "Colorless",
+        "Colorless",
+        null
+      ],
+      "hp": "50",
+      "_id": "67c15b7e7103a0f7aed762d6"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": {
+          "_id": "67c1661a7103a0f7aed7adaf",
+          "title": "Triumphant Light",
+          "url": "/sets/triumphant-light/",
+          "image": "/pkm_img/News/2025/February/triumphantlight.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

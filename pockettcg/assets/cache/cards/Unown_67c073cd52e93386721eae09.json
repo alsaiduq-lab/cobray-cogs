@@ -7,21 +7,58 @@
   "cardType": "Pokemon",
   "subType": "Basic",
   "hp": "60",
-  "pokemonId": "A2-P34",
-  "limitlessId": "",
+  "pokemonId": "A2a-034",
+  "limitlessId": "A2a 34",
   "rarity": "d-2",
   "weakness": [
     "Darkness"
   ],
   "retreat": 1,
   "description": "",
-  "release": null,
+  "release": "2025-02-28T06:00:00.000Z",
   "popRank": 1.7976931348623157e+308,
   "alternateArt": false,
-  "artVariants": [],
-  "abilities": [],
-  "moves": [],
+  "artVariants": [
+    {
+      "_id": "67c161b97103a0f7aed78e96",
+      "name": "Unown"
+    }
+  ],
+  "abilities": [
+    {
+      "name": "CHECK",
+      "text": "Once during your turn, you may choose either player. Look at the top card of that player’s deck.",
+      "_id": "67c164b07103a0f7aed7a3ca"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Hidden Power",
+      "energyCost": [
+        "Colorless"
+      ],
+      "hp": "20",
+      "_id": "67c164b07103a0f7aed7a3cb"
+    }
+  ],
   "deckTypes": [],
-  "obtain": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": {
+          "_id": "67c1661a7103a0f7aed7adaf",
+          "title": "Triumphant Light",
+          "url": "/sets/triumphant-light/",
+          "image": "/pkm_img/News/2025/February/triumphantlight.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
   "ex": false
 }

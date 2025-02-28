@@ -1,0 +1,64 @@
+{
+  "_id": "67c163cde06d5e18c00b015e",
+  "name": "Leafeon ex",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "140",
+  "pokemonId": "A2a-091",
+  "limitlessId": "A2a 91",
+  "rarity": "s-2",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Forest Breath",
+      "text": "Once during your turn, if this Pokémon is in the Active Spot, you may take a  Grass Energy from your Energy Zone and attach it to 1 of your Grasss Pokémon",
+      "_id": "67c163cde06d5e18c00b015f"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Solar Beam",
+      "text": "\n",
+      "energyCost": [
+        "Grass",
+        "Colorless",
+        "Colorless",
+        null
+      ],
+      "hp": "70",
+      "_id": "67c163cde06d5e18c00b0160"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": {
+          "_id": "67c1661a7103a0f7aed7adaf",
+          "title": "Triumphant Light",
+          "url": "/sets/triumphant-light/",
+          "image": "/pkm_img/News/2025/February/triumphantlight.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true,
+  "nameRelease": "2025-02-28T06:00:00.000Z"
+}

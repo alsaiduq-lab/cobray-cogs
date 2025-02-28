@@ -1,0 +1,57 @@
+{
+  "_id": "67c15a66915a911e82a9161a",
+  "name": "Manectric",
+  "energyType": [
+    "Lightning"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "90",
+  "pokemonId": "A2a-028",
+  "limitlessId": "A2a 28",
+  "rarity": "d-2",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Flash",
+      "text": "During your opponent's next turn, if the Defending Pokémon tries to use an attack, your opponent flips a coin. If tails, that attack doesn't happen.",
+      "energyCost": [
+        "Lightning",
+        null,
+        null,
+        null
+      ],
+      "hp": "40",
+      "_id": "67c15a907103a0f7aed75b06"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": {
+          "_id": "67c1661a7103a0f7aed7adaf",
+          "title": "Triumphant Light",
+          "url": "/sets/triumphant-light/",
+          "image": "/pkm_img/News/2025/February/triumphantlight.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

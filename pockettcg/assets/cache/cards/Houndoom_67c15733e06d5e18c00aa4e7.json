@@ -15,10 +15,15 @@
   ],
   "retreat": 2,
   "description": "",
-  "release": "2024-02-28T06:00:00.000Z",
+  "release": "2025-02-28T06:00:00.000Z",
   "popRank": 1.7976931348623157e+308,
   "alternateArt": false,
-  "artVariants": [],
+  "artVariants": [
+    {
+      "_id": "67c161d77103a0f7aed78f47",
+      "name": "Houndoom"
+    }
+  ],
   "abilities": [],
   "moves": [
     {
@@ -31,7 +36,7 @@
         null
       ],
       "hp": "60",
-      "_id": "67c157a77103a0f7aed743ab"
+      "_id": "67c166e3915a911e82a975ea"
     }
   ],
   "deckTypes": [],
@@ -42,7 +47,12 @@
         "type": "Normal Pack",
         "expires": null,
         "name": "Triumphant Light",
-        "linkedArticle": null
+        "linkedArticle": {
+          "_id": "67c1661a7103a0f7aed7adaf",
+          "title": "Triumphant Light",
+          "url": "/sets/triumphant-light/",
+          "image": "/pkm_img/News/2025/February/triumphantlight.webp"
+        }
       },
       "amount": 1,
       "type": "sets"

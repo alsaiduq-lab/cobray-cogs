@@ -15,10 +15,15 @@
   ],
   "retreat": 1,
   "description": "",
-  "release": "2024-02-28T06:00:00.000Z",
+  "release": null,
   "popRank": 1.7976931348623157e+308,
   "alternateArt": false,
-  "artVariants": [],
+  "artVariants": [
+    {
+      "_id": "67c161927103a0f7aed78e03",
+      "name": "Marill"
+    }
+  ],
   "abilities": [],
   "moves": [
     {
@@ -28,10 +33,27 @@
         "Water"
       ],
       "hp": "20",
-      "_id": "67c153707103a0f7aed72787"
+      "_id": "67c16738915a911e82a97954"
     }
   ],
   "deckTypes": [],
-  "obtain": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": {
+          "_id": "67c1661a7103a0f7aed7adaf",
+          "title": "Triumphant Light",
+          "url": "/sets/triumphant-light/",
+          "image": "/pkm_img/News/2025/February/triumphantlight.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
   "ex": false
 }

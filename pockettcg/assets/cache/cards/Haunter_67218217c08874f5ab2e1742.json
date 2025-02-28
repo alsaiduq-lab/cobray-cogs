@@ -24,7 +24,7 @@
         "Psychic"
       ],
       "hp": "50",
-      "_id": "67993b61f5d84b3e8fe0af66"
+      "_id": "67a75b732f78b5ccf2b672f1"
     }
   ],
   "obtain": [
@@ -44,5 +44,7 @@
   "cardType": "Pokemon",
   "subType": "Stage 1",
   "artVariants": [],
-  "limitlessId": "P-A 20"
+  "limitlessId": "P-A 20",
+  "rarity": "p",
+  "deckTypes": []
 }

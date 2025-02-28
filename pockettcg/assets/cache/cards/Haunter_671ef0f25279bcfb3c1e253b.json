@@ -45,7 +45,10 @@
   "weakness": [
     "Darkness"
   ],
-  "popRank": 127,
+  "popRank": 156,
   "artVariants": [],
-  "limitlessId": "A1 121"
+  "limitlessId": "A1 121",
+  "deckTypes": [
+    "Gengar ex"
+  ]
 }

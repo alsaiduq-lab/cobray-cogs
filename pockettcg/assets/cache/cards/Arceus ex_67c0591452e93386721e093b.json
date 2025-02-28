@@ -7,23 +7,36 @@
   "cardType": "Pokemon",
   "subType": "Basic",
   "hp": "140",
-  "pokemonId": "A2P-1",
-  "limitlessId": "",
+  "pokemonId": "A2a-071",
+  "limitlessId": "A2a 71",
   "rarity": "d-4",
   "weakness": [
     "Fighting"
   ],
   "retreat": 2,
   "description": "",
-  "release": null,
+  "release": "2025-02-28T06:00:00.000Z",
   "popRank": 1.7976931348623157e+308,
   "alternateArt": false,
-  "artVariants": [],
+  "artVariants": [
+    {
+      "_id": "67c162ff7103a0f7aed7983c",
+      "name": "Arceus ex"
+    },
+    {
+      "_id": "67c16470e06d5e18c00b0655",
+      "name": "Arceus ex"
+    },
+    {
+      "_id": "67c1647de06d5e18c00b068d",
+      "name": "Arceus ex"
+    }
+  ],
   "abilities": [
     {
       "name": "Fabled Luster",
       "text": "This Pokémon can't be affected by any Special Conditions.",
-      "_id": "67c0591452e93386721e093c"
+      "_id": "67c1657a7103a0f7aed7a9aa"
     }
   ],
   "moves": [
@@ -36,10 +49,27 @@
         "Colorless"
       ],
       "hp": "70+",
-      "_id": "67c0591452e93386721e093d"
+      "_id": "67c1657a7103a0f7aed7a9ab"
     }
   ],
   "deckTypes": [],
-  "obtain": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": {
+          "_id": "67c1661a7103a0f7aed7adaf",
+          "title": "Triumphant Light",
+          "url": "/sets/triumphant-light/",
+          "image": "/pkm_img/News/2025/February/triumphantlight.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
   "ex": true
 }

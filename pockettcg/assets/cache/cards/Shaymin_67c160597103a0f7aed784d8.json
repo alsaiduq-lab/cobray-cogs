@@ -1,0 +1,68 @@
+{
+  "_id": "67c160597103a0f7aed784d8",
+  "name": "Shaymin",
+  "energyType": [
+    "Colorless"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "70",
+  "pokemonId": "A2a-069",
+  "limitlessId": "A2a 69",
+  "rarity": "d-3",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67c064df98196ca3f2f5e12e",
+      "name": "Shaymin"
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Sky Support",
+      "text": "As long as this Pokémon is on your Bench, your Active Basic Pokémon's Retreat Cost is 1 less.",
+      "_id": "67c164e3915a911e82a96547"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Flap",
+      "text": "",
+      "energyCost": [
+        "Colorless",
+        "Colorless",
+        null,
+        null
+      ],
+      "hp": "30",
+      "_id": "67c164e3915a911e82a96548"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": {
+          "_id": "67c1661a7103a0f7aed7adaf",
+          "title": "Triumphant Light",
+          "url": "/sets/triumphant-light/",
+          "image": "/pkm_img/News/2025/February/triumphantlight.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

@@ -1,0 +1,58 @@
+{
+  "_id": "67c16439915a911e82a96046",
+  "name": "Probopass ex",
+  "energyType": [
+    "Metal"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "160",
+  "pokemonId": "A2a-094",
+  "limitlessId": "A2a 94",
+  "rarity": "s-2",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 3,
+  "description": "",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Defensive Unit",
+      "text": "During your opponent's next turn, this Pokémon takes -20 damage from attacks.\n\n",
+      "energyCost": [
+        "Metal",
+        "Metal",
+        "Colorless",
+        null
+      ],
+      "hp": "90",
+      "_id": "67c1685d915a911e82a9834c"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": {
+          "_id": "67c1661a7103a0f7aed7adaf",
+          "title": "Triumphant Light",
+          "url": "/sets/triumphant-light/",
+          "image": "/pkm_img/News/2025/February/triumphantlight.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true,
+  "release": "2025-02-28T06:00:00.000Z",
+  "nameRelease": "2025-02-28T06:00:00.000Z"
+}

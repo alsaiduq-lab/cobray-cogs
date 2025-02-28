@@ -1,0 +1,57 @@
+{
+  "_id": "67c15b377103a0f7aed76066",
+  "name": "Donphan",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "120",
+  "pokemonId": "A2a-038",
+  "limitlessId": "A2a 38",
+  "rarity": "d-2",
+  "weakness": [
+    "Grass"
+  ],
+  "retreat": 3,
+  "description": "",
+  "release": "2024-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Rolling Spin",
+      "text": "During your next turn, this Pokémon's Rolling Spin attack does +60 damage.",
+      "energyCost": [
+        "Fighting",
+        "Fighting",
+        "Fighting",
+        null
+      ],
+      "hp": "60",
+      "_id": "67c15f4b915a911e82a937c9"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": {
+          "_id": "67c1661a7103a0f7aed7adaf",
+          "title": "Triumphant Light",
+          "url": "/sets/triumphant-light/",
+          "image": "/pkm_img/News/2025/February/triumphantlight.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

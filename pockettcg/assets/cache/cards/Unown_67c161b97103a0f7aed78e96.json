@@ -1,0 +1,60 @@
+{
+  "_id": "67c161b97103a0f7aed78e96",
+  "name": "Unown",
+  "energyType": [
+    "Psychic"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A2a-078",
+  "limitlessId": "A2a 78",
+  "rarity": "s-1",
+  "weakness": [
+    "Darkness"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "CHECK",
+      "text": "Once during your turn, you may choose either player. Look at the top card of that player’s deck.",
+      "_id": "67c161e5e06d5e18c00af278"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Hidden Power",
+      "energyCost": [
+        "Colorless"
+      ],
+      "hp": "20",
+      "_id": "67c161e5e06d5e18c00af279"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": {
+          "_id": "67c1661a7103a0f7aed7adaf",
+          "title": "Triumphant Light",
+          "url": "/sets/triumphant-light/",
+          "image": "/pkm_img/News/2025/February/triumphantlight.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "nameRelease": "2025-02-28T06:00:00.000Z"
+}

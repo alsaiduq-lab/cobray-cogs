@@ -1,0 +1,44 @@
+{
+  "_id": "67c1611ce06d5e18c00aec44",
+  "name": "Celestic Town Elder",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Supporter",
+  "hp": "",
+  "pokemonId": "A2a-073",
+  "limitlessId": "A2a 73",
+  "rarity": "d-2",
+  "weakness": [],
+  "description": "Put 1 random Basic Pokemon from your discard pile into your hand.",
+  "release": "2025-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67c163477103a0f7aed79a19",
+      "name": "Celestic Town Elder"
+    }
+  ],
+  "abilities": [],
+  "moves": [],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": {
+          "_id": "67c1661a7103a0f7aed7adaf",
+          "title": "Triumphant Light",
+          "url": "/sets/triumphant-light/",
+          "image": "/pkm_img/News/2025/February/triumphantlight.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

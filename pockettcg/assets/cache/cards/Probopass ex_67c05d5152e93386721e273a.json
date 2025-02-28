@@ -7,18 +7,27 @@
   "cardType": "Pokemon",
   "subType": "Stage 1",
   "hp": "160",
-  "pokemonId": "A2P-13",
-  "limitlessId": "",
+  "pokemonId": "A2a-057",
+  "limitlessId": "A2a 57",
   "rarity": "d-4",
   "weakness": [
     "Fire"
   ],
   "retreat": 3,
   "description": "",
-  "release": null,
+  "release": "2025-02-28T06:00:00.000Z",
   "popRank": 1.7976931348623157e+308,
   "alternateArt": false,
-  "artVariants": [],
+  "artVariants": [
+    {
+      "_id": "67c162e37103a0f7aed79798",
+      "name": "Probopass ex"
+    },
+    {
+      "_id": "67c16439915a911e82a96046",
+      "name": "Probopass ex"
+    }
+  ],
   "abilities": [],
   "moves": [
     {
@@ -31,10 +40,27 @@
         null
       ],
       "hp": "90",
-      "_id": "67c05d5152e93386721e273b"
+      "_id": "67c16553e06d5e18c00b0db1"
     }
   ],
   "deckTypes": [],
-  "obtain": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": {
+          "_id": "67c1661a7103a0f7aed7adaf",
+          "title": "Triumphant Light",
+          "url": "/sets/triumphant-light/",
+          "image": "/pkm_img/News/2025/February/triumphantlight.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
   "ex": true
 }

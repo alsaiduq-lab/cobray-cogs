@@ -23,7 +23,7 @@
         "Lightning"
       ],
       "hp": "20",
-      "_id": "6799489397fb8e77af07a468"
+      "_id": "67a75b43759523dbf6f8fd85"
     }
   ],
   "obtain": [
@@ -44,5 +44,7 @@
   "subType": "Basic",
   "artVariants": [],
   "limitlessId": "P-A 15",
+  "rarity": "p",
+  "deckTypes": [],
   "nameRelease": "2024-10-30T03:00:00.000Z"
 }

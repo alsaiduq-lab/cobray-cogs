@@ -1,0 +1,57 @@
+{
+  "_id": "67c1600ee06d5e18c00ae3e4",
+  "name": "Staraptor",
+  "energyType": [
+    "Colorless"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "150",
+  "pokemonId": "A2a-068",
+  "limitlessId": "A2a 68",
+  "rarity": "d-2",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2024-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Brave Bird",
+      "text": "This Pokémon also does 20 damage to itself.",
+      "energyCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless",
+        null
+      ],
+      "hp": "130",
+      "_id": "67c1600ee06d5e18c00ae3e5"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": {
+          "_id": "67c1661a7103a0f7aed7adaf",
+          "title": "Triumphant Light",
+          "url": "/sets/triumphant-light/",
+          "image": "/pkm_img/News/2025/February/triumphantlight.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

@@ -1,0 +1,36 @@
+{
+  "_id": "67c15c7ae06d5e18c00accbe",
+  "name": "Toxicroak",
+  "energyType": [
+    "Darkness"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "100",
+  "pokemonId": "A2a-052",
+  "limitlessId": "A2a 52",
+  "rarity": "d-2",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Toxic",
+      "text": "Your opponent’s Active Pokémon is now Poisoned. Do 20 damage to this Pokémon instead of the usual amount for this Special Condition.",
+      "energyCost": [
+        "Darkness"
+      ],
+      "_id": "67c15c7ae06d5e18c00accbf"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false
+}

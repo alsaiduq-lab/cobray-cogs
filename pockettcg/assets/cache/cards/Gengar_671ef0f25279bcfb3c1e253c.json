@@ -1,4 +1,55 @@
 {
-  "id": "671ef0f25279bcfb3c1e253c",
-  "name": "Gengar"
+  "_id": "671ef0f25279bcfb3c1e253c",
+  "pokemonId": "A1-122",
+  "name": "Gengar",
+  "pack": "Mewtwo",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Psychic"
+  ],
+  "hp": "130",
+  "moves": [
+    {
+      "name": "Bother",
+      "text": "Your opponent can't use any Supporter cards from their hand during their next turn.",
+      "energyCost": [
+        "Psychic"
+      ],
+      "hp": "50",
+      "_id": "6799516c1552ba8d13d741f3"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ceb3423ed078c0a1f5d2",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Mewtwo",
+        "linkedArticle": {
+          "_id": "6728e6038cfb55d02155f843",
+          "title": "Genetic Apex: Mewtwo",
+          "url": "/sets/genetic-apex-mewtwo/",
+          "image": "/pkm_img/Sets/GeneticApexMewtwo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-3",
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 2,
+  "subType": "Stage 2",
+  "weakness": [
+    "Darkness"
+  ],
+  "popRank": 262,
+  "artVariants": [],
+  "limitlessId": "A1 122",
+  "deckTypes": [
+    "Gengar ex"
+  ]
 }

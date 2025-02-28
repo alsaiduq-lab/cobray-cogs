@@ -1,0 +1,58 @@
+{
+  "_id": "67c161d77103a0f7aed78f47",
+  "name": "Houndoom",
+  "energyType": [
+    "Fire"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "100",
+  "pokemonId": "A2a-076",
+  "limitlessId": "A2a 76",
+  "rarity": "s-1",
+  "weakness": [
+    "Water"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Corner",
+      "text": "During your opponent's next turn, the Defending Pokémon can't retreat.",
+      "energyCost": [
+        "Fire",
+        "Colorless",
+        null,
+        null
+      ],
+      "hp": "60",
+      "_id": "67c1689ee06d5e18c00b2764"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": {
+          "_id": "67c1661a7103a0f7aed7adaf",
+          "title": "Triumphant Light",
+          "url": "/sets/triumphant-light/",
+          "image": "/pkm_img/News/2025/February/triumphantlight.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "nameRelease": "2025-02-28T06:00:00.000Z"
+}

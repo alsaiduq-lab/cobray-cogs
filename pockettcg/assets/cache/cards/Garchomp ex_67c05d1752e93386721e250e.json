@@ -7,18 +7,27 @@
   "cardType": "Pokemon",
   "subType": "Stage 2",
   "hp": "170",
-  "pokemonId": "A2P-12",
-  "limitlessId": "",
+  "pokemonId": "A2a-047",
+  "limitlessId": "A2a 47",
   "rarity": "d-4",
   "weakness": [
     "Grass"
   ],
   "retreat": 1,
   "description": "",
-  "release": null,
+  "release": "2025-02-28T06:00:00.000Z",
   "popRank": 1.7976931348623157e+308,
   "alternateArt": false,
-  "artVariants": [],
+  "artVariants": [
+    {
+      "_id": "67c162b3915a911e82a9543c",
+      "name": "Garchomp ex"
+    },
+    {
+      "_id": "67c164107103a0f7aed79f4b",
+      "name": "Garchomp ex"
+    }
+  ],
   "abilities": [],
   "moves": [
     {
@@ -30,7 +39,7 @@
         null,
         null
       ],
-      "_id": "67c05d1752e93386721e250f"
+      "_id": "67c165277103a0f7aed7a7d1"
     },
     {
       "name": "Dragon Claw",
@@ -41,10 +50,27 @@
         "Colorless"
       ],
       "hp": "100",
-      "_id": "67c05d1752e93386721e2510"
+      "_id": "67c165277103a0f7aed7a7d2"
     }
   ],
   "deckTypes": [],
-  "obtain": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": {
+          "_id": "67c1661a7103a0f7aed7adaf",
+          "title": "Triumphant Light",
+          "url": "/sets/triumphant-light/",
+          "image": "/pkm_img/News/2025/February/triumphantlight.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
   "ex": true
 }

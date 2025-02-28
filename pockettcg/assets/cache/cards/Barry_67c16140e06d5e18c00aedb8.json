@@ -1,0 +1,27 @@
+{
+  "_id": "67c16140e06d5e18c00aedb8",
+  "name": "Barry",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Supporter",
+  "hp": "",
+  "pokemonId": "A2a-074",
+  "limitlessId": "A2a 74",
+  "rarity": "d-2",
+  "weakness": [],
+  "description": "During this turn, attacks used by your Snorlax, Heracross, and Staraptor cost 2 less Colorless  Energy.",
+  "release": "2025-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67c1637c7103a0f7aed79bc4",
+      "name": "Barry"
+    }
+  ],
+  "abilities": [],
+  "moves": [],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false
+}

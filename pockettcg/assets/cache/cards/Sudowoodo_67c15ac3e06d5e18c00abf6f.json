@@ -1,0 +1,62 @@
+{
+  "_id": "67c15ac3e06d5e18c00abf6f",
+  "name": "Sudowoodo",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "80",
+  "pokemonId": "A2a-036",
+  "limitlessId": "A2a 36",
+  "rarity": "d-2",
+  "weakness": [
+    "Grass"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2024-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67c161dce06d5e18c00af21c",
+      "name": "Sudowoodo"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Fighting Headbutt",
+      "text": "If your opponent's Active Pokémon is a Pokémon ex, this attack does 30 more damage.",
+      "energyCost": [
+        "Fighting",
+        null,
+        null,
+        null
+      ],
+      "hp": "20+",
+      "_id": "67c164bfe06d5e18c00b0925"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": {
+          "_id": "67c1661a7103a0f7aed7adaf",
+          "title": "Triumphant Light",
+          "url": "/sets/triumphant-light/",
+          "image": "/pkm_img/News/2025/February/triumphantlight.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}
