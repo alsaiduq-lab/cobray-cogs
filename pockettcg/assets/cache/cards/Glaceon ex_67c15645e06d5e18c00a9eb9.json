@@ -1,0 +1,58 @@
+{
+  "_id": "67c15645e06d5e18c00a9eb9",
+  "name": "Glaceon ex",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "140",
+  "pokemonId": "A2a-022",
+  "limitlessId": "A2a 22",
+  "rarity": "d-4",
+  "weakness": [
+    "Metal"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Snowy Terrain",
+      "text": "During Pokémon Checkup, if this Pokémon is in the Active Spot, do 10 damage to your opponent's Active Pokémon.",
+      "_id": "67c158a07103a0f7aed74b95"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Freezing Wind",
+      "text": "",
+      "energyCost": [
+        "Water",
+        "Water",
+        "Colorless",
+        null
+      ],
+      "hp": "90",
+      "_id": "67c158a07103a0f7aed74b96"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true
+}

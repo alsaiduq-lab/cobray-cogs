@@ -1,0 +1,38 @@
+{
+  "_id": "67c153b7915a911e82a8e658",
+  "name": "Barboach",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A2a-016",
+  "limitlessId": "A2a 16",
+  "rarity": "d-1",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Mud-Slap",
+      "text": "",
+      "energyCost": [
+        "Water",
+        "Colorless"
+      ],
+      "hp": "30",
+      "_id": "67c153b7915a911e82a8e659"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false
+}

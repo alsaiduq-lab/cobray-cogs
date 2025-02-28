@@ -1,0 +1,51 @@
+{
+  "_id": "67c156f1915a911e82a8fc62",
+  "name": "Vespiquen",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "100",
+  "pokemonId": "A2a-005",
+  "limitlessId": "A2a 5",
+  "rarity": "d-2",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Reckless Charge",
+      "text": "",
+      "energyCost": [
+        "Grass",
+        "Grass",
+        "Grass"
+      ],
+      "hp": "120",
+      "_id": "67c158e77103a0f7aed74d6a"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

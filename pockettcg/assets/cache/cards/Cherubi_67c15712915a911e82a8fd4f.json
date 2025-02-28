@@ -1,0 +1,51 @@
+{
+  "_id": "67c15712915a911e82a8fd4f",
+  "name": "Cherubi",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "50",
+  "pokemonId": "A2a-006",
+  "limitlessId": "A2a 6",
+  "rarity": "d-1",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Leafage",
+      "text": "",
+      "energyCost": [
+        "Grass",
+        null,
+        null
+      ],
+      "hp": "20",
+      "_id": "67c158ef915a911e82a90be8"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

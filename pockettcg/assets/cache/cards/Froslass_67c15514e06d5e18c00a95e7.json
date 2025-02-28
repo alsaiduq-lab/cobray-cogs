@@ -1,0 +1,52 @@
+{
+  "_id": "67c15514e06d5e18c00a95e7",
+  "name": "Froslass",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "90",
+  "pokemonId": "A2a-019",
+  "limitlessId": "A2a 19",
+  "rarity": "d-2",
+  "weakness": [
+    "Metal"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Blizzard",
+      "text": "This attack also does 10 damage to each of your opponent's Benched Pokémon.",
+      "energyCost": [
+        "Water",
+        "Colorless",
+        null,
+        null
+      ],
+      "hp": "40",
+      "_id": "67c158727103a0f7aed74a38"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

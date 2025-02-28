@@ -1,0 +1,52 @@
+{
+  "_id": "67c15701915a911e82a8fcf8",
+  "name": "Houndour",
+  "energyType": [
+    "Fire"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A2a-011",
+  "limitlessId": "A2a 11",
+  "rarity": "d-1",
+  "weakness": [
+    "Water"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Flare",
+      "text": "",
+      "energyCost": [
+        "Fire",
+        null,
+        null,
+        null
+      ],
+      "hp": "20",
+      "_id": "67c157b47103a0f7aed74407"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

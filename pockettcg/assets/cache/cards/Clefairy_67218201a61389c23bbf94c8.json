@@ -23,7 +23,7 @@
         "Psychic"
       ],
       "hp": "20",
-      "_id": "6799488897fb8e77af07a435"
+      "_id": "67a75b512f78b5ccf2b67241"
     }
   ],
   "obtain": [
@@ -44,5 +44,7 @@
   "subType": "Basic",
   "artVariants": [],
   "limitlessId": "P-A 16",
+  "rarity": "p",
+  "deckTypes": [],
   "nameRelease": "2024-10-30T03:00:00.000Z"
 }

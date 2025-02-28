@@ -1,0 +1,38 @@
+{
+  "_id": "67c15394915a911e82a8e5a2",
+  "name": "Azumarill",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "100",
+  "pokemonId": "A2a-015",
+  "limitlessId": "A2a 15",
+  "rarity": "d-1",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2024-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Waterfall",
+      "text": "",
+      "energyCost": [
+        "Water",
+        "Colorless"
+      ],
+      "hp": "60",
+      "_id": "67c15394915a911e82a8e5a3"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false
+}

@@ -1,0 +1,52 @@
+{
+  "_id": "67c1569ce06d5e18c00aa16b",
+  "name": "Origin Forme Palkia",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "120",
+  "pokemonId": "A2a-023",
+  "limitlessId": "A2a 23",
+  "rarity": "d-3",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Zone Smash",
+      "text": "Flip a coin. If heads, this attack deals 60 more damage.",
+      "energyCost": [
+        "Water",
+        "Water",
+        "Water",
+        null
+      ],
+      "hp": "60+",
+      "_id": "67c158ac7103a0f7aed74be2"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

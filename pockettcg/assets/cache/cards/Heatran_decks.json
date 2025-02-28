@@ -1,5 +1,122 @@
 [
   {
+    "author": "ぱんち",
+    "created": "2025-02-27T22:10:12.750Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799c357169202e5d7e6a82f",
+          "name": "Heatran",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799b4c1f06a47c6afdf4de6",
+          "name": "Magnemite",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2524",
+          "name": "Magneton",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b5bff06a47c6afdf5344",
+          "name": "Magnezone",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b9210c64508adf1e544a",
+          "name": "Skarmory",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poke Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/momo-cup-(115-players)/4/skarmory/ぱんち/xr3vN/",
+    "deckType": {
+      "name": "Skarmory",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "2nd Place",
+    "tournamentNumber": "4",
+    "customTournamentName": "Momo Cup (115 Players)",
+    "engines": [
+      {
+        "_id": "67ab896225c7da23a21a6c9f",
+        "name": "Magnezone"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
     "author": "たまー",
     "created": "2025-02-27T20:24:55.399Z",
     "main": [
@@ -1100,122 +1217,5 @@
       "title": "PTCGP 50-200 Player Event Roundup #27",
       "url": "/tournaments/tcgp-weekly-results/27/report/"
     }
-  },
-  {
-    "author": "こーき",
-    "created": "2025-02-25T23:27:53.077Z",
-    "main": [
-      {
-        "card": {
-          "_id": "6799c357169202e5d7e6a82f",
-          "name": "Heatran",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "6799b4c1f06a47c6afdf4de6",
-          "name": "Magnemite",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2524",
-          "name": "Magneton",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "6799b5bff06a47c6afdf5344",
-          "name": "Magnezone",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "6799b9210c64508adf1e544a",
-          "name": "Skarmory",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "6798ea0c6950657553dc675d",
-          "name": "Cyrus",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "6798e48fb5fbced301dccc91",
-          "name": "Giant Cape",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poke Ball",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "672181b7c08874f5ab2e1700",
-          "name": "Professor's Research",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "6798e9cadbba2e0d2bb5f6a4",
-          "name": "Rocky Helmet",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a3",
-          "name": "Sabrina",
-          "alternateArt": false
-        },
-        "amount": 2
-      }
-    ],
-    "side": [],
-    "url": "/community-tournaments/doggomme-cup-(64-players)/27/skarmory/こーき/S9aRc/",
-    "deckType": {
-      "name": "Skarmory",
-      "tier": null
-    },
-    "tournamentType": {
-      "name": "Community Tournaments",
-      "shortName": "Community Tournaments",
-      "icon": "/pkm_img/image.webp",
-      "enumSuffix": "#",
-      "statsWeight": null
-    },
-    "tournamentPlacement": "Top 4",
-    "tournamentNumber": "27",
-    "customTournamentName": "Doggomme Cup (64 Players)",
-    "engines": [
-      {
-        "_id": "67ab896225c7da23a21a6c9f",
-        "name": "Magnezone"
-      }
-    ],
-    "linkedArticle": null
   }
 ]

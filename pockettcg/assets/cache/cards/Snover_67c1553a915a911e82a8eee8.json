@@ -1,0 +1,52 @@
+{
+  "_id": "67c1553a915a911e82a8eee8",
+  "name": "Snover",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "70",
+  "pokemonId": "A2a-020",
+  "limitlessId": "A2a 20",
+  "rarity": "d-1",
+  "weakness": [
+    "Metal"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2024-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Corkscrew Punch",
+      "text": "",
+      "energyCost": [
+        "Water",
+        "Colorless",
+        null,
+        null
+      ],
+      "hp": "30",
+      "_id": "67c15890e06d5e18c00aafeb"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

@@ -1,0 +1,51 @@
+{
+  "_id": "67c1594ce06d5e18c00ab5bb",
+  "name": "Clefairy",
+  "energyType": [
+    "Psychic"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A2a-029",
+  "limitlessId": "A2a 29",
+  "rarity": "d-1",
+  "weakness": [
+    "Metal"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Smack",
+      "text": "",
+      "energyCost": [
+        "Psychic",
+        "Colorless",
+        null
+      ],
+      "hp": "30",
+      "_id": "67c1594ce06d5e18c00ab5bc"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

@@ -1,0 +1,51 @@
+{
+  "_id": "67c154597103a0f7aed72bd0",
+  "name": "Heracross",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "100",
+  "pokemonId": "A2a-001",
+  "limitlessId": "A2a 1",
+  "rarity": "d-2",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Single-Horn Throw",
+      "text": "Flip 2 coins. If both of them are heads, this attack does 70 more damage.",
+      "energyCost": [
+        "Grass",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "50",
+      "_id": "67c158c3915a911e82a90ace"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

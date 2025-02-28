@@ -1,0 +1,51 @@
+{
+  "_id": "67c1564fe06d5e18c00a9ef0",
+  "name": "Mothim",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "90",
+  "pokemonId": "A2a-003",
+  "limitlessId": "A2a 3",
+  "rarity": "d-2",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 0,
+  "description": "",
+  "release": "2025-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Gust",
+      "text": "",
+      "energyCost": [
+        "Colorless",
+        "Colorless",
+        null
+      ],
+      "hp": "50",
+      "_id": "67c158d47103a0f7aed74ccf"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

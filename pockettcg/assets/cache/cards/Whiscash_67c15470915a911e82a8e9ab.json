@@ -1,0 +1,52 @@
+{
+  "_id": "67c15470915a911e82a8e9ab",
+  "name": "Whiscash",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "120",
+  "pokemonId": "A2a-017",
+  "limitlessId": "A2a 17",
+  "rarity": "d-2",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 3,
+  "description": "",
+  "release": "2024-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Thrash",
+      "text": "Flip a coin. If heads, this attack does 60 more damage. If tails, this Pokémon does 20 damage to itself.",
+      "energyCost": [
+        "Water",
+        "Water",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "80+",
+      "_id": "67c158607103a0f7aed749ad"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

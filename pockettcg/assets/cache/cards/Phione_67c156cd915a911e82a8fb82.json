@@ -1,0 +1,52 @@
+{
+  "_id": "67c156cd915a911e82a8fb82",
+  "name": "Phione",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A2a-024",
+  "limitlessId": "A2a 24",
+  "rarity": "d-2",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Water Pulse",
+      "text": "Your opponent's active Pokémon is now Asleep.",
+      "energyCost": [
+        "Water",
+        "Water",
+        null,
+        null
+      ],
+      "hp": "40",
+      "_id": "67c158b57103a0f7aed74c1f"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

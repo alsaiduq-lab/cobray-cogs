@@ -1,0 +1,37 @@
+{
+  "_id": "67c153707103a0f7aed72786",
+  "name": "Marill",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A2a-014",
+  "limitlessId": "A2a 14",
+  "rarity": "d-1",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2024-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Water Gun",
+      "text": "",
+      "energyCost": [
+        "Water"
+      ],
+      "hp": "20",
+      "_id": "67c153707103a0f7aed72787"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false
+}

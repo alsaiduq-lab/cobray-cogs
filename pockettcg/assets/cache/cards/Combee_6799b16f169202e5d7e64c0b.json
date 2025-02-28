@@ -16,7 +16,7 @@
   "retreat": 1,
   "description": "",
   "release": "2025-01-30T06:00:00.000Z",
-  "popRank": 244,
+  "popRank": 154,
   "alternateArt": false,
   "artVariants": [
     {
@@ -56,5 +56,12 @@
       "type": "sets"
     }
   ],
-  "ex": false
+  "ex": false,
+  "deckTypes": [
+    "Celebi ex  Serperior",
+    "Exeggutor ex",
+    "Garchomp",
+    "Erika",
+    "Magnezone"
+  ]
 }

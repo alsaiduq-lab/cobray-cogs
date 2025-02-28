@@ -1,0 +1,51 @@
+{
+  "_id": "67c15977e06d5e18c00ab68c",
+  "name": "Clefable",
+  "energyType": [
+    "Psychic"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "100",
+  "pokemonId": "A2a-030",
+  "limitlessId": "A2a 30",
+  "rarity": "d-2",
+  "weakness": [
+    "Metal"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Moonblast",
+      "text": "During your opponent’s next turn, attacks used by the Defending Pokémon do −30 damage.",
+      "energyCost": [
+        "Psychic",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "60",
+      "_id": "67c15977e06d5e18c00ab68d"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

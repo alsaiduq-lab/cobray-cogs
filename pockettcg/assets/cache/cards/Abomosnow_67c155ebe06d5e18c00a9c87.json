@@ -1,0 +1,58 @@
+{
+  "_id": "67c155ebe06d5e18c00a9c87",
+  "name": "Abomosnow",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "120",
+  "pokemonId": "A2a-021",
+  "limitlessId": "A2a 21",
+  "rarity": "d-3",
+  "weakness": [
+    "Metal"
+  ],
+  "retreat": 3,
+  "description": "",
+  "release": "2024-02-28T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Vigor Link",
+      "text": "If you have Arceus or Arceus ex in play, attacks used by this Pokémon cost 1 less Colorless Energy.",
+      "_id": "67c158867103a0f7aed74aa7"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Mega Punch",
+      "text": "",
+      "energyCost": [
+        "Water",
+        "Water",
+        "Colorless",
+        null
+      ],
+      "hp": "80",
+      "_id": "67c158867103a0f7aed74aa8"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67c1534a7103a0f7aed7262e",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Triumphant Light",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}
