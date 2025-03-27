@@ -1,9 +1,10 @@
-import logging
-import aiohttp
 import asyncio
+import logging
 import time
-from typing import Dict, List, Optional, Any
+from typing import Any, Dict, List, Optional
 from urllib.parse import quote
+
+import aiohttp
 
 LOGGER_NAME_BASE = "red.pokemonmeta"
 log = logging.getLogger(f"{LOGGER_NAME_BASE}.core.api")
@@ -109,11 +110,8 @@ class PokemonMetaAPI:
         url = f"{self.BASE_URL}/{endpoint}"
 
         try:
-            # Rate limiting - wait for our turn
             async with self.rate_limit:
-                # Always wait at least 1 second between requests
                 await asyncio.sleep(1.0)
-                
                 async with self.session.get(url, params=params) as resp:
                     if resp.status == 200:
                         result = await resp.json()
@@ -135,7 +133,6 @@ class PokemonMetaAPI:
                             }
                         )
                     return None
-                    
         except asyncio.TimeoutError:
             log.error(f"API request timeout: {endpoint}")
             return None

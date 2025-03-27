@@ -1,11 +1,12 @@
 import logging
-from typing import Dict, List, Optional, Any
-from pathlib import Path
+import os
 from datetime import datetime
 from difflib import SequenceMatcher
-import os
-from .models import Pokemon, EXTRA_CARDS
+from pathlib import Path
+from typing import Any, Dict, List, Optional
+
 from .cache import Cache
+from .models import EXTRA_CARDS, Pokemon
 
 LOGGER_NAME_BASE = "red.pokemonmeta"
 log = logging.getLogger(f"{LOGGER_NAME_BASE}.core.registry")
@@ -24,12 +25,12 @@ class CardRegistry:
             api: API client instance for live data fetching
         """
         self.cache = Cache(cache_dir=cache_dir)
-        self.api = api  # Store API reference
+        self.api = api
         self._cards: Dict[str, Pokemon] = {}  # id -> card
         self._name_index: Dict[str, str] = {}  # lowercase name -> id
-        self._set_index: Dict[str, List[str]] = {}  # set name -> [card ids]
-        self._rarity_index: Dict[str, List[str]] = {}  # rarity -> [card ids]
-        self._type_index: Dict[str, List[str]] = {}  # type -> [card ids]
+        self._set_index: Dict[str, List[str]] = {}
+        self._rarity_index: Dict[str, List[str]] = {}
+        self._type_index: Dict[str, List[str]] = {}
         for card in EXTRA_CARDS:
             self._add_card_to_indices(card)
         self._initialized = False
@@ -171,11 +172,11 @@ class CardRegistry:
                 continue
             ratio = SequenceMatcher(None, query, target).ratio()
             if query == target:
-                ratio += 0.6  # Exact match
+                ratio += 0.6
             elif query in target:
-                ratio += 0.3  # Substring match
+                ratio += 0.3
             elif target.startswith(query):
-                ratio += 0.2  # Prefix match
+                ratio += 0.2
             if ratio >= threshold:
                 matches.append({**item, "_score": ratio})
         matches.sort(key=lambda x: x["_score"], reverse=True)
@@ -185,7 +186,7 @@ class CardRegistry:
         """Check if a card matches all provided filters."""
         try:
             for key, value in filters.items():
-                if not value:  # Skip empty filters
+                if not value:
                     continue
 
                 if key == "type":

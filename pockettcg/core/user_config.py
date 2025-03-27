@@ -1,8 +1,9 @@
-from redbot.core.bot import Red
-from redbot.core import Config
-import discord
-from typing import Optional
 import logging
+from typing import Optional
+
+import discord
+from redbot.core import Config
+from redbot.core.bot import Red
 
 DEFAULT_USER = {
     "preferred_art": 0,

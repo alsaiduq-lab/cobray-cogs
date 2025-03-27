@@ -1,18 +1,19 @@
 import asyncio
-from typing import Optional, List
 import logging
 from logging.handlers import RotatingFileHandler
+from typing import List, Optional
+
 import discord
 from discord import app_commands
-from redbot.core import commands, Config
+from redbot.core import Config, commands
 
+from .commands.cards import CardCommands
 from .core.api import PokemonMetaAPI
 from .core.registry import CardRegistry
 from .core.user_config import UserConfig
-from .commands.cards import CardCommands
 from .utils.embeds import EmbedBuilder
-from .utils.parser import CardParser
 from .utils.images import ImagePipeline
+from .utils.parser import CardParser
 
 LOGGER_NAME_BASE = "red.pokemonmeta"
 log = logging.getLogger(LOGGER_NAME_BASE)
@@ -20,39 +21,29 @@ log = logging.getLogger(LOGGER_NAME_BASE)
 def setup_logging():
     """Configure logging for the entire cog."""
     root_logger = logging.getLogger(LOGGER_NAME_BASE)
-    
-    # Remove any existing handlers first
     for handler in root_logger.handlers[:]:
         root_logger.removeHandler(handler)
 
-    # Create formatter for detailed output
     formatter = logging.Formatter(
         '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
     )
 
-    # Create rotating file handler that captures everything (DEBUG and up)
     file_handler = RotatingFileHandler(
         'pokemon_meta.log',
         maxBytes=1024*1024,  # 1MB
         backupCount=5
     )
     file_handler.setFormatter(formatter)
-    file_handler.setLevel(logging.DEBUG)  # Set to DEBUG to capture all messages
+    file_handler.setLevel(logging.DEBUG)
 
-    # Create stream handler for console output
     stream_handler = logging.StreamHandler()
     stream_handler.setFormatter(formatter)
-    stream_handler.setLevel(logging.DEBUG)  # Set to DEBUG for development
+    stream_handler.setLevel(logging.DEBUG)
 
-    # Configure the root logger
-    root_logger.setLevel(logging.DEBUG)  # Set root logger to DEBUG
+    root_logger.setLevel(logging.DEBUG)
     root_logger.addHandler(file_handler)
     root_logger.addHandler(stream_handler)
-    
-    # Prevent propagation to avoid duplicate logs
     root_logger.propagate = False
-    
-    # Configure child loggers
     child_loggers = [
         'core.api',
         'core.cache',
@@ -65,12 +56,10 @@ def setup_logging():
 
     for name in child_loggers:
         logger = logging.getLogger(f"{LOGGER_NAME_BASE}.{name}")
-        # Remove any existing handlers
         for handler in logger.handlers[:]:
             logger.removeHandler(handler)
-        # Configure child logger
         logger.setLevel(logging.DEBUG)
-        logger.propagate = True  # Allow propagation to root logger
+        logger.propagate = True
 
     log.debug("Logging system initialized with DEBUG level enabled")
 

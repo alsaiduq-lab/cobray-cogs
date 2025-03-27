@@ -1,6 +1,7 @@
-import re
 import logging
-from typing import List, Dict, Any
+import re
+from typing import Any, Dict, List
+
 
 class CardParser:
     def __init__(self, *, log=None):

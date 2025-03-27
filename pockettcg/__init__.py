@@ -1,5 +1,6 @@
 """Pokemon TCG cog for Red-DiscordBot."""
 import logging
+
 from redbot.core.bot import Red
 
 from .pocket import PokemonMeta

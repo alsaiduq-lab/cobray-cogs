@@ -1,9 +1,12 @@
-import discord
 import logging
-from typing import Optional, List, Union, Any
+from typing import Any, List, Optional, Union
 from urllib.parse import quote
+
+import discord
+
+from ..core.models import RARITY_MAPPING, Pokemon
 from .images import ImagePipeline
-from ..core.models import Pokemon, RARITY_MAPPING
+
 
 class BaseCardEmbed:
     def __init__(self, image_pipeline: ImagePipeline, *, log: Optional[logging.Logger] = None) -> None:
@@ -106,7 +109,6 @@ class EmbedBuilder(BaseCardEmbed):
     def _format_energy_cost(self, energy_list: Union[List[str], List[List[str]]]) -> str:
         if not energy_list:
             return ""
-            
         try:
             emojis = []
             for energy in energy_list:
@@ -117,7 +119,6 @@ class EmbedBuilder(BaseCardEmbed):
                 elif energy is not None:
                     if emoji := self._get_energy_emoji(energy):
                         emojis.append(emoji)
-            
             return " ".join(emojis)
         except Exception as e:
             self.logger.error(f"Error formatting energy cost {energy_list}: {e}", exc_info=True)
@@ -127,7 +128,6 @@ class EmbedBuilder(BaseCardEmbed):
         try:
             embed = discord.Embed(title=card.name, color=0x808080)
             type_parts = []
-            
             if hasattr(card, 'card_type'):
                 type_parts.append(f"Type: {card.card_type}")
             if hasattr(card, 'rarity'):
@@ -156,7 +156,6 @@ class EmbedBuilder(BaseCardEmbed):
         try:
             embed = discord.Embed(title=card.name, color=self.TYPE_COLORS.get(card.category, self.TYPE_COLORS["Trainer"]))
             type_parts = [f"Category: {card.category}"]
-            
             if card.rarity:
                 type_parts.append(f"Rarity: {self._format_rarity(card.rarity)}")
             embed.description = " | ".join(type_parts)
@@ -190,7 +189,6 @@ class EmbedBuilder(BaseCardEmbed):
                 type_parts.append(f"HP: {pokemon.hp}")
             if pokemon.rarity:
                 type_parts.append(f"Rarity: {self._format_rarity(pokemon.rarity)}")
-            
             embed.description = " | ".join(type_parts)
 
             if pokemon.subType:

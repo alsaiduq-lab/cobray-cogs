@@ -1,10 +1,11 @@
-import logging
-from typing import Dict, List, Optional, Tuple
 import asyncio
+import logging
 from pathlib import Path
+from typing import Dict, List, Optional, Tuple
 from urllib.parse import quote
-from ..core.models import Pokemon
+
 from ..core.api import PokemonMetaAPI
+from ..core.models import Pokemon
 
 log = logging.getLogger("red.pokemonmeta.images")
 
@@ -15,7 +16,7 @@ class ImagePipeline:
     CACHE_DIR = Path("assets/cache/cards/")
 
     def __init__(self):
-        self.api = PokemonMetaAPI()  # Get the singleton instance
+        self.api = PokemonMetaAPI()
         self.rate_limit = asyncio.Semaphore(3)
         self.CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -25,7 +26,6 @@ class ImagePipeline:
 
     async def close(self):
         """Close the image pipeline."""
-        # Don't close the API session here, as it's shared
         pass
 
     def _get_cached_path(self, card_id: str) -> Optional[Path]:
@@ -59,7 +59,6 @@ class ImagePipeline:
     def get_cdn_card_url(self, card) -> Optional[str]:
         """Generate URL for a card, checking cache first."""
         try:
-            # Get MongoDB ID
             mongo_id = getattr(card, '_id', None)
 
             if not mongo_id:

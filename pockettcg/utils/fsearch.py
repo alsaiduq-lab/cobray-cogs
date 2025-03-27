@@ -1,5 +1,5 @@
-from typing import List, Dict, Any, Callable, Optional, Union
 from difflib import SequenceMatcher
+from typing import Any, Callable, Dict, List, Optional, Union
 
 __all__ = ['fuzzy_search', 'fuzzy_search_multi']
 
@@ -22,10 +22,10 @@ def fuzzy_search(
             continue
 
         if query == target:
-            matches.append({**item, "_score": 2.0})  # Perfect match gets highest score
+            matches.append({**item, "_score": 2.0})
             continue
         if query in target:
-            matches.append({**item, "_score": 1.5})  # Substring match gets high score
+            matches.append({**item, "_score": 1.5})
             continue
 
         ratio = SequenceMatcher(None, query, target).ratio()
