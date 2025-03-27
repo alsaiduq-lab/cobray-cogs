@@ -48,20 +48,29 @@
   "weakness": [
     "Fighting"
   ],
-  "popRank": 26,
+  "popRank": 140,
   "artVariants": [
     {
       "_id": "671ef1105279bcfb3c1e25df",
-      "name": "Pikachu ex"
+      "name": "Pikachu ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     },
     {
       "_id": "671ef1105279bcfb3c1e25dc",
-      "name": "Pikachu ex"
+      "name": "Pikachu ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     },
     {
       "_id": "671ef1105279bcfb3c1e25c6",
-      "name": "Pikachu ex"
+      "name": "Pikachu ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     }
   ],
-  "limitlessId": "A1 96"
+  "limitlessId": "A1 96",
+  "deckTypes": [
+    "Pikachu ex"
+  ]
 }

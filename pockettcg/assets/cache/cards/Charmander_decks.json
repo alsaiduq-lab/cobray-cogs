@@ -1,0 +1,1272 @@
+[
+  {
+    "author": "outlxw",
+    "created": "2025-03-24T22:53:14.886Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e6",
+          "name": "Charizard ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e3",
+          "name": "Charmander",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e4",
+          "name": "Charmeleon",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24f1",
+          "name": "Moltres ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799a5e0169202e5d7e614b9",
+          "name": "Dawn",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/heaven´s-spring-cup-2025-(32-players)/4/charizard-ex/outlxw/yRYFN/",
+    "deckType": {
+      "name": "Charizard ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "4",
+    "customTournamentName": "Heaven´s Spring Cup 2025 (32 Players)",
+    "engines": [
+      {
+        "_id": "67abc53325c7da23a21c6af2",
+        "name": "Moltres ex"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "ふぁん",
+    "created": "2025-03-23T03:05:46.453Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e6",
+          "name": "Charizard ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e3",
+          "name": "Charmander",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e4",
+          "name": "Charmeleon",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24f1",
+          "name": "Moltres ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b296169202e5d7e650f6",
+          "name": "Shaymin",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/rebirth-cup-(306-players)/1/charizard-ex/ふぁん/Hwb1J/",
+    "deckType": {
+      "name": "Charizard ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 4",
+    "tournamentNumber": "1",
+    "customTournamentName": "Rebirth Cup (306 Players)",
+    "engines": [
+      {
+        "_id": "67abc53325c7da23a21c6af2",
+        "name": "Moltres ex"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "ぼすやま",
+    "created": "2025-03-23T03:04:39.391Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e6",
+          "name": "Charizard ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e3",
+          "name": "Charmander",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e4",
+          "name": "Charmeleon",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24f1",
+          "name": "Moltres ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181abc08874f5ab2e16fb",
+          "name": "Red Card",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/rebirth-cup-(306-players)/1/charizard-ex/ぼすやま/T77Hd/",
+    "deckType": {
+      "name": "Charizard ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "2nd Place",
+    "tournamentNumber": "1",
+    "customTournamentName": "Rebirth Cup (306 Players)",
+    "engines": [
+      {
+        "_id": "67abc53325c7da23a21c6af2",
+        "name": "Moltres ex"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "こは",
+    "created": "2025-03-23T02:20:04.391Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e5",
+          "name": "Charizard",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e6",
+          "name": "Charizard ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e3",
+          "name": "Charmander",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e4",
+          "name": "Charmeleon",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24f1",
+          "name": "Moltres ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799a5e0169202e5d7e614b9",
+          "name": "Dawn",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/shimohiro-cup-(383-players)/30/charizard-ex/こは/tpaT9/",
+    "deckType": {
+      "name": "Charizard ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "1st Place",
+    "tournamentNumber": "30",
+    "customTournamentName": "Shimohiro Cup (383 Players)",
+    "engines": [
+      {
+        "_id": "67abc53325c7da23a21c6af2",
+        "name": "Moltres ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67df705ee50cb1f2a2fa3eea",
+      "title": "Shimohiro Cup #30 - 383 Players",
+      "url": "/tournaments/shimohiro-cup/30/report/"
+    }
+  },
+  {
+    "author": "Chocolate ",
+    "created": "2025-03-21T11:43:51.675Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e6",
+          "name": "Charizard ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e3",
+          "name": "Charmander",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e4",
+          "name": "Charmeleon",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24f1",
+          "name": "Moltres ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b296169202e5d7e650f6",
+          "name": "Shaymin",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/faster-than-the-light-tournament-(234-players)/14/charizard-ex/chocolate-/9Y-GH/",
+    "deckType": {
+      "name": "Charizard ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "14",
+    "customTournamentName": "FASTER THAN THE LIGHT TOURNAMENT (234 Players)",
+    "engines": [
+      {
+        "_id": "67abc53325c7da23a21c6af2",
+        "name": "Moltres ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67dd5162e2096b41c50f2aa6",
+      "title": "FASTER THAN THE LIGHT TOURNAMENT #14 - 234 Players",
+      "url": "/tournaments/faster-than-the-light/14/report/"
+    }
+  },
+  {
+    "author": "AkaseAhri",
+    "created": "2025-03-20T14:09:22.306Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e6",
+          "name": "Charizard ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e3",
+          "name": "Charmander",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e4",
+          "name": "Charmeleon",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24f1",
+          "name": "Moltres ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae6d0e40c3b726073ffa1",
+          "name": "Blue",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/torneo-clasificatorio-(46-players)/14/charizard-ex/akaseahri/uv0WN/",
+    "deckType": {
+      "name": "Charizard ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 4",
+    "tournamentNumber": "14",
+    "customTournamentName": "TORNEO CLASIFICATORIO (46 Players)",
+    "engines": [
+      {
+        "_id": "67abc53325c7da23a21c6af2",
+        "name": "Moltres ex"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "Gratoss65",
+    "created": "2025-03-19T15:40:35.557Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e6",
+          "name": "Charizard ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e3",
+          "name": "Charmander",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e4",
+          "name": "Charmeleon",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c15785e06d5e18c00aa760",
+          "name": "Heatran",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24f1",
+          "name": "Moltres ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/svk-~-flash-tournament-(169-players)/7/charizard-ex/gratoss65/rI7LG/",
+    "deckType": {
+      "name": "Charizard ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "7",
+    "customTournamentName": "SvK ~ Flash Tournament (169 Players)",
+    "engines": [
+      {
+        "_id": "67abc53325c7da23a21c6af2",
+        "name": "Moltres ex"
+      },
+      {
+        "_id": "67c37f171e18efe5bd2ab188",
+        "name": "Heatran"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67d587f5ec6125465ae0e0fd",
+      "title": "PTCGP 50-200 Player Event Roundup #32",
+      "url": "/tournaments/tcgp-weekly-results/32/report/"
+    }
+  },
+  {
+    "author": "Ohtsu",
+    "created": "2025-03-18T21:25:10.690Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e6",
+          "name": "Charizard ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e3",
+          "name": "Charmander",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e4",
+          "name": "Charmeleon",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24f1",
+          "name": "Moltres ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799a5e0169202e5d7e614b9",
+          "name": "Dawn",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/leprechaun-turtle-(94-players)/1/charizard-ex/ohtsu/5Z2M-/",
+    "deckType": {
+      "name": "Charizard ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "1",
+    "customTournamentName": "LEPRECHAUN TURTLE (94 Players)",
+    "engines": [
+      {
+        "_id": "67abc53325c7da23a21c6af2",
+        "name": "Moltres ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67d587f5ec6125465ae0e0fd",
+      "title": "PTCGP 50-200 Player Event Roundup #32",
+      "url": "/tournaments/tcgp-weekly-results/32/report/"
+    }
+  },
+  {
+    "author": "kubamzeee",
+    "created": "2025-03-18T21:13:48.023Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e6",
+          "name": "Charizard ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e3",
+          "name": "Charmander",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e4",
+          "name": "Charmeleon",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24f1",
+          "name": "Moltres ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae6d0e40c3b726073ffa1",
+          "name": "Blue",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/faster-than-the-light-tournament-(274-players)/12/charizard-ex/kubamzeee/nP-MC/",
+    "deckType": {
+      "name": "Charizard ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "12",
+    "customTournamentName": "FASTER THAN THE LIGHT TOURNAMENT (274 Players)",
+    "engines": [
+      {
+        "_id": "67abc53325c7da23a21c6af2",
+        "name": "Moltres ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67d9e26aa2f738b7da19fffa",
+      "title": "FASTER THAN THE LIGHT TOURNAMENT #12 - 274 Players",
+      "url": "/tournaments/faster-than-the-light/12/report/"
+    }
+  },
+  {
+    "author": "ElHiks",
+    "created": "2025-03-13T01:58:57.725Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e6",
+          "name": "Charizard ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e3",
+          "name": "Charmander",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e4",
+          "name": "Charmeleon",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24f1",
+          "name": "Moltres ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b296169202e5d7e650f6",
+          "name": "Shaymin",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/svk-~-flash-tournament-(123-players)/4/charizard-ex/elhiks/cgEUQ/",
+    "deckType": {
+      "name": "Charizard ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "4",
+    "customTournamentName": "SvK ~ Flash Tournament (123 Players)",
+    "engines": [
+      {
+        "_id": "67abc53325c7da23a21c6af2",
+        "name": "Moltres ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67d183e56b52e2a6d73f8b51",
+      "title": "PTCGP 50-200 Player Event Roundup #31",
+      "url": "/tournaments/tcgp-weekly-results/31/report/"
+    }
+  }
+]

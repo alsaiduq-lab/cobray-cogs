@@ -1,0 +1,56 @@
+{
+  "_id": "67e3a076575eceb838a28fc6",
+  "name": "Beedrill ex",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "170",
+  "pokemonId": "A2b-107",
+  "limitlessId": "A2b 107",
+  "rarity": "shiny-2",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Multiply",
+      "text": "Discard a random Energy from your opponent's Active Pokémon.",
+      "energyCost": [
+        "Grass",
+        "Grass"
+      ],
+      "hp": "80",
+      "_id": "67e3a076575eceb838a28fc7"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true,
+  "nameRelease": "2025-03-27T06:00:00.000Z"
+}

@@ -1,0 +1,1191 @@
+[
+  {
+    "author": "Shonough",
+    "created": "2025-02-16T19:31:08.906Z",
+    "main": [
+      {
+        "card": {
+          "_id": "679249c6eb08086be85411ca",
+          "name": "Pachirisu ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2525",
+          "name": "Voltorb",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b7550c64508adf1e49ca",
+          "name": "Electrode",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799c215f06a47c6afdf921c",
+          "name": "Electivire",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67611a9ddb7f64d578b8a81d",
+          "name": "Electabuzz",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bdd6169202e5d7e68c71",
+          "name": "Volkner",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/squirtle-squad-tcg-pocket-tour-(82-players)/3/pachirisu-ex/shonough/Yf1bc/",
+    "deckType": {
+      "name": "Pachirisu ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "3",
+    "customTournamentName": "Squirtle Squad TCG Pocket Tour (82 Players)",
+    "engines": [],
+    "linkedArticle": {
+      "_id": "67b0f7391306185a4cc8e3ed",
+      "title": "PTCGP 50-200 Player Event Roundup #25",
+      "url": "/tournaments/tcgp-weekly-results/25/report/"
+    }
+  },
+  {
+    "author": "AuronSeraphin",
+    "created": "2025-02-14T13:30:21.144Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2522",
+          "name": "Pikachu ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e252a",
+          "name": "Zapdos ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "676110a1b864a94749ee5bfd",
+          "name": "Dedenne",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2525",
+          "name": "Voltorb",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2526",
+          "name": "Electrode",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799a5e0169202e5d7e614b9",
+          "name": "Dawn",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/torneio-td-padrão-fevereiro-(167-players)/2/pikachu-ex/auronseraphin/f_Ll2/",
+    "deckType": {
+      "name": "Pikachu ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "2",
+    "customTournamentName": "Torneio TD PADRÃO Fevereiro (167 Players)",
+    "engines": [],
+    "linkedArticle": {
+      "_id": "67acfc7a1eb7dff1f992b814",
+      "title": "PTCGP 50-200 Player Event Roundup #24",
+      "url": "/tournaments/tcgp-weekly-results/24/report/"
+    }
+  },
+  {
+    "author": "Hafidh A",
+    "created": "2025-02-02T23:40:26.195Z",
+    "main": [
+      {
+        "card": {
+          "_id": "679249c6eb08086be85411ca",
+          "name": "Pachirisu ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b7a50c64508adf1e4bfd",
+          "name": "Rotom",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b700f06a47c6afdf5adf",
+          "name": "Voltorb",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b7550c64508adf1e49ca",
+          "name": "Electrode",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/tournoi-league-canto-tcg-pocket-(223-players)/1/pachirisu-ex/hafidh-a/FPTyO/",
+    "deckType": {
+      "name": "Pachirisu ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "1",
+    "customTournamentName": "Tournoi LEAGUE canto TCG POCKET (223 Players)",
+    "engines": [],
+    "linkedArticle": {
+      "_id": "67a0031e1dae25ecf397e5d5",
+      "title": "Tournoi LEAGUE canto TCG POCKET #1 - 223 Players",
+      "url": "/tournaments/tournoi-league-canto/1/report/"
+    }
+  },
+  {
+    "author": {
+      "_id": "672417361542073227573d93",
+      "roles": [],
+      "username": "AceLivesHere"
+    },
+    "created": "2025-02-02T14:50:59.571Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799b700f06a47c6afdf5adf",
+          "name": "Voltorb",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799c265f06a47c6afdf93e0",
+          "name": "Shinx",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2526",
+          "name": "Electrode",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799c283f06a47c6afdf9450",
+          "name": "Luxio",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799c2cc0c64508adf1e7fd7",
+          "name": "Luxray",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bdd6169202e5d7e68c71",
+          "name": "Volkner",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799a5e0169202e5d7e614b9",
+          "name": "Dawn",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/5-winstreak/february-2025/luxray/acemushroom/NHuba/",
+    "deckType": {
+      "name": "Luxray",
+      "tier": null
+    },
+    "rankedType": {
+      "name": "5+ Winstreak",
+      "shortName": "Winstreak",
+      "icon": "/img/tournaments/logos/Spicy_Wins.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
+    },
+    "engines": [],
+    "linkedArticle": null
+  },
+  {
+    "author": "eldominguero",
+    "created": "2025-02-01T16:11:19.153Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2522",
+          "name": "Pikachu ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e252a",
+          "name": "Zapdos ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "676110a1b864a94749ee5bfd",
+          "name": "Dedenne",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "679249c6eb08086be85411ca",
+          "name": "Pachirisu ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799b700f06a47c6afdf5adf",
+          "name": "Voltorb",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b7550c64508adf1e49ca",
+          "name": "Electrode",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/torneo-nocturno-argentino-(30-players)/5/pikachu-ex/eldominguero/CMQH0/",
+    "deckType": {
+      "name": "Pikachu ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "2nd Place",
+    "tournamentNumber": "5",
+    "customTournamentName": "Torneo Nocturno Argentino (30 Players)",
+    "engines": [
+      {
+        "_id": "67abccce88624a4a297c00d2",
+        "name": "Pachirisu ex"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "Lemka",
+    "created": "2025-01-28T21:14:46.537Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2522",
+          "name": "Pikachu ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e252c",
+          "name": "Zebstrika",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e252b",
+          "name": "Blitzle",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2525",
+          "name": "Voltorb",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2526",
+          "name": "Electrode",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181abc08874f5ab2e16fb",
+          "name": "Red Card",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/gabut-tournament-(107-players)/6/pikachu-ex/lemka/_OV_f/",
+    "deckType": {
+      "name": "Pikachu ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "6",
+    "customTournamentName": "Gabut Tournament (107 Players)",
+    "engines": [],
+    "linkedArticle": {
+      "_id": "679942e3f5d84b3e8fe0dafa",
+      "title": "PTCGP 50-200 Player Event Roundup #20",
+      "url": "/tournaments/tcgp-weekly-results/20/report/"
+    }
+  },
+  {
+    "author": "Sullivanonyme",
+    "created": "2025-01-27T14:50:47.339Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2522",
+          "name": "Pikachu ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67611a9ddb7f64d578b8a81d",
+          "name": "Electabuzz",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2521",
+          "name": "Raichu",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2520",
+          "name": "Pikachu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2525",
+          "name": "Voltorb",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2526",
+          "name": "Electrode",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a4",
+          "name": "Lt. Surge",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/ursiiday's-pocket-weekly-(1504-players)/13/pikachu-ex/sullivanonyme/PTbWx/",
+    "deckType": {
+      "name": "Pikachu ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "13",
+    "customTournamentName": "Ursiiday's Pocket Weekly (1504 Players)",
+    "engines": [],
+    "linkedArticle": {
+      "_id": "67979d70ea4bd1ed1e16aee0",
+      "title": "Ursiiday's Pocket Weekly #13 - 1504 Players",
+      "url": "/tournaments/ursiiday-pocket-weekly/13/report/"
+    }
+  },
+  {
+    "author": "TrapperB",
+    "created": "2025-01-26T14:42:41.621Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2522",
+          "name": "Pikachu ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e252a",
+          "name": "Zapdos ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e252c",
+          "name": "Zebstrika",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e252b",
+          "name": "Blitzle",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2525",
+          "name": "Voltorb",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2526",
+          "name": "Electrode",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/chaos-league-pocket-saturdays-(165-players)/5/pikachu-ex/trapperb/KV1oi/",
+    "deckType": {
+      "name": "Pikachu ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "5",
+    "customTournamentName": "Chaos League Pocket Saturdays (165 Players)",
+    "engines": [],
+    "linkedArticle": {
+      "_id": "6794f1520a0700c177a24200",
+      "title": "PTCGP 50-200 Player Event Roundup #19",
+      "url": "/tournaments/tcgp-weekly-results/19/report/"
+    }
+  },
+  {
+    "author": {
+      "_id": "675c43ae5731135362e499c6",
+      "roles": [],
+      "username": "wojta.U"
+    },
+    "created": "2025-01-22T05:58:05.597Z",
+    "main": [
+      {
+        "card": {
+          "_id": "67611b05f9e257245fbb9272",
+          "name": "Joltik",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67611057b864a94749ee5a43",
+          "name": "Galvantula",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2525",
+          "name": "Voltorb",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2526",
+          "name": "Electrode",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2522",
+          "name": "Pikachu ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e252a",
+          "name": "Zapdos ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/5-winstreak/january-2025/pikachu-ex/wojta.u/i1moW/",
+    "deckType": {
+      "name": "Pikachu ex",
+      "tier": null
+    },
+    "rankedType": {
+      "name": "5+ Winstreak",
+      "shortName": "Winstreak",
+      "icon": "/img/tournaments/logos/Spicy_Wins.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
+    },
+    "engines": [],
+    "linkedArticle": null
+  },
+  {
+    "author": "Sic11",
+    "created": "2025-01-18T15:14:34.579Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2522",
+          "name": "Pikachu ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e252a",
+          "name": "Zapdos ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67611a9ddb7f64d578b8a81d",
+          "name": "Electabuzz",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2525",
+          "name": "Voltorb",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2526",
+          "name": "Electrode",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae6d0e40c3b726073ffa1",
+          "name": "Blue",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/ideavolution-swiss-round-tournament-(333-players)/1/pikachu-ex/sic11/xx3Z6/",
+    "deckType": {
+      "name": "Pikachu ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "1",
+    "customTournamentName": "IDEAVOLUTION Swiss Round Tournament (333 Players)",
+    "engines": [],
+    "linkedArticle": {
+      "_id": "678bc5cfc27bc2567b3739d5",
+      "title": "IDEAVOLUTION Swiss Round Tournament #1 - 333 Players",
+      "url": "/tournaments/ideavolution-swiss-tournament/1/report/"
+    }
+  }
+]

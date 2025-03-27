@@ -1,0 +1,57 @@
+{
+  "_id": "67e39b1e79f0ebec0380e64e",
+  "name": "Paldean Clodsire ex",
+  "energyType": [
+    "Darkness"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "160",
+  "pokemonId": "A2b-085",
+  "limitlessId": "A2b 85",
+  "rarity": "s-2",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 3,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Venoshock",
+      "text": "If your opponent's Active Pokémon is Poisoned, this attack does 60 more damage.",
+      "energyCost": [
+        "Darkness",
+        "Darkness",
+        null
+      ],
+      "hp": "60+",
+      "_id": "67e39b2e5cc271d38f74b417"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true,
+  "nameRelease": "2025-03-27T06:00:00.000Z"
+}

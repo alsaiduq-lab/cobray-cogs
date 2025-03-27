@@ -19,7 +19,9 @@
   "artVariants": [
     {
       "_id": "6799c373f06a47c6afdf982e",
-      "name": "Drifloon"
+      "name": "Drifloon",
+      "alternateArt": true,
+      "nameRelease": "2025-01-30T06:00:00.000Z"
     }
   ],
   "abilities": [],
@@ -56,5 +58,6 @@
   ],
   "ex": false,
   "limitlessId": "A2 73",
-  "release": "2025-01-30T06:00:00.000Z"
+  "release": "2025-01-30T06:00:00.000Z",
+  "deckTypes": []
 }

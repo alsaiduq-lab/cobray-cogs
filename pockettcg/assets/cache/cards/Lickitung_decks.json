@@ -1,0 +1,1417 @@
+[
+  {
+    "author": {
+      "_id": "629e4b873d5cfbbf576a4687",
+      "roles": [],
+      "username": "NewAge8-Axis"
+    },
+    "created": "2025-03-01T13:43:24.006Z",
+    "main": [
+      {
+        "card": {
+          "_id": "67c0591452e93386721e093b",
+          "name": "Arceus ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "679248b1eb08086be8540c5b",
+          "name": "Dialga ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799c4f0f06a47c6afdf9f47",
+          "name": "Heatran",
+          "alternateArt": true,
+          "nameRelease": "2025-01-30T06:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799c3250c64508adf1e817b",
+          "name": "Lickilicky ex",
+          "alternateArt": true,
+          "nameRelease": "2025-01-30T06:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e258b",
+          "name": "Lickitung",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67611f27b864a94749eeb5a7",
+          "name": "Mew ex",
+          "alternateArt": true,
+          "nameRelease": "2024-12-17T06:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799ba72169202e5d7e67a14",
+          "name": "Nosepass",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67c16439915a911e82a96046",
+          "name": "Probopass ex",
+          "alternateArt": true,
+          "nameRelease": "2025-02-28T06:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/5-winstreak/march-2025/arceus-ex/newage8-axis/f27Mx/",
+    "deckType": {
+      "name": "Arceus ex Dialga ex",
+      "tier": null
+    },
+    "rankedType": {
+      "name": "5+ Winstreak",
+      "shortName": "Winstreak",
+      "icon": "/img/tournaments/logos/Spicy_Wins.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
+    },
+    "engines": [
+      {
+        "_id": "67c22c858046c4a97275f97b",
+        "name": "Dialga"
+      },
+      {
+        "_id": "67abc5cf25c7da23a21c7190",
+        "name": "Mew ex"
+      }
+    ],
+    "linkedArticle": null,
+    "hasNotes": false,
+    "hasReplays": false
+  },
+  {
+    "author": "Tohka",
+    "created": "2025-03-01T13:19:00.626Z",
+    "main": [
+      {
+        "card": {
+          "_id": "676119fbf9e257245fbb8cb4",
+          "name": "Druddigon",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2519",
+          "name": "Froakie",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e251a",
+          "name": "Frogadier",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e251b",
+          "name": "Greninja",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799ba14169202e5d7e6781a",
+          "name": "Lickilicky ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b9ac169202e5d7e675f9",
+          "name": "Lickitung",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67c07d5a52e93386721eec30",
+          "name": "Irida",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/victory-road---terremoto-x-trainers-tcg-(159-players)/3/lickilicky-ex/tohka/fmoh9/",
+    "deckType": {
+      "name": "Lickilicky ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "3",
+    "customTournamentName": "Victory Road - Terremoto x Trainers TCG (159 Players)",
+    "engines": [
+      {
+        "_id": "67abc4ef6fa98c7329e32e0d",
+        "name": "Greninja"
+      },
+      {
+        "_id": "67abcbd788624a4a297bf66f",
+        "name": "Druddigon"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67c3099e89ab07a7c2c23b72",
+      "title": "PTCGP 50-200 Player Event Roundup #28",
+      "url": "/tournaments/tcgp-weekly-results/28/report/"
+    }
+  },
+  {
+    "author": "だい",
+    "created": "2025-02-27T04:45:44.656Z",
+    "main": [
+      {
+        "card": {
+          "_id": "679248b1eb08086be8540c5b",
+          "name": "Dialga ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799ba14169202e5d7e6781a",
+          "name": "Lickilicky ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b9ac169202e5d7e675f9",
+          "name": "Lickitung",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae715e40c3b7260740109",
+          "name": "Mew ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/chalico-kitaro-cup-(128-players)/42/lickilicky-ex/だい/-9D1y/",
+    "deckType": {
+      "name": "Lickilicky ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 4",
+    "tournamentNumber": "42",
+    "customTournamentName": "Chalico Kitaro Cup (128 Players)",
+    "engines": [
+      {
+        "_id": "67abc5cf25c7da23a21c7190",
+        "name": "Mew ex"
+      },
+      {
+        "_id": "67c22c858046c4a97275f97b",
+        "name": "Dialga"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "だい",
+    "created": "2025-02-27T02:29:04.371Z",
+    "main": [
+      {
+        "card": {
+          "_id": "679248b1eb08086be8540c5b",
+          "name": "Dialga ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799ba14169202e5d7e6781a",
+          "name": "Lickilicky ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b9ac169202e5d7e675f9",
+          "name": "Lickitung",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae715e40c3b7260740109",
+          "name": "Mew ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/rph²杯-(171-players)/40/lickilicky-ex/だい/oUGRe/",
+    "deckType": {
+      "name": "Lickilicky ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "2nd Place",
+    "tournamentNumber": "40",
+    "customTournamentName": "Rph²杯 (171 Players)",
+    "engines": [
+      {
+        "_id": "67abc5cf25c7da23a21c7190",
+        "name": "Mew ex"
+      },
+      {
+        "_id": "67c22c858046c4a97275f97b",
+        "name": "Dialga"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "だい",
+    "created": "2025-02-25T23:28:47.626Z",
+    "main": [
+      {
+        "card": {
+          "_id": "679248b1eb08086be8540c5b",
+          "name": "Dialga ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799ba14169202e5d7e6781a",
+          "name": "Lickilicky ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b9ac169202e5d7e675f9",
+          "name": "Lickitung",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae715e40c3b7260740109",
+          "name": "Mew ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/bomber-cup-(102-players)/37/lickilicky-ex/だい/d143B/",
+    "deckType": {
+      "name": "Lickilicky ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "1st Place",
+    "tournamentNumber": "37",
+    "customTournamentName": "Bomber Cup (102 Players)",
+    "engines": [
+      {
+        "_id": "67abc5cf25c7da23a21c7190",
+        "name": "Mew ex"
+      },
+      {
+        "_id": "67c22c858046c4a97275f97b",
+        "name": "Dialga"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "kinkakuj",
+    "created": "2025-02-25T22:24:27.142Z",
+    "main": [
+      {
+        "card": {
+          "_id": "679248b1eb08086be8540c5b",
+          "name": "Dialga ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799ba14169202e5d7e6781a",
+          "name": "Lickilicky ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b9ac169202e5d7e675f9",
+          "name": "Lickitung",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae715e40c3b7260740109",
+          "name": "Mew ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/faster-than-the-light-tournament-(260-players)/0/lickilicky-ex/kinkakuj/hTUS4/",
+    "deckType": {
+      "name": "Lickilicky ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "0",
+    "customTournamentName": "FASTER THAN THE LIGHT TOURNAMENT (260 Players)",
+    "engines": [
+      {
+        "_id": "67abc5cf25c7da23a21c7190",
+        "name": "Mew ex"
+      },
+      {
+        "_id": "67c22c858046c4a97275f97b",
+        "name": "Dialga"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67be4344ec733d53df821efb",
+      "title": "FASTER THAN THE LIGHT TOURNAMENT #0 - 260 Players",
+      "url": "/tournaments/faster-than-the-light/0/report/"
+    }
+  },
+  {
+    "author": "BeaubyJean",
+    "created": "2025-02-25T15:16:24.195Z",
+    "main": [
+      {
+        "card": {
+          "_id": "679248b1eb08086be8540c5b",
+          "name": "Dialga ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799ba14169202e5d7e6781a",
+          "name": "Lickilicky ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b9ac169202e5d7e675f9",
+          "name": "Lickitung",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae715e40c3b7260740109",
+          "name": "Mew ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/quick-unseen-tournament-(138-players)/13/lickilicky-ex/beaubyjean/xx8JG/",
+    "deckType": {
+      "name": "Lickilicky ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "13",
+    "customTournamentName": "Quick Unseen Tournament (138 Players)",
+    "engines": [
+      {
+        "_id": "67abc5cf25c7da23a21c7190",
+        "name": "Mew ex"
+      },
+      {
+        "_id": "67c22c858046c4a97275f97b",
+        "name": "Dialga"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67b7a1a1a39e5e96ffdadb2d",
+      "title": "PTCGP 50-200 Player Event Roundup #26",
+      "url": "/tournaments/tcgp-weekly-results/26/report/"
+    }
+  },
+  {
+    "author": {
+      "_id": "672417361542073227573d93",
+      "roles": [],
+      "username": "AceLivesHere"
+    },
+    "created": "2025-02-25T05:25:18.949Z",
+    "main": [
+      {
+        "card": {
+          "_id": "679248b1eb08086be8540c5b",
+          "name": "Dialga ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799ba14169202e5d7e6781a",
+          "name": "Lickilicky ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b9ac169202e5d7e675f9",
+          "name": "Lickitung",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae6d0e40c3b726073ffa1",
+          "name": "Blue",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799c1cf169202e5d7e6a007",
+          "name": "Cyrus",
+          "alternateArt": true,
+          "nameRelease": "2025-01-30T06:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799a5e0169202e5d7e614b9",
+          "name": "Dawn",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67611d48f9e257245fbba7f0",
+          "name": "Leaf",
+          "alternateArt": true,
+          "nameRelease": "2024-12-17T06:00:00.000Z"
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799a6110c64508adf1df73b",
+          "name": "Mars",
+          "alternateArt": true,
+          "nameRelease": "2025-01-30T06:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/5-winstreak/february-2025/lickilicky-ex/acemushroom/hJ77w/",
+    "deckType": {
+      "name": "Lickilicky ex",
+      "tier": null
+    },
+    "rankedType": {
+      "name": "5+ Winstreak",
+      "shortName": "Winstreak",
+      "icon": "/img/tournaments/logos/Spicy_Wins.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
+    },
+    "engines": [
+      {
+        "_id": "67c22c858046c4a97275f97b",
+        "name": "Dialga"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "8PCheese_youtube",
+    "created": "2025-02-23T00:10:18.144Z",
+    "main": [
+      {
+        "card": {
+          "_id": "679248b1eb08086be8540c5b",
+          "name": "Dialga ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799ba14169202e5d7e6781a",
+          "name": "Lickilicky ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b9ac169202e5d7e675f9",
+          "name": "Lickitung",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae715e40c3b7260740109",
+          "name": "Mew ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/bigbig-fujiyama-cup-(104-players)/1/lickilicky-ex/8pcheese_youtube/Yu84K/",
+    "deckType": {
+      "name": "Lickilicky ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "1",
+    "customTournamentName": "BigBig Fujiyama cup (104 Players)",
+    "engines": [
+      {
+        "_id": "67abc5cf25c7da23a21c7190",
+        "name": "Mew ex"
+      },
+      {
+        "_id": "67c22c858046c4a97275f97b",
+        "name": "Dialga"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67b7a1a1a39e5e96ffdadb2d",
+      "title": "PTCGP 50-200 Player Event Roundup #26",
+      "url": "/tournaments/tcgp-weekly-results/26/report/"
+    }
+  },
+  {
+    "author": "BeaubyJean",
+    "created": "2025-02-22T23:15:37.467Z",
+    "main": [
+      {
+        "card": {
+          "_id": "679248b1eb08086be8540c5b",
+          "name": "Dialga ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799ba14169202e5d7e6781a",
+          "name": "Lickilicky ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b9ac169202e5d7e675f9",
+          "name": "Lickitung",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae715e40c3b7260740109",
+          "name": "Mew ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/manalo-conference-(256-players)/0/lickilicky-ex/beaubyjean/2MUMS/",
+    "deckType": {
+      "name": "Lickilicky ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "0",
+    "customTournamentName": "MANALO CONFERENCE (256 Players)",
+    "engines": [
+      {
+        "_id": "67abc5cf25c7da23a21c7190",
+        "name": "Mew ex"
+      },
+      {
+        "_id": "67c22c858046c4a97275f97b",
+        "name": "Dialga"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67ba5bd49dce1c622c21892a",
+      "title": "MANALO CONFERENCE #0 - 256 Players",
+      "url": "/tournaments/manalo-conference/0/report/"
+    }
+  }
+]

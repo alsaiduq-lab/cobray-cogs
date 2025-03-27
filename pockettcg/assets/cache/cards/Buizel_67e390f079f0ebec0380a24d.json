@@ -1,0 +1,63 @@
+{
+  "_id": "67e390f079f0ebec0380a24d",
+  "name": "Buizel",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "70",
+  "pokemonId": "A2b-016",
+  "limitlessId": "A2b 16",
+  "rarity": "d-1",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67e3981e575eceb838a254d3",
+      "name": "Buizel",
+      "alternateArt": true,
+      "nameRelease": "2025-01-30T06:00:00.000Z"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Water Gun",
+      "text": "",
+      "energyCost": [
+        "Water",
+        null,
+        null
+      ],
+      "hp": "10",
+      "_id": "67e3983c79f0ebec0380d292"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

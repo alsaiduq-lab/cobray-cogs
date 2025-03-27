@@ -1,0 +1,64 @@
+{
+  "_id": "67e393e85cc271d38f748bc5",
+  "name": "Varoom",
+  "energyType": [
+    "Metal"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "70",
+  "pokemonId": "A2b-055",
+  "limitlessId": "A2b 55",
+  "rarity": "d-1",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67e39fe1575eceb838a288bc",
+      "name": "Varoom",
+      "alternateArt": true,
+      "nameRelease": "2025-03-27T06:00:00.000Z"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Headbutt",
+      "text": "",
+      "energyCost": [
+        "Metal",
+        null,
+        null,
+        null
+      ],
+      "hp": "10",
+      "_id": "67e3a00279f0ebec038104ab"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

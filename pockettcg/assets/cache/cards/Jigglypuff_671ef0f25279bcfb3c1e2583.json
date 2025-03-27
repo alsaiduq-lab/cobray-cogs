@@ -46,7 +46,10 @@
     "Fighting"
   ],
   "release": "2024-10-30T03:00:00.000Z",
-  "popRank": 115,
+  "popRank": 215,
   "artVariants": [],
-  "limitlessId": "A1 193"
+  "limitlessId": "A1 193",
+  "deckTypes": [
+    "Arceus ex Dialga ex"
+  ]
 }

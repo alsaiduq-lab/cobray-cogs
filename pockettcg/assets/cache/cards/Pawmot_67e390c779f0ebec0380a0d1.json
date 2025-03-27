@@ -1,0 +1,69 @@
+{
+  "_id": "67e390c779f0ebec0380a0d1",
+  "name": "Pawmot",
+  "energyType": [
+    "Lightning"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "140",
+  "pokemonId": "A2b-028",
+  "limitlessId": "A2b 28",
+  "rarity": "d-3",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 0,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67e369e75cc271d38f73bb1d",
+      "name": "Pawmot",
+      "alternateArt": true,
+      "nameRelease": "2025-03-27T06:00:00.000Z"
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Counterattack",
+      "text": "If this Pokémon is in the Active Spot and is damaged by an attack from your opponent’s Pokémon, do 20 damage to the Attacking Pokémon.",
+      "_id": "67e3a9d279f0ebec03814282"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Electric Punch",
+      "text": "",
+      "energyCost": [
+        "Lightning",
+        "Lightning",
+        null
+      ],
+      "hp": "70",
+      "_id": "67e3a9d279f0ebec03814283"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

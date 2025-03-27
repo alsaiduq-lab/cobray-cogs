@@ -1,0 +1,69 @@
+{
+  "_id": "67dd69872b931b02f36513e1",
+  "name": "Tinkaton ex",
+  "energyType": [
+    "Metal"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "170",
+  "pokemonId": "A2b-054",
+  "limitlessId": "A2b-054",
+  "rarity": "d-4",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67e39baf575eceb838a268ab",
+      "name": "Tinkaton ex",
+      "alternateArt": true,
+      "nameRelease": "2025-03-27T06:00:00.000Z"
+    },
+    {
+      "_id": "67e39d22575eceb838a2729a",
+      "name": "Tinkaton ex",
+      "alternateArt": true,
+      "nameRelease": "2025-03-27T06:00:00.000Z"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Terrific Thumping",
+      "text": "Flip a coin. If heads, this attack does 80 more damage.",
+      "energyCost": [
+        "Metal",
+        "Metal",
+        "Colorless"
+      ],
+      "hp": "80+",
+      "_id": "67e39d2f575eceb838a27323"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true
+}

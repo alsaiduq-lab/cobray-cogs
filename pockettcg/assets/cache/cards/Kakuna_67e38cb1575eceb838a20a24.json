@@ -1,0 +1,61 @@
+{
+  "_id": "67e38cb1575eceb838a20a24",
+  "name": "Kakuna",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "80",
+  "pokemonId": "A2b-002",
+  "limitlessId": "A2b 2",
+  "rarity": "d-2",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67e39e0a575eceb838a279d5",
+      "name": "Kakuna",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "String Shot",
+      "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed.",
+      "energyCost": [
+        "Grass"
+      ],
+      "hp": "20",
+      "_id": "67e39e1879f0ebec0380fa02"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

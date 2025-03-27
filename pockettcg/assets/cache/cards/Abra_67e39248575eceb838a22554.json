@@ -1,0 +1,56 @@
+{
+  "_id": "67e39248575eceb838a22554",
+  "name": "Abra",
+  "energyType": [
+    "Psychic"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A2b-029",
+  "limitlessId": "A2b 29",
+  "rarity": "d-1",
+  "weakness": [
+    "Darkness"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Psyshot",
+      "text": "",
+      "energyCost": [
+        "Psychic",
+        null,
+        null
+      ],
+      "hp": "20",
+      "_id": "67e39bc6575eceb838a2691a"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

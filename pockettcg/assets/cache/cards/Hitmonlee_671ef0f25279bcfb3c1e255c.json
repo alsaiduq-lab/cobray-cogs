@@ -45,7 +45,18 @@
   "weakness": [
     "Psychic"
   ],
-  "popRank": 34,
+  "popRank": 40,
   "artVariants": [],
-  "limitlessId": "A1 154"
+  "limitlessId": "A1 154",
+  "deckTypes": [
+    "Marshadow Rampardos",
+    "Machamp ex",
+    "Gallade ex",
+    "Lucario",
+    "Garchomp ex",
+    "Greninja",
+    "Magnezone",
+    "Marshadow Magnezone",
+    "Rampardos"
+  ]
 }

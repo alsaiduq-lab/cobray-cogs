@@ -1,0 +1,64 @@
+{
+  "_id": "67e395ff5cc271d38f7497e3",
+  "name": "Machamp",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "150",
+  "pokemonId": "A2b-039",
+  "limitlessId": "A2b 39",
+  "rarity": "d-3",
+  "weakness": [
+    "Psychic"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67e36a245cc271d38f73bc18",
+      "name": "Machamp",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Power Press",
+      "text": "If this Pokémon has at least 2 extra Fighting Energy attached, this attack does 50 more damage.",
+      "energyCost": [
+        "Fighting",
+        "Fighting",
+        null,
+        null
+      ],
+      "hp": "70+",
+      "_id": "67e3aa3679f0ebec0381450a"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

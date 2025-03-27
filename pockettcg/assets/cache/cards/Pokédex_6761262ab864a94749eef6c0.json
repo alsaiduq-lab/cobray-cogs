@@ -1,0 +1,33 @@
+{
+  "_id": "6761262ab864a94749eef6c0",
+  "name": "Pokédex",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Item",
+  "pokemonId": "PA-008",
+  "weakness": [],
+  "description": "Look at the top 3 cards of your deck.",
+  "release": "2025-01-20T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "677c678ff81b3b0b702f3955",
+        "type": "Normal Pack",
+        "name": "Promo Pack A Series: Special",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "limitlessId": "P-A 8",
+  "rarity": "p",
+  "deckTypes": [],
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

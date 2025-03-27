@@ -1,0 +1,64 @@
+{
+  "_id": "67e3922179f0ebec0380a7d3",
+  "name": "Dondozo",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "120",
+  "pokemonId": "A2b-020",
+  "limitlessId": "A2b 20",
+  "rarity": "d-3",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 3,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67e39f03575eceb838a28268",
+      "name": "Dondozo",
+      "alternateArt": true,
+      "nameRelease": "2025-03-27T06:00:00.000Z"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Ocean Cyclone",
+      "text": "This attack also does 10 damage to each of your opponent's Benched Pokémon.",
+      "energyCost": [
+        "Water",
+        "Water",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "80",
+      "_id": "67e39f1d79f0ebec0380ffc5"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

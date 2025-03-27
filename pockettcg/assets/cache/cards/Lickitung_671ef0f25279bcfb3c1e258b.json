@@ -48,7 +48,11 @@
   "weakness": [
     "Fighting"
   ],
-  "popRank": 1.7976931348623157e+308,
+  "popRank": 188,
   "artVariants": [],
-  "limitlessId": "A1 201"
+  "limitlessId": "A1 201",
+  "deckTypes": [
+    "Lickilicky ex",
+    "Arceus ex Dialga ex"
+  ]
 }

@@ -1,0 +1,56 @@
+{
+  "_id": "67e39aac79f0ebec0380e3de",
+  "name": "Wugtrio ex",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "140",
+  "pokemonId": "A2b-081",
+  "limitlessId": "A2b 81",
+  "rarity": "s-2",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Pop Out Throughout",
+      "text": "1 of your opponent's Pokémon is choesen at random 3 times. For each time a Pokémon was chosen, do 50 damage to it.",
+      "energyCost": [
+        "Water",
+        "Water",
+        "Water"
+      ],
+      "_id": "67e39aac79f0ebec0380e3df"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true,
+  "nameRelease": "2025-03-27T06:00:00.000Z"
+}

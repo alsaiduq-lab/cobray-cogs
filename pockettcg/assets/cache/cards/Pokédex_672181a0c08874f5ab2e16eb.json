@@ -1,0 +1,44 @@
+{
+  "_id": "672181a0c08874f5ab2e16eb",
+  "name": "Pokédex",
+  "energyType": [],
+  "hp": "",
+  "pokemonId": "PA-004",
+  "pack": "",
+  "weakness": null,
+  "retreat": null,
+  "description": "Look at the top 3 cards of your deck.",
+  "release": "2024-10-30T03:00:00.000Z",
+  "popRank": 220,
+  "alternateArt": false,
+  "abilities": [],
+  "moves": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6723f35ee05ba54ed87183db",
+        "type": "Normal Pack",
+        "name": "Promo Pack A Series: Shop",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "cardType": "Trainer",
+  "subType": "Item",
+  "artVariants": [
+    {
+      "_id": "6761262ab864a94749eef6c0",
+      "name": "Pokédex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    }
+  ],
+  "limitlessId": "P-A 4",
+  "rarity": "p",
+  "deckTypes": [
+    "Gyarados ex"
+  ]
+}

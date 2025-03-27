@@ -1,0 +1,53 @@
+{
+  "_id": "67e368da5cc271d38f73b660",
+  "name": "Mewtwo ex",
+  "energyType": [
+    "Psychic"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "150",
+  "pokemonId": "PA-050",
+  "limitlessId": "P-A 50",
+  "rarity": "p",
+  "weakness": [
+    "Darkness"
+  ],
+  "retreat": 2,
+  "description": "",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Psychic Sphere",
+      "text": "\n\n",
+      "energyCost": [
+        "Psychic",
+        "Colorless",
+        null,
+        null
+      ],
+      "hp": "50",
+      "_id": "67e504a8b07924f87daf572a"
+    },
+    {
+      "name": "Psydrive",
+      "text": "Discard 2 Psychic Energy from this Pokemon",
+      "energyCost": [
+        "Psychic",
+        "Psychic",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "150",
+      "_id": "67e504a8b07924f87daf572b"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": true,
+  "release": "2025-03-27T06:00:00.000Z",
+  "nameRelease": "2024-10-30T15:00:00.000Z"
+}

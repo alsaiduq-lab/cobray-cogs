@@ -23,7 +23,7 @@
       "energyCost": [
         "Colorless"
       ],
-      "_id": "679948a649fc3af0759c55b6"
+      "_id": "67a75ba0759523dbf6f90090"
     }
   ],
   "obtain": [
@@ -43,5 +43,7 @@
   "cardType": "Pokemon",
   "subType": "Basic",
   "artVariants": [],
-  "limitlessId": "P-A 22"
+  "limitlessId": "P-A 22",
+  "rarity": "p",
+  "deckTypes": []
 }

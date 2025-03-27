@@ -1,0 +1,70 @@
+{
+  "_id": "67e3967779f0ebec0380c635",
+  "name": "Riolu",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "70",
+  "pokemonId": "A2b-042",
+  "limitlessId": "A2b 42",
+  "rarity": "d-1",
+  "weakness": [
+    "Psychic"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67e3989179f0ebec0380d4c4",
+      "name": "Riolu",
+      "alternateArt": true,
+      "nameRelease": "2025-01-30T06:00:00.000Z"
+    },
+    {
+      "_id": "67e36ac6575eceb838a164bc",
+      "name": "Riolu",
+      "alternateArt": true,
+      "nameRelease": "2025-01-30T06:00:00.000Z"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Punch",
+      "text": "",
+      "energyCost": [
+        "Fighting",
+        "Fighting",
+        null,
+        null
+      ],
+      "hp": "40",
+      "_id": "67e3aac6575eceb838a2cf7a"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

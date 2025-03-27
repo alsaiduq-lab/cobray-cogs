@@ -1,0 +1,69 @@
+{
+  "_id": "67e39b43575eceb838a266ea",
+  "name": "Pikachu ex",
+  "energyType": [
+    "Lightning"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "120",
+  "pokemonId": "A2b-022",
+  "limitlessId": "A2b 22",
+  "rarity": "d-4",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67e39787575eceb838a251b7",
+      "name": "Pikachu ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    },
+    {
+      "_id": "67e3982979f0ebec0380d1d7",
+      "name": "Pikachu ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Thunderbolt",
+      "text": "Discard all Energy from this Pokémon.",
+      "energyCost": [
+        "Lightning",
+        "Lightning",
+        "Lightning"
+      ],
+      "hp": "150",
+      "_id": "67e3a4035cc271d38f74edf9"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true
+}

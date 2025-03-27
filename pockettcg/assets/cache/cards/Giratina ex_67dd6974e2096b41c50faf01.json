@@ -1,0 +1,78 @@
+{
+  "_id": "67dd6974e2096b41c50faf01",
+  "name": "Giratina ex",
+  "energyType": [
+    "Psychic"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "150",
+  "pokemonId": "A2b-035",
+  "limitlessId": "A2b 35",
+  "rarity": "d-4",
+  "weakness": [
+    "Darkness"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 262,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67e397af575eceb838a2527f",
+      "name": "Giratina ex",
+      "alternateArt": true,
+      "nameRelease": "2025-03-27T06:00:00.000Z"
+    },
+    {
+      "_id": "67e39846575eceb838a255ea",
+      "name": "Giratina ex",
+      "alternateArt": true,
+      "nameRelease": "2025-03-27T06:00:00.000Z"
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Broken-Space Bellow",
+      "text": "Once during your turn, you may take a Psychic Energy from your Energy Zone and attach it to this Pokémon. If you use this Ability, your turn ends.",
+      "_id": "67e39e5e575eceb838a27e39"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Chaotic Impact",
+      "text": "This Pokémon also does 20 damage to itself.",
+      "energyCost": [
+        "Psychic",
+        "Psychic",
+        "Psychic",
+        "Colorless"
+      ],
+      "hp": "130",
+      "_id": "67e39e5e575eceb838a27e3a"
+    }
+  ],
+  "deckTypes": [
+    "Gengar ex"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true
+}

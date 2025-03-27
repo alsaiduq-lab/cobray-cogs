@@ -1,0 +1,57 @@
+{
+  "_id": "67e3954e5cc271d38f74942b",
+  "name": "Raticate",
+  "energyType": [
+    "Colorless"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "90",
+  "pokemonId": "A2b-059",
+  "limitlessId": "A2b 59",
+  "rarity": "d-1",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Tackle",
+      "text": "",
+      "energyCost": [
+        "Colorless",
+        "Colorless",
+        null,
+        null
+      ],
+      "hp": "50",
+      "_id": "67e39d33575eceb838a27337"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

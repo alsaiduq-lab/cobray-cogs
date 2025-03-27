@@ -47,7 +47,10 @@
   "weakness": [
     "Water"
   ],
-  "popRank": 42,
+  "popRank": 70,
   "artVariants": [],
-  "limitlessId": "A1 34"
+  "limitlessId": "A1 34",
+  "deckTypes": [
+    "Charizard ex"
+  ]
 }

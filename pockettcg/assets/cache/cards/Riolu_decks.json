@@ -1,0 +1,1372 @@
+[
+  {
+    "author": "Toramaru",
+    "created": "2025-03-26T22:05:51.578Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799baf2169202e5d7e67c99",
+          "name": "Cranidos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea526950657553dc6903",
+          "name": "Lucario",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67611748db7f64d578b892ab",
+          "name": "Marshadow",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bb14169202e5d7e67d59",
+          "name": "Rampardos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9a0dbba2e0d2bb5f57d",
+          "name": "Riolu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c15ac3e06d5e18c00abf6f",
+          "name": "Sudowoodo",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bcb5f06a47c6afdf7763",
+          "name": "Skull Fossil",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/faster-than-the-light-tournament-(161-players)/16/lucario/toramaru/zUFvm/",
+    "deckType": {
+      "name": "Lucario",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "16",
+    "customTournamentName": "FASTER THAN THE LIGHT TOURNAMENT (161 Players)",
+    "engines": [
+      {
+        "_id": "67abcd1d6fa98c7329e3779d",
+        "name": "Rampardos"
+      },
+      {
+        "_id": "67c2998e3303e84d6df1c033",
+        "name": "Sudowoodo"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67e2b1caee2057e626628459",
+      "title": "PTCGP 50-200 Player Event Roundup #34",
+      "url": "/tournaments/tcgp-weekly-results/34/report/"
+    }
+  },
+  {
+    "author": "MiaAndMe",
+    "created": "2025-03-26T22:03:27.696Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799baf2169202e5d7e67c99",
+          "name": "Cranidos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea526950657553dc6903",
+          "name": "Lucario",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67611748db7f64d578b892ab",
+          "name": "Marshadow",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bb14169202e5d7e67d59",
+          "name": "Rampardos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9a0dbba2e0d2bb5f57d",
+          "name": "Riolu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bcb5f06a47c6afdf7763",
+          "name": "Skull Fossil",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/starlit-pocket-cup-(152-players)/0/lucario/miaandme/CKGPG/",
+    "deckType": {
+      "name": "Lucario",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "0",
+    "customTournamentName": "Starlit Pocket Cup (152 Players)",
+    "engines": [
+      {
+        "_id": "67abcd1d6fa98c7329e3779d",
+        "name": "Rampardos"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67e2b1caee2057e626628459",
+      "title": "PTCGP 50-200 Player Event Roundup #34",
+      "url": "/tournaments/tcgp-weekly-results/34/report/"
+    }
+  },
+  {
+    "author": {
+      "_id": "67900f001422880dde14d258",
+      "roles": [],
+      "username": "TDNmegane"
+    },
+    "created": "2025-03-26T22:02:32.303Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799baf2169202e5d7e67c99",
+          "name": "Cranidos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea526950657553dc6903",
+          "name": "Lucario",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67611748db7f64d578b892ab",
+          "name": "Marshadow",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bb14169202e5d7e67d59",
+          "name": "Rampardos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9a0dbba2e0d2bb5f57d",
+          "name": "Riolu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c15ac3e06d5e18c00abf6f",
+          "name": "Sudowoodo",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bcb5f06a47c6afdf7763",
+          "name": "Skull Fossil",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/starlit-pocket-cup-(152-players)/0/lucario/tdnmegane/5sKdO/",
+    "deckType": {
+      "name": "Lucario",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "0",
+    "customTournamentName": "Starlit Pocket Cup (152 Players)",
+    "engines": [
+      {
+        "_id": "67abcd1d6fa98c7329e3779d",
+        "name": "Rampardos"
+      },
+      {
+        "_id": "67c2998e3303e84d6df1c033",
+        "name": "Sudowoodo"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67e2b1caee2057e626628459",
+      "title": "PTCGP 50-200 Player Event Roundup #34",
+      "url": "/tournaments/tcgp-weekly-results/34/report/"
+    }
+  },
+  {
+    "author": "Ursiidae",
+    "created": "2025-03-26T22:00:05.258Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799baf2169202e5d7e67c99",
+          "name": "Cranidos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e255d",
+          "name": "Hitmonchan",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea526950657553dc6903",
+          "name": "Lucario",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67611748db7f64d578b892ab",
+          "name": "Marshadow",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bb14169202e5d7e67d59",
+          "name": "Rampardos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9a0dbba2e0d2bb5f57d",
+          "name": "Riolu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c15ac3e06d5e18c00abf6f",
+          "name": "Sudowoodo",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bcb5f06a47c6afdf7763",
+          "name": "Skull Fossil",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/starlit-pocket-cup-(152-players)/0/lucario/ursiidae/D7viG/",
+    "deckType": {
+      "name": "Lucario",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "0",
+    "customTournamentName": "Starlit Pocket Cup (152 Players)",
+    "engines": [
+      {
+        "_id": "67abcd1d6fa98c7329e3779d",
+        "name": "Rampardos"
+      },
+      {
+        "_id": "67c2998e3303e84d6df1c033",
+        "name": "Sudowoodo"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67e2b1caee2057e626628459",
+      "title": "PTCGP 50-200 Player Event Roundup #34",
+      "url": "/tournaments/tcgp-weekly-results/34/report/"
+    }
+  },
+  {
+    "author": "3p1cfail",
+    "created": "2025-03-26T21:52:33.365Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799baf2169202e5d7e67c99",
+          "name": "Cranidos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e255d",
+          "name": "Hitmonchan",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea526950657553dc6903",
+          "name": "Lucario",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67611748db7f64d578b892ab",
+          "name": "Marshadow",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bb14169202e5d7e67d59",
+          "name": "Rampardos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9a0dbba2e0d2bb5f57d",
+          "name": "Riolu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c15ac3e06d5e18c00abf6f",
+          "name": "Sudowoodo",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bcb5f06a47c6afdf7763",
+          "name": "Skull Fossil",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/imperium's-weekly-tournament-(283-players)/1/lucario/3p1cfail/hqmvw/",
+    "deckType": {
+      "name": "Lucario",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "1",
+    "customTournamentName": "IMPERIUM's Weekly Tournament (283 Players)",
+    "engines": [
+      {
+        "_id": "67abcd1d6fa98c7329e3779d",
+        "name": "Rampardos"
+      },
+      {
+        "_id": "67c2998e3303e84d6df1c033",
+        "name": "Sudowoodo"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67e4779bc95c115d83a0e062",
+      "title": "IMPERIUM's Weekly Tournament #1 - 283 Players",
+      "url": "/tournaments/imperium-weekly/1/report/"
+    }
+  },
+  {
+    "author": "tingely44",
+    "created": "2025-03-26T21:51:07.089Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799baf2169202e5d7e67c99",
+          "name": "Cranidos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e255c",
+          "name": "Hitmonlee",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea526950657553dc6903",
+          "name": "Lucario",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bb14169202e5d7e67d59",
+          "name": "Rampardos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9a0dbba2e0d2bb5f57d",
+          "name": "Riolu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67611784b864a94749ee82ad",
+          "name": "Stonjourner",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bcb5f06a47c6afdf7763",
+          "name": "Skull Fossil",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/imperium's-weekly-tournament-(283-players)/1/lucario/tingely44/Bx23W/",
+    "deckType": {
+      "name": "Lucario",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "1",
+    "customTournamentName": "IMPERIUM's Weekly Tournament (283 Players)",
+    "engines": [
+      {
+        "_id": "67abc59288624a4a297bbfd0",
+        "name": "Hitmonlee"
+      },
+      {
+        "_id": "67abcd1d6fa98c7329e3779d",
+        "name": "Rampardos"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67e4779bc95c115d83a0e062",
+      "title": "IMPERIUM's Weekly Tournament #1 - 283 Players",
+      "url": "/tournaments/imperium-weekly/1/report/"
+    }
+  },
+  {
+    "author": "AzE | Nandosgude",
+    "created": "2025-03-26T21:50:18.833Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799baf2169202e5d7e67c99",
+          "name": "Cranidos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e255d",
+          "name": "Hitmonchan",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea526950657553dc6903",
+          "name": "Lucario",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67611748db7f64d578b892ab",
+          "name": "Marshadow",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bb14169202e5d7e67d59",
+          "name": "Rampardos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9a0dbba2e0d2bb5f57d",
+          "name": "Riolu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c15ac3e06d5e18c00abf6f",
+          "name": "Sudowoodo",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bcb5f06a47c6afdf7763",
+          "name": "Skull Fossil",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/imperium's-weekly-tournament-(283-players)/1/lucario/aze-|-nandosgude/98s5_/",
+    "deckType": {
+      "name": "Lucario",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "1",
+    "customTournamentName": "IMPERIUM's Weekly Tournament (283 Players)",
+    "engines": [
+      {
+        "_id": "67abcd1d6fa98c7329e3779d",
+        "name": "Rampardos"
+      },
+      {
+        "_id": "67c2998e3303e84d6df1c033",
+        "name": "Sudowoodo"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67e4779bc95c115d83a0e062",
+      "title": "IMPERIUM's Weekly Tournament #1 - 283 Players",
+      "url": "/tournaments/imperium-weekly/1/report/"
+    }
+  },
+  {
+    "author": "Nirvant",
+    "created": "2025-03-26T21:49:44.260Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799baf2169202e5d7e67c99",
+          "name": "Cranidos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e255d",
+          "name": "Hitmonchan",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea526950657553dc6903",
+          "name": "Lucario",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67611748db7f64d578b892ab",
+          "name": "Marshadow",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bb14169202e5d7e67d59",
+          "name": "Rampardos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9a0dbba2e0d2bb5f57d",
+          "name": "Riolu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c15ac3e06d5e18c00abf6f",
+          "name": "Sudowoodo",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bcb5f06a47c6afdf7763",
+          "name": "Skull Fossil",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/imperium's-weekly-tournament-(283-players)/1/lucario/nirvant/L6lva/",
+    "deckType": {
+      "name": "Lucario",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 4",
+    "tournamentNumber": "1",
+    "customTournamentName": "IMPERIUM's Weekly Tournament (283 Players)",
+    "engines": [
+      {
+        "_id": "67abcd1d6fa98c7329e3779d",
+        "name": "Rampardos"
+      },
+      {
+        "_id": "67c2998e3303e84d6df1c033",
+        "name": "Sudowoodo"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67e4779bc95c115d83a0e062",
+      "title": "IMPERIUM's Weekly Tournament #1 - 283 Players",
+      "url": "/tournaments/imperium-weekly/1/report/"
+    }
+  },
+  {
+    "author": "Atomiix",
+    "created": "2025-03-26T21:49:34.903Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799baf2169202e5d7e67c99",
+          "name": "Cranidos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e255d",
+          "name": "Hitmonchan",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea526950657553dc6903",
+          "name": "Lucario",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67611748db7f64d578b892ab",
+          "name": "Marshadow",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bb14169202e5d7e67d59",
+          "name": "Rampardos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9a0dbba2e0d2bb5f57d",
+          "name": "Riolu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c15ac3e06d5e18c00abf6f",
+          "name": "Sudowoodo",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bcb5f06a47c6afdf7763",
+          "name": "Skull Fossil",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/imperium's-weekly-tournament-(283-players)/1/lucario/atomiix/ruof_/",
+    "deckType": {
+      "name": "Lucario",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "2nd Place",
+    "tournamentNumber": "1",
+    "customTournamentName": "IMPERIUM's Weekly Tournament (283 Players)",
+    "engines": [
+      {
+        "_id": "67abcd1d6fa98c7329e3779d",
+        "name": "Rampardos"
+      },
+      {
+        "_id": "67c2998e3303e84d6df1c033",
+        "name": "Sudowoodo"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67e4779bc95c115d83a0e062",
+      "title": "IMPERIUM's Weekly Tournament #1 - 283 Players",
+      "url": "/tournaments/imperium-weekly/1/report/"
+    }
+  },
+  {
+    "author": "Quantumania",
+    "created": "2025-03-26T21:44:53.278Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799baf2169202e5d7e67c99",
+          "name": "Cranidos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea526950657553dc6903",
+          "name": "Lucario",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67611748db7f64d578b892ab",
+          "name": "Marshadow",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bb14169202e5d7e67d59",
+          "name": "Rampardos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9a0dbba2e0d2bb5f57d",
+          "name": "Riolu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c15ac3e06d5e18c00abf6f",
+          "name": "Sudowoodo",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bcb5f06a47c6afdf7763",
+          "name": "Skull Fossil",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/svk-~-flash-tournament-1vs1-(126-players)/12/lucario/quantumania/OH8xF/",
+    "deckType": {
+      "name": "Lucario",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "12",
+    "customTournamentName": "SvK ~ Flash Tournament 1vs1 (126 Players)",
+    "engines": [
+      {
+        "_id": "67abcd1d6fa98c7329e3779d",
+        "name": "Rampardos"
+      },
+      {
+        "_id": "67c2998e3303e84d6df1c033",
+        "name": "Sudowoodo"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67e2b1caee2057e626628459",
+      "title": "PTCGP 50-200 Player Event Roundup #34",
+      "url": "/tournaments/tcgp-weekly-results/34/report/"
+    }
+  }
+]

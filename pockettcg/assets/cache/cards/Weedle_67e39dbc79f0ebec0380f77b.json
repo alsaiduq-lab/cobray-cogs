@@ -1,0 +1,55 @@
+{
+  "_id": "67e39dbc79f0ebec0380f77b",
+  "name": "Weedle",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "50",
+  "pokemonId": "A2b-097",
+  "limitlessId": "A2b 97",
+  "rarity": "shiny-1",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Multiply",
+      "text": "Put 1 random Weedle from your deck onto your Bench.",
+      "energyCost": [
+        "Grass"
+      ],
+      "hp": "50",
+      "_id": "67e39dcd79f0ebec0380f815"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

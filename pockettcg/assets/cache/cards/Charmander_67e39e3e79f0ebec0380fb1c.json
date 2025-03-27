@@ -1,0 +1,57 @@
+{
+  "_id": "67e39e3e79f0ebec0380fb1c",
+  "name": "Charmander",
+  "energyType": [
+    "Fire"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A2b-099",
+  "limitlessId": "A2b 9",
+  "rarity": "shiny-1",
+  "weakness": [
+    "Water"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Combustion",
+      "text": "",
+      "energyCost": [
+        "Fire",
+        null,
+        null
+      ],
+      "hp": "20",
+      "_id": "67e39e3e79f0ebec0380fb1d"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

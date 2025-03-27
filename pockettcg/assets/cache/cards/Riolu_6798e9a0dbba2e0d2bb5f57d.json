@@ -14,7 +14,7 @@
   ],
   "retreat": 1,
   "description": "",
-  "popRank": 148,
+  "popRank": 22,
   "alternateArt": false,
   "artVariants": [],
   "abilities": [],
@@ -49,5 +49,16 @@
   ],
   "ex": false,
   "limitlessId": "A2 91",
-  "release": "2025-01-30T06:00:00.000Z"
+  "release": "2025-01-30T06:00:00.000Z",
+  "deckTypes": [
+    "Lucario",
+    "Machamp ex",
+    "Gallade ex",
+    "Marshadow Rampardos",
+    "Marowak ex",
+    "Aerodactyl ex",
+    "Garchomp ex",
+    "Brock",
+    "Arceus ex Dialga ex"
+  ]
 }

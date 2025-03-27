@@ -1,0 +1,1396 @@
+[
+  {
+    "author": "Jaegger",
+    "created": "2025-03-01T13:34:34.609Z",
+    "main": [
+      {
+        "card": {
+          "_id": "67c0591452e93386721e093b",
+          "name": "Arceus ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "679248b1eb08086be8540c5b",
+          "name": "Dialga ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2583",
+          "name": "Jigglypuff",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae715e40c3b7260740109",
+          "name": "Mew ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2585",
+          "name": "Wigglytuff ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/pocket-turtle-weekly-(118-players)/14/arceus-ex/jaegger/s96fT/",
+    "deckType": {
+      "name": "Arceus ex Dialga ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "14",
+    "customTournamentName": "Pocket Turtle Weekly (118 Players)",
+    "engines": [
+      {
+        "_id": "67abc5cf25c7da23a21c7190",
+        "name": "Mew ex"
+      },
+      {
+        "_id": "67c22c858046c4a97275f97b",
+        "name": "Dialga"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67c3099e89ab07a7c2c23b72",
+      "title": "PTCGP 50-200 Player Event Roundup #28",
+      "url": "/tournaments/tcgp-weekly-results/28/report/"
+    }
+  },
+  {
+    "author": "Jaegger",
+    "created": "2025-02-26T14:53:27.157Z",
+    "main": [
+      {
+        "card": {
+          "_id": "679248b1eb08086be8540c5b",
+          "name": "Dialga ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2583",
+          "name": "Jigglypuff",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae715e40c3b7260740109",
+          "name": "Mew ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2585",
+          "name": "Wigglytuff ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/mogamoga-cup-(128-players)/5/wigglytuff-ex/jaegger/jGRq_/",
+    "deckType": {
+      "name": "Wigglytuff ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "5",
+    "customTournamentName": "Mogamoga Cup (128 Players)",
+    "engines": [
+      {
+        "_id": "67abc5cf25c7da23a21c7190",
+        "name": "Mew ex"
+      },
+      {
+        "_id": "67c22c858046c4a97275f97b",
+        "name": "Dialga"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67bc74ce055e9f689d4c34db",
+      "title": "PTCGP 50-200 Player Event Roundup #27",
+      "url": "/tournaments/tcgp-weekly-results/27/report/"
+    }
+  },
+  {
+    "author": "Devinwalker24",
+    "created": "2025-02-21T22:26:43.820Z",
+    "main": [
+      {
+        "card": {
+          "_id": "679248b1eb08086be8540c5b",
+          "name": "Dialga ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67218224c08874f5ab2e1752",
+          "name": "Jigglypuff",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae715e40c3b7260740109",
+          "name": "Mew ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799b296169202e5d7e650f6",
+          "name": "Shaymin",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2585",
+          "name": "Wigglytuff ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67611c90db7f64d578b8b51e",
+          "name": "Budding Expeditioner",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/pocket-tour-tournament-(64-players)/13/wigglytuff-ex/devinwalker24/_LoGf/",
+    "deckType": {
+      "name": "Wigglytuff ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "13",
+    "customTournamentName": "POCKET TOUR TOURNAMENT (64 Players)",
+    "engines": [
+      {
+        "_id": "67abc5cf25c7da23a21c7190",
+        "name": "Mew ex"
+      },
+      {
+        "_id": "67c22c858046c4a97275f97b",
+        "name": "Dialga"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67b7a1a1a39e5e96ffdadb2d",
+      "title": "PTCGP 50-200 Player Event Roundup #26",
+      "url": "/tournaments/tcgp-weekly-results/26/report/"
+    }
+  },
+  {
+    "author": "isuexe",
+    "created": "2025-02-16T21:01:34.037Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24d7",
+          "name": "Exeggcute",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24d9",
+          "name": "Exeggutor ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae715e40c3b7260740109",
+          "name": "Mew ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67218224c08874f5ab2e1752",
+          "name": "Jigglypuff",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2585",
+          "name": "Wigglytuff ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e259d",
+          "name": "Erika",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/polish-pocket-league---sezon-2-(42-players)/2/exeggutor-ex/isuexe/9iPDm/",
+    "deckType": {
+      "name": "Exeggutor ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "2",
+    "customTournamentName": "Polish Pocket League - Sezon 2 (42 Players)",
+    "engines": [
+      {
+        "_id": "67abc5cf25c7da23a21c7190",
+        "name": "Mew ex"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "VictorBiazioli",
+    "created": "2025-02-14T13:11:05.671Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2585",
+          "name": "Wigglytuff ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67218224c08874f5ab2e1752",
+          "name": "Jigglypuff",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "679248b1eb08086be8540c5b",
+          "name": "Dialga ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae715e40c3b7260740109",
+          "name": "Mew ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae81c34db45022c3de861",
+          "name": "Tauros",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/victory-road---terremoto-x-trainers-tcg-(218-players)/2/wigglytuff-ex/victorbiazioli/ycuf9/",
+    "deckType": {
+      "name": "Wigglytuff ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "2",
+    "customTournamentName": "Victory Road - Terremoto x Trainers TCG (218 Players)",
+    "engines": [
+      {
+        "_id": "67abc5cf25c7da23a21c7190",
+        "name": "Mew ex"
+      },
+      {
+        "_id": "67c22c858046c4a97275f97b",
+        "name": "Dialga"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67af411b2bbdc388fe807915",
+      "title": "Victory Road - Terremoto x Trainers TCG 2 - 218 Players",
+      "url": "/tournaments/victory-road-terremoto/2/report/"
+    }
+  },
+  {
+    "author": {
+      "_id": "6204168b1e1f10b401f1ba2e",
+      "roles": [],
+      "username": "Callozwo"
+    },
+    "created": "2025-02-14T01:03:21.515Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2585",
+          "name": "Wigglytuff ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2583",
+          "name": "Jigglypuff",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae715e40c3b7260740109",
+          "name": "Mew ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "679248b1eb08086be8540c5b",
+          "name": "Dialga ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/pocket-tour-tournament-(99-players)/12/wigglytuff-ex/callozwo/pbgW1/",
+    "deckType": {
+      "name": "Wigglytuff ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "12",
+    "customTournamentName": "POCKET TOUR TOURNAMENT (99 Players)",
+    "engines": [
+      {
+        "_id": "67abc5cf25c7da23a21c7190",
+        "name": "Mew ex"
+      },
+      {
+        "_id": "67c22c858046c4a97275f97b",
+        "name": "Dialga"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67acfc7a1eb7dff1f992b814",
+      "title": "PTCGP 50-200 Player Event Roundup #24",
+      "url": "/tournaments/tcgp-weekly-results/24/report/"
+    }
+  },
+  {
+    "author": "seraru",
+    "created": "2025-02-14T00:54:18.798Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2585",
+          "name": "Wigglytuff ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2583",
+          "name": "Jigglypuff",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "679248b1eb08086be8540c5b",
+          "name": "Dialga ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae715e40c3b7260740109",
+          "name": "Mew ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799a5e0169202e5d7e614b9",
+          "name": "Dawn",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/narnia's-training-grounds-(64-players)/1/wigglytuff-ex/seraru/jtQOO/",
+    "deckType": {
+      "name": "Wigglytuff ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "1",
+    "customTournamentName": "Narnia's Training Grounds (64 Players)",
+    "engines": [
+      {
+        "_id": "67abc5cf25c7da23a21c7190",
+        "name": "Mew ex"
+      },
+      {
+        "_id": "67c22c858046c4a97275f97b",
+        "name": "Dialga"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67acfc7a1eb7dff1f992b814",
+      "title": "PTCGP 50-200 Player Event Roundup #24",
+      "url": "/tournaments/tcgp-weekly-results/24/report/"
+    }
+  },
+  {
+    "author": "qiaosefennu",
+    "created": "2025-02-04T17:07:57.649Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2585",
+          "name": "Wigglytuff ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67218224c08874f5ab2e1752",
+          "name": "Jigglypuff",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "679248b1eb08086be8540c5b",
+          "name": "Dialga ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae715e40c3b7260740109",
+          "name": "Mew ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae81c34db45022c3de861",
+          "name": "Tauros",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799a5e0169202e5d7e614b9",
+          "name": "Dawn",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/kuyo-cup-pocket-year-of-snake-(191-players)/1/wigglytuff-ex/qiaosefennu/26wJj/",
+    "deckType": {
+      "name": "Wigglytuff ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "1",
+    "customTournamentName": "Kuyo Cup Pocket Year of Snake (191 Players)",
+    "engines": [
+      {
+        "_id": "67abc5cf25c7da23a21c7190",
+        "name": "Mew ex"
+      },
+      {
+        "_id": "67c22c858046c4a97275f97b",
+        "name": "Dialga"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67a24b76288a0fc0f68c927f",
+      "title": "PTCGP 50-200 Player Event Roundup #22",
+      "url": "/tournaments/tcgp-weekly-results/22/report/"
+    }
+  },
+  {
+    "author": "Rahmat Maulana",
+    "created": "2025-02-03T19:15:06.834Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799af51169202e5d7e640bb",
+          "name": "Yanma",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799af720c64508adf1e251d",
+          "name": "Yanmega ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67218224c08874f5ab2e1752",
+          "name": "Jigglypuff",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2585",
+          "name": "Wigglytuff ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "679248b1eb08086be8540c5b",
+          "name": "Dialga ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae715e40c3b7260740109",
+          "name": "Mew ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/eiichirofamily-ptcgp-cup-test-(280-players)/2/wigglytuff-ex/rahmat-maulana/TtT3Q/",
+    "deckType": {
+      "name": "Wigglytuff ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "2",
+    "customTournamentName": "EiichiroFamily PTCGP Cup Test (280 Players)",
+    "engines": [
+      {
+        "_id": "67abc5cf25c7da23a21c7190",
+        "name": "Mew ex"
+      },
+      {
+        "_id": "67abcc2c6fa98c7329e36d0f",
+        "name": "Yanmega ex"
+      },
+      {
+        "_id": "67c22c858046c4a97275f97b",
+        "name": "Dialga"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67a11a81a9e5da94f8a16082",
+      "title": "EiichiroFamily Pocket Championship #Test 2 - 280 Players",
+      "url": "/tournaments/eiichiro-family-pocket-test/2/report/"
+    }
+  },
+  {
+    "author": "chungchen2",
+    "created": "2025-02-02T16:35:14.749Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6798eb606950657553dc6f23",
+          "name": "Gible",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798eb786950657553dc6fc1",
+          "name": "Gabite",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ead56950657553dc6c1d",
+          "name": "Garchomp",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae715e40c3b7260740109",
+          "name": "Mew ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799af51169202e5d7e640bb",
+          "name": "Yanma",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799af720c64508adf1e251d",
+          "name": "Yanmega ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2585",
+          "name": "Wigglytuff ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67218224c08874f5ab2e1752",
+          "name": "Jigglypuff",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798edb0b5fbced301dcf756",
+          "name": "Cynthia",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799a5e0169202e5d7e614b9",
+          "name": "Dawn",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/chaos-league-pocket-saturdays-(216-players)/6/garchomp/chungchen2/xKYS-/",
+    "deckType": {
+      "name": "Garchomp",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "6",
+    "customTournamentName": "Chaos League Pocket Saturdays (216 Players)",
+    "engines": [
+      {
+        "_id": "67abc5cf25c7da23a21c7190",
+        "name": "Mew ex"
+      },
+      {
+        "_id": "67abcc2c6fa98c7329e36d0f",
+        "name": "Yanmega ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "679fa0cfd3014b41e0368819",
+      "title": "Chaos League Pocket Saturdays #6 - 216 Players",
+      "url": "/tournaments/chaos-league-saturday/5/report/"
+    }
+  }
+]

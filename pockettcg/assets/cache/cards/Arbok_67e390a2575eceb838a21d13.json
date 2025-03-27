@@ -1,0 +1,56 @@
+{
+  "_id": "67e390a2575eceb838a21d13",
+  "name": "Arbok",
+  "energyType": [
+    "Darkness"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "110",
+  "pokemonId": "A2b-046",
+  "limitlessId": "A2b 46",
+  "rarity": "d-2",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Venomous Fang",
+      "text": "Your opponent's Active Pokémon is now Posoned.",
+      "energyCost": [
+        "Darkness",
+        "Darkness",
+        "Colorless"
+      ],
+      "hp": "70",
+      "_id": "67e3a51b575eceb838a2ae81"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

@@ -1,0 +1,1385 @@
+[
+  {
+    "author": "AlyxandriaB",
+    "created": "2025-03-02T19:00:55.613Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2516",
+          "name": "Articuno ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67611770db7f64d578b893d6",
+          "name": "Gyarados ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67611714db7f64d578b89224",
+          "name": "Magikarp",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799b628f06a47c6afdf561c",
+          "name": "Manaphy",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b5ddf06a47c6afdf53ce",
+          "name": "Palkia ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae6d0e40c3b726073ffa1",
+          "name": "Blue",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e259e",
+          "name": "Misty",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6761262ab864a94749eef6c0",
+          "name": "Pokédex",
+          "alternateArt": true,
+          "nameRelease": "2024-10-30T03:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181abc08874f5ab2e16fb",
+          "name": "Red Card",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/chaos-league-pocket-saturdays-(161-players)/10/gyarados-ex/alyxandriab/mCixC/",
+    "deckType": {
+      "name": "Gyarados ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "10",
+    "customTournamentName": "Chaos League Pocket Saturdays (161 Players)",
+    "engines": [
+      {
+        "_id": "67abc55888624a4a297bbd6a",
+        "name": "Manaphy"
+      },
+      {
+        "_id": "67abcbad6fa98c7329e36863",
+        "name": "Articuno ex"
+      },
+      {
+        "_id": "67c22c6e8046c4a97275f8c7",
+        "name": "Palkia"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67c3099e89ab07a7c2c23b72",
+      "title": "PTCGP 50-200 Player Event Roundup #28",
+      "url": "/tournaments/tcgp-weekly-results/28/report/"
+    }
+  },
+  {
+    "author": "Shubruise",
+    "created": "2025-02-26T12:28:33.078Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e255c",
+          "name": "Hitmonlee",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2554",
+          "name": "Machamp ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2552",
+          "name": "Machoke",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2551",
+          "name": "Machop",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6761262ab864a94749eef6c0",
+          "name": "Pokédex",
+          "alternateArt": true,
+          "nameRelease": "2024-10-30T03:00:00.000Z"
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/the-dark-league-tuesday-(166-players)/3/machamp-ex/shubruise/R3Dc1/",
+    "deckType": {
+      "name": "Machamp ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "3",
+    "customTournamentName": "The Dark League Tuesday (166 Players)",
+    "engines": [
+      {
+        "_id": "67abc59288624a4a297bbfd0",
+        "name": "Hitmonlee"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67bc74ce055e9f689d4c34db",
+      "title": "PTCGP 50-200 Player Event Roundup #27",
+      "url": "/tournaments/tcgp-weekly-results/27/report/"
+    }
+  },
+  {
+    "author": "Beastpony23",
+    "created": "2025-02-23T17:03:55.194Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2546",
+          "name": "Gardevoir",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2545",
+          "name": "Kirlia",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2543",
+          "name": "Mewtwo ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2544",
+          "name": "Ralts",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b7f4f06a47c6afdf605f",
+          "name": "Spiritomb",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67611c67f9e257245fbb9f18",
+          "name": "Mythical Slab",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6761262ab864a94749eef6c0",
+          "name": "Pokédex",
+          "alternateArt": true,
+          "nameRelease": "2024-10-30T03:00:00.000Z"
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/victory-road-express-terremoto-x-trainers-tcg/1/mewtwo-ex/beastpony23/e-itY/",
+    "deckType": {
+      "name": "Mewtwo ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "1",
+    "customTournamentName": "VICTORY ROAD EXPRESS Terremoto x Trainers TCG",
+    "engines": [],
+    "linkedArticle": {
+      "_id": "67b7a1a1a39e5e96ffdadb2d",
+      "title": "PTCGP 50-200 Player Event Roundup #26",
+      "url": "/tournaments/tcgp-weekly-results/26/report/"
+    }
+  },
+  {
+    "author": "XertsBR91",
+    "created": "2025-02-15T20:20:51.314Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799b5ddf06a47c6afdf53ce",
+          "name": "Palkia ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2516",
+          "name": "Articuno ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e259e",
+          "name": "Misty",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae6d0e40c3b726073ffa1",
+          "name": "Blue",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a0c08874f5ab2e16eb",
+          "name": "Pokédex",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/bigbig-fujiyama-cup-(64-players)/0/palkia-ex/xertsbr91/8V-vs/",
+    "deckType": {
+      "name": "Palkia ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "0",
+    "customTournamentName": "BigBig Fujiyama CUP (64 Players)",
+    "engines": [
+      {
+        "_id": "67abcbad6fa98c7329e36863",
+        "name": "Articuno ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67b0f7391306185a4cc8e3ed",
+      "title": "PTCGP 50-200 Player Event Roundup #25",
+      "url": "/tournaments/tcgp-weekly-results/25/report/"
+    }
+  },
+  {
+    "author": "Leo10531",
+    "created": "2025-02-15T20:12:23.438Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799b5ddf06a47c6afdf53ce",
+          "name": "Palkia ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2516",
+          "name": "Articuno ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e259e",
+          "name": "Misty",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae6d0e40c3b726073ffa1",
+          "name": "Blue",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a0c08874f5ab2e16eb",
+          "name": "Pokédex",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/a2-season-of-time-and-space-(74-players)/3/palkia-ex/leo10531/3tmq-/",
+    "deckType": {
+      "name": "Palkia ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "3",
+    "customTournamentName": "A2 Season of Time and Space (74 Players)",
+    "engines": [
+      {
+        "_id": "67abcbad6fa98c7329e36863",
+        "name": "Articuno ex"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "Yio_nagatsuki",
+    "created": "2025-02-14T13:08:11.552Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799b9210c64508adf1e544a",
+          "name": "Skarmory",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b9d2f06a47c6afdf6927",
+          "name": "Shieldon",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b9fe0c64508adf1e57bf",
+          "name": "Bastiodon",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bcd9169202e5d7e6877d",
+          "name": "Armor Fossil",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a0c08874f5ab2e16eb",
+          "name": "Pokédex",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/victory-road---terremoto-x-trainers-tcg-(218-players)/2/skarmory/yio_nagatsuki/N4Klu/",
+    "deckType": {
+      "name": "Skarmory",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "2",
+    "customTournamentName": "Victory Road - Terremoto x Trainers TCG (218 Players)",
+    "engines": [
+      {
+        "_id": "67abcd4388624a4a297c05b6",
+        "name": "Bastiodon"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67af411b2bbdc388fe807915",
+      "title": "Victory Road - Terremoto x Trainers TCG 2 - 218 Players",
+      "url": "/tournaments/victory-road-terremoto/2/report/"
+    }
+  },
+  {
+    "author": "Suifeng0214",
+    "created": "2025-02-14T01:12:05.663Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799b5ddf06a47c6afdf53ce",
+          "name": "Palkia ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2516",
+          "name": "Articuno ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e259e",
+          "name": "Misty",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae6d0e40c3b726073ffa1",
+          "name": "Blue",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a0c08874f5ab2e16eb",
+          "name": "Pokédex",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/p.p-i.t-speed-tour-(168-players)/9/palkia-ex/suifeng0214/tEbVF/",
+    "deckType": {
+      "name": "Palkia ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "9",
+    "customTournamentName": "P.P i.T Speed Tour (168 Players)",
+    "engines": [
+      {
+        "_id": "67abcbad6fa98c7329e36863",
+        "name": "Articuno ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67acfc7a1eb7dff1f992b814",
+      "title": "PTCGP 50-200 Player Event Roundup #24",
+      "url": "/tournaments/tcgp-weekly-results/24/report/"
+    }
+  },
+  {
+    "author": "DekuTree",
+    "created": "2025-02-12T19:49:28.011Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2516",
+          "name": "Articuno ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e259e",
+          "name": "Misty",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a0c08874f5ab2e16eb",
+          "name": "Pokédex",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/le-bourg-fighting-(87-players)/3/articuno-ex/dekutree/lxkLf/",
+    "deckType": {
+      "name": "Articuno ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "2nd Place",
+    "tournamentNumber": "3",
+    "customTournamentName": "Le Bourg Fighting (87 Players)",
+    "engines": [],
+    "linkedArticle": {
+      "_id": "67acfc7a1eb7dff1f992b814",
+      "title": "PTCGP 50-200 Player Event Roundup #24",
+      "url": "/tournaments/tcgp-weekly-results/24/report/"
+    }
+  },
+  {
+    "author": "quietwarrior",
+    "created": "2025-02-10T15:15:38.290Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799b5ddf06a47c6afdf53ce",
+          "name": "Palkia ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2516",
+          "name": "Articuno ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e259e",
+          "name": "Misty",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a0c08874f5ab2e16eb",
+          "name": "Pokédex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67218198a61389c23bbf94ab",
+          "name": "Hand Scope",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/ursiiday's-pocket-weekly-(1891-players)/15/palkia-ex/quietwarrior/06pyC/",
+    "deckType": {
+      "name": "Palkia ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "15",
+    "customTournamentName": "Ursiiday's Pocket Weekly (1891 Players)",
+    "engines": [
+      {
+        "_id": "67abcbad6fa98c7329e36863",
+        "name": "Articuno ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67aa19c0a36f027ea7913286",
+      "title": "Ursiiday's Pocket Weekly #15 - 1891 Players",
+      "url": "/tournaments/ursiiday-pocket-weekly/15/report/"
+    }
+  },
+  {
+    "author": "Luanderson",
+    "created": "2025-01-31T02:20:25.695Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2546",
+          "name": "Gardevoir",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2544",
+          "name": "Ralts",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2545",
+          "name": "Kirlia",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2543",
+          "name": "Mewtwo ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae715e40c3b7260740109",
+          "name": "Mew ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67611c90db7f64d578b8b51e",
+          "name": "Budding Expeditioner",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67611c67f9e257245fbb9f18",
+          "name": "Mythical Slab",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a0c08874f5ab2e16eb",
+          "name": "Pokédex",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/hora-da-batalha-meta-test-(75-players)/1/mewtwo-ex/luanderson/8jbD7/",
+    "deckType": {
+      "name": "Mewtwo ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "1",
+    "customTournamentName": "HORA DA BATALHA : Meta Test (75 Players)",
+    "engines": [
+      {
+        "_id": "67abc5cf25c7da23a21c7190",
+        "name": "Mew ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "679942e3f5d84b3e8fe0dafa",
+      "title": "PTCGP 50-200 Player Event Roundup #20",
+      "url": "/tournaments/tcgp-weekly-results/20/report/"
+    }
+  }
+]

@@ -52,5 +52,6 @@
       "type": "sets"
     }
   ],
-  "ex": false
+  "ex": false,
+  "deckTypes": []
 }

@@ -78,7 +78,8 @@
   "weakness": [
     "Fighting"
   ],
-  "popRank": 140,
+  "popRank": 1.7976931348623157e+308,
   "artVariants": [],
-  "limitlessId": "A1 165"
+  "limitlessId": "A1 165",
+  "deckTypes": []
 }

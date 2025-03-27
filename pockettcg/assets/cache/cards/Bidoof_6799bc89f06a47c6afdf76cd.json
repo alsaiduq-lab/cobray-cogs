@@ -16,12 +16,14 @@
   "retreat": 2,
   "description": "",
   "release": "2025-01-30T06:00:00.000Z",
-  "popRank": 233,
+  "popRank": 230,
   "alternateArt": false,
   "artVariants": [
     {
       "_id": "6798e70ddbba2e0d2bb5e973",
-      "name": "Bidoof"
+      "name": "Bidoof",
+      "alternateArt": true,
+      "nameRelease": "2025-01-30T06:00:00.000Z"
     }
   ],
   "abilities": [],
@@ -56,5 +58,8 @@
       "type": "sets"
     }
   ],
-  "ex": false
+  "ex": false,
+  "deckTypes": [
+    "Bidoof"
+  ]
 }

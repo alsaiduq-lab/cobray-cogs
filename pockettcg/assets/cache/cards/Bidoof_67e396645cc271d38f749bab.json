@@ -1,0 +1,64 @@
+{
+  "_id": "67e396645cc271d38f749bab",
+  "name": "Bidoof",
+  "energyType": [
+    "Colorless"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "70",
+  "pokemonId": "A2b-064",
+  "limitlessId": "A2b 64",
+  "rarity": "d-1",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67e36a705cc271d38f73bd18",
+      "name": "Bidoof",
+      "alternateArt": true,
+      "nameRelease": "2025-01-30T06:00:00.000Z"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Headbutt",
+      "text": "",
+      "energyCost": [
+        "Colorless",
+        "Colorless",
+        null,
+        null
+      ],
+      "hp": "30",
+      "_id": "67e3aa97575eceb838a2ce83"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

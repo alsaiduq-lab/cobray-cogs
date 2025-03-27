@@ -1,0 +1,64 @@
+{
+  "_id": "67e3999a5cc271d38f74ab14",
+  "name": "Wigglytuff",
+  "energyType": [
+    "Colorless"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "100",
+  "pokemonId": "A2b-078",
+  "limitlessId": "A2b 78",
+  "rarity": "s-1",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Comforting Song",
+      "text": "Once during your turn, you meay heal 20 damage from your Active Pokémon.",
+      "_id": "67e39b4079f0ebec0380e76d"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Gentle Slap",
+      "text": "",
+      "energyCost": [
+        "Colorless",
+        "Colorless",
+        null,
+        null
+      ],
+      "hp": "50",
+      "_id": "67e39b4079f0ebec0380e76e"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

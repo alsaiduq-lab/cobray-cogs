@@ -46,16 +46,23 @@
   "weakness": [
     "Water"
   ],
-  "popRank": 41,
+  "popRank": 69,
   "artVariants": [
     {
       "_id": "671ef1105279bcfb3c1e25a9",
-      "name": "Charmander"
+      "name": "Charmander",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     },
     {
       "_id": "67612468f9e257245fbbe3de",
-      "name": "Charmander"
+      "name": "Charmander",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     }
   ],
-  "limitlessId": "A1 33"
+  "limitlessId": "A1 33",
+  "deckTypes": [
+    "Charizard ex"
+  ]
 }

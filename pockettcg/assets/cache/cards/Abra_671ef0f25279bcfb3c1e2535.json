@@ -45,7 +45,10 @@
   "weakness": [
     "Darkness"
   ],
-  "popRank": 143,
+  "popRank": 256,
   "artVariants": [],
-  "limitlessId": "A1 115"
+  "limitlessId": "A1 115",
+  "deckTypes": [
+    "Alakazam"
+  ]
 }

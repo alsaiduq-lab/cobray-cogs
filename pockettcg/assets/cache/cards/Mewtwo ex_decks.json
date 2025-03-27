@@ -1,0 +1,1278 @@
+[
+  {
+    "author": "ぴど",
+    "created": "2025-03-26T02:31:00.281Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2543",
+          "name": "Mewtwo ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798f0f2b5fbced301dd066d",
+          "name": "Misdreavus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b5ac169202e5d7e660d3",
+          "name": "Mismagius ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181abc08874f5ab2e16fb",
+          "name": "Red Card",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/nayara-cup-(93-players)/6/mismagius-ex/ぴど/wRDhh/",
+    "deckType": {
+      "name": "Mismagius ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 4",
+    "tournamentNumber": "6",
+    "customTournamentName": "Nayara Cup (93 Players)",
+    "engines": [],
+    "linkedArticle": null
+  },
+  {
+    "author": "Pedrox",
+    "created": "2025-03-25T13:35:48.798Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2546",
+          "name": "Gardevoir",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea386950657553dc6877",
+          "name": "Kirlia",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae715e40c3b7260740109",
+          "name": "Mew ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2543",
+          "name": "Mewtwo ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2544",
+          "name": "Ralts",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67611c67f9e257245fbb9f18",
+          "name": "Mythical Slab",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/the-dark-league-flash-afternoon-(155-players)/1/mewtwo-ex/pedrox/Ifita/",
+    "deckType": {
+      "name": "Mewtwo ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "1",
+    "customTournamentName": "The Dark League Flash Afternoon (155 Players)",
+    "engines": [
+      {
+        "_id": "67abc5cf25c7da23a21c7190",
+        "name": "Mew ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67e2b1caee2057e626628459",
+      "title": "PTCGP 50-200 Player Event Roundup #34",
+      "url": "/tournaments/tcgp-weekly-results/34/report/"
+    }
+  },
+  {
+    "author": "ghj",
+    "created": "2025-03-23T23:43:44.907Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799b4c1f06a47c6afdf4de6",
+          "name": "Magnemite",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2524",
+          "name": "Magneton",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b5bff06a47c6afdf5344",
+          "name": "Magnezone",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2543",
+          "name": "Mewtwo ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "676111f4f9e257245fbb628b",
+          "name": "Sigilyph",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799a5e0169202e5d7e614b9",
+          "name": "Dawn",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/kurapoke-cup-(103-players)/14/mewtwo-ex/ghj/ZJgQO/",
+    "deckType": {
+      "name": "Mewtwo ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "2nd Place",
+    "tournamentNumber": "14",
+    "customTournamentName": "Kurapoke Cup (103 Players)",
+    "engines": [
+      {
+        "_id": "67ab896225c7da23a21a6c9f",
+        "name": "Magnezone"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "ghj",
+    "created": "2025-03-23T02:40:08.527Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799b4c1f06a47c6afdf4de6",
+          "name": "Magnemite",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2524",
+          "name": "Magneton",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b5bff06a47c6afdf5344",
+          "name": "Magnezone",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2543",
+          "name": "Mewtwo ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "676111f4f9e257245fbb628b",
+          "name": "Sigilyph",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799a5e0169202e5d7e614b9",
+          "name": "Dawn",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/kurapoke-cup-(104-players)/13/mewtwo-ex/ghj/qy7rC/",
+    "deckType": {
+      "name": "Mewtwo ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "1st Place",
+    "tournamentNumber": "13",
+    "customTournamentName": "Kurapoke Cup (104 Players)",
+    "engines": [
+      {
+        "_id": "67ab896225c7da23a21a6c9f",
+        "name": "Magnezone"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "cura222222",
+    "created": "2025-03-21T11:20:27.563Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799b4c1f06a47c6afdf4de6",
+          "name": "Magnemite",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2524",
+          "name": "Magneton",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b5bff06a47c6afdf5344",
+          "name": "Magnezone",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2543",
+          "name": "Mewtwo ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "676111f4f9e257245fbb628b",
+          "name": "Sigilyph",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799a5e0169202e5d7e614b9",
+          "name": "Dawn",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/svk-~-flash-tournament-(153-players)/9/mewtwo-ex/cura222222/_KAZB/",
+    "deckType": {
+      "name": "Mewtwo ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "9",
+    "customTournamentName": "SvK ~ Flash Tournament (153 Players)",
+    "engines": [
+      {
+        "_id": "67ab896225c7da23a21a6c9f",
+        "name": "Magnezone"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67dd4bf5bfaf868a950fa052",
+      "title": "PTCGP 50-200 Player Event Roundup #33",
+      "url": "/tournaments/tcgp-weekly-results/33/report/"
+    }
+  },
+  {
+    "author": "taata",
+    "created": "2025-03-14T13:52:10.017Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2546",
+          "name": "Gardevoir",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea386950657553dc6877",
+          "name": "Kirlia",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae715e40c3b7260740109",
+          "name": "Mew ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2543",
+          "name": "Mewtwo ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e955dbba2e0d2bb5f3b6",
+          "name": "Ralts",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/flash-friday-(140-players)/12/mewtwo-ex/taata/9UtOV/",
+    "deckType": {
+      "name": "Mewtwo ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "12",
+    "customTournamentName": "Flash Friday (140 Players)",
+    "engines": [
+      {
+        "_id": "67abc5cf25c7da23a21c7190",
+        "name": "Mew ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67d183e56b52e2a6d73f8b51",
+      "title": "PTCGP 50-200 Player Event Roundup #31",
+      "url": "/tournaments/tcgp-weekly-results/31/report/"
+    }
+  },
+  {
+    "author": "Rin dys",
+    "created": "2025-03-12T13:39:38.946Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2519",
+          "name": "Froakie",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e251a",
+          "name": "Frogadier",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e251b",
+          "name": "Greninja",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2543",
+          "name": "Mewtwo ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799ba9e169202e5d7e67ac6",
+          "name": "Regirock",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b296169202e5d7e650f6",
+          "name": "Shaymin",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/gabut-tournament-(137-players)/19/mewtwo-ex/rin-dys/eM03D/",
+    "deckType": {
+      "name": "Mewtwo ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "19",
+    "customTournamentName": "Gabut Tournament (137 Players)",
+    "engines": [
+      {
+        "_id": "67abc4ef6fa98c7329e32e0d",
+        "name": "Greninja"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67d183e56b52e2a6d73f8b51",
+      "title": "PTCGP 50-200 Player Event Roundup #31",
+      "url": "/tournaments/tcgp-weekly-results/31/report/"
+    }
+  },
+  {
+    "author": "Far2005",
+    "created": "2025-03-12T12:23:38.405Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2546",
+          "name": "Gardevoir",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea386950657553dc6877",
+          "name": "Kirlia",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae715e40c3b7260740109",
+          "name": "Mew ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2543",
+          "name": "Mewtwo ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e955dbba2e0d2bb5f3b6",
+          "name": "Ralts",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67611c67f9e257245fbb9f18",
+          "name": "Mythical Slab",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/faster-than-the-light-tournament-(267-players)/8/mewtwo-ex/far2005/m1Z8Z/",
+    "deckType": {
+      "name": "Mewtwo ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "8",
+    "customTournamentName": "FASTER THAN THE LIGHT TOURNAMENT (267 Players)",
+    "engines": [
+      {
+        "_id": "67abc5cf25c7da23a21c7190",
+        "name": "Mew ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67d17d0d92ad757f67aab211",
+      "title": "FASTER THAN THE LIGHT TOURNAMENT #8 - 267 Players",
+      "url": "/tournaments/faster-than-the-light/8/report/"
+    }
+  },
+  {
+    "author": "Chiha_Rotsure",
+    "created": "2025-03-11T18:13:19.165Z",
+    "main": [
+      {
+        "card": {
+          "_id": "67924b55eb08086be854192e",
+          "name": "Cresselia",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2543",
+          "name": "Mewtwo ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799ba9e169202e5d7e67ac6",
+          "name": "Regirock",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b296169202e5d7e650f6",
+          "name": "Shaymin",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/monday-meta-tournament-mar-2025-(142-players)/2/mewtwo-ex/chiha_rotsure/r0VKC/",
+    "deckType": {
+      "name": "Mewtwo ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "2",
+    "customTournamentName": "Monday Meta Tournament Mar 2025 (142 Players)",
+    "engines": [],
+    "linkedArticle": {
+      "_id": "67cc3d4d06d26439adba4343",
+      "title": "PTCGP 50-200 Player Event Roundup #30",
+      "url": "/tournaments/tcgp-weekly-results/30/report/"
+    }
+  },
+  {
+    "author": "charliegu",
+    "created": "2025-03-11T17:42:13.655Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2546",
+          "name": "Gardevoir",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b822169202e5d7e66d00",
+          "name": "Giratina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea386950657553dc6877",
+          "name": "Kirlia",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae715e40c3b7260740109",
+          "name": "Mew ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2543",
+          "name": "Mewtwo ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2544",
+          "name": "Ralts",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "676111f4f9e257245fbb628b",
+          "name": "Sigilyph",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/pgl-(358-players)/2/mewtwo-ex/charliegu/JH6kC/",
+    "deckType": {
+      "name": "Mewtwo ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "2",
+    "customTournamentName": "PGL (358 Players)",
+    "engines": [
+      {
+        "_id": "67abc5cf25c7da23a21c7190",
+        "name": "Mew ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67d0769f12e5fdc650306334",
+      "title": "PGL #2 - 358 Players",
+      "url": "/tournaments/pgl/2/report/"
+    }
+  }
+]

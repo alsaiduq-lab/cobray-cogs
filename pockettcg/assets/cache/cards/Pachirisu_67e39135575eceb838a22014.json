@@ -1,0 +1,69 @@
+{
+  "_id": "67e39135575eceb838a22014",
+  "name": "Pachirisu",
+  "energyType": [
+    "Lightning"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "70",
+  "pokemonId": "A2b-025",
+  "limitlessId": "A2b 25",
+  "rarity": "d-2",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67e39875575eceb838a25709",
+      "name": "Pachirisu",
+      "alternateArt": true,
+      "nameRelease": "2025-03-27T06:00:00.000Z"
+    },
+    {
+      "_id": "67e36aa979f0ebec037fe8ae",
+      "name": "Pachirisu",
+      "alternateArt": true,
+      "nameRelease": "2025-03-27T06:00:00.000Z"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Plasma",
+      "text": "Take a Lightning Energy from your Energy Zone and attach it to 1 of your Benched Lightning Pokémon.",
+      "energyCost": [
+        "Lightning",
+        null,
+        null
+      ],
+      "hp": "10",
+      "_id": "67e3aab45cc271d38f751677"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

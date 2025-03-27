@@ -1,0 +1,70 @@
+{
+  "_id": "67e3925e79f0ebec0380a92b",
+  "name": "Tatsugiri",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "70",
+  "pokemonId": "A2b-021",
+  "limitlessId": "A2b 21",
+  "rarity": "d-2",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67dd6894a1b6092a3c64bd08",
+      "name": "Tatsugiri",
+      "alternateArt": true,
+      "nameRelease": "2025-03-27T06:00:00.000Z"
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Retreat Directive",
+      "text": "Your Active Dondozo has no Retreat Cost.",
+      "_id": "67e398a65cc271d38f74a59a"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Rain Splash",
+      "text": "",
+      "energyCost": [
+        "Water",
+        null,
+        null,
+        null
+      ],
+      "hp": "20",
+      "_id": "67e398a65cc271d38f74a59b"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

@@ -1,0 +1,525 @@
+[
+  {
+    "author": "Dani1380",
+    "created": "2025-01-28T05:32:03.716Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2551",
+          "name": "Machop",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2552",
+          "name": "Machoke",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2554",
+          "name": "Machamp ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e255c",
+          "name": "Hitmonlee",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae715e40c3b7260740109",
+          "name": "Mew ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2553",
+          "name": "Machamp",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2588",
+          "name": "Farfetch'd",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/monday-meta-tournament-jan-2025-(256-players)/4/machamp-ex/dani1380/qWsbW/",
+    "deckType": {
+      "name": "Machamp ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "4",
+    "customTournamentName": "Monday Meta Tournament Jan 2025 (256 Players)",
+    "engines": [
+      {
+        "_id": "67abc59288624a4a297bbfd0",
+        "name": "Hitmonlee"
+      },
+      {
+        "_id": "67abc5cf25c7da23a21c7190",
+        "name": "Mew ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67986dd17211c4187842f205",
+      "title": "Monday Meta Tournament Jan 2025 #4 - 256 Players",
+      "url": "/tournaments/monday-meta-tournament-jan-25/4/report/"
+    }
+  },
+  {
+    "author": "BrunoSquad7",
+    "created": "2024-12-08T13:01:08.313Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2551",
+          "name": "Machop",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2552",
+          "name": "Machoke",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2554",
+          "name": "Machamp ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2559",
+          "name": "Cubone",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e255b",
+          "name": "Marowak ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2553",
+          "name": "Machamp",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e255a",
+          "name": "Marowak",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/redacted-crown-(98-players)/10/machamp-ex/brunosquad7/D4eTu/",
+    "deckType": {
+      "name": "Machamp ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "10",
+    "customTournamentName": "Redacted Crown (98 Players)",
+    "linkedArticle": {
+      "_id": "67532009f82bf39f88eef561",
+      "title": "PTCGP 50-200 Player Event Roundup #6",
+      "url": "/tournaments/tcgp-weekly-results/6/report/"
+    }
+  },
+  {
+    "author": "Oyx",
+    "created": "2024-11-24T14:06:27.789Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2551",
+          "name": "Machop",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2552",
+          "name": "Machoke",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2554",
+          "name": "Machamp ex",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2553",
+          "name": "Machamp",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67218206a61389c23bbf94cd",
+          "name": "Mankey",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2550",
+          "name": "Primeape",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/closed-france-tournament-(44-players)/1/machamp-ex/oyx/EMvpy/",
+    "deckType": {
+      "name": "Machamp ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "1",
+    "customTournamentName": "Closed France Tournament (44 Players)",
+    "linkedArticle": {
+      "_id": "6740bb887f60d359e8dfe987",
+      "title": "PTCGP 50-200 Player Event Roundup #3",
+      "url": "/tournaments/tcgp-weekly-results/3/report/"
+    }
+  },
+  {
+    "author": {
+      "_id": "67291588ae4e97fb3e0ac051",
+      "roles": [],
+      "username": "rozos99"
+    },
+    "created": "2024-11-04T21:02:29.666Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2551",
+          "name": "Machop",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2552",
+          "name": "Machoke",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2553",
+          "name": "Machamp",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a0c08874f5ab2e16eb",
+          "name": "Pokédex",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67218198a61389c23bbf94ab",
+          "name": "Hand Scope",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181abc08874f5ab2e16fb",
+          "name": "Red Card",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "skills": [],
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/spicy-winstreak/november-2024/machamp-ex/rozos99/oD3Kh/",
+    "deckType": {
+      "name": "Machamp ex",
+      "tier": null
+    },
+    "rankedType": {
+      "name": "5+ Winstreak",
+      "shortName": "Winstreak",
+      "icon": "/img/tournaments/logos/Spicy_Wins.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
+    },
+    "linkedArticle": null
+  }
+]

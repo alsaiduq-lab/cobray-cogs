@@ -1,0 +1,1297 @@
+[
+  {
+    "author": "MITRAB",
+    "created": "2025-03-14T13:50:02.783Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6798ea526950657553dc6903",
+          "name": "Lucario",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2554",
+          "name": "Machamp ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2552",
+          "name": "Machoke",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2551",
+          "name": "Machop",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9a0dbba2e0d2bb5f57d",
+          "name": "Riolu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c15ac3e06d5e18c00abf6f",
+          "name": "Sudowoodo",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/flash-friday-(140-players)/12/machamp-ex/mitrab/Zvv8e/",
+    "deckType": {
+      "name": "Machamp ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "12",
+    "customTournamentName": "Flash Friday (140 Players)",
+    "engines": [
+      {
+        "_id": "67abcd2b88624a4a297c047e",
+        "name": "Lucario"
+      },
+      {
+        "_id": "67c2998e3303e84d6df1c033",
+        "name": "Sudowoodo"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67d183e56b52e2a6d73f8b51",
+      "title": "PTCGP 50-200 Player Event Roundup #31",
+      "url": "/tournaments/tcgp-weekly-results/31/report/"
+    }
+  },
+  {
+    "author": "GarfieldTheLightning",
+    "created": "2025-03-14T13:48:42.391Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6798ea526950657553dc6903",
+          "name": "Lucario",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2554",
+          "name": "Machamp ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2552",
+          "name": "Machoke",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2551",
+          "name": "Machop",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9a0dbba2e0d2bb5f57d",
+          "name": "Riolu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c15ac3e06d5e18c00abf6f",
+          "name": "Sudowoodo",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/flash-friday-(140-players)/12/machamp-ex/garfieldthelightning/qV327/",
+    "deckType": {
+      "name": "Machamp ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "12",
+    "customTournamentName": "Flash Friday (140 Players)",
+    "engines": [
+      {
+        "_id": "67abcd2b88624a4a297c047e",
+        "name": "Lucario"
+      },
+      {
+        "_id": "67c2998e3303e84d6df1c033",
+        "name": "Sudowoodo"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67d183e56b52e2a6d73f8b51",
+      "title": "PTCGP 50-200 Player Event Roundup #31",
+      "url": "/tournaments/tcgp-weekly-results/31/report/"
+    }
+  },
+  {
+    "author": "CKYClayton",
+    "created": "2025-03-09T02:07:41.505Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e255d",
+          "name": "Hitmonchan",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea526950657553dc6903",
+          "name": "Lucario",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2554",
+          "name": "Machamp ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2552",
+          "name": "Machoke",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2551",
+          "name": "Machop",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9a0dbba2e0d2bb5f57d",
+          "name": "Riolu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/flash-friday-(128-players)/11/machamp-ex/ckyclayton/okYJx/",
+    "deckType": {
+      "name": "Machamp ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "11",
+    "customTournamentName": "Flash Friday (128 Players)",
+    "engines": [
+      {
+        "_id": "67abcd2b88624a4a297c047e",
+        "name": "Lucario"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67cc3d4d06d26439adba4343",
+      "title": "PTCGP 50-200 Player Event Roundup #30",
+      "url": "/tournaments/tcgp-weekly-results/30/report/"
+    }
+  },
+  {
+    "author": "かなた",
+    "created": "2025-03-05T02:45:11.413Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2554",
+          "name": "Machamp ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2552",
+          "name": "Machoke",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2551",
+          "name": "Machop",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67611748db7f64d578b892ab",
+          "name": "Marshadow",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67c15ac3e06d5e18c00abf6f",
+          "name": "Sudowoodo",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/bomber-cup-(156-players)/47/machamp-ex/かなた/NYko-/",
+    "deckType": {
+      "name": "Machamp ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 4",
+    "tournamentNumber": "47",
+    "customTournamentName": "Bomber Cup (156 Players)",
+    "engines": [
+      {
+        "_id": "67c2998e3303e84d6df1c033",
+        "name": "Sudowoodo"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "Octopuses",
+    "created": "2025-03-04T17:49:26.856Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6798ea526950657553dc6903",
+          "name": "Lucario",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2554",
+          "name": "Machamp ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2552",
+          "name": "Machoke",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2551",
+          "name": "Machop",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9a0dbba2e0d2bb5f57d",
+          "name": "Riolu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c15ac3e06d5e18c00abf6f",
+          "name": "Sudowoodo",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/torneo-nocturno-argentino-(182-players)/9/machamp-ex/octopuses/bLUkC/",
+    "deckType": {
+      "name": "Machamp ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "9",
+    "customTournamentName": "Torneo Nocturno Argentino (182 Players)",
+    "engines": [
+      {
+        "_id": "67abcd2b88624a4a297c047e",
+        "name": "Lucario"
+      },
+      {
+        "_id": "67c2998e3303e84d6df1c033",
+        "name": "Sudowoodo"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67c3099e89ab07a7c2c23b72",
+      "title": "PTCGP 50-200 Player Event Roundup #28",
+      "url": "/tournaments/tcgp-weekly-results/28/report/"
+    }
+  },
+  {
+    "author": "Gaviosa",
+    "created": "2025-03-04T03:05:04.752Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6798ea526950657553dc6903",
+          "name": "Lucario",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2554",
+          "name": "Machamp ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2552",
+          "name": "Machoke",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2551",
+          "name": "Machop",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9a0dbba2e0d2bb5f57d",
+          "name": "Riolu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c15ac3e06d5e18c00abf6f",
+          "name": "Sudowoodo",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/pokémon-battle-park-pocket-(209-players)//machamp-ex/gaviosa/SZ7mk/",
+    "deckType": {
+      "name": "Machamp ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "",
+    "customTournamentName": "Pokémon Battle Park Pocket (209 Players)",
+    "engines": [
+      {
+        "_id": "67abcd2b88624a4a297c047e",
+        "name": "Lucario"
+      },
+      {
+        "_id": "67c2998e3303e84d6df1c033",
+        "name": "Sudowoodo"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67c66ff5bc00da39f2bb9283",
+      "title": "Pokémon Battle Park Pocket - 209 Players",
+      "url": "/tournaments/pokemon-battle-park-pocket/mar-3-2025/report/"
+    }
+  },
+  {
+    "author": "Octopuses",
+    "created": "2025-03-03T15:06:52.734Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6798ea526950657553dc6903",
+          "name": "Lucario",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2554",
+          "name": "Machamp ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2552",
+          "name": "Machoke",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2551",
+          "name": "Machop",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9a0dbba2e0d2bb5f57d",
+          "name": "Riolu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c15ac3e06d5e18c00abf6f",
+          "name": "Sudowoodo",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/nico-cup---tcgp-arg-(79-players)/3/machamp-ex/octopuses/VITIq/",
+    "deckType": {
+      "name": "Machamp ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "3",
+    "customTournamentName": "Nico Cup - TCGP ARG (79 Players)",
+    "engines": [
+      {
+        "_id": "67abcd2b88624a4a297c047e",
+        "name": "Lucario"
+      },
+      {
+        "_id": "67c2998e3303e84d6df1c033",
+        "name": "Sudowoodo"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67c3099e89ab07a7c2c23b72",
+      "title": "PTCGP 50-200 Player Event Roundup #28",
+      "url": "/tournaments/tcgp-weekly-results/28/report/"
+    }
+  },
+  {
+    "author": "Gaviosa",
+    "created": "2025-03-01T13:39:26.042Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e255d",
+          "name": "Hitmonchan",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e255c",
+          "name": "Hitmonlee",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea526950657553dc6903",
+          "name": "Lucario",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2554",
+          "name": "Machamp ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2552",
+          "name": "Machoke",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2551",
+          "name": "Machop",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9a0dbba2e0d2bb5f57d",
+          "name": "Riolu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/arceus-is-here-(57-players)/1/machamp-ex/gaviosa/63Jzt/",
+    "deckType": {
+      "name": "Machamp ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 4",
+    "tournamentNumber": "1",
+    "customTournamentName": "Arceus is here (57 Players)",
+    "engines": [
+      {
+        "_id": "67abc59288624a4a297bbfd0",
+        "name": "Hitmonlee"
+      },
+      {
+        "_id": "67abcd2b88624a4a297c047e",
+        "name": "Lucario"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67c3099e89ab07a7c2c23b72",
+      "title": "PTCGP 50-200 Player Event Roundup #28",
+      "url": "/tournaments/tcgp-weekly-results/28/report/"
+    }
+  },
+  {
+    "author": "Nhakho",
+    "created": "2025-03-01T00:57:35.973Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2554",
+          "name": "Machamp ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2552",
+          "name": "Machoke",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2551",
+          "name": "Machop",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67611748db7f64d578b892ab",
+          "name": "Marshadow",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67c15ac3e06d5e18c00abf6f",
+          "name": "Sudowoodo",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/pocket-winds-step-up-(298-players)/1/machamp-ex/nhakho/xQjOZ/",
+    "deckType": {
+      "name": "Machamp ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "1",
+    "customTournamentName": "Pocket Winds: Step Up (298 Players)",
+    "engines": [
+      {
+        "_id": "67c2998e3303e84d6df1c033",
+        "name": "Sudowoodo"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67c25bc48046c4a9727794cf",
+      "title": "Pocket Winds: Step Up #1- 298 Players",
+      "url": "/tournaments/pocket-winds-step-up/1/report/"
+    }
+  },
+  {
+    "author": "Shubruise",
+    "created": "2025-02-26T12:28:33.078Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e255c",
+          "name": "Hitmonlee",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2554",
+          "name": "Machamp ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2552",
+          "name": "Machoke",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2551",
+          "name": "Machop",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6761262ab864a94749eef6c0",
+          "name": "Pokédex",
+          "alternateArt": true,
+          "nameRelease": "2024-10-30T03:00:00.000Z"
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/the-dark-league-tuesday-(166-players)/3/machamp-ex/shubruise/R3Dc1/",
+    "deckType": {
+      "name": "Machamp ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "3",
+    "customTournamentName": "The Dark League Tuesday (166 Players)",
+    "engines": [
+      {
+        "_id": "67abc59288624a4a297bbfd0",
+        "name": "Hitmonlee"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67bc74ce055e9f689d4c34db",
+      "title": "PTCGP 50-200 Player Event Roundup #27",
+      "url": "/tournaments/tcgp-weekly-results/27/report/"
+    }
+  }
+]

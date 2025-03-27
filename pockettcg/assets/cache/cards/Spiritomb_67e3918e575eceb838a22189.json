@@ -1,0 +1,56 @@
+{
+  "_id": "67e3918e575eceb838a22189",
+  "name": "Spiritomb",
+  "energyType": [
+    "Darkness"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "80",
+  "pokemonId": "A2b-049",
+  "limitlessId": "A2b 49",
+  "rarity": "d-2",
+  "weakness": [
+    "Grass"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Confuse Ray",
+      "text": "Flip a coin. If heads, your opponent’s Active Pokémon is now Confused.",
+      "energyCost": [
+        "Darkness",
+        null,
+        null
+      ],
+      "hp": "20",
+      "_id": "67e3a5e55cc271d38f74f82a"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

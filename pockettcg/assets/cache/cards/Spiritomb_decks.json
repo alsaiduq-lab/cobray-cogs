@@ -1,0 +1,1329 @@
+[
+  {
+    "author": "Alv",
+    "created": "2025-03-21T11:17:19.649Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799b936f06a47c6afdf6601",
+          "name": "Darkrai ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b6de169202e5d7e66632",
+          "name": "Sneasel",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b7f4f06a47c6afdf605f",
+          "name": "Spiritomb",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799b724f06a47c6afdf5b9d",
+          "name": "Weavile ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799a5e0169202e5d7e614b9",
+          "name": "Dawn",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/svk-~-flash-tournament-(153-players)/9/weavile-ex/alv/rmr3a/",
+    "deckType": {
+      "name": "Weavile ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 4",
+    "tournamentNumber": "9",
+    "customTournamentName": "SvK ~ Flash Tournament (153 Players)",
+    "engines": [
+      {
+        "_id": "67abccf388624a4a297c0247",
+        "name": "Darkrai ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67dd4bf5bfaf868a950fa052",
+      "title": "PTCGP 50-200 Player Event Roundup #33",
+      "url": "/tournaments/tcgp-weekly-results/33/report/"
+    }
+  },
+  {
+    "author": "Enanete",
+    "created": "2025-03-14T13:27:30.839Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799b936f06a47c6afdf6601",
+          "name": "Darkrai ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b6de169202e5d7e66632",
+          "name": "Sneasel",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b7f4f06a47c6afdf605f",
+          "name": "Spiritomb",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799b724f06a47c6afdf5b9d",
+          "name": "Weavile ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799a5e0169202e5d7e614b9",
+          "name": "Dawn",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/pocket-tour-tournament-(107-players)/15/weavile-ex/enanete/2rp8V/",
+    "deckType": {
+      "name": "Weavile ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 4",
+    "tournamentNumber": "15",
+    "customTournamentName": "POCKET TOUR TOURNAMENT (107 Players)",
+    "engines": [
+      {
+        "_id": "67abccf388624a4a297c0247",
+        "name": "Darkrai ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67d183e56b52e2a6d73f8b51",
+      "title": "PTCGP 50-200 Player Event Roundup #31",
+      "url": "/tournaments/tcgp-weekly-results/31/report/"
+    }
+  },
+  {
+    "author": "KRIVGC",
+    "created": "2025-03-12T12:33:18.849Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799b936f06a47c6afdf6601",
+          "name": "Darkrai ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b6de169202e5d7e66632",
+          "name": "Sneasel",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b7f4f06a47c6afdf605f",
+          "name": "Spiritomb",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799b724f06a47c6afdf5b9d",
+          "name": "Weavile ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799a5e0169202e5d7e614b9",
+          "name": "Dawn",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/the-dark-league-tuesday-special-(217-players)/1/weavile-ex/krivgc/rPWkF/",
+    "deckType": {
+      "name": "Weavile ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "1",
+    "customTournamentName": "The Dark League Tuesday Special (217 Players)",
+    "engines": [
+      {
+        "_id": "67abccf388624a4a297c0247",
+        "name": "Darkrai ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67d17f646b52e2a6d73f6587",
+      "title": "The Dark League Tuesday Special - 217 Players",
+      "url": "/tournaments/the-dark-league-tuesday-special/1/report/"
+    }
+  },
+  {
+    "author": "LiberatoCacace",
+    "created": "2025-03-09T13:40:35.680Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6798eb786950657553dc6fc1",
+          "name": "Gabite",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ead56950657553dc6c1d",
+          "name": "Garchomp",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798eb606950657553dc6f23",
+          "name": "Gible",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2586",
+          "name": "Meowth",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67c160597103a0f7aed784d8",
+          "name": "Shaymin",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799b7f4f06a47c6afdf605f",
+          "name": "Spiritomb",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798edb0b5fbced301dcf756",
+          "name": "Cynthia",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/chaos-league-pocket-saturdays-(98-players)/11/garchomp/liberatocacace/HUWL1/",
+    "deckType": {
+      "name": "Garchomp",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "11",
+    "customTournamentName": "Chaos League Pocket Saturdays (98 Players)",
+    "engines": [],
+    "linkedArticle": {
+      "_id": "67cc3d4d06d26439adba4343",
+      "title": "PTCGP 50-200 Player Event Roundup #30",
+      "url": "/tournaments/tcgp-weekly-results/30/report/"
+    }
+  },
+  {
+    "author": {
+      "_id": "67ca21a65ed8354821be9566",
+      "roles": [],
+      "username": "Alex"
+    },
+    "created": "2025-03-07T07:17:22.063Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799b936f06a47c6afdf6601",
+          "name": "Darkrai ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b6de169202e5d7e66632",
+          "name": "Sneasel",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b7f4f06a47c6afdf605f",
+          "name": "Spiritomb",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b724f06a47c6afdf5b9d",
+          "name": "Weavile ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/5-winstreak/march-2025/weavile-ex/alex/Sboeg/",
+    "deckType": {
+      "name": "Weavile ex",
+      "tier": null
+    },
+    "rankedType": {
+      "name": "5+ Winstreak",
+      "shortName": "Winstreak",
+      "icon": "/img/tournaments/logos/Spicy_Wins.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
+    },
+    "engines": [
+      {
+        "_id": "67abccf388624a4a297c0247",
+        "name": "Darkrai ex"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "TocToc",
+    "created": "2025-03-06T05:43:26.867Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799b936f06a47c6afdf6601",
+          "name": "Darkrai ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b6de169202e5d7e66632",
+          "name": "Sneasel",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b7f4f06a47c6afdf605f",
+          "name": "Spiritomb",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799b724f06a47c6afdf5b9d",
+          "name": "Weavile ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799a5e0169202e5d7e614b9",
+          "name": "Dawn",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/raven-league-(115-players)/4/weavile-ex/toctoc/Yhj4-/",
+    "deckType": {
+      "name": "Weavile ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "4",
+    "customTournamentName": "Raven League (115 Players)",
+    "engines": [
+      {
+        "_id": "67abccf388624a4a297c0247",
+        "name": "Darkrai ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67c85768c7670e5ceba1d5f3",
+      "title": "PTCGP 50-200 Player Event Roundup #29",
+      "url": "/tournaments/tcgp-weekly-results/29/report/"
+    }
+  },
+  {
+    "author": {
+      "_id": "6741699c68f57150383ae99c",
+      "roles": [],
+      "username": "GOOB"
+    },
+    "created": "2025-03-05T13:32:02.686Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799b936f06a47c6afdf6601",
+          "name": "Darkrai ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799b6de169202e5d7e66632",
+          "name": "Sneasel",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b7f4f06a47c6afdf605f",
+          "name": "Spiritomb",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799b724f06a47c6afdf5b9d",
+          "name": "Weavile ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799a5e0169202e5d7e614b9",
+          "name": "Dawn",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/the-dark-league-hbd-ellie-(361-players)/1/weavile-ex/goob/2e3oc/",
+    "deckType": {
+      "name": "Weavile ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "1",
+    "customTournamentName": "The Dark League HBD Ellie (361 Players)",
+    "engines": [
+      {
+        "_id": "67abccf388624a4a297c0247",
+        "name": "Darkrai ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67c85334b06b18814b309a4b",
+      "title": "The Dark League HBD Ellie - 361 Players",
+      "url": "/tournaments/the-dark-league-ellie/1/report/"
+    }
+  },
+  {
+    "author": "Theobex",
+    "created": "2025-03-05T13:30:58.022Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799b936f06a47c6afdf6601",
+          "name": "Darkrai ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e258d",
+          "name": "Kangaskhan",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799b4c1f06a47c6afdf4de6",
+          "name": "Magnemite",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2524",
+          "name": "Magneton",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b5bff06a47c6afdf5344",
+          "name": "Magnezone",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b7f4f06a47c6afdf605f",
+          "name": "Spiritomb",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/the-dark-league-hbd-ellie-(361-players)/1/darkrai-ex-magnezone/theobex/2wtxo/",
+    "deckType": {
+      "name": "Darkrai ex Magnezone",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "1",
+    "customTournamentName": "The Dark League HBD Ellie (361 Players)",
+    "engines": [
+      {
+        "_id": "67ab896225c7da23a21a6c9f",
+        "name": "Magnezone"
+      },
+      {
+        "_id": "67abcca025c7da23a21cacf3",
+        "name": "Kangaskhan"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67c85334b06b18814b309a4b",
+      "title": "The Dark League HBD Ellie - 361 Players",
+      "url": "/tournaments/the-dark-league-ellie/1/report/"
+    }
+  },
+  {
+    "author": "hero3291",
+    "created": "2025-03-03T17:46:00.000Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799b936f06a47c6afdf6601",
+          "name": "Darkrai ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b6de169202e5d7e66632",
+          "name": "Sneasel",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b7f4f06a47c6afdf605f",
+          "name": "Spiritomb",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b724f06a47c6afdf5b9d",
+          "name": "Weavile ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799a5e0169202e5d7e614b9",
+          "name": "Dawn",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/朝活大会トーナメント-(146-players)/36/weavile-ex/hero3291/XQO8i/",
+    "deckType": {
+      "name": "Weavile ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "36",
+    "customTournamentName": "朝活大会トーナメント (146 Players)",
+    "engines": [
+      {
+        "_id": "67abccf388624a4a297c0247",
+        "name": "Darkrai ex"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "Mazino13",
+    "created": "2025-03-03T00:13:03.062Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799baf2169202e5d7e67c99",
+          "name": "Cranidos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e255c",
+          "name": "Hitmonlee",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea526950657553dc6903",
+          "name": "Lucario",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bb14169202e5d7e67d59",
+          "name": "Rampardos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9a0dbba2e0d2bb5f57d",
+          "name": "Riolu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b7f4f06a47c6afdf605f",
+          "name": "Spiritomb",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67c15ac3e06d5e18c00abf6f",
+          "name": "Sudowoodo",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bcb5f06a47c6afdf7763",
+          "name": "Skull Fossil",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/pokéhorizon-cup-(117-players)//lucario/mazino13/impi1/",
+    "deckType": {
+      "name": "Lucario",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "",
+    "customTournamentName": "PokéHorizon Cup (117 Players)",
+    "engines": [
+      {
+        "_id": "67abc59288624a4a297bbfd0",
+        "name": "Hitmonlee"
+      },
+      {
+        "_id": "67abcd1d6fa98c7329e3779d",
+        "name": "Rampardos"
+      },
+      {
+        "_id": "67c2998e3303e84d6df1c033",
+        "name": "Sudowoodo"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67c3099e89ab07a7c2c23b72",
+      "title": "PTCGP 50-200 Player Event Roundup #28",
+      "url": "/tournaments/tcgp-weekly-results/28/report/"
+    }
+  }
+]

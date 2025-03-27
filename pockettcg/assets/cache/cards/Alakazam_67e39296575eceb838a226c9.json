@@ -1,0 +1,56 @@
+{
+  "_id": "67e39296575eceb838a226c9",
+  "name": "Alakazam",
+  "energyType": [
+    "Psychic"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "130",
+  "pokemonId": "A2b-031",
+  "limitlessId": "A2b 31",
+  "rarity": "d-3",
+  "weakness": [
+    "Darkness"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Psychic Suppression",
+      "text": "This attack also does 20 damage to each of your opponent’s Benched Pokémon that has any Energy attached.",
+      "energyCost": [
+        "Psychic",
+        "Psychic",
+        null
+      ],
+      "hp": "80",
+      "_id": "67e39be0575eceb838a269d3"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

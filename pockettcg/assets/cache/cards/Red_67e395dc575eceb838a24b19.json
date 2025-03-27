@@ -1,0 +1,45 @@
+{
+  "_id": "67e395dc575eceb838a24b19",
+  "name": "Red",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Supporter",
+  "pokemonId": "A2b-071",
+  "limitlessId": "A2b 71",
+  "rarity": "d-2",
+  "weakness": [],
+  "description": "During this turn, attacks used by your Pokémon do +20 damage to your opponent’s Active Pokémon ex.",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67dd6c6de2096b41c50fbd3c",
+      "name": "Red",
+      "alternateArt": true,
+      "nameRelease": "2025-03-27T06:00:00.000Z"
+    }
+  ],
+  "abilities": [],
+  "moves": [],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

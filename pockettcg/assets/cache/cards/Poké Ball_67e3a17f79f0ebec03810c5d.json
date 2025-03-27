@@ -1,0 +1,39 @@
+{
+  "_id": "67e3a17f79f0ebec03810c5d",
+  "name": "Poké Ball",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Item",
+  "pokemonId": "A2b-111",
+  "limitlessId": "A2b 111",
+  "rarity": "cr",
+  "weakness": [],
+  "description": "Put 1 random Basic Pokémon from your deck into your hand.",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

@@ -19,7 +19,7 @@
         "Colorless"
       ],
       "hp": "50",
-      "_id": "67994c8f49fc3af0759c6ee0"
+      "_id": "67e3a97a79f0ebec03813fe8"
     },
     {
       "name": "Psydrive",
@@ -31,7 +31,7 @@
         "Colorless"
       ],
       "hp": "150",
-      "_id": "67994c8f49fc3af0759c6ee1"
+      "_id": "67e3a97a79f0ebec03813fe9"
     }
   ],
   "obtain": [
@@ -59,20 +59,37 @@
     "Darkness"
   ],
   "release": "2024-10-30T15:00:00.000Z",
-  "popRank": 14,
+  "popRank": 99,
   "artVariants": [
     {
       "_id": "671ef1105279bcfb3c1e25e0",
-      "name": "Mewtwo ex"
+      "name": "Mewtwo ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T15:00:00.000Z"
     },
     {
       "_id": "671ef1105279bcfb3c1e25c9",
-      "name": "Mewtwo ex"
+      "name": "Mewtwo ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T15:00:00.000Z"
     },
     {
       "_id": "671ef1105279bcfb3c1e25dd",
-      "name": "Mewtwo ex"
+      "name": "Mewtwo ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T15:00:00.000Z"
+    },
+    {
+      "_id": "67e368da5cc271d38f73b660",
+      "name": "Mewtwo ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T15:00:00.000Z"
     }
   ],
-  "limitlessId": "A1 129"
+  "limitlessId": "A1 129",
+  "deckTypes": [
+    "Mewtwo ex",
+    "Magnezone",
+    "Mismagius ex"
+  ]
 }

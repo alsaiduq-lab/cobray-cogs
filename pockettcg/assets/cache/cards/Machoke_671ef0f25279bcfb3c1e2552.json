@@ -46,7 +46,10 @@
   "weakness": [
     "Psychic"
   ],
-  "popRank": 125,
+  "popRank": 120,
   "artVariants": [],
-  "limitlessId": "A1 144"
+  "limitlessId": "A1 144",
+  "deckTypes": [
+    "Machamp ex"
+  ]
 }

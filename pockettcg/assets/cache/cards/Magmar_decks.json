@@ -1,0 +1,1268 @@
+[
+  {
+    "author": "VinsGG",
+    "created": "2025-02-08T22:09:14.951Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e9",
+          "name": "Growlithe",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24eb",
+          "name": "Arcanine ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24f1",
+          "name": "Moltres ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b35f169202e5d7e654a9",
+          "name": "Magmortar",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24ee",
+          "name": "Magmar",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799a5e0169202e5d7e614b9",
+          "name": "Dawn",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/flash-friday-(154-players)/7/arcanine-ex/vinsgg/KHi2o/",
+    "deckType": {
+      "name": "Arcanine ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "7",
+    "customTournamentName": "Flash Friday (154 Players)",
+    "engines": [
+      {
+        "_id": "67abc53325c7da23a21c6af2",
+        "name": "Moltres ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67a24b76288a0fc0f68c927f",
+      "title": "PTCGP 50-200 Player Event Roundup #22",
+      "url": "/tournaments/tcgp-weekly-results/22/report/"
+    }
+  },
+  {
+    "author": "MartinScoresEZ",
+    "created": "2025-02-02T16:54:55.393Z",
+    "main": [
+      {
+        "card": {
+          "_id": "67924864eb08086be8540b3e",
+          "name": "Chimchar",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b4410c64508adf1e3c2f",
+          "name": "Monferno",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e5e96950657553dc5625",
+          "name": "Infernape ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24f1",
+          "name": "Moltres ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae82e34db45022c3de8ce",
+          "name": "Magmar",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799a5e0169202e5d7e614b9",
+          "name": "Dawn",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/pocket-legends-league-(283-players)/17/infernape-ex/martinscoresez/E5U0-/",
+    "deckType": {
+      "name": "Infernape ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "17",
+    "customTournamentName": "Pocket Legends League (283 Players)",
+    "engines": [
+      {
+        "_id": "67abc53325c7da23a21c6af2",
+        "name": "Moltres ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "679fa4191dae25ecf393a19f",
+      "title": "Pocket Legends League #17 - 283 Players",
+      "url": "/tournaments/pocket-legends-league/17/report/"
+    }
+  },
+  {
+    "author": "Pequilo",
+    "created": "2025-01-31T23:56:36.725Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e3",
+          "name": "Charmander",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e4",
+          "name": "Charmeleon",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e6",
+          "name": "Charizard ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24f1",
+          "name": "Moltres ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae82e34db45022c3de8ce",
+          "name": "Magmar",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799b35f169202e5d7e654a9",
+          "name": "Magmortar",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/the-dark-league-friday-flash-(218-players)/1/charizard-ex/pequilo/diNdG/",
+    "deckType": {
+      "name": "Charizard ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "1",
+    "customTournamentName": "The Dark League Friday Flash (218 Players)",
+    "engines": [
+      {
+        "_id": "67abc53325c7da23a21c6af2",
+        "name": "Moltres ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "679d65293bf8b6d2803de431",
+      "title": "The Dark League Friday Flash - 218 Players",
+      "url": "/tournaments/the-dark-league-friday-flash/1/report/"
+    }
+  },
+  {
+    "author": "Octopuses",
+    "created": "2025-01-31T02:17:01.377Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e3",
+          "name": "Charmander",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e4",
+          "name": "Charmeleon",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e6",
+          "name": "Charizard ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24f1",
+          "name": "Moltres ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae82e34db45022c3de8ce",
+          "name": "Magmar",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799b35f169202e5d7e654a9",
+          "name": "Magmortar",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/hora-da-batalha-meta-test-(75-players)/1/charizard-ex/octopuses/fAkDz/",
+    "deckType": {
+      "name": "Charizard ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "1st Place",
+    "tournamentNumber": "1",
+    "customTournamentName": "HORA DA BATALHA : Meta Test (75 Players)",
+    "engines": [
+      {
+        "_id": "67abc53325c7da23a21c6af2",
+        "name": "Moltres ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "679942e3f5d84b3e8fe0dafa",
+      "title": "PTCGP 50-200 Player Event Roundup #20",
+      "url": "/tournaments/tcgp-weekly-results/20/report/"
+    }
+  },
+  {
+    "author": "じょあんもれいら",
+    "created": "2025-01-29T00:30:00.000Z",
+    "main": [
+      {
+        "card": {
+          "_id": "67611326f9e257245fbb6767",
+          "name": "Ponyta",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae82e34db45022c3de8ce",
+          "name": "Magmar",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "676115e8b864a94749ee78a2",
+          "name": "Volcarona",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae83e34db45022c3de904",
+          "name": "Larvesta",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24ee",
+          "name": "Magmar",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24ed",
+          "name": "Rapidash",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e259f",
+          "name": "Blaine",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/albatross-cup-(138-players)/1/blaine/じょあんもれいら/UN18A/",
+    "deckType": {
+      "name": "Blaine",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "2nd Place",
+    "tournamentNumber": "1",
+    "customTournamentName": "Albatross Cup (138 Players)",
+    "engines": [],
+    "linkedArticle": null
+  },
+  {
+    "author": "opalalexis",
+    "created": "2025-01-25T13:56:12.881Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e7",
+          "name": "Vulpix",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67611326f9e257245fbb6767",
+          "name": "Ponyta",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e8",
+          "name": "Ninetales",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24ed",
+          "name": "Rapidash",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae82e34db45022c3de8ce",
+          "name": "Magmar",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24f1",
+          "name": "Moltres ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e259f",
+          "name": "Blaine",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/frogex-weekly-cup-(431-players)/4/blaine/opalalexis/_v2Ud/",
+    "deckType": {
+      "name": "Blaine",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "4",
+    "customTournamentName": "FrogEX Weekly Cup (431 Players)",
+    "engines": [
+      {
+        "_id": "67abc53325c7da23a21c6af2",
+        "name": "Moltres ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "6794eef1cf9cd834ff27959a",
+      "title": "FrogEX Weekly Cup #4 - 431 Players",
+      "url": "/tournaments/frogex-weekly/4/report/"
+    }
+  },
+  {
+    "author": "Marco P",
+    "created": "2025-01-12T11:59:41.021Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e7",
+          "name": "Vulpix",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e8",
+          "name": "Ninetales",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24ed",
+          "name": "Rapidash",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24ec",
+          "name": "Ponyta",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24ee",
+          "name": "Magmar",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e259f",
+          "name": "Blaine",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/pokémon-millennium-pocket-free-tour-(106-players)/4/blaine/marco-p/lh3rb/",
+    "deckType": {
+      "name": "Blaine",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "4",
+    "customTournamentName": "Pokémon Millennium Pocket Free Tour (106 Players)",
+    "engines": [],
+    "linkedArticle": {
+      "_id": "67811f59a5ca43d06b65b0db",
+      "title": "PTCGP 50-200 Player Event Roundup #15",
+      "url": "/tournaments/tcgp-weekly-results/15/report/"
+    }
+  },
+  {
+    "author": "Rappysmacks",
+    "created": "2025-01-10T12:28:51.543Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e7",
+          "name": "Vulpix",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e8",
+          "name": "Ninetales",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67611326f9e257245fbb6767",
+          "name": "Ponyta",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "676113ddb864a94749ee6e99",
+          "name": "Rapidash",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae82e34db45022c3de8ce",
+          "name": "Magmar",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24f1",
+          "name": "Moltres ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e259f",
+          "name": "Blaine",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/team-rocket-pocket-cup-(250-players)/21/blaine/rappysmacks/psH-P/",
+    "deckType": {
+      "name": "Blaine",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "21",
+    "customTournamentName": "Team Rocket Pocket Cup (250 Players)",
+    "engines": [
+      {
+        "_id": "67abc53325c7da23a21c6af2",
+        "name": "Moltres ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "678113528c849ecc0ed39b24",
+      "title": "Team Rocket Pocket Cup #21 - 250 Players",
+      "url": "/tournaments/team-rocket-pocket-cup/20/report/"
+    }
+  },
+  {
+    "author": "cmcvieira",
+    "created": "2025-01-06T19:25:44.252Z",
+    "main": [
+      {
+        "card": {
+          "_id": "67611326f9e257245fbb6767",
+          "name": "Ponyta",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "676113ddb864a94749ee6e99",
+          "name": "Rapidash",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24ed",
+          "name": "Rapidash",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e7",
+          "name": "Vulpix",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e8",
+          "name": "Ninetales",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24ee",
+          "name": "Magmar",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae82e34db45022c3de8ce",
+          "name": "Magmar",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e259f",
+          "name": "Blaine",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/pocket-rejects---sudden-death-standard-(115-players)/1/blaine/cmcvieira/2CXZe/",
+    "deckType": {
+      "name": "Blaine",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 4",
+    "tournamentNumber": "1",
+    "customTournamentName": "Pocket Rejects - Sudden Death Standard (115 Players)",
+    "engines": [],
+    "linkedArticle": {
+      "_id": "6777f9453157f9f94ab57257",
+      "title": "PTCGP 50-200 Player Event Roundup #13",
+      "url": "/tournaments/tcgp-weekly-results/13/report/"
+    }
+  },
+  {
+    "author": "Rhaegar222",
+    "created": "2024-12-27T13:33:21.994Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e7",
+          "name": "Vulpix",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e24e8",
+          "name": "Ninetales",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67611326f9e257245fbb6767",
+          "name": "Ponyta",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "676113ddb864a94749ee6e99",
+          "name": "Rapidash",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae82e34db45022c3de8ce",
+          "name": "Magmar",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e259f",
+          "name": "Blaine",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181abc08874f5ab2e16fb",
+          "name": "Red Card",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/team-rocket-poket-cup-(205-players)/19/blaine/rhaegar222/3n-Ym/",
+    "deckType": {
+      "name": "Blaine",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "19",
+    "customTournamentName": "Team Rocket Poket Cup (205 Players)",
+    "engines": [],
+    "linkedArticle": {
+      "_id": "676ead47c153e70ccc0e2a30",
+      "title": "Team Rocket Poket Cup #19 - 205 Players",
+      "url": "/tournaments/team-rocket-poket-cup/19/report/"
+    }
+  }
+]

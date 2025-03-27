@@ -1,0 +1,38 @@
+{
+  "_id": "67e39c055cc271d38f74b8c2",
+  "name": "Iono",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Supporter",
+  "pokemonId": "A2b-088",
+  "limitlessId": "A2a 88",
+  "rarity": "s-2",
+  "weakness": [],
+  "description": "Each player shuffles the cards in their hand into their deck, then draws that many cards.",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

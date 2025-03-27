@@ -1,0 +1,39 @@
+{
+  "_id": "67e3699e575eceb838a15d0b",
+  "name": "Floatzel",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "100",
+  "pokemonId": "PA-053",
+  "limitlessId": "P-A 53",
+  "rarity": "p",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 1,
+  "description": "",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Attack the Wound",
+      "text": "If your opponent's Active Pokemon has damage on it, this attack does 60 more damage.",
+      "energyCost": [
+        "Water",
+        null,
+        null,
+        null
+      ],
+      "hp": "10+",
+      "_id": "67e3699e575eceb838a15d0c"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false
+}

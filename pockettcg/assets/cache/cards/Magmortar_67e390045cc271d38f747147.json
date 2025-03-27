@@ -1,0 +1,56 @@
+{
+  "_id": "67e390045cc271d38f747147",
+  "name": "Magmortar",
+  "energyType": [
+    "Fire"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "120",
+  "pokemonId": "A2b-012",
+  "limitlessId": "A2b 12",
+  "rarity": "d-3",
+  "weakness": [
+    "Water"
+  ],
+  "retreat": 3,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Smoke Bomb",
+      "text": "During your opponent's next turn, if the Defending Pokémon tries to use an attack, your opponent flips a coin. If tails, that attack doesn't happen.",
+      "energyCost": [
+        "Fire",
+        "Fire",
+        "Colorless"
+      ],
+      "hp": "70",
+      "_id": "67e3a37c79f0ebec03811854"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

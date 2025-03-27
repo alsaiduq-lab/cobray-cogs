@@ -1,0 +1,38 @@
+{
+  "_id": "67e36a505cc271d38f73bcc5",
+  "name": "Ekans",
+  "energyType": [
+    "Darkness"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "PA-056",
+  "limitlessId": "P-A 56",
+  "rarity": "p",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 1,
+  "description": "",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Poison Sting",
+      "text": "Your opponent's Active Pokemon is now Poisoned.",
+      "energyCost": [
+        "Darkness",
+        null,
+        null,
+        null
+      ],
+      "_id": "67e36a505cc271d38f73bcc6"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [],
+  "ex": false
+}

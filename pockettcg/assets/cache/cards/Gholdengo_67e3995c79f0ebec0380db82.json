@@ -1,0 +1,58 @@
+{
+  "_id": "67e3995c79f0ebec0380db82",
+  "name": "Gholdengo",
+  "energyType": [
+    "Metal"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "120",
+  "pokemonId": "A2b-077",
+  "limitlessId": "A2b 77",
+  "rarity": "s-1",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Scintillating Surfing",
+      "text": "Flip a coin for each Metal Energy attached to this Pokémon. This attack does 50 damage for each heads.",
+      "energyCost": [
+        "Metal",
+        "Colorless",
+        "Colorless",
+        null
+      ],
+      "hp": "50x",
+      "_id": "67e399a35cc271d38f74ab29"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "nameRelease": "2025-03-27T06:00:00.000Z"
+}

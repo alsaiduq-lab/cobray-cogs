@@ -45,7 +45,11 @@
   "weakness": [
     "Lightning"
   ],
-  "popRank": 156,
+  "popRank": 185,
   "artVariants": [],
-  "limitlessId": "A1 62"
+  "limitlessId": "A1 62",
+  "deckTypes": [
+    "Palkia ex Starmie ex",
+    "Starmie ex"
+  ]
 }

@@ -1,0 +1,63 @@
+{
+  "_id": "67e3991c79f0ebec0380d9a0",
+  "name": "Grafaiai",
+  "energyType": [
+    "Darkness"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "90",
+  "pokemonId": "A2b-076",
+  "limitlessId": "A2b 76",
+  "rarity": "s-1",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Poison Coating",
+      "text": "Once during your turn, you may flip a coin. If heads, your opponent’s Active Pokémon is now Poisoned.",
+      "_id": "67e3991c79f0ebec0380d9a1"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Bite",
+      "text": "",
+      "energyCost": [
+        "Darkness",
+        "Darkness",
+        null
+      ],
+      "hp": "40",
+      "_id": "67e3991c79f0ebec0380d9a2"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "nameRelease": "2025-03-27T06:00:00.000Z"
+}

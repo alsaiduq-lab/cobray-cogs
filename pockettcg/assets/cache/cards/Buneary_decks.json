@@ -1,0 +1,362 @@
+[
+  {
+    "author": "TWICEisL0ve",
+    "created": "2025-02-15T20:03:21.520Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799b936f06a47c6afdf6601",
+          "name": "Darkrai ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "676119fbf9e257245fbb8cb4",
+          "name": "Druddigon",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bccf169202e5d7e68736",
+          "name": "Buneary",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bcfe169202e5d7e6880e",
+          "name": "Lopunny",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/testing-the-waters-pocket-edition-(69-players)/11/darkrai-ex/twiceisl0ve/mItDm/",
+    "deckType": {
+      "name": "Darkrai ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "11",
+    "customTournamentName": "Testing the Waters: Pocket Edition (69 Players)",
+    "engines": [
+      {
+        "_id": "67abcbd788624a4a297bf66f",
+        "name": "Druddigon"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "TWICEisL0ve",
+    "created": "2025-02-14T01:25:58.198Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799b936f06a47c6afdf6601",
+          "name": "Darkrai ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "676119fbf9e257245fbb8cb4",
+          "name": "Druddigon",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bccf169202e5d7e68736",
+          "name": "Buneary",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bcfe169202e5d7e6880e",
+          "name": "Lopunny",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/p.p-i.t-speed-tour-(168-players)/9/darkrai-ex/twiceisl0ve/awd-9/",
+    "deckType": {
+      "name": "Darkrai ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "9",
+    "customTournamentName": "P.P i.T Speed Tour (168 Players)",
+    "engines": [
+      {
+        "_id": "67abcbd788624a4a297bf66f",
+        "name": "Druddigon"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "67acfc7a1eb7dff1f992b814",
+      "title": "PTCGP 50-200 Player Event Roundup #24",
+      "url": "/tournaments/tcgp-weekly-results/24/report/"
+    }
+  },
+  {
+    "author": {
+      "_id": "67a7c68665fefc47c8f1999e",
+      "roles": [],
+      "username": "Tyguchi"
+    },
+    "created": "2025-02-09T00:20:25.218Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799bccf169202e5d7e68736",
+          "name": "Buneary",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bcfe169202e5d7e6880e",
+          "name": "Lopunny",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b6de169202e5d7e66632",
+          "name": "Sneasel",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b724f06a47c6afdf5b9d",
+          "name": "Weavile ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/5-winstreak/february-2025/weavile-ex/tyguchi/nrMae/",
+    "deckType": {
+      "name": "Weavile ex",
+      "tier": null
+    },
+    "rankedType": {
+      "name": "5+ Winstreak",
+      "shortName": "Winstreak",
+      "icon": "/img/tournaments/logos/Spicy_Wins.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
+    },
+    "engines": [],
+    "linkedArticle": null
+  }
+]

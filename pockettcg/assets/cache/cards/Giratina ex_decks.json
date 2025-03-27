@@ -1,0 +1,117 @@
+[
+  {
+    "author": {
+      "_id": "6222e83d2765388d2a39b222",
+      "roles": [],
+      "username": "lvl70champion"
+    },
+    "created": "2025-03-27T16:50:18.281Z",
+    "main": [
+      {
+        "card": {
+          "_id": "67c15a15915a911e82a913f5",
+          "name": "Gastly",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c15a777103a0f7aed75a11",
+          "name": "Gengar",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e253d",
+          "name": "Gengar ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67dd6974e2096b41c50faf01",
+          "name": "Giratina ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67218217c08874f5ab2e1742",
+          "name": "Haunter",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c065b152e93386721e5597",
+          "name": "Snorlax",
+          "alternateArt": true,
+          "nameRelease": "2024-10-30T03:00:00.000Z"
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c16140e06d5e18c00aedb8",
+          "name": "Barry",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799a5e0169202e5d7e614b9",
+          "name": "Dawn",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/5-winstreak/march-2025/gengar-ex/lvl70champion/In_H4/",
+    "deckType": {
+      "name": "Gengar ex",
+      "tier": null
+    },
+    "rankedType": {
+      "name": "5+ Winstreak",
+      "shortName": "Winstreak",
+      "icon": "/img/tournaments/logos/Spicy_Wins.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
+    },
+    "engines": [],
+    "linkedArticle": null
+  }
+]

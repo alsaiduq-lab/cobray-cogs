@@ -16,12 +16,14 @@
   "retreat": 1,
   "description": "",
   "release": "2025-01-30T06:00:00.000Z",
-  "popRank": 92,
+  "popRank": 98,
   "alternateArt": false,
   "artVariants": [
     {
       "_id": "6799c496f06a47c6afdf9d41",
-      "name": "Spiritomb"
+      "name": "Spiritomb",
+      "alternateArt": true,
+      "nameRelease": "2025-01-30T06:00:00.000Z"
     }
   ],
   "abilities": [],
@@ -56,5 +58,13 @@
       "type": "sets"
     }
   ],
-  "ex": false
+  "ex": false,
+  "deckTypes": [
+    "Infernape ex",
+    "Darkrai ex",
+    "Darkrai ex Magnezone",
+    "Weavile ex",
+    "Lucario",
+    "Garchomp"
+  ]
 }

@@ -1,0 +1,58 @@
+{
+  "_id": "67e39d4479f0ebec0380f46a",
+  "name": "Bibarel ex",
+  "energyType": [
+    "Colorless"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "160",
+  "pokemonId": "A2b-095",
+  "limitlessId": "A2b-095",
+  "rarity": "s-2",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 3,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Carefree Press",
+      "text": "Heal 30 damage from this Pokémon.",
+      "energyCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "100",
+      "_id": "67e39f1e79f0ebec0380ffce"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true,
+  "nameRelease": "2025-03-27T06:00:00.000Z"
+}

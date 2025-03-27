@@ -1,0 +1,38 @@
+{
+  "_id": "67e39cb579f0ebec0380f0e8",
+  "name": "Team Rocket Grunt",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Supporter",
+  "pokemonId": "A2b-091",
+  "limitlessId": "A2b 91",
+  "rarity": "s-2",
+  "weakness": [],
+  "description": "Flip a coin until you get tails. For each heads, discard a random Energy from your opponent’s Active Pokémon.",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

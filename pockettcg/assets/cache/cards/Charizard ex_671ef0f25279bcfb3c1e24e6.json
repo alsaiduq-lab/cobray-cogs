@@ -60,20 +60,29 @@
     "Water"
   ],
   "ex": true,
-  "popRank": 40,
+  "popRank": 68,
   "artVariants": [
     {
       "_id": "671ef1105279bcfb3c1e25db",
-      "name": "Charizard ex"
+      "name": "Charizard ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     },
     {
       "_id": "671ef1105279bcfb3c1e25de",
-      "name": "Charizard ex"
+      "name": "Charizard ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     },
     {
       "_id": "671ef1105279bcfb3c1e25c0",
-      "name": "Charizard ex"
+      "name": "Charizard ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     }
   ],
-  "limitlessId": "A1 36"
+  "limitlessId": "A1 36",
+  "deckTypes": [
+    "Charizard ex"
+  ]
 }

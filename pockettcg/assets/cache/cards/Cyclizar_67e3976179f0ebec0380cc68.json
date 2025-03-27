@@ -1,0 +1,64 @@
+{
+  "_id": "67e3976179f0ebec0380cc68",
+  "name": "Cyclizar",
+  "energyType": [
+    "Colorless"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "80",
+  "pokemonId": "A2b-068",
+  "limitlessId": "A2b 68",
+  "rarity": "d-2",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "67e3692f5cc271d38f73b7eb",
+      "name": "Cyclizar",
+      "alternateArt": true,
+      "nameRelease": "2025-03-27T06:00:00.000Z"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Overacceleration",
+      "text": "During your next turn, this Pokémon's Overacceleration attack does +20 damage.",
+      "energyCost": [
+        "Colorless",
+        null,
+        null,
+        null
+      ],
+      "hp": "20",
+      "_id": "67e3a99079f0ebec03814040"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

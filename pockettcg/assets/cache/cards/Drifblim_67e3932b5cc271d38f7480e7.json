@@ -1,0 +1,56 @@
+{
+  "_id": "67e3932b5cc271d38f7480e7",
+  "name": "Drifblim",
+  "energyType": [
+    "Psychic"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "90",
+  "pokemonId": "A2b-034",
+  "limitlessId": "A2b 34",
+  "rarity": "d-2",
+  "weakness": [
+    "Darkness"
+  ],
+  "retreat": 0,
+  "description": "",
+  "release": "2025-03-27T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Gust",
+      "text": "",
+      "energyCost": [
+        "Psychic",
+        null,
+        null
+      ],
+      "hp": "40",
+      "_id": "67e39c0879f0ebec0380ebd3"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "67e38ba9575eceb838a205a3",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Shining Revelry",
+        "linkedArticle": {
+          "_id": "67e3a26f5cc271d38f74e2cd",
+          "title": "Shining Revelry",
+          "url": "/sets/shining-revelry/",
+          "image": "/pkm_img/News/2025/March/revelry.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}
