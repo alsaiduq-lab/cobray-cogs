@@ -1,4 +1,4 @@
-# core/slash.py  – SLASH-ONLY helper for booru
+# core/slash.py – SLASH-ONLY helper for the Booru cog
 
 import logging
 from typing import List, Optional
@@ -16,18 +16,19 @@ class BooruSlash(commands.Cog):
     """
     Slash-only commands for booru searches.
 
-    • /booru        – search all configured sources
-    • /boorus       – search one source
-    • /boorunsfw    – owner-only DM-NSFW whitelist
+    • /booru       – search all configured sources
+    • /boorus      – search a specific source
+    • /boorunsfw   – owner-only DM-NSFW whitelist
     """
 
-    def __init__(self, bot: commands.Bot) -> None:
+    def __init__(self, bot: commands.Bot):
         self.bot = bot
         self.tag_handler = TagHandler()
 
     @app_commands.command(
         name="booru",
         description="Search booru sites with the configured source order.",
+        dm_permission=True,
     )
     @app_commands.describe(query="Tags or keywords to search for.")
     async def slash_booru(self, interaction: discord.Interaction, query: str = ""):
@@ -40,7 +41,6 @@ class BooruSlash(commands.Cog):
             return
 
         is_nsfw = await self._dm_nsfw_allowed(interaction, channel, booru_cog)
-
         source_order = (await booru_cog.config.filters())["source_order"]
         if not source_order:
             await interaction.followup.send("No sources configured.")
@@ -76,6 +76,7 @@ class BooruSlash(commands.Cog):
     @app_commands.command(
         name="boorus",
         description="Search a specific booru source.",
+        dm_permission=True,
     )
     @app_commands.describe(
         source="Name of the source to search.",
@@ -97,7 +98,6 @@ class BooruSlash(commands.Cog):
             return
 
         is_nsfw = await self._dm_nsfw_allowed(interaction, channel, booru_cog)
-
         post = await booru_cog._get_post_from_source(source, query, is_nsfw)
         if not post:
             await interaction.followup.send(f"No results found on {source.title()}.")
@@ -112,6 +112,7 @@ class BooruSlash(commands.Cog):
         name="boorunsfw",
         description="Manage DM-NSFW whitelist (owner only).",
         guild_only=False,
+        dm_permission=True,
     )
 
     @boorunsfw.command(name="list", description="Show whitelist")
@@ -189,17 +190,17 @@ class BooruPaginationView(discord.ui.View):
     async def interaction_check(self, interaction: discord.Interaction) -> bool:
         return interaction.user.id == self.author.id
 
-    @discord.ui.button(label="Previous", style=discord.ButtonStyle.primary, emoji="◀️")
+    @discord.ui.button(label="Previous", style=discord.ButtonStyle.primary)
     async def _prev(self, interaction: discord.Interaction, _):
         self.current_index = (self.current_index - 1) % len(self.posts)
         await self._update(interaction)
 
-    @discord.ui.button(label="Next", style=discord.ButtonStyle.primary, emoji="▶️")
+    @discord.ui.button(label="Next", style=discord.ButtonStyle.primary)
     async def _next(self, interaction: discord.Interaction, _):
         self.current_index = (self.current_index + 1) % len(self.posts)
         await self._update(interaction)
 
-    @discord.ui.button(label="Close", style=discord.ButtonStyle.danger, emoji="❌")
+    @discord.ui.button(label="Close", style=discord.ButtonStyle.danger)
     async def _close(self, interaction: discord.Interaction, _):
         await interaction.message.edit(view=None)
         self.stop()
