@@ -1,7 +1,7 @@
 from redbot.core.bot import Red
 
 from .booru import Booru
-from core.slash import BooruSlash
+from .core.slash import BooruSlash
 
 __red_end_user_data_statement__ = "This cog does not store end user data."
 
