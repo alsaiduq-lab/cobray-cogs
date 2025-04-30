@@ -1,3 +1,5 @@
+# core/slash.py  – SLASH-ONLY helper for booru
+
 import logging
 from typing import List, Optional
 
@@ -12,37 +14,36 @@ log = logging.getLogger("red.booru.slash")
 
 class BooruSlash(commands.Cog):
     """
-    Hybrid commands for booru searches.
+    Slash-only commands for booru searches.
 
-    • /booru   – all configured sources
-    • /boorus  – one source
-    • /boorunsfw … – owner whitelist for NSFW in DMs
+    • /booru        – search all configured sources
+    • /boorus       – search one source
+    • /boorunsfw    – owner-only DM-NSFW whitelist
     """
 
-    def __init__(self, bot: commands.Bot):
+    def __init__(self, bot: commands.Bot) -> None:
         self.bot = bot
         self.tag_handler = TagHandler()
 
-    @commands.hybrid_command(
+    @app_commands.command(
         name="booru",
         description="Search booru sites with the configured source order.",
     )
     @app_commands.describe(query="Tags or keywords to search for.")
-    async def booru(self, ctx: commands.Context, *, query: str = ""):
-        channel = await self._prepare_ctx(ctx)
-        if channel is None:
-            return
+    async def slash_booru(self, interaction: discord.Interaction, query: str = ""):
+        await interaction.response.defer()
+        channel = interaction.channel
 
-        booru_cog = self.bot.get_cog("Booru")
+        booru_cog = interaction.client.get_cog("Booru")
         if not booru_cog:
-            await self._send(ctx, "Booru cog is not loaded.")
+            await interaction.followup.send("Booru cog is not loaded.")
             return
 
-        is_nsfw = await self._dm_nsfw_allowed(ctx, channel, booru_cog)
+        is_nsfw = await self._dm_nsfw_allowed(interaction, channel, booru_cog)
 
         source_order = (await booru_cog.config.filters())["source_order"]
         if not source_order:
-            await self._send(ctx, "No sources configured.")
+            await interaction.followup.send("No sources configured.")
             return
 
         posts: List[dict] = []
@@ -57,7 +58,7 @@ class BooruSlash(commands.Cog):
                 log.error("Error with %s: %s", src, e)
 
         if not posts:
-            await self._send(ctx, "No results found in any source.")
+            await interaction.followup.send("No results found in any source.")
             return
 
         footer = booru_cog._build_embed(posts[0], 0, len(posts)).footer.text or ""
@@ -65,14 +66,14 @@ class BooruSlash(commands.Cog):
         embed = booru_cog._build_embed(posts[0], 0, len(posts))
         embed.set_footer(text=f"{footer} • From {source_name}")
 
-        msg = await self._send(ctx, embed=embed)
+        msg = await interaction.followup.send(embed=embed)
 
         if len(posts) > 1:
-            view = BooruPaginationView(ctx.author, posts, source_name)
+            view = BooruPaginationView(interaction.user, posts, source_name)
             view.message = msg
             await msg.edit(view=view)
 
-    @commands.hybrid_command(
+    @app_commands.command(
         name="boorus",
         description="Search a specific booru source.",
     )
@@ -80,106 +81,98 @@ class BooruSlash(commands.Cog):
         source="Name of the source to search.",
         query="Tags or keywords to search for.",
     )
-    async def boorus(self, ctx: commands.Context, source: str, *, query: str = ""):
-        channel = await self._prepare_ctx(ctx)
-        if channel is None:
-            return
+    async def slash_boorus(self, interaction: discord.Interaction, source: str, query: str = ""):
+        await interaction.response.defer()
+        channel = interaction.channel
 
-        booru_cog = self.bot.get_cog("Booru")
+        booru_cog = interaction.client.get_cog("Booru")
         if not booru_cog:
-            await self._send(ctx, "Booru cog is not loaded.")
+            await interaction.followup.send("Booru cog is not loaded.")
             return
 
         source = source.lower()
         if source not in booru_cog.sources:
             available = ", ".join(booru_cog.sources.keys())
-            await self._send(ctx, f"Invalid source: {source}. Available: {available}")
+            await interaction.followup.send(f"Invalid source: {source}. Available: {available}")
             return
 
-        is_nsfw = await self._dm_nsfw_allowed(ctx, channel, booru_cog)
+        is_nsfw = await self._dm_nsfw_allowed(interaction, channel, booru_cog)
 
         post = await booru_cog._get_post_from_source(source, query, is_nsfw)
         if not post:
-            await self._send(ctx, f"No results found on {source.title()}.")
+            await interaction.followup.send(f"No results found on {source.title()}.")
             return
 
         footer = booru_cog._build_embed(post, 0, 1).footer.text or ""
         embed = booru_cog._build_embed(post, 0, 1)
         embed.set_footer(text=f"{footer} • From {source.title()}")
-        await self._send(ctx, embed=embed)
+        await interaction.followup.send(embed=embed)
 
-    @commands.hybrid_group(
+    boorunsfw = app_commands.Group(
         name="boorunsfw",
-        description="Manage DM-NSFW whitelist (owner).",
-        invoke_without_command=True,
+        description="Manage DM-NSFW whitelist (owner only).",
+        guild_only=False,
     )
-    @commands.is_owner()
-    async def boorunsfw(self, ctx: commands.Context):
-        if ctx.invoked_subcommand is None:
-            await ctx.send_help(ctx.command)
 
     @boorunsfw.command(name="list", description="Show whitelist")
-    @commands.is_owner()
-    async def _bn_list(self, ctx: commands.Context):
-        ids = await self.bot.get_cog("Booru").config.dm_nsfw_allowed()
+    async def _bn_list(self, interaction: discord.Interaction):
+        if not await interaction.client.is_owner(interaction.user):
+            await interaction.response.send_message("Owner only.", ephemeral=True)
+            return
+        ids = await interaction.client.get_cog("Booru").config.dm_nsfw_allowed()
         msg = "None." if not ids else "\n".join(map(str, ids))
-        await ctx.send(f"**Allowed IDs:**\n{msg}")
+        await interaction.response.send_message(f"**Allowed IDs:**\n{msg}", ephemeral=True)
 
     @boorunsfw.command(name="add", description="Add user")
-    @commands.is_owner()
-    async def _bn_add(self, ctx: commands.Context, user: discord.User):
-        conf = self.bot.get_cog("Booru").config
+    @app_commands.describe(user="User to allow NSFW in DMs")
+    async def _bn_add(self, interaction: discord.Interaction, user: discord.User):
+        if not await interaction.client.is_owner(interaction.user):
+            await interaction.response.send_message("Owner only.", ephemeral=True)
+            return
+        conf = interaction.client.get_cog("Booru").config
         ids = set(await conf.dm_nsfw_allowed())
         if user.id in ids:
-            await ctx.send("Already whitelisted.")
+            await interaction.response.send_message("Already whitelisted.", ephemeral=True)
             return
         ids.add(user.id)
         await conf.dm_nsfw_allowed.set(list(ids))
-        await ctx.send(f"Added {user.mention} (`{user.id}`)")
+        await interaction.response.send_message(f"Added {user.mention}.", ephemeral=True)
 
     @boorunsfw.command(name="remove", description="Remove user")
-    @commands.is_owner()
-    async def _bn_remove(self, ctx: commands.Context, user: discord.User):
-        conf = self.bot.get_cog("Booru").config
+    @app_commands.describe(user="User to remove")
+    async def _bn_remove(self, interaction: discord.Interaction, user: discord.User):
+        if not await interaction.client.is_owner(interaction.user):
+            await interaction.response.send_message("Owner only.", ephemeral=True)
+            return
+        conf = interaction.client.get_cog("Booru").config
         ids = set(await conf.dm_nsfw_allowed())
         if user.id not in ids:
-            await ctx.send("Not on whitelist.")
+            await interaction.response.send_message("Not on whitelist.", ephemeral=True)
             return
         ids.remove(user.id)
         await conf.dm_nsfw_allowed.set(list(ids))
-        await ctx.send(f"Removed {user.mention}")
+        await interaction.response.send_message(f"Removed {user.mention}.", ephemeral=True)
 
     @boorunsfw.command(name="clear", description="Clear whitelist")
-    @commands.is_owner()
-    async def _bn_clear(self, ctx: commands.Context):
-        await self.bot.get_cog("Booru").config.dm_nsfw_allowed.clear()
-        await ctx.send("Whitelist cleared.")
-
-    async def _prepare_ctx(self, ctx: commands.Context) -> Optional[discord.abc.Messageable]:
-        if ctx.interaction:
-            await ctx.interaction.response.defer()
-            return ctx.interaction.channel
-        await ctx.typing()
-        return ctx.channel
-
-    async def _send(
-        self, ctx: commands.Context, content: str | None = None, *, embed: discord.Embed | None = None
-    ) -> discord.Message:
-        if ctx.interaction:
-            return await ctx.interaction.followup.send(content=content, embed=embed)
-        return await ctx.send(content=content, embed=embed)
+    async def _bn_clear(self, interaction: discord.Interaction):
+        if not await interaction.client.is_owner(interaction.user):
+            await interaction.response.send_message("Owner only.", ephemeral=True)
+            return
+        await interaction.client.get_cog("Booru").config.dm_nsfw_allowed.clear()
+        await interaction.response.send_message("Whitelist cleared.", ephemeral=True)
 
     async def _dm_nsfw_allowed(
         self,
-        ctx: commands.Context,
+        interaction: discord.Interaction,
         channel: discord.abc.Messageable,
         booru_cog,
     ) -> bool:
         if isinstance(channel, discord.TextChannel):
             return channel.is_nsfw()
-        is_owner = await self.bot.is_owner(ctx.author)
+        if await interaction.client.is_owner(interaction.user):
+            return True
         allowed: List[int] = await booru_cog.config.dm_nsfw_allowed()
-        return is_owner or ctx.author.id in allowed
+        return interaction.user.id in allowed
 
 
 class BooruPaginationView(discord.ui.View):
