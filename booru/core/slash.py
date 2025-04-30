@@ -1,5 +1,3 @@
-# core/slash.py – SLASH-ONLY helper for the Booru cog
-
 import logging
 from typing import List, Optional
 
@@ -17,7 +15,7 @@ class BooruSlash(commands.Cog):
     Slash-only commands for booru searches.
 
     • /booru       – search all configured sources
-    • /boorus      – search a specific source
+    • /boorus      – search one source
     • /boorunsfw   – owner-only DM-NSFW whitelist
     """
 
@@ -28,7 +26,6 @@ class BooruSlash(commands.Cog):
     @app_commands.command(
         name="booru",
         description="Search booru sites with the configured source order.",
-        dm_permission=True,
     )
     @app_commands.describe(query="Tags or keywords to search for.")
     async def slash_booru(self, interaction: discord.Interaction, query: str = ""):
@@ -76,7 +73,6 @@ class BooruSlash(commands.Cog):
     @app_commands.command(
         name="boorus",
         description="Search a specific booru source.",
-        dm_permission=True,
     )
     @app_commands.describe(
         source="Name of the source to search.",
@@ -112,7 +108,6 @@ class BooruSlash(commands.Cog):
         name="boorunsfw",
         description="Manage DM-NSFW whitelist (owner only).",
         guild_only=False,
-        dm_permission=True,
     )
 
     @boorunsfw.command(name="list", description="Show whitelist")
