@@ -1,72 +1,73 @@
 import logging
+import re
 from typing import List, Set, Tuple
 
 log = logging.getLogger("red.booru.core.tags")
 
 
-class TagHandler:
-    """Handles tag processing and validation."""
+UNDERSCORE = re.compile(r"[ _]+")
+SERIES_SPLIT = re.compile(r"(?<!^):(?!$)")
 
-    def __init__(self):
+
+class TagHandler:
+    """Handles booru tag parsing, aliasing and formatting."""
+
+    def __init__(self) -> None:
         self.tag_aliases = {
             "nsfw": "rating:explicit",
+            "explicit": "rating:explicit",
             "sfw": "rating:safe",
             "safe": "rating:safe",
-            "explicit": "rating:explicit",
             "questionable": "rating:questionable",
         }
 
     def parse_tags(self, tag_string: str) -> Tuple[Set[str], Set[str]]:
         """
-        Parse tag string into positive and negative tags.
+        Split a raw tag string into (positive, negative) sets.
 
-        Args:
-            tag_string: String of tags separated by spaces and/or commas
-
-        Returns:
-            Tuple of (positive_tags, negative_tags)
-
-        Example:
-            "1girl, solo, -nsfw" -> ({"1girl", "solo"}, {"rating:explicit"})
+        • Accepts space- **or** comma-separated input.
+        • Leading '-' marks a negative tag.
+        • Normalises every tag (case, underscores, series).
+        • Resolves aliases **after** normalisation.
         """
-        raw_tags = {
-            tag.strip() for tag in tag_string.replace(",", " ").split() if tag.strip()
-        }
+        raw_tags = {t.strip() for t in tag_string.replace(",", " ").split() if t.strip()}
 
-        positive_tags = set()
-        negative_tags = set()
+        positive, negative = set(), set()
 
         for tag in raw_tags:
-            if tag.startswith("-"):
-                tag = tag[1:]
-                if tag in self.tag_aliases:
-                    tag = self.tag_aliases[tag]
-                negative_tags.add(tag)
-            else:
-                if tag in self.tag_aliases:
-                    tag = self.tag_aliases[tag]
-                positive_tags.add(tag)
+            is_neg = tag.startswith("-")
+            if is_neg:
+                tag = tag.lstrip("-")
 
-        log.debug(f"Parsed tags - Positive: {positive_tags}, Negative: {negative_tags}")
-        return positive_tags, negative_tags
+            tag = self._alias(self._normalize(tag))
 
-    def combine_tags(
-        self, positive_tags: Set[str], negative_tags: Set[str]
-    ) -> List[str]:
-        """
-        Combine positive and negative tags into a list suitable for API requests.
+            (negative if is_neg else positive).add(tag)
 
-        Args:
-            positive_tags: Set of positive tags
-            negative_tags: Set of negative tags
+        log.debug("Parsed tags – +%s −%s", positive, negative)
+        return positive, negative
 
-        Returns:
-            List of tags with negative tags prefixed with '-'
-        """
-        tags = list(positive_tags)
-        tags.extend(f"-{tag}" for tag in negative_tags)
-        return tags
+    def combine_tags(self, positive: Set[str], negative: Set[str]) -> List[str]:
+        """Return a list with '-' prefixed to negative tags for API calls."""
+        return [*positive, *[f"-{t}" for t in negative]]
 
     def format_tags(self, tags: List[str]) -> str:
-        """Format tags for display in embeds or messages."""
+        """Turn a tag list into a display string."""
         return " ".join(tags)
+
+    def _alias(self, tag: str) -> str:
+        """Map user-facing aliases to canonical tags."""
+        return self.tag_aliases.get(tag, tag)
+
+    def _normalize(self, tag: str) -> str:
+        """
+        • Lower-case
+        • Collapse spaces / underscores into a single underscore
+        • Preserve ':' hierarchy but normalise each side
+        """
+        if ":" in tag:
+            parts = SERIES_SPLIT.split(tag)
+            tag = ":".join(self._normalize(p) for p in parts)
+            return tag
+
+        tag = UNDERSCORE.sub("_", tag.strip().lower())
+        return tag.strip("_")
