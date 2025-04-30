@@ -205,7 +205,6 @@ class Booru(commands.Cog):
             await ctx.send("No sources configured.")
             return
 
-        # Try each source until we get posts
         posts = []
         used_source = None
 
@@ -230,7 +229,6 @@ class Booru(commands.Cog):
             ctx, posts[current_index], current_index, len(posts)
         )
 
-        # If there's only one post, no need to paginate
         if len(posts) == 1:
             return
 

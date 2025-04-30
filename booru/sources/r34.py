@@ -48,7 +48,6 @@ class Rule34Source(BooruSource):
     def parse_post(self, post: Dict[str, Any]) -> Dict[str, Any]:
         """Parse Rule34 post data into standardized format."""
         try:
-            # 'file_url' or 'sample_url' might exist
             file_url = post.get("file_url")
             return PostResult(
                 id=str(post["id"]),

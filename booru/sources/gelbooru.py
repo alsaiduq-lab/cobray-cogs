@@ -31,7 +31,6 @@ class GelbooruSource(BooruSource):
             "tags": " ".join(tags),
         }
 
-        # Add API credentials if provided
         if credentials:
             api_key = credentials.get("api_key")
             user_id = credentials.get("user_id")

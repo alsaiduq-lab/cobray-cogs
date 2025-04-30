@@ -8,7 +8,6 @@ class TagHandler:
     """Handles tag processing and validation."""
 
     def __init__(self):
-        # Common aliases for convenience
         self.tag_aliases = {
             "nsfw": "rating:explicit",
             "sfw": "rating:safe",
@@ -30,7 +29,6 @@ class TagHandler:
         Example:
             "1girl, solo, -nsfw" -> ({"1girl", "solo"}, {"rating:explicit"})
         """
-        # Split by both commas and spaces and clean up
         raw_tags = {
             tag.strip() for tag in tag_string.replace(",", " ").split() if tag.strip()
         }
@@ -39,15 +37,12 @@ class TagHandler:
         negative_tags = set()
 
         for tag in raw_tags:
-            # Handle negative tags
             if tag.startswith("-"):
-                tag = tag[1:]  # Remove the minus sign
-                # Check for alias
+                tag = tag[1:]
                 if tag in self.tag_aliases:
                     tag = self.tag_aliases[tag]
                 negative_tags.add(tag)
             else:
-                # Check for alias
                 if tag in self.tag_aliases:
                     tag = self.tag_aliases[tag]
                 positive_tags.add(tag)

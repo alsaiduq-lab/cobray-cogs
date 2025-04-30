@@ -49,7 +49,6 @@ class SafebooruSource(BooruSource):
     def parse_post(self, post: Dict[str, Any]) -> Dict[str, Any]:
         """Parse Safebooru post data into standardized format."""
         try:
-            # Safebooru URLs need to be constructed
             file_url = post.get("file_url")
             if file_url and not file_url.startswith("http"):
                 file_url = f"https:{file_url}"
@@ -58,7 +57,7 @@ class SafebooruSource(BooruSource):
                 id=str(post["id"]),
                 url=file_url,
                 source="safebooru",
-                rating="safe",  # Safebooru is always safe
+                rating="safe",
                 tags=str(post.get("tags", "")).split(),
                 score=post.get("score"),
             ).to_dict()
