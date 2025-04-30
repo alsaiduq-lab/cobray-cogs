@@ -11,12 +11,6 @@ log = logging.getLogger("red.booru")
 
 
 class BooruSlash(commands.GroupCog, name="booru"):
-    """
-    /booru search <tags>      – search all configured sources
-    /booru source <site> ...  – search one source
-    /boorunsfw ...            – owner DM-NSFW whitelist
-    """
-
     def __init__(self, bot: commands.Bot):
         super().__init__()
         self.bot = bot
