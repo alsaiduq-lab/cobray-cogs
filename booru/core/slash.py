@@ -52,15 +52,24 @@ class BooruSlash(commands.Cog):
                     break
             except Exception as e:
                 log.error("Error with %s: %s", src, e)
-        if not posts:
+        if not posts or not used_source:
             await interaction.followup.send("No results.")
             return
-        embed = booru_cog._build_embed(posts[0], 0, len(posts))
-        foot = embed.footer.text or ""
-        embed.set_footer(text=f"{foot} • From {used_source.title()}")
-        msg = await interaction.followup.send(embed=embed)
+
+        first_post = posts[0]
+        rating = first_post.get("rating", "").lower()
+        url = first_post.get("url", "")
+        desc = f"Source: **{used_source}**\nRating: **{rating}**\nID: {first_post.get('id', '')}"
+        if rating == "explicit":
+            msg = await interaction.followup.send(f"{desc}\n||{url}||")
+        else:
+            embed = booru_cog._build_embed(first_post, 0, len(posts))
+            foot = embed.footer.text or ""
+            embed.set_footer(text=f"{foot} • From {used_source.title()}")
+            embed.set_image(url=url)
+            msg = await interaction.followup.send(embed=embed)
         if len(posts) > 1:
-            view = BooruPaginationView(interaction.user, posts, used_source.title())
+            view = BooruPaginationView(interaction.user, posts, used_source)
             view.message = msg
             await msg.edit(view=view)
 
@@ -151,10 +160,17 @@ class BooruPaginationView(discord.ui.View):
     async def _update(self, i: discord.Interaction):
         p = self.posts[self.idx]
         cog = i.client.get_cog("Booru")
-        e = cog._build_embed(p, self.idx, len(self.posts))
-        foot = e.footer.text or ""
-        e.set_footer(text=f"{foot} • From {self.source}")
-        await i.response.edit_message(embed=e, view=self)
+        rating = p.get("rating", "").lower()
+        url = p.get("url", "")
+        desc = f"Source: **{self.source}**\nRating: **{rating}**\nID: {p.get('id', '')}"
+        if rating == "explicit":
+            await i.response.edit_message(content=f"{desc}\n||{url}||", embed=None, view=self)
+        else:
+            e = cog._build_embed(p, self.idx, len(self.posts))
+            foot = e.footer.text or ""
+            e.set_footer(text=f"{foot} • From {self.source}")
+            e.set_image(url=url)
+            await i.response.edit_message(content=None, embed=e, view=self)
 
     async def on_timeout(self):
         if self.message:
