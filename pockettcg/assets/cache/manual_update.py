@@ -1,16 +1,12 @@
 import json
 import logging
-import os
 import random
 import re
 import time
-from collections.abc import Mapping
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Optional, Set, Union
-from urllib.parse import quote, urljoin
+from typing import Dict, Set
 
-import pytz
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
@@ -21,7 +17,7 @@ class ContentDownloader:
         self,
         api_base_url: str = "https://www.pokemonmeta.com/api/v1",
         cdn_base_url: str = "https://s3.duellinksmeta.com",
-        min_delay: int = 3,  # Reduced delays for efficiency
+        min_delay: int = 3,
         max_delay: int = 5,
         max_retries: int = 3,
     ):
@@ -207,13 +203,10 @@ class ContentDownloader:
         """Check if card or its variants need updating."""
         card_name = self._sanitize_filename(card.get("name", "unnamed"))
         card_id = str(card.get("_id", ""))
-        # Check if this is a new card
         if card_name not in existing_files:
             return True
-        # Check if this variant exists
         if card_id not in existing_files[card_name]:
             return True
-        # Check alt art variants
         if "artVariants" in card:
             for variant in card["artVariants"]:
                 variant_id = str(variant.get("_id", ""))
@@ -226,16 +219,13 @@ class ContentDownloader:
         cards_dir = cache_dir / "cards"
         cards_dir.mkdir(exist_ok=True)
 
-        # Get existing files
         existing_files = self._get_existing_files(cards_dir)
         logging.info(f"Found {sum(len(ids) for ids in existing_files.values())} existing card files")
 
-        # Get all current cards
         all_cards = self.fetch_all_cards()
         total_cards = len(all_cards)
         logging.info(f"Found {total_cards} total cards")
 
-        # Group cards by name to handle variants together
         card_groups = {}
         for card in all_cards:
             name = self._sanitize_filename(card.get("name", "unnamed"))
@@ -259,11 +249,9 @@ class ContentDownloader:
                     logging.error(f"Invalid card ID: {card_id}")
                     continue
 
-                # Save card data
                 card_file = cards_dir / f"{card_name}_{card_id}.json"
                 self.save_json_data(card, card_file)
 
-                # Download card image
                 img_file = cards_dir / f"{card_name}_{card_id}.webp"
                 if not img_file.exists():
                     if self.download_card_image(card_id, img_file):
@@ -271,7 +259,6 @@ class ContentDownloader:
 
                 card_ids.append(card_id)
 
-                # Handle art variants
                 if "artVariants" in card:
                     for variant in card["artVariants"]:
                         variant_id = str(variant.get("_id", ""))
@@ -288,7 +275,6 @@ class ContentDownloader:
 
                         card_ids.append(variant_id)
 
-            # Update deck data for all variants at once
             if card_ids:
                 deck_data = self.fetch_deck_data(card_ids)
                 deck_file = cards_dir / f"{card_name}_decks.json"
@@ -296,7 +282,6 @@ class ContentDownloader:
                 updated_count += 1
                 self.random_delay()
 
-        # Save update timestamp
         self._save_update_time(cache_dir)
         logging.info(f"Update complete. Updated {updated_count} card groups")
 

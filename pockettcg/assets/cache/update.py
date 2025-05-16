@@ -5,6 +5,7 @@ from typing import Dict, List, Optional, Union
 from datetime import datetime, timezone
 import logging
 
+
 class TCGCacheManager:
     def __init__(self, cache_dir: Union[str, Path]):
         """
@@ -21,7 +22,7 @@ class TCGCacheManager:
     def save_sets(self, sets_data: List[Dict]) -> None:
         """Save sets data to cache."""
         try:
-            with self.sets_cache.open('w', encoding='utf-8') as f:
+            with self.sets_cache.open("w", encoding="utf-8") as f:
                 json.dump(sets_data, f, indent=2)
             self._update_cache_info("sets")
             logging.info(f"Saved {len(sets_data)} sets to cache")
@@ -32,7 +33,7 @@ class TCGCacheManager:
     def save_cards(self, cards_data: List[Dict]) -> None:
         """Save cards data to cache."""
         try:
-            with self.cards_cache.open('w', encoding='utf-8') as f:
+            with self.cards_cache.open("w", encoding="utf-8") as f:
                 json.dump(cards_data, f, indent=2)
             self._update_cache_info("cards")
             logging.info(f"Saved {len(cards_data)} cards to cache")
@@ -44,7 +45,7 @@ class TCGCacheManager:
         """Load sets from cache."""
         try:
             if self.sets_cache.exists():
-                with self.sets_cache.open('r', encoding='utf-8') as f:
+                with self.sets_cache.open("r", encoding="utf-8") as f:
                     return json.load(f)
             return None
         except Exception as e:
@@ -55,7 +56,7 @@ class TCGCacheManager:
         """Load cards from cache."""
         try:
             if self.cards_cache.exists():
-                with self.cards_cache.open('r', encoding='utf-8') as f:
+                with self.cards_cache.open("r", encoding="utf-8") as f:
                     return json.load(f)
             return None
         except Exception as e:
@@ -67,13 +68,13 @@ class TCGCacheManager:
         try:
             cache_info = {}
             if self.cache_info.exists():
-                with self.cache_info.open('r', encoding='utf-8') as f:
+                with self.cache_info.open("r", encoding="utf-8") as f:
                     cache_info = yaml.safe_load(f) or {}
             cache_info[cache_type] = {
                 "last_updated": datetime.now(timezone.utc).isoformat(),
-                "file_size": self._get_file_size(cache_type)
+                "file_size": self._get_file_size(cache_type),
             }
-            with self.cache_info.open('w', encoding='utf-8') as f:
+            with self.cache_info.open("w", encoding="utf-8") as f:
                 yaml.safe_dump(cache_info, f)
         except Exception as e:
             logging.error(f"Error updating cache info: {e}")
@@ -87,7 +88,7 @@ class TCGCacheManager:
         """Get information about the cache."""
         try:
             if self.cache_info.exists():
-                with self.cache_info.open('r', encoding='utf-8') as f:
+                with self.cache_info.open("r", encoding="utf-8") as f:
                     return yaml.safe_load(f) or {}
             return {}
         except Exception as e:
@@ -108,24 +109,18 @@ class TCGCacheManager:
             logging.error(f"Error clearing cache: {e}")
             raise
 
+
 def setup_logging():
     """Setup basic logging configuration."""
-    logging.basicConfig(
-        level=logging.INFO,
-        format='%(asctime)s - %(levelname)s - %(message)s'
-    )
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
-# Example usage
+
 if __name__ == "__main__":
     setup_logging()
     cache_dir = Path("/home/cobray/cobray-cogs/pockettcg/assets/cache")
-    # Initialize cache manager
     cache_mgr = TCGCacheManager(cache_dir)
-    # Example data
     example_sets = [{"name": "Test Set"}]
-    # Save and load data
     cache_mgr.save_sets(example_sets)
     loaded_sets = cache_mgr.load_sets()
-    # Get cache info
     cache_info = cache_mgr.get_cache_info()
     print("Cache info:", cache_info)
