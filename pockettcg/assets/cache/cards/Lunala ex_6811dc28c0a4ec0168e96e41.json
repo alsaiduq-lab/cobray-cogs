@@ -1,0 +1,78 @@
+{
+  "_id": "6811dc28c0a4ec0168e96e41",
+  "name": "Lunala ex",
+  "energyType": [
+    "Psychic"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "180",
+  "pokemonId": "A3-238",
+  "limitlessId": "A3 238",
+  "rarity": "cr",
+  "weakness": [
+    "Darkness"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Psychic Connect",
+      "text": "Once during your turn, you may move all Psychic Energy from 1 of your Benched Psychic Pokémon to your Active Pokémon.",
+      "_id": "68124d34c0a4ec0168ecf8cd"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Lunar Blast",
+      "energyCost": [
+        "Psychic",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "100",
+      "_id": "68124d34c0a4ec0168ecf8ce"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    },
+    {
+      "source": {
+        "_id": "6811bd6ca93125d205b45fa7",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Solgaleo",
+        "linkedArticle": {
+          "_id": "6811de68c0a4ec0168e97e92",
+          "title": "Celestial Guardians: Solgaleo",
+          "url": "/sets/celestial-guardians-solgaleo/",
+          "image": "/pkm_img/Sets/cgsolgaleo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true,
+  "nameRelease": "2025-04-30T06:00:00.000Z"
+}

@@ -45,25 +45,29 @@
   "weakness": [
     "Fighting"
   ],
-  "popRank": 136,
+  "popRank": 143,
   "artVariants": [
     {
       "_id": "672181bfc08874f5ab2e1708",
-      "name": "Pikachu"
+      "name": "Pikachu",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     },
     {
       "_id": "672181fcc08874f5ab2e172d",
-      "name": "Pikachu"
+      "name": "Pikachu",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     },
     {
       "_id": "676124d4b864a94749eeebef",
-      "name": "Pikachu"
+      "name": "Pikachu",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     }
   ],
   "limitlessId": "A1 94",
   "deckTypes": [
-    "Lt. Surge",
-    "Pikachu ex",
-    "Pachirisu ex"
+    "Alolan Raichu ex"
   ]
 }

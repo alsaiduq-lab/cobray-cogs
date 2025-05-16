@@ -1,0 +1,1466 @@
+[
+  {
+    "author": "my ",
+    "created": "2025-05-14T00:55:49.426Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799baf2169202e5d7e67c99",
+          "name": "Cranidos",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811c82aa93125d205b4a3e8",
+          "name": "Lycanroc",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bb14169202e5d7e67d59",
+          "name": "Rampardos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811c7c8c0a4ec0168e8d57b",
+          "name": "Rockruff",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67dd67b3a1b6092a3c64b8b7",
+          "name": "Iono",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395dc575eceb838a24b19",
+          "name": "Red",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bcb5f06a47c6afdf7763",
+          "name": "Skull Fossil",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/charico-kitaro-cup-mini-season-6-(61-players)/9/lycanroc/my-/19oKb/",
+    "deckType": {
+      "name": "Lycanroc",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "1st Place",
+    "tournamentNumber": "9",
+    "customTournamentName": "Charico Kitaro Cup mini Season 6 (61 Players)",
+    "engines": [
+      {
+        "_id": "67abcd1d6fa98c7329e3779d",
+        "name": "Rampardos"
+      },
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "my ",
+    "created": "2025-05-14T00:04:58.701Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799baf2169202e5d7e67c99",
+          "name": "Cranidos",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811c82aa93125d205b4a3e8",
+          "name": "Lycanroc",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bb14169202e5d7e67d59",
+          "name": "Rampardos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811c7c8c0a4ec0168e8d57b",
+          "name": "Rockruff",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67dd67b3a1b6092a3c64b8b7",
+          "name": "Iono",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bcb5f06a47c6afdf7763",
+          "name": "Skull Fossil",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/bomber-cup-(20-players)/102/lycanroc/my-/pbfU1/",
+    "deckType": {
+      "name": "Lycanroc",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "1st Place",
+    "tournamentNumber": "102",
+    "customTournamentName": "Bomber Cup (20 Players)",
+    "engines": [
+      {
+        "_id": "67abcd1d6fa98c7329e3779d",
+        "name": "Rampardos"
+      },
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "Cobweber",
+    "created": "2025-05-12T14:17:05.581Z",
+    "main": [
+      {
+        "card": {
+          "_id": "675ae7f534db45022c3de681",
+          "name": "Aerodactyl ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799baf2169202e5d7e67c99",
+          "name": "Cranidos",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811c82aa93125d205b4a3e8",
+          "name": "Lycanroc",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bb14169202e5d7e67d59",
+          "name": "Rampardos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811c7c8c0a4ec0168e8d57b",
+          "name": "Rockruff",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67dd67b3a1b6092a3c64b8b7",
+          "name": "Iono",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e259c",
+          "name": "Old Amber",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811ce7dc0a4ec0168e90349",
+          "name": "Poison Barb",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bcb5f06a47c6afdf7763",
+          "name": "Skull Fossil",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/ursiiday's-pocket-weekly-(941-players)/28/aerodactyl-ex/cobweber/-mBEw/",
+    "deckType": {
+      "name": "Aerodactyl ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "28",
+    "customTournamentName": "Ursiiday's Pocket Weekly (941 Players)",
+    "engines": [
+      {
+        "_id": "67abcd1d6fa98c7329e3779d",
+        "name": "Rampardos"
+      },
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "6822038ea91228f33857ea0a",
+      "title": "Ursiiday's Pocket Weekly #28 - 941 Players",
+      "url": "/tournaments/ursiiday-pocket-weekly/28/report/"
+    }
+  },
+  {
+    "author": {
+      "_id": "679aafb31c3aad736ada8c2f",
+      "roles": [],
+      "username": "[𝙎𝙫𝙆] | Tazzi90"
+    },
+    "created": "2025-05-11T16:28:34.660Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799baf2169202e5d7e67c99",
+          "name": "Cranidos",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811c82aa93125d205b4a3e8",
+          "name": "Lycanroc",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bb14169202e5d7e67d59",
+          "name": "Rampardos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811c7c8c0a4ec0168e8d57b",
+          "name": "Rockruff",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67dd67b3a1b6092a3c64b8b7",
+          "name": "Iono",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811d01f819c204fd6cddd25",
+          "name": "Lillie",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395dc575eceb838a24b19",
+          "name": "Red",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bcb5f06a47c6afdf7763",
+          "name": "Skull Fossil",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/godzly-1000-celestial-guardians-tournament-(810-players)/1/lycanroc/𝙎𝙫𝙆-|-tazzi90/mW5j6/",
+    "deckType": {
+      "name": "Lycanroc",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "1",
+    "customTournamentName": "GODZLY $1000 Celestial Guardians Tournament  (810 Players)",
+    "engines": [
+      {
+        "_id": "67abcd1d6fa98c7329e3779d",
+        "name": "Rampardos"
+      },
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "6820d057a91228f3384d0992",
+      "title": "GODZLY $1000 Celestial Guardians Tournament - 810 Players",
+      "url": "/tournaments/godzly/2/report/"
+    },
+    "hasNotes": false,
+    "hasReplays": false
+  },
+  {
+    "author": "farley133",
+    "created": "2025-05-11T16:27:31.600Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799baf2169202e5d7e67c99",
+          "name": "Cranidos",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811c82aa93125d205b4a3e8",
+          "name": "Lycanroc",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bb14169202e5d7e67d59",
+          "name": "Rampardos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811c7c8c0a4ec0168e8d57b",
+          "name": "Rockruff",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67dd67b3a1b6092a3c64b8b7",
+          "name": "Iono",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395dc575eceb838a24b19",
+          "name": "Red",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bcb5f06a47c6afdf7763",
+          "name": "Skull Fossil",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/godzly-1000-celestial-guardians-tournament-(810-players)/1/lycanroc/farley133/BzRWz/",
+    "deckType": {
+      "name": "Lycanroc",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "1",
+    "customTournamentName": "GODZLY $1000 Celestial Guardians Tournament  (810 Players)",
+    "engines": [
+      {
+        "_id": "67abcd1d6fa98c7329e3779d",
+        "name": "Rampardos"
+      },
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "6820d057a91228f3384d0992",
+      "title": "GODZLY $1000 Celestial Guardians Tournament - 810 Players",
+      "url": "/tournaments/godzly/2/report/"
+    }
+  },
+  {
+    "author": "OJitTiK",
+    "created": "2025-05-11T16:26:17.178Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799baf2169202e5d7e67c99",
+          "name": "Cranidos",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811c82aa93125d205b4a3e8",
+          "name": "Lycanroc",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bb14169202e5d7e67d59",
+          "name": "Rampardos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811c7c8c0a4ec0168e8d57b",
+          "name": "Rockruff",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67dd67b3a1b6092a3c64b8b7",
+          "name": "Iono",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811d01f819c204fd6cddd25",
+          "name": "Lillie",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395dc575eceb838a24b19",
+          "name": "Red",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bcb5f06a47c6afdf7763",
+          "name": "Skull Fossil",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/godzly-1000-celestial-guardians-tournament-(810-players)/1/lycanroc/ojittik/gL2k9/",
+    "deckType": {
+      "name": "Lycanroc",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "1",
+    "customTournamentName": "GODZLY $1000 Celestial Guardians Tournament  (810 Players)",
+    "engines": [
+      {
+        "_id": "67abcd1d6fa98c7329e3779d",
+        "name": "Rampardos"
+      },
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "6820d057a91228f3384d0992",
+      "title": "GODZLY $1000 Celestial Guardians Tournament - 810 Players",
+      "url": "/tournaments/godzly/2/report/"
+    }
+  },
+  {
+    "author": "Yiidrazil P",
+    "created": "2025-05-10T15:05:04.783Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6811c82aa93125d205b4a3e8",
+          "name": "Lycanroc",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bb14169202e5d7e67d59",
+          "name": "Rampardos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811c7c8c0a4ec0168e8d57b",
+          "name": "Rockruff",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67dd67b3a1b6092a3c64b8b7",
+          "name": "Iono",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811d01f819c204fd6cddd25",
+          "name": "Lillie",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395dc575eceb838a24b19",
+          "name": "Red",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bcb5f06a47c6afdf7763",
+          "name": "Skull Fossil",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/frogex-weekly-cup-(378-players)/18/lycanroc/yiidrazil-p/_EoHN/",
+    "deckType": {
+      "name": "Lycanroc",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "18",
+    "customTournamentName": "FrogEX Weekly Cup (378 Players)",
+    "engines": [
+      {
+        "_id": "67abcd1d6fa98c7329e3779d",
+        "name": "Rampardos"
+      },
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "681f6c2d3bcb22191a7818bb",
+      "title": "FrogEX Weekly Cup #18- 395 Players",
+      "url": "/tournaments/frogex-weekly/18/report/"
+    }
+  },
+  {
+    "author": "Toko_tw",
+    "created": "2025-05-10T14:56:47.415Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799baf2169202e5d7e67c99",
+          "name": "Cranidos",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811c82aa93125d205b4a3e8",
+          "name": "Lycanroc",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bb14169202e5d7e67d59",
+          "name": "Rampardos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811c7c8c0a4ec0168e8d57b",
+          "name": "Rockruff",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67dd67b3a1b6092a3c64b8b7",
+          "name": "Iono",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811d01f819c204fd6cddd25",
+          "name": "Lillie",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181abc08874f5ab2e16fb",
+          "name": "Red Card",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bcb5f06a47c6afdf7763",
+          "name": "Skull Fossil",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/pocket-lagoon-cup-(137-players)/1/lycanroc/toko_tw/r1Sk_/",
+    "deckType": {
+      "name": "Lycanroc",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "1",
+    "customTournamentName": "Pocket Lagoon Cup (137 Players)",
+    "engines": [
+      {
+        "_id": "67abcd1d6fa98c7329e3779d",
+        "name": "Rampardos"
+      },
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "68135ca1a93125d205c1b0d2",
+      "title": "PTCGP 50-200 Player Event Roundup #38",
+      "url": "/tournaments/tcgp-weekly-results/38/report/"
+    }
+  },
+  {
+    "author": "AkingZ",
+    "created": "2025-05-09T17:25:20.293Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799baf2169202e5d7e67c99",
+          "name": "Cranidos",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811c82aa93125d205b4a3e8",
+          "name": "Lycanroc",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bb14169202e5d7e67d59",
+          "name": "Rampardos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811c7c8c0a4ec0168e8d57b",
+          "name": "Rockruff",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67dd67b3a1b6092a3c64b8b7",
+          "name": "Iono",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811d01f819c204fd6cddd25",
+          "name": "Lillie",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395dc575eceb838a24b19",
+          "name": "Red",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bcb5f06a47c6afdf7763",
+          "name": "Skull Fossil",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/cardconqueror-10€-paypal-(36-players)/1/lycanroc/akingz/b5VPh/",
+    "deckType": {
+      "name": "Lycanroc",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "1",
+    "customTournamentName": "CardConqueror 10€ PayPal (36 Players)",
+    "engines": [
+      {
+        "_id": "67abcd1d6fa98c7329e3779d",
+        "name": "Rampardos"
+      },
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "PikaIcetea",
+    "created": "2025-05-09T17:20:23.273Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6811c82aa93125d205b4a3e8",
+          "name": "Lycanroc",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bb14169202e5d7e67d59",
+          "name": "Rampardos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811c7c8c0a4ec0168e8d57b",
+          "name": "Rockruff",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811cf73819c204fd6cdd872",
+          "name": "Guzma",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67dd67b3a1b6092a3c64b8b7",
+          "name": "Iono",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811d01f819c204fd6cddd25",
+          "name": "Lillie",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67e395a2575eceb838a249c9",
+          "name": "Pokémon Center Lady",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395dc575eceb838a24b19",
+          "name": "Red",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bcb5f06a47c6afdf7763",
+          "name": "Skull Fossil",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/tbbl--blitz-swiss-wednesday-(22-players)/1/lycanroc/pikaicetea/1JcB8/",
+    "deckType": {
+      "name": "Lycanroc",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "2nd Place",
+    "tournamentNumber": "1",
+    "customTournamentName": "TBBL- Blitz Swiss Wednesday (22 Players)",
+    "engines": [
+      {
+        "_id": "67abcd1d6fa98c7329e3779d",
+        "name": "Rampardos"
+      },
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      }
+    ],
+    "linkedArticle": null
+  }
+]

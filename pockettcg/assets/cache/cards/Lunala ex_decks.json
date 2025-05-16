@@ -1,0 +1,1396 @@
+[
+  {
+    "author": "かいじゅう",
+    "created": "2025-05-14T01:10:12.634Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6811cae4c0a4ec0168e8e93c",
+          "name": "Cosmog",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799c3d60c64508adf1e84dc",
+          "name": "Giratina",
+          "alternateArt": true,
+          "nameRelease": "2025-01-30T06:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67dd6974e2096b41c50faf01",
+          "name": "Giratina ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3d0fee5adf8f1a257a98",
+          "name": "Lunala ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811ca8fc0a4ec0168e8e713",
+          "name": "Tapu Lele",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395a2575eceb838a249c9",
+          "name": "Pokémon Center Lady",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181abc08874f5ab2e16fb",
+          "name": "Red Card",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/夜ポケ杯-(42-players)/35/lunala-ex/かいじゅう/SRO0J/",
+    "deckType": {
+      "name": "Lunala ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 4",
+    "tournamentNumber": "35",
+    "customTournamentName": "夜ポケ杯 (42 Players)",
+    "engines": [
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      },
+      {
+        "_id": "68256371c33728d7e47e3686",
+        "name": "Tapu Lele"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "na",
+    "created": "2025-05-13T22:56:10.866Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6811cae4c0a4ec0168e8e93c",
+          "name": "Cosmog",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799c3d60c64508adf1e84dc",
+          "name": "Giratina",
+          "alternateArt": true,
+          "nameRelease": "2025-01-30T06:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67dd6974e2096b41c50faf01",
+          "name": "Giratina ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3d0fee5adf8f1a257a98",
+          "name": "Lunala ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2543",
+          "name": "Mewtwo ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811ce7dc0a4ec0168e90349",
+          "name": "Poison Barb",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395a2575eceb838a249c9",
+          "name": "Pokémon Center Lady",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181abc08874f5ab2e16fb",
+          "name": "Red Card",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/夜ポケ杯-(20-players)/31/lunala-ex/na/FAS6t/",
+    "deckType": {
+      "name": "Lunala ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 4",
+    "tournamentNumber": "31",
+    "customTournamentName": "夜ポケ杯 (20 Players)",
+    "engines": [
+      {
+        "_id": "67e664284d8678ebca9431bd",
+        "name": "Mewtwo ex"
+      },
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "Youting Su",
+    "created": "2025-05-07T22:17:04.303Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6811cae4c0a4ec0168e8e93c",
+          "name": "Cosmog",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b822169202e5d7e66d00",
+          "name": "Giratina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67dd6974e2096b41c50faf01",
+          "name": "Giratina ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3d0fee5adf8f1a257a98",
+          "name": "Lunala ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2543",
+          "name": "Mewtwo ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811cf73819c204fd6cdd872",
+          "name": "Guzma",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395dc575eceb838a24b19",
+          "name": "Red",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/imperium’s-weekly-tournament-20-usd-(197-players)/6/lunala-ex/youting-su/SvYZQ/",
+    "deckType": {
+      "name": "Lunala ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "6",
+    "customTournamentName": "IMPERIUM’S Weekly Tournament 20 USD (197 Players)",
+    "engines": [
+      {
+        "_id": "67e664284d8678ebca9431bd",
+        "name": "Mewtwo ex"
+      },
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "68135ca1a93125d205c1b0d2",
+      "title": "PTCGP 50-200 Player Event Roundup #38",
+      "url": "/tournaments/tcgp-weekly-results/38/report/"
+    }
+  },
+  {
+    "author": "Raindrop2cool",
+    "created": "2025-05-06T16:30:26.726Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6811cb7ac0a4ec0168e8ed4c",
+          "name": "Cosmoem",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811cae4c0a4ec0168e8e93c",
+          "name": "Cosmog",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67dd6974e2096b41c50faf01",
+          "name": "Giratina ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3d0fee5adf8f1a257a98",
+          "name": "Lunala ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811cc54c0a4ec0168e8f406",
+          "name": "Necrozma",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "680a3da7ee5adf8f1a257fdf",
+          "name": "Rayquaza ex",
+          "alternateArt": true,
+          "nameRelease": "2025-04-30T06:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67dd67b3a1b6092a3c64b8b7",
+          "name": "Iono",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/tbbl---welcome-10-usd-(44-players/1/lunala-ex/raindrop2cool/hYT5q/",
+    "deckType": {
+      "name": "Lunala ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "1",
+    "customTournamentName": "TBBL - Welcome 10 USD (44 Players",
+    "engines": [
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": {
+      "_id": "67f6cde7fd1600bb7c82c41a",
+      "roles": [],
+      "username": "InShane"
+    },
+    "created": "2025-05-06T02:56:19.552Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6811d494819c204fd6cdfe4c",
+          "name": "Cosmog",
+          "alternateArt": true,
+          "nameRelease": "2025-04-30T06:00:00.000Z"
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799c3d60c64508adf1e84dc",
+          "name": "Giratina",
+          "alternateArt": true,
+          "nameRelease": "2025-01-30T06:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67e39846575eceb838a255ea",
+          "name": "Giratina ex",
+          "alternateArt": true,
+          "nameRelease": "2025-03-27T06:00:00.000Z"
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811d6e1819c204fd6ce1130",
+          "name": "Lunala ex",
+          "alternateArt": true,
+          "nameRelease": "2025-04-30T06:00:00.000Z"
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e368da5cc271d38f73b660",
+          "name": "Mewtwo ex",
+          "alternateArt": true,
+          "nameRelease": "2024-10-30T15:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811da8cc0a4ec0168e96230",
+          "name": "Guzma",
+          "alternateArt": true,
+          "nameRelease": "2025-04-30T06:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67611d48f9e257245fbba7f0",
+          "name": "Leaf",
+          "alternateArt": true,
+          "nameRelease": "2024-12-17T06:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "680a3cb7ee5adf8f1a257884",
+          "name": "Lillie",
+          "alternateArt": true,
+          "nameRelease": "2025-04-30T06:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67dd6c6de2096b41c50fbd3c",
+          "name": "Red",
+          "alternateArt": true,
+          "nameRelease": "2025-03-27T06:00:00.000Z"
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/master-ball/may-2025/lunala-ex/inshane/u7pXx/",
+    "deckType": {
+      "name": "Lunala ex",
+      "tier": null
+    },
+    "rankedType": {
+      "name": "Master Ball",
+      "shortName": "Master Ball",
+      "icon": "/pkm_img/icons/master-ball-rank.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
+    },
+    "engines": [
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "Gojoseisojos",
+    "created": "2025-05-05T14:14:48.770Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6811cae4c0a4ec0168e8e93c",
+          "name": "Cosmog",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b822169202e5d7e66d00",
+          "name": "Giratina",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67dd6974e2096b41c50faf01",
+          "name": "Giratina ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3d0fee5adf8f1a257a98",
+          "name": "Lunala ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67dd67b3a1b6092a3c64b8b7",
+          "name": "Iono",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/danielcmini-tournament-premium-pass-(180-players)/1/lunala-ex/gojoseisojos/Vr88a/",
+    "deckType": {
+      "name": "Lunala ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "1",
+    "customTournamentName": "Danielcmini tournament: PREMIUM PASS (180 Players)",
+    "engines": [
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "68135ca1a93125d205c1b0d2",
+      "title": "PTCGP 50-200 Player Event Roundup #38",
+      "url": "/tournaments/tcgp-weekly-results/38/report/"
+    }
+  },
+  {
+    "author": "Deep",
+    "created": "2025-05-03T16:26:14.976Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6811cb7ac0a4ec0168e8ed4c",
+          "name": "Cosmoem",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811cae4c0a4ec0168e8e93c",
+          "name": "Cosmog",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b822169202e5d7e66d00",
+          "name": "Giratina",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67dd6974e2096b41c50faf01",
+          "name": "Giratina ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3d0fee5adf8f1a257a98",
+          "name": "Lunala ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811cf73819c204fd6cdd872",
+          "name": "Guzma",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/night-shift-(51-players)/1/lunala-ex/deep/HI3Hm/",
+    "deckType": {
+      "name": "Lunala ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "1",
+    "customTournamentName": "Night Shift (51 Players)",
+    "engines": [
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "6815586aa8be1a989492793e",
+      "title": "FrogEX Weekly Cup #17- 395 Players",
+      "url": "/tournaments/frogex-weekly/17/report/"
+    }
+  },
+  {
+    "author": "SoshiroKaiju",
+    "created": "2025-05-03T16:25:32.871Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6811cb7ac0a4ec0168e8ed4c",
+          "name": "Cosmoem",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811cae4c0a4ec0168e8e93c",
+          "name": "Cosmog",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67dd6974e2096b41c50faf01",
+          "name": "Giratina ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3d0fee5adf8f1a257a98",
+          "name": "Lunala ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811cf73819c204fd6cdd872",
+          "name": "Guzma",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811d01f819c204fd6cddd25",
+          "name": "Lillie",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67e395dc575eceb838a24b19",
+          "name": "Red",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/night-shift-(51-players)/1/lunala-ex/soshirokaiju/6a3CZ/",
+    "deckType": {
+      "name": "Lunala ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 4",
+    "tournamentNumber": "1",
+    "customTournamentName": "Night Shift (51 Players)",
+    "engines": [
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "6815586aa8be1a989492793e",
+      "title": "FrogEX Weekly Cup #17- 395 Players",
+      "url": "/tournaments/frogex-weekly/17/report/"
+    }
+  },
+  {
+    "author": "IVORIAN",
+    "created": "2025-05-02T23:37:26.083Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6811cae4c0a4ec0168e8e93c",
+          "name": "Cosmog",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67dd6974e2096b41c50faf01",
+          "name": "Giratina ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3d0fee5adf8f1a257a98",
+          "name": "Lunala ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2543",
+          "name": "Mewtwo ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811ca8fc0a4ec0168e8e713",
+          "name": "Tapu Lele",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811d01f819c204fd6cddd25",
+          "name": "Lillie",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811ce7dc0a4ec0168e90349",
+          "name": "Poison Barb",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395dc575eceb838a24b19",
+          "name": "Red",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/frogex-weekly-cup-(395-players)/17/lunala-ex/ivorian/1PdA-/",
+    "deckType": {
+      "name": "Lunala ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "17",
+    "customTournamentName": "FrogEX Weekly Cup (395 Players)",
+    "engines": [
+      {
+        "_id": "67e664284d8678ebca9431bd",
+        "name": "Mewtwo ex"
+      },
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      },
+      {
+        "_id": "68256371c33728d7e47e3686",
+        "name": "Tapu Lele"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "6815586aa8be1a989492793e",
+      "title": "FrogEX Weekly Cup #17- 395 Players",
+      "url": "/tournaments/frogex-weekly/17/report/"
+    }
+  },
+  {
+    "author": "Man__hh",
+    "created": "2025-05-01T19:24:38.205Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6811cae4c0a4ec0168e8e93c",
+          "name": "Cosmog",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67dd6974e2096b41c50faf01",
+          "name": "Giratina ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3d0fee5adf8f1a257a98",
+          "name": "Lunala ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2543",
+          "name": "Mewtwo ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/master-ball/may-2025/lunala-ex/man__hh/TKQEf/",
+    "deckType": {
+      "name": "Lunala ex",
+      "tier": null
+    },
+    "rankedType": {
+      "name": "Master Ball",
+      "shortName": "Master Ball",
+      "icon": "/pkm_img/icons/master-ball-rank.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
+    },
+    "engines": [
+      {
+        "_id": "67e664284d8678ebca9431bd",
+        "name": "Mewtwo ex"
+      },
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      }
+    ],
+    "linkedArticle": null
+  }
+]

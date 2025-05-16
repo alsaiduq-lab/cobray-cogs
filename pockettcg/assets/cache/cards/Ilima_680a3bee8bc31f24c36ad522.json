@@ -1,0 +1,53 @@
+{
+  "_id": "680a3bee8bc31f24c36ad522",
+  "name": "Ilima",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Supporter",
+  "hp": "",
+  "pokemonId": "A3-149",
+  "limitlessId": "A3 149",
+  "rarity": "d-2",
+  "weakness": [],
+  "description": "Put 1 of your Colorless Pokemon that has damage on it into your hand.",
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 74,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6811d767c0a4ec0168e94950",
+      "name": "Ilima",
+      "alternateArt": true,
+      "nameRelease": "2025-04-30T06:00:00.000Z"
+    }
+  ],
+  "abilities": [],
+  "moves": [],
+  "deckTypes": [
+    "Arceus ex Crobat",
+    "Alolan Muk ex",
+    "Rayquaza ex",
+    "Giratina ex Darkrai ex",
+    "Giratina ex Greninja",
+    "Arceus ex"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

@@ -1,0 +1,59 @@
+{
+  "_id": "6811c4a3a93125d205b48cfb",
+  "name": "Charjabug",
+  "energyType": [
+    "Lightning"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "90",
+  "pokemonId": "A3-064",
+  "limitlessId": "A3 64",
+  "rarity": "d-2",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 241,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Vise Grip",
+      "text": "",
+      "energyCost": [
+        "Lightning",
+        null,
+        null,
+        null
+      ],
+      "hp": "30",
+      "_id": "6811c4a3a93125d205b48cfc"
+    }
+  ],
+  "deckTypes": [
+    "Vikavolt"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

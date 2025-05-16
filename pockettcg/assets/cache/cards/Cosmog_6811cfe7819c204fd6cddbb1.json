@@ -1,0 +1,49 @@
+{
+  "_id": "6811cfe7819c204fd6cddbb1",
+  "name": "Cosmog",
+  "energyType": [
+    "Psychic"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "PA-067",
+  "limitlessId": "PA 67",
+  "rarity": "p",
+  "weakness": [
+    "Darkness"
+  ],
+  "retreat": 1,
+  "release": "2025-05-09T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Teleport",
+      "text": "Switch this Pokémon with 1 of your Benched Pokémon.",
+      "energyCost": [
+        "Colorless",
+        null,
+        null
+      ],
+      "_id": "681d9bb1c43c03d36094a0d1"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "672b8e0a77094f5d3556d66f",
+        "type": "Normal Pack",
+        "name": "Promo Pack A Series: Wonder Pick",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "nameRelease": "2025-04-30T06:00:00.000Z"
+}

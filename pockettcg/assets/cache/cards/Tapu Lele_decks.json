@@ -1,0 +1,1343 @@
+[
+  {
+    "author": {
+      "_id": "6806eceff34c0eab9e492a60",
+      "roles": [],
+      "username": "Jacko"
+    },
+    "created": "2025-05-15T10:13:03.202Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6811cfa9c0a4ec0168e90cac",
+          "name": "Froakie",
+          "alternateArt": true,
+          "nameRelease": "2024-10-30T03:00:00.000Z"
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e39846575eceb838a255ea",
+          "name": "Giratina ex",
+          "alternateArt": true,
+          "nameRelease": "2025-03-27T06:00:00.000Z"
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67218212c08874f5ab2e173a",
+          "name": "Greninja",
+          "alternateArt": true,
+          "nameRelease": "2024-10-30T03:00:00.000Z"
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811ba09819c204fd6cd5b34",
+          "name": "Tapu Lele",
+          "alternateArt": true,
+          "nameRelease": "2025-04-30T06:00:00.000Z"
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811cf73819c204fd6cdd872",
+          "name": "Guzma",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e39c4c575eceb838a26c3a",
+          "name": "Pokémon Center Lady",
+          "alternateArt": true,
+          "nameRelease": "2025-03-27T06:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/master-ball/may-2025/giratina-ex-greninja/jacko/q-o4E/",
+    "deckType": {
+      "name": "Giratina ex Greninja",
+      "tier": null
+    },
+    "rankedType": {
+      "name": "Master Ball",
+      "shortName": "Master Ball",
+      "icon": "/pkm_img/icons/master-ball-rank.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
+    },
+    "engines": [
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "??? | lincedorado",
+    "created": "2025-05-15T10:02:25.067Z",
+    "main": [
+      {
+        "card": {
+          "_id": "67dd6974e2096b41c50faf01",
+          "name": "Giratina ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2541",
+          "name": "Jynx",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2543",
+          "name": "Mewtwo ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811ca8fc0a4ec0168e8e713",
+          "name": "Tapu Lele",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799a5e0169202e5d7e614b9",
+          "name": "Dawn",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811cf73819c204fd6cdd872",
+          "name": "Guzma",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395a2575eceb838a249c9",
+          "name": "Pokémon Center Lady",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395dc575eceb838a24b19",
+          "name": "Red",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181abc08874f5ab2e16fb",
+          "name": "Red Card",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/imperium's-weekly-tournament-(193-players)/7/giratina-ex/-|-lincedorado/OfD0W/",
+    "deckType": {
+      "name": "Giratina ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "7",
+    "customTournamentName": "IMPERIUM'S Weekly Tournament (193 Players)",
+    "engines": [
+      {
+        "_id": "67e664284d8678ebca9431bd",
+        "name": "Mewtwo ex"
+      },
+      {
+        "_id": "68256371c33728d7e47e3686",
+        "name": "Tapu Lele"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "6825bbbac33728d7e480b3ca",
+      "title": "PTCGP 50-200 Player Event Roundup #39",
+      "url": "/tournaments/tcgp-weekly-results/39/report/"
+    }
+  },
+  {
+    "author": "norf31",
+    "created": "2025-05-15T10:01:34.121Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2519",
+          "name": "Froakie",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67dd6974e2096b41c50faf01",
+          "name": "Giratina ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e251b",
+          "name": "Greninja",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811ca8fc0a4ec0168e8e713",
+          "name": "Tapu Lele",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395a2575eceb838a249c9",
+          "name": "Pokémon Center Lady",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/imperium's-weekly-tournament-(193-players)/7/giratina-ex-greninja/norf31/akWo9/",
+    "deckType": {
+      "name": "Giratina ex Greninja",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "7",
+    "customTournamentName": "IMPERIUM'S Weekly Tournament (193 Players)",
+    "engines": [
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      },
+      {
+        "_id": "68256371c33728d7e47e3686",
+        "name": "Tapu Lele"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "6825bbbac33728d7e480b3ca",
+      "title": "PTCGP 50-200 Player Event Roundup #39",
+      "url": "/tournaments/tcgp-weekly-results/39/report/"
+    }
+  },
+  {
+    "author": "SG| KenriW",
+    "created": "2025-05-15T10:00:29.722Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2519",
+          "name": "Froakie",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67dd6974e2096b41c50faf01",
+          "name": "Giratina ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e251b",
+          "name": "Greninja",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811ca8fc0a4ec0168e8e713",
+          "name": "Tapu Lele",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395a2575eceb838a249c9",
+          "name": "Pokémon Center Lady",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/imperium's-weekly-tournament-(193-players)/7/giratina-ex-greninja/sg|-kenriw/GTg65/",
+    "deckType": {
+      "name": "Giratina ex Greninja",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "7",
+    "customTournamentName": "IMPERIUM'S Weekly Tournament (193 Players)",
+    "engines": [
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      },
+      {
+        "_id": "68256371c33728d7e47e3686",
+        "name": "Tapu Lele"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "6825bbbac33728d7e480b3ca",
+      "title": "PTCGP 50-200 Player Event Roundup #39",
+      "url": "/tournaments/tcgp-weekly-results/39/report/"
+    }
+  },
+  {
+    "author": "FrogEX | painpeko",
+    "created": "2025-05-15T09:59:19.870Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2519",
+          "name": "Froakie",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67dd6974e2096b41c50faf01",
+          "name": "Giratina ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e251b",
+          "name": "Greninja",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811ca8fc0a4ec0168e8e713",
+          "name": "Tapu Lele",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395a2575eceb838a249c9",
+          "name": "Pokémon Center Lady",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/imperium's-weekly-tournament-(193-players)/7/giratina-ex-greninja/frogex-|-painpeko/Smft7/",
+    "deckType": {
+      "name": "Giratina ex Greninja",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "7",
+    "customTournamentName": "IMPERIUM'S Weekly Tournament (193 Players)",
+    "engines": [
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      },
+      {
+        "_id": "68256371c33728d7e47e3686",
+        "name": "Tapu Lele"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "6825bbbac33728d7e480b3ca",
+      "title": "PTCGP 50-200 Player Event Roundup #39",
+      "url": "/tournaments/tcgp-weekly-results/39/report/"
+    }
+  },
+  {
+    "author": "Shubham ",
+    "created": "2025-05-15T09:58:52.151Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2519",
+          "name": "Froakie",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67dd6974e2096b41c50faf01",
+          "name": "Giratina ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e251b",
+          "name": "Greninja",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811ca8fc0a4ec0168e8e713",
+          "name": "Tapu Lele",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395a2575eceb838a249c9",
+          "name": "Pokémon Center Lady",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/imperium's-weekly-tournament-(193-players)/7/giratina-ex-greninja/shubham-/DeZee/",
+    "deckType": {
+      "name": "Giratina ex Greninja",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "7",
+    "customTournamentName": "IMPERIUM'S Weekly Tournament (193 Players)",
+    "engines": [
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      },
+      {
+        "_id": "68256371c33728d7e47e3686",
+        "name": "Tapu Lele"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "6825bbbac33728d7e480b3ca",
+      "title": "PTCGP 50-200 Player Event Roundup #39",
+      "url": "/tournaments/tcgp-weekly-results/39/report/"
+    }
+  },
+  {
+    "author": "sahbrant1",
+    "created": "2025-05-15T09:58:41.295Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2519",
+          "name": "Froakie",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67dd6974e2096b41c50faf01",
+          "name": "Giratina ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e251b",
+          "name": "Greninja",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811ca8fc0a4ec0168e8e713",
+          "name": "Tapu Lele",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395a2575eceb838a249c9",
+          "name": "Pokémon Center Lady",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/imperium's-weekly-tournament-(193-players)/7/giratina-ex-greninja/sahbrant1/JQi8P/",
+    "deckType": {
+      "name": "Giratina ex Greninja",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "7",
+    "customTournamentName": "IMPERIUM'S Weekly Tournament (193 Players)",
+    "engines": [
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      },
+      {
+        "_id": "68256371c33728d7e47e3686",
+        "name": "Tapu Lele"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "6825bbbac33728d7e480b3ca",
+      "title": "PTCGP 50-200 Player Event Roundup #39",
+      "url": "/tournaments/tcgp-weekly-results/39/report/"
+    }
+  },
+  {
+    "author": "gustawong",
+    "created": "2025-05-15T09:58:12.398Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2519",
+          "name": "Froakie",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e251a",
+          "name": "Frogadier",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67dd6974e2096b41c50faf01",
+          "name": "Giratina ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e251b",
+          "name": "Greninja",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811ca8fc0a4ec0168e8e713",
+          "name": "Tapu Lele",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395a2575eceb838a249c9",
+          "name": "Pokémon Center Lady",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/imperium's-weekly-tournament-(193-players)/7/giratina-ex-greninja/gustawong/gOLu1/",
+    "deckType": {
+      "name": "Giratina ex Greninja",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "7",
+    "customTournamentName": "IMPERIUM'S Weekly Tournament (193 Players)",
+    "engines": [
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      },
+      {
+        "_id": "68256371c33728d7e47e3686",
+        "name": "Tapu Lele"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "6825bbbac33728d7e480b3ca",
+      "title": "PTCGP 50-200 Player Event Roundup #39",
+      "url": "/tournaments/tcgp-weekly-results/39/report/"
+    }
+  },
+  {
+    "author": "FrogEX | Numatinale",
+    "created": "2025-05-15T09:58:01.023Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2519",
+          "name": "Froakie",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67dd6974e2096b41c50faf01",
+          "name": "Giratina ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e251b",
+          "name": "Greninja",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811ca8fc0a4ec0168e8e713",
+          "name": "Tapu Lele",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395a2575eceb838a249c9",
+          "name": "Pokémon Center Lady",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/imperium's-weekly-tournament-(193-players)/7/giratina-ex-greninja/frogex-|-numatinale/akGCE/",
+    "deckType": {
+      "name": "Giratina ex Greninja",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "7",
+    "customTournamentName": "IMPERIUM'S Weekly Tournament (193 Players)",
+    "engines": [
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      },
+      {
+        "_id": "68256371c33728d7e47e3686",
+        "name": "Tapu Lele"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "6825bbbac33728d7e480b3ca",
+      "title": "PTCGP 50-200 Player Event Roundup #39",
+      "url": "/tournaments/tcgp-weekly-results/39/report/"
+    }
+  },
+  {
+    "author": "sostxt",
+    "created": "2025-05-15T09:47:04.271Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2519",
+          "name": "Froakie",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67dd6974e2096b41c50faf01",
+          "name": "Giratina ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e251b",
+          "name": "Greninja",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811ca8fc0a4ec0168e8e713",
+          "name": "Tapu Lele",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395a2575eceb838a249c9",
+          "name": "Pokémon Center Lady",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/pocket-lagoon-cup-(95-players)/2/giratina-ex-greninja/sostxt/WKBil/",
+    "deckType": {
+      "name": "Giratina ex Greninja",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "2",
+    "customTournamentName": "Pocket Lagoon Cup (95 Players)",
+    "engines": [
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      },
+      {
+        "_id": "68256371c33728d7e47e3686",
+        "name": "Tapu Lele"
+      }
+    ],
+    "linkedArticle": null
+  }
+]

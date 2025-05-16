@@ -1,0 +1,47 @@
+{
+  "_id": "680a3af6ee5adf8f1a256af5",
+  "name": "Litten",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A3-031",
+  "limitlessId": "A3 31",
+  "rarity": "d-1",
+  "weakness": [
+    "Water"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 52,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [],
+  "deckTypes": [
+    "Charizard ex",
+    "Incineroar ex"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

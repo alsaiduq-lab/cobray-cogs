@@ -1,0 +1,273 @@
+[
+  {
+    "author": {
+      "_id": "68072aa40d35e03837479aff",
+      "roles": [],
+      "username": "Ω Κεραυνός"
+    },
+    "created": "2025-05-09T22:24:18.437Z",
+    "main": [
+      {
+        "card": {
+          "_id": "680a3b2eee5adf8f1a256d1b",
+          "name": "Alolan Raichu ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811c4ebc0a4ec0168e8c1d1",
+          "name": "Oricorio",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675d87c8d483a36e25dfddb0",
+          "name": "Pikachu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811b928c0a4ec0168e883f1",
+          "name": "Togedemaru",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811cf73819c204fd6cdd872",
+          "name": "Guzma",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395a2575eceb838a249c9",
+          "name": "Pokémon Center Lady",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395dc575eceb838a24b19",
+          "name": "Red",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "680a3ca4ee5adf8f1a2577c1",
+          "name": "Sophocles",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/5-winstreak/may-2025/alolan-raichu-ex/ω-κεραυνός/-OVEG/",
+    "deckType": {
+      "name": "Alolan Raichu ex",
+      "tier": null
+    },
+    "rankedType": {
+      "name": "5+ Winstreak",
+      "shortName": "Winstreak",
+      "icon": "/img/tournaments/logos/Spicy_Wins.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
+    },
+    "engines": [
+      {
+        "_id": "6814352d353b3af3a08c7ffc",
+        "name": "Alolan Raichu ex"
+      },
+      {
+        "_id": "68256386c33728d7e47e3793",
+        "name": "Oricorio"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": {
+      "_id": "67a9157865fefc47c800d23b",
+      "roles": [],
+      "username": "ball.halla"
+    },
+    "created": "2025-05-03T04:02:46.802Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799c283f06a47c6afdf9450",
+          "name": "Luxio",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799c2cc0c64508adf1e7fd7",
+          "name": "Luxray",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811c4ebc0a4ec0168e8c1d1",
+          "name": "Oricorio",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799c265f06a47c6afdf93e0",
+          "name": "Shinx",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811b928c0a4ec0168e883f1",
+          "name": "Togedemaru",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799a6110c64508adf1df73b",
+          "name": "Mars",
+          "alternateArt": true,
+          "nameRelease": "2025-01-30T06:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3ca4ee5adf8f1a2577c1",
+          "name": "Sophocles",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bdd6169202e5d7e68c71",
+          "name": "Volkner",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/5-winstreak/may-2025/luxray/ball.halla/IwZVD/",
+    "deckType": {
+      "name": "Luxray",
+      "tier": null
+    },
+    "rankedType": {
+      "name": "5+ Winstreak",
+      "shortName": "Winstreak",
+      "icon": "/img/tournaments/logos/Spicy_Wins.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
+    },
+    "engines": [
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      },
+      {
+        "_id": "68256386c33728d7e47e3793",
+        "name": "Oricorio"
+      }
+    ],
+    "linkedArticle": null
+  }
+]

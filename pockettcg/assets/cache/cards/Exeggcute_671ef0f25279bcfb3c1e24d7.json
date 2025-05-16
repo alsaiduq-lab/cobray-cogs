@@ -45,7 +45,15 @@
   "weakness": [
     "Fire"
   ],
-  "popRank": 20,
+  "popRank": 96,
   "artVariants": [],
-  "limitlessId": "A1 21"
+  "limitlessId": "A1 21",
+  "deckTypes": [
+    "Leafeon ex",
+    "Arceus ex",
+    "Meowscarada",
+    "Exeggutor ex",
+    "Tsareena",
+    "Decidueye ex"
+  ]
 }

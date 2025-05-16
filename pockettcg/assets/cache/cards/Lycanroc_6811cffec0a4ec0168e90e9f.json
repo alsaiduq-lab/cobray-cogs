@@ -1,0 +1,52 @@
+{
+  "_id": "6811cffec0a4ec0168e90e9f",
+  "name": "Lycanroc",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "100",
+  "pokemonId": "PA-068",
+  "limitlessId": "PA 68",
+  "rarity": "p",
+  "weakness": [
+    "Grass"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-05-09T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Crunch",
+      "text": "Flip a coin. If heads, discard a random Energy from your opponent’s Active Pokémon.",
+      "energyCost": [
+        "Fighting",
+        "Fighting",
+        "Colorless",
+        null
+      ],
+      "hp": "80",
+      "_id": "681d9bca8ffb0ca86f0fa011"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "672b8e0a77094f5d3556d66f",
+        "type": "Normal Pack",
+        "name": "Promo Pack A Series: Wonder Pick",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "nameRelease": "2025-04-30T06:00:00.000Z"
+}

@@ -1,0 +1,52 @@
+{
+  "_id": "6811cf94819c204fd6cdd956",
+  "name": "Farfetch'd",
+  "energyType": [
+    "Colorless"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "PA-062",
+  "limitlessId": "P-A 62",
+  "rarity": "p",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 1,
+  "release": "2025-04-30T06:30:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Leek Slap",
+      "energyCost": [
+        "Colorless"
+      ],
+      "hp": "40",
+      "_id": "6811ef07a93125d205b5d378"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811e166819c204fd6ce6514",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Promo Pack A Series: Vol. 7",
+        "linkedArticle": {
+          "_id": "6811dddcc0a4ec0168e97a9b",
+          "title": "Rayquaza ex Drop Event",
+          "url": "/events/2025/april/rayquaza-ex-drop/",
+          "image": "/pkm_img/Events/2025/April/rayquaza-event.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

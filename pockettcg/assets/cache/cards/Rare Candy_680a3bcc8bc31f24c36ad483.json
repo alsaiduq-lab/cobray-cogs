@@ -1,0 +1,100 @@
+{
+  "_id": "680a3bcc8bc31f24c36ad483",
+  "name": "Rare Candy",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Item",
+  "hp": "",
+  "pokemonId": "A3-144",
+  "limitlessId": "A3 144",
+  "rarity": "d-2",
+  "weakness": [],
+  "description": "Choose 1 of your Basic Pokemon in play. If you have a Stage 2 card in your hand that evolves from that Pokemon, put that card onto the Basic Pokemon to evolve it, skipping the Stage 1. You can't use this card during your first turn or on a Basic Pokemon that was put into play this turn.",
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 7,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [],
+  "deckTypes": [
+    "Crabominable ex Greninja",
+    "Decidueye ex",
+    "Arceus ex Crobat",
+    "Lucario",
+    "Luxray",
+    "Meowscarada",
+    "Charizard ex",
+    "Incineroar ex",
+    "Beedrill ex",
+    "Solgaleo ex",
+    "Gyarados ex",
+    "Darkrai ex Greninja",
+    "Solgaleo ex Skarmory",
+    "Charizard ex: Genetic Apex",
+    "Lunala ex",
+    "Tsareena",
+    "Greninja",
+    "Lycanroc",
+    "Rayquaza ex",
+    "Mewtwo ex",
+    "Dhelmise ex",
+    "Giratina ex Greninja",
+    "Leafeon ex Celebi ex",
+    "Gallade ex",
+    "Beedrill",
+    "Rampardos",
+    "Garchomp ex",
+    "Aerodactyl ex",
+    "Infernape ex",
+    "Skarmory",
+    "Crabominable ex",
+    "Gengar ex",
+    "Giratina ex Darkrai ex",
+    "Porygon",
+    "Vikavolt",
+    "Giratina ex",
+    "Blastoise ex",
+    "Arceus ex",
+    "Celebi ex  Serperior",
+    "Togekiss",
+    "Dragonite",
+    "Garchomp",
+    "Alakazam",
+    "Palkia ex Greninja"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd6ca93125d205b45fa7",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Solgaleo",
+        "linkedArticle": {
+          "_id": "6811de68c0a4ec0168e97e92",
+          "title": "Celestial Guardians: Solgaleo",
+          "url": "/sets/celestial-guardians-solgaleo/",
+          "image": "/pkm_img/Sets/cgsolgaleo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    },
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

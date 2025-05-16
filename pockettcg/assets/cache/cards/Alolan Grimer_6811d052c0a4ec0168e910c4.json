@@ -1,0 +1,52 @@
+{
+  "_id": "6811d052c0a4ec0168e910c4",
+  "name": "Alolan Grimer",
+  "energyType": [
+    "Darkness"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "70",
+  "pokemonId": "PA-072",
+  "limitlessId": "PA 72",
+  "rarity": "p",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-05-16T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Poison Gas",
+      "text": "Your opponent’s Active Pokémon is now Poisoned.\n",
+      "energyCost": [
+        "Darkness",
+        null,
+        null,
+        null
+      ],
+      "_id": "6826e84cc33728d7e489625e"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6826dcc0c2789226bc8c72be",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Promo Pack A Series: Vol. 8",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "nameRelease": "2025-04-30T06:00:00.000Z"
+}

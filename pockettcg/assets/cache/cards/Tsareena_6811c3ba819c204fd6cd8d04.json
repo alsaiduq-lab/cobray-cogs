@@ -1,0 +1,66 @@
+{
+  "_id": "6811c3ba819c204fd6cd8d04",
+  "name": "Tsareena",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "130",
+  "pokemonId": "A3-020",
+  "limitlessId": "A3 20",
+  "rarity": "d-3",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 2,
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 101,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6811b9b2819c204fd6cd58f1",
+      "name": "Tsareena",
+      "alternateArt": true,
+      "nameRelease": "2025-04-30T06:00:00.000Z"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Three Kick Combo",
+      "text": "Flip 3 coins. This attack does 50 damage for each heads.",
+      "energyCost": [
+        "Grass",
+        null,
+        null
+      ],
+      "hp": "50x",
+      "_id": "6811ded4c0a4ec0168e9824b"
+    }
+  ],
+  "deckTypes": [
+    "Meowscarada",
+    "Tsareena",
+    "Beedrill ex",
+    "Decidueye ex"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd6ca93125d205b45fa7",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Solgaleo",
+        "linkedArticle": {
+          "_id": "6811de68c0a4ec0168e97e92",
+          "title": "Celestial Guardians: Solgaleo",
+          "url": "/sets/celestial-guardians-solgaleo/",
+          "image": "/pkm_img/Sets/cgsolgaleo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ]
+}

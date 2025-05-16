@@ -1,0 +1,54 @@
+{
+  "_id": "6811cf78a93125d205b4d5b9",
+  "name": "Exeggcute",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "50",
+  "pokemonId": "PA-060",
+  "limitlessId": "P-A 60",
+  "rarity": "p",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Growth Spurt",
+      "text": "Take a Grass Energy from your Energy Zone and attach it to this Pokémon.",
+      "energyCost": [
+        "Colorless"
+      ],
+      "_id": "6811ef30a93125d205b5d604"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811e166819c204fd6ce6514",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Promo Pack A Series: Vol. 7",
+        "linkedArticle": {
+          "_id": "6811dddcc0a4ec0168e97a9b",
+          "title": "Rayquaza ex Drop Event",
+          "url": "/events/2025/april/rayquaza-ex-drop/",
+          "image": "/pkm_img/Events/2025/April/rayquaza-event.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

@@ -1,0 +1,62 @@
+{
+  "_id": "6811c9a4a93125d205b4ae53",
+  "name": "Sandygast",
+  "energyType": [
+    "Psychic"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "80",
+  "pokemonId": "A3-081",
+  "limitlessId": "A3 81",
+  "rarity": "d-1",
+  "weakness": [
+    "Darkness"
+  ],
+  "retreat": 2,
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6811d400c0a4ec0168e92c7e",
+      "name": "Sandygast",
+      "alternateArt": true,
+      "nameRelease": "2025-04-30T06:00:00.000Z"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Vibration",
+      "text": "",
+      "energyCost": [
+        "Psychic",
+        "Colorless",
+        null
+      ],
+      "hp": "30",
+      "_id": "6811d40c819c204fd6cdfa99"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd6ca93125d205b45fa7",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Solgaleo",
+        "linkedArticle": {
+          "_id": "6811de68c0a4ec0168e97e92",
+          "title": "Celestial Guardians: Solgaleo",
+          "url": "/sets/celestial-guardians-solgaleo/",
+          "image": "/pkm_img/Sets/cgsolgaleo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

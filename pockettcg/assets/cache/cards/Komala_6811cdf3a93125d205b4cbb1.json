@@ -1,0 +1,65 @@
+{
+  "_id": "6811cdf3a93125d205b4cbb1",
+  "name": "Komala",
+  "energyType": [
+    "Colorless"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "90",
+  "pokemonId": "A3-141",
+  "limitlessId": "A3 141",
+  "rarity": "d-2",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 99,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Comatose",
+      "text": "As long as this Pokémon is in the Active Spot, whenever you attach an Energy from your Energy Zone to it, it is now Asleep.",
+      "_id": "6811cdf3a93125d205b4cbb2"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Rolling Tackle",
+      "text": "",
+      "energyCost": [
+        "Colorless",
+        "Colorless",
+        null,
+        null
+      ],
+      "hp": "70",
+      "_id": "6811cdf3a93125d205b4cbb3"
+    }
+  ],
+  "deckTypes": [
+    "Giratina ex Darkrai ex"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd6ca93125d205b45fa7",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Solgaleo",
+        "linkedArticle": {
+          "_id": "6811de68c0a4ec0168e97e92",
+          "title": "Celestial Guardians: Solgaleo",
+          "url": "/sets/celestial-guardians-solgaleo/",
+          "image": "/pkm_img/Sets/cgsolgaleo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

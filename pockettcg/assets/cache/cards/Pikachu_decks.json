@@ -1,47 +1,40 @@
 [
   {
     "author": {
-      "_id": "67a8fbad65fefc47c8d45255",
+      "_id": "68249c4be830b9912e15bbca",
       "roles": [],
-      "username": "XionAjani"
+      "username": "Tiagx"
     },
-    "created": "2025-02-23T03:37:35.632Z",
+    "created": "2025-05-14T14:20:12.468Z",
     "main": [
       {
         "card": {
-          "_id": "67611a9ddb7f64d578b8a81d",
-          "name": "Electabuzz",
+          "_id": "680a3b2eee5adf8f1a256d1b",
+          "name": "Alolan Raichu ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811c4ebc0a4ec0168e8c1d1",
+          "name": "Oricorio",
           "alternateArt": false
         },
         "amount": 1
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e2523",
-          "name": "Magnemite",
-          "alternateArt": false
+          "_id": "67e36aa979f0ebec037fe8ae",
+          "name": "Pachirisu",
+          "alternateArt": true,
+          "nameRelease": "2025-03-27T06:00:00.000Z"
         },
         "amount": 2
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e2524",
-          "name": "Magneton",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "6799b5bff06a47c6afdf5344",
-          "name": "Magnezone",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2520",
+          "_id": "67c159a07103a0f7aed75450",
           "name": "Pikachu",
           "alternateArt": false
         },
@@ -49,32 +42,32 @@
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e2521",
-          "name": "Raichu",
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
           "alternateArt": false
         },
         "amount": 2
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e25a4",
-          "name": "Lt. Surge",
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
           "alternateArt": false
         },
         "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811ce7dc0a4ec0168e90349",
+          "name": "Poison Barb",
+          "alternateArt": false
+        },
+        "amount": 1
       },
       {
         "card": {
           "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poke Ball",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "6799bd10169202e5d7e6885f",
-          "name": "Pokémon Communication",
+          "name": "Poké Ball",
           "alternateArt": false
         },
         "amount": 2
@@ -89,17 +82,33 @@
       },
       {
         "card": {
+          "_id": "67e395dc575eceb838a24b19",
+          "name": "Red",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
           "_id": "67216c8619290cd899acfc25",
           "name": "X Speed",
           "alternateArt": false
         },
-        "amount": 1
+        "amount": 2
       }
     ],
     "side": [],
-    "url": "/5-winstreak/february-2025/pikachu-ex/xionajani/r7hTK/",
+    "url": "/5-winstreak/may-2025/alolan-raichu-ex/tiagx/lycS3/",
     "deckType": {
-      "name": "Pikachu ex",
+      "name": "Alolan Raichu ex",
       "tier": null
     },
     "rankedType": {
@@ -112,53 +121,100 @@
     },
     "engines": [
       {
-        "_id": "67ab896225c7da23a21a6c9f",
-        "name": "Magnezone"
+        "_id": "6814352d353b3af3a08c7ffc",
+        "name": "Alolan Raichu ex"
+      },
+      {
+        "_id": "68256386c33728d7e47e3793",
+        "name": "Oricorio"
       }
     ],
-    "linkedArticle": null,
-    "hasNotes": true
+    "linkedArticle": null
   },
   {
-    "author": "King_Bumi",
-    "created": "2025-02-15T19:50:01.343Z",
+    "author": {
+      "_id": "62cf28b644fb329581520e5a",
+      "roles": [],
+      "username": "Stis"
+    },
+    "created": "2025-05-12T20:06:56.999Z",
     "main": [
       {
         "card": {
-          "_id": "679249c6eb08086be85411ca",
-          "name": "Pachirisu ex",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e252b",
-          "name": "Blitzle",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e252c",
-          "name": "Zebstrika",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2521",
-          "name": "Raichu",
+          "_id": "680a3b2eee5adf8f1a256d1b",
+          "name": "Alolan Raichu ex",
           "alternateArt": false
         },
         "amount": 1
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e2520",
+          "_id": "6811c80ca93125d205b4a35b",
+          "name": "Banette",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3b4a8bc31f24c36acfbb",
+          "name": "Oricorio",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811c37aa93125d205b48409",
           "name": "Pikachu",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811c79e819c204fd6cda550",
+          "name": "Shuppet",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811ca8fc0a4ec0168e8e713",
+          "name": "Tapu Lele",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
           "alternateArt": false
         },
         "amount": 1
@@ -173,24 +229,16 @@
       },
       {
         "card": {
-          "_id": "6798ea0c6950657553dc675d",
-          "name": "Cyrus",
+          "_id": "672181abc08874f5ab2e16fb",
+          "name": "Red Card",
           "alternateArt": false
         },
         "amount": 1
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e25a1",
-          "name": "Giovanni",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poke Ball",
+          "_id": "67e395ec575eceb838a24b54",
+          "name": "Team Rocket Grunt",
           "alternateArt": false
         },
         "amount": 2
@@ -202,11 +250,220 @@
           "alternateArt": false
         },
         "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/master-ball/may-2025/alolan-raichu-ex/stis/MR4xZ/",
+    "deckType": {
+      "name": "Alolan Raichu ex",
+      "tier": null
+    },
+    "rankedType": {
+      "name": "Master Ball",
+      "shortName": "Master Ball",
+      "icon": "/pkm_img/icons/master-ball-rank.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
+    },
+    "engines": [
+      {
+        "_id": "6814352d353b3af3a08c7ffc",
+        "name": "Alolan Raichu ex"
+      },
+      {
+        "_id": "68256371c33728d7e47e3686",
+        "name": "Tapu Lele"
+      },
+      {
+        "_id": "68256386c33728d7e47e3793",
+        "name": "Oricorio"
+      }
+    ],
+    "linkedArticle": null,
+    "hasNotes": true
+  },
+  {
+    "author": "MagnaCarta1215",
+    "created": "2025-05-10T14:58:05.628Z",
+    "main": [
+      {
+        "card": {
+          "_id": "680a3b2eee5adf8f1a256d1b",
+          "name": "Alolan Raichu ex",
+          "alternateArt": false
+        },
+        "amount": 2
       },
       {
         "card": {
-          "_id": "6798e9cadbba2e0d2bb5f6a4",
-          "name": "Rocky Helmet",
+          "_id": "6799b628f06a47c6afdf561c",
+          "name": "Manaphy",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c1569ce06d5e18c00aa16b",
+          "name": "Origin Forme Palkia",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b5ddf06a47c6afdf53ce",
+          "name": "Palkia ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811c37aa93125d205b48409",
+          "name": "Pikachu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67c07d5a52e93386721eec30",
+          "name": "Irida",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e259e",
+          "name": "Misty",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395dc575eceb838a24b19",
+          "name": "Red",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/pocket-lagoon-cup-(137-players)/1/alolan-raichu-ex/magnacarta1215/hfvxA/",
+    "deckType": {
+      "name": "Alolan Raichu ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "1",
+    "customTournamentName": "Pocket Lagoon Cup (137 Players)",
+    "engines": [
+      {
+        "_id": "67abc55888624a4a297bbd6a",
+        "name": "Manaphy"
+      },
+      {
+        "_id": "67c22c6e8046c4a97275f8c7",
+        "name": "Palkia"
+      },
+      {
+        "_id": "6814352d353b3af3a08c7ffc",
+        "name": "Alolan Raichu ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "68135ca1a93125d205c1b0d2",
+      "title": "PTCGP 50-200 Player Event Roundup #38",
+      "url": "/tournaments/tcgp-weekly-results/38/report/"
+    }
+  },
+  {
+    "author": {
+      "_id": "68072aa40d35e03837479aff",
+      "roles": [],
+      "username": "Ω Κεραυνός"
+    },
+    "created": "2025-05-09T22:24:18.437Z",
+    "main": [
+      {
+        "card": {
+          "_id": "680a3b2eee5adf8f1a256d1b",
+          "name": "Alolan Raichu ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811c4ebc0a4ec0168e8c1d1",
+          "name": "Oricorio",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675d87c8d483a36e25dfddb0",
+          "name": "Pikachu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811b928c0a4ec0168e883f1",
+          "name": "Togedemaru",
           "alternateArt": false
         },
         "amount": 2
@@ -221,84 +478,32 @@
       },
       {
         "card": {
-          "_id": "6799bd10169202e5d7e6885f",
-          "name": "Pokémon Communication",
+          "_id": "6811cf73819c204fd6cdd872",
+          "name": "Guzma",
           "alternateArt": false
         },
         "amount": 1
-      }
-    ],
-    "side": [],
-    "url": "/community-tournaments/pocket-turtle-weekly-(212-players)/12/pachirisu-ex/king_bumi/73fdc/",
-    "deckType": {
-      "name": "Pachirisu ex",
-      "tier": null
-    },
-    "tournamentType": {
-      "name": "Community Tournaments",
-      "shortName": "Community Tournaments",
-      "icon": "/pkm_img/image.webp",
-      "enumSuffix": "#",
-      "statsWeight": null
-    },
-    "tournamentPlacement": "Top 32",
-    "tournamentNumber": "12",
-    "customTournamentName": "Pocket Turtle Weekly (212 Players)",
-    "engines": [],
-    "linkedArticle": {
-      "_id": "67b0f0efb6e23001fffa5f11",
-      "title": "Pocket Turtle Weekly #12 - 212 Players",
-      "url": "/tournaments/turtle-weekly/12/report/"
-    }
-  },
-  {
-    "author": "Freddycrafter10",
-    "created": "2025-02-11T00:33:22.430Z",
-    "main": [
+      },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e2522",
-          "name": "Pikachu ex",
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
           "alternateArt": false
         },
         "amount": 2
       },
       {
         "card": {
-          "_id": "679249c6eb08086be85411ca",
-          "name": "Pachirisu ex",
+          "_id": "67e395a2575eceb838a249c9",
+          "name": "Pokémon Center Lady",
           "alternateArt": false
         },
         "amount": 1
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e252a",
-          "name": "Zapdos ex",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2521",
-          "name": "Raichu",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2520",
-          "name": "Pikachu",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2529",
-          "name": "Zapdos",
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
           "alternateArt": false
         },
         "amount": 1
@@ -313,8 +518,8 @@
       },
       {
         "card": {
-          "_id": "6798ea0c6950657553dc675d",
-          "name": "Cyrus",
+          "_id": "67e395dc575eceb838a24b19",
+          "name": "Red",
           "alternateArt": false
         },
         "amount": 1
@@ -329,8 +534,99 @@
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e25a4",
-          "name": "Lt. Surge",
+          "_id": "680a3ca4ee5adf8f1a2577c1",
+          "name": "Sophocles",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/5-winstreak/may-2025/alolan-raichu-ex/ω-κεραυνός/-OVEG/",
+    "deckType": {
+      "name": "Alolan Raichu ex",
+      "tier": null
+    },
+    "rankedType": {
+      "name": "5+ Winstreak",
+      "shortName": "Winstreak",
+      "icon": "/img/tournaments/logos/Spicy_Wins.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
+    },
+    "engines": [
+      {
+        "_id": "6814352d353b3af3a08c7ffc",
+        "name": "Alolan Raichu ex"
+      },
+      {
+        "_id": "68256386c33728d7e47e3793",
+        "name": "Oricorio"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": {
+      "_id": "67e3aefaf855667ca228fab7",
+      "roles": [],
+      "username": "[𝙎𝙫𝙆] | Manutan"
+    },
+    "created": "2025-05-09T17:36:24.610Z",
+    "main": [
+      {
+        "card": {
+          "_id": "680a3b2eee5adf8f1a256d1b",
+          "name": "Alolan Raichu ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67dd6974e2096b41c50faf01",
+          "name": "Giratina ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811c4ebc0a4ec0168e8c1d1",
+          "name": "Oricorio",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811c37aa93125d205b48409",
+          "name": "Pikachu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811cf73819c204fd6cdd872",
+          "name": "Guzma",
           "alternateArt": false
         },
         "amount": 1
@@ -338,23 +634,15 @@
       {
         "card": {
           "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poke Ball",
+          "name": "Poké Ball",
           "alternateArt": false
         },
         "amount": 2
       },
       {
         "card": {
-          "_id": "67216c8619290cd899acfc25",
-          "name": "X Speed",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "6798e48fb5fbced301dccc91",
-          "name": "Giant Cape",
+          "_id": "67e395a2575eceb838a249c9",
+          "name": "Pokémon Center Lady",
           "alternateArt": false
         },
         "amount": 1
@@ -373,13 +661,37 @@
           "name": "Potion",
           "alternateArt": false
         },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
         "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181abc08874f5ab2e16fb",
+          "name": "Red Card",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
       }
     ],
     "side": [],
-    "url": "/community-tournaments/pokémon-pocket-kt-challenge-(286-players)/1/pikachu-ex/freddycrafter10/FVEQp/",
+    "url": "/community-tournaments/pocket-tour-tournament-(63-players)/18/alolan-raichu-ex/𝙎𝙫𝙆-|-manutan/vCa7i/",
     "deckType": {
-      "name": "Pikachu ex",
+      "name": "Alolan Raichu ex",
       "tier": null
     },
     "tournamentType": {
@@ -389,24 +701,28 @@
       "enumSuffix": "#",
       "statsWeight": null
     },
-    "tournamentPlacement": "Top 32",
-    "tournamentNumber": "1",
-    "customTournamentName": "Pokémon Pocket KT Challenge (286 Players)",
+    "tournamentPlacement": "Top 4",
+    "tournamentNumber": "18",
+    "customTournamentName": "POCKET TOUR TOURNAMENT (63 Players)",
     "engines": [
       {
-        "_id": "67abccce88624a4a297c00d2",
-        "name": "Pachirisu ex"
+        "_id": "6814352d353b3af3a08c7ffc",
+        "name": "Alolan Raichu ex"
+      },
+      {
+        "_id": "68256386c33728d7e47e3793",
+        "name": "Oricorio"
       }
     ],
     "linkedArticle": {
-      "_id": "67aa9bd616f2a15a61b85cb6",
-      "title": "Pokémon Pocket KT Challenge #1 - 286 Players",
-      "url": "/tournaments/pocket-kt-challenge/1/report/"
+      "_id": "68135ca1a93125d205c1b0d2",
+      "title": "PTCGP 50-200 Player Event Roundup #38",
+      "url": "/tournaments/tcgp-weekly-results/38/report/"
     }
   },
   {
-    "author": "King_Bumi",
-    "created": "2025-02-09T20:08:53.668Z",
+    "author": "BABA",
+    "created": "2025-03-12T17:09:38.743Z",
     "main": [
       {
         "card": {
@@ -418,40 +734,16 @@
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e252b",
-          "name": "Blitzle",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e252c",
-          "name": "Zebstrika",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2520",
+          "_id": "67c159a07103a0f7aed75450",
           "name": "Pikachu",
           "alternateArt": false
         },
-        "amount": 1
+        "amount": 2
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e2521",
-          "name": "Raichu",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181b7c08874f5ab2e1700",
-          "name": "Professor's Research",
+          "_id": "671ef0f25279bcfb3c1e2522",
+          "name": "Pikachu ex",
           "alternateArt": false
         },
         "amount": 2
@@ -470,23 +762,39 @@
           "name": "Giovanni",
           "alternateArt": false
         },
-        "amount": 1
+        "amount": 2
       },
       {
         "card": {
-          "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poke Ball",
+          "_id": "6799bdfaf06a47c6afdf7d92",
+          "name": "Mars",
           "alternateArt": false
         },
         "amount": 2
       },
       {
         "card": {
-          "_id": "67216c8619290cd899acfc25",
-          "name": "X Speed",
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
           "alternateArt": false
         },
-        "amount": 1
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
       },
       {
         "card": {
@@ -498,8 +806,233 @@
       },
       {
         "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/ロリニキ杯×aikachコラボ大会-(117-players)//pikachu-ex/baba/4UPmd/",
+    "deckType": {
+      "name": "Pikachu ex: Genetic Apex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 4",
+    "tournamentNumber": "",
+    "customTournamentName": "ロリニキ杯×AIKAchコラボ大会 (117 Players)",
+    "engines": [
+      {
+        "_id": "67abccce88624a4a297c00d2",
+        "name": "Pachirisu ex"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "mogamoga",
+    "created": "2025-03-09T02:11:57.108Z",
+    "main": [
+      {
+        "card": {
+          "_id": "67c0591452e93386721e093b",
+          "name": "Arceus ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2520",
+          "name": "Pikachu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c05b7098196ca3f2f5a9b1",
+          "name": "Raichu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b7a50c64508adf1e4bfd",
+          "name": "Rotom",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67c05b2198196ca3f2f5a7d3",
+          "name": "Rotom",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799a5e0169202e5d7e614b9",
+          "name": "Dawn",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
           "_id": "6798e48fb5fbced301dccc91",
           "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/flash-friday-(128-players)/11/arceus-ex/mogamoga/Ge1lR/",
+    "deckType": {
+      "name": "Arceus ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "11",
+    "customTournamentName": "Flash Friday (128 Players)",
+    "engines": [],
+    "linkedArticle": {
+      "_id": "67cc3d4d06d26439adba4343",
+      "title": "PTCGP 50-200 Player Event Roundup #30",
+      "url": "/tournaments/tcgp-weekly-results/30/report/"
+    }
+  },
+  {
+    "author": "JuniorWA",
+    "created": "2025-03-08T13:09:54.437Z",
+    "main": [
+      {
+        "card": {
+          "_id": "67c0591452e93386721e093b",
+          "name": "Arceus ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c159a07103a0f7aed75450",
+          "name": "Pikachu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c05b7098196ca3f2f5a9b1",
+          "name": "Raichu",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b296169202e5d7e650f6",
+          "name": "Shaymin",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c1611ce06d5e18c00aec44",
+          "name": "Celestic Town Elder",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
           "alternateArt": false
         },
         "amount": 2
@@ -511,12 +1044,20 @@
           "alternateArt": false
         },
         "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
       }
     ],
     "side": [],
-    "url": "/community-tournaments/chaos-league-pocket-saturdays-(183-players)/7/pachirisu-ex/king_bumi/hYX7V/",
+    "url": "/community-tournaments/quick-unseen-tournament-(107-players)/19/arceus-ex/juniorwa/QwfI1/",
     "deckType": {
-      "name": "Pachirisu ex",
+      "name": "Arceus ex",
       "tier": null
     },
     "tournamentType": {
@@ -526,20 +1067,44 @@
       "enumSuffix": "#",
       "statsWeight": null
     },
-    "tournamentPlacement": "Top 32",
-    "tournamentNumber": "7",
-    "customTournamentName": "Chaos League Pocket Saturdays (183 Players)",
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "19",
+    "customTournamentName": "Quick Unseen Tournament (107 Players)",
     "engines": [],
     "linkedArticle": {
-      "_id": "67a90782a37ce2a3822fadc5",
-      "title": "PTCGP 50-200 Player Event Roundup #23",
-      "url": "/tournaments/tcgp-weekly-results/23/report/"
+      "_id": "67cc3d4d06d26439adba4343",
+      "title": "PTCGP 50-200 Player Event Roundup #30",
+      "url": "/tournaments/tcgp-weekly-results/30/report/"
     }
   },
   {
-    "author": "Mub Dian",
-    "created": "2025-02-03T19:16:39.161Z",
+    "author": "Bay",
+    "created": "2025-03-07T12:15:38.282Z",
     "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2523",
+          "name": "Magnemite",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2524",
+          "name": "Magneton",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b5bff06a47c6afdf5344",
+          "name": "Magnezone",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
       {
         "card": {
           "_id": "671ef0f25279bcfb3c1e2520",
@@ -554,47 +1119,47 @@
           "name": "Raichu",
           "alternateArt": false
         },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e252b",
-          "name": "Blitzle",
-          "alternateArt": false
-        },
         "amount": 2
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e252c",
-          "name": "Zebstrika",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2522",
-          "name": "Pikachu ex",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2523",
-          "name": "Magnemite",
+          "_id": "6799b7a50c64508adf1e4bfd",
+          "name": "Rotom",
           "alternateArt": false
         },
         "amount": 1
       },
       {
         "card": {
-          "_id": "6799b5bff06a47c6afdf5344",
-          "name": "Magnezone",
+          "_id": "67c160597103a0f7aed784d8",
+          "name": "Shaymin",
           "alternateArt": false
         },
         "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a4",
+          "name": "Lt. Surge",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
       },
       {
         "card": {
@@ -603,14 +1168,6 @@
           "alternateArt": false
         },
         "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a4",
-          "name": "Lt. Surge",
-          "alternateArt": false
-        },
-        "amount": 1
       },
       {
         "card": {
@@ -619,308 +1176,10 @@
           "alternateArt": false
         },
         "amount": 1
-      },
-      {
-        "card": {
-          "_id": "67216c8619290cd899acfc25",
-          "name": "X Speed",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poke Ball",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2524",
-          "name": "Magneton",
-          "alternateArt": false
-        },
-        "amount": 1
       }
     ],
     "side": [],
-    "url": "/community-tournaments/eiichirofamily-ptcgp-cup-test-(280-players)/2/pikachu-ex/mub-dian/WHwkT/",
-    "deckType": {
-      "name": "Pikachu ex",
-      "tier": null
-    },
-    "tournamentType": {
-      "name": "Community Tournaments",
-      "shortName": "Community Tournaments",
-      "icon": "/pkm_img/image.webp",
-      "enumSuffix": "#",
-      "statsWeight": null
-    },
-    "tournamentPlacement": "Top 8",
-    "tournamentNumber": "2",
-    "customTournamentName": "EiichiroFamily PTCGP Cup Test (280 Players)",
-    "engines": [
-      {
-        "_id": "67ab896225c7da23a21a6c9f",
-        "name": "Magnezone"
-      }
-    ],
-    "linkedArticle": {
-      "_id": "67a11a81a9e5da94f8a16082",
-      "title": "EiichiroFamily Pocket Championship #Test 2 - 280 Players",
-      "url": "/tournaments/eiichiro-family-pocket-test/2/report/"
-    }
-  },
-  {
-    "author": "Azmeme",
-    "created": "2025-02-03T17:42:45.049Z",
-    "main": [
-      {
-        "card": {
-          "_id": "67611a9ddb7f64d578b8a81d",
-          "name": "Electabuzz",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "6799c215f06a47c6afdf921c",
-          "name": "Electivire",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2520",
-          "name": "Pikachu",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "675d87c8d483a36e25dfddb0",
-          "name": "Pikachu",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2521",
-          "name": "Raichu",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2522",
-          "name": "Pikachu ex",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "679249c6eb08086be85411ca",
-          "name": "Pachirisu ex",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a1",
-          "name": "Giovanni",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "672181b7c08874f5ab2e1700",
-          "name": "Professor's Research",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a4",
-          "name": "Lt. Surge",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "6799bdd6169202e5d7e68c71",
-          "name": "Volkner",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poke Ball",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "6798e48fb5fbced301dccc91",
-          "name": "Giant Cape",
-          "alternateArt": false
-        },
-        "amount": 2
-      }
-    ],
-    "side": [],
-    "url": "/community-tournaments/space-time-first-impressions-(162-players)//pikachu-ex/azmeme/zKpvj/",
-    "deckType": {
-      "name": "Pikachu ex",
-      "tier": null
-    },
-    "tournamentType": {
-      "name": "Community Tournaments",
-      "shortName": "Community Tournaments",
-      "icon": "/pkm_img/image.webp",
-      "enumSuffix": "#",
-      "statsWeight": null
-    },
-    "tournamentPlacement": "Top 32",
-    "tournamentNumber": "",
-    "customTournamentName": "Space-Time First Impressions (162 Players)",
-    "engines": [
-      {
-        "_id": "67abccce88624a4a297c00d2",
-        "name": "Pachirisu ex"
-      }
-    ],
-    "linkedArticle": {
-      "_id": "679cc20d73dfca02a8689dbb",
-      "title": "PTCGP 50-200 Player Event Roundup #21",
-      "url": "/tournaments/tcgp-weekly-results/21/report/"
-    }
-  },
-  {
-    "author": "bluppy",
-    "created": "2025-01-31T12:26:41.013Z",
-    "main": [
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2521",
-          "name": "Raichu",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2520",
-          "name": "Pikachu",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2523",
-          "name": "Magnemite",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2524",
-          "name": "Magneton",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "6799b5bff06a47c6afdf5344",
-          "name": "Magnezone",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "6799c1c90c64508adf1e7b36",
-          "name": "Electabuzz",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "6799c215f06a47c6afdf921c",
-          "name": "Electivire",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a4",
-          "name": "Lt. Surge",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "672181b7c08874f5ab2e1700",
-          "name": "Professor's Research",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poke Ball",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67216c8619290cd899acfc25",
-          "name": "X Speed",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "6798e48fb5fbced301dccc91",
-          "name": "Giant Cape",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "6799bdd6169202e5d7e68c71",
-          "name": "Volkner",
-          "alternateArt": false
-        },
-        "amount": 1
-      }
-    ],
-    "side": [],
-    "url": "/community-tournaments/gabut-tournament-(52-players)/8/lt.-surge/bluppy/y3s0B/",
+    "url": "/community-tournaments/faster-than-the-light-tournament-(166-players)/6/lt.-surge/bay/DTFmj/",
     "deckType": {
       "name": "Lt. Surge",
       "tier": null
@@ -932,9 +1191,9 @@
       "enumSuffix": "#",
       "statsWeight": null
     },
-    "tournamentPlacement": "Top 8",
-    "tournamentNumber": "8",
-    "customTournamentName": "Gabut Tournament (52 Players)",
+    "tournamentPlacement": "Top 4",
+    "tournamentNumber": "6",
+    "customTournamentName": "FASTER THAN THE LIGHT TOURNAMENT (166 Players)",
     "engines": [
       {
         "_id": "67ab896225c7da23a21a6c9f",
@@ -942,50 +1201,42 @@
       }
     ],
     "linkedArticle": {
-      "_id": "679cc20d73dfca02a8689dbb",
-      "title": "PTCGP 50-200 Player Event Roundup #21",
-      "url": "/tournaments/tcgp-weekly-results/21/report/"
+      "_id": "67c85768c7670e5ceba1d5f3",
+      "title": "PTCGP 50-200 Player Event Roundup #29",
+      "url": "/tournaments/tcgp-weekly-results/29/report/"
     }
   },
   {
-    "author": "SnowXin",
-    "created": "2025-01-30T04:54:15.849Z",
+    "author": "自転と公転さえ…",
+    "created": "2025-03-03T17:46:43.671Z",
     "main": [
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e2522",
-          "name": "Pikachu ex",
+          "_id": "671ef0f25279bcfb3c1e2523",
+          "name": "Magnemite",
           "alternateArt": false
         },
         "amount": 2
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e252a",
-          "name": "Zapdos ex",
+          "_id": "671ef0f25279bcfb3c1e2524",
+          "name": "Magneton",
           "alternateArt": false
         },
-        "amount": 1
+        "amount": 2
       },
       {
         "card": {
-          "_id": "676110a1b864a94749ee5bfd",
-          "name": "Dedenne",
+          "_id": "6799b5bff06a47c6afdf5344",
+          "name": "Magnezone",
           "alternateArt": false
         },
-        "amount": 1
+        "amount": 2
       },
       {
         "card": {
-          "_id": "67611a9ddb7f64d578b8a81d",
-          "name": "Electabuzz",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "675d87c8d483a36e25dfddb0",
+          "_id": "67c159a07103a0f7aed75450",
           "name": "Pikachu",
           "alternateArt": false
         },
@@ -997,15 +1248,15 @@
           "name": "Raichu",
           "alternateArt": false
         },
-        "amount": 1
+        "amount": 2
       },
       {
         "card": {
-          "_id": "67611a5cf9e257245fbb8ee8",
-          "name": "Raichu",
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
           "alternateArt": false
         },
-        "amount": 1
+        "amount": 2
       },
       {
         "card": {
@@ -1017,57 +1268,33 @@
       },
       {
         "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
           "_id": "672181b7c08874f5ab2e1700",
           "name": "Professor's Research",
           "alternateArt": false
         },
         "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a1",
-          "name": "Giovanni",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a3",
-          "name": "Sabrina",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poke Ball",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67216c8619290cd899acfc25",
-          "name": "X Speed",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67216b665d66038af44d6d20",
-          "name": "Potion",
-          "alternateArt": false
-        },
-        "amount": 1
       }
     ],
     "side": [],
-    "url": "/community-tournaments/pocket-league-(194-players)/10/pikachu-ex/snowxin/xWUES/",
+    "url": "/community-tournaments/朝活大会トーナメント-(146-players)/36/magnezone/自転と公転さえ…/RQKZK/",
     "deckType": {
-      "name": "Pikachu ex",
+      "name": "Magnezone",
       "tier": null
     },
     "tournamentType": {
@@ -1078,289 +1305,9 @@
       "statsWeight": null
     },
     "tournamentPlacement": "Top 8",
-    "tournamentNumber": "10",
-    "customTournamentName": "Pocket League (194 Players)",
-    "engines": [],
-    "linkedArticle": {
-      "_id": "679942e3f5d84b3e8fe0dafa",
-      "title": "PTCGP 50-200 Player Event Roundup #20",
-      "url": "/tournaments/tcgp-weekly-results/20/report/"
-    }
-  },
-  {
-    "author": "しゅ",
-    "created": "2025-01-29T00:23:00.000Z",
-    "main": [
-      {
-        "card": {
-          "_id": "675d87c8d483a36e25dfddb0",
-          "name": "Pikachu",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "676110a1b864a94749ee5bfd",
-          "name": "Dedenne",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2521",
-          "name": "Raichu",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2522",
-          "name": "Pikachu ex",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e252b",
-          "name": "Blitzle",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e252c",
-          "name": "Zebstrika",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e252a",
-          "name": "Zapdos ex",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "67611a9ddb7f64d578b8a81d",
-          "name": "Electabuzz",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "67216c8619290cd899acfc25",
-          "name": "X Speed",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67216b665d66038af44d6d20",
-          "name": "Potion",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poke Ball",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "672181b7c08874f5ab2e1700",
-          "name": "Professor's Research",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a1",
-          "name": "Giovanni",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a4",
-          "name": "Lt. Surge",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a3",
-          "name": "Sabrina",
-          "alternateArt": false
-        },
-        "amount": 1
-      }
-    ],
-    "side": [],
-    "url": "/community-tournaments/reihachi-cup-(64-players)/1/pikachu-ex/しゅ/y7v5f/",
-    "deckType": {
-      "name": "Pikachu ex",
-      "tier": null
-    },
-    "tournamentType": {
-      "name": "Community Tournaments",
-      "shortName": "Community Tournaments",
-      "icon": "/pkm_img/image.webp",
-      "enumSuffix": "#",
-      "statsWeight": null
-    },
-    "tournamentPlacement": "2nd Place",
-    "tournamentNumber": "1",
-    "customTournamentName": "Reihachi Cup (64 Players)",
+    "tournamentNumber": "36",
+    "customTournamentName": "朝活大会トーナメント (146 Players)",
     "engines": [],
     "linkedArticle": null
-  },
-  {
-    "author": "poketruc",
-    "created": "2025-01-28T21:34:04.724Z",
-    "main": [
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2522",
-          "name": "Pikachu ex",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e252a",
-          "name": "Zapdos ex",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "67611a9ddb7f64d578b8a81d",
-          "name": "Electabuzz",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2521",
-          "name": "Raichu",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2520",
-          "name": "Pikachu",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a4",
-          "name": "Lt. Surge",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181b7c08874f5ab2e1700",
-          "name": "Professor's Research",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a1",
-          "name": "Giovanni",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a3",
-          "name": "Sabrina",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "675ae6d0e40c3b726073ffa1",
-          "name": "Blue",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "67216c8619290cd899acfc25",
-          "name": "X Speed",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poke Ball",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67216b665d66038af44d6d20",
-          "name": "Potion",
-          "alternateArt": false
-        },
-        "amount": 1
-      }
-    ],
-    "side": [],
-    "url": "/community-tournaments/cdl-pokemon-tcgp---scrim-(166-players)/1/pikachu-ex/poketruc/4BV_u/",
-    "deckType": {
-      "name": "Pikachu ex",
-      "tier": null
-    },
-    "tournamentType": {
-      "name": "Community Tournaments",
-      "shortName": "Community Tournaments",
-      "icon": "/pkm_img/image.webp",
-      "enumSuffix": "#",
-      "statsWeight": null
-    },
-    "tournamentPlacement": "Top 32",
-    "tournamentNumber": "1",
-    "customTournamentName": "CDL Pokemon TCGP - SCRIM (166 Players)",
-    "engines": [],
-    "linkedArticle": {
-      "_id": "679942e3f5d84b3e8fe0dafa",
-      "title": "PTCGP 50-200 Player Event Roundup #20",
-      "url": "/tournaments/tcgp-weekly-results/20/report/"
-    }
   }
 ]

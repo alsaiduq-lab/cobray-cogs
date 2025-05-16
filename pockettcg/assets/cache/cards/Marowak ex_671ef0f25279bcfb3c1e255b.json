@@ -20,7 +20,7 @@
         "Fighting"
       ],
       "hp": "80x",
-      "_id": "679955bb1552ba8d13d76200"
+      "_id": "6811e6faa93125d205b58e15"
     }
   ],
   "obtain": [
@@ -48,12 +48,21 @@
   "weakness": [
     "Grass"
   ],
-  "popRank": 100,
+  "popRank": 1.7976931348623157e+308,
   "artVariants": [
     {
       "_id": "671ef1105279bcfb3c1e25cb",
-      "name": "Marowak ex"
+      "name": "Marowak ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    },
+    {
+      "_id": "6811d87bc0a4ec0168e952ec",
+      "name": "Marowak ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     }
   ],
-  "limitlessId": "A1 153"
+  "limitlessId": "A1 153",
+  "deckTypes": []
 }

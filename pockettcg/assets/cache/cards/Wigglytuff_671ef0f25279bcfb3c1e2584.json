@@ -46,8 +46,13 @@
     "Fighting"
   ],
   "release": "2024-10-30T03:00:00.000Z",
-  "popRank": 1.7976931348623157e+308,
+  "popRank": 128,
   "artVariants": [],
   "limitlessId": "A1 194",
-  "deckTypes": []
+  "deckTypes": [
+    "Meowscarada",
+    "Greninja",
+    "Pikachu ex",
+    "Arceus ex Dialga ex"
+  ]
 }

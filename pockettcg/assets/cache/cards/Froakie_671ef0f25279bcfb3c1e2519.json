@@ -17,7 +17,7 @@
         "Colorless"
       ],
       "hp": "10",
-      "_id": "679953e51552ba8d13d7570c"
+      "_id": "6811e519c0a4ec0168e9b60c"
     }
   ],
   "obtain": [
@@ -45,7 +45,28 @@
   "weakness": [
     "Lightning"
   ],
-  "popRank": 10,
-  "artVariants": [],
-  "limitlessId": "A1 87"
+  "popRank": 20,
+  "artVariants": [
+    {
+      "_id": "6811cfa9c0a4ec0168e90cac",
+      "name": "Froakie",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    }
+  ],
+  "limitlessId": "A1 87",
+  "deckTypes": [
+    "Darkrai ex Greninja",
+    "Crabominable ex Greninja",
+    "Gyarados ex",
+    "Greninja",
+    "Rayquaza ex",
+    "Giratina ex Greninja",
+    "Charizard ex",
+    "Giratina ex Darkrai ex",
+    "Giratina ex",
+    "Arceus ex",
+    "Crabominable ex",
+    "Palkia ex Greninja"
+  ]
 }

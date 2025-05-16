@@ -15,7 +15,7 @@
   "retreat": 2,
   "description": "",
   "release": "2024-12-17T06:00:00.000Z",
-  "popRank": 176,
+  "popRank": 1.7976931348623157e+308,
   "alternateArt": false,
   "artVariants": [],
   "abilities": [],
@@ -52,5 +52,6 @@
     }
   ],
   "ex": false,
-  "limitlessId": "A1a 8"
+  "limitlessId": "A1a 8",
+  "deckTypes": []
 }

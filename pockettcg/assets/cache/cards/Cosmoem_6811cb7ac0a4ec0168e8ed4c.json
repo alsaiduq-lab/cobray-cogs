@@ -1,0 +1,74 @@
+{
+  "_id": "6811cb7ac0a4ec0168e8ed4c",
+  "name": "Cosmoem",
+  "energyType": [
+    "Psychic"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "100",
+  "pokemonId": "A3-086",
+  "limitlessId": "A3 86",
+  "rarity": "d-1",
+  "weakness": [
+    "Darkness"
+  ],
+  "retreat": 3,
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 66,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Stiffen",
+      "text": "During your opponent's next turn, this Pokémon takes -50 damage from attacks.",
+      "energyCost": [
+        "Colorless",
+        "Colorless",
+        null
+      ],
+      "_id": "6811cb7ac0a4ec0168e8ed4d"
+    }
+  ],
+  "deckTypes": [
+    "Solgaleo ex",
+    "Solgaleo ex Skarmory",
+    "Lunala ex"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    },
+    {
+      "source": {
+        "_id": "6811bd6ca93125d205b45fa7",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Solgaleo",
+        "linkedArticle": {
+          "_id": "6811de68c0a4ec0168e97e92",
+          "title": "Celestial Guardians: Solgaleo",
+          "url": "/sets/celestial-guardians-solgaleo/",
+          "image": "/pkm_img/Sets/cgsolgaleo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

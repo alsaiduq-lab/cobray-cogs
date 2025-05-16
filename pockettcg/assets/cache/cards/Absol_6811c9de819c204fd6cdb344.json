@@ -1,0 +1,56 @@
+{
+  "_id": "6811c9de819c204fd6cdb344",
+  "name": "Absol",
+  "energyType": [
+    "Darkness"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "80",
+  "pokemonId": "A3-112",
+  "limitlessId": "A3 112",
+  "rarity": "d-3",
+  "weakness": [
+    "Grass"
+  ],
+  "retreat": 1,
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 249,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Unseen Claw",
+      "text": "If your opponent’s Active Pokémon is affected by a Special Condition, this attack does 60 more damage.",
+      "energyCost": [
+        "Darkness",
+        "Colorless",
+        null
+      ],
+      "hp": "20+",
+      "_id": "6811c9de819c204fd6cdb345"
+    }
+  ],
+  "deckTypes": [
+    "Giratina ex Darkrai ex"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ]
+}

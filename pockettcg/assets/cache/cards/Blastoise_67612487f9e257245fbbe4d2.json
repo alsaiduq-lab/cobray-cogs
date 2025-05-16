@@ -27,7 +27,7 @@
         "Colorless"
       ],
       "hp": "80+",
-      "_id": "67994b00e7d048b93b2525dd"
+      "_id": "67a75bd4759523dbf6f9027c"
     }
   ],
   "obtain": [
@@ -49,5 +49,7 @@
     }
   ],
   "limitlessId": "P-A 29",
+  "rarity": "p",
+  "deckTypes": [],
   "nameRelease": "2024-10-30T03:00:00.000Z"
 }

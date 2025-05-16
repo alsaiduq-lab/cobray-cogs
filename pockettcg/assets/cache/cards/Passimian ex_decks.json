@@ -1,0 +1,143 @@
+[
+  {
+    "author": {
+      "_id": "681b8d27db815a107b13f9a6",
+      "roles": [],
+      "username": "ULYSHEESHABLE"
+    },
+    "created": "2025-05-15T10:01:06.111Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799baf2169202e5d7e67c99",
+          "name": "Cranidos",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67c05d1752e93386721e250e",
+          "name": "Garchomp ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c15c467103a0f7aed76a5b",
+          "name": "Gible",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811c893a93125d205b4a72d",
+          "name": "Passimian ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bb14169202e5d7e67d59",
+          "name": "Rampardos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811d01f819c204fd6cddd25",
+          "name": "Lillie",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bcb5f06a47c6afdf7763",
+          "name": "Skull Fossil",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/imperium's-weekly-tournament-(193-players)/7/garchomp-ex/ulysheeshable/G6bjd/",
+    "deckType": {
+      "name": "Garchomp ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "7",
+    "customTournamentName": "IMPERIUM'S Weekly Tournament (193 Players)",
+    "engines": [
+      {
+        "_id": "67abcd1d6fa98c7329e3779d",
+        "name": "Rampardos"
+      },
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      },
+      {
+        "_id": "68143541ad507e73dc58645c",
+        "name": "Passimian ex"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "6825bbbac33728d7e480b3ca",
+      "title": "PTCGP 50-200 Player Event Roundup #39",
+      "url": "/tournaments/tcgp-weekly-results/39/report/"
+    }
+  }
+]

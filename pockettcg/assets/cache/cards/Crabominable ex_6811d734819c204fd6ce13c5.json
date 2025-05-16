@@ -1,0 +1,55 @@
+{
+  "_id": "6811d734819c204fd6ce13c5",
+  "name": "Crabominable ex",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "160",
+  "pokemonId": "A3-183",
+  "limitlessId": "A3 183",
+  "rarity": "s-2",
+  "weakness": [
+    "Metal"
+  ],
+  "retreat": 3,
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Insatiable Striking",
+      "text": "During your next turn, this Pokémon’s Insatiable Striking attack does +40 damage.",
+      "energyCost": [
+        "Water",
+        null,
+        null
+      ],
+      "hp": "40",
+      "_id": "6811d734819c204fd6ce13c6"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd6ca93125d205b45fa7",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Solgaleo",
+        "linkedArticle": {
+          "_id": "6811de68c0a4ec0168e97e92",
+          "title": "Celestial Guardians: Solgaleo",
+          "url": "/sets/celestial-guardians-solgaleo/",
+          "image": "/pkm_img/Sets/cgsolgaleo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true
+}

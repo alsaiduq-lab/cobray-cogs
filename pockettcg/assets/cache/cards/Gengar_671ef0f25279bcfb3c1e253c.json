@@ -18,7 +18,7 @@
         "Psychic"
       ],
       "hp": "50",
-      "_id": "6799516c1552ba8d13d741f3"
+      "_id": "6811e7ada93125d205b59550"
     }
   ],
   "obtain": [
@@ -46,8 +46,15 @@
   "weakness": [
     "Darkness"
   ],
-  "popRank": 262,
-  "artVariants": [],
+  "popRank": 237,
+  "artVariants": [
+    {
+      "_id": "6811d751a93125d205b51160",
+      "name": "Gengar",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    }
+  ],
   "limitlessId": "A1 122",
   "deckTypes": [
     "Gengar ex"

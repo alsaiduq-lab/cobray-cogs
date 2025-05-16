@@ -1,0 +1,68 @@
+{
+  "_id": "6811b749819c204fd6cd5050",
+  "name": "Incineroar ex",
+  "energyType": [
+    "Fire"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "180",
+  "pokemonId": "A3-033",
+  "limitlessId": "A3 33",
+  "rarity": "d-4",
+  "weakness": [
+    "Water"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 49,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Fire Fang",
+      "text": "Your opponents active Pokemon is now Burned.",
+      "energyCost": [
+        "Fire"
+      ],
+      "hp": "30",
+      "_id": "6811c0c7c0a4ec0168e8a86f"
+    },
+    {
+      "name": "Scar-Charged Smash",
+      "text": "If this Pokemon has damage on it, this attack does 60 more damage",
+      "energyCost": [
+        "Fire",
+        "Fire",
+        "Colorless"
+      ],
+      "hp": "80+",
+      "_id": "6811c0c7c0a4ec0168e8a870"
+    }
+  ],
+  "deckTypes": [
+    "Charizard ex",
+    "Incineroar ex"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd6ca93125d205b45fa7",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Solgaleo",
+        "linkedArticle": {
+          "_id": "6811de68c0a4ec0168e97e92",
+          "title": "Celestial Guardians: Solgaleo",
+          "url": "/sets/celestial-guardians-solgaleo/",
+          "image": "/pkm_img/Sets/cgsolgaleo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true
+}

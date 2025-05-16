@@ -1,0 +1,56 @@
+{
+  "_id": "6811c209819c204fd6cd8292",
+  "name": "Brionne",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "80",
+  "pokemonId": "A3-047",
+  "limitlessId": "A3 47",
+  "rarity": "d-2",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 1,
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 232,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Wave Splash",
+      "text": "",
+      "energyCost": [
+        "Water",
+        null,
+        null
+      ],
+      "hp": "30",
+      "_id": "6811c7f5819c204fd6cda710"
+    }
+  ],
+  "deckTypes": [
+    "Crabominable ex"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ]
+}

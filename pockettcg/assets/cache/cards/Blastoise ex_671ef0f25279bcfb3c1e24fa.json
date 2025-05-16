@@ -16,14 +16,14 @@
       "name": "Surf",
       "energyCost": [],
       "hp": "40",
-      "_id": "679952d11552ba8d13d74f89"
+      "_id": "6811e729a93125d205b59008"
     },
     {
       "name": "Hydro Bazooka",
       "text": "If this Pokémon has at least 2 extra Water Energy attached, this attack does 60 more damage.",
       "energyCost": [],
       "hp": "100+",
-      "_id": "679952d11552ba8d13d74f8a"
+      "_id": "6811e729a93125d205b59009"
     }
   ],
   "obtain": [
@@ -51,12 +51,23 @@
     "Lightning"
   ],
   "release": "2024-10-30T03:00:00.000Z",
-  "popRank": 114,
+  "popRank": 130,
   "artVariants": [
     {
       "_id": "671ef1105279bcfb3c1e25c3",
-      "name": "Blastoise ex"
+      "name": "Blastoise ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    },
+    {
+      "_id": "6811d672c0a4ec0168e94063",
+      "name": "Blastoise ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     }
   ],
-  "limitlessId": "A1 56"
+  "limitlessId": "A1 56",
+  "deckTypes": [
+    "Blastoise ex"
+  ]
 }

@@ -1,43 +1,27 @@
 [
   {
-    "author": "Tuborizm",
-    "created": "2025-01-11T15:04:16.270Z",
+    "author": "Bibi .",
+    "created": "2025-05-09T17:22:24.955Z",
     "main": [
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e24d9",
-          "name": "Exeggutor ex",
+          "_id": "67c0591452e93386721e093b",
+          "name": "Arceus ex",
           "alternateArt": false
         },
         "amount": 2
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e24d7",
-          "name": "Exeggcute",
+          "_id": "679248b1eb08086be8540c5b",
+          "name": "Dialga ex",
           "alternateArt": false
         },
         "amount": 2
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e24d8",
-          "name": "Exeggutor",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "675ae715e40c3b7260740109",
-          "name": "Mew ex",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "67218224c08874f5ab2e1752",
+          "_id": "67e3958e5cc271d38f74957e",
           "name": "Jigglypuff",
           "alternateArt": false
         },
@@ -45,188 +29,27 @@
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e2584",
+          "_id": "67e395c979f0ebec0380c2f3",
           "name": "Wigglytuff",
           "alternateArt": false
         },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2585",
-          "name": "Wigglytuff ex",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a3",
-          "name": "Sabrina",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181b7c08874f5ab2e1700",
-          "name": "Professor's Research",
-          "alternateArt": false
-        },
         "amount": 2
       },
       {
         "card": {
-          "_id": "675ae88248e857c1219910f6",
-          "name": "Leaf",
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
           "alternateArt": false
         },
         "amount": 2
-      },
-      {
-        "card": {
-          "_id": "675ae6d0e40c3b726073ffa1",
-          "name": "Blue",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poké Ball",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67216c8619290cd899acfc25",
-          "name": "X Speed",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "67216b665d66038af44d6d20",
-          "name": "Potion",
-          "alternateArt": false
-        },
-        "amount": 1
-      }
-    ],
-    "side": [],
-    "url": "/community-tournaments/frogex-weekly-cup-(482-players)/2/exeggutor-ex/tuborizm/YuHYa/",
-    "deckType": {
-      "name": "Exeggutor ex",
-      "tier": null
-    },
-    "tournamentType": {
-      "name": "Community Tournaments",
-      "shortName": "Community Tournaments",
-      "icon": "/pkm_img/image.webp",
-      "enumSuffix": "#",
-      "statsWeight": null
-    },
-    "tournamentPlacement": "Top 32",
-    "tournamentNumber": "2",
-    "customTournamentName": "FrogEX Weekly Cup (482 Players)",
-    "engines": [
-      {
-        "_id": "67abc5cf25c7da23a21c7190",
-        "name": "Mew ex"
-      }
-    ],
-    "linkedArticle": {
-      "_id": "678288c2a5ca43d06b6ca8d2",
-      "title": "FrogEX Weekly Cup #2 - 482 Players",
-      "url": "/tournaments/frogex-weekly/2/report/"
-    }
-  },
-  {
-    "author": "Aces x",
-    "created": "2024-12-28T15:32:26.695Z",
-    "main": [
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2585",
-          "name": "Wigglytuff ex",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67218224c08874f5ab2e1752",
-          "name": "Jigglypuff",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2584",
-          "name": "Wigglytuff",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2588",
-          "name": "Farfetch'd",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e24d7",
-          "name": "Exeggcute",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e24d8",
-          "name": "Exeggutor",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e24d9",
-          "name": "Exeggutor ex",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a3",
-          "name": "Sabrina",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181b7c08874f5ab2e1700",
-          "name": "Professor's Research",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a1",
-          "name": "Giovanni",
-          "alternateArt": false
-        },
-        "amount": 1
       },
       {
         "card": {
@@ -246,124 +69,11 @@
       },
       {
         "card": {
-          "_id": "67216c8619290cd899acfc25",
-          "name": "X Speed",
+          "_id": "67e395a2575eceb838a249c9",
+          "name": "Pokémon Center Lady",
           "alternateArt": false
         },
         "amount": 1
-      }
-    ],
-    "side": [],
-    "url": "/community-tournaments/pocket-tour-tournament-(64-players)/6/wigglytuff-ex/aces-x/Ao088/",
-    "deckType": {
-      "name": "Wigglytuff ex",
-      "tier": null
-    },
-    "tournamentType": {
-      "name": "Community Tournaments",
-      "shortName": "Community Tournaments",
-      "icon": "/pkm_img/image.webp",
-      "enumSuffix": "#",
-      "statsWeight": null
-    },
-    "tournamentPlacement": "Top 16",
-    "tournamentNumber": "6",
-    "customTournamentName": "POCKET TOUR TOURNAMENT (64 Players)",
-    "engines": [
-      {
-        "_id": "67abc5ab88624a4a297bc13a",
-        "name": "Exeggutor ex"
-      }
-    ],
-    "linkedArticle": {
-      "_id": "676ae16f0c8f5f756929b47c",
-      "title": "PTCGP 50-200 Player Event Roundup #11",
-      "url": "/tournaments/tcgp-weekly-results/11/report/"
-    }
-  },
-  {
-    "author": "Aces x",
-    "created": "2024-12-16T21:04:19.284Z",
-    "main": [
-      {
-        "card": {
-          "_id": "67218224c08874f5ab2e1752",
-          "name": "Jigglypuff",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2585",
-          "name": "Wigglytuff ex",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e24d7",
-          "name": "Exeggcute",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e24d9",
-          "name": "Exeggutor ex",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e24d8",
-          "name": "Exeggutor",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2584",
-          "name": "Wigglytuff",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2588",
-          "name": "Farfetch'd",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "67216b665d66038af44d6d20",
-          "name": "Potion",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "67216c8619290cd899acfc25",
-          "name": "X Speed",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poké Ball",
-          "alternateArt": false
-        },
-        "amount": 2
       },
       {
         "card": {
@@ -375,25 +85,25 @@
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e25a3",
-          "name": "Sabrina",
+          "_id": "67e395dc575eceb838a24b19",
+          "name": "Red",
           "alternateArt": false
         },
         "amount": 1
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e25a1",
-          "name": "Giovanni",
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
           "alternateArt": false
         },
         "amount": 1
       }
     ],
     "side": [],
-    "url": "/community-tournaments/pocket-tour-tournament-(64-players)/4/wigglytuff-ex/aces-x/0btKD/",
+    "url": "/community-tournaments/umbreon-league---pokemon-pocket-(35-players)/1/arceus-ex-dialga-ex/bibi-./SACXI/",
     "deckType": {
-      "name": "Wigglytuff ex",
+      "name": "Arceus ex Dialga ex",
       "tier": null
     },
     "tournamentType": {
@@ -404,557 +114,27 @@
       "statsWeight": null
     },
     "tournamentPlacement": "Top 8",
-    "tournamentNumber": "4",
-    "customTournamentName": "POCKET TOUR TOURNAMENT (64 Players)",
-    "linkedArticle": {
-      "_id": "676094b614e592d42e5de246",
-      "title": "PTCGP 50-200 Player Event Roundup #9",
-      "url": "/tournaments/tcgp-weekly-results/9/report/"
-    },
+    "tournamentNumber": "1",
+    "customTournamentName": "Umbreon League - Pokemon Pocket (35 Players)",
     "engines": [
       {
-        "_id": "67abc5ab88624a4a297bc13a",
-        "name": "Exeggutor ex"
-      }
-    ]
-  },
-  {
-    "author": "I4RU",
-    "created": "2024-12-15T13:23:03.397Z",
-    "main": [
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2535",
-          "name": "Abra",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2536",
-          "name": "Kadabra",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2537",
-          "name": "Alakazam",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2572",
-          "name": "Koffing",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2573",
-          "name": "Weezing",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2584",
-          "name": "Wigglytuff",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "67218224c08874f5ab2e1752",
-          "name": "Jigglypuff",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181b7c08874f5ab2e1700",
-          "name": "Professor's Research",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a1",
-          "name": "Giovanni",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a0",
-          "name": "Koga",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a3",
-          "name": "Sabrina",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poké Ball",
-          "alternateArt": false
-        },
-        "amount": 2
+        "_id": "67c22c858046c4a97275f97b",
+        "name": "Dialga"
       }
     ],
-    "side": [],
-    "url": "/community-tournaments/open-france-tournament-(179-players)/3/alakazam/i4ru/ttaHe/",
-    "deckType": {
-      "name": "Alakazam",
-      "tier": null
-    },
-    "tournamentType": {
-      "name": "Community Tournaments",
-      "shortName": "Community Tournaments",
-      "icon": "/pkm_img/image.webp",
-      "enumSuffix": "#",
-      "statsWeight": null
-    },
-    "tournamentPlacement": "Top 32",
-    "tournamentNumber": "3",
-    "customTournamentName": "Open France Tournament (179 Players)",
-    "linkedArticle": null,
-    "engines": [
-      {
-        "_id": "67abcd0225c7da23a21cb149",
-        "name": "Weezing"
-      }
-    ]
-  },
-  {
-    "author": "Fiskje",
-    "created": "2024-12-14T15:18:12.291Z",
-    "main": [
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2585",
-          "name": "Wigglytuff ex",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67218224c08874f5ab2e1752",
-          "name": "Jigglypuff",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2584",
-          "name": "Wigglytuff",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e24d8",
-          "name": "Exeggutor",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e24d7",
-          "name": "Exeggcute",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e24d9",
-          "name": "Exeggutor ex",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2588",
-          "name": "Farfetch'd",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181b7c08874f5ab2e1700",
-          "name": "Professor's Research",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a3",
-          "name": "Sabrina",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a1",
-          "name": "Giovanni",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "67216c8619290cd899acfc25",
-          "name": "X Speed",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poké Ball",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67216b665d66038af44d6d20",
-          "name": "Potion",
-          "alternateArt": false
-        },
-        "amount": 1
-      }
-    ],
-    "side": [],
-    "url": "/community-tournaments/team-rocket-poket-cup-(164-players)/18/wigglytuff-ex/fiskje/C2y6l/",
-    "deckType": {
-      "name": "Wigglytuff ex",
-      "tier": null
-    },
-    "tournamentType": {
-      "name": "Community Tournaments",
-      "shortName": "Community Tournaments",
-      "icon": "/pkm_img/image.webp",
-      "enumSuffix": "#",
-      "statsWeight": null
-    },
-    "tournamentPlacement": "Top 32",
-    "tournamentNumber": "18",
-    "customTournamentName": "Team Rocket Poket Cup (164 Players)",
-    "linkedArticle": null,
-    "engines": [
-      {
-        "_id": "67abc5ab88624a4a297bc13a",
-        "name": "Exeggutor ex"
-      }
-    ]
-  },
-  {
-    "author": "Valden",
-    "created": "2024-12-14T15:13:55.548Z",
-    "main": [
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2585",
-          "name": "Wigglytuff ex",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67218224c08874f5ab2e1752",
-          "name": "Jigglypuff",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2584",
-          "name": "Wigglytuff",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e24d8",
-          "name": "Exeggutor",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e24d7",
-          "name": "Exeggcute",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e24d9",
-          "name": "Exeggutor ex",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2588",
-          "name": "Farfetch'd",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181b7c08874f5ab2e1700",
-          "name": "Professor's Research",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a3",
-          "name": "Sabrina",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a1",
-          "name": "Giovanni",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "67216c8619290cd899acfc25",
-          "name": "X Speed",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poké Ball",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67216b665d66038af44d6d20",
-          "name": "Potion",
-          "alternateArt": false
-        },
-        "amount": 1
-      }
-    ],
-    "side": [],
-    "url": "/community-tournaments/team-rocket-poket-cup-(164-players)/18/wigglytuff-ex/valden/o-q3U/",
-    "deckType": {
-      "name": "Wigglytuff ex",
-      "tier": null
-    },
-    "tournamentType": {
-      "name": "Community Tournaments",
-      "shortName": "Community Tournaments",
-      "icon": "/pkm_img/image.webp",
-      "enumSuffix": "#",
-      "statsWeight": null
-    },
-    "tournamentPlacement": "Top 16",
-    "tournamentNumber": "18",
-    "customTournamentName": "Team Rocket Poket Cup (164 Players)",
-    "linkedArticle": null,
-    "engines": [
-      {
-        "_id": "67abc5ab88624a4a297bc13a",
-        "name": "Exeggutor ex"
-      }
-    ]
-  },
-  {
-    "author": {
-      "_id": "62e0247a86a00afbb0f3aa30",
-      "roles": [],
-      "username": "Calix"
-    },
-    "created": "2024-12-14T13:47:28.499Z",
-    "main": [
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e24e9",
-          "name": "Growlithe",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e24eb",
-          "name": "Arcanine ex",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2588",
-          "name": "Farfetch'd",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2585",
-          "name": "Wigglytuff ex",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "67218224c08874f5ab2e1752",
-          "name": "Jigglypuff",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2584",
-          "name": "Wigglytuff",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181b7c08874f5ab2e1700",
-          "name": "Professor's Research",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a3",
-          "name": "Sabrina",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a1",
-          "name": "Giovanni",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "67216b665d66038af44d6d20",
-          "name": "Potion",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67216c8619290cd899acfc25",
-          "name": "X Speed",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poké Ball",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "672181abc08874f5ab2e16fb",
-          "name": "Red Card",
-          "alternateArt": false
-        },
-        "amount": 1
-      }
-    ],
-    "side": [],
-    "url": "/community-tournaments/cafédolé-(32-players)/2/arcanine-ex/calix/0NT2A/",
-    "deckType": {
-      "name": "Arcanine ex",
-      "tier": null
-    },
-    "tournamentType": {
-      "name": "Community Tournaments",
-      "shortName": "Community Tournaments",
-      "icon": "/pkm_img/image.webp",
-      "enumSuffix": "#",
-      "statsWeight": null
-    },
-    "tournamentPlacement": "Top 8",
-    "tournamentNumber": "2",
-    "customTournamentName": "CaféDolé (32 Players)",
     "linkedArticle": null
   },
   {
-    "author": "Aces x",
-    "created": "2024-12-13T15:46:53.858Z",
+    "author": {
+      "_id": "67f97cbc13d2eaaf697c3384",
+      "roles": [],
+      "username": "Arc"
+    },
+    "created": "2025-05-07T19:41:22.293Z",
     "main": [
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e2585",
-          "name": "Wigglytuff ex",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67218224c08874f5ab2e1752",
+          "_id": "67e3958e5cc271d38f74957e",
           "name": "Jigglypuff",
           "alternateArt": false
         },
@@ -962,72 +142,48 @@
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e2584",
+          "_id": "6811c4ebc0a4ec0168e8c1d1",
+          "name": "Oricorio",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e39b43575eceb838a266ea",
+          "name": "Pikachu ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67e395c979f0ebec0380c2f3",
           "name": "Wigglytuff",
           "alternateArt": false
         },
-        "amount": 1
+        "amount": 2
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e2588",
-          "name": "Farfetch'd",
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
           "alternateArt": false
         },
         "amount": 1
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e24d8",
-          "name": "Exeggutor",
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
           "alternateArt": false
         },
         "amount": 2
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e24d7",
-          "name": "Exeggcute",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e24d9",
-          "name": "Exeggutor ex",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181b7c08874f5ab2e1700",
-          "name": "Professor's Research",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a3",
-          "name": "Sabrina",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a1",
-          "name": "Giovanni",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "67216c8619290cd899acfc25",
-          "name": "X Speed",
+          "_id": "6811cf73819c204fd6cdd872",
+          "name": "Guzma",
           "alternateArt": false
         },
         "amount": 2
@@ -1042,68 +198,62 @@
       },
       {
         "card": {
+          "_id": "67e395a2575eceb838a249c9",
+          "name": "Pokémon Center Lady",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
           "_id": "67216b665d66038af44d6d20",
           "name": "Potion",
           "alternateArt": false
         },
-        "amount": 1
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
       }
     ],
     "side": [],
-    "url": "/community-tournaments/team-rocket-poket-cup-(170-players)/16/wigglytuff-ex/aces-x/SLLR4/",
+    "url": "/master-ball/may-2025/pikachu-ex/arc/pFEeA/",
     "deckType": {
-      "name": "Wigglytuff ex",
+      "name": "Pikachu ex",
       "tier": null
     },
-    "tournamentType": {
-      "name": "Community Tournaments",
-      "shortName": "Community Tournaments",
-      "icon": "/pkm_img/image.webp",
-      "enumSuffix": "#",
-      "statsWeight": null
+    "rankedType": {
+      "name": "Master Ball",
+      "shortName": "Master Ball",
+      "icon": "/pkm_img/icons/master-ball-rank.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
     },
-    "tournamentPlacement": "Top 4",
-    "tournamentNumber": "16",
-    "customTournamentName": "Team Rocket Poket Cup (170 Players)",
-    "linkedArticle": null,
     "engines": [
       {
-        "_id": "67abc5ab88624a4a297bc13a",
-        "name": "Exeggutor ex"
+        "_id": "68256386c33728d7e47e3793",
+        "name": "Oricorio"
       }
-    ]
+    ],
+    "linkedArticle": null
   },
   {
-    "author": "kai",
-    "created": "2024-12-12T17:03:31.259Z",
+    "author": {
+      "_id": "67f97cbc13d2eaaf697c3384",
+      "roles": [],
+      "username": "Arc"
+    },
+    "created": "2025-05-07T19:38:45.565Z",
     "main": [
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e2573",
-          "name": "Weezing",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2572",
-          "name": "Koffing",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2585",
-          "name": "Wigglytuff ex",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67218224c08874f5ab2e1752",
+          "_id": "67e3958e5cc271d38f74957e",
           "name": "Jigglypuff",
           "alternateArt": false
         },
@@ -1111,43 +261,51 @@
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e2584",
+          "_id": "6811c4ebc0a4ec0168e8c1d1",
+          "name": "Oricorio",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e39b43575eceb838a266ea",
+          "name": "Pikachu ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67e395c979f0ebec0380c2f3",
           "name": "Wigglytuff",
           "alternateArt": false
         },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
         "amount": 1
       },
       {
         "card": {
-          "_id": "672181b7c08874f5ab2e1700",
-          "name": "Professor's Research",
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
           "alternateArt": false
         },
         "amount": 2
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e25a0",
-          "name": "Koga",
+          "_id": "6811cf73819c204fd6cdd872",
+          "name": "Guzma",
           "alternateArt": false
         },
         "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a3",
-          "name": "Sabrina",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a1",
-          "name": "Giovanni",
-          "alternateArt": false
-        },
-        "amount": 1
       },
       {
         "card": {
@@ -1159,8 +317,8 @@
       },
       {
         "card": {
-          "_id": "67216c8619290cd899acfc25",
-          "name": "X Speed",
+          "_id": "67e395a2575eceb838a249c9",
+          "name": "Pokémon Center Lady",
           "alternateArt": false
         },
         "amount": 2
@@ -1171,92 +329,114 @@
           "name": "Potion",
           "alternateArt": false
         },
-        "amount": 1
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
       }
     ],
     "side": [],
-    "url": "/community-tournaments/doggomme-cup-(70-players)/11/wigglytuff-ex/kai/JCe4O/",
+    "url": "/5-winstreak/may-2025/pikachu-ex/arc/a9oEp/",
     "deckType": {
-      "name": "Wigglytuff ex",
+      "name": "Pikachu ex",
       "tier": null
     },
-    "tournamentType": {
-      "name": "Community Tournaments",
-      "shortName": "Community Tournaments",
-      "icon": "/pkm_img/image.webp",
-      "enumSuffix": "#",
-      "statsWeight": null
+    "rankedType": {
+      "name": "5+ Winstreak",
+      "shortName": "Winstreak",
+      "icon": "/img/tournaments/logos/Spicy_Wins.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
     },
-    "tournamentPlacement": "1st Place",
-    "tournamentNumber": "11",
-    "customTournamentName": "Doggomme Cup (70 Players)",
-    "linkedArticle": null,
     "engines": [
       {
-        "_id": "67abcd0225c7da23a21cb149",
-        "name": "Weezing"
+        "_id": "68256386c33728d7e47e3793",
+        "name": "Oricorio"
       }
-    ]
+    ],
+    "linkedArticle": null
   },
   {
-    "author": "kai ",
-    "created": "2024-12-11T02:05:59.641Z",
+    "author": "aatsuh",
+    "created": "2025-05-04T22:08:03.930Z",
     "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2519",
+          "name": "Froakie",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e251a",
+          "name": "Frogadier",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e251b",
+          "name": "Greninja",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
       {
         "card": {
           "_id": "67218224c08874f5ab2e1752",
           "name": "Jigglypuff",
           "alternateArt": false
         },
-        "amount": 2
+        "amount": 1
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e2585",
-          "name": "Wigglytuff ex",
+          "_id": "67e3958e5cc271d38f74957e",
+          "name": "Jigglypuff",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6811c4ebc0a4ec0168e8c1d1",
+          "name": "Oricorio",
           "alternateArt": false
         },
         "amount": 2
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e2584",
+          "_id": "67e395c979f0ebec0380c2f3",
           "name": "Wigglytuff",
           "alternateArt": false
         },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2572",
-          "name": "Koffing",
-          "alternateArt": false
-        },
         "amount": 2
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e2573",
-          "name": "Weezing",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67216b665d66038af44d6d20",
-          "name": "Potion",
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
           "alternateArt": false
         },
         "amount": 1
       },
       {
         "card": {
-          "_id": "67216c8619290cd899acfc25",
-          "name": "X Speed",
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
           "alternateArt": false
         },
-        "amount": 2
+        "amount": 1
       },
       {
         "card": {
@@ -1268,6 +448,14 @@
       },
       {
         "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
           "_id": "672181b7c08874f5ab2e1700",
           "name": "Professor's Research",
           "alternateArt": false
@@ -1276,33 +464,25 @@
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e25a0",
-          "name": "Koga",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a3",
-          "name": "Sabrina",
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
           "alternateArt": false
         },
         "amount": 1
       },
       {
         "card": {
-          "_id": "671ef0f25279bcfb3c1e25a1",
-          "name": "Giovanni",
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
           "alternateArt": false
         },
         "amount": 1
       }
     ],
     "side": [],
-    "url": "/community-tournaments/poképoké's-strongest-battle-(214-players)/7/wigglytuff-ex/kai-/pQzv8/",
+    "url": "/community-tournaments/ursiiday's-pocket-weekly-(1047-players)/27/greninja/aatsuh/gqi77/",
     "deckType": {
-      "name": "Wigglytuff ex",
+      "name": "Greninja",
       "tier": null
     },
     "tournamentType": {
@@ -1312,19 +492,819 @@
       "enumSuffix": "#",
       "statsWeight": null
     },
-    "tournamentPlacement": "Top 4",
-    "tournamentNumber": "7",
-    "customTournamentName": "Poképoké's Strongest Battle (214 Players)",
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "27",
+    "customTournamentName": "Ursiiday's Pocket Weekly (1047 Players)",
+    "engines": [
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      },
+      {
+        "_id": "68256386c33728d7e47e3793",
+        "name": "Oricorio"
+      }
+    ],
     "linkedArticle": {
-      "_id": "6758f384051471d1801f96a0",
-      "title": "Poképoké's Strongest Battle #7 - 214 Players",
-      "url": "/tournaments/pokepoke-strongest-battle/7/report/"
+      "_id": "6817e5c501e82962fa6aabe3",
+      "title": "Ursiiday's Pocket Weekly #27 - 1047 Players",
+      "url": "/tournaments/ursiiday-pocket-weekly/27/report/"
+    }
+  },
+  {
+    "author": "Skylartss",
+    "created": "2025-05-02T23:37:37.281Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e2519",
+          "name": "Froakie",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e251a",
+          "name": "Frogadier",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e251b",
+          "name": "Greninja",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67218224c08874f5ab2e1752",
+          "name": "Jigglypuff",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6811c4ebc0a4ec0168e8c1d1",
+          "name": "Oricorio",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395c979f0ebec0380c2f3",
+          "name": "Wigglytuff",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/frogex-weekly-cup-(395-players)/17/greninja/skylartss/QX_x0/",
+    "deckType": {
+      "name": "Greninja",
+      "tier": null
     },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "17",
+    "customTournamentName": "FrogEX Weekly Cup (395 Players)",
     "engines": [
       {
-        "_id": "67abcd0225c7da23a21cb149",
-        "name": "Weezing"
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      },
+      {
+        "_id": "68256386c33728d7e47e3793",
+        "name": "Oricorio"
       }
-    ]
+    ],
+    "linkedArticle": {
+      "_id": "6815586aa8be1a989492793e",
+      "title": "FrogEX Weekly Cup #17- 395 Players",
+      "url": "/tournaments/frogex-weekly/17/report/"
+    }
+  },
+  {
+    "author": {
+      "_id": "634db2a2f3982a99c0b50d82",
+      "roles": [],
+      "username": "AMC ・Arca"
+    },
+    "created": "2025-04-18T16:28:22.529Z",
+    "main": [
+      {
+        "card": {
+          "_id": "67e38dda79f0ebec03809162",
+          "name": "Floragato",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67218224c08874f5ab2e1752",
+          "name": "Jigglypuff",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67e397bf5cc271d38f74a174",
+          "name": "Meowscarada",
+          "alternateArt": true,
+          "nameRelease": "2025-03-27T06:00:00.000Z"
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e36964575eceb838a15b6d",
+          "name": "Sprigatito",
+          "alternateArt": true,
+          "nameRelease": "2025-03-27T06:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67e38dba5cc271d38f7466d1",
+          "name": "Sprigatito",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67e3999a5cc271d38f74ab14",
+          "name": "Wigglytuff",
+          "alternateArt": true,
+          "nameRelease": "2024-10-30T03:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799c1cf169202e5d7e6a007",
+          "name": "Cyrus",
+          "alternateArt": true,
+          "nameRelease": "2025-01-30T06:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e259d",
+          "name": "Erika",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e3a17f79f0ebec03810c5d",
+          "name": "Poké Ball",
+          "alternateArt": true,
+          "nameRelease": "2024-10-30T03:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67dd6c6de2096b41c50fbd3c",
+          "name": "Red",
+          "alternateArt": true,
+          "nameRelease": "2025-03-27T06:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef1105279bcfb3c1e25d3",
+          "name": "Sabrina",
+          "alternateArt": true,
+          "nameRelease": "2024-10-30T03:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67e39cb579f0ebec0380f0e8",
+          "name": "Team Rocket Grunt",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/master-ball/april-2025/meowscarada/amc-・arca/RCoYy/",
+    "deckType": {
+      "name": "Meowscarada",
+      "tier": null
+    },
+    "rankedType": {
+      "name": "Master Ball",
+      "shortName": "Master Ball",
+      "icon": "/pkm_img/icons/master-ball-rank.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
+    },
+    "engines": [],
+    "linkedArticle": null
+  },
+  {
+    "author": {
+      "_id": "67f8e69013d2eaaf69acab97",
+      "roles": [],
+      "username": "federicoq"
+    },
+    "created": "2025-04-11T13:16:00.264Z",
+    "main": [
+      {
+        "card": {
+          "_id": "67e38dda79f0ebec03809162",
+          "name": "Floragato",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67218224c08874f5ab2e1752",
+          "name": "Jigglypuff",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67e38e14575eceb838a21041",
+          "name": "Meowscarada",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e38dba5cc271d38f7466d1",
+          "name": "Sprigatito",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395c979f0ebec0380c2f3",
+          "name": "Wigglytuff",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e259d",
+          "name": "Erika",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395dc575eceb838a24b19",
+          "name": "Red",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67e395ec575eceb838a24b54",
+          "name": "Team Rocket Grunt",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/master-ball/april-2025/meowscarada/federicoq/5X8sK/",
+    "deckType": {
+      "name": "Meowscarada",
+      "tier": null
+    },
+    "rankedType": {
+      "name": "Master Ball",
+      "shortName": "Master Ball",
+      "icon": "/pkm_img/icons/master-ball-rank.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
+    },
+    "engines": [],
+    "linkedArticle": null
+  },
+  {
+    "author": "DarthTator22",
+    "created": "2025-04-10T14:22:59.829Z",
+    "main": [
+      {
+        "card": {
+          "_id": "67e38dda79f0ebec03809162",
+          "name": "Floragato",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67218224c08874f5ab2e1752",
+          "name": "Jigglypuff",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67e38e14575eceb838a21041",
+          "name": "Meowscarada",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e38dba5cc271d38f7466d1",
+          "name": "Sprigatito",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395c979f0ebec0380c2f3",
+          "name": "Wigglytuff",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e259d",
+          "name": "Erika",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395dc575eceb838a24b19",
+          "name": "Red",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67e395ec575eceb838a24b54",
+          "name": "Team Rocket Grunt",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/the-beast-brother-league---tcgp-welcome-(75-players)/1/meowscarada/darthtator22/BJPsW/",
+    "deckType": {
+      "name": "Meowscarada",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "1",
+    "customTournamentName": "The Beast Brother League - TCGP Welcome (75 Players)",
+    "engines": [],
+    "linkedArticle": {
+      "_id": "67f3b8374cb0844d88f24e64",
+      "title": "PTCGP 50-200 Player Event Roundup #36",
+      "url": "/tournaments/tcgp-weekly-results/36/report/"
+    }
+  },
+  {
+    "author": "HD| Gato",
+    "created": "2025-04-09T15:03:18.082Z",
+    "main": [
+      {
+        "card": {
+          "_id": "67e38dda79f0ebec03809162",
+          "name": "Floragato",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67218224c08874f5ab2e1752",
+          "name": "Jigglypuff",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67e38e14575eceb838a21041",
+          "name": "Meowscarada",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e38dba5cc271d38f7466d1",
+          "name": "Sprigatito",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395c979f0ebec0380c2f3",
+          "name": "Wigglytuff",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e259d",
+          "name": "Erika",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395dc575eceb838a24b19",
+          "name": "Red",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67e395ec575eceb838a24b54",
+          "name": "Team Rocket Grunt",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/hokage-kommunity-final-(37-players)/1/meowscarada/hd|-gato/jQMPs/",
+    "deckType": {
+      "name": "Meowscarada",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "1",
+    "customTournamentName": "HOKAGE KOMMUNITY FINAL (37 Players)",
+    "engines": [],
+    "linkedArticle": null
+  },
+  {
+    "author": "Lewus",
+    "created": "2025-04-06T18:16:31.487Z",
+    "main": [
+      {
+        "card": {
+          "_id": "67e38dda79f0ebec03809162",
+          "name": "Floragato",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67218224c08874f5ab2e1752",
+          "name": "Jigglypuff",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67e38e14575eceb838a21041",
+          "name": "Meowscarada",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e38dba5cc271d38f7466d1",
+          "name": "Sprigatito",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395c979f0ebec0380c2f3",
+          "name": "Wigglytuff",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e259d",
+          "name": "Erika",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395dc575eceb838a24b19",
+          "name": "Red",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67e395ec575eceb838a24b54",
+          "name": "Team Rocket Grunt",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/polish-pocket-league---sezon-3-(35-players)/1/meowscarada/lewus/_Z7dx/",
+    "deckType": {
+      "name": "Meowscarada",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 8",
+    "tournamentNumber": "1",
+    "customTournamentName": "Polish Pocket League - Sezon 3 (35 Players)",
+    "engines": [],
+    "linkedArticle": null
   }
 ]

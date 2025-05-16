@@ -1,0 +1,57 @@
+{
+  "_id": "6811c9a6a93125d205b4ae5d",
+  "name": "Alolan Muk ex",
+  "energyType": [
+    "Darkness"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "160",
+  "pokemonId": "A3-111",
+  "limitlessId": "A3 111",
+  "rarity": "d-4",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 3,
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 200,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Chemical Panic",
+      "text": "1 Special Condition from among Asleep, Burned, Confused, Paralyzed, and Poisoned is chosen at random, and your opponent’s Active Pokémon is now affected by that Special Condition. Any Special Conditions already affecting that Pokémon will not be chosen.",
+      "energyCost": [
+        "Darkness",
+        "Darkness",
+        "Colorless"
+      ],
+      "hp": "80",
+      "_id": "6811d660c0a4ec0168e93f87"
+    }
+  ],
+  "deckTypes": [
+    "Alolan Muk ex"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true
+}

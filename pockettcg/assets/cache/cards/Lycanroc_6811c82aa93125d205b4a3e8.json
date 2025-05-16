@@ -1,0 +1,57 @@
+{
+  "_id": "6811c82aa93125d205b4a3e8",
+  "name": "Lycanroc",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "100",
+  "pokemonId": "A3-101",
+  "limitlessId": "A3 101",
+  "rarity": "d-3",
+  "weakness": [
+    "Grass"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Blood Fang",
+      "text": "If your opponent’s Active Pokémon has more remaining HP than this Pokémon, this attack does 50 more damage.\n",
+      "energyCost": [
+        "Fighting",
+        "Fighting",
+        null,
+        null
+      ],
+      "hp": "50+",
+      "_id": "6811c82aa93125d205b4a3e9"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

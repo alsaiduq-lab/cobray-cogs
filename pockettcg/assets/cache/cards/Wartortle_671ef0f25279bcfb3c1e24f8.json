@@ -18,7 +18,7 @@
         "Colorless"
       ],
       "hp": "40",
-      "_id": "679952c61552ba8d13d74f27"
+      "_id": "6811e773819c204fd6ce8f61"
     }
   ],
   "obtain": [
@@ -46,7 +46,17 @@
     "Lightning"
   ],
   "release": "2024-10-30T03:00:00.000Z",
-  "popRank": 113,
-  "artVariants": [],
-  "limitlessId": "A1 54"
+  "popRank": 132,
+  "artVariants": [
+    {
+      "_id": "6811d5f6c0a4ec0168e93c18",
+      "name": "Wartortle",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    }
+  ],
+  "limitlessId": "A1 54",
+  "deckTypes": [
+    "Blastoise ex"
+  ]
 }

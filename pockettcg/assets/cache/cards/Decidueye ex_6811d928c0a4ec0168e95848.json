@@ -1,0 +1,66 @@
+{
+  "_id": "6811d928c0a4ec0168e95848",
+  "name": "Decidueye ex",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "170",
+  "pokemonId": "A3-198",
+  "limitlessId": "A3 198",
+  "rarity": "s-2",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 1,
+  "description": "",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Pierce the Pain",
+      "text": "This attack does 100 damage to 1 of your opponents Pokemon that has damage on it.",
+      "energyCost": [
+        "Colorless",
+        "Colorless",
+        null
+      ],
+      "_id": "6811e2b7c0a4ec0168e9a40a"
+    },
+    {
+      "name": "Razor Lead",
+      "text": "",
+      "energyCost": [
+        "Grass",
+        "Grass"
+      ],
+      "hp": "80",
+      "_id": "6811e2b7c0a4ec0168e9a40b"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true,
+  "release": "2025-04-30T06:00:00.000Z",
+  "nameRelease": "2025-04-30T06:00:00.000Z"
+}

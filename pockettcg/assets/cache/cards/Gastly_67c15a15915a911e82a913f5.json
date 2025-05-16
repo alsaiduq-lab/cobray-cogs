@@ -18,7 +18,14 @@
   "release": "2025-02-28T06:00:00.000Z",
   "popRank": 1.7976931348623157e+308,
   "alternateArt": false,
-  "artVariants": [],
+  "artVariants": [
+    {
+      "_id": "6811d71bc0a4ec0168e94664",
+      "name": "Gastly",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    }
+  ],
   "abilities": [],
   "moves": [
     {
@@ -29,7 +36,7 @@
         null,
         null
       ],
-      "_id": "67c15a15915a911e82a913f6"
+      "_id": "6811e7c5a93125d205b59611"
     }
   ],
   "deckTypes": [],
@@ -44,7 +51,7 @@
           "_id": "67c1661a7103a0f7aed7adaf",
           "title": "Triumphant Light",
           "url": "/sets/triumphant-light/",
-          "image": "/pkm_img/News/2025/February/triumphantlight.webp"
+          "image": "/pkm_img/Sets/triumphant-light1.webp"
         }
       },
       "amount": 1,

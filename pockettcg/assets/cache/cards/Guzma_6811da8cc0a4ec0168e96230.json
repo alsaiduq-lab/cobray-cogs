@@ -1,0 +1,39 @@
+{
+  "_id": "6811da8cc0a4ec0168e96230",
+  "name": "Guzma",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Supporter",
+  "pokemonId": "A3-208",
+  "limitlessId": "A3 208",
+  "rarity": "s-3",
+  "weakness": [],
+  "description": "Discard all Pokemon Tool cards attached to each of your opponents Pokemon.",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "release": "2025-04-30T06:00:00.000Z",
+  "nameRelease": "2025-04-30T06:00:00.000Z"
+}

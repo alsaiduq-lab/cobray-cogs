@@ -1,0 +1,55 @@
+{
+  "_id": "6811d752c0a4ec0168e94894",
+  "name": "Wishiwashi ex",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "170",
+  "pokemonId": "A3-184",
+  "limitlessId": "A3 184",
+  "rarity": "s-2",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 3,
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "School Storm",
+      "text": "This attack does 40 more damage for each of your Benched Wishiwashi and Wishiwashi ex.",
+      "energyCost": [
+        "Water",
+        "Water",
+        "Water"
+      ],
+      "hp": "30+",
+      "_id": "6811d78bc0a4ec0168e94aaa"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true
+}

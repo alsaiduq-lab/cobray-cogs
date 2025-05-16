@@ -1,0 +1,54 @@
+{
+  "_id": "6811c906c0a4ec0168e8ddcb",
+  "name": "Alolan Raticate",
+  "energyType": [
+    "Darkness"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "110",
+  "pokemonId": "A3-107",
+  "limitlessId": "A3 107",
+  "rarity": "d-2",
+  "weakness": [
+    "Grass"
+  ],
+  "retreat": 3,
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Scrounge-and-Scarf",
+      "text": "Discard a random Item card from your opponent’s hand.",
+      "energyCost": [
+        "Darkness",
+        "Darkness",
+        null
+      ],
+      "hp": "20",
+      "_id": "6811c906c0a4ec0168e8ddcc"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ]
+}

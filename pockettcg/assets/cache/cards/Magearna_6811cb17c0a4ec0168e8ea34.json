@@ -1,0 +1,60 @@
+{
+  "_id": "6811cb17c0a4ec0168e8ea34",
+  "name": "Magearna",
+  "energyType": [
+    "Metal"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "90",
+  "pokemonId": "A3-123",
+  "limitlessId": "A3 123",
+  "rarity": "d-3",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 138,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Silver Cannon",
+      "text": "If your opponent’s Active Pokémon has an Ability, this attack does 40 more damage.",
+      "energyCost": [
+        "Metal",
+        "Metal",
+        null,
+        null
+      ],
+      "hp": "40+",
+      "_id": "6811cb17c0a4ec0168e8ea35"
+    }
+  ],
+  "deckTypes": [
+    "Solgaleo ex",
+    "Solgaleo ex Skarmory"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd6ca93125d205b45fa7",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Solgaleo",
+        "linkedArticle": {
+          "_id": "6811de68c0a4ec0168e97e92",
+          "title": "Celestial Guardians: Solgaleo",
+          "url": "/sets/celestial-guardians-solgaleo/",
+          "image": "/pkm_img/Sets/cgsolgaleo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

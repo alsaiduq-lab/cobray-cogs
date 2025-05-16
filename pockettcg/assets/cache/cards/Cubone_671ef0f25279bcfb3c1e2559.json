@@ -17,7 +17,7 @@
       "energyCost": [
         "Colorless"
       ],
-      "_id": "679955af1552ba8d13d761b9"
+      "_id": "6811e77fa93125d205b593b8"
     }
   ],
   "obtain": [
@@ -45,12 +45,21 @@
   "weakness": [
     "Grass"
   ],
-  "popRank": 97,
+  "popRank": 1.7976931348623157e+308,
   "artVariants": [
     {
       "_id": "671ef1105279bcfb3c1e25b2",
-      "name": "Cubone"
+      "name": "Cubone",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    },
+    {
+      "_id": "6811d82c819c204fd6ce1ae5",
+      "name": "Cubone",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     }
   ],
-  "limitlessId": "A1 151"
+  "limitlessId": "A1 151",
+  "deckTypes": []
 }

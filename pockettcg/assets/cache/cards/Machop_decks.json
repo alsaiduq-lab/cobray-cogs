@@ -1,5 +1,162 @@
 [
   {
+    "author": "Esteban_Alpha",
+    "created": "2025-05-05T14:16:17.812Z",
+    "main": [
+      {
+        "card": {
+          "_id": "6799baf2169202e5d7e67c99",
+          "name": "Cranidos",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea526950657553dc6903",
+          "name": "Lucario",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67e395ff5cc271d38f7497e3",
+          "name": "Machamp",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67e3952d79f0ebec0380bfc3",
+          "name": "Machop",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bb14169202e5d7e67d59",
+          "name": "Rampardos",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9a0dbba2e0d2bb5f57d",
+          "name": "Riolu",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67dd67b3a1b6092a3c64b8b7",
+          "name": "Iono",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799bcb5f06a47c6afdf7763",
+          "name": "Skull Fossil",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/danielcmini-tournament-premium-pass-(180-players)/1/lucario/esteban_alpha/okvJL/",
+    "deckType": {
+      "name": "Lucario",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "1",
+    "customTournamentName": "Danielcmini tournament: PREMIUM PASS (180 Players)",
+    "engines": [
+      {
+        "_id": "67abcd1d6fa98c7329e3779d",
+        "name": "Rampardos"
+      },
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      }
+    ],
+    "linkedArticle": {
+      "_id": "68135ca1a93125d205c1b0d2",
+      "title": "PTCGP 50-200 Player Event Roundup #38",
+      "url": "/tournaments/tcgp-weekly-results/38/report/"
+    }
+  },
+  {
     "author": "MITRAB",
     "created": "2025-03-14T13:50:02.783Z",
     "main": [
@@ -1170,128 +1327,6 @@
       "_id": "67c25bc48046c4a9727794cf",
       "title": "Pocket Winds: Step Up #1- 298 Players",
       "url": "/tournaments/pocket-winds-step-up/1/report/"
-    }
-  },
-  {
-    "author": "Shubruise",
-    "created": "2025-02-26T12:28:33.078Z",
-    "main": [
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e255c",
-          "name": "Hitmonlee",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2554",
-          "name": "Machamp ex",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2552",
-          "name": "Machoke",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2551",
-          "name": "Machop",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "6798ea0c6950657553dc675d",
-          "name": "Cyrus",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poké Ball",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "6761262ab864a94749eef6c0",
-          "name": "Pokédex",
-          "alternateArt": true,
-          "nameRelease": "2024-10-30T03:00:00.000Z"
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "6799bd10169202e5d7e6885f",
-          "name": "Pokémon Communication",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "672181b7c08874f5ab2e1700",
-          "name": "Professor's Research",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "6798e9cadbba2e0d2bb5f6a4",
-          "name": "Rocky Helmet",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a3",
-          "name": "Sabrina",
-          "alternateArt": false
-        },
-        "amount": 2
-      }
-    ],
-    "side": [],
-    "url": "/community-tournaments/the-dark-league-tuesday-(166-players)/3/machamp-ex/shubruise/R3Dc1/",
-    "deckType": {
-      "name": "Machamp ex",
-      "tier": null
-    },
-    "tournamentType": {
-      "name": "Community Tournaments",
-      "shortName": "Community Tournaments",
-      "icon": "/pkm_img/image.webp",
-      "enumSuffix": "#",
-      "statsWeight": null
-    },
-    "tournamentPlacement": "Top 32",
-    "tournamentNumber": "3",
-    "customTournamentName": "The Dark League Tuesday (166 Players)",
-    "engines": [
-      {
-        "_id": "67abc59288624a4a297bbfd0",
-        "name": "Hitmonlee"
-      }
-    ],
-    "linkedArticle": {
-      "_id": "67bc74ce055e9f689d4c34db",
-      "title": "PTCGP 50-200 Player Event Roundup #27",
-      "url": "/tournaments/tcgp-weekly-results/27/report/"
     }
   }
 ]

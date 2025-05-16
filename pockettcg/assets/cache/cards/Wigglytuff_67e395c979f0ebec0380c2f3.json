@@ -24,13 +24,19 @@
       "name": "Wigglytuff",
       "alternateArt": true,
       "nameRelease": "2024-10-30T03:00:00.000Z"
+    },
+    {
+      "_id": "6811d91ca93125d205b51f2e",
+      "name": "Wigglytuff",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     }
   ],
   "abilities": [
     {
       "name": "Comforting Song",
       "text": "Once during your turn, you meay heal 20 damage from your Active Pokémon.",
-      "_id": "67e3a66a79f0ebec03812a6d"
+      "_id": "6811e756a93125d205b591d3"
     }
   ],
   "moves": [
@@ -44,7 +50,7 @@
         null
       ],
       "hp": "50",
-      "_id": "67e3a66a79f0ebec03812a6e"
+      "_id": "6811e756a93125d205b591d4"
     }
   ],
   "deckTypes": [],

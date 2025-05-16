@@ -1,0 +1,63 @@
+{
+  "_id": "6811b8f4819c204fd6cd5652",
+  "name": "Alolan Marowak",
+  "energyType": [
+    "Fire"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "11o",
+  "pokemonId": "A3-027",
+  "limitlessId": "A3 27",
+  "rarity": "d-2",
+  "weakness": [
+    "Water"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "680a3b74ee5adf8f1a256f77",
+      "name": "Alolan Marowak",
+      "alternateArt": true,
+      "nameRelease": "2025-04-30T06:00:00.000Z"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Burning Bonemarang",
+      "text": "Flip 2 coins. This attack does 70 damage for each heads. If at least 1 of them is heads, your opponents active pokemon is now burned.",
+      "energyCost": [
+        "Fire",
+        "Fire",
+        "Colorless"
+      ],
+      "hp": "70x",
+      "_id": "6811c301c0a4ec0168e8b73f"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

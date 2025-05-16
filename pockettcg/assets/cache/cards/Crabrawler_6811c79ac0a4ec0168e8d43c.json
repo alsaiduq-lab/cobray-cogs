@@ -1,0 +1,67 @@
+{
+  "_id": "6811c79ac0a4ec0168e8d43c",
+  "name": "Crabrawler",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "70",
+  "pokemonId": "A3-097",
+  "limitlessId": "A3 97",
+  "rarity": "d-1",
+  "weakness": [
+    "Psychic"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 98,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6811d038c0a4ec0168e90fea",
+      "name": "Crabrawler",
+      "alternateArt": true,
+      "nameRelease": "2025-04-30T06:00:00.000Z"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Punch",
+      "text": "",
+      "energyCost": [
+        "Colorless",
+        null,
+        null,
+        null
+      ],
+      "hp": "20",
+      "_id": "6826e7a9c33728d7e4895c0f"
+    }
+  ],
+  "deckTypes": [
+    "Crabominable ex Greninja",
+    "Crabominable ex"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd6ca93125d205b45fa7",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Solgaleo",
+        "linkedArticle": {
+          "_id": "6811de68c0a4ec0168e97e92",
+          "title": "Celestial Guardians: Solgaleo",
+          "url": "/sets/celestial-guardians-solgaleo/",
+          "image": "/pkm_img/Sets/cgsolgaleo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

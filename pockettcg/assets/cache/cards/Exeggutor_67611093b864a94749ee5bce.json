@@ -20,7 +20,15 @@
   "artVariants": [
     {
       "_id": "67611ba6f9e257245fbb967b",
-      "name": "Exeggutor"
+      "name": "Exeggutor",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    },
+    {
+      "_id": "6811d4ecc0a4ec0168e933b4",
+      "name": "Exeggutor",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     }
   ],
   "abilities": [],
@@ -35,7 +43,7 @@
         "Colorless"
       ],
       "hp": "80+",
-      "_id": "67994128f5d84b3e8fe0d004"
+      "_id": "6811e74aa93125d205b59167"
     }
   ],
   "obtain": [
@@ -57,5 +65,6 @@
     }
   ],
   "ex": false,
-  "limitlessId": "A1a 2"
+  "limitlessId": "A1a 2",
+  "deckTypes": []
 }

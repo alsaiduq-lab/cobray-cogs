@@ -47,8 +47,10 @@
   "weakness": [
     "Psychic"
   ],
-  "popRank": 1.7976931348623157e+308,
+  "popRank": 244,
   "artVariants": [],
   "limitlessId": "A1 145",
-  "deckTypes": []
+  "deckTypes": [
+    "Lucario"
+  ]
 }

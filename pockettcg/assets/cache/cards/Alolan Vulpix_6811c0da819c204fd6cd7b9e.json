@@ -1,0 +1,52 @@
+{
+  "_id": "6811c0da819c204fd6cd7b9e",
+  "name": "Alolan Vulpix",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A3-040",
+  "limitlessId": "A3 40",
+  "rarity": "d-1",
+  "weakness": [
+    "Metal"
+  ],
+  "retreat": 1,
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Call Forth Cold",
+      "text": "Take a Water Energy from your Energy Zone and attach it to this Pokémon.",
+      "energyCost": [
+        "Water",
+        null
+      ],
+      "_id": "6811c7a0c0a4ec0168e8d477"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ]
+}

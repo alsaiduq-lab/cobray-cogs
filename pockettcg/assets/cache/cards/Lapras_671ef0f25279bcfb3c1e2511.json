@@ -46,12 +46,15 @@
   "weakness": [
     "Lightning"
   ],
-  "popRank": 172,
+  "popRank": 1.7976931348623157e+308,
   "artVariants": [
     {
       "_id": "671ef1105279bcfb3c1e25ad",
-      "name": "Lapras"
+      "name": "Lapras",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     }
   ],
-  "limitlessId": "A1 79"
+  "limitlessId": "A1 79",
+  "deckTypes": []
 }

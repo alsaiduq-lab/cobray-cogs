@@ -20,7 +20,7 @@
         "Colorless"
       ],
       "hp": "80+",
-      "_id": "67994d5549fc3af0759c73ce"
+      "_id": "6811e783c0a4ec0168e9cae9"
     }
   ],
   "obtain": [
@@ -48,7 +48,23 @@
     "Lightning"
   ],
   "release": "2024-10-30T03:00:00.000Z",
-  "popRank": 212,
-  "artVariants": [],
-  "limitlessId": "A1 55"
+  "popRank": 246,
+  "artVariants": [
+    {
+      "_id": "67612487f9e257245fbbe4d2",
+      "name": "Blastoise",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    },
+    {
+      "_id": "6811d613819c204fd6ce094f",
+      "name": "Blastoise",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    }
+  ],
+  "limitlessId": "A1 55",
+  "deckTypes": [
+    "Blastoise ex"
+  ]
 }

@@ -1,0 +1,53 @@
+{
+  "_id": "6811d7f3a93125d205b51678",
+  "name": "Machoke",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "100",
+  "pokemonId": "A3-224",
+  "limitlessId": "A3 224",
+  "rarity": "shiny-1",
+  "weakness": [
+    "Psychic"
+  ],
+  "retreat": 2,
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Strength",
+      "energyCost": [
+        "Fighting",
+        "Fighting"
+      ],
+      "hp": "50",
+      "_id": "6811d7f3a93125d205b51679"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd6ca93125d205b45fa7",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Solgaleo",
+        "linkedArticle": {
+          "_id": "6811de68c0a4ec0168e97e92",
+          "title": "Celestial Guardians: Solgaleo",
+          "url": "/sets/celestial-guardians-solgaleo/",
+          "image": "/pkm_img/Sets/cgsolgaleo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

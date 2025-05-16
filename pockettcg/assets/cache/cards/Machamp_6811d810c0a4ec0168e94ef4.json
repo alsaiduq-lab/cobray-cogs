@@ -1,0 +1,58 @@
+{
+  "_id": "6811d810c0a4ec0168e94ef4",
+  "name": "Machamp",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "150",
+  "pokemonId": "A3-225",
+  "limitlessId": "A3 225",
+  "rarity": "shiny-1",
+  "weakness": [
+    "Psychic"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Power Press",
+      "text": "If this Pokemon has at least 2 extra Fighting Energy attached, this attack does 50 more damage.",
+      "energyCost": [
+        "Fighting",
+        "Fighting",
+        null,
+        null
+      ],
+      "hp": "70+",
+      "_id": "6811d810c0a4ec0168e94ef5"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd6ca93125d205b45fa7",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Solgaleo",
+        "linkedArticle": {
+          "_id": "6811de68c0a4ec0168e97e92",
+          "title": "Celestial Guardians: Solgaleo",
+          "url": "/sets/celestial-guardians-solgaleo/",
+          "image": "/pkm_img/Sets/cgsolgaleo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

@@ -1,0 +1,56 @@
+{
+  "_id": "6811c39fa93125d205b484b9",
+  "name": "Araquanid",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "110",
+  "pokemonId": "A3-053",
+  "limitlessId": "A3 53",
+  "rarity": "d-2",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 2,
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 253,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Dangerous Claws",
+      "text": "If your opponent’s Active Pokémon is a Basic Pokemon, this attack does 60 more damage.",
+      "energyCost": [
+        "Water",
+        "Water",
+        "Colorless"
+      ],
+      "hp": "60+",
+      "_id": "6811c83dc0a4ec0168e8d8f3"
+    }
+  ],
+  "deckTypes": [
+    "Palkia ex Manaphy"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd6ca93125d205b45fa7",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Solgaleo",
+        "linkedArticle": {
+          "_id": "6811de68c0a4ec0168e97e92",
+          "title": "Celestial Guardians: Solgaleo",
+          "url": "/sets/celestial-guardians-solgaleo/",
+          "image": "/pkm_img/Sets/cgsolgaleo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ]
+}

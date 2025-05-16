@@ -24,7 +24,7 @@
         "Colorless"
       ],
       "hp": "40",
-      "_id": "67994962e7d048b93b251d91"
+      "_id": "67a75b8e2f78b5ccf2b67433"
     }
   ],
   "obtain": [
@@ -44,5 +44,7 @@
   "subType": "Basic",
   "artVariants": [],
   "limitlessId": "P-A 23",
+  "rarity": "p",
+  "deckTypes": [],
   "nameRelease": "2024-10-30T03:00:00.000Z"
 }

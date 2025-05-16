@@ -1,0 +1,56 @@
+{
+  "_id": "6811c1ba819c204fd6cd811b",
+  "name": "Popplio",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A3-045",
+  "limitlessId": "A3 45",
+  "rarity": "d-1",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 1,
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 233,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Sing",
+      "text": "Your opponent’s Active Pokémon is now Asleep.",
+      "energyCost": [
+        "Colorless",
+        null,
+        null
+      ],
+      "hp": "50",
+      "_id": "6811c7dfa93125d205b4a214"
+    }
+  ],
+  "deckTypes": [
+    "Crabominable ex"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ]
+}

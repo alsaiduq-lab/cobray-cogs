@@ -1,0 +1,63 @@
+{
+  "_id": "6811c8a5c0a4ec0168e8db95",
+  "name": "Passimian ex",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "130",
+  "pokemonId": "A3-205",
+  "limitlessId": "A3 205",
+  "rarity": "s-2",
+  "weakness": [
+    "Psychic"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Offload Pass",
+      "text": "If this Pokémon is in the Active Spot and is Knocked Out by damage from an attack from your opponent’s Pokémon, move all  Energy from this Pokémon to 1 of your Benched Pokémon.\n",
+      "_id": "6811c8a5c0a4ec0168e8db96"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Seismic Toss",
+      "text": "",
+      "energyCost": [
+        "Fighting",
+        "Colorless",
+        null,
+        null
+      ],
+      "hp": "60",
+      "_id": "6811c8a5c0a4ec0168e8db97"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true
+}

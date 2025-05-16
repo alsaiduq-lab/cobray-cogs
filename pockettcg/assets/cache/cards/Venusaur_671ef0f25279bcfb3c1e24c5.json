@@ -21,7 +21,7 @@
         "Colorless"
       ],
       "hp": "80",
-      "_id": "6799485097fb8e77af07a240"
+      "_id": "6811e702a93125d205b58e9c"
     }
   ],
   "obtain": [
@@ -53,8 +53,17 @@
   "artVariants": [
     {
       "_id": "6721820dc08874f5ab2e1735",
-      "name": "Venusaur"
+      "name": "Venusaur",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    },
+    {
+      "_id": "6811d4a3a93125d205b4fdae",
+      "name": "Venusaur",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     }
   ],
-  "limitlessId": "A1 3"
+  "limitlessId": "A1 3",
+  "deckTypes": []
 }

@@ -1,0 +1,58 @@
+{
+  "_id": "6811c361a93125d205b482c7",
+  "name": "Steenee",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "80",
+  "pokemonId": "A3-019",
+  "limitlessId": "A3 19",
+  "rarity": "d-2",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 1,
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 124,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Double Spin",
+      "text": "Flip 2 coins. This attack does 30 damage for each heads.",
+      "energyCost": [
+        "Grass",
+        null,
+        null
+      ],
+      "hp": "30x",
+      "_id": "6811dec0c0a4ec0168e9817f"
+    }
+  ],
+  "deckTypes": [
+    "Meowscarada",
+    "Decidueye ex",
+    "Tsareena"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd6ca93125d205b45fa7",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Solgaleo",
+        "linkedArticle": {
+          "_id": "6811de68c0a4ec0168e97e92",
+          "title": "Celestial Guardians: Solgaleo",
+          "url": "/sets/celestial-guardians-solgaleo/",
+          "image": "/pkm_img/Sets/cgsolgaleo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ]
+}

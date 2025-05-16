@@ -1,0 +1,51 @@
+{
+  "_id": "680a3c4a8bc31f24c36ad742",
+  "name": "Kiawe",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Supporter",
+  "hp": "",
+  "pokemonId": "A3-150",
+  "limitlessId": "A3 150",
+  "rarity": "d-2",
+  "weakness": [],
+  "description": "Choose 1of your Alolan Marowak or Turtonator. Take 1 Fire Energy from your Energy Zone and attach it to that Pokemon. Your turn ends.",
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 90,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6811d792c0a4ec0168e94ae6",
+      "name": "Kiawe",
+      "alternateArt": true,
+      "nameRelease": "2025-04-30T06:00:00.000Z"
+    }
+  ],
+  "abilities": [],
+  "moves": [],
+  "deckTypes": [
+    "Incineroar ex",
+    "Charizard ex",
+    "Magnezone",
+    "Infernape ex"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

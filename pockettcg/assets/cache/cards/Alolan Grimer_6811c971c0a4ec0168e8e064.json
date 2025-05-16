@@ -1,0 +1,63 @@
+{
+  "_id": "6811c971c0a4ec0168e8e064",
+  "name": "Alolan Grimer",
+  "energyType": [
+    "Darkness"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "70",
+  "pokemonId": "A3-110",
+  "limitlessId": "A3 110",
+  "rarity": "d-1",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 2,
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 235,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6811d052c0a4ec0168e910c4",
+      "name": "Alolan Grimer",
+      "alternateArt": true,
+      "nameRelease": "2025-04-30T06:00:00.000Z"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Sludge Toss",
+      "text": "",
+      "energyCost": [
+        "Darkness",
+        "Colorless",
+        null
+      ],
+      "hp": "30",
+      "_id": "6826e857c33728d7e48962fb"
+    }
+  ],
+  "deckTypes": [
+    "Alolan Muk ex"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ]
+}

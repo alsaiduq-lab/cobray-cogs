@@ -1,0 +1,89 @@
+{
+  "_id": "671ef0f25279bcfb3c1e24e6",
+  "pokemonId": "A1-036",
+  "name": "Charizard ex: Genetic Apex",
+  "pack": "Charizard",
+  "abilities": [],
+  "alternateArt": false,
+  "cardType": "Pokemon",
+  "energyType": [
+    "Fire"
+  ],
+  "hp": "180",
+  "moves": [
+    {
+      "name": "Slash",
+      "energyCost": [
+        "Fire",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "60",
+      "_id": "681a71081107668ef1ab516e"
+    },
+    {
+      "name": "Crimson Storm",
+      "text": "Discard 2 Fire Energy from this Pokemon.",
+      "energyCost": [
+        "Fire",
+        "Fire",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "200",
+      "_id": "681a71081107668ef1ab516f"
+    }
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6721ce9af3133dff28feb222",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Genetic Apex: Charizard",
+        "linkedArticle": {
+          "_id": "6728e5e97e99ebe6207c6c77",
+          "title": "Genetic Apex: Charizard",
+          "url": "/sets/genetic-apex-charizard/",
+          "image": "/pkm_img/Sets/GeneticApexCharizard.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "rarity": "d-4",
+  "release": "2024-10-30T03:00:00.000Z",
+  "retreat": 2,
+  "subType": "Stage 2",
+  "weakness": [
+    "Water"
+  ],
+  "ex": true,
+  "popRank": 64,
+  "artVariants": [
+    {
+      "_id": "671ef1105279bcfb3c1e25db",
+      "name": "Charizard ex: Genetic Apex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    },
+    {
+      "_id": "671ef1105279bcfb3c1e25de",
+      "name": "Charizard ex: Genetic Apex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    },
+    {
+      "_id": "671ef1105279bcfb3c1e25c0",
+      "name": "Charizard ex: Genetic Apex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    }
+  ],
+  "limitlessId": "A1 36",
+  "deckTypes": [
+    "Charizard ex: Genetic Apex",
+    "Charizard ex"
+  ]
+}

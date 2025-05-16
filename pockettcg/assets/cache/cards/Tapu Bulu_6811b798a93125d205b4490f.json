@@ -1,0 +1,65 @@
+{
+  "_id": "6811b798a93125d205b4490f",
+  "name": "Tapu Bulu",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "120",
+  "pokemonId": "A3-024",
+  "limitlessId": "A3 24",
+  "rarity": "d-3",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 259,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6811d309c0a4ec0168e9257e",
+      "name": "Tapu Bulu",
+      "alternateArt": true,
+      "nameRelease": "2025-04-30T06:00:00.000Z"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Stuck-In Tackle",
+      "text": "Flip a coin. If tails, this Pokemon also does 20 damage to itself",
+      "energyCost": [
+        "Grass",
+        "Grass",
+        "Colorless"
+      ],
+      "hp": "100",
+      "_id": "6811d321819c204fd6cdf39e"
+    }
+  ],
+  "deckTypes": [
+    "Giratina ex Greninja"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd6ca93125d205b45fa7",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Solgaleo",
+        "linkedArticle": {
+          "_id": "6811de68c0a4ec0168e97e92",
+          "title": "Celestial Guardians: Solgaleo",
+          "url": "/sets/celestial-guardians-solgaleo/",
+          "image": "/pkm_img/Sets/cgsolgaleo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

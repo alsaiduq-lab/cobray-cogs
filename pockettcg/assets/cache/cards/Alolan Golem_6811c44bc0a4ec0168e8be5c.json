@@ -1,0 +1,57 @@
+{
+  "_id": "6811c44bc0a4ec0168e8be5c",
+  "name": "Alolan Golem",
+  "energyType": [
+    "Lightning"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "160",
+  "pokemonId": "A3-061",
+  "limitlessId": "A3 61",
+  "rarity": "d-3",
+  "weakness": [
+    "Fighting"
+  ],
+  "retreat": 4,
+  "description": "",
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Super Zap Cannon",
+      "text": "Discard 2  Lightning Energy from this Pokémon.",
+      "energyCost": [
+        "Lightning",
+        "Colorless",
+        "Colorless",
+        "Lightning"
+      ],
+      "hp": "150",
+      "_id": "6811c44bc0a4ec0168e8be5d"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd6ca93125d205b45fa7",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Solgaleo",
+        "linkedArticle": {
+          "_id": "6811de68c0a4ec0168e97e92",
+          "title": "Celestial Guardians: Solgaleo",
+          "url": "/sets/celestial-guardians-solgaleo/",
+          "image": "/pkm_img/Sets/cgsolgaleo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

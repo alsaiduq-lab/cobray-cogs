@@ -1,0 +1,78 @@
+{
+  "_id": "6811d01f819c204fd6cddd25",
+  "name": "Lillie",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Supporter",
+  "pokemonId": "A3-155",
+  "limitlessId": "A3 155",
+  "rarity": "d-2",
+  "weakness": [],
+  "description": "Heal 60 damage from 1 of your Stage 2 Pokemon.",
+  "popRank": 17,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "680a3cb7ee5adf8f1a257884",
+      "name": "Lillie",
+      "alternateArt": true,
+      "nameRelease": "2025-04-30T06:00:00.000Z"
+    },
+    {
+      "_id": "6811bc19a93125d205b459ec",
+      "name": "Lillie",
+      "alternateArt": true,
+      "nameRelease": "2025-04-30T06:00:00.000Z"
+    }
+  ],
+  "abilities": [],
+  "moves": [],
+  "deckTypes": [
+    "Decidueye ex",
+    "Pikachu ex",
+    "Lucario",
+    "Charizard ex",
+    "Solgaleo ex Skarmory",
+    "Beedrill ex",
+    "Solgaleo ex",
+    "Lunala ex",
+    "Meowscarada",
+    "Lycanroc",
+    "Incineroar ex",
+    "Charizard ex: Genetic Apex",
+    "Beedrill",
+    "Rampardos",
+    "Garchomp ex",
+    "Aerodactyl ex",
+    "Skarmory",
+    "Gengar ex",
+    "Magnezone",
+    "Mewtwo ex",
+    "Vikavolt",
+    "Gallade ex",
+    "Blastoise ex",
+    "Garchomp",
+    "Dragonite",
+    "Infernape ex"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd6ca93125d205b45fa7",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Solgaleo",
+        "linkedArticle": {
+          "_id": "6811de68c0a4ec0168e97e92",
+          "title": "Celestial Guardians: Solgaleo",
+          "url": "/sets/celestial-guardians-solgaleo/",
+          "image": "/pkm_img/Sets/cgsolgaleo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "release": "2025-04-30T06:00:00.000Z"
+}

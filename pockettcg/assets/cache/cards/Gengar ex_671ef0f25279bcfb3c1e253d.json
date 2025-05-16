@@ -7,7 +7,7 @@
     {
       "name": "Shadowy Spellbind",
       "text": "As long as this Pokémon is in the Active Spot, your opponent can't use any Supporter cards from their hand.",
-      "_id": "6799551897fb8e77af07f183"
+      "_id": "6811e713a93125d205b58f30"
     }
   ],
   "alternateArt": false,
@@ -26,7 +26,7 @@
         "Psychic"
       ],
       "hp": "100",
-      "_id": "6799551897fb8e77af07f184"
+      "_id": "6811e713a93125d205b58f31"
     }
   ],
   "obtain": [
@@ -54,16 +54,29 @@
   "weakness": [
     "Darkness"
   ],
-  "popRank": 132,
+  "popRank": 141,
   "artVariants": [
     {
       "_id": "671ef1105279bcfb3c1e25d8",
-      "name": "Gengar ex"
+      "name": "Gengar ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     },
     {
       "_id": "671ef1105279bcfb3c1e25c8",
-      "name": "Gengar ex"
+      "name": "Gengar ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    },
+    {
+      "_id": "6811d76fc0a4ec0168e9499d",
+      "name": "Gengar ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     }
   ],
-  "limitlessId": "A1 123"
+  "limitlessId": "A1 123",
+  "deckTypes": [
+    "Gengar ex"
+  ]
 }

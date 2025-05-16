@@ -1,0 +1,55 @@
+{
+  "_id": "6811d87bc0a4ec0168e952ec",
+  "name": "Marowak ex",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "140",
+  "pokemonId": "A3-236",
+  "limitlessId": "A3 236",
+  "rarity": "shiny-2",
+  "weakness": [
+    "Grass"
+  ],
+  "retreat": 1,
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Bonemerang",
+      "text": "Flip 2 coins. This attack does 80 damage for each heads.",
+      "energyCost": [
+        "Fighting",
+        "Fighting"
+      ],
+      "hp": "80x",
+      "_id": "6811d87bc0a4ec0168e952ed"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true,
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

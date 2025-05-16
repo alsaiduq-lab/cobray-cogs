@@ -1,0 +1,58 @@
+{
+  "_id": "6811d672c0a4ec0168e94063",
+  "name": "Blastoise ex",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "180",
+  "pokemonId": "A3-232",
+  "limitlessId": "A3 232",
+  "rarity": "shiny-2",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 3,
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Surf",
+      "energyCost": [],
+      "hp": "40",
+      "_id": "6811d672c0a4ec0168e94064"
+    },
+    {
+      "name": "Hydro Bazooka",
+      "text": "If this Pokémon has at least 2 extra Water Energy attached, this attack does 60 more damage.",
+      "energyCost": [],
+      "hp": "100+",
+      "_id": "6811d672c0a4ec0168e94065"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true,
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

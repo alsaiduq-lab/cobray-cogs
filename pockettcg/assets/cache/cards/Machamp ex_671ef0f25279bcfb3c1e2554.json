@@ -20,7 +20,7 @@
         "Fighting"
       ],
       "hp": "120",
-      "_id": "679955981552ba8d13d7615e"
+      "_id": "6811e707a93125d205b58eb6"
     }
   ],
   "obtain": [
@@ -48,16 +48,27 @@
   "weakness": [
     "Psychic"
   ],
-  "popRank": 126,
+  "popRank": 1.7976931348623157e+308,
   "artVariants": [
     {
       "_id": "671ef1105279bcfb3c1e25d9",
-      "name": "Machamp ex"
+      "name": "Machamp ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     },
     {
       "_id": "671ef1105279bcfb3c1e25ca",
-      "name": "Machamp ex"
+      "name": "Machamp ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    },
+    {
+      "_id": "6811d865a93125d205b519d5",
+      "name": "Machamp ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     }
   ],
-  "limitlessId": "A1 146"
+  "limitlessId": "A1 146",
+  "deckTypes": []
 }

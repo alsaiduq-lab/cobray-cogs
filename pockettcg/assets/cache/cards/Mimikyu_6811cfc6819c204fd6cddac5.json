@@ -1,0 +1,50 @@
+{
+  "_id": "6811cfc6819c204fd6cddac5",
+  "name": "Mimikyu",
+  "energyType": [
+    "Psychic"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "70",
+  "pokemonId": "PA-066",
+  "limitlessId": "PA 66",
+  "rarity": "p",
+  "weakness": [
+    "Darkness"
+  ],
+  "retreat": 1,
+  "release": "2025-05-01T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Shadow Hit",
+      "text": "This attack also does 20 damage to 1 of your Pokémon.",
+      "energyCost": [
+        "Psychic",
+        "Colorless",
+        null
+      ],
+      "hp": "60",
+      "_id": "681344cbc0a4ec0168f51c12"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "674c02452e73ab636017128c",
+        "type": "Normal Pack",
+        "name": "Promo Pack A Series: Premium",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "nameRelease": "2025-04-30T06:00:00.000Z"
+}

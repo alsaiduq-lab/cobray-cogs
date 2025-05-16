@@ -15,7 +15,7 @@
   ],
   "retreat": 1,
   "description": "",
-  "release": null,
+  "release": "2025-02-28T06:00:00.000Z",
   "popRank": 1.7976931348623157e+308,
   "alternateArt": false,
   "artVariants": [],
@@ -31,7 +31,7 @@
         null
       ],
       "hp": "10",
-      "_id": "67c168ac7103a0f7aed7bfbe"
+      "_id": "67c16a04915a911e82a99418"
     }
   ],
   "deckTypes": [],
@@ -46,7 +46,7 @@
           "_id": "67c1661a7103a0f7aed7adaf",
           "title": "Triumphant Light",
           "url": "/sets/triumphant-light/",
-          "image": "/pkm_img/News/2025/February/triumphantlight.webp"
+          "image": "/pkm_img/Sets/triumphant-light1.webp"
         }
       },
       "amount": 1,

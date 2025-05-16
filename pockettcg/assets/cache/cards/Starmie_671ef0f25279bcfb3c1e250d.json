@@ -17,7 +17,7 @@
         "Water"
       ],
       "hp": "40",
-      "_id": "67994e4a97fb8e77af07cbd0"
+      "_id": "6811e7a0819c204fd6ce90af"
     }
   ],
   "obtain": [
@@ -45,7 +45,15 @@
   "weakness": [
     "Lightning"
   ],
-  "popRank": 201,
-  "artVariants": [],
-  "limitlessId": "A1 75"
+  "popRank": 1.7976931348623157e+308,
+  "artVariants": [
+    {
+      "_id": "6811d657a93125d205b50a3f",
+      "name": "Starmie",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    }
+  ],
+  "limitlessId": "A1 75",
+  "deckTypes": []
 }

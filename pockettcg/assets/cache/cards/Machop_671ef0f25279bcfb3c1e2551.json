@@ -17,7 +17,7 @@
         "Fighting"
       ],
       "hp": "20",
-      "_id": "67995582c6818b9e6b445698"
+      "_id": "6811e7a2a93125d205b594f5"
     }
   ],
   "obtain": [
@@ -45,10 +45,17 @@
   "weakness": [
     "Psychic"
   ],
-  "popRank": 121,
-  "artVariants": [],
+  "popRank": 245,
+  "artVariants": [
+    {
+      "_id": "6811d7d7c0a4ec0168e94d3b",
+      "name": "Machop",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    }
+  ],
   "limitlessId": "A1 143",
   "deckTypes": [
-    "Machamp ex"
+    "Lucario"
   ]
 }

@@ -1,0 +1,59 @@
+{
+  "_id": "6811ce7dc0a4ec0168e90349",
+  "name": "Poison Barb",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Pokemon Tool",
+  "hp": "",
+  "pokemonId": "A3-146",
+  "limitlessId": "A3 146",
+  "rarity": "d-2",
+  "weakness": [],
+  "description": "If the Pokémon this card is attached to is your Active Pokémon and is damaged by an attack from your opponent's Pokémon, the Attacking Pokémon is now Poisoned.",
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 31,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [],
+  "deckTypes": [
+    "Decidueye ex",
+    "Solgaleo ex",
+    "Darkrai ex Greninja",
+    "Solgaleo ex Skarmory",
+    "Giratina ex",
+    "Giratina ex Darkrai ex",
+    "Greninja",
+    "Lunala ex",
+    "Giratina ex Greninja",
+    "Charizard ex",
+    "Incineroar ex",
+    "Alolan Muk ex",
+    "Gengar ex",
+    "Arceus ex Crobat",
+    "Aerodactyl ex",
+    "Magnezone",
+    "Lycanroc",
+    "Exeggutor ex",
+    "Alolan Raichu ex"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

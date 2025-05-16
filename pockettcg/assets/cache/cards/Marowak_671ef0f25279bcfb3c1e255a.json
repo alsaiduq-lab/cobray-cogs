@@ -17,7 +17,7 @@
         "Fighting"
       ],
       "hp": "40",
-      "_id": "67994ed61552ba8d13d731a4"
+      "_id": "6811e775a93125d205b59346"
     }
   ],
   "obtain": [
@@ -45,7 +45,15 @@
   "weakness": [
     "Grass"
   ],
-  "popRank": 179,
-  "artVariants": [],
-  "limitlessId": "A1 152"
+  "popRank": 1.7976931348623157e+308,
+  "artVariants": [
+    {
+      "_id": "6811d847c0a4ec0168e950bb",
+      "name": "Marowak",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    }
+  ],
+  "limitlessId": "A1 152",
+  "deckTypes": []
 }

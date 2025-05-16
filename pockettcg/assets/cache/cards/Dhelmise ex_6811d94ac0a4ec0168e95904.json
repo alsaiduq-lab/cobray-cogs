@@ -1,0 +1,56 @@
+{
+  "_id": "6811d94ac0a4ec0168e95904",
+  "name": "Dhelmise ex",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "140",
+  "pokemonId": "A3-199",
+  "limitlessId": "A3 199",
+  "rarity": "s-2",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 2,
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Anchor Shot",
+      "text": "During your opponent's next turn, the Defending Pokémon can't retreat.",
+      "energyCost": [
+        "Grass",
+        "Grass",
+        "Colorless"
+      ],
+      "hp": "80",
+      "_id": "6811d94ac0a4ec0168e95905"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd6ca93125d205b45fa7",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Solgaleo",
+        "linkedArticle": {
+          "_id": "6811de68c0a4ec0168e97e92",
+          "title": "Celestial Guardians: Solgaleo",
+          "url": "/sets/celestial-guardians-solgaleo/",
+          "image": "/pkm_img/Sets/cgsolgaleo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true,
+  "nameRelease": "2025-04-30T06:00:00.000Z"
+}

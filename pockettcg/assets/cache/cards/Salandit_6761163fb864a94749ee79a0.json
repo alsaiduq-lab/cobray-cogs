@@ -20,7 +20,8 @@
   "artVariants": [
     {
       "_id": "67611d59f9e257245fbba835",
-      "name": "Salandit"
+      "name": "Salandit",
+      "alternateArt": false
     }
   ],
   "abilities": [],
@@ -56,5 +57,6 @@
     }
   ],
   "ex": false,
-  "limitlessId": "A1a 15"
+  "limitlessId": "A1a 15",
+  "deckTypes": []
 }

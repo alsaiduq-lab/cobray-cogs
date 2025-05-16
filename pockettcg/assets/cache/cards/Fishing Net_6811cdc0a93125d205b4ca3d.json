@@ -1,0 +1,41 @@
+{
+  "_id": "6811cdc0a93125d205b4ca3d",
+  "name": "Fishing Net",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Item",
+  "hp": "",
+  "pokemonId": "A3-143",
+  "limitlessId": "A3 143",
+  "rarity": "d-2",
+  "weakness": [],
+  "description": "Put a random Basic Water Pokémon from your discard pile into your hand.",
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 196,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [],
+  "deckTypes": [
+    "Wishiwashi ex"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

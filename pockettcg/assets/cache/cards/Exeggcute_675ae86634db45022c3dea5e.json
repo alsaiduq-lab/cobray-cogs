@@ -17,7 +17,14 @@
   "release": "2024-12-17T06:00:00.000Z",
   "popRank": 1.7976931348623157e+308,
   "alternateArt": false,
-  "artVariants": [],
+  "artVariants": [
+    {
+      "_id": "6811cf78a93125d205b4d5b9",
+      "name": "Exeggcute",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    }
+  ],
   "abilities": [],
   "moves": [
     {
@@ -26,7 +33,7 @@
       "energyCost": [
         "Colorless"
       ],
-      "_id": "6799411b1f5c09a72fdf1797"
+      "_id": "6811e4d6a93125d205b57bca"
     }
   ],
   "obtain": [
@@ -48,5 +55,6 @@
     }
   ],
   "ex": false,
-  "limitlessId": "A1a 1"
+  "limitlessId": "A1a 1",
+  "deckTypes": []
 }

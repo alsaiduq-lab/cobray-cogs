@@ -1,0 +1,58 @@
+{
+  "_id": "6811c7c8c0a4ec0168e8d57b",
+  "name": "Rockruff",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "60",
+  "pokemonId": "A3-098",
+  "limitlessId": "A3 98",
+  "rarity": "d-1",
+  "weakness": [
+    "Grass"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 85,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Signs of Evolution",
+      "text": "Put a random card that evolves from Rockruff from your deck into your hand.",
+      "energyCost": [
+        "Fighting",
+        null,
+        null
+      ],
+      "_id": "6811c7c8c0a4ec0168e8d57c"
+    }
+  ],
+  "deckTypes": [
+    "Lycanroc",
+    "Aerodactyl ex"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

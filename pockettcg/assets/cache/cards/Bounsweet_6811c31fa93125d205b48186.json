@@ -1,0 +1,59 @@
+{
+  "_id": "6811c31fa93125d205b48186",
+  "name": "Bounsweet",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "50",
+  "pokemonId": "A3-018",
+  "limitlessId": "A3 18",
+  "rarity": "d-1",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 1,
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 100,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Stampede",
+      "text": "",
+      "energyCost": [
+        "Grass",
+        null,
+        null
+      ],
+      "hp": "20",
+      "_id": "6811deb0a93125d205b54a7f"
+    }
+  ],
+  "deckTypes": [
+    "Meowscarada",
+    "Tsareena",
+    "Beedrill ex",
+    "Decidueye ex"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd6ca93125d205b45fa7",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Solgaleo",
+        "linkedArticle": {
+          "_id": "6811de68c0a4ec0168e97e92",
+          "title": "Celestial Guardians: Solgaleo",
+          "url": "/sets/celestial-guardians-solgaleo/",
+          "image": "/pkm_img/Sets/cgsolgaleo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ]
+}

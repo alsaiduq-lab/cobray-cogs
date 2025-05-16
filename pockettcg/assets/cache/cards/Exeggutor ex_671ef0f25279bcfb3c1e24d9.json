@@ -19,7 +19,7 @@
         "Grass"
       ],
       "hp": "40+",
-      "_id": "679951fd1552ba8d13d746c9"
+      "_id": "6811e735a93125d205b5908d"
     }
   ],
   "obtain": [
@@ -47,12 +47,27 @@
   "weakness": [
     "Fire"
   ],
-  "popRank": 23,
+  "popRank": 111,
   "artVariants": [
     {
       "_id": "671ef1105279bcfb3c1e25bf",
-      "name": "Exeggutor ex"
+      "name": "Exeggutor ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    },
+    {
+      "_id": "6811d531a93125d205b501ab",
+      "name": "Exeggutor ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     }
   ],
-  "limitlessId": "A1 23"
+  "limitlessId": "A1 23",
+  "deckTypes": [
+    "Arceus ex",
+    "Leafeon ex",
+    "Meowscarada",
+    "Exeggutor ex",
+    "Decidueye ex"
+  ]
 }

@@ -1,0 +1,62 @@
+{
+  "_id": "6811c238819c204fd6cd8365",
+  "name": "Primarina",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "140",
+  "pokemonId": "A3-048",
+  "limitlessId": "A3 48",
+  "rarity": "d-3",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 2,
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 234,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Melodious Healing",
+      "text": "Once during your turn, you may heal 30 damage from each of your Water Pokémon.",
+      "_id": "6811c809c0a4ec0168e8d767"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Surf",
+      "text": "",
+      "energyCost": [
+        "Water",
+        "Colorless",
+        null
+      ],
+      "hp": "60",
+      "_id": "6811c809c0a4ec0168e8d768"
+    }
+  ],
+  "deckTypes": [
+    "Crabominable ex"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ]
+}

@@ -1,5 +1,1162 @@
 [
   {
+    "author": {
+      "_id": "680bb19ddb815a107b30816f",
+      "roles": [],
+      "username": "Chevisky"
+    },
+    "created": "2025-05-05T01:24:37.291Z",
+    "main": [
+      {
+        "card": {
+          "_id": "67c15a15915a911e82a913f5",
+          "name": "Gastly",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c15a777103a0f7aed75a11",
+          "name": "Gengar",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef1105279bcfb3c1e25d8",
+          "name": "Gengar ex",
+          "alternateArt": true,
+          "nameRelease": "2024-10-30T03:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e253d",
+          "name": "Gengar ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67dd6974e2096b41c50faf01",
+          "name": "Giratina ex",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67c15a56915a911e82a915a6",
+          "name": "Haunter",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "680a3cb7ee5adf8f1a257884",
+          "name": "Lillie",
+          "alternateArt": true,
+          "nameRelease": "2025-04-30T06:00:00.000Z"
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67611c67f9e257245fbb9f18",
+          "name": "Mythical Slab",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "680a3bcc8bc31f24c36ad483",
+          "name": "Rare Candy",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67e395dc575eceb838a24b19",
+          "name": "Red",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/5-winstreak/may-2025/gengar-ex/chevisky/GvLEy/",
+    "deckType": {
+      "name": "Gengar ex",
+      "tier": null
+    },
+    "rankedType": {
+      "name": "5+ Winstreak",
+      "shortName": "Winstreak",
+      "icon": "/img/tournaments/logos/Spicy_Wins.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
+    },
+    "engines": [
+      {
+        "_id": "6814347d353b3af3a08c7717",
+        "name": "Rare Candy"
+      }
+    ],
+    "linkedArticle": null,
+    "hasNotes": true
+  },
+  {
+    "author": {
+      "_id": "6222e83d2765388d2a39b222",
+      "roles": [],
+      "username": "lvl70champion"
+    },
+    "created": "2025-03-27T16:50:18.281Z",
+    "main": [
+      {
+        "card": {
+          "_id": "67c15a15915a911e82a913f5",
+          "name": "Gastly",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c15a777103a0f7aed75a11",
+          "name": "Gengar",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e253d",
+          "name": "Gengar ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67dd6974e2096b41c50faf01",
+          "name": "Giratina ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67218217c08874f5ab2e1742",
+          "name": "Haunter",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c065b152e93386721e5597",
+          "name": "Snorlax",
+          "alternateArt": true,
+          "nameRelease": "2024-10-30T03:00:00.000Z"
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c16140e06d5e18c00aedb8",
+          "name": "Barry",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799a5e0169202e5d7e614b9",
+          "name": "Dawn",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "675ae88248e857c1219910f6",
+          "name": "Leaf",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/5-winstreak/march-2025/gengar-ex/lvl70champion/In_H4/",
+    "deckType": {
+      "name": "Gengar ex",
+      "tier": null
+    },
+    "rankedType": {
+      "name": "5+ Winstreak",
+      "shortName": "Winstreak",
+      "icon": "/img/tournaments/logos/Spicy_Wins.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
+    },
+    "engines": [
+      {
+        "_id": "6825635ec33728d7e47e3635",
+        "name": "Snorlax"
+      }
+    ],
+    "linkedArticle": null
+  },
+  {
+    "author": "jrab",
+    "created": "2025-03-23T17:55:56.117Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e253a",
+          "name": "Gastly",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c15a777103a0f7aed75a11",
+          "name": "Gengar",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e253b",
+          "name": "Haunter",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798f0f2b5fbced301dd066d",
+          "name": "Misdreavus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799b58af06a47c6afdf51ea",
+          "name": "Misdreavus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799b5ac169202e5d7e660d3",
+          "name": "Mismagius ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/pocket-turtle-weekly-(172-players)/17/mismagius-ex/jrab/x1XL5/",
+    "deckType": {
+      "name": "Mismagius ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "17",
+    "customTournamentName": "Pocket Turtle Weekly (172 Players)",
+    "engines": [],
+    "linkedArticle": {
+      "_id": "67dd4bf5bfaf868a950fa052",
+      "title": "PTCGP 50-200 Player Event Roundup #33",
+      "url": "/tournaments/tcgp-weekly-results/33/report/"
+    }
+  },
+  {
+    "author": "Jek",
+    "created": "2025-03-19T15:37:05.912Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e253a",
+          "name": "Gastly",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c15a777103a0f7aed75a11",
+          "name": "Gengar",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e253b",
+          "name": "Haunter",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798f0f2b5fbced301dd066d",
+          "name": "Misdreavus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799b58af06a47c6afdf51ea",
+          "name": "Misdreavus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799b5ac169202e5d7e660d3",
+          "name": "Mismagius ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216b665d66038af44d6d20",
+          "name": "Potion",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/svk-~-flash-tournament-(169-players)/7/mismagius-ex/jek/jWAw2/",
+    "deckType": {
+      "name": "Mismagius ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 16",
+    "tournamentNumber": "7",
+    "customTournamentName": "SvK ~ Flash Tournament (169 Players)",
+    "engines": [],
+    "linkedArticle": {
+      "_id": "67d587f5ec6125465ae0e0fd",
+      "title": "PTCGP 50-200 Player Event Roundup #32",
+      "url": "/tournaments/tcgp-weekly-results/32/report/"
+    }
+  },
+  {
+    "author": "dk_6905",
+    "created": "2025-03-17T23:38:36.725Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e253a",
+          "name": "Gastly",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67c15a15915a911e82a913f5",
+          "name": "Gastly",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67c15a777103a0f7aed75a11",
+          "name": "Gengar",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e253b",
+          "name": "Haunter",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "676111f4f9e257245fbb628b",
+          "name": "Sigilyph",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/moga-island-open-(116-players)/3/gengar/dk_6905/QIplk/",
+    "deckType": {
+      "name": "Gengar",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "3",
+    "customTournamentName": "Moga Island Open (116 Players)",
+    "engines": [],
+    "linkedArticle": {
+      "_id": "67d587f5ec6125465ae0e0fd",
+      "title": "PTCGP 50-200 Player Event Roundup #32",
+      "url": "/tournaments/tcgp-weekly-results/32/report/"
+    }
+  },
+  {
+    "author": "ttAwleek",
+    "created": "2025-03-10T13:08:14.769Z",
+    "main": [
+      {
+        "card": {
+          "_id": "67c15a15915a911e82a913f5",
+          "name": "Gastly",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c15a777103a0f7aed75a11",
+          "name": "Gengar",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e253b",
+          "name": "Haunter",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "676111f4f9e257245fbb628b",
+          "name": "Sigilyph",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a1",
+          "name": "Giovanni",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181abc08874f5ab2e16fb",
+          "name": "Red Card",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e9cadbba2e0d2bb5f6a4",
+          "name": "Rocky Helmet",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/community-tournaments/godzly-triumphant-light-100-tournament-(307-players)/1/gengar-ex/ttawleek/7pfzh/",
+    "deckType": {
+      "name": "Gengar ex",
+      "tier": null
+    },
+    "tournamentType": {
+      "name": "Community Tournaments",
+      "shortName": "Community Tournaments",
+      "icon": "/pkm_img/image.webp",
+      "enumSuffix": "#",
+      "statsWeight": null
+    },
+    "tournamentPlacement": "Top 32",
+    "tournamentNumber": "1",
+    "customTournamentName": "GODZLY Triumphant Light $100 Tournament (307 Players)",
+    "engines": [],
+    "linkedArticle": {
+      "_id": "67cee4c76813b406ca25879c",
+      "title": "GODZLY Triumphant Light $100 Tournament - 307 Players",
+      "url": "/tournaments/godzly/1/report/"
+    }
+  },
+  {
+    "author": {
+      "_id": "67cd00b45ed83548214a580d",
+      "roles": [],
+      "username": "Griever"
+    },
+    "created": "2025-03-09T03:04:17.318Z",
+    "main": [
+      {
+        "card": {
+          "_id": "67c15a15915a911e82a913f5",
+          "name": "Gastly",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c15a777103a0f7aed75a11",
+          "name": "Gengar",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef1105279bcfb3c1e25d8",
+          "name": "Gengar ex",
+          "alternateArt": true,
+          "nameRelease": "2024-10-30T03:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67c15a56915a911e82a915a6",
+          "name": "Haunter",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c161b97103a0f7aed78e96",
+          "name": "Unown",
+          "alternateArt": true,
+          "nameRelease": "2025-02-28T06:00:00.000Z"
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67611c67f9e257245fbb9f18",
+          "name": "Mythical Slab",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67216c8619290cd899acfc25",
+          "name": "X Speed",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/5-winstreak/march-2025/gengar-ex/griever/PuPa0/",
+    "deckType": {
+      "name": "Gengar ex",
+      "tier": null
+    },
+    "rankedType": {
+      "name": "5+ Winstreak",
+      "shortName": "Winstreak",
+      "icon": "/img/tournaments/logos/Spicy_Wins.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
+    },
+    "engines": [],
+    "linkedArticle": null
+  },
+  {
+    "author": {
+      "_id": "67caf0e45ed8354821badc19",
+      "roles": [],
+      "username": "Gem1ni3"
+    },
+    "created": "2025-03-07T15:19:48.628Z",
+    "main": [
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e253a",
+          "name": "Gastly",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c15a777103a0f7aed75a11",
+          "name": "Gengar",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c15a56915a911e82a915a6",
+          "name": "Haunter",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798f0f2b5fbced301dd066d",
+          "name": "Misdreavus",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799b5ac169202e5d7e660d3",
+          "name": "Mismagius ex",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6799a5e0169202e5d7e614b9",
+          "name": "Dawn",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67611c67f9e257245fbb9f18",
+          "name": "Mythical Slab",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      }
+    ],
+    "side": [],
+    "url": "/5-winstreak/march-2025/mismagius-ex/gem1ni3/EA-95/",
+    "deckType": {
+      "name": "Mismagius ex",
+      "tier": null
+    },
+    "rankedType": {
+      "name": "5+ Winstreak",
+      "shortName": "Winstreak",
+      "icon": "/img/tournaments/logos/Spicy_Wins.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
+    },
+    "engines": [],
+    "linkedArticle": null,
+    "hasNotes": true
+  },
+  {
+    "author": {
+      "_id": "620af9316e5951b7e28b3bba",
+      "roles": [],
+      "username": "Hastur"
+    },
+    "created": "2025-03-02T00:55:34.957Z",
+    "main": [
+      {
+        "card": {
+          "_id": "67c15a15915a911e82a913f5",
+          "name": "Gastly",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "67c15a777103a0f7aed75a11",
+          "name": "Gengar",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "671ef1105279bcfb3c1e25d8",
+          "name": "Gengar ex",
+          "alternateArt": true,
+          "nameRelease": "2024-10-30T03:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67c15a56915a911e82a915a6",
+          "name": "Haunter",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e253b",
+          "name": "Haunter",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67c073cd52e93386721eae09",
+          "name": "Unown",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67c161b97103a0f7aed78e96",
+          "name": "Unown",
+          "alternateArt": true,
+          "nameRelease": "2025-02-28T06:00:00.000Z"
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798ea0c6950657553dc675d",
+          "name": "Cyrus",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "6798e48fb5fbced301dccc91",
+          "name": "Giant Cape",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "67611c67f9e257245fbb9f18",
+          "name": "Mythical Slab",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181a6c08874f5ab2e16f0",
+          "name": "Poké Ball",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "6799bd10169202e5d7e6885f",
+          "name": "Pokémon Communication",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "672181b7c08874f5ab2e1700",
+          "name": "Professor's Research",
+          "alternateArt": false
+        },
+        "amount": 2
+      },
+      {
+        "card": {
+          "_id": "672181abc08874f5ab2e16fb",
+          "name": "Red Card",
+          "alternateArt": false
+        },
+        "amount": 1
+      },
+      {
+        "card": {
+          "_id": "671ef0f25279bcfb3c1e25a3",
+          "name": "Sabrina",
+          "alternateArt": false
+        },
+        "amount": 1
+      }
+    ],
+    "side": [],
+    "url": "/5-winstreak/march-2025/gengar-ex/hastur/mE_yA/",
+    "deckType": {
+      "name": "Gengar ex",
+      "tier": null
+    },
+    "rankedType": {
+      "name": "5+ Winstreak",
+      "shortName": "Winstreak",
+      "icon": "/img/tournaments/logos/Spicy_Wins.webp",
+      "event": false,
+      "activeEvent": false,
+      "includeInStats": false
+    },
+    "engines": [],
+    "linkedArticle": null
+  },
+  {
     "author": "Felix19_99",
     "created": "2025-02-27T15:40:17.999Z",
     "main": [
@@ -86,7 +1243,7 @@
       {
         "card": {
           "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poke Ball",
+          "name": "Poké Ball",
           "alternateArt": false
         },
         "amount": 2
@@ -129,1218 +1286,6 @@
       "_id": "67bc74ce055e9f689d4c34db",
       "title": "PTCGP 50-200 Player Event Roundup #27",
       "url": "/tournaments/tcgp-weekly-results/27/report/"
-    }
-  },
-  {
-    "author": "Themodelcitizen",
-    "created": "2025-01-20T16:46:40.653Z",
-    "main": [
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253b",
-          "name": "Haunter",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253a",
-          "name": "Gastly",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253d",
-          "name": "Gengar ex",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "675ae715e40c3b7260740109",
-          "name": "Mew ex",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "676111f4f9e257245fbb628b",
-          "name": "Sigilyph",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253c",
-          "name": "Gengar",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2541",
-          "name": "Jynx",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181b7c08874f5ab2e1700",
-          "name": "Professor's Research",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a3",
-          "name": "Sabrina",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "675ae88248e857c1219910f6",
-          "name": "Leaf",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "67611c90db7f64d578b8b51e",
-          "name": "Budding Expeditioner",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poke Ball",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67611c67f9e257245fbb9f18",
-          "name": "Mythical Slab",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67216c8619290cd899acfc25",
-          "name": "X Speed",
-          "alternateArt": false
-        },
-        "amount": 2
-      }
-    ],
-    "side": [],
-    "url": "/community-tournaments/foxcave-battle-arena-(320-players)/3/gengar-ex/themodelcitizen/NQiq0/",
-    "deckType": {
-      "name": "Gengar ex",
-      "tier": null
-    },
-    "tournamentType": {
-      "name": "Community Tournaments",
-      "shortName": "Community Tournaments",
-      "icon": "/pkm_img/image.webp",
-      "enumSuffix": "#",
-      "statsWeight": null
-    },
-    "tournamentPlacement": "Top 32",
-    "tournamentNumber": "3",
-    "customTournamentName": "FoxCave Battle Arena (320 Players)",
-    "engines": [
-      {
-        "_id": "67abc5cf25c7da23a21c7190",
-        "name": "Mew ex"
-      }
-    ],
-    "linkedArticle": {
-      "_id": "678e7e625bcc230b00651876",
-      "title": "FoxCave Battle Arena #3 - 320 Players",
-      "url": "/tournaments/foxcave-battle-arena/3/report/"
-    }
-  },
-  {
-    "author": "Alana",
-    "created": "2025-01-19T13:10:38.842Z",
-    "main": [
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253b",
-          "name": "Haunter",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253a",
-          "name": "Gastly",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253d",
-          "name": "Gengar ex",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253c",
-          "name": "Gengar",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "676111f4f9e257245fbb628b",
-          "name": "Sigilyph",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2593",
-          "name": "Porygon",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181b7c08874f5ab2e1700",
-          "name": "Professor's Research",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a3",
-          "name": "Sabrina",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a1",
-          "name": "Giovanni",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poke Ball",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67216c8619290cd899acfc25",
-          "name": "X Speed",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67611c67f9e257245fbb9f18",
-          "name": "Mythical Slab",
-          "alternateArt": false
-        },
-        "amount": 2
-      }
-    ],
-    "side": [],
-    "url": "/community-tournaments/cuma-test-doang-(39-players)/1/gengar-ex/alana/hXzOE/",
-    "deckType": {
-      "name": "Gengar ex",
-      "tier": null
-    },
-    "tournamentType": {
-      "name": "Community Tournaments",
-      "shortName": "Community Tournaments",
-      "icon": "/pkm_img/image.webp",
-      "enumSuffix": "#",
-      "statsWeight": null
-    },
-    "tournamentPlacement": "Top 8",
-    "tournamentNumber": "1",
-    "customTournamentName": "Cuma Test Doang (39 Players)",
-    "engines": [],
-    "linkedArticle": null
-  },
-  {
-    "author": "Nanjamo",
-    "created": "2025-01-17T12:27:55.204Z",
-    "main": [
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253a",
-          "name": "Gastly",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253b",
-          "name": "Haunter",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253d",
-          "name": "Gengar ex",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253c",
-          "name": "Gengar",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "675ae715e40c3b7260740109",
-          "name": "Mew ex",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "676111f4f9e257245fbb628b",
-          "name": "Sigilyph",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2541",
-          "name": "Jynx",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181b7c08874f5ab2e1700",
-          "name": "Professor's Research",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a3",
-          "name": "Sabrina",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "675ae88248e857c1219910f6",
-          "name": "Leaf",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "67611c90db7f64d578b8b51e",
-          "name": "Budding Expeditioner",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poke Ball",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67611c67f9e257245fbb9f18",
-          "name": "Mythical Slab",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67216c8619290cd899acfc25",
-          "name": "X Speed",
-          "alternateArt": false
-        },
-        "amount": 2
-      }
-    ],
-    "side": [],
-    "url": "/community-tournaments/team-rocket-pocket-cup-(127-players)/25/gengar-ex/nanjamo/KZnuU/",
-    "deckType": {
-      "name": "Gengar ex",
-      "tier": null
-    },
-    "tournamentType": {
-      "name": "Community Tournaments",
-      "shortName": "Community Tournaments",
-      "icon": "/pkm_img/image.webp",
-      "enumSuffix": "#",
-      "statsWeight": null
-    },
-    "tournamentPlacement": "Top 32",
-    "tournamentNumber": "25",
-    "customTournamentName": "Team Rocket Pocket Cup (127 Players)",
-    "engines": [
-      {
-        "_id": "67abc5cf25c7da23a21c7190",
-        "name": "Mew ex"
-      }
-    ],
-    "linkedArticle": {
-      "_id": "6786926e48810c53e530f16e",
-      "title": "PTCGP 50-200 Player Event Roundup #16",
-      "url": "/tournaments/tcgp-weekly-results/16/report/"
-    }
-  },
-  {
-    "author": "Kotaro Shindo",
-    "created": "2025-01-13T13:24:56.188Z",
-    "main": [
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253a",
-          "name": "Gastly",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253b",
-          "name": "Haunter",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253d",
-          "name": "Gengar ex",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253c",
-          "name": "Gengar",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "675ae715e40c3b7260740109",
-          "name": "Mew ex",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2543",
-          "name": "Mewtwo ex",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2541",
-          "name": "Jynx",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181b7c08874f5ab2e1700",
-          "name": "Professor's Research",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a3",
-          "name": "Sabrina",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "675ae88248e857c1219910f6",
-          "name": "Leaf",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poke Ball",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67611c67f9e257245fbb9f18",
-          "name": "Mythical Slab",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67216b665d66038af44d6d20",
-          "name": "Potion",
-          "alternateArt": false
-        },
-        "amount": 2
-      }
-    ],
-    "side": [],
-    "url": "/community-tournaments/victory-road---january-challenge-pocket-(512-players)/1/gengar-ex/kotaro-shindo/g0F5f/",
-    "deckType": {
-      "name": "Gengar ex",
-      "tier": null
-    },
-    "tournamentType": {
-      "name": "Community Tournaments",
-      "shortName": "Community Tournaments",
-      "icon": "/pkm_img/image.webp",
-      "enumSuffix": "#",
-      "statsWeight": null
-    },
-    "tournamentPlacement": "Top 32",
-    "tournamentNumber": "1",
-    "customTournamentName": "Victory Road - January Challenge POCKET (512 Players)",
-    "engines": [
-      {
-        "_id": "67abc5cf25c7da23a21c7190",
-        "name": "Mew ex"
-      }
-    ],
-    "linkedArticle": {
-      "_id": "678514bdf014d18f66bcce4e",
-      "title": "Victory Road - January Challenge POCKET - 512 Players",
-      "url": "/tournaments/victory-road-january/1/report/"
-    }
-  },
-  {
-    "author": "Tomtom1256",
-    "created": "2025-01-13T13:20:24.816Z",
-    "main": [
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253a",
-          "name": "Gastly",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253b",
-          "name": "Haunter",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253d",
-          "name": "Gengar ex",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "675ae715e40c3b7260740109",
-          "name": "Mew ex",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253c",
-          "name": "Gengar",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "676111f4f9e257245fbb628b",
-          "name": "Sigilyph",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "672181b7c08874f5ab2e1700",
-          "name": "Professor's Research",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a3",
-          "name": "Sabrina",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "67216c8619290cd899acfc25",
-          "name": "X Speed",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poke Ball",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67216b665d66038af44d6d20",
-          "name": "Potion",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "67611c67f9e257245fbb9f18",
-          "name": "Mythical Slab",
-          "alternateArt": false
-        },
-        "amount": 2
-      }
-    ],
-    "side": [],
-    "url": "/community-tournaments/victory-road---january-challenge-pocket-(512-players)/1/gengar-ex/tomtom1256/qYCAM/",
-    "deckType": {
-      "name": "Gengar ex",
-      "tier": null
-    },
-    "tournamentType": {
-      "name": "Community Tournaments",
-      "shortName": "Community Tournaments",
-      "icon": "/pkm_img/image.webp",
-      "enumSuffix": "#",
-      "statsWeight": null
-    },
-    "tournamentPlacement": "Top 16",
-    "tournamentNumber": "1",
-    "customTournamentName": "Victory Road - January Challenge POCKET (512 Players)",
-    "engines": [
-      {
-        "_id": "67abc5cf25c7da23a21c7190",
-        "name": "Mew ex"
-      }
-    ],
-    "linkedArticle": {
-      "_id": "678514bdf014d18f66bcce4e",
-      "title": "Victory Road - January Challenge POCKET - 512 Players",
-      "url": "/tournaments/victory-road-january/1/report/"
-    }
-  },
-  {
-    "author": "Tomtom1256",
-    "created": "2025-01-09T22:00:58.180Z",
-    "main": [
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253a",
-          "name": "Gastly",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253b",
-          "name": "Haunter",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253d",
-          "name": "Gengar ex",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "675ae715e40c3b7260740109",
-          "name": "Mew ex",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253c",
-          "name": "Gengar",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "676111f4f9e257245fbb628b",
-          "name": "Sigilyph",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "672181b7c08874f5ab2e1700",
-          "name": "Professor's Research",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a3",
-          "name": "Sabrina",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "67216c8619290cd899acfc25",
-          "name": "X Speed",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poke Ball",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67216b665d66038af44d6d20",
-          "name": "Potion",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "67611c67f9e257245fbb9f18",
-          "name": "Mythical Slab",
-          "alternateArt": false
-        },
-        "amount": 2
-      }
-    ],
-    "side": [],
-    "url": "/community-tournaments/quick-unseen-tournament-(64-players)/6/gengar-ex/tomtom1256/2kqjf/",
-    "deckType": {
-      "name": "Gengar ex",
-      "tier": null
-    },
-    "tournamentType": {
-      "name": "Community Tournaments",
-      "shortName": "Community Tournaments",
-      "icon": "/pkm_img/image.webp",
-      "enumSuffix": "#",
-      "statsWeight": null
-    },
-    "tournamentPlacement": "Top 8",
-    "tournamentNumber": "6",
-    "customTournamentName": "Quick Unseen Tournament (64 Players)",
-    "engines": [
-      {
-        "_id": "67abc5cf25c7da23a21c7190",
-        "name": "Mew ex"
-      }
-    ],
-    "linkedArticle": {
-      "_id": "677d489d53139f97a72f7788",
-      "title": "PTCGP 50-200 Player Event Roundup #14",
-      "url": "/tournaments/tcgp-weekly-results/14/report/"
-    }
-  },
-  {
-    "author": "Tomtom1256",
-    "created": "2025-01-03T14:35:57.161Z",
-    "main": [
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253a",
-          "name": "Gastly",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253b",
-          "name": "Haunter",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253d",
-          "name": "Gengar ex",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253c",
-          "name": "Gengar",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "675ae715e40c3b7260740109",
-          "name": "Mew ex",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "676111f4f9e257245fbb628b",
-          "name": "Sigilyph",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "672181b7c08874f5ab2e1700",
-          "name": "Professor's Research",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a3",
-          "name": "Sabrina",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "67216c8619290cd899acfc25",
-          "name": "X Speed",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poke Ball",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67611c67f9e257245fbb9f18",
-          "name": "Mythical Slab",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67216b665d66038af44d6d20",
-          "name": "Potion",
-          "alternateArt": false
-        },
-        "amount": 1
-      }
-    ],
-    "side": [],
-    "url": "/community-tournaments/flash-friday-(180-players)/2/gengar-ex/tomtom1256/kqR5p/",
-    "deckType": {
-      "name": "Gengar ex",
-      "tier": null
-    },
-    "tournamentType": {
-      "name": "Community Tournaments",
-      "shortName": "Community Tournaments",
-      "icon": "/pkm_img/image.webp",
-      "enumSuffix": "#",
-      "statsWeight": null
-    },
-    "tournamentPlacement": "Top 32",
-    "tournamentNumber": "2",
-    "customTournamentName": "Flash Friday (180 Players)",
-    "engines": [
-      {
-        "_id": "67abc5cf25c7da23a21c7190",
-        "name": "Mew ex"
-      }
-    ],
-    "linkedArticle": null
-  },
-  {
-    "author": "fals",
-    "created": "2024-12-30T14:29:59.502Z",
-    "main": [
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253a",
-          "name": "Gastly",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253b",
-          "name": "Haunter",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253d",
-          "name": "Gengar ex",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "675ae715e40c3b7260740109",
-          "name": "Mew ex",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e2541",
-          "name": "Jynx",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253c",
-          "name": "Gengar",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181b7c08874f5ab2e1700",
-          "name": "Professor's Research",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a3",
-          "name": "Sabrina",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a1",
-          "name": "Giovanni",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "67611c90db7f64d578b8b51e",
-          "name": "Budding Expeditioner",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "675ae88248e857c1219910f6",
-          "name": "Leaf",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poke Ball",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67611c67f9e257245fbb9f18",
-          "name": "Mythical Slab",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "67216c8619290cd899acfc25",
-          "name": "X Speed",
-          "alternateArt": false
-        },
-        "amount": 1
-      }
-    ],
-    "side": [],
-    "url": "/community-tournaments/pokémike---pocket-tournament-(128-players)/2/gengar-ex/fals/_MSq_/",
-    "deckType": {
-      "name": "Gengar ex",
-      "tier": null
-    },
-    "tournamentType": {
-      "name": "Community Tournaments",
-      "shortName": "Community Tournaments",
-      "icon": "/pkm_img/image.webp",
-      "enumSuffix": "#",
-      "statsWeight": null
-    },
-    "tournamentPlacement": "Top 32",
-    "tournamentNumber": "2",
-    "customTournamentName": "PokéMike - Pocket Tournament (128 Players)",
-    "engines": [
-      {
-        "_id": "67abc5cf25c7da23a21c7190",
-        "name": "Mew ex"
-      }
-    ],
-    "linkedArticle": {
-      "_id": "677160d7e8738a1dd3abd521",
-      "title": "PTCGP 50-200 Player Event Roundup #12",
-      "url": "/tournaments/tcgp-weekly-results/12/report/"
-    }
-  },
-  {
-    "author": "fals",
-    "created": "2024-12-28T15:08:27.592Z",
-    "main": [
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253a",
-          "name": "Gastly",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253b",
-          "name": "Haunter",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253d",
-          "name": "Gengar ex",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "675ae715e40c3b7260740109",
-          "name": "Mew ex",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e253c",
-          "name": "Gengar",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "675ae81c34db45022c3de861",
-          "name": "Tauros",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181b7c08874f5ab2e1700",
-          "name": "Professor's Research",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a3",
-          "name": "Sabrina",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "671ef0f25279bcfb3c1e25a1",
-          "name": "Giovanni",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "675ae88248e857c1219910f6",
-          "name": "Leaf",
-          "alternateArt": false
-        },
-        "amount": 2
-      },
-      {
-        "card": {
-          "_id": "67611c90db7f64d578b8b51e",
-          "name": "Budding Expeditioner",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "67611c67f9e257245fbb9f18",
-          "name": "Mythical Slab",
-          "alternateArt": false
-        },
-        "amount": 1
-      },
-      {
-        "card": {
-          "_id": "672181a6c08874f5ab2e16f0",
-          "name": "Poke Ball",
-          "alternateArt": false
-        },
-        "amount": 2
-      }
-    ],
-    "side": [],
-    "url": "/community-tournaments/pocket-turtle-weekly-(287-players)/5/gengar-ex/fals/5nraO/",
-    "deckType": {
-      "name": "Gengar ex",
-      "tier": null
-    },
-    "tournamentType": {
-      "name": "Community Tournaments",
-      "shortName": "Community Tournaments",
-      "icon": "/pkm_img/image.webp",
-      "enumSuffix": "#",
-      "statsWeight": null
-    },
-    "tournamentPlacement": "Top 32",
-    "tournamentNumber": "5",
-    "customTournamentName": "Pocket Turtle Weekly (287 Players)",
-    "engines": [
-      {
-        "_id": "67abc5cf25c7da23a21c7190",
-        "name": "Mew ex"
-      }
-    ],
-    "linkedArticle": {
-      "_id": "677014d0a9be63468b74c1d4",
-      "title": "Pocket Turtle Weekly #5 - 287 Players",
-      "url": "/tournaments/turtle-weekly/5/report/"
     }
   }
 ]

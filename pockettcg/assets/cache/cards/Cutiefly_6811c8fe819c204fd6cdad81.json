@@ -1,0 +1,62 @@
+{
+  "_id": "6811c8fe819c204fd6cdad81",
+  "name": "Cutiefly",
+  "energyType": [
+    "Psychic"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "30",
+  "pokemonId": "A3-078",
+  "limitlessId": "A3 78",
+  "rarity": "d-1",
+  "weakness": [
+    "Metal"
+  ],
+  "retreat": 1,
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6811d36d819c204fd6cdf57d",
+      "name": "Cutiefly",
+      "alternateArt": true,
+      "nameRelease": "2025-04-30T06:00:00.000Z"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Flap",
+      "text": "",
+      "energyCost": [
+        "Colorless",
+        null,
+        null
+      ],
+      "hp": "10",
+      "_id": "6811d37ec0a4ec0168e92876"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd6ca93125d205b45fa7",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Solgaleo",
+        "linkedArticle": {
+          "_id": "6811de68c0a4ec0168e97e92",
+          "title": "Celestial Guardians: Solgaleo",
+          "url": "/sets/celestial-guardians-solgaleo/",
+          "image": "/pkm_img/Sets/cgsolgaleo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false
+}

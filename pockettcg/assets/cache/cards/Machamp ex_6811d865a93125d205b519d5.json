@@ -1,0 +1,55 @@
+{
+  "_id": "6811d865a93125d205b519d5",
+  "name": "Machamp ex",
+  "energyType": [
+    "Fighting"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "180",
+  "pokemonId": "A3-235",
+  "limitlessId": "A3 235",
+  "rarity": "shiny-2",
+  "weakness": [
+    "Psychic"
+  ],
+  "retreat": 3,
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Mega Punch",
+      "energyCost": [
+        "Fighting",
+        "Fighting",
+        "Fighting"
+      ],
+      "hp": "120",
+      "_id": "6811d865a93125d205b519d6"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd6ca93125d205b45fa7",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Solgaleo",
+        "linkedArticle": {
+          "_id": "6811de68c0a4ec0168e97e92",
+          "title": "Celestial Guardians: Solgaleo",
+          "url": "/sets/celestial-guardians-solgaleo/",
+          "image": "/pkm_img/Sets/cgsolgaleo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true,
+  "nameRelease": "2024-10-30T03:00:00.000Z"
+}

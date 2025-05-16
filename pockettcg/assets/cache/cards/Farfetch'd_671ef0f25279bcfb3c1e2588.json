@@ -16,7 +16,7 @@
         "Colorless"
       ],
       "hp": "40",
-      "_id": "6799569dc6818b9e6b445e8f"
+      "_id": "6811e4e1a93125d205b57c1c"
     }
   ],
   "obtain": [
@@ -76,7 +76,25 @@
   "weakness": [
     "Lightning"
   ],
-  "popRank": 43,
-  "artVariants": [],
-  "limitlessId": "A1 198"
+  "popRank": 82,
+  "artVariants": [
+    {
+      "_id": "6811cf94819c204fd6cdd956",
+      "name": "Farfetch'd",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    }
+  ],
+  "limitlessId": "A1 198",
+  "deckTypes": [
+    "Darkrai ex Weezing",
+    "Lucario",
+    "Arceus ex",
+    "Giratina ex Darkrai ex",
+    "Marshadow Rampardos",
+    "Magnezone",
+    "Togekiss",
+    "Charizard ex",
+    "Weavile ex"
+  ]
 }

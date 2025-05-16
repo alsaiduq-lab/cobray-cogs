@@ -1,0 +1,86 @@
+{
+  "_id": "6811cf73819c204fd6cdd872",
+  "name": "Guzma",
+  "energyType": [],
+  "cardType": "Trainer",
+  "subType": "Supporter",
+  "pokemonId": "A3-151",
+  "limitlessId": "A3 151",
+  "rarity": "d-2",
+  "weakness": [],
+  "description": "Discard all Pokemon Tool cards attached to each of your opponents Pokemon.",
+  "popRank": 18,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6811da8cc0a4ec0168e96230",
+      "name": "Guzma",
+      "alternateArt": true,
+      "nameRelease": "2025-04-30T06:00:00.000Z"
+    },
+    {
+      "_id": "6811ba8ec0a4ec0168e889a2",
+      "name": "Guzma",
+      "alternateArt": true,
+      "nameRelease": "2025-04-30T06:00:00.000Z"
+    }
+  ],
+  "abilities": [],
+  "moves": [],
+  "deckTypes": [
+    "Beedrill ex",
+    "Gyarados ex",
+    "Mewtwo ex",
+    "Solgaleo ex",
+    "Giratina ex Darkrai ex",
+    "Magnezone",
+    "Charizard ex",
+    "Lunala ex",
+    "Rayquaza ex",
+    "Dhelmise ex",
+    "Lucario",
+    "Decidueye ex",
+    "Leafeon ex Celebi ex",
+    "Greninja",
+    "Incineroar ex",
+    "Beedrill",
+    "Solgaleo ex Skarmory",
+    "Skarmory",
+    "Darkrai ex Greninja",
+    "Arceus ex Crobat",
+    "Zapdos ex",
+    "Gengar ex",
+    "Giratina ex Greninja",
+    "Arceus ex",
+    "Wishiwashi ex",
+    "Pikachu ex",
+    "Garchomp ex",
+    "Lycanroc",
+    "Alolan Raichu ex",
+    "Gallade ex",
+    "Exeggutor ex",
+    "Dragonite",
+    "Giratina ex",
+    "Weavile ex"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "release": "2025-04-30T06:00:00.000Z"
+}

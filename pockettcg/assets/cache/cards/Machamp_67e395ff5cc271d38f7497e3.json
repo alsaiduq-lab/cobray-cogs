@@ -24,6 +24,12 @@
       "name": "Machamp",
       "alternateArt": true,
       "nameRelease": "2024-10-30T03:00:00.000Z"
+    },
+    {
+      "_id": "6811d810c0a4ec0168e94ef4",
+      "name": "Machamp",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     }
   ],
   "abilities": [],
@@ -38,7 +44,7 @@
         null
       ],
       "hp": "70+",
-      "_id": "67e3aa3679f0ebec0381450a"
+      "_id": "6811e78fa93125d205b59429"
     }
   ],
   "deckTypes": [],

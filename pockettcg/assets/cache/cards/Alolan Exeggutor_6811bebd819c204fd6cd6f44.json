@@ -1,0 +1,70 @@
+{
+  "_id": "6811bebd819c204fd6cd6f44",
+  "name": "Alolan Exeggutor",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "150",
+  "pokemonId": "A3-002",
+  "limitlessId": "A3 2",
+  "rarity": "d-3",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 4,
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 192,
+  "alternateArt": false,
+  "artVariants": [
+    {
+      "_id": "6811d069a93125d205b4dce1",
+      "name": "Alolan Exeggutor",
+      "alternateArt": true,
+      "nameRelease": "2025-04-30T06:00:00.000Z"
+    },
+    {
+      "_id": "6811d11b819c204fd6cde504",
+      "name": "Alolan Exeggutor",
+      "alternateArt": true,
+      "nameRelease": "2025-04-30T06:00:00.000Z"
+    }
+  ],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Tropical Hammer",
+      "text": "Flip a coin. If tails, this attack does nothing.",
+      "energyCost": [
+        "Grass",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "150",
+      "_id": "6811d15d819c204fd6cde732"
+    }
+  ],
+  "deckTypes": [
+    "Tsareena",
+    "Exeggutor ex"
+  ],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ]
+}

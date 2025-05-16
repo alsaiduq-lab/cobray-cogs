@@ -1,0 +1,56 @@
+{
+  "_id": "6811ba09819c204fd6cd5b34",
+  "name": "Tapu Lele",
+  "energyType": [
+    "Psychic"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "90",
+  "pokemonId": "A3-170",
+  "limitlessId": "A3 170",
+  "rarity": "s-1",
+  "weakness": [
+    "Metal"
+  ],
+  "retreat": 1,
+  "description": "",
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Energy Arrow",
+      "text": "This attack does 20 damage to 1 of your opponents Pokemon for each Energy attached to that Pokemon.",
+      "energyCost": [
+        "Psychic",
+        null,
+        null
+      ],
+      "_id": "6811e2cbc0a4ec0168e9a4ad"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": false,
+  "nameRelease": "2025-04-30T06:00:00.000Z"
+}

@@ -17,7 +17,7 @@
         "Psychic"
       ],
       "hp": "30",
-      "_id": "6799550c97fb8e77af07f147"
+      "_id": "6811e7b8a93125d205b595ac"
     }
   ],
   "obtain": [
@@ -45,8 +45,15 @@
   "weakness": [
     "Darkness"
   ],
-  "popRank": 156,
-  "artVariants": [],
+  "popRank": 171,
+  "artVariants": [
+    {
+      "_id": "6811d737c0a4ec0168e94720",
+      "name": "Haunter",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    }
+  ],
   "limitlessId": "A1 121",
   "deckTypes": [
     "Gengar ex"

@@ -1,0 +1,78 @@
+{
+  "_id": "6811cae5a93125d205b4b696",
+  "name": "Solgaleo ex",
+  "energyType": [
+    "Metal"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 2",
+  "hp": "180",
+  "pokemonId": "A3-239",
+  "limitlessId": "A3 239",
+  "rarity": "cr",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 2,
+  "description": "",
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [
+    {
+      "name": "Rising Road",
+      "text": "Once during your turn, if this Pokémon is on your Bench, you may switch it with your Active Pokémon.\n",
+      "_id": "68124d40c0a4ec0168ecf96c"
+    }
+  ],
+  "moves": [
+    {
+      "name": "Sol Breaker",
+      "text": "This Pokémon also does 10 damage to itself.",
+      "energyCost": [
+        "Metal",
+        "Metal"
+      ],
+      "hp": "120",
+      "_id": "68124d40c0a4ec0168ecf96d"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd6ca93125d205b45fa7",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Solgaleo",
+        "linkedArticle": {
+          "_id": "6811de68c0a4ec0168e97e92",
+          "title": "Celestial Guardians: Solgaleo",
+          "url": "/sets/celestial-guardians-solgaleo/",
+          "image": "/pkm_img/Sets/cgsolgaleo.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    },
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "ex": true,
+  "nameRelease": "2025-04-30T06:00:00.000Z"
+}

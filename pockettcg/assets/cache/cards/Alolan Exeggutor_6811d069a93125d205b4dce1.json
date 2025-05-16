@@ -1,0 +1,50 @@
+{
+  "_id": "6811d069a93125d205b4dce1",
+  "name": "Alolan Exeggutor",
+  "energyType": [
+    "Grass"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Stage 1",
+  "hp": "150",
+  "pokemonId": "PA-069",
+  "limitlessId": "PA 69",
+  "rarity": "p",
+  "weakness": [
+    "Fire"
+  ],
+  "retreat": 4,
+  "release": "2025-05-16T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": true,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Tropical Hammer",
+      "text": "Flip a coin. If tails, this attack does nothing.",
+      "energyCost": [
+        "Grass",
+        "Colorless",
+        "Colorless"
+      ],
+      "hp": "150",
+      "_id": "6826e79dc33728d7e4895bbb"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6826dcc0c2789226bc8c72be",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Promo Pack A Series: Vol. 8",
+        "linkedArticle": null
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ],
+  "nameRelease": "2025-04-30T06:00:00.000Z"
+}

@@ -45,7 +45,13 @@
   "weakness": [
     "Lightning"
   ],
-  "popRank": 168,
+  "popRank": 102,
   "artVariants": [],
-  "limitlessId": "A1 90"
+  "limitlessId": "A1 90",
+  "deckTypes": [
+    "Gyarados ex",
+    "Greninja",
+    "Giratina ex Greninja",
+    "Palkia ex Greninja"
+  ]
 }

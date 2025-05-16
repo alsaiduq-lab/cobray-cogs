@@ -24,7 +24,7 @@
         "Water"
       ],
       "hp": "20",
-      "_id": "67994aa749fc3af0759c62fe"
+      "_id": "67a75bf32f78b5ccf2b6783a"
     }
   ],
   "obtain": [
@@ -40,5 +40,7 @@
     }
   ],
   "limitlessId": "P-A 33",
+  "rarity": "p",
+  "deckTypes": [],
   "nameRelease": "2024-10-30T03:00:00.000Z"
 }

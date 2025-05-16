@@ -1,0 +1,54 @@
+{
+  "_id": "6811c425c0a4ec0168e8bda5",
+  "name": "Tapu Fini",
+  "energyType": [
+    "Water"
+  ],
+  "cardType": "Pokemon",
+  "subType": "Basic",
+  "hp": "100",
+  "pokemonId": "A3-056",
+  "limitlessId": "A3 56",
+  "rarity": "d-3",
+  "weakness": [
+    "Lightning"
+  ],
+  "retreat": 1,
+  "release": "2025-04-30T06:00:00.000Z",
+  "popRank": 1.7976931348623157e+308,
+  "alternateArt": false,
+  "artVariants": [],
+  "abilities": [],
+  "moves": [
+    {
+      "name": "Spiral Drain",
+      "text": "Heal 20 damage from this Pokémon.",
+      "energyCost": [
+        "Water",
+        "Water",
+        "Colorless"
+      ],
+      "hp": "60",
+      "_id": "6811c868819c204fd6cdaa09"
+    }
+  ],
+  "deckTypes": [],
+  "obtain": [
+    {
+      "source": {
+        "_id": "6811bd8f819c204fd6cd689f",
+        "type": "Normal Pack",
+        "expires": null,
+        "name": "Celestial Guardians: Lunala",
+        "linkedArticle": {
+          "_id": "6811de21819c204fd6ce477f",
+          "title": "Celestial Guardians: Lunala",
+          "url": "/sets/celestial-guardians-lunala/",
+          "image": "/pkm_img/Sets/lcgunala.webp"
+        }
+      },
+      "amount": 1,
+      "type": "sets"
+    }
+  ]
+}

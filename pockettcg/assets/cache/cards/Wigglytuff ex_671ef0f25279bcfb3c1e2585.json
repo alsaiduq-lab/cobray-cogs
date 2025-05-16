@@ -20,7 +20,7 @@
         "Colorless"
       ],
       "hp": "80",
-      "_id": "6799568497fb8e77af07fa68"
+      "_id": "6811e6efa93125d205b58d4a"
     }
   ],
   "obtain": [
@@ -48,16 +48,27 @@
   "weakness": [
     "Fighting"
   ],
-  "popRank": 116,
+  "popRank": 1.7976931348623157e+308,
   "artVariants": [
     {
       "_id": "671ef1105279bcfb3c1e25cc",
-      "name": "Wigglytuff ex"
+      "name": "Wigglytuff ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     },
     {
       "_id": "671ef1105279bcfb3c1e25da",
-      "name": "Wigglytuff ex"
+      "name": "Wigglytuff ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    },
+    {
+      "_id": "6811d936c0a4ec0168e95890",
+      "name": "Wigglytuff ex",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
     }
   ],
-  "limitlessId": "A1 195"
+  "limitlessId": "A1 195",
+  "deckTypes": []
 }

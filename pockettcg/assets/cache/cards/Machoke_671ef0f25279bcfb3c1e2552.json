@@ -18,7 +18,7 @@
         "Fighting"
       ],
       "hp": "50",
-      "_id": "67995588c6818b9e6b4456b8"
+      "_id": "6811e79aa93125d205b594ab"
     }
   ],
   "obtain": [
@@ -46,10 +46,15 @@
   "weakness": [
     "Psychic"
   ],
-  "popRank": 120,
-  "artVariants": [],
+  "popRank": 1.7976931348623157e+308,
+  "artVariants": [
+    {
+      "_id": "6811d7f3a93125d205b51678",
+      "name": "Machoke",
+      "alternateArt": true,
+      "nameRelease": "2024-10-30T03:00:00.000Z"
+    }
+  ],
   "limitlessId": "A1 144",
-  "deckTypes": [
-    "Machamp ex"
-  ]
+  "deckTypes": []
 }
