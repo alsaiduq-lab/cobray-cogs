@@ -1,6 +1,6 @@
 import random
 import re
-from typing import Dict, List, Tuple, Optional
+from typing import Dict, List, Optional, Tuple
 
 import discord
 from redbot.core import Config, commands

@@ -1,4 +1,3 @@
-
 from redbot.core import VersionInfo, version_info
 from redbot.core.utils import get_end_user_data_statement
 
