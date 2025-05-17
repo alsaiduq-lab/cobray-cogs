@@ -147,7 +147,16 @@ class Booru(commands.Cog):
         return embed
 
     async def send_post_embed(self, ctx: commands.Context, post_data: dict, index: int, total: int) -> discord.Message:
+        is_dm = isinstance(ctx.channel, discord.DMChannel)
+        rating = post_data.get("rating", "safe").lower()
+        nsfw = rating in ("explicit", "questionable")
         embed = self.build_embed(post_data, index, total)
+
+        if is_dm and nsfw:
+            spoiler_url = f"||{post_data['url']}||"
+            warning = f"⚠️ NSFW Content: {spoiler_url}"
+            await ctx.send(warning, embed=embed)
+            return
         return await ctx.send(embed=embed)
 
     async def cleanup_reactions(self, message: discord.Message, controls: List[str]):
