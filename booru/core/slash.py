@@ -15,6 +15,7 @@ class BooruSlash(commands.Cog):
         self.tag_handler = TagHandler()
 
     async def is_dm_nsfw_allowed(self, user: discord.User) -> bool:
+        """Check if user is allowed NSFW in DMs (owner or whitelisted)."""
         booru_cog = self.bot.get_cog("Booru")
         if booru_cog is None:
             return False
@@ -23,8 +24,16 @@ class BooruSlash(commands.Cog):
         allowed = await booru_cog.config.dm_nsfw_allowed()
         return user.id in allowed
 
-    async def is_dm_allowed(self, user: discord.User) -> bool:
-        return await self.is_dm_nsfw_allowed(user)
+    async def dm_access_denied(self, interaction: discord.Interaction) -> bool:
+        """Returns True if user should be blocked from using in DMs (not owner or whitelisted)."""
+        if isinstance(interaction.channel, discord.DMChannel):
+            allowed = await self.is_dm_nsfw_allowed(interaction.user)
+            if not allowed:
+                await interaction.response.send_message(
+                    "You are not allowed to use this command in DMs.", ephemeral=True
+                )
+                return True
+        return False
 
     async def get_nsfw_status(self, interaction: discord.Interaction) -> bool:
         channel = interaction.channel
@@ -35,8 +44,7 @@ class BooruSlash(commands.Cog):
     @app_commands.command(name="booru", description="Search all configured booru sources.")
     @app_commands.describe(tags="Tags or keywords to search for.")
     async def booru(self, interaction: discord.Interaction, tags: str = ""):
-        if isinstance(interaction.channel, discord.DMChannel) and not await self.is_dm_allowed(interaction.user):
-            await interaction.response.send_message("You are not allowed to use this command in DMs.", ephemeral=True)
+        if await self.dm_access_denied(interaction):
             return
         await self.search(interaction, tags)
 
@@ -46,8 +54,7 @@ class BooruSlash(commands.Cog):
         tags="Tags or keywords",
     )
     async def boorus(self, interaction: discord.Interaction, site: str, tags: str = ""):
-        if isinstance(interaction.channel, discord.DMChannel) and not await self.is_dm_allowed(interaction.user):
-            await interaction.response.send_message("You are not allowed to use this command in DMs.", ephemeral=True)
+        if await self.dm_access_denied(interaction):
             return
         await self.search(interaction, tags, site.lower())
 
