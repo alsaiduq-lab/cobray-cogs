@@ -35,12 +35,9 @@ class BooruSlash(commands.Cog):
     @app_commands.command(name="booru", description="Search all configured booru sources.")
     @app_commands.describe(tags="Tags or keywords to search for.")
     async def booru(self, interaction: discord.Interaction, tags: str = ""):
-        if isinstance(interaction.channel, discord.DMChannel):
-            if not await self.is_dm_allowed(interaction.user):
-                await interaction.response.send_message(
-                    "You are not allowed to use this command in DMs.", ephemeral=True
-                )
-                return
+        if isinstance(interaction.channel, discord.DMChannel) and not await self.is_dm_allowed(interaction.user):
+            await interaction.response.send_message("You are not allowed to use this command in DMs.", ephemeral=True)
+            return
         await self.search(interaction, tags)
 
     @app_commands.command(name="boorus", description="Search a specific booru site.")
@@ -49,12 +46,9 @@ class BooruSlash(commands.Cog):
         tags="Tags or keywords",
     )
     async def boorus(self, interaction: discord.Interaction, site: str, tags: str = ""):
-        if isinstance(interaction.channel, discord.DMChannel):
-            if not await self.is_dm_allowed(interaction.user):
-                await interaction.response.send_message(
-                    "You are not allowed to use this command in DMs.", ephemeral=True
-                )
-                return
+        if isinstance(interaction.channel, discord.DMChannel) and not await self.is_dm_allowed(interaction.user):
+            await interaction.response.send_message("You are not allowed to use this command in DMs.", ephemeral=True)
+            return
         await self.search(interaction, tags, site.lower())
 
     async def search(

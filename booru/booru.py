@@ -64,9 +64,9 @@ class Booru(commands.Cog):
 
     async def get_nsfw_status(self, ctx: commands.Context) -> bool:
         """Determine if NSFW should be allowed (guild/DM)."""
-        if ctx.guild:
-            return ctx.channel.is_nsfw() if isinstance(ctx.channel, discord.TextChannel) else False
-        return await self.is_dm_nsfw_allowed(ctx.author)
+        if isinstance(ctx.channel, discord.DMChannel):
+            return await self.is_dm_nsfw_allowed(ctx.author)
+        return ctx.channel.is_nsfw() if isinstance(ctx.channel, discord.TextChannel) else False
 
     async def get_post(self, source_name: str, tag_string: str, is_nsfw: bool = False) -> Optional[Dict[str, Any]]:
         source = self.sources.get(source_name)
@@ -155,7 +155,7 @@ class Booru(commands.Cog):
         Searches booru sites for images using the configured source order.
         Only works in DMs if user is owner/whitelisted.
         """
-        if ctx.guild is None and not await self.is_dm_nsfw_allowed(ctx.author):
+        if isinstance(ctx.channel, discord.DMChannel) and not await self.is_dm_nsfw_allowed(ctx.author):
             await ctx.send("You are not allowed to use this command in DMs.")
             return
 
@@ -210,13 +210,13 @@ class Booru(commands.Cog):
     @commands.group(name="boorus")
     async def source_specific(self, ctx: commands.Context):
         """Commands to search a specific booru source."""
-        if ctx.guild is None and not await self.is_dm_nsfw_allowed(ctx.author):
+        if isinstance(ctx.channel, discord.DMChannel) and not await self.is_dm_nsfw_allowed(ctx.author):
             await ctx.send("You are not allowed to use this command in DMs.")
             return
 
     @source_specific.command(name="dan")
     async def danbooru_search(self, ctx: commands.Context, *, tag_string: str = ""):
-        if ctx.guild is None and not await self.is_dm_nsfw_allowed(ctx.author):
+        if isinstance(ctx.channel, discord.DMChannel) and not await self.is_dm_nsfw_allowed(ctx.author):
             await ctx.send("You are not allowed to use this command in DMs.")
             return
 
@@ -236,7 +236,7 @@ class Booru(commands.Cog):
 
     @source_specific.command(name="gel")
     async def gelbooru_search(self, ctx: commands.Context, *, tag_string: str = ""):
-        if ctx.guild is None and not await self.is_dm_nsfw_allowed(ctx.author):
+        if isinstance(ctx.channel, discord.DMChannel) and not await self.is_dm_nsfw_allowed(ctx.author):
             await ctx.send("You are not allowed to use this command in DMs.")
             return
 
@@ -256,7 +256,7 @@ class Booru(commands.Cog):
 
     @source_specific.command(name="kon")
     async def konachan_search(self, ctx: commands.Context, *, tag_string: str = ""):
-        if ctx.guild is None and not await self.is_dm_nsfw_allowed(ctx.author):
+        if isinstance(ctx.channel, discord.DMChannel) and not await self.is_dm_nsfw_allowed(ctx.author):
             await ctx.send("You are not allowed to use this command in DMs.")
             return
 
@@ -276,7 +276,7 @@ class Booru(commands.Cog):
 
     @source_specific.command(name="yan")
     async def yandere_search(self, ctx: commands.Context, *, tag_string: str = ""):
-        if ctx.guild is None and not await self.is_dm_nsfw_allowed(ctx.author):
+        if isinstance(ctx.channel, discord.DMChannel) and not await self.is_dm_nsfw_allowed(ctx.author):
             await ctx.send("You are not allowed to use this command in DMs.")
             return
 
@@ -296,7 +296,7 @@ class Booru(commands.Cog):
 
     @source_specific.command(name="safe")
     async def safebooru_search(self, ctx: commands.Context, *, tag_string: str = ""):
-        if ctx.guild is None and not await self.is_dm_nsfw_allowed(ctx.author):
+        if isinstance(ctx.channel, discord.DMChannel) and not await self.is_dm_nsfw_allowed(ctx.author):
             await ctx.send("You are not allowed to use this command in DMs.")
             return
 
