@@ -10,10 +10,8 @@ from redbot.core import Config, checks, commands
 from redbot.core.bot import Red
 
 from .core.exceptions import RequestError, SourceNotFound
-from .core.slash import BooruSlash
 from .core.tags import TagHandler
-from .sources import (DanbooruSource, GelbooruSource, KonachanSource,
-                      Rule34Source, SafebooruSource, YandereSource)
+from .sources import DanbooruSource, GelbooruSource, KonachanSource, Rule34Source, SafebooruSource, YandereSource
 
 log = logging.getLogger("red.booru")
 
@@ -25,9 +23,7 @@ class Booru(commands.Cog):
         self.bot = bot
         self.session = aiohttp.ClientSession()
 
-        self.config = Config.get_conf(
-            self, identifier=127318273, force_registration=True
-        )
+        self.config = Config.get_conf(self, identifier=127318273, force_registration=True)
         self.tag_handler = TagHandler()
 
         self.sources = {
@@ -93,9 +89,7 @@ class Booru(commands.Cog):
 
         except ClientResponseError as cre:
             if cre.status == 422:
-                log.error(
-                    f"[{source_name}] HTTP {cre.status} - Possibly invalid or too many tags: {cre.message}"
-                )
+                log.error(f"[{source_name}] HTTP {cre.status} - Possibly invalid or too many tags: {cre.message}")
             else:
                 log.error(f"[{source_name}] HTTP {cre.status} error: {cre.message}")
             return None
@@ -133,16 +127,12 @@ class Booru(commands.Cog):
         tag_list = self.tag_handler.combine_tags(positive_tags, negative_tags)
 
         try:
-            posts = await source.get_posts(
-                tag_list, limit=limit, credentials=credentials
-            )
+            posts = await source.get_posts(tag_list, limit=limit, credentials=credentials)
         except ClientResponseError as cre:
             log.error(f"HTTP {cre.status} error on multiple fetch: {cre.message}")
             return []
         except (ClientError, TimeoutError) as ce:
-            log.error(
-                f"Connection error while fetching multiple from {source_name}: {ce}"
-            )
+            log.error(f"Connection error while fetching multiple from {source_name}: {ce}")
             return []
         except Exception as e:
             log.exception(f"Unexpected error fetching multiple from {source_name}: {e}")
@@ -161,16 +151,14 @@ class Booru(commands.Cog):
         if "score" in post_data and post_data["score"] is not None:
             embed.add_field(name="Score", value=post_data["score"])
 
-        footer_text = f"Post {index+1}/{total}"
+        footer_text = f"Post {index + 1}/{total}"
         if "id" in post_data:
             footer_text += f" • ID: {post_data['id']}"
         embed.set_footer(text=footer_text)
 
         return embed
 
-    async def _send_post_embed(
-        self, ctx: commands.Context, post_data: dict, index: int, total: int
-    ) -> discord.Message:
+    async def _send_post_embed(self, ctx: commands.Context, post_data: dict, index: int, total: int) -> discord.Message:
         """
         Sends an embed for the given post data, returning the sent message object.
         """
@@ -194,11 +182,7 @@ class Booru(commands.Cog):
         Searches booru sites for images using the configured source order.
         If the channel is marked NSFW, explicit results may appear.
         """
-        is_nsfw = (
-            ctx.channel.is_nsfw()
-            if isinstance(ctx.channel, discord.TextChannel)
-            else False
-        )
+        is_nsfw = ctx.channel.is_nsfw() if isinstance(ctx.channel, discord.TextChannel) else False
 
         source_order = (await self.config.filters())["source_order"]
         if not source_order:
@@ -210,9 +194,7 @@ class Booru(commands.Cog):
 
         for source_name in source_order:
             try:
-                posts = await self._get_multiple_posts_from_source(
-                    source_name, tag_string, is_nsfw, limit=100
-                )
+                posts = await self._get_multiple_posts_from_source(source_name, tag_string, is_nsfw, limit=100)
                 if posts:
                     used_source = source_name
                     break
@@ -225,9 +207,7 @@ class Booru(commands.Cog):
             return
 
         current_index = 0
-        message = await self._send_post_embed(
-            ctx, posts[current_index], current_index, len(posts)
-        )
+        message = await self._send_post_embed(ctx, posts[current_index], current_index, len(posts))
 
         if len(posts) == 1:
             return
@@ -237,17 +217,11 @@ class Booru(commands.Cog):
             await message.add_reaction(emoji)
 
         def check(reaction: discord.Reaction, user: discord.Member):
-            return (
-                user == ctx.author
-                and reaction.message.id == message.id
-                and str(reaction.emoji) in controls
-            )
+            return user == ctx.author and reaction.message.id == message.id and str(reaction.emoji) in controls
 
         while True:
             try:
-                reaction, user = await self.bot.wait_for(
-                    "reaction_add", timeout=60.0, check=check
-                )
+                reaction, user = await self.bot.wait_for("reaction_add", timeout=60.0, check=check)
             except TimeoutError:
                 await self._cleanup_reactions(message, controls)
                 break
@@ -260,9 +234,7 @@ class Booru(commands.Cog):
                 await self._cleanup_reactions(message, controls)
                 break
 
-            new_embed = self._build_embed(
-                posts[current_index], current_index, len(posts)
-            )
+            new_embed = self._build_embed(posts[current_index], current_index, len(posts))
             await message.edit(embed=new_embed)
 
             try:
@@ -289,11 +261,7 @@ class Booru(commands.Cog):
             post = await self._get_post_from_source(
                 "danbooru",
                 tag_string,
-                (
-                    ctx.channel.is_nsfw()
-                    if isinstance(ctx.channel, discord.TextChannel)
-                    else False
-                ),
+                (ctx.channel.is_nsfw() if isinstance(ctx.channel, discord.TextChannel) else False),
             )
 
             if not post:
@@ -317,11 +285,7 @@ class Booru(commands.Cog):
             post = await self._get_post_from_source(
                 "gelbooru",
                 tag_string,
-                (
-                    ctx.channel.is_nsfw()
-                    if isinstance(ctx.channel, discord.TextChannel)
-                    else False
-                ),
+                (ctx.channel.is_nsfw() if isinstance(ctx.channel, discord.TextChannel) else False),
             )
 
             if not post:
@@ -345,11 +309,7 @@ class Booru(commands.Cog):
             post = await self._get_post_from_source(
                 "konachan",
                 tag_string,
-                (
-                    ctx.channel.is_nsfw()
-                    if isinstance(ctx.channel, discord.TextChannel)
-                    else False
-                ),
+                (ctx.channel.is_nsfw() if isinstance(ctx.channel, discord.TextChannel) else False),
             )
 
             if not post:
@@ -373,11 +333,7 @@ class Booru(commands.Cog):
             post = await self._get_post_from_source(
                 "yandere",
                 tag_string,
-                (
-                    ctx.channel.is_nsfw()
-                    if isinstance(ctx.channel, discord.TextChannel)
-                    else False
-                ),
+                (ctx.channel.is_nsfw() if isinstance(ctx.channel, discord.TextChannel) else False),
             )
 
             if not post:
@@ -398,9 +354,7 @@ class Booru(commands.Cog):
     async def safebooru_search(self, ctx: commands.Context, *, tag_string: str = ""):
         """Search Safebooru specifically."""
         async with ctx.typing():
-            post = await self._get_post_from_source(
-                "safebooru", tag_string, is_nsfw=False
-            )
+            post = await self._get_post_from_source("safebooru", tag_string, is_nsfw=False)
 
             if not post:
                 await ctx.send("No results found on Safebooru.")
