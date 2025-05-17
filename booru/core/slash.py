@@ -15,7 +15,6 @@ class BooruSlash(commands.Cog):
         self.tag_handler = TagHandler()
 
     async def is_dm_nsfw_allowed(self, user: discord.User) -> bool:
-        """Check if user is allowed NSFW in DMs (owner or whitelisted)."""
         booru_cog = self.bot.get_cog("Booru")
         if booru_cog is None:
             return False
@@ -96,7 +95,7 @@ class BooruSlash(commands.Cog):
             view.message = msg
             await msg.edit(view=view)
 
-    booruset = app_commands.Group(name="booruset", description="Owner-only DM-NSFW whitelist.", guild_only=False)
+    booruset = app_commands.Group(name="booruset", description="Owner-only DM-NSFW whitelist.")
 
     @booruset.command(name="list")
     async def wl_list(self, interaction: discord.Interaction):
