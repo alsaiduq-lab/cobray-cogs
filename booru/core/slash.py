@@ -15,6 +15,74 @@ log = logging.getLogger("red.booru")
 
 
 class BooruSlash(commands.Cog):
+    async def autocomplete_tags(self, interaction: discord.Interaction, current: str) -> List[app_commands.Choice[str]]:
+        source = None
+        try:
+            param_dict = {k: v for k, v in interaction.namespace.__dict__.items()}
+            source = param_dict.get("site", None) or None
+        except Exception:
+            source = None
+        if not source:
+            source = "danbooru"
+        source = source.lower()
+
+        current_tag = current.strip().split()[-1] if current.strip() else ""
+        prefix = "-" if current_tag.startswith("-") else ""
+        query = current_tag.lstrip("-")
+        results = []
+        if not query:
+            return []
+
+        tag_api_map = {
+            "danbooru": f"https://danbooru.donmai.us/tags.json?search[name_matches]={query}*&limit=30",
+            # TODO: add gelbooru properly here
+            "yandere": f"https://yande.re/tag.json?name={query}*&limit=30",
+            "konachan": f"https://konachan.com/tag.json?name={query}*&limit=30",
+        }
+        tag_api = tag_api_map.get(source)
+        if not tag_api:
+            tag_api = tag_api_map["danbooru"]
+        try:
+            session = getattr(self.bot, "session", None)
+            if session is None:
+                import aiohttp
+
+                session = aiohttp.ClientSession()
+            async with session.get(tag_api) as resp:
+                if resp.status == 200:
+                    data = await resp.json()
+                    from difflib import SequenceMatcher
+
+                    scored = []
+                    for item in data:
+                        tag_name = item.get("name")
+                        post_count = item.get("post_count") or item.get("count") or 0
+                        if not tag_name:
+                            continue
+                        lc_tag = tag_name.lower()
+                        lc_query = query.lower()
+                        ratio = SequenceMatcher(None, lc_query, lc_tag).ratio()
+                        score = post_count
+                        if lc_tag == lc_query:
+                            score += 100000
+                        elif lc_query in lc_tag:
+                            score += 25000
+                        elif ratio > 0.66:
+                            score += int(5000 * ratio)
+                        scored.append((score, tag_name, post_count))
+                    scored.sort(key=lambda tup: (-tup[0], tup[1]))
+                    seen = set()
+                    for _, tag_name, post_count in scored:
+                        if tag_name and tag_name not in seen:
+                            label = f"{prefix}{tag_name}"
+                            results.append(app_commands.Choice(name=label, value=label))
+                            seen.add(tag_name)
+                        if len(results) >= 25:
+                            break
+        except Exception as exc:
+            log.warning(f"Tag autocomplete error: {exc}")
+        return results[:25]
+
     def __init__(self, bot: commands.Bot):
         self.bot = bot
         self.tag_handler = TagHandler()
@@ -30,10 +98,10 @@ class BooruSlash(commands.Cog):
                 import logging
 
                 logging.getLogger("red.booru").exception(
-                    "Failed to set allowed_contexts/installs for BooruSlash commands", exc_info=exc
+                    "Failed to set allowed_contexts/installs for booru commands", exc_info=exc
                 )
 
-    async def is_dm_nsfw_allowed(self, user: discord.User) -> bool:
+    async def dm_nsfw_check(self, user: discord.User) -> bool:
         """Checks if a user is allowed to use NSFW commands in DMs."""
         if await self.bot.is_owner(user):
             return True
@@ -56,7 +124,7 @@ class BooruSlash(commands.Cog):
         and not allowed to use the command.
         """
         if interaction.guild is None:
-            allowed = await self.is_dm_nsfw_allowed(interaction.user)
+            allowed = await self.dm_nsfw_check(interaction.user)
             if not allowed:
                 await interaction.response.send_message(
                     "You are not permitted to use this command in DMs or private channels.", ephemeral=True
@@ -69,7 +137,7 @@ class BooruSlash(commands.Cog):
         channel = interaction.channel
 
         if interaction.guild is None:
-            return await self.is_dm_nsfw_allowed(interaction.user)
+            return await self.dm_nsfw_check(interaction.user)
         if isinstance(channel, (discord.TextChannel, discord.Thread, discord.VoiceChannel, discord.StageChannel)):
             return channel.is_nsfw()
         if hasattr(channel, "is_nsfw") and callable(channel.is_nsfw):
@@ -79,8 +147,7 @@ class BooruSlash(commands.Cog):
                 log.error(f"Error calling is_nsfw on channel type {type(channel)}: {e}", exc_info=True)
 
         log.warning(
-            f"Could not determine NSFW status for channel ID {channel.id} of type {type(channel)}. "
-            "Defaulting to SFW (False)."
+            f"Could not determine nsfw status for channel ID {channel.id} of type {type(channel)}. Defaulting to sfw."
         )
         return False
 
@@ -89,6 +156,7 @@ class BooruSlash(commands.Cog):
         description="Search all configured booru sources.",
     )
     @app_commands.describe(tags="Tags or keywords to search for.")
+    @app_commands.autocomplete(tags=autocomplete_tags)
     async def booru(self, interaction: discord.Interaction, tags: str = ""):
         if await self.access_denied(interaction):
             return
@@ -102,6 +170,7 @@ class BooruSlash(commands.Cog):
         site="danbooru | gelbooru | konachan | yandere | safebooru | rule34",
         tags="Tags or keywords",
     )
+    @app_commands.autocomplete(tags=autocomplete_tags)
     async def boorus(self, interaction: discord.Interaction, site: str, tags: str = ""):
         if await self.access_denied(interaction):
             return
@@ -128,7 +197,10 @@ class BooruSlash(commands.Cog):
         else:
             try:
                 filters_config = await booru_cog.config.filters()
-                sources = filters_config.get("source_order", [])
+                if filters_config and hasattr(filters_config, "get"):
+                    sources = filters_config.get("source_order", [])
+                else:
+                    sources = []
                 if not sources:
                     log.warning("No source_order found in Booru cog config, or it's empty.")
                     sources = list(booru_cog.sources.keys())
@@ -138,37 +210,62 @@ class BooruSlash(commands.Cog):
                 return
 
         posts: List[dict] = []
-        used_source = None
-        for src in sources:
-            if src not in booru_cog.sources:
-                log.debug(f"Source '{src}' not available in Booru cog sources.")
-                continue
-            try:
-                posts = await booru_cog.get_multiple_posts(src, query, is_nsfw_context, limit=100)
-                if posts:
-                    used_source = src
-                    break
-            except Exception as e:
-                log.error("Error searching source %s for query '%s': %s", src, query, e, exc_info=True)
+        post_sources: List[str] = []
+        import random
+
+        if specific_site:
+            src = specific_site
+            if src in booru_cog.sources:
+                try:
+                    posts = await booru_cog.get_multiple_posts(src, query, is_nsfw_context, limit=100)
+                    post_sources = [src] * len(posts)
+                except Exception as e:
+                    log.error("Error searching source %s for query '%s': %s", src, query, e, exc_info=True)
+        else:
+            for src in sources:
+                if src not in booru_cog.sources:
+                    log.debug(f"Source '{src}' not available in Booru cog sources.")
+                    continue
+                try:
+                    these_posts = await booru_cog.get_multiple_posts(src, query, is_nsfw_context, limit=100)
+                    posts.extend(these_posts)
+                    post_sources.extend([src] * len(these_posts))
+                except Exception as e:
+                    log.error("Error searching source %s for query '%s': %s", src, query, e, exc_info=True)
+            zipped = list(zip(posts, post_sources))
+            random.shuffle(zipped)
+            if zipped:
+                posts_zipped, sources_zipped = zip(*zipped)
+                posts, post_sources = list(posts_zipped), list(sources_zipped)
+            else:
+                posts, post_sources = [], []
+
         if not posts:
             await interaction.followup.send("No results found for your query.", ephemeral=ephemeral_response)
             return
+
+        idx = 0
+        for i, post in enumerate(posts):
+            if post.get("url"):
+                idx = i
+                break
+        main_post = posts[idx]
+        main_source = post_sources[idx] if idx < len(post_sources) else "Unknown Source"
         is_dm = interaction.guild is None
-        rating = posts[0].get("rating", "safe").lower()
+        rating = main_post.get("rating", "safe").lower()
         nsfw = rating in ("explicit", "questionable")
-        embed = booru_cog.build_embed(posts[0], 0, len(posts))
+        embed = booru_cog.build_embed(main_post, idx, len(posts))
         foot = embed.footer.text or ""
-        embed.set_footer(text=f"{foot} • From {used_source.title() if used_source else 'Unknown Source'}")
+        embed.set_footer(text=f"{foot} • From {main_source.title()}")
         view = None
         message_kwargs = {"embed": embed, "view": None, "ephemeral": ephemeral_response}
         if is_dm and nsfw:
-            spoiler_url = f"||{posts[0]['url']}||"
+            spoiler_url = f"||{main_post['url']}||"
             warning = f"⚠️ NSFW Content: {spoiler_url}"
             message_kwargs = {"content": warning, "embed": embed, "view": None, "ephemeral": ephemeral_response}
         if len(posts) > 1:
-            view = BooruPaginationView(
-                interaction.user, posts, used_source.title() if used_source else "Unknown Source", is_dm=is_dm
-            )
+            view = BooruPaginationView(interaction.user, posts, main_source, is_dm=is_dm, post_sources=post_sources)
+            view.idx = idx
             message_kwargs["view"] = view
         msg = await interaction.followup.send(**message_kwargs)
         if view:
@@ -270,13 +367,20 @@ class BooruSlash(commands.Cog):
 
 
 class BooruPaginationView(discord.ui.View):
-    def __init__(self, author: discord.User, posts: List[dict], source: str, is_dm: bool = False):
+    def __init__(
+        self,
+        author: discord.User,
+        posts: List[dict],
+        first_source: str,
+        is_dm: bool = False,
+        post_sources: Optional[List[str]] = None,
+    ):
         super().__init__(timeout=60.0)
         self.author = author
         self.posts = posts
         self.idx = 0
-        self.source = source
         self.is_dm = is_dm
+        self.post_sources = post_sources if post_sources is not None else [first_source] * len(posts)
         self.message: Optional[discord.Message] = None
 
     async def interaction_check(self, interaction: discord.Interaction) -> bool:
@@ -296,18 +400,15 @@ class BooruPaginationView(discord.ui.View):
         await self.update_message(interaction)
 
     @discord.ui.button(label="Close", style=discord.ButtonStyle.danger, custom_id="booru_close")
+    @discord.ui.button(label="Close", style=discord.ButtonStyle.danger, custom_id="booru_close")
     async def close_button(self, interaction: discord.Interaction, _: discord.ui.Button):
+        for child in self.children:
+            if isinstance(child, discord.ui.Button):
+                child.disabled = True
         try:
-            await interaction.delete_original_response()
+            await interaction.response.edit_message(view=self)
         except Exception:
-            if interaction.message:
-                try:
-                    await interaction.message.edit(view=None)
-                except (discord.Forbidden, discord.HTTPException, discord.NotFound):
-                    try:
-                        await interaction.message.delete()
-                    except (discord.Forbidden, discord.NotFound, discord.HTTPException):
-                        pass
+            pass
         self.stop()
 
     async def update_message(self, interaction: discord.Interaction):
@@ -321,13 +422,16 @@ class BooruPaginationView(discord.ui.View):
         nsfw = rating in ("explicit", "questionable")
         embed = booru_cog.build_embed(current_post, self.idx, len(self.posts))
         foot = embed.footer.text or ""
-        embed.set_footer(text=f"{foot} • From {self.source}")
-        message_kwargs = {"embed": embed, "view": self}
+        src = (
+            self.post_sources[self.idx] if self.post_sources and len(self.post_sources) > self.idx else "Unknown Source"
+        )
+        embed.set_footer(text=f"{foot} • From {src.title()}")
         if self.is_dm and nsfw:
             spoiler_url = f"||{current_post['url']}||"
             warning = f"⚠️ NSFW Content: {spoiler_url}"
-            message_kwargs = {"content": warning, "embed": embed, "view": self}
-        await interaction.response.edit_message(**message_kwargs)
+            await interaction.response.edit_message(content=warning, embed=embed, view=self)
+        else:
+            await interaction.response.edit_message(content=None, embed=embed, view=self)
 
     async def on_timeout(self):
         if self.message:

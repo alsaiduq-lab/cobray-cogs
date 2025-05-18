@@ -4,7 +4,6 @@ from typing import List, Set, Tuple
 
 log = logging.getLogger("red.booru.core.tags")
 
-
 UNDERSCORE = re.compile(r"[ _]+")
 SERIES_SPLIT = re.compile(r"(?<!^):(?!$)")
 
@@ -30,18 +29,16 @@ class TagHandler:
         • Normalises every tag (case, underscores, series).
         • Resolves aliases **after** normalisation.
         """
-        raw_tags = {t.strip() for t in tag_string.replace(",", " ").split() if t.strip()}
+        tags_raw = [t.strip() for t in re.split(r"[,s]+", tag_string) if t.strip()]
 
         positive, negative = set(), set()
 
-        for tag in raw_tags:
+        for tag in tags_raw:
             is_neg = tag.startswith("-")
-            if is_neg:
-                tag = tag.lstrip("-")
-
-            tag = self._alias(self._normalize(tag))
-
-            (negative if is_neg else positive).add(tag)
+            tag_clean = tag[1:] if is_neg else tag
+            tag_final = self._alias(self._normalize(tag_clean))
+            if tag_final:
+                (negative if is_neg else positive).add(tag_final)
 
         log.debug("Parsed tags – +%s −%s", positive, negative)
         return positive, negative

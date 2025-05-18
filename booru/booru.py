@@ -123,6 +123,9 @@ class Booru(commands.Cog):
         tag_list = self.tag_handler.combine_tags(positive_tags, negative_tags)
         try:
             posts = await source.get_posts(tag_list, limit=limit, credentials=credentials)
+        except RequestError as e:
+            log.error(f"Error fetching from {source_name}: {e}")
+            return []
         except ClientResponseError as cre:
             log.error(f"HTTP {cre.status} error on multiple fetch: {cre.message}")
             return []
@@ -132,6 +135,8 @@ class Booru(commands.Cog):
         except Exception as e:
             log.exception(f"Unexpected error fetching multiple from {source_name}: {e}")
             return []
+        if posts is None:
+            posts = []
         return [source.parse_post(p) for p in posts if p]
 
     def build_embed(self, post_data: dict, index: int, total: int) -> discord.Embed:

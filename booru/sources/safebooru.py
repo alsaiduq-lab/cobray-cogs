@@ -52,7 +52,8 @@ class SafebooruSource(BooruSource):
             file_url = post.get("file_url")
             if file_url and not file_url.startswith("http"):
                 file_url = f"https:{file_url}"
-
+            if file_url is None:
+                file_url = ""
             return PostResult(
                 id=str(post["id"]),
                 url=file_url,

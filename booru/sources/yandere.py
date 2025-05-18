@@ -3,7 +3,7 @@ from typing import Any, Dict, List, Optional, Union
 from urllib.parse import urlencode
 
 from ..core.abc import BooruSource
-from ..core.exceptions import PostParseError, RequestError
+from ..core.exceptions import PostParseError
 
 log = logging.getLogger("red.booru.sources.yandere")
 

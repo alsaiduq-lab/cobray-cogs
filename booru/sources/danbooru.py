@@ -5,7 +5,7 @@ from urllib.parse import urlencode
 from ..core.abc import BooruSource, PostResult
 from ..core.exceptions import PostParseError, RequestError
 
-log = logging.getLogger("red.booru.sources.danbooru")
+log = logging.getLogger("red.booru")
 
 
 class DanbooruSource(BooruSource):
@@ -23,8 +23,8 @@ class DanbooruSource(BooruSource):
     ) -> Union[List[Dict[str, Any]], None]:
         """Fetch posts from Danbooru."""
         params = {"tags": " ".join(tags), "limit": limit, "random": "true"}
-
         url = f"{self.base_url}/posts.json?{urlencode(params)}"
+        log.debug("Danbooru API tags: %r", tags)
         log.debug("Requesting URL: %s", url)
 
         try:
@@ -40,16 +40,19 @@ class DanbooruSource(BooruSource):
         """Parse Danbooru post data into standardized format."""
         try:
             file_url = post.get("file_url") or post.get("large_file_url")
+            if file_url and not isinstance(file_url, str):
+                file_url = str(file_url)
             if file_url and not file_url.startswith("http"):
                 file_url = f"{self.base_url}{file_url}"
-
+            if file_url is None:
+                file_url = ""
             return PostResult(
                 id=str(post["id"]),
                 url=file_url,
                 source="danbooru",
                 rating=post.get("rating", "unknown"),
                 tags=post.get("tag_string", "").split(),
-                score=post.get("score"),
+                score=post.get("score", 0),
             ).to_dict()
         except KeyError as e:
             log.error("Error parsing Danbooru post: %s", e)
