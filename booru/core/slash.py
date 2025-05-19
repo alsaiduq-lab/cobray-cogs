@@ -1,4 +1,5 @@
 import logging
+import random
 from typing import List, Optional, Union, Set, cast
 
 import discord
@@ -95,8 +96,6 @@ class BooruSlash(commands.Cog):
                     )
                     cmd.allowed_installs = app_installs.AppInstallationType(guild=True, user=True)
             except Exception as exc:
-                import logging
-
                 logging.getLogger("red.booru").exception(
                     "Failed to set allowed_contexts/installs for booru commands", exc_info=exc
                 )
@@ -211,7 +210,6 @@ class BooruSlash(commands.Cog):
 
         posts: List[dict] = []
         post_sources: List[str] = []
-        import random
 
         if specific_site:
             src = specific_site
@@ -283,7 +281,7 @@ class BooruSlash(commands.Cog):
             return
         booru_cog = interaction.client.get_cog("Booru")
         if not booru_cog:
-            await interaction.response.send_message("Booru core cog not loaded.", ephemeral=True)
+            await interaction.response.send_message("Booru cog not loaded.", ephemeral=True)
             return
         ids = await booru_cog.config.dm_nsfw_allowed()
         if not ids:
@@ -338,7 +336,7 @@ class BooruSlash(commands.Cog):
 
         booru_cog = interaction.client.get_cog("Booru")
         if not booru_cog:
-            await interaction.response.send_message("Booru core cog not loaded.", ephemeral=True)
+            await interaction.response.send_message("Booru cog not loaded.", ephemeral=True)
             return
 
         conf = booru_cog.config
@@ -360,7 +358,7 @@ class BooruSlash(commands.Cog):
 
         booru_cog = interaction.client.get_cog("Booru")
         if not booru_cog:
-            await interaction.response.send_message("Booru core cog not loaded.", ephemeral=True)
+            await interaction.response.send_message("Booru cog not loaded.", ephemeral=True)
             return
         await booru_cog.config.dm_nsfw_allowed.clear()
         await interaction.response.send_message("The DM NSFW whitelist has been cleared.", ephemeral=True)

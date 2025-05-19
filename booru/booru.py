@@ -230,7 +230,7 @@ class Booru(commands.Cog):
         if await self.dm_access_denied(ctx):
             return
 
-    @source_specific.command(name="dan")
+    @source_specific.command(name="dan")  # type:ignore
     async def danbooru_search(self, ctx: commands.Context, *, tag_string: str = ""):
         if await self.dm_access_denied(ctx):
             return
@@ -248,7 +248,7 @@ class Booru(commands.Cog):
             embed.set_footer(text=f"From Danbooru • ID: {post['id']}")
             await ctx.send(embed=embed)
 
-    @source_specific.command(name="gel")
+    @source_specific.command(name="gel")  # type: ignore
     async def gelbooru_search(self, ctx: commands.Context, *, tag_string: str = ""):
         if await self.dm_access_denied(ctx):
             return
@@ -266,7 +266,7 @@ class Booru(commands.Cog):
             embed.set_footer(text=f"From Gelbooru • ID: {post['id']}")
             await ctx.send(embed=embed)
 
-    @source_specific.command(name="kon")
+    @source_specific.command(name="kon")  # type: ignore
     async def konachan_search(self, ctx: commands.Context, *, tag_string: str = ""):
         if await self.dm_access_denied(ctx):
             return
@@ -284,7 +284,7 @@ class Booru(commands.Cog):
             embed.set_footer(text=f"From Konachan • ID: {post['id']}")
             await ctx.send(embed=embed)
 
-    @source_specific.command(name="yan")
+    @source_specific.command(name="yan")  # type: ignore
     async def yandere_search(self, ctx: commands.Context, *, tag_string: str = ""):
         if await self.dm_access_denied(ctx):
             return
@@ -302,7 +302,7 @@ class Booru(commands.Cog):
             embed.set_footer(text=f"From Yande.re • ID: {post['id']}")
             await ctx.send(embed=embed)
 
-    @source_specific.command(name="safe")
+    @source_specific.command(name="safe")  # type: ignore
     async def safebooru_search(self, ctx: commands.Context, *, tag_string: str = ""):
         if await self.dm_access_denied(ctx):
             return
@@ -321,11 +321,11 @@ class Booru(commands.Cog):
 
     @commands.group(name="booruset")
     @checks.admin_or_permissions(administrator=True)
-    async def settings(self, ctx: commands.Context):
+    async def settings(self, _: commands.Context):
         """Configure booru settings."""
         pass
 
-    @settings.command(name="blacklist")
+    @settings.command(name="blacklist")  # type: ignore
     async def add_blacklist(self, ctx: commands.Context, *, tag: str):
         async with self.config.filters.blacklist() as blacklist:
             if tag not in blacklist:
@@ -334,7 +334,7 @@ class Booru(commands.Cog):
             else:
                 await ctx.send("Tag already blacklisted.")
 
-    @settings.command(name="unblacklist")
+    @settings.command(name="unblacklist")  # type: ignore
     async def remove_blacklist(self, ctx: commands.Context, *, tag: str):
         async with self.config.filters.blacklist() as blacklist:
             if tag in blacklist:
@@ -343,7 +343,7 @@ class Booru(commands.Cog):
             else:
                 await ctx.send("Tag not found in blacklist.")
 
-    @settings.command(name="listblacklist")
+    @settings.command(name="listblacklist")  # type: ignore
     async def list_blacklist(self, ctx: commands.Context):
         blacklist = await self.config.filters.blacklist()
         if blacklist:
@@ -351,7 +351,7 @@ class Booru(commands.Cog):
         else:
             await ctx.send("No tags blacklisted.")
 
-    @settings.command(name="setapi")
+    @settings.command(name="setapi")  # type: ignore
     @commands.is_owner()
     async def set_api_key(self, ctx: commands.Context, api_key: str, user_id: str):
         async with self.config.api_keys() as api_keys:
