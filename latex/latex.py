@@ -43,26 +43,47 @@ class Latex(commands.Cog):
 
     async def cog_load(self) -> None:
         self.session = aiohttp.ClientSession()
+        await self.bot.wait_until_red_ready()
+        self._monkey_patch_ignored_cache()
         self.bot.tree.add_command(self.latex_context)
 
     async def cog_unload(self) -> None:
         if self.session:
             await self.session.close()
-        self.bot.tree.remove_command(self.latex_context.name, type=self.latex_context.type)
+        try:
+            self.bot.tree.remove_command(self.latex_context.name, type=self.latex_context.type)
+        except Exception:
+            pass
+
+    # current issue with redbot, owners never trigger this issue
+    def _monkey_patch_ignored_cache(self):
+        cache = getattr(self.bot, "_ignored_cache", None)
+        if not cache:
+            log.warning("Redbot _ignored_cache not found; monkey patch skipped")
+            return
+
+        original = type(cache).get_ignored_channel
+
+        async def safe_get_ignored_channel(self_cache, channel, *args, **kwargs):
+            if channel is None:
+                return False
+            return await original(self_cache, channel, *args, **kwargs)
+
+        import types
+
+        cache.get_ignored_channel = types.MethodType(safe_get_ignored_channel, cache)
+        log.debug("Monkey-patched Redbot _ignored_cache.get_ignored_channel to handle None safely.")
 
     async def red_delete_data_for_user(self):
         return
 
     @staticmethod
     def cleanup_code_block(content: str) -> str:
-        """Remove code block formatting from the input."""
-        # remove ```latex\n```/```tex\n```/``````
         if content.startswith("```") and content.endswith("```"):
             return START_CODE_BLOCK_RE.sub("", content)[:-3]
         return content.strip("` \n")
 
     async def generate_latex_image(self, equation: str) -> Optional[discord.File]:
-        """Generate a LaTeX image from the given equation."""
         base_url = "https://latex.codecogs.com/png.image?%5Cdpi%7B200%7D%5Cbg%7Bwhite%7D%20"
         equation_encoded = parse.quote(equation)
         url = f"{base_url}{equation_encoded}"
@@ -103,7 +124,6 @@ class Latex(commands.Cog):
 
     @app_commands.command(name="latexhelp", description="Show helpful LaTeX syntax examples")
     async def latex_help_slash(self, interaction: discord.Interaction):
-        """Slash command to show LaTeX help."""
         embed = discord.Embed(
             title="LaTeX Help",
             description="Here are some common LaTeX expressions you can use:",
@@ -125,34 +145,33 @@ class Latex(commands.Cog):
         await interaction.response.send_message(embed=embed, ephemeral=True)
 
     async def _latex_context_callback(self, interaction: discord.Interaction, message: discord.Message):
-        """Right-click context menu to render a message's content as LaTeX."""
-        if not message.content:
-            await interaction.response.send_message("This message has no content to render.", ephemeral=True)
-            return
-        equation = self.cleanup_code_block(message.content)
-        await interaction.response.defer(ephemeral=True)
-        image_file = await self.generate_latex_image(equation)
-        if image_file:
-            embed = discord.Embed(
-                title="LaTeX Render", description=f"From: {message.author.mention}", color=discord.Color.blue()
-            )
-            embed.set_image(url="attachment://latex.png")
-            await interaction.followup.send(file=image_file, embed=embed, ephemeral=True)
-        else:
-            await interaction.followup.send("❌ I couldn't render that as a LaTeX expression.", ephemeral=True)
+        try:
+            if not message.content:
+                await interaction.response.send_message("This message has no content to render.", ephemeral=True)
+                return
+            equation = self.cleanup_code_block(message.content)
+            await interaction.response.defer(ephemeral=True)
+            image_file = await self.generate_latex_image(equation)
+            if image_file:
+                embed = discord.Embed(
+                    title="LaTeX Render", description=f"From: {message.author.mention}", color=discord.Color.blue()
+                )
+                embed.set_image(url="attachment://latex.png")
+                await interaction.followup.send(file=image_file, embed=embed, ephemeral=True)
+            else:
+                await interaction.followup.send("❌ I couldn't render that as a LaTeX expression.", ephemeral=True)
+        except Exception as e:
+            log.exception(f"Error in latex context menu: {e}")
+            if not interaction.response.is_done():
+                await interaction.response.send_message(
+                    "❌ An error occurred while processing the LaTeX.", ephemeral=True
+                )
+            else:
+                await interaction.followup.send("❌ An error occurred while processing the LaTeX.", ephemeral=True)
 
     @commands.guild_only()
     @commands.command(aliases=["tex"], hidden=True)
     async def latex(self, ctx: commands.Context, *, equation: str):
-        """
-        [Legacy] Takes a LaTeX expression and renders it as an image.
-        **Note: Please use `/latex` instead!**
-        You can use code blocks or inline code formatting:
-        - `$\\alpha + \\beta$`
-        - ```latex
-          \\frac{a}{b}
-          ```
-        """
         equation = self.cleanup_code_block(equation)
         async with ctx.typing():
             image_file = await self.generate_latex_image(equation)
@@ -175,7 +194,6 @@ class Latex(commands.Cog):
     @commands.guild_only()
     @commands.command(name="latexhelp", hidden=True)
     async def latex_help(self, ctx: commands.Context):
-        """[Legacy] Show helpful LaTeX syntax examples. Use /latexhelp instead!"""
         embed = discord.Embed(
             title="LaTeX Help",
             description="**Note:** Please use `/latexhelp` for a better experience!\n\n"
