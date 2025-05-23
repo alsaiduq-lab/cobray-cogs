@@ -2,12 +2,13 @@ import aiohttp
 import discord
 import io
 import logging
-import re
 from typing import Optional
 from PIL import Image, ImageOps
 import urllib.parse as parse
 from redbot.core import commands, app_commands
 from redbot.core.bot import Red
+
+from . import parser, ai
 
 try:
     from discord.app_commands import installs as app_installs
@@ -15,8 +16,6 @@ except ImportError:
     app_installs = None
 
 log = logging.getLogger("red.latex")
-
-START_CODE_BLOCK_RE = re.compile(r"^((```(la)?tex)(?=\s)|(```))")
 
 
 class Latex(commands.Cog):
@@ -77,12 +76,6 @@ class Latex(commands.Cog):
     async def red_delete_data_for_user(self):
         return
 
-    @staticmethod
-    def cleanup_code_block(content: str) -> str:
-        if content.startswith("```") and content.endswith("```"):
-            return START_CODE_BLOCK_RE.sub("", content)[:-3]
-        return content.strip("` \n")
-
     async def generate_latex_image(self, equation: str) -> Optional[discord.File]:
         base_url = "https://latex.codecogs.com/png.image?%5Cdpi%7B200%7D%5Cbg%7Bwhite%7D%20"
         equation_encoded = parse.quote(equation)
@@ -109,7 +102,7 @@ class Latex(commands.Cog):
     @app_commands.command(name="latex", description="Render a LaTeX expression as an image")
     @app_commands.describe(equation="The LaTeX expression to render (e.g., \\frac{a}{b})")
     async def latex_slash(self, interaction: discord.Interaction, equation: str):
-        equation = self.cleanup_code_block(equation)
+        equation = parser.cleanup_code_block(equation)
         await interaction.response.defer()
         image_file = await self.generate_latex_image(equation)
         if image_file:
@@ -149,7 +142,7 @@ class Latex(commands.Cog):
             if not message.content:
                 await interaction.response.send_message("This message has no content to render.", ephemeral=True)
                 return
-            equation = self.cleanup_code_block(message.content)
+            equation = parser.cleanup_code_block(message.content)
             await interaction.response.defer(ephemeral=True)
             image_file = await self.generate_latex_image(equation)
             if image_file:
@@ -169,10 +162,36 @@ class Latex(commands.Cog):
             else:
                 await interaction.followup.send("❌ An error occurred while processing the LaTeX.", ephemeral=True)
 
+    @app_commands.command(name="latexask", description="Ask a math question, get a LaTeX image answer (AI powered)")
+    @app_commands.describe(question="A math question in natural language")
+    async def asklatex_slash(self, interaction: discord.Interaction, question: str, provider: str = "xai"):
+        await interaction.response.defer()
+        try:
+            result = await ai.question_to_latex(question, provider=provider)
+            if isinstance(result, tuple):
+                latex_code, _message = result
+            else:
+                latex_code, _message = result, None
+
+            image_file = await self.generate_latex_image(latex_code)
+            if image_file:
+                embed = discord.Embed(
+                    title="LaTeX Render", color=discord.Color.green(), description=f"**Question:** {question}"
+                )
+                embed.set_image(url="attachment://latex.png")
+                embed.set_footer(text=f"Requested by {interaction.user}", icon_url=interaction.user.display_avatar.url)
+                await interaction.followup.send(file=image_file, embed=embed)
+                if _message:
+                    await interaction.followup.send(_message, ephemeral=True)
+            else:
+                await interaction.followup.send("❌ AI generated LaTeX, but image rendering failed.", ephemeral=True)
+        except Exception as e:
+            await interaction.followup.send(f"❌ Error generating LaTeX from AI: {e}", ephemeral=True)
+
     @commands.guild_only()
     @commands.command(aliases=["tex"], hidden=True)
     async def latex(self, ctx: commands.Context, *, equation: str):
-        equation = self.cleanup_code_block(equation)
+        equation = parser.cleanup_code_block(equation)
         async with ctx.typing():
             image_file = await self.generate_latex_image(equation)
         if image_file:
