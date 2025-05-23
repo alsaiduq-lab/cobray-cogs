@@ -27,7 +27,7 @@ class Latex(commands.Cog):
         self.latex_context = app_commands.ContextMenu(name="Render as LaTeX", callback=self._latex_context_callback)
         if app_installs is not None:
             try:
-                for cmd in [self.latex_slash, self.latex_help_slash]:
+                for cmd in [self.latex_slash, self.latex_help_slash, self.asklatex_slash]:
                     cmd.allowed_contexts = app_installs.AppCommandContext(
                         guild=True, dm_channel=True, private_channel=True
                     )

@@ -14,12 +14,13 @@ def normalize_infinity(expr: str) -> str:
     """
     Replace 'inf', 'infinity', '∞', etc. with '\\infty' in LaTeX context.
     """
-    expr = re.sub(r"(?<!\\)(?i)\b(inf|infinity|∞|∞|∞\s*ity|infty)\b", r"\\infty", expr)
     expr = re.sub(
-        r"(?<!\\)(?i)\b(\+|\-)\s*(inf|infinity|∞|infty)\b",
+        r"(?<!\\)\b(\+|\-)\s*(inf|infinity|∞|infty)\b",
         lambda m: ("+" if m.group(1) == "+" else "-") + r"\\infty",
         expr,
+        flags=re.IGNORECASE,
     )
+    expr = re.sub(r"(?<!\\)\b(inf|infinity|∞|infty)\b", r"\\infty", expr, flags=re.IGNORECASE)
     return expr
 
 
@@ -35,6 +36,22 @@ def strip_dollar_math(expr: str) -> str:
     return expr
 
 
+def add_latex_linebreaks(latex: str, maxlen: int = 50) -> str:
+    """
+    Insert LaTeX linebreaks (\\) after every maxlen chars for better rendering.
+    Only inserts at math-safe boundaries: after a comma, +, -, =, or /.
+    """
+    out = ""
+    cur = 0
+    for part in re.split(r"([,+\-=/])", latex):
+        if cur + len(part) > maxlen and cur > 0:
+            out += r"\\ "
+            cur = 0
+        out += part
+        cur += len(part)
+    return out
+
+
 def normalize_latex(content: str) -> str:
     """Combine all normalization steps for LaTeX rendering."""
     content = cleanup_code_block(content)
@@ -42,4 +59,5 @@ def normalize_latex(content: str) -> str:
     content = normalize_infinity(content)
     content = re.sub(r"[\u200B-\u200D\uFEFF]", "", content)
     content = content.replace("\u2212", "-")
+    content = add_latex_linebreaks(content)
     return content
