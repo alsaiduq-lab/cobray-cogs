@@ -1,0 +1,14 @@
+{
+  "name": "latex",
+  "short": "latex generator",
+  "description": "latex generator description",
+  "end_user_data_statement": "This cog does not persistently store any data about users.",
+  "author": ["Cobray"],
+  "required_cogs": {},
+  "requirements": [""],
+  "tags": ["math", "study"],
+  "min_bot_version": "3.5.0",
+  "hidden": false,
+  "disabled": false,
+  "type": "COG"
+}
