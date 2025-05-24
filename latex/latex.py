@@ -8,7 +8,7 @@ import urllib.parse as parse
 from redbot.core import commands, app_commands
 from redbot.core.bot import Red
 
-from . import parser, ai
+from . import parser, ai, tikz
 
 try:
     from discord.app_commands import installs as app_installs
@@ -81,7 +81,7 @@ class Latex(commands.Cog):
         equation_encoded = parse.quote(equation)
         url = f"{base_url}{equation_encoded}"
         try:
-            async with self.session.get(url, timeout=aiohttp.ClientTimeout(total=10)) as response:
+            async with self.session.get(url, timeout=aiohttp.ClientTimeout(total=10)) as response:  # type: ignore
                 if response.status != 200:
                     log.error(f"Failed to get LaTeX image: HTTP {response.status}")
                     return None
@@ -91,6 +91,7 @@ class Latex(commands.Cog):
             image_file_object = io.BytesIO()
             image.save(image_file_object, format="PNG")
             image_file_object.seek(0)
+            image_file_object.name = "latex.png"
             return discord.File(fp=image_file_object, filename="latex.png")
         except aiohttp.ClientError as e:
             log.exception(f"Network error while fetching LaTeX image: {e}")
@@ -99,15 +100,28 @@ class Latex(commands.Cog):
             log.exception(f"Unexpected error while processing LaTeX image: {e}")
             return None
 
-    @app_commands.command(name="latex", description="Render a LaTeX expression as an image")
-    @app_commands.describe(equation="The LaTeX expression to render (e.g., \\frac{a}{b})")
+    async def generate_image(self, equation: str) -> Optional[discord.File]:
+        if r"\begin{tikzpicture}" in equation:
+            image_file = await tikz.generate_tikz_image(equation)
+            if image_file:
+                image_file.filename = "tikz.png"
+            return image_file
+        else:
+            return await self.generate_latex_image(equation)
+
+    @app_commands.command(name="latex", description="Render a LaTeX expression as an image (supports TikZ)")
+    @app_commands.describe(equation="The LaTeX expression to render (math or TikZ diagram)")
     async def latex_slash(self, interaction: discord.Interaction, equation: str):
         equation = parser.cleanup_code_block(equation)
         await interaction.response.defer()
-        image_file = await self.generate_latex_image(equation)
+        image_file = await self.generate_image(equation)
         if image_file:
             embed = discord.Embed(title="LaTeX Render", color=discord.Color.blue())
-            embed.set_image(url="attachment://latex.png")
+            if image_file.filename.endswith("tikz.png"):
+                embed.description = "Rendered using TikZ."
+                embed.set_image(url="attachment://tikz.png")
+            else:
+                embed.set_image(url="attachment://latex.png")
             embed.set_footer(text=f"Requested by {interaction.user}", icon_url=interaction.user.display_avatar.url)
             await interaction.followup.send(file=image_file, embed=embed)
         else:
@@ -131,6 +145,7 @@ class Latex(commands.Cog):
             ("Integral", "`\\int_{a}^{b} f(x) dx`", "∫ from a to b of f(x)dx"),
             ("Square root", "`\\sqrt{x}`", "√x"),
             ("Matrices", "`\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}`", "Matrix [[a,b],[c,d]]"),
+            ("TikZ", r"```\begin{tikzpicture} ... \end{tikzpicture}```", "Draw diagrams!"),
         ]
         for name, syntax, rendered in examples:
             embed.add_field(name=name, value=f"Syntax: {syntax}\nRenders as: {rendered}", inline=False)
@@ -144,12 +159,16 @@ class Latex(commands.Cog):
                 return
             equation = parser.cleanup_code_block(message.content)
             await interaction.response.defer(ephemeral=True)
-            image_file = await self.generate_latex_image(equation)
+            image_file = await self.generate_image(equation)
             if image_file:
                 embed = discord.Embed(
                     title="LaTeX Render", description=f"From: {message.author.mention}", color=discord.Color.blue()
                 )
-                embed.set_image(url="attachment://latex.png")
+                if image_file.filename.endswith("tikz.png"):
+                    embed.description += "\n(TikZ)"
+                    embed.set_image(url="attachment://tikz.png")
+                else:
+                    embed.set_image(url="attachment://latex.png")
                 await interaction.followup.send(file=image_file, embed=embed, ephemeral=True)
             else:
                 await interaction.followup.send("❌ I couldn't render that as a LaTeX expression.", ephemeral=True)
@@ -173,12 +192,16 @@ class Latex(commands.Cog):
             else:
                 latex_code, _message = result, None
 
-            image_file = await self.generate_latex_image(latex_code)
+            image_file = await self.generate_image(latex_code)
             if image_file:
                 embed = discord.Embed(
                     title="LaTeX Render", color=discord.Color.green(), description=f"**Question:** {question}"
                 )
-                embed.set_image(url="attachment://latex.png")
+                if image_file.filename.endswith("tikz.png"):
+                    embed.description += "\n(TikZ)"
+                    embed.set_image(url="attachment://tikz.png")
+                else:
+                    embed.set_image(url="attachment://latex.png")
                 embed.set_footer(text=f"Requested by {interaction.user}", icon_url=interaction.user.display_avatar.url)
                 await interaction.followup.send(file=image_file, embed=embed)
                 if _message:
@@ -186,21 +209,25 @@ class Latex(commands.Cog):
             else:
                 await interaction.followup.send("❌ AI generated LaTeX, but image rendering failed.", ephemeral=True)
         except Exception as e:
-            await interaction.followup.send(f"❌ Error generating LaTeX from AI: {e}", ephemeral=True)
+            await interaction.followup.send(f"❌ Error generating LaTeX!: {e}", ephemeral=True)
 
     @commands.guild_only()
     @commands.command(aliases=["tex"], hidden=True)
     async def latex(self, ctx: commands.Context, *, equation: str):
         equation = parser.cleanup_code_block(equation)
         async with ctx.typing():
-            image_file = await self.generate_latex_image(equation)
+            image_file = await self.generate_image(equation)
         if image_file:
             embed = discord.Embed(
                 title="LaTeX Render",
                 color=await ctx.embed_color(),
                 description="💡 **Tip:** Use `/latex` for a better experience!",
             )
-            embed.set_image(url="attachment://latex.png")
+            if image_file.filename.endswith("tikz.png"):
+                embed.description += "\n(TikZ)"
+                embed.set_image(url="attachment://tikz.png")
+            else:
+                embed.set_image(url="attachment://latex.png")
             embed.set_footer(text=f"Requested by {ctx.author}", icon_url=ctx.author.display_avatar.url)
             await ctx.send(file=image_file, embed=embed)
         else:
@@ -228,6 +255,7 @@ class Latex(commands.Cog):
             ("Integral", "`\\int_{a}^{b} f(x) dx`", "∫ from a to b of f(x)dx"),
             ("Square root", "`\\sqrt{x}`", "√x"),
             ("Matrices", "`\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}`", "Matrix [[a,b],[c,d]]"),
+            ("TikZ", r"```\begin{tikzpicture} ... \end{tikzpicture}```", "Draw diagrams!"),
         ]
         for name, syntax, rendered in examples:
             embed.add_field(name=name, value=f"Syntax: {syntax}\nRenders as: {rendered}", inline=False)

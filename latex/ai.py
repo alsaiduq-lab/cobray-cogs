@@ -25,7 +25,7 @@ async def question_to_latex(question: str, provider: str = "xai", model: str = N
         if not OPENAI_API_KEY:
             raise RuntimeError("OpenAI API key not set as OPENAI_API_KEY.")
         client = AsyncOpenAI(api_key=OPENAI_API_KEY, base_url=OPENAI_API_BASE)
-        default_model = "gpt-4o"
+        default_model = "gpt-4.1"
     else:
         raise ValueError(f"Unsupported provider: {provider}")
 
